@@ -1,0 +1,42 @@
+[
+    {
+        "type": "COURSE",
+        "key": "MODL 1200",
+        "prefix": "MODL",
+        "number": "1200",
+        "title": "American English Pronunciation ",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "key": "MODL 2300",
+        "prefix": "MODL",
+        "number": "2300",
+        "title": "World Cultures",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": [
+            {
+                "sending_name": "Cerro Coso Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "SPAN",
+                            "number": "C211",
+                            "title": "Hispanic Cinema",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]

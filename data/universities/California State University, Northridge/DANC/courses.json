@@ -1,0 +1,111 @@
+[
+    {
+        "type": "COURSE",
+        "key": "DANC 139B",
+        "prefix": "DANC",
+        "number": "139B",
+        "title": "Ballet II",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "key": "DANC 141B",
+        "prefix": "DANC",
+        "number": "141B",
+        "title": "Jazz Dance II",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "key": "DANC 143B",
+        "prefix": "DANC",
+        "number": "143B",
+        "title": "Hip Hop Dance Culture II",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "key": "DANC 148",
+        "prefix": "DANC",
+        "number": "148",
+        "title": "Dance Conditioning And Somatic Practices",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "key": "DANC 236",
+        "prefix": "DANC",
+        "number": "236",
+        "title": "Introduction To Choreography",
+        "min_units": 2.0,
+        "max_units": 2.0,
+        "articulations": []
+    },
+    {
+        "type": "SERIES",
+        "key": "DANC 236+236L",
+        "prefix": "DANC",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "prefix": "DANC",
+                "number": "236",
+                "title": "Introduction To Choreography"
+            },
+            {
+                "prefix": "DANC",
+                "number": "236L",
+                "title": "Introduction To Choreography Lab"
+            }
+        ],
+        "articulations": [
+            {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "DANCE",
+                            "number": "130",
+                            "title": "Choreography I",
+                            "notes": [],
+                            "min_units": 1.5,
+                            "max_units": 1.5
+                        },
+                        {
+                            "prefix": "DANCE",
+                            "number": "139",
+                            "title": "Choreography II",
+                            "notes": [
+                                "Articulates as a sequence only"
+                            ],
+                            "min_units": 2.0,
+                            "max_units": 2.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    },
+    {
+        "type": "COURSE",
+        "key": "DANC 236L",
+        "prefix": "DANC",
+        "number": "236L",
+        "title": "Introduction To Choreography Lab",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    }
+]

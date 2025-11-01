@@ -1,0 +1,61 @@
+[
+    {
+        "type": "COURSE",
+        "key": "PLB 005",
+        "prefix": "PLB",
+        "number": "005",
+        "title": "Foundations in Plant Biology",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "key": "PLB 010",
+        "prefix": "PLB",
+        "number": "010",
+        "title": "Plant Biology",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": [
+            {
+                "sending_name": "Irvine Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "BIO",
+                            "number": "2",
+                            "title": "Plant Biology",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Saddleback College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "BIO",
+                            "number": "31",
+                            "title": "Biology of Plants",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]

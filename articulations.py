@@ -660,10 +660,10 @@ def subject_bucket(articulation: dict) -> tuple[str, str, str]:
         return subject, subject, subject
 
     if receiving_type == "REQUIREMENT":
-        return "*MISC-REQS*", "*MISC-REQS*", "Miscellaneous Requirements"
+        return "# MISC-REQS #", "# MISC-REQS #", "Miscellaneous Requirements"
 
     if receiving_type == "GE":
-        return "*GE-REQS*", "*GE-REQS*", "General Education Requirements"
+        return "# GE-REQS #", "# GE-REQS #", "General Education Requirements"
 
     return "UNKNOWN", "UNKNOWN", "UNKNOWN"
 

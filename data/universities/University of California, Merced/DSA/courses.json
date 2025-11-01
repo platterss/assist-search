@@ -1,0 +1,105 @@
+[
+    {
+        "type": "COURSE",
+        "key": "DSA 001",
+        "prefix": "DSA",
+        "number": "001",
+        "title": "Foundations of Data Science & Analytics",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": [
+            {
+                "sending_name": "Irvine Valley College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ACCT",
+                                    "number": "52",
+                                    "title": "Data Analytics Fundamentals",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CIM",
+                                    "number": "52",
+                                    "title": "Data Analytics Fundamentals",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Pasadena City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CS",
+                            "number": "031",
+                            "title": "Introduction to Data Science",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    },
+    {
+        "type": "COURSE",
+        "key": "DSA 002",
+        "prefix": "DSA",
+        "number": "002",
+        "title": "Thinking Like A Programmer",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": [
+            {
+                "sending_name": "Palomar College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CSCI",
+                            "number": "112",
+                            "title": "Programming Fundamentals I",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]
