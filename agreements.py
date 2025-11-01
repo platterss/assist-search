@@ -33,11 +33,9 @@ def save_ccc_agreements(institutions: list[dict]) -> None:
 
 
 def get_agreements() -> None:
+    create_institutions_file()
+
     institutions_path = Path("data/institutions.json")
-
-    if not institutions_path.exists():
-        create_institutions_file()
-
     with open(institutions_path, "r") as file:
         institutions: list[dict] = json.load(file)
         save_ccc_agreements(institutions)

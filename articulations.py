@@ -850,8 +850,8 @@ def flush_subjects_for_university(name: str, subjects_map: dict[str, str]) -> No
 
 
 def run() -> None:
-    institutions = get_institutions()
     get_agreements()
+    institutions = get_institutions()
 
     colleges = sorted([i for i in institutions if i["category"] == "CCC"], key=lambda i: i["name"])
     universities = [i for i in institutions if i["category"] in ["CSU", "UC"]]
