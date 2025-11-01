@@ -5,6 +5,7 @@ from classes import ArticulationNode, Conjunction, Course, NodeType
 from pathlib import Path
 from typing import Optional
 
+from institutions import create_institutions_file
 
 _AGREEMENTS_CACHE: dict[str, dict] = {}
 
@@ -720,6 +721,10 @@ def get_latest_agreement_year_between(college_name: str, university_id: int) -> 
 
 def get_institutions() -> list[dict]:
     institutions_path = Path("data/institutions.json")
+
+    if not institutions_path.exists():
+        create_institutions_file()
+
     with open(institutions_path, "r") as institutions_file:
         return json.load(institutions_file)
 
