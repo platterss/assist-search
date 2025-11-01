@@ -881,27 +881,59 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ACTG",
-                            "number": "1A",
-                            "title": "Financial Accounting I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ACTG",
+                                    "number": "1A",
+                                    "title": "Financial Accounting I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "ACTG",
+                                    "number": "1B",
+                                    "title": "Financial Accounting II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "ACTG",
-                            "number": "1B",
-                            "title": "Financial Accounting II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ACTG",
+                                    "number": "1AH",
+                                    "title": "Honors Financial Accounting I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "ACTG",
+                                    "number": "1BH",
+                                    "title": "Honors Financial Accounting II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },

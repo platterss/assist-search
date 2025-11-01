@@ -9862,29 +9862,63 @@
             {
                 "sending_name": "Ohlone College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "BIOL",
-                            "number": "103A",
-                            "title": "Human Anatomy and Physiology",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "BIOL",
+                                    "number": "103A",
+                                    "title": "Human Anatomy and Physiology",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                },
+                                {
+                                    "prefix": "BIOL",
+                                    "number": "103B",
+                                    "title": "Human Anatomy and Physiology",
+                                    "notes": [
+                                        "Complete entire sequence at same institution prior to transfer"
+                                    ],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "BIOL",
-                            "number": "103B",
-                            "title": "Human Anatomy and Physiology",
-                            "notes": [
-                                "Complete entire sequence at same institution prior to transfer"
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "BIOL",
+                                    "number": "111",
+                                    "title": "Human Anatomy",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                },
+                                {
+                                    "prefix": "BIOL",
+                                    "number": "112",
+                                    "title": "Human Physiology",
+                                    "notes": [
+                                        "Complete entire sequence at same institution prior to transfer"
+                                    ],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -11432,19 +11466,43 @@
             {
                 "sending_name": "Ohlone College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "BIOL",
-                            "number": "103A",
-                            "title": "Human Anatomy and Physiology",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "BIOL",
+                                    "number": "103A",
+                                    "title": "Human Anatomy and Physiology",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "BIOL",
+                                    "number": "111",
+                                    "title": "Human Anatomy",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },

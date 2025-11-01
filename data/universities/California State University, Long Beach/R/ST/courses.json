@@ -206,19 +206,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "HUMI",
-                            "number": "9",
-                            "title": "Introduction to Comparative Religion",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "HUMI",
+                                    "number": "9",
+                                    "title": "Introduction to Comparative Religion",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "HUMI",
+                                    "number": "9H",
+                                    "title": "Introduction to Comparative Religion - HONORS",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },

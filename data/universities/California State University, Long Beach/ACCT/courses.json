@@ -3213,19 +3213,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ACCT",
-                            "number": "1C",
-                            "title": "Managerial Accounting",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ACCT",
+                                    "number": "1C",
+                                    "title": "Managerial Accounting",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ACCT",
+                                    "number": "1CH",
+                                    "title": "Managerial Accounting - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },

@@ -7795,25 +7795,6 @@
                 }
             },
             {
-                "sending_name": "College of San Mateo",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "MATH",
-                            "number": "242",
-                            "title": "Applied Calculus II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Lassen Community College",
                 "sending_articulation": {
                     "type": "COURSE",
@@ -7883,25 +7864,6 @@
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Skyline College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "MATH",
-                            "number": "242",
-                            "title": "Applied Calculus II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
                         }
                     ],
                     "children": [],
@@ -8606,27 +8568,59 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "1A",
-                            "title": "Calculus I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1A",
+                                    "title": "Calculus I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1B",
+                                    "title": "Calculus II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "MATH",
-                            "number": "1B",
-                            "title": "Calculus II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1AH",
+                                    "title": "Calculus I - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1BH",
+                                    "title": "Calculus II - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -11239,19 +11233,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "1C",
-                            "title": "Calculus III",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1C",
+                                    "title": "Calculus III",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1CH",
+                                    "title": "Calculus III - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -13663,19 +13681,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "1D",
-                            "title": "Calculus IV",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1D",
+                                    "title": "Calculus IV",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1DH",
+                                    "title": "Calculus IV - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -16274,19 +16316,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "2B",
-                            "title": "Linear Algebra",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "2B",
+                                    "title": "Linear Algebra",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "2BH",
+                                    "title": "Linear Algebra - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },

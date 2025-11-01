@@ -4670,7 +4670,7 @@
                                 {
                                     "prefix": "STAT",
                                     "number": "C1000E",
-                                    "title": "Introduction to Statistics Embedded Support",
+                                    "title": "Introduction to Statistics",
                                     "notes": [],
                                     "min_units": 4.5,
                                     "max_units": 4.5
@@ -6946,29 +6946,53 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "217",
-                            "title": "Integrated Statistics I",
-                            "notes": [
-                                "Content credit only"
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "217",
+                                    "title": "Integrated Statistics I",
+                                    "notes": [
+                                        "Content credit only"
+                                    ],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "MATH",
+                                    "number": "17",
+                                    "title": "Integrated Statistics II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
                             ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "MATH",
-                            "number": "17",
-                            "title": "Integrated Statistics II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "title": "Introduction to Statistics",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -8972,7 +8996,7 @@
                                 {
                                     "prefix": "STAT",
                                     "number": "C1000E",
-                                    "title": "Introduction to Statistics Embedded Support",
+                                    "title": "Introduction to Statistics",
                                     "notes": [],
                                     "min_units": 4.5,
                                     "max_units": 4.5
@@ -9389,25 +9413,6 @@
                 }
             }
         ]
-    },
-    {
-        "type": "SERIES",
-        "key": "STAT 7+7L",
-        "prefix": "STAT",
-        "conjunction": "AND",
-        "courses": [
-            {
-                "prefix": "STAT",
-                "number": "7",
-                "title": "Statistical Methods for the Biological, Environmental, and Health Sciences"
-            },
-            {
-                "prefix": "STAT",
-                "number": "7L",
-                "title": "Statistical Methods for the Biological, Environmental, and Health Sciences Laboratory"
-            }
-        ],
-        "articulations": []
     },
     {
         "type": "COURSE",
@@ -12846,7 +12851,7 @@
                                 {
                                     "prefix": "STAT",
                                     "number": "C1000E",
-                                    "title": "Introduction to Statistics Embedded Support",
+                                    "title": "Introduction to Statistics",
                                     "notes": [],
                                     "min_units": 4.5,
                                     "max_units": 4.5

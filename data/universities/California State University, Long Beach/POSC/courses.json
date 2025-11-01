@@ -97,8 +97,8 @@
                     "courses": [
                         {
                             "prefix": "POLS",
-                            "number": "B1",
-                            "title": "American Government: National, State and Local",
+                            "number": "C1000",
+                            "title": "American Government and Politics",
                             "notes": [],
                             "min_units": 3.0,
                             "max_units": 3.0
@@ -539,9 +539,9 @@
                     "conjunction": "AND",
                     "courses": [
                         {
-                            "prefix": "PLSC",
-                            "number": "200",
-                            "title": "National, State and Local Governments",
+                            "prefix": "POLS",
+                            "number": "C1000",
+                            "title": "Introduction to American Government and Politics",
                             "notes": [],
                             "min_units": 3.0,
                             "max_units": 3.0
@@ -868,19 +868,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "title": "American Government and Politics",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "title": "American Government and Politics - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -2682,9 +2706,9 @@
                     "conjunction": "AND",
                     "courses": [
                         {
-                            "prefix": "PLSC",
-                            "number": "200",
-                            "title": "National, State and Local Government",
+                            "prefix": "POLS",
+                            "number": "C1000",
+                            "title": "American Government & Politics",
                             "notes": [],
                             "min_units": 3.0,
                             "max_units": 3.0
@@ -2820,9 +2844,9 @@
                             "conjunction": "AND",
                             "courses": [
                                 {
-                                    "prefix": "POLI",
-                                    "number": "001",
-                                    "title": "American Government",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "title": "American Government and Politics",
                                     "notes": [],
                                     "min_units": 3.0,
                                     "max_units": 3.0
@@ -2836,9 +2860,9 @@
                             "conjunction": "AND",
                             "courses": [
                                 {
-                                    "prefix": "POLI",
-                                    "number": "001H",
-                                    "title": "Honors American Government",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "title": "American Government and Politics - Honors",
                                     "notes": [],
                                     "min_units": 3.0,
                                     "max_units": 3.0
@@ -2994,7 +3018,7 @@
                     "conjunction": "AND",
                     "courses": [
                         {
-                            "prefix": "PLSC",
+                            "prefix": "POLS",
                             "number": "310",
                             "title": "California State and Local Government",
                             "notes": [],
@@ -3070,7 +3094,7 @@
                     "conjunction": "AND",
                     "courses": [
                         {
-                            "prefix": "PLSC",
+                            "prefix": "POLS",
                             "number": "310",
                             "title": "California State and Local Government",
                             "notes": [],
@@ -4549,19 +4573,43 @@
             {
                 "sending_name": "Skyline College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "PLSC",
-                            "number": "280",
-                            "title": "Introduction to Political Philosophy",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "PHIL",
+                                    "number": "280",
+                                    "title": "Introduction to Political Philosophy",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "POLS",
+                                    "number": "280",
+                                    "title": "Introduction to Political Philosophy",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },

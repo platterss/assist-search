@@ -1865,7 +1865,7 @@
                     "conjunction": "AND",
                     "courses": [
                         {
-                            "prefix": "MEDIA",
+                            "prefix": "FMA",
                             "number": "4",
                             "title": "Introduction to Mass Communication",
                             "notes": [],
@@ -2415,19 +2415,43 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "GRC",
-                            "number": "27",
-                            "title": "Digital Video Production",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "GRC",
+                                    "number": "27",
+                                    "title": "Digital Video Production",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "FILM",
+                                    "number": "5B",
+                                    "title": "Beginning Motion Picture Production",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -2652,7 +2676,7 @@
                     "conjunction": "AND",
                     "courses": [
                         {
-                            "prefix": "MEDIA",
+                            "prefix": "FMA",
                             "number": "20",
                             "title": "Introduction to Digital Filmmaking",
                             "notes": [],

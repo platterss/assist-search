@@ -573,7 +573,7 @@
                         {
                             "prefix": "ECON",
                             "number": "221",
-                            "title": "Introduction to Microeconomics Principles",
+                            "title": "Introduction to Microeconomic Principles",
                             "notes": [],
                             "min_units": 3.0,
                             "max_units": 3.0
@@ -1634,7 +1634,7 @@
                                 {
                                     "prefix": "BUSC",
                                     "number": "1B",
-                                    "title": "Principles of Economics - Microeconomics",
+                                    "title": "Principles of Microeconomics",
                                     "notes": [],
                                     "min_units": 3.0,
                                     "max_units": 3.0
@@ -1650,7 +1650,7 @@
                                 {
                                     "prefix": "BUSC",
                                     "number": "1BH",
-                                    "title": "Principles of Economics - Microeconomics - Honors",
+                                    "title": "Principles of Microeconomics - Honors",
                                     "notes": [],
                                     "min_units": 3.0,
                                     "max_units": 3.0
@@ -1785,19 +1785,43 @@
             {
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ECON",
-                            "number": "R201",
-                            "title": "Introduction to the Principles of Microeconomics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ECON",
+                                    "number": "R201",
+                                    "title": "Introduction to the Principles of Microeconomics",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ECON",
+                                    "number": "R201H",
+                                    "title": "Honors: Introduction to the Principles of Microeconomics",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -4286,7 +4310,7 @@
                                 {
                                     "prefix": "BUSC",
                                     "number": "1A",
-                                    "title": "Principles of Economics - Macroeconomics",
+                                    "title": "Principles of Macroeconomics",
                                     "notes": [],
                                     "min_units": 3.0,
                                     "max_units": 3.0
@@ -4302,7 +4326,7 @@
                                 {
                                     "prefix": "BUSC",
                                     "number": "1AH",
-                                    "title": "Principles of Economics - Macroeconomics - Honors",
+                                    "title": "Principles of Macroeconomics - Honors",
                                     "notes": [],
                                     "min_units": 3.0,
                                     "max_units": 3.0
@@ -4437,19 +4461,43 @@
             {
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ECON",
-                            "number": "R202",
-                            "title": "Introduction to the Principles of Macroeconomics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ECON",
+                                    "number": "R202",
+                                    "title": "Introduction to the Principles of Macroeconomics",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ECON",
+                                    "number": "R202H",
+                                    "title": "Honors: Introduction to the Principles of Macroeconomics",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -5191,7 +5239,27 @@
         "title": "Economics for Everyone",
         "min_units": 5.0,
         "max_units": 5.0,
-        "articulations": []
+        "articulations": [
+            {
+                "sending_name": "Palomar College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ECON",
+                            "number": "100",
+                            "title": "Basic Economics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
     },
     {
         "type": "COURSE",

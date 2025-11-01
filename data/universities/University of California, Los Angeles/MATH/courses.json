@@ -101,25 +101,6 @@
                 }
             },
             {
-                "sending_name": "Cuyamaca College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "MATH",
-                            "number": "178",
-                            "title": "Calculus for Business, Social and Behavioral Sciences",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
@@ -261,18 +242,18 @@
                 }
             },
             {
-                "sending_name": "Skyline College",
+                "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "MATH",
-                            "number": "241",
-                            "title": "Applied Calculus I",
+                            "number": "150S",
+                            "title": "Calculus for Biological, Management, and Social Science with Support",
                             "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "min_units": 5.5,
+                            "max_units": 5.5
                         }
                     ],
                     "children": [],
@@ -1037,7 +1018,7 @@
                         {
                             "prefix": "MATH",
                             "number": "50A",
-                            "title": "Differential Calculus",
+                            "title": "Calculus I: Single Variable Calculus",
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
@@ -1259,19 +1240,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "1A",
-                            "title": "Calculus I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1A",
+                                    "title": "Calculus I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1AH",
+                                    "title": "Calculus I - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -1851,19 +1856,43 @@
             {
                 "sending_name": "Los Angeles Harbor College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "265",
-                            "title": "Calculus with Analytic Geometry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "265",
+                                    "title": "Calculus with Analytic Geometry I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "265S",
+                                    "title": "Calculus With Analytic Geometry I with Support",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -1916,8 +1945,8 @@
                             "number": "265",
                             "title": "Calculus with Analytic Geometry I",
                             "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -2154,8 +2183,8 @@
                             "number": "171",
                             "title": "Calculus: First Course",
                             "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -2354,8 +2383,8 @@
                                     "number": "A180",
                                     "title": "Calculus 1",
                                     "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
                                 }
                             ],
                             "children": [],
@@ -2370,8 +2399,8 @@
                                     "number": "A180H",
                                     "title": "Calculus 1 Honors  ",
                                     "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
                                 }
                             ],
                             "children": [],
@@ -2407,25 +2436,6 @@
                             "prefix": "MATH",
                             "number": "R120",
                             "title": "Calculus with Analytic Geometry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Palo Verde College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "MAT",
-                            "number": "220",
-                            "title": "Calculus I",
                             "notes": [],
                             "min_units": 5.0,
                             "max_units": 5.0
@@ -3641,7 +3651,7 @@
                         {
                             "prefix": "MATH",
                             "number": "50B",
-                            "title": "Integral Calculus",
+                            "title": "Calculus II: Single Variable",
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
@@ -4552,8 +4562,8 @@
                             "number": "266",
                             "title": "Calculus with Analytic Geometry II",
                             "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -4696,43 +4706,19 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "155",
-                                    "title": "Calculus and Analytic Geometry II",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "155H",
-                                    "title": "Calculus and Analytical Geometry II (Honors)",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "MATH",
+                            "number": "155",
+                            "title": "Calculus and Analytic Geometry II",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -5006,8 +4992,8 @@
                                     "number": "A185",
                                     "title": "Calculus 2",
                                     "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
                                 }
                             ],
                             "children": [],
@@ -5022,8 +5008,8 @@
                                     "number": "A185H",
                                     "title": "Calculus 2 Honors",
                                     "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
                                 }
                             ],
                             "children": [],
@@ -6194,7 +6180,7 @@
                         {
                             "prefix": "MATH",
                             "number": "50C",
-                            "title": "Multivariable Calculus",
+                            "title": "Calculus III: Multivariable Calculus",
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
@@ -6236,6 +6222,25 @@
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Columbia College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "MATH",
+                            "number": "18C",
+                            "title": "Calculus III",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -6397,19 +6402,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "1C",
-                            "title": "Calculus III",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1C",
+                                    "title": "Calculus III",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1CH",
+                                    "title": "Calculus III - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -6904,8 +6933,8 @@
                             "number": "267",
                             "title": "Calculus with Analytic Geometry III",
                             "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -7048,43 +7077,19 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "260",
-                                    "title": "Calculus and Analytic Geometry III",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "260H",
-                                    "title": "Calculus and Analytic Geometry III (Honors)",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "MATH",
+                            "number": "260",
+                            "title": "Calculus and Analytic Geometry III",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -7118,8 +7123,8 @@
                             "number": "173",
                             "title": "Calculus: Third Course",
                             "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -7318,8 +7323,8 @@
                                     "number": "A280",
                                     "title": "Calculus 3",
                                     "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
                                 }
                             ],
                             "children": [],
@@ -7334,8 +7339,8 @@
                                     "number": "A280H",
                                     "title": "Calculus 3 Honors  ",
                                     "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "min_units": 6.0,
+                                    "max_units": 6.0
                                 }
                             ],
                             "children": [],
@@ -8466,7 +8471,7 @@
                         {
                             "prefix": "MATH",
                             "number": "50C",
-                            "title": "Multivariable Calculus",
+                            "title": "Calculus III: Multivariable Calculus",
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
@@ -8508,6 +8513,25 @@
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Columbia College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "MATH",
+                            "number": "18C",
+                            "title": "Calculus III",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -8669,19 +8693,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "1D",
-                            "title": "Calculus IV",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1D",
+                                    "title": "Calculus IV",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "1DH",
+                                    "title": "Calculus IV - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -9176,8 +9224,8 @@
                             "number": "267",
                             "title": "Calculus with Analytic Geometry III",
                             "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -9320,43 +9368,19 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "260",
-                                    "title": "Calculus and Analytic Geometry III",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "260H",
-                                    "title": "Calculus and Analytic Geometry III (Honors)",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "MATH",
+                            "number": "260",
+                            "title": "Calculus and Analytic Geometry III",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -9390,8 +9414,8 @@
                             "number": "173",
                             "title": "Calculus: Third Course",
                             "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -9590,8 +9614,8 @@
                                     "number": "A280",
                                     "title": "Calculus 3",
                                     "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
                                 }
                             ],
                             "children": [],
@@ -9606,8 +9630,8 @@
                                     "number": "A280H",
                                     "title": "Calculus 3 Honors  ",
                                     "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "min_units": 6.0,
+                                    "max_units": 6.0
                                 }
                             ],
                             "children": [],
@@ -10642,19 +10666,43 @@
             {
                 "sending_name": "College of Marin",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "116",
-                            "title": "Linear Algebra",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "116",
+                                    "title": "Linear Algebra",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "216",
+                                    "title": "Differential Equations and Linear Algebra",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -10946,19 +10994,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "2B",
-                            "title": "Linear Algebra",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "2B",
+                                    "title": "Linear Algebra",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "2BH",
+                                    "title": "Linear Algebra - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -11227,43 +11299,19 @@
             {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "G235",
-                                    "title": "Applied Linear Algebra",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "G285",
-                                    "title": "Introduction to Linear Algebra and Differential Equations",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "MATH",
+                            "number": "G285",
+                            "title": "Introduction to Linear Algebra and Differential Equations",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -11669,43 +11717,19 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "270",
-                                    "title": "Linear Algebra",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "270H",
-                                    "title": "Linear Algebra (Honors)",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "MATH",
+                            "number": "270",
+                            "title": "Linear Algebra",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -11955,8 +11979,8 @@
                                     "number": "A285",
                                     "title": "Introduction to Linear Algebra and Differential Equations",
                                     "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
                                 }
                             ],
                             "children": [],
@@ -11971,8 +11995,8 @@
                                     "number": "A285H",
                                     "title": "Introduction to Linear Algebra and Differential Equations Honors",
                                     "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "min_units": 6.0,
+                                    "max_units": 6.0
                                 }
                             ],
                             "children": [],
@@ -13025,19 +13049,43 @@
             {
                 "sending_name": "College of Marin",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "224",
-                            "title": "Elementary Differential Equations",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "224",
+                                    "title": "Elementary Differential Equations",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "216",
+                                    "title": "Differential Equations and Linear Algebra",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -13310,19 +13358,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "2A",
-                            "title": "Differential Equations",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "2A",
+                                    "title": "Differential Equations",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "2AH",
+                                    "title": "Differential Equations - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -14033,43 +14105,19 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "265",
-                                    "title": "Differential Equations",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "MATH",
-                                    "number": "265H",
-                                    "title": "Differential Equations (Honors)",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "MATH",
+                            "number": "265",
+                            "title": "Differential Equations",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -14305,8 +14353,8 @@
                                     "number": "A285",
                                     "title": "Introduction to Linear Algebra and Differential Equations",
                                     "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
                                 }
                             ],
                             "children": [],
@@ -14321,8 +14369,8 @@
                                     "number": "A285H",
                                     "title": "Introduction to Linear Algebra and Differential Equations Honors",
                                     "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "min_units": 6.0,
+                                    "max_units": 6.0
                                 }
                             ],
                             "children": [],
@@ -14772,9 +14820,7 @@
                             "prefix": "MATH",
                             "number": "4B",
                             "title": "Differential Equations",
-                            "notes": [
-                                "Petition department after transfer"
-                            ],
+                            "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
                         }
@@ -15062,8 +15108,8 @@
                             "number": "150",
                             "title": "Discrete Structures",
                             "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -15304,25 +15350,6 @@
                 }
             },
             {
-                "sending_name": "College of the Sequoias",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "MATH",
-                            "number": "067",
-                            "title": "Calculus 3",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Compton College",
                 "sending_articulation": {
                     "type": "COURSE",
@@ -15429,7 +15456,7 @@
                     "conjunction": "AND",
                     "courses": [
                         {
-                            "prefix": "CIS",
+                            "prefix": "CS",
                             "number": "241",
                             "title": "Discrete Structures",
                             "notes": [],
@@ -15463,19 +15490,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "MATH",
-                            "number": "22",
-                            "title": "Discrete Mathematics",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "22",
+                                    "title": "Discrete Mathematics",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "MATH",
+                                    "number": "22H",
+                                    "title": "Discrete Mathematics - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -15971,22 +16022,6 @@
                             "conjunction": "AND",
                             "courses": [
                                 {
-                                    "prefix": "MATH",
-                                    "number": "226H",
-                                    "title": "Discrete Mathematics (Honors)",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
                                     "prefix": "CS",
                                     "number": "226",
                                     "title": "Discrete Structures",
@@ -15999,25 +16034,6 @@
                             "notes": []
                         }
                     ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Mission College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "MAT",
-                            "number": "019",
-                            "title": "Discrete Mathematics",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
-                        }
-                    ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -16615,7 +16631,7 @@
                         {
                             "prefix": "CS",
                             "number": "131",
-                            "title": "DISCRETE STRUCTURES FOR COMPUTER SCIENCE",
+                            "title": "Discrete Structures For Computer Science",
                             "notes": [],
                             "min_units": 3.0,
                             "max_units": 3.0

@@ -5227,27 +5227,51 @@
             {
                 "sending_name": "City College of San Francisco",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "GEOL",
-                            "number": "11",
-                            "title": "Historical Geology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "GEOL",
+                                    "number": "11",
+                                    "title": "Historical Geology",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                },
+                                {
+                                    "prefix": "GEOL",
+                                    "number": "11L",
+                                    "title": "Historical Geology Lab",
+                                    "notes": [],
+                                    "min_units": 1.0,
+                                    "max_units": 1.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "GEOL",
-                            "number": "11L",
-                            "title": "Historical Geology Lab",
-                            "notes": [],
-                            "min_units": 1.0,
-                            "max_units": 1.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "GEOL",
+                                    "number": "111",
+                                    "title": "Historical Geology with Lab",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -5260,7 +5284,7 @@
                         {
                             "prefix": "GEOL",
                             "number": "2WL",
-                            "title": "Historical Geology with Lab",
+                            "title": "Historical Geology with Lab, Ancient Life and Environments",
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0

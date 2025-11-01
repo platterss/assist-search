@@ -100,7 +100,7 @@
                                 {
                                     "prefix": "ENGL",
                                     "number": "B25B",
-                                    "title": "Survey of World Literature",
+                                    "title": "Survey of World Literature from 1650 to the Present",
                                     "notes": [],
                                     "min_units": 3.0,
                                     "max_units": 3.0
@@ -369,19 +369,43 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ELIT",
-                            "number": "10",
-                            "title": "Introduction to Fiction",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ELIT",
+                                    "number": "10",
+                                    "title": "Introduction to Fiction",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ELIT",
+                                    "number": "10H",
+                                    "title": "Introduction to Fiction - HONORS",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },

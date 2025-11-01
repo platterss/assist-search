@@ -1779,19 +1779,43 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CDEV",
-                            "number": "108",
-                            "title": "Observation and Assessment for Early Learning and Development",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CDEV",
+                                    "number": "108",
+                                    "title": "Observation and Assessment for Early Learning and Development",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "APCD",
+                                    "number": "108",
+                                    "title": "Apprenticeship Observation and Assessment for Early Learning and Development",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -8951,6 +8975,22 @@
                                     "prefix": "CDEV",
                                     "number": "110",
                                     "title": "Child, Family and Community (DS2)",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "APCD",
+                                    "number": "110",
+                                    "title": "Apprenticeship Child, Family and Community (DS2)",
                                     "notes": [],
                                     "min_units": 3.0,
                                     "max_units": 3.0

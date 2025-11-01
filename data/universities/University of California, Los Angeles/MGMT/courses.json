@@ -573,7 +573,7 @@
                         {
                             "prefix": "BUS",
                             "number": "186",
-                            "title": "Principles of Accounting I",
+                            "title": "Financial Accounting",
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
@@ -681,27 +681,91 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "courses": [
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ACCT",
-                            "number": "1A",
-                            "title": "Financial Accounting I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACCT",
+                                            "number": "1A",
+                                            "title": "Financial Accounting I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACCT",
+                                            "number": "1AH",
+                                            "title": "Financial Accounting I - HONORS",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "prefix": "ACCT",
-                            "number": "1B",
-                            "title": "Financial Accounting II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACCT",
+                                            "number": "1B",
+                                            "title": "Financial Accounting II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACCT",
+                                            "number": "1BH",
+                                            "title": "Financial Accounting II - HONORS",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -823,55 +887,87 @@
                 "sending_name": "Foothill College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunction": "AND",
                     "courses": [],
                     "children": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "ACTG",
-                                    "number": "1A",
-                                    "title": "Financial Accounting I",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACTG",
+                                            "number": "1A",
+                                            "title": "Financial Accounting I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 },
                                 {
-                                    "prefix": "ACTG",
-                                    "number": "1B",
-                                    "title": "Financial Accounting II",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACTG",
+                                            "number": "1AH",
+                                            "title": "Honors Financial Accounting I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "ACTG",
-                                    "number": "1BH",
-                                    "title": "Honors Financial Accounting II",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACTG",
+                                            "number": "1B",
+                                            "title": "Financial Accounting II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 },
                                 {
-                                    "prefix": "ACTG",
-                                    "number": "1CH",
-                                    "title": "Honors Managerial Accounting",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACTG",
+                                            "number": "1BH",
+                                            "title": "Honors Financial Accounting II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1426,43 +1522,19 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "ACCT",
-                                    "number": "201",
-                                    "title": "Financial Accounting",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "ACCT",
-                                    "number": "201H",
-                                    "title": "Financial Accounting (Honors)",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "ACCT",
+                            "number": "201",
+                            "title": "Financial Accounting",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -1512,7 +1584,7 @@
                     "courses": [
                         {
                             "prefix": "BUSI",
-                            "number": "1A",
+                            "number": "3A",
                             "title": "Financial Accounting",
                             "notes": [],
                             "min_units": 4.0,
@@ -1702,19 +1774,43 @@
             {
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ACCT",
-                            "number": "R101",
-                            "title": "Financial Accounting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ACCT",
+                                    "number": "R101",
+                                    "title": "Financial Accounting",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ACCT",
+                                    "number": "R101H",
+                                    "title": "Honors: Financial Accounting",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -2279,8 +2375,8 @@
                             "number": "V01A",
                             "title": "Financial Accounting",
                             "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -2338,6 +2434,25 @@
                             "notes": [],
                             "min_units": 5.0,
                             "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Yuba College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ACCT",
+                            "number": "11",
+                            "title": "Principles of Accounting-Financial",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -2896,7 +3011,7 @@
                         {
                             "prefix": "BUS",
                             "number": "187",
-                            "title": "Principles of Accounting II",
+                            "title": "Managerial Accounting",
                             "notes": [],
                             "min_units": 4.0,
                             "max_units": 4.0
@@ -3005,39 +3120,87 @@
                 "sending_name": "De Anza College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunction": "AND",
                     "courses": [],
                     "children": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "ACCT",
-                                    "number": "1C",
-                                    "title": "Managerial Accounting",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACCT",
+                                            "number": "1B",
+                                            "title": "Financial Accounting II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACCT",
+                                            "number": "1BH",
+                                            "title": "Financial Accounting II - HONORS",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "ACCT",
-                                    "number": "1CH",
-                                    "title": "Managerial Accounting - HONORS",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACCT",
+                                            "number": "1C",
+                                            "title": "Managerial Accounting",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACCT",
+                                            "number": "1CH",
+                                            "title": "Managerial Accounting - HONORS",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -3161,19 +3324,91 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "courses": [
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ACTG",
-                            "number": "1C",
-                            "title": "Managerial Accounting",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACTG",
+                                            "number": "1B",
+                                            "title": "Financial Accounting II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACTG",
+                                            "number": "1BH",
+                                            "title": "Honors Financial Accounting II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACTG",
+                                            "number": "1CH",
+                                            "title": "Honors Managerial Accounting",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "ACTG",
+                                            "number": "1C",
+                                            "title": "Managerial Accounting",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -3717,43 +3952,19 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "ACCT",
-                                    "number": "202",
-                                    "title": "Managerial Accounting",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "ACCT",
-                                    "number": "202H",
-                                    "title": "Managerial Accounting (Honors)",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "ACCT",
+                            "number": "202",
+                            "title": "Managerial Accounting",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -3803,7 +4014,7 @@
                     "courses": [
                         {
                             "prefix": "BUSI",
-                            "number": "1B",
+                            "number": "3B",
                             "title": "Managerial Accounting",
                             "notes": [],
                             "min_units": 4.0,
@@ -4562,8 +4773,8 @@
                             "number": "V01B",
                             "title": "Managerial Accounting",
                             "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -4635,7 +4846,7 @@
                     "courses": [
                         {
                             "prefix": "ACCT",
-                            "number": "2L",
+                            "number": "12",
                             "title": "Principles of Accounting - Managerial",
                             "notes": [],
                             "min_units": 5.0,

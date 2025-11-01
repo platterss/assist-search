@@ -946,19 +946,43 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "BUSI",
-                            "number": "11",
-                            "title": "Introduction to Information Systems",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "BUSI",
+                                    "number": "11",
+                                    "title": "Introduction to Information Systems",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "BUSI",
+                                    "number": "11H",
+                                    "title": "Honors Introduction to Information Systems",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -4140,45 +4164,37 @@
                     "courses": [],
                     "children": [
                         {
-                            "type": "GROUP",
+                            "type": "COURSE",
                             "conjunction": "AND",
-                            "courses": [],
-                            "children": [
+                            "courses": [
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "COMSC",
-                                            "number": "140",
-                                            "title": "Python Programming",
-                                            "notes": [
-                                                "Preferred course"
-                                            ],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
+                                    "prefix": "COMSC",
+                                    "number": "140",
+                                    "title": "Python Programming",
+                                    "notes": [
+                                        "Preferred course"
                                     ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "COMSC",
-                                            "number": "110",
-                                            "title": "Introduction to Programming",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
                                 }
                             ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "COMSC",
+                                    "number": "110",
+                                    "title": "Introduction to Programming",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
                             "notes": []
                         },
                         {
@@ -8195,7 +8211,7 @@
         "key": "CIS 275",
         "prefix": "CIS",
         "number": "275",
-        "title": "Internet Literacy",
+        "title": "Internet Literacy and Critical Thinking",
         "min_units": 3.0,
         "max_units": 3.0,
         "articulations": [
@@ -8323,7 +8339,10 @@
                             "prefix": "CIS",
                             "number": "53",
                             "title": "Computer Networks and Security",
-                            "notes": [],
+                            "notes": [
+                                "No GE Credit given",
+                                "Satisfies major requirement only"
+                            ],
                             "min_units": 3.0,
                             "max_units": 3.0
                         }
@@ -8442,7 +8461,10 @@
                             "prefix": "CNT",
                             "number": "106",
                             "title": "Introduction to Networks",
-                            "notes": [],
+                            "notes": [
+                                "No GE Credit given",
+                                "Satisfies major requirement only"
+                            ],
                             "min_units": 3.0,
                             "max_units": 3.0
                         }
@@ -8499,7 +8521,10 @@
                             "prefix": "CIT",
                             "number": "45",
                             "title": "Data Communications",
-                            "notes": [],
+                            "notes": [
+                                "No GE Credit given",
+                                "Satisfies major requirement only"
+                            ],
                             "min_units": 3.0,
                             "max_units": 3.0
                         }

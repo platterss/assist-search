@@ -1,0 +1,42 @@
+[
+    {
+        "type": "COURSE",
+        "key": "CBNS 4",
+        "prefix": "CBNS",
+        "number": "4",
+        "title": "Concepts in Medical Cell Biology",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "key": "CBNS 10",
+        "prefix": "CBNS",
+        "number": "10",
+        "title": "The Human Brain: A User\u2019s Guide",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": [
+            {
+                "sending_name": "Pasadena City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "PSYC",
+                            "number": "002",
+                            "title": "Introductory Biological Psychology",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]

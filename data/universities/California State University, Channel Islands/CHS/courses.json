@@ -454,6 +454,25 @@
                 }
             },
             {
+                "sending_name": "College of the Redwoods",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "LCAM",
+                            "number": "1",
+                            "title": "Introduction to Latine and Chicanx Studies",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of the Sequoias",
                 "sending_articulation": {
                     "type": "COURSE",
@@ -2960,19 +2979,43 @@
             {
                 "sending_name": "Taft College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ETHN",
-                            "number": "2280",
-                            "title": "Mexican-American Culture and History in the American Context ",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ETHN",
+                                    "number": "1520",
+                                    "title": "Chicano/a Studies ",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ETHN",
+                                    "number": "2280",
+                                    "title": "Mexican-American Culture and History in the American Context ",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },

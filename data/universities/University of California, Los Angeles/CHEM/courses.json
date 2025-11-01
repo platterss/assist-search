@@ -773,27 +773,59 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "1A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1A",
+                                    "title": "General Chemistry I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1B",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1AH",
+                                    "title": "General Chemistry I - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1BH",
+                                    "title": "General Chemistry II - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -1478,43 +1510,19 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "150",
-                                    "title": "General Chemistry I: For Science Majors ",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "150H",
-                                    "title": "General Chemistry I : For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "150",
+                            "title": "General Chemistry I: For Science Majors ",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -1526,19 +1534,27 @@
                     "courses": [],
                     "children": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "CHM",
-                                    "number": "001A",
-                                    "title": "General Chemistry I",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHM",
+                                            "number": "001A",
+                                            "title": "General Chemistry I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
@@ -2358,25 +2374,6 @@
                 }
             },
             {
-                "sending_name": "Ventura College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
@@ -3093,27 +3090,59 @@
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "201",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "201",
+                                    "title": "General Chemistry I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "202",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "202",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "201H",
+                                    "title": "General Chemistry I - Honors",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "202",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -3487,35 +3516,75 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "1A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1A",
+                                    "title": "General Chemistry I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1B",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1C",
+                                    "title": "General Chemistry III",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "1C",
-                            "title": "General Chemistry III",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1AH",
+                                    "title": "General Chemistry I - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1BH",
+                                    "title": "General Chemistry II - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1CH",
+                                    "title": "General Chemistry III - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -3935,27 +4004,91 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "courses": [
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "1A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1A",
+                                            "title": "General Chemistry I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1AH",
+                                            "title": "General Chemistry 1 Honors",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1B",
+                                            "title": "General Chemistry II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1BH",
+                                            "title": "General Chemistry II Honors",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -4456,59 +4589,27 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "150",
-                                    "title": "General Chemistry I: For Science Majors ",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "151",
-                                    "title": "General Chemistry II: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "150",
+                            "title": "General Chemistry I: For Science Majors ",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "150H",
-                                    "title": "General Chemistry I : For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "151H",
-                                    "title": "General Chemistry II : For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "151",
+                            "title": "General Chemistry II: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -5792,49 +5893,6 @@
                 }
             },
             {
-                "sending_name": "Ventura College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01AL",
-                            "title": "General Chemistry I Laboratory",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01BL",
-                            "title": "General Chemistry II Laboratory",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
@@ -6668,27 +6726,59 @@
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "201",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "201",
+                                    "title": "General Chemistry I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "202",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "202",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "201H",
+                                    "title": "General Chemistry I - Honors",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "202",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -7054,35 +7144,75 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "1A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1A",
+                                    "title": "General Chemistry I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1B",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1C",
+                                    "title": "General Chemistry III",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "1C",
-                            "title": "General Chemistry III",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1AH",
+                                    "title": "General Chemistry I - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1BH",
+                                    "title": "General Chemistry II - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1CH",
+                                    "title": "General Chemistry III - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -7502,27 +7632,91 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "courses": [
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "1A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1A",
+                                            "title": "General Chemistry I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1AH",
+                                            "title": "General Chemistry 1 Honors",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1B",
+                                            "title": "General Chemistry II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1BH",
+                                            "title": "General Chemistry II Honors",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -8023,59 +8217,27 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "150",
-                                    "title": "General Chemistry I: For Science Majors ",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "151",
-                                    "title": "General Chemistry II: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "150",
+                            "title": "General Chemistry I: For Science Majors ",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "150H",
-                                    "title": "General Chemistry I : For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "151H",
-                                    "title": "General Chemistry II : For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "151",
+                            "title": "General Chemistry II: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -9320,41 +9482,6 @@
                             "notes": [],
                             "min_units": 5.0,
                             "max_units": 5.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Ventura College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01AL",
-                            "title": "General Chemistry I Laboratory",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
                         }
                     ],
                     "children": [],
@@ -10208,27 +10335,59 @@
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "201",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "201",
+                                    "title": "General Chemistry I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "202",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "202",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "201H",
+                                    "title": "General Chemistry I - Honors",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "202",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -10602,35 +10761,75 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "1A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1A",
+                                    "title": "General Chemistry I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1B",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1C",
+                                    "title": "General Chemistry III",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "1C",
-                            "title": "General Chemistry III",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1AH",
+                                    "title": "General Chemistry I - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1BH",
+                                    "title": "General Chemistry II - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1CH",
+                                    "title": "General Chemistry III - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -11050,27 +11249,91 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "courses": [
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "1A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1A",
+                                            "title": "General Chemistry I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1AH",
+                                            "title": "General Chemistry 1 Honors",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1B",
+                                            "title": "General Chemistry II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1BH",
+                                            "title": "General Chemistry II Honors",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -11571,59 +11834,27 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "150",
-                                    "title": "General Chemistry I: For Science Majors ",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "151",
-                                    "title": "General Chemistry II: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "150",
+                            "title": "General Chemistry I: For Science Majors ",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "150H",
-                                    "title": "General Chemistry I : For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "151H",
-                                    "title": "General Chemistry II : For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "151",
+                            "title": "General Chemistry II: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -11664,16 +11895,16 @@
                             "courses": [
                                 {
                                     "prefix": "CHM",
-                                    "number": "001AH",
-                                    "title": "General Chemistry I - Honors",
+                                    "number": "001BH",
+                                    "title": "General Chemistry II - Honors",
                                     "notes": [],
                                     "min_units": 5.0,
                                     "max_units": 5.0
                                 },
                                 {
                                     "prefix": "CHM",
-                                    "number": "001BH",
-                                    "title": "General Chemistry II - Honors",
+                                    "number": "001AH",
+                                    "title": "General Chemistry I - Honors",
                                     "notes": [],
                                     "min_units": 5.0,
                                     "max_units": 5.0
@@ -12907,49 +13138,6 @@
                 }
             },
             {
-                "sending_name": "Ventura College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01AL",
-                            "title": "General Chemistry I Laboratory",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V01BL",
-                            "title": "General Chemistry II Laboratory",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
@@ -13135,6 +13323,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "150",
+                            "title": "General Chemistry 1",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "151",
                             "title": "General Chemistry 2",
                             "notes": [],
@@ -13152,6 +13348,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "400",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "401",
@@ -13192,8 +13396,43 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "B1A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "B1B",
                             "title": "General Chemistry and Chemical Analysis",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Barstow Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "2A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
+                            "number": "2B",
+                            "title": "General Chemistry II",
                             "notes": [],
                             "min_units": 5.0,
                             "max_units": 5.0
@@ -13209,6 +13448,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "1B",
@@ -13230,6 +13477,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "2",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13247,6 +13502,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "1B",
@@ -13268,6 +13531,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "210",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "220",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13287,6 +13558,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "111",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "112",
                             "title": "General Chemistry",
                             "notes": [],
@@ -13302,7 +13581,7 @@
                 "sending_name": "Cerro Coso Community College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunction": "AND",
                     "courses": [],
                     "children": [
                         {
@@ -13311,8 +13590,8 @@
                             "courses": [
                                 {
                                     "prefix": "CHEM",
-                                    "number": "C113",
-                                    "title": "General Chemistry II",
+                                    "number": "C111",
+                                    "title": "General Chemistry I",
                                     "notes": [],
                                     "min_units": 5.0,
                                     "max_units": 5.0
@@ -13322,19 +13601,43 @@
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "CHEM",
-                                    "number": "C113H",
-                                    "title": "General Chemistry II: Honors",
-                                    "notes": [],
-                                    "min_units": 6.0,
-                                    "max_units": 6.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "C113",
+                                            "title": "General Chemistry II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "C113H",
+                                            "title": "General Chemistry II: Honors",
+                                            "notes": [],
+                                            "min_units": 6.0,
+                                            "max_units": 6.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -13347,6 +13650,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General College Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "1B",
@@ -13368,6 +13679,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "24A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "24B",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13385,6 +13704,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "111",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "112",
@@ -13406,6 +13733,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "101A",
+                            "title": "General College Chemistry",
+                            "notes": [],
+                            "min_units": 6.0,
+                            "max_units": 6.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "101B",
                             "title": "General College Chemistry",
                             "notes": [],
@@ -13423,6 +13758,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "1B",
@@ -13444,11 +13787,46 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "001A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "001B",
                             "title": "General Chemistry II",
                             "notes": [],
                             "min_units": 5.0,
                             "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "C180",
+                            "title": "General Chemistry A",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        },
+                        {
+                            "prefix": "CHEM",
+                            "number": "C185",
+                            "title": "General Chemistry B",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
                         }
                     ],
                     "children": [],
@@ -13482,6 +13860,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "131",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "132",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13501,6 +13887,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "210",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "220",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13515,19 +13909,67 @@
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "courses": [
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "202",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "201",
+                                            "title": "General Chemistry I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "201H",
+                                            "title": "General Chemistry I - Honors",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "202",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -13537,6 +13979,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CH",
+                            "number": "1A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CH",
                             "number": "1B",
@@ -13558,6 +14008,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry",
                             "notes": [],
@@ -13577,6 +14035,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "001",
+                            "title": "General Chemistry 1",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "002",
                             "title": "General Chemistry 2",
                             "notes": [],
@@ -13594,6 +14060,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "2000",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "2100",
@@ -13642,6 +14116,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "150",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "152",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13659,6 +14141,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "120",
+                            "title": "General College Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "121",
@@ -13718,6 +14208,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "150",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "151",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13735,6 +14233,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "201A",
+                            "title": "General College Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "201B",
@@ -13756,6 +14262,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "141",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "142",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13775,6 +14289,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "111 AC",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "111 BC",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13789,27 +14311,59 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1B",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1C",
+                                    "title": "General Chemistry III",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         },
                         {
-                            "prefix": "CHEM",
-                            "number": "1C",
-                            "title": "General Chemistry III",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1BH",
+                                    "title": "General Chemistry II - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "1CH",
+                                    "title": "General Chemistry III - HONORS",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -13819,6 +14373,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "120",
+                            "title": "General College Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "121",
@@ -13840,6 +14402,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "102",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13857,6 +14427,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "1B",
@@ -13878,6 +14456,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "001A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "001B",
                             "title": "General Chemistry",
                             "notes": [],
@@ -13897,6 +14483,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "102",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "104",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -13914,6 +14508,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "400",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "401",
@@ -14008,6 +14610,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry",
                             "notes": [],
@@ -14025,6 +14635,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry A",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "102",
@@ -14046,6 +14664,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "G180",
+                            "title": "General Chemistry A",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "G185",
                             "title": "General Chemistry B",
                             "notes": [],
@@ -14063,6 +14689,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "141",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "142",
@@ -14084,6 +14718,14 @@
                     "courses": [
                         {
                             "prefix": "CHM",
+                            "number": "1A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHM",
                             "number": "1B",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -14103,6 +14745,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "200",
+                            "title": "General Inorganic Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "202",
                             "title": "General Inorganic Chemistry II",
                             "notes": [],
@@ -14117,19 +14767,91 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "courses": [
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1A",
+                                            "title": "General Chemistry I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1AH",
+                                            "title": "General Chemistry 1 Honors",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1B",
+                                            "title": "General Chemistry II",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "1BH",
+                                            "title": "General Chemistry II Honors",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -14168,6 +14890,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry",
                             "notes": [],
@@ -14185,6 +14915,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General College Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "1B",
@@ -14206,6 +14944,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -14225,6 +14971,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "001A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "001B",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -14242,6 +14996,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.5,
+                            "max_units": 5.5
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "1B",
@@ -14282,6 +15044,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "102",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -14299,6 +15069,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "102",
@@ -14320,6 +15098,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "102",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -14337,6 +15123,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "102",
@@ -14358,6 +15152,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "102",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -14375,6 +15177,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "102",
@@ -14396,6 +15206,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "025",
+                            "title": "General College Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "026",
                             "title": "General College Chemistry II",
                             "notes": [],
@@ -14413,6 +15231,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM ",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM ",
                             "number": "1B",
@@ -14434,6 +15260,14 @@
                     "courses": [
                         {
                             "prefix": "CHM",
+                            "number": "250",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHM",
                             "number": "251",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -14451,6 +15285,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "-04A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "-04B",
@@ -14472,6 +15314,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry",
                             "notes": [],
@@ -14486,6 +15336,33 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "150",
+                            "title": "General Chemistry I: For Science Majors ",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
+                            "number": "151",
+                            "title": "General Chemistry II: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Mission College",
+                "sending_articulation": {
                     "type": "GROUP",
                     "conjunction": "OR",
                     "courses": [],
@@ -14495,9 +15372,17 @@
                             "conjunction": "AND",
                             "courses": [
                                 {
-                                    "prefix": "CHEM",
-                                    "number": "151",
-                                    "title": "General Chemistry II: For Science Majors",
+                                    "prefix": "CHM",
+                                    "number": "001A",
+                                    "title": "General Chemistry I",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHM",
+                                    "number": "001B",
+                                    "title": "General Chemistry II",
                                     "notes": [],
                                     "min_units": 5.0,
                                     "max_units": 5.0
@@ -14511,9 +15396,17 @@
                             "conjunction": "AND",
                             "courses": [
                                 {
-                                    "prefix": "CHEM",
-                                    "number": "151H",
-                                    "title": "General Chemistry II : For Science Majors (Honors)",
+                                    "prefix": "CHM",
+                                    "number": "001AH",
+                                    "title": "General Chemistry I - Honors",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                },
+                                {
+                                    "prefix": "CHM",
+                                    "number": "001BH",
+                                    "title": "General Chemistry II - Honors",
                                     "notes": [],
                                     "min_units": 5.0,
                                     "max_units": 5.0
@@ -14527,30 +15420,19 @@
                 }
             },
             {
-                "sending_name": "Mission College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
-                        {
-                            "prefix": "CHM",
-                            "number": "001B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry 1",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "102",
@@ -14572,6 +15454,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -14586,19 +15476,67 @@
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "courses": [
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "M01B",
-                            "title": "General Chemistry II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "M01A",
+                                            "title": "General Chemistry I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "M01AH",
+                                            "title": "Honors: General Chemistry I",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "M01B",
+                                    "title": "General Chemistry II",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -14608,6 +15546,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHE",
+                            "number": "1A",
+                            "title": "General Chemistry, I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHE",
                             "number": "1B",
@@ -14672,6 +15618,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM-",
+                            "number": "101",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM-",
                             "number": "102",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -14689,6 +15643,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "120",
+                            "title": "General Chemistry 1",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "121",
@@ -14710,6 +15672,14 @@
                     "courses": [
                         {
                             "prefix": "CHE",
+                            "number": "1A",
+                            "title": "General Chemistry, I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHE",
                             "number": "1B",
                             "title": "General Chemistry, II",
                             "notes": [],
@@ -14727,6 +15697,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "101A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "101B",
@@ -14748,6 +15726,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "A180",
+                            "title": "General Chemistry A",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "A185",
                             "title": "General Chemistry B",
                             "notes": [],
@@ -14765,6 +15751,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "R120",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "R122",
@@ -14805,6 +15799,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "001A",
+                            "title": "General Chemistry and Chemical Analysis I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "001B",
                             "title": "General Chemistry and Chemical Analysis II",
                             "notes": [],
@@ -14822,6 +15824,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "P101A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "P101B",
@@ -14843,6 +15853,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry and Qualitative Analysis",
                             "notes": [],
@@ -14860,6 +15878,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "130",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "140",
@@ -14881,6 +15907,14 @@
                     "courses": [
                         {
                             "prefix": "CHE",
+                            "number": "1A",
+                            "title": "General Chemistry, I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHE",
                             "number": "1B",
                             "title": "General Chemistry, II",
                             "notes": [],
@@ -14898,6 +15932,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "400",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "401",
@@ -14919,6 +15961,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry",
                             "notes": [],
@@ -14936,6 +15986,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "150",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "151",
@@ -15014,6 +16072,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry",
                             "notes": [],
@@ -15031,6 +16097,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "001A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "001B",
@@ -15052,6 +16126,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "219",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "229",
                             "title": "General Chemistry and Qualitative Analysis",
                             "notes": [],
@@ -15069,6 +16151,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "155",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "156",
@@ -15090,6 +16180,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "11",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "12",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -15109,6 +16207,22 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "3A",
+                            "title": "General Chemistry Part 1: Lecture",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        },
+                        {
+                            "prefix": "CHEM",
+                            "number": "3AL",
+                            "title": "General Chemistry Part 1: Lab",
+                            "notes": [],
+                            "min_units": 2.0,
+                            "max_units": 2.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "3B",
                             "title": "General Chemistry Part 2",
                             "notes": [],
@@ -15123,19 +16237,67 @@
             {
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "courses": [
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "CHEM",
-                            "number": "200B",
-                            "title": "General Chemistry B",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "200A",
+                                            "title": "General Chemistry A",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "200AH",
+                                            "title": "Honors General Chemistry AH",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CHEM",
+                                    "number": "200B",
+                                    "title": "General Chemistry B",
+                                    "notes": [],
+                                    "min_units": 5.0,
+                                    "max_units": 5.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -15145,6 +16307,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "1B",
@@ -15166,6 +16336,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "1B",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -15183,6 +16361,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "210",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "220",
@@ -15204,6 +16390,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "001",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "002",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -15221,6 +16415,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "200",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "210",
@@ -15242,6 +16444,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "2211",
+                            "title": "General Chemistry",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "2212",
                             "title": "General Chemistry and Qualitative Analysis",
                             "notes": [],
@@ -15254,30 +16464,19 @@
                 }
             },
             {
-                "sending_name": "Ventura College",
+                "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "CHEM",
-                            "number": "V01B",
-                            "title": "General Chemistry II",
+                            "number": "201",
+                            "title": "General Chemistry",
                             "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        }
-                    ],
-                    "children": [],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Victor Valley College",
-                "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "202",
@@ -15299,6 +16498,14 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
+                            "number": "101",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
                             "number": "102",
                             "title": "General Chemistry II",
                             "notes": [],
@@ -15314,39 +16521,87 @@
                 "sending_name": "West Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunction": "AND",
                     "courses": [],
                     "children": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "CHEM",
-                                    "number": "001B",
-                                    "title": "General Chemistry",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "001A",
+                                            "title": "General Chemistry",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "001AH",
+                                            "title": "Honors General Chemistry",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "CHEM",
-                                    "number": "001BH",
-                                    "title": "Honors General Chemistry",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "001BH",
+                                            "title": "Honors General Chemistry",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "CHEM",
+                                            "number": "001B",
+                                            "title": "General Chemistry",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -15359,6 +16614,14 @@
                     "type": "COURSE",
                     "conjunction": "AND",
                     "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "title": "General Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
                         {
                             "prefix": "CHEM",
                             "number": "1B",
@@ -15629,11 +16892,11 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
-                            "number": "76A",
+                            "number": "75A",
                             "title": "Organic Chemistry I",
                             "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -15668,7 +16931,7 @@
                         {
                             "prefix": "CHEM",
                             "number": "212A",
-                            "title": "Organic Chemistry",
+                            "title": "Organic Chemistry I",
                             "notes": [],
                             "min_units": 6.0,
                             "max_units": 6.0
@@ -16213,43 +17476,19 @@
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "231",
-                                    "title": "Organic Chemistry I",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "241",
-                                    "title": "Organic Chemistry I Lecture",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "231",
+                            "title": "Organic Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -16579,43 +17818,19 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "210",
-                                    "title": "Organic Chemistry I: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "210H",
-                                    "title": "Organic Chemistry I: For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "210",
+                            "title": "Organic Chemistry I: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -17323,11 +18538,19 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
-                            "number": "V12A",
+                            "number": "V160A",
                             "title": "General Organic Chemistry I",
                             "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        },
+                        {
+                            "prefix": "CHEM",
+                            "number": "V160B",
+                            "title": "General Organic Chemistry II",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -17786,19 +19009,19 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
-                            "number": "76A",
+                            "number": "75A",
                             "title": "Organic Chemistry I",
                             "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
                             "prefix": "CHEM",
-                            "number": "76B",
+                            "number": "75B",
                             "title": "Organic Chemistry II",
                             "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -17841,7 +19064,7 @@
                         {
                             "prefix": "CHEM",
                             "number": "212A",
-                            "title": "Organic Chemistry",
+                            "title": "Organic Chemistry I",
                             "notes": [],
                             "min_units": 6.0,
                             "max_units": 6.0
@@ -19120,59 +20343,27 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "210",
-                                    "title": "Organic Chemistry I: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "211",
-                                    "title": "Organic Chemistry II: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "210",
+                            "title": "Organic Chemistry I: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "210H",
-                                    "title": "Organic Chemistry I: For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "211H",
-                                    "title": "Organic Chemistry II: For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "211",
+                            "title": "Organic Chemistry II: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -20144,19 +21335,19 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
-                            "number": "V12A",
+                            "number": "V160A",
                             "title": "General Organic Chemistry I",
                             "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
                             "prefix": "CHEM",
-                            "number": "V12B",
+                            "number": "V160B",
                             "title": "General Organic Chemistry II",
                             "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -20668,19 +21859,19 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
-                            "number": "76A",
+                            "number": "75A",
                             "title": "Organic Chemistry I",
                             "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
                             "prefix": "CHEM",
-                            "number": "76B",
+                            "number": "75B",
                             "title": "Organic Chemistry II",
                             "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -20731,7 +21922,7 @@
                         {
                             "prefix": "CHEM",
                             "number": "212A",
-                            "title": "Organic Chemistry",
+                            "title": "Organic Chemistry I",
                             "notes": [],
                             "min_units": 6.0,
                             "max_units": 6.0
@@ -22042,59 +23233,27 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "210",
-                                    "title": "Organic Chemistry I: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "211",
-                                    "title": "Organic Chemistry II: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "210",
+                            "title": "Organic Chemistry I: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "210H",
-                                    "title": "Organic Chemistry I: For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "211H",
-                                    "title": "Organic Chemistry II: For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "211",
+                            "title": "Organic Chemistry II: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -23170,27 +24329,19 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
-                            "number": "V12A",
+                            "number": "V160A",
                             "title": "General Organic Chemistry I",
                             "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
                             "prefix": "CHEM",
-                            "number": "V12B",
+                            "number": "V160B",
                             "title": "General Organic Chemistry II",
                             "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V12AL",
-                            "title": "General Organic Chemistry I Laboratory",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -23720,19 +24871,19 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
-                            "number": "76A",
+                            "number": "75A",
                             "title": "Organic Chemistry I",
                             "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
                             "prefix": "CHEM",
-                            "number": "76B",
+                            "number": "75B",
                             "title": "Organic Chemistry II",
                             "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -23791,7 +24942,7 @@
                         {
                             "prefix": "CHEM",
                             "number": "212A",
-                            "title": "Organic Chemistry",
+                            "title": "Organic Chemistry I",
                             "notes": [],
                             "min_units": 6.0,
                             "max_units": 6.0
@@ -24664,75 +25815,27 @@
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "231",
-                                    "title": "Organic Chemistry I",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "232",
-                                    "title": "Organic Chemistry II",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "231",
+                            "title": "Organic Chemistry I",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "241",
-                                    "title": "Organic Chemistry I Lecture",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "241L",
-                                    "title": "Organic Chemistry I Laboratory",
-                                    "notes": [],
-                                    "min_units": 2.0,
-                                    "max_units": 2.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "242",
-                                    "title": "Organic Chemistry II Lecture",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "242L",
-                                    "title": "Organic Chemistry II Laboratory",
-                                    "notes": [],
-                                    "min_units": 2.0,
-                                    "max_units": 2.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "232",
+                            "title": "Organic Chemistry II",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -25214,59 +26317,27 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "210",
-                                    "title": "Organic Chemistry I: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "211",
-                                    "title": "Organic Chemistry II: For Science Majors",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "210",
+                            "title": "Organic Chemistry I: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "210H",
-                                    "title": "Organic Chemistry I: For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                },
-                                {
-                                    "prefix": "CHEM",
-                                    "number": "211H",
-                                    "title": "Organic Chemistry II: For Science Majors (Honors)",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
+                            "prefix": "CHEM",
+                            "number": "211",
+                            "title": "Organic Chemistry II: For Science Majors",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
+                    "children": [],
                     "notes": []
                 }
             },
@@ -26398,35 +27469,23 @@
                     "courses": [
                         {
                             "prefix": "CHEM",
-                            "number": "V12A",
+                            "number": "V160A",
                             "title": "General Organic Chemistry I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": [
+                                "Must complete an additional university course after transfer to satisfy this requirement"
+                            ],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         },
                         {
                             "prefix": "CHEM",
-                            "number": "V12B",
+                            "number": "V160B",
                             "title": "General Organic Chemistry II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V12AL",
-                            "title": "General Organic Chemistry I Laboratory",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
-                        },
-                        {
-                            "prefix": "CHEM",
-                            "number": "V12BL",
-                            "title": "General Organic Chemistry II Laboratory",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "notes": [
+                                "Must complete an additional university course after transfer to satisfy this requirement"
+                            ],
+                            "min_units": 5.0,
+                            "max_units": 5.0
                         }
                     ],
                     "children": [],
@@ -26628,7 +27687,134 @@
         "title": "Biochemistry: Introduction to Structure, Enzymes, and Metabolism",
         "min_units": 4.0,
         "max_units": 4.0,
-        "articulations": []
+        "articulations": [
+            {
+                "sending_name": "East Los Angeles College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "221",
+                            "title": "Biochemistry for Science Majors",
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "221",
+                            "title": "Biochemistry for Science Majors",
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles Pierce College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "221",
+                            "title": "Biochemistry for Science Majors",
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles Trade Technical College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "221",
+                            "title": "Biochemistry for Science Majors",
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "221",
+                            "title": "Biochemistry for Science Majors",
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Monica College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CHEM",
+                            "number": "31",
+                            "title": "Biochemistry I",
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
     },
     {
         "type": "SERIES",
@@ -26658,7 +27844,9 @@
                             "prefix": "CHEM",
                             "number": "221",
                             "title": "Biochemistry for Science Majors",
-                            "notes": [],
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
                             "min_units": 5.0,
                             "max_units": 5.0
                         }
@@ -26677,7 +27865,9 @@
                             "prefix": "CHEM",
                             "number": "221",
                             "title": "Biochemistry for Science Majors",
-                            "notes": [],
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
                             "min_units": 5.0,
                             "max_units": 5.0
                         }
@@ -26696,7 +27886,9 @@
                             "prefix": "CHEM",
                             "number": "221",
                             "title": "Biochemistry for Science Majors",
-                            "notes": [],
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
                             "min_units": 5.0,
                             "max_units": 5.0
                         }
@@ -26715,7 +27907,9 @@
                             "prefix": "CHEM",
                             "number": "221",
                             "title": "Biochemistry for Science Majors",
-                            "notes": [],
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
                             "min_units": 5.0,
                             "max_units": 5.0
                         }
@@ -26734,7 +27928,9 @@
                             "prefix": "CHEM",
                             "number": "221",
                             "title": "Biochemistry for Science Majors",
-                            "notes": [],
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
                             "min_units": 5.0,
                             "max_units": 5.0
                         }
@@ -26753,7 +27949,9 @@
                             "prefix": "CHEM",
                             "number": "31",
                             "title": "Biochemistry I",
-                            "notes": [],
+                            "notes": [
+                                "Petition major after transfer"
+                            ],
                             "min_units": 5.0,
                             "max_units": 5.0
                         }
