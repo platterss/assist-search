@@ -5,6 +5,7 @@ from classes import ArticulationNode, Conjunction, Course, NodeType
 from pathlib import Path
 from typing import Optional
 
+from agreements import get_agreements
 from institutions import create_institutions_file
 
 _AGREEMENTS_CACHE: dict[str, dict] = {}
@@ -850,6 +851,7 @@ def flush_subjects_for_university(name: str, subjects_map: dict[str, str]) -> No
 
 def run() -> None:
     institutions = get_institutions()
+    get_agreements()
 
     colleges = sorted([i for i in institutions if i["category"] == "CCC"], key=lambda i: i["name"])
     universities = [i for i in institutions if i["category"] in ["CSU", "UC"]]
