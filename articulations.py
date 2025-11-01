@@ -4,7 +4,6 @@ import request
 from classes import ArticulationNode, Conjunction, Course, NodeType
 from pathlib import Path
 from typing import Optional
-from years import get_latest_agreement_year
 
 
 _AGREEMENTS_CACHE: dict[str, dict] = {}
@@ -213,14 +212,13 @@ def request_all_courses(year: int, sending: int, receiving: int, method: str) ->
     return all_courses_json
 
 
-def get_all_courses_json(year: int, sending_name: str, sending_id: int, receiving_id: int) -> dict | None:
+def get_all_courses_json(sending_name: str, sending_id: int, receiving_id: int) -> dict | None:
     latest_agreement_year = get_latest_agreement_year_between(sending_name, receiving_id)
 
     if latest_agreement_year < 74:  # The modernized agreements view only started in year ID 74
         return None
 
-    if latest_agreement_year != year:
-        print(f"Most recent agreement year ID is {latest_agreement_year}. Checking this instead of {year}.")
+    print(f"Latest year ID is {latest_agreement_year}.")
 
     try:
         return request_all_courses(latest_agreement_year, sending_id, receiving_id, "AllMajors")
@@ -846,7 +844,6 @@ def flush_subjects_for_university(name: str, subjects_map: dict[str, str]) -> No
 
 
 def run() -> None:
-    year = get_latest_agreement_year()
     institutions = get_institutions()
 
     colleges = sorted([i for i in institutions if i["category"] == "CCC"], key=lambda i: i["name"])
@@ -866,7 +863,7 @@ def run() -> None:
             college_name = college["name"]
             print(f"Getting articulations between {college_name} (ID {college_id}) and {university_name}.")
 
-            all_courses = get_all_courses_json(year, college_name, college_id, university_id)
+            all_courses = get_all_courses_json(college_name, college_id, university_id)
 
             if all_courses is None:
                 print(f"{university_name} and {college_name} have no viable agreements.")
