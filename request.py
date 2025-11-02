@@ -12,7 +12,9 @@ def get(url: str, params=None, **kwargs) -> requests.Response:
         print("Exceeded rate limit. Retrying request in 30 seconds.")
         time.sleep(30)
 
-    print("Sleeping for 6 seconds.")
-    time.sleep(6)
+    # It seems like they allow around 100 requests rather than just 50.
+    # 3 seconds will occasionally exceed the rate limit but 4 is safer.
+    print("Sleeping for 4 seconds.")
+    time.sleep(4)
 
     return response
