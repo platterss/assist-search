@@ -82,22 +82,19 @@ def parse_course_group(group: dict) -> ArticulationNode:
     internal = group.get("courseConjunction", "And")
     items = sorted(group.get("items", []), key=lambda x: x.get("position", 0))
 
-    group_level_notes = []
-    for attribute in group.get("attributes", []):
-        content = attribute.get("content")
-
-        if content:
-            group_level_notes.append(content)
+    group_level_notes: list[str] = [
+        a.get("content") for a in group.get("attributes", []) if a.get("content")
+    ]
 
     if internal.lower() == "and":
-        courses = [make_course(item, extra_notes=group_level_notes) for item in items if item.get("type") == "Course"]
+        courses = [make_course(item) for item in items if item.get("type") == "Course"]
 
         return ArticulationNode(
             type=NodeType.COURSE,
             conjunction=Conjunction.AND,
             courses=courses,
             children=[],
-            notes=[]
+            notes=group_level_notes
         )
 
     children: list[ArticulationNode] = []
@@ -106,7 +103,7 @@ def parse_course_group(group: dict) -> ArticulationNode:
         if item.get("type") != "Course":
             continue
 
-        course = make_course(item, extra_notes=group_level_notes)
+        course = make_course(item)
         children.append(
             ArticulationNode(
                 type=NodeType.COURSE,
@@ -122,7 +119,7 @@ def parse_course_group(group: dict) -> ArticulationNode:
         conjunction=Conjunction.OR,
         courses=[],
         children=children,
-        notes=[]
+        notes=group_level_notes
     )
 
 
@@ -891,6 +888,8 @@ def run() -> None:
         flush_subjects_for_university(university_name, subjects_map)
 
         print("\n")
+
+    print("Finished collecting all articulations.")
 
 
 if __name__ == "__main__":
