@@ -496,45 +496,6 @@ def get_articulations(all_courses_json: dict) -> list[dict]:
     return out
 
 
-def save_subject(university_name: str, subject: str, subject_name: str) -> None:
-    subjects_path = Path(f"data/universities/{university_name}/subjects.json")
-
-    data = []
-
-    if subjects_path.exists():
-        with open(subjects_path, "r") as file:
-            try:
-                data = json.load(file)
-            except json.decoder.JSONDecodeError:
-                pass  # Just an empty file
-    else:
-        subjects_path.parent.mkdir(exist_ok=True, parents=True)
-
-    subjects: list[dict] = []
-
-    for item in data:
-        prefix = item.get("prefix")
-        name = item.get("name")
-        subjects.append({"prefix": prefix, "name": name})
-
-    changed = False
-
-    found = next((s for s in subjects if s["prefix"] == subject), None)
-    if found is None:
-        subjects.append({"prefix": subject, "name": subject_name or subject})
-        changed = True
-    elif subject_name and found.get("name") != subject_name:
-        found["name"] = subject_name
-        changed = True
-
-    if not changed:
-        return
-
-    subjects.sort(key=lambda s: s["prefix"])
-    with open(subjects_path, "w") as out:
-        json.dump(subjects, out, indent=4)
-
-
 def build_receiving_row(subject_prefix: str, key: str, payload: dict) -> dict:
     receiving_type: str = payload["receiving_type"]
 
@@ -596,26 +557,6 @@ def build_receiving_row(subject_prefix: str, key: str, payload: dict) -> dict:
     }
 
 
-def get_courses(courses_path: Path, subject: str, articulations_for_subject: list[dict]) -> list[dict]:
-    if courses_path.exists():
-        with open(courses_path, "r") as f:
-            return json.load(f)
-
-    index: dict[str, dict] = {}
-    for a in articulations_for_subject:
-        key = receiving_key(a)
-
-        if key and key not in index:
-            index[key] = build_receiving_row(subject, key, a)
-
-    courses_path.parent.mkdir(parents=True, exist_ok=True)
-    rows = list(index.values())
-    with open(courses_path, "w") as out:
-        json.dump(rows, out, indent=4)
-
-    return rows
-
-
 def parse_num(num: str) -> tuple[int, str]:
     suffix = num.strip().upper()
     i = 0
@@ -649,7 +590,7 @@ def subject_bucket(articulation: dict) -> tuple[str, str, str]:
 
     if receiving_type == "COURSE":
         subject = articulation["receiving"]["prefix"]
-        name = articulation["receiving"].get("prefix_description") or subject
+        name = articulation["receiving"].get("prefix_description").strip() or subject
         return subject, subject, name
 
     if receiving_type == "SERIES":
