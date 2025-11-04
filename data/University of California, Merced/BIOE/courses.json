@@ -1,0 +1,181 @@
+[
+    {
+        "type": "COURSE",
+        "prefix": "BIOE",
+        "number": "001",
+        "key": "BIOE 001",
+        "title": "Bioengineering Seminar",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BIOE",
+        "number": "002",
+        "key": "BIOE 002",
+        "title": "Fundamentals of Molecular Biology",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": []
+    },
+    {
+        "type": "SERIES",
+        "key": "BIOE 002 + 002L",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "prefix": "BIOE",
+                "prefix_description": "Bioengineering",
+                "key": "BIOE 002",
+                "number": "002",
+                "title": "Fundamentals of Molecular Biology",
+                "min_units": 4.0,
+                "max_units": 4.0
+            },
+            {
+                "prefix": "BIOE",
+                "prefix_description": "Bioengineering",
+                "key": "BIOE 002L",
+                "number": "002L",
+                "title": "Fundamentals of Molecular Biology Laboratory",
+                "min_units": 1.0,
+                "max_units": 1.0
+            }
+        ],
+        "articulations": [
+            {
+                "sending_name": "Merced College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "BIOL",
+                            "number": "-04A",
+                            "key": "BIOL -04A",
+                            "title": "Fundamentals of Biology: The Cell and Evolution",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BIOE",
+        "number": "002L",
+        "key": "BIOE 002L",
+        "title": "Fundamentals of Molecular Biology Laboratory",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BIOE",
+        "number": "021",
+        "key": "BIOE 021",
+        "title": "Introduction to Computing with Python",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": [
+            {
+                "sending_name": "Orange Coast College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CS",
+                            "number": "A131",
+                            "key": "CS A131",
+                            "title": "Python Programming I  ",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Pasadena City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CS",
+                            "number": "003C",
+                            "key": "CS 003C",
+                            "title": "Fundamentals of Computer Science (Python)",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BIOE",
+        "number": "045",
+        "key": "BIOE 045",
+        "title": "Introduction to Biomaterials",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BIOE",
+        "number": "060",
+        "key": "BIOE 060",
+        "title": "Signals, Systems and Digital Imaging Processing",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BIOE",
+        "number": "065",
+        "key": "BIOE 065",
+        "title": "Biocircuits Theory",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": [
+            {
+                "sending_name": "Sacramento City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "400",
+                            "key": "ENGR 400",
+                            "title": "Introduction to Electrical Circuits and Devices",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]

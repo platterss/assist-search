@@ -1,0 +1,53 @@
+[
+    {
+        "type": "COURSE",
+        "prefix": "CEE",
+        "number": "10",
+        "key": "CEE 10",
+        "title": "Introduction to Chemical and Environmental Engineering",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": [
+            {
+                "sending_name": "Chaffey College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGIN",
+                            "number": "11",
+                            "key": "ENGIN 11",
+                            "title": "Introduction to Engineering",
+                            "notes": [],
+                            "min_units": 2.0,
+                            "max_units": 2.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Reedley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "10",
+                            "key": "ENGR 10",
+                            "title": "Introduction to Engineering",
+                            "notes": [],
+                            "min_units": 2.0,
+                            "max_units": 2.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]

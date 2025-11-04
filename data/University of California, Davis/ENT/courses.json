@@ -1,0 +1,53 @@
+[
+    {
+        "type": "COURSE",
+        "prefix": "ENT",
+        "number": "001",
+        "key": "ENT 001",
+        "title": "Art, Science & the World of Insects",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "ENT",
+        "number": "002",
+        "key": "ENT 002",
+        "title": "Biodiversity",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "ENT",
+        "number": "010",
+        "key": "ENT 010",
+        "title": "Natural History of Insects",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": [
+            {
+                "sending_name": "Fullerton College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "BIOL",
+                            "number": "104 F",
+                            "key": "BIOL 104 F",
+                            "title": "Biology of Insects and Spiders",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]

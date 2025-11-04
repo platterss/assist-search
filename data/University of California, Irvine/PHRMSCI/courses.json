@@ -1,0 +1,126 @@
+[
+    {
+        "type": "COURSE",
+        "prefix": "PHRMSCI",
+        "number": "120",
+        "key": "PHRMSCI 120",
+        "title": "Human Physiology",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": []
+    },
+    {
+        "type": "SERIES",
+        "key": "PHRMSCI 120 + 120L",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "prefix": "PHRMSCI",
+                "prefix_description": "Pharmaceutical Sciences",
+                "key": "PHRMSCI 120",
+                "number": "120",
+                "title": "Human Physiology",
+                "min_units": 4.0,
+                "max_units": 4.0
+            },
+            {
+                "prefix": "PHRMSCI",
+                "prefix_description": "Pharmaceutical Sciences",
+                "key": "PHRMSCI 120L",
+                "number": "120L",
+                "title": "Human Physiology Lab",
+                "min_units": 2.0,
+                "max_units": 2.0
+            }
+        ],
+        "articulations": [
+            {
+                "sending_name": "Barstow Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "BIOL",
+                            "number": "5",
+                            "key": "BIOL 5",
+                            "title": "Human Physiology",
+                            "notes": [
+                                "Lower division credit for this major only",
+                                "Subject credit for this major only"
+                            ],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Lassen Community College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "BIOL",
+                                    "number": "22",
+                                    "key": "BIOL 22",
+                                    "title": "Human Physiology with Lab",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "BIOL",
+                                    "number": "25",
+                                    "key": "BIOL 25",
+                                    "title": "Human Anatomy and Physiology I",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                },
+                                {
+                                    "prefix": "BIOL",
+                                    "number": "26",
+                                    "key": "BIOL 26",
+                                    "title": "Human Anatomy and Physiology II",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
+    },
+    {
+        "type": "COURSE",
+        "prefix": "PHRMSCI",
+        "number": "120L",
+        "key": "PHRMSCI 120L",
+        "title": "Human Physiology Lab",
+        "min_units": 2.0,
+        "max_units": 2.0,
+        "articulations": []
+    }
+]

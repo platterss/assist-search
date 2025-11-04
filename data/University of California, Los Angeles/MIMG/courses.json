@@ -1,0 +1,43 @@
+[
+    {
+        "type": "COURSE",
+        "prefix": "MIMG",
+        "number": "5",
+        "key": "MIMG 5",
+        "title": "Science of Memory and Learning",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "MIMG",
+        "number": "6",
+        "key": "MIMG 6",
+        "title": "Microbiology for Nonmajors",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": [
+            {
+                "sending_name": "Santa Barbara City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "BMS",
+                            "number": "157",
+                            "key": "BMS 157",
+                            "title": "General Microbiology",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]

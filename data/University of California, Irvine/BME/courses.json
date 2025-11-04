@@ -1,0 +1,2522 @@
+[
+    {
+        "type": "COURSE",
+        "prefix": "BME",
+        "number": "1",
+        "key": "BME 1",
+        "title": "Introduction to Biomedical Engineering",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BME",
+        "number": "50A",
+        "key": "BME 50A",
+        "title": "Cell and Molecular Engineering",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": []
+    },
+    {
+        "type": "SERIES",
+        "key": "BME 50A + 50B",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "prefix": "BME",
+                "prefix_description": "Biomedical Engineering and Biomedical Engineering: Premedical",
+                "key": "BME 50A",
+                "number": "50A",
+                "title": "Cell and Molecular Engineering",
+                "min_units": 4.0,
+                "max_units": 4.0
+            },
+            {
+                "prefix": "BME",
+                "prefix_description": "Biomedical Engineering and Biomedical Engineering: Premedical",
+                "key": "BME 50B",
+                "number": "50B",
+                "title": "Cell and Molecular Engineering",
+                "min_units": 4.0,
+                "max_units": 4.0
+            }
+        ],
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BME",
+        "number": "50B",
+        "key": "BME 50B",
+        "title": "Cell and Molecular Engineering",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BME",
+        "number": "60A",
+        "key": "BME 60A",
+        "title": "Engineering Analysis/Design: Data Acquisition",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BME",
+        "number": "60B",
+        "key": "BME 60B",
+        "title": "Engineering Analysis/Design: Data Analysis",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": [
+            {
+                "sending_name": "Antelope Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "125",
+                            "key": "ENGR 125",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Bakersfield College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "B19C",
+                                    "key": "ENGR B19C",
+                                    "title": "Introduction to Programming Concepts and Methodologies for Engineers",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "B20",
+                                    "key": "ENGR B20",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Butte College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "2",
+                            "key": "ENGR 2",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cabrillo College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CS",
+                                    "number": "11M",
+                                    "key": "CS 11M",
+                                    "title": "Introduction to C/C++ Programming Using Microcontrollers",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CS",
+                                    "number": "19",
+                                    "key": "CS 19",
+                                    "title": "C++ Programming",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "30",
+                                    "key": "ENGR 30",
+                                    "title": "Computer Applications in Engineering",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Canada College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "215",
+                            "key": "ENGR 215",
+                            "title": "Computational Methods for Engineers and Scientists",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cerritos College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "220",
+                            "key": "ENGR 220",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Chabot College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "25",
+                            "key": "ENGR 25",
+                            "title": "Computational Methods for Engineers and Scientists",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Clovis Community College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "5",
+                                    "key": "ENGR 5",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "40",
+                                    "key": "ENGR 40",
+                                    "title": "Programming for Scientists and Engineers",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Marin",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGG",
+                            "number": "150",
+                            "key": "ENGG 150",
+                            "title": "Programming in MATLAB for Engineers",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of San Mateo",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "215",
+                            "key": "ENGR 215",
+                            "title": "Computational Methods for Engineers and Scientists",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Canyons",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "220",
+                            "key": "ENGR 220",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Desert",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "MATH",
+                            "number": "20",
+                            "key": "MATH 20",
+                            "title": "Programming and Problem Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Redwoods",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "MATH",
+                            "number": "4",
+                            "key": "MATH 4",
+                            "title": "MATLAB Programming",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Sequoias",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "020",
+                            "key": "ENGR 020",
+                            "title": "MATLAB Programming",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Contra Costa College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGIN",
+                            "number": "170",
+                            "key": "ENGIN 170",
+                            "title": "Programming for Engineering Science - MATLAB",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cuesta College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "210",
+                            "key": "ENGR 210",
+                            "title": "Computational Methods for Engineers",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cypress College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "220 C",
+                            "key": "ENGR 220 C",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Diablo Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGIN",
+                            "number": "136",
+                            "key": "ENGIN 136",
+                            "title": "Computer Programming for Engineers Using MATLAB",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "East Los Angeles College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENG GEN",
+                                    "number": "122",
+                                    "key": "ENG GEN 122",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENG GEN",
+                                    "number": "121",
+                                    "key": "ENG GEN 121",
+                                    "title": "Programming for Engineers: C++",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "El Camino College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CSCI",
+                            "number": "17",
+                            "key": "CSCI 17",
+                            "title": "Computer Programming in MATLAB",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Evergreen Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "010",
+                            "key": "ENGR 010",
+                            "title": "Introduction to Engineering",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Foothill College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "11",
+                            "key": "ENGR 11",
+                            "title": "Programming & Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 5.0,
+                            "max_units": 5.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Fresno City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "5",
+                            "key": "ENGR 5",
+                            "title": "Programming and Problem Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Fullerton College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "220 F",
+                            "key": "ENGR 220 F",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Gavilan College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "5",
+                            "key": "ENGR 5",
+                            "title": "Engineering Programming and Problem Solving",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "156",
+                            "key": "ENGR 156",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Golden West College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "G220",
+                            "key": "ENGR G220",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Grossmont College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "PSC",
+                            "number": "120",
+                            "key": "PSC 120",
+                            "title": "Fundamentals of Scientific Computing (MATLAB)",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Hartnell College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "EGN",
+                                    "number": "5",
+                                    "key": "EGN 5",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CSS",
+                                    "number": "4",
+                                    "key": "CSS 4",
+                                    "title": "Programming for Scientists and Engineers",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "EGN",
+                                    "number": "7L",
+                                    "key": "EGN 7L",
+                                    "title": "Computer Interface with the Physical World Laboratory",
+                                    "notes": [],
+                                    "min_units": 1.0,
+                                    "max_units": 1.0
+                                },
+                                {
+                                    "prefix": "CSS",
+                                    "number": "2A",
+                                    "key": "CSS 2A",
+                                    "title": "Object Oriented Programming",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Irvine Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "20",
+                            "key": "ENGR 20",
+                            "title": "Introduction to Programming and Problem Solving with MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Laney College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGIN",
+                            "number": "77",
+                            "key": "ENGIN 77",
+                            "title": "Computer Programming for Engineers Using MATLAB",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Las Positas College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "26",
+                            "key": "ENGR 26",
+                            "title": "Computational Methods for Engineers and Scientists",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles Pierce College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENG GEN",
+                            "number": "122",
+                            "key": "ENG GEN 122",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles Trade Technical College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENG GEN",
+                            "number": "122",
+                            "key": "ENG GEN 122",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles Valley College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CS",
+                                    "number": "117",
+                                    "key": "CS 117",
+                                    "title": "Intermediate Programming Using C/C++",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENG GEN",
+                                    "number": "122",
+                                    "key": "ENG GEN 122",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Madera Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR ",
+                            "number": "40",
+                            "key": "ENGR 40",
+                            "title": "Programming for Scientists and Engineers",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Mission College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "MAT",
+                            "number": "005",
+                            "key": "MAT 005",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Monterey Peninsula College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "17",
+                            "key": "ENGR 17",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Moorpark College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "M10",
+                            "key": "ENGR M10",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Mount San Antonio College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "7",
+                                    "key": "ENGR 7",
+                                    "title": "Programming Applications for Engineers",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "6",
+                                    "key": "ENGR 6",
+                                    "title": "Introduction to Engineering Programming Concepts and Methodologies",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Napa Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGI",
+                            "number": "160",
+                            "key": "ENGI 160",
+                            "title": "Programming with MATLAB for Engineers and Scientists",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Norco College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENE",
+                            "number": "48",
+                            "key": "ENE 48",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Ohlone College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGI",
+                            "number": "111",
+                            "key": "ENGI 111",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Orange Coast College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "A220",
+                            "key": "ENGR A220",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Oxnard College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "R148",
+                            "key": "ENGR R148",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Pasadena City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "018",
+                            "key": "ENGR 018",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Reedley College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "5",
+                                    "key": "ENGR 5",
+                                    "title": "Programming and Problem Solving in MATLAB",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "40",
+                                    "key": "ENGR 40",
+                                    "title": "Programming for Scientists and Engineers",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Rio Hondo College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "212",
+                            "key": "ENGR 212",
+                            "title": "Computational Methods in MATLAB/Octave",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Sacramento City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "405",
+                            "key": "ENGR 405",
+                            "title": "Engineering Problem Solving",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "San Jose City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "008",
+                            "key": "ENGR 008",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Barbara City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CS",
+                            "number": "133",
+                            "key": "CS 133",
+                            "title": "Introduction to Programming for Engineers",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Monica College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "CS",
+                            "number": "30",
+                            "key": "CS 30",
+                            "title": "MATLAB Programming",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Rosa Junior College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "6",
+                            "key": "ENGR 6",
+                            "title": "Programming in MATLAB for Engineers",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Sierra College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "220",
+                            "key": "ENGR 220",
+                            "title": "Programming and Problem Solving in Engineering",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Skyline College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "215",
+                                    "key": "ENGR 215",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "CIS",
+                                    "number": "250",
+                                    "key": "CIS 250",
+                                    "title": "Introduction to Object-Oriented Programming: C++",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                },
+                                {
+                                    "prefix": "CIS",
+                                    "number": "257",
+                                    "key": "CIS 257",
+                                    "title": "Introduction to Microcontrollers with C/C++",
+                                    "notes": [],
+                                    "min_units": 1.0,
+                                    "max_units": 1.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Solano Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "026",
+                            "key": "ENGR 026",
+                            "title": "Mathematics and Engineering Problem Solving Using Matlab",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Southwestern College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "221",
+                            "key": "ENGR 221",
+                            "title": "Computer Programming and Applications - MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Taft College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "1550",
+                                    "key": "ENGR 1550",
+                                    "title": "Computer Programming and Problem Solving with Lab",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "1540",
+                                    "key": "ENGR 1540",
+                                    "title": "Introduction to Programming Concepts and Methodologies for Engineers with Lab",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "V14",
+                            "key": "ENGR V14",
+                            "title": "MATLAB: Programming and Problem Solving",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "West Los Angeles College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENG GEN",
+                            "number": "120",
+                            "key": "ENG GEN 120",
+                            "title": "INTRODUCTION TO PROGRAMMING CONCEPTS AND METHODOLOGIES FOR ENGINEERS",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "West Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "060",
+                            "key": "ENGR 060",
+                            "title": "Programming and Problem-Solving in MATLAB",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    },
+    {
+        "type": "COURSE",
+        "prefix": "BME",
+        "number": "60C",
+        "key": "BME 60C",
+        "title": "Engineering Analysis/Design: Computer-Aided Design",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": [
+            {
+                "sending_name": "Antelope Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "140",
+                            "key": "ENGR 140",
+                            "title": "Engineering 3D Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Bakersfield College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "B24",
+                            "key": "ENGR B24",
+                            "title": "Engineering Graphics with Solidworks",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cabrillo College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "25",
+                                    "key": "ENGR 25",
+                                    "title": "Graphics and Design",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "26",
+                                    "key": "ENGR 26",
+                                    "title": "Solid Modeling",
+                                    "notes": [],
+                                    "min_units": 1.0,
+                                    "max_units": 1.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Canada College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "210",
+                            "key": "ENGR 210",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cerritos College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "112",
+                            "key": "ENGR 112",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Chabot College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "22",
+                            "key": "ENGR 22",
+                            "title": "Engineering Design Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Clovis Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "2",
+                            "key": "ENGR 2",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Marin",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGG",
+                            "number": "125",
+                            "key": "ENGG 125",
+                            "title": "Introductory Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of San Mateo",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "210",
+                            "key": "ENGR 210",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Canyons",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "110",
+                            "key": "ENGR 110",
+                            "title": "Introduction to Engineering Graphics with AutoCAD",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Sequoias",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "001",
+                            "key": "ENGR 001",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Contra Costa College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGIN",
+                            "number": "200",
+                            "key": "ENGIN 200",
+                            "title": "Engineering Design Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cypress College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "102 C",
+                                    "key": "ENGR 102 C",
+                                    "title": "Engineering Design Graphics",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGR",
+                                    "number": "205 C",
+                                    "key": "ENGR 205 C",
+                                    "title": "Advanced 3D Solid Modeling and Simulation",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "El Camino College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "15",
+                            "key": "ENGR 15",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Evergreen Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "018",
+                            "key": "ENGR 018",
+                            "title": "Engineering Design and Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Fresno City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "2",
+                            "key": "ENGR 2",
+                            "title": "Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Fullerton College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "105 F",
+                            "key": "ENGR 105 F",
+                            "title": "Engineering CAD",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Gavilan College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "1",
+                            "key": "ENGR 1",
+                            "title": "Graphical Communication and Design",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "122",
+                            "key": "ENGR 122",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Hartnell College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "EGN",
+                            "number": "2",
+                            "key": "EGN 2",
+                            "title": "Engineering Graphics and Design",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Laney College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGIN",
+                            "number": "22",
+                            "key": "ENGIN 22",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Lemoore College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "020",
+                            "key": "ENGR 020",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Merced College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "-35",
+                            "key": "ENGR -35",
+                            "title": "Engineering Graphics ",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Mission College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "EGR",
+                            "number": "025",
+                            "key": "EGR 025",
+                            "title": "Engineering Graphics and Design",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Modesto Junior College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "127",
+                            "key": "ENGR 127",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Moorpark College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "M04",
+                            "key": "ENGR M04",
+                            "title": "Engineering Design/CAD",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Mount San Antonio College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "24",
+                            "key": "ENGR 24",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Norco College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENE",
+                            "number": "41",
+                            "key": "ENE 41",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Orange Coast College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "A180",
+                            "key": "ENGR A180",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Oxnard College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "R150",
+                            "key": "ENGR R150",
+                            "title": "Engineering Graphics and Design",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Pasadena City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "002",
+                            "key": "ENGR 002",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Reedley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "2",
+                            "key": "ENGR 2",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Sacramento City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "312",
+                            "key": "ENGR 312",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "San Joaquin Delta College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "2",
+                            "key": "ENGR 2",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "San Jose City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "006",
+                            "key": "ENGR 006",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Ana College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "125",
+                            "key": "ENGR 125",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Monica College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "11",
+                            "key": "ENGR 11",
+                            "title": "Engineering Graphics and Design",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Sierra College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "151",
+                            "key": "ENGR 151",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Skyline College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "210",
+                            "key": "ENGR 210",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Southwestern College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "110",
+                            "key": "ENGR 110",
+                            "title": "Engineering Design and Graphics",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Taft College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "1510",
+                            "key": "ENGR 1510",
+                            "title": "Engineering Graphics and Introduction to Design with Lab",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "V02",
+                            "key": "ENGR V02",
+                            "title": "Engineering Graphics and Design",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "West Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "020",
+                            "key": "ENGR 020",
+                            "title": "Engineering Graphics",
+                            "notes": [],
+                            "min_units": 4.0,
+                            "max_units": 4.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]

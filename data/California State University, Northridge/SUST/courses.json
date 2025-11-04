@@ -1,0 +1,48 @@
+[
+    {
+        "type": "COURSE",
+        "prefix": "SUST",
+        "number": "111",
+        "key": "SUST 111",
+        "title": "Understanding Climate Change",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": []
+    },
+    {
+        "type": "SERIES",
+        "key": "SUST 111 + 111L",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "prefix": "SUST",
+                "prefix_description": "Sustainability",
+                "key": "SUST 111",
+                "number": "111",
+                "title": "Understanding Climate Change",
+                "min_units": 3.0,
+                "max_units": 3.0
+            },
+            {
+                "prefix": "SUST",
+                "prefix_description": "Sustainability",
+                "key": "SUST 111L",
+                "number": "111L",
+                "title": "Understanding Climate Change Lab",
+                "min_units": 1.0,
+                "max_units": 1.0
+            }
+        ],
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "SUST",
+        "number": "111L",
+        "key": "SUST 111L",
+        "title": "Understanding Climate Change Lab",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "type": "COURSE",
+        "prefix": "SCI",
+        "number": "111",
+        "key": "SCI 111",
+        "title": "Understanding Climate Change",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": []
+    },
+    {
+        "type": "SERIES",
+        "key": "SCI 111 + 111L",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "prefix": "SCI",
+                "prefix_description": "Science",
+                "key": "SCI 111",
+                "number": "111",
+                "title": "Understanding Climate Change",
+                "min_units": 3.0,
+                "max_units": 3.0
+            },
+            {
+                "prefix": "SCI",
+                "prefix_description": "Science",
+                "key": "SCI 111L",
+                "number": "111L",
+                "title": "Understanding Climate Change Lab",
+                "min_units": 1.0,
+                "max_units": 1.0
+            }
+        ],
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "SCI",
+        "number": "111L",
+        "key": "SCI 111L",
+        "title": "Understanding Climate Change Lab",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    }
+]

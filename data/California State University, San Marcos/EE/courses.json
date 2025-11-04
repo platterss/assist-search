@@ -1,0 +1,72 @@
+[
+    {
+        "type": "COURSE",
+        "prefix": "EE",
+        "number": "100",
+        "key": "EE 100",
+        "title": "Introduction to Electrical Engineering",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "EE",
+        "number": "110",
+        "key": "EE 110",
+        "title": "Electrical Engineering Clinic",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "EE",
+        "number": "210",
+        "key": "EE 210",
+        "title": "Electrical Engineering Clinic II",
+        "min_units": 1.0,
+        "max_units": 1.0,
+        "articulations": []
+    },
+    {
+        "type": "COURSE",
+        "prefix": "EE",
+        "number": "280",
+        "key": "EE 280",
+        "title": "Introduction to Electronics",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": [
+            {
+                "sending_name": "Palomar College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ENGR",
+                            "number": "210",
+                            "key": "ENGR 210",
+                            "title": "Electrical Network Analysis",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        },
+                        {
+                            "prefix": "ENGR",
+                            "number": "210L",
+                            "key": "ENGR 210L",
+                            "title": "Electrical Network Analysis Lab",
+                            "notes": [],
+                            "min_units": 1.0,
+                            "max_units": 1.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            }
+        ]
+    }
+]
