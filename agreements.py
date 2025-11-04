@@ -1,45 +1,19 @@
-import json
 import request
 
-from pathlib import Path
-from institutions import create_institutions_file
 
+def get_agreements(university_id: str) -> dict:
+    print(f"Getting agreements for university ID {university_id}.")
+    url = f"https://www.assist.org/api/institutions/{university_id}/agreements"
+    agreements_json: list[dict] = request.get(url=url).json()
 
-def save_ccc_agreements(institutions: list[dict]) -> None:
-    for ccc in [i for i in institutions if i["category"] == "CCC"]:
-        print(f"Getting agreements for {ccc["name"]}")
+    agreements: dict = {}
+    existing_ids: set[int] = set()
 
-        url = f"https://www.assist.org/api/institutions/{ccc["id"]}/agreements"
-        agreements_json: list[dict] = request.get(url=url).json()
+    for agreement in agreements_json:
+        if not agreement["isCommunityCollege"] or agreement["institutionParentId"] in existing_ids:
+            continue
 
-        agreements: list[dict] = []
-        existing_ids: set[int] = set()
+        existing_ids.add(agreement["institutionParentId"])
+        agreements[agreement["institutionParentId"]] = max(agreement["sendingYearIds"])
 
-        for university in agreements_json:
-            if university["institutionParentId"] in existing_ids:
-                continue
-
-            existing_ids.add(university["institutionParentId"])
-            agreements.append(
-                {"id": university["institutionParentId"],
-                 "name": university["institutionName"],
-                 "years": university["receivingYearIds"]}
-            )
-
-        output_file = Path(f"data/colleges/{ccc["name"]}/agreements.json")
-        output_file.parent.mkdir(exist_ok=True, parents=True)
-        with open(output_file, 'w') as out:
-            json.dump(agreements, out, indent=4)
-
-
-def get_agreements() -> None:
-    create_institutions_file()
-
-    institutions_path = Path("data/institutions.json")
-    with open(institutions_path, "r") as file:
-        institutions: list[dict] = json.load(file)
-        save_ccc_agreements(institutions)
-
-
-if __name__ == "__main__":
-    get_agreements()
+    return agreements

@@ -1,6 +1,5 @@
 import json
 
-from agreements import get_agreements
 from classes import Conjunction, SendingArticulationNode, SendingCourse, NodeType
 from pathlib import Path
 
@@ -135,9 +134,6 @@ def print_articulations(course: dict) -> None:
 
 
 def main():
-    if not Path("data/colleges").exists():
-        get_agreements()
-
     while True:
         university: str = university_input()
         subject: dict = subject_input(university)

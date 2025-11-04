@@ -1,14 +1,13 @@
 import json
 import request
+import sys
 
 from classes import Conjunction, SendingArticulationNode, SendingCourse, NodeType
 from pathlib import Path
 from typing import Optional
 
 from agreements import get_agreements
-from institutions import create_institutions_file
-
-_AGREEMENTS_CACHE: dict[str, dict] = {}
+from institutions import get_institutions
 
 
 def as_obj(x):
@@ -227,21 +226,17 @@ def request_all_courses(year: int, sending: int, receiving: int, method: str) ->
     return all_courses_json
 
 
-def get_all_courses_json(sending_name: str, sending_id: int, receiving_id: int) -> dict | None:
-    latest_agreement_year = get_latest_agreement_year_between(sending_name, receiving_id)
-
-    if latest_agreement_year < 74:  # The modernized agreements view only started in year ID 74
+def get_all_courses_json(agreement_year: int, sending_id: int, receiving_id: int) -> dict | None:
+    if agreement_year < 74:  # The modernized agreements view only started in year ID 74
         return None
 
-    print(f"Latest year ID is {latest_agreement_year}.")
-
     try:
-        return request_all_courses(latest_agreement_year, sending_id, receiving_id, "AllMajors")
+        return request_all_courses(agreement_year, sending_id, receiving_id, "AllMajors")
     except FileNotFoundError:
         print("All majors was unsuccessful. Attempting all departments.")
 
     try:
-        return request_all_courses(latest_agreement_year, sending_id, receiving_id, "AllDepartments")
+        return request_all_courses(agreement_year, sending_id, receiving_id, "AllDepartments")
     except FileNotFoundError:
         print("All departments was unsuccessful.")
 
@@ -624,48 +619,6 @@ def upsert_sending_articulation(art_map: dict, college_name: str, sending: dict 
     return False
 
 
-def _load_agreements_for_college(college_name: str) -> dict:
-    cached = _AGREEMENTS_CACHE.get(college_name)
-    if cached is not None:
-        return cached
-
-    path = Path(f"data/colleges/{college_name}/agreements.json")
-    with open(path, "r") as file:
-        agreements: list[dict] = json.load(file)
-
-    by_id: dict[int, list[int]] = {}
-    max_by_id: dict[int, int] = {}
-    for agreement in agreements:
-        university_id = agreement.get("id")
-        years = agreement.get("years", [])
-
-        if isinstance(university_id, int) and isinstance(years, list) and years:
-            by_id[university_id] = years
-            try:
-                max_by_id[university_id] = max(years)
-            except ValueError:
-                pass
-
-    data = {"by_id": by_id, "max_by_id": max_by_id}
-    _AGREEMENTS_CACHE[college_name] = data
-    return data
-
-
-def get_latest_agreement_year_between(college_name: str, university_id: int) -> int:
-    data = _load_agreements_for_college(college_name)
-    return data["max_by_id"].get(university_id, -1)
-
-
-def get_institutions() -> list[dict]:
-    institutions_path = Path("data/institutions.json")
-
-    if not institutions_path.exists():
-        create_institutions_file()
-
-    with open(institutions_path, "r") as institutions_file:
-        return json.load(institutions_file)
-
-
 def subject_bucket(articulation: dict) -> list[tuple[str, str, str]]:
     receiving_type: str = articulation["receiving_type"]
 
@@ -815,17 +768,21 @@ def flush_subjects_for_university(name: str, subjects_map: dict[str, str]) -> No
             json.dump(new_payload, out, indent=4)
 
 
-def run() -> None:
-    get_agreements()
-    institutions = get_institutions()
+def run(desired_universities: list[str] = None) -> None:
+    if desired_universities is None or len(desired_universities) == 0:
+        desired_universities = ["CSU", "UC", "AICCU"]
+
+    institutions = get_institutions(create_new_if_existing=True)
 
     colleges = sorted([i for i in institutions if i["category"] == "CCC"], key=lambda i: i["name"])
-    universities = [i for i in institutions if i["category"] in ["CSU", "UC"]]
+    universities = [i for i in institutions if i["category"] in desired_universities]
 
     for university in universities:
         university_id = university["id"]
         university_name = university["name"]
         print(f"Getting articulations for {university_name} (ID {university_id}).")
+
+        all_agreements = get_agreements(university_id)
 
         rows_by_subject_dir: dict[str, list[dict]] = {}
         changed_subjects: dict[str, bool] = {}
@@ -834,9 +791,12 @@ def run() -> None:
         for college in colleges:
             college_id = college["id"]
             college_name = college["name"]
-            print(f"Getting articulation: {college_name} (ID {college_id}) -> {university_name} (ID {university_id}).")
+            agreement_year = all_agreements[college_id]
 
-            all_courses = get_all_courses_json(college_name, college_id, university_id)
+            print(f"Getting articulation: {college_name} (ID {college_id}) -> {university_name} (ID {university_id}) "
+                  f"for year ID {agreement_year}")
+
+            all_courses = get_all_courses_json(agreement_year, college_id, university_id)
 
             if all_courses is None:
                 print(f"{university_name} and {college_name} have no viable agreements.")
@@ -861,5 +821,15 @@ def run() -> None:
     print("Finished collecting all articulations.")
 
 
+def main():
+    desired_universities = [u.upper() for u in sys.argv[1:]]
+
+    if len(desired_universities) > 3:
+        print("Invalid number of universities provided.")
+        print("Choose from CSU, UC, and AICCU.")
+    else:
+        run(desired_universities)
+
+
 if __name__ == "__main__":
-    run()
+    main()

@@ -45,7 +45,9 @@ def reformat_institutions(raw_institutions) -> list[dict]:
     return institutions
 
 
-def create_institutions_file() -> None:
+def create_institutions_file() -> list[dict]:
+    print("Getting list of institutions.")
+
     raw_institutions = get_institutions_json()
     formatted_institutions = reformat_institutions(raw_institutions)
 
@@ -54,6 +56,18 @@ def create_institutions_file() -> None:
     with open(output_file, "w") as out:
         json.dump(formatted_institutions, out, indent=4)
 
+    return formatted_institutions
+
+
+def get_institutions(create_new_if_existing: bool = False) -> list[dict]:
+    institutions_path = Path("data/institutions.json")
+
+    if create_new_if_existing or not institutions_path.exists():
+        return create_institutions_file()
+
+    with open(institutions_path, "r") as file:
+        return json.load(file)
+
 
 if __name__ == "__main__":
-    create_institutions_file()
+    get_institutions(create_new_if_existing=True)
