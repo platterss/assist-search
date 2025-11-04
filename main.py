@@ -67,13 +67,13 @@ def get_universities() -> list[dict]:
 
 
 def get_subjects(university_name: str) -> list[dict]:
-    subjects_path = Path(f"data/universities/{university_name}/subjects.json")
+    subjects_path = Path(f"data/{university_name}/subjects.json")
     with open(subjects_path, "r") as subjects_file:
         return json.load(subjects_file)
 
 
 def get_course_numbers(university_name: str, subject_prefix: str):
-    courses_path = Path(f"data/universities/{university_name}/{subject_prefix}/courses.json")
+    courses_path = Path(f"data/{university_name}/{subject_prefix}/courses.json")
     with open(courses_path, "r") as courses_file:
         return json.load(courses_file)
 

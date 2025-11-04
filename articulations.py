@@ -676,7 +676,7 @@ def save_articulations(
 
         rows = rows_by_subject_dir.get(subject_dir)
         if rows is None:
-            courses_path = Path(f"data/universities/{university_name}/{subject_dir}/courses.json")
+            courses_path = Path(f"data/{university_name}/{subject_dir}/courses.json")
 
             if courses_path.exists():
                 with open(courses_path, "r") as f:
@@ -735,7 +735,7 @@ def flush_courses_for_university(name: str, rows: dict[str, list[dict]], subject
     for subject_dir, rows in rows.items():
         if not subjects.get(subject_dir):
             continue
-        courses_path = Path(f"data/universities/{name}/{subject_dir}/courses.json")
+        courses_path = Path(f"data/{name}/{subject_dir}/courses.json")
         courses_path.parent.mkdir(parents=True, exist_ok=True)
         with open(courses_path, "w") as f:
             json.dump(rows, f, indent=4)
@@ -744,7 +744,7 @@ def flush_courses_for_university(name: str, rows: dict[str, list[dict]], subject
 def flush_subjects_for_university(name: str, subjects_map: dict[str, str]) -> None:
     if not subjects_map:
         return
-    subjects_path = Path(f"data/universities/{name}/subjects.json")
+    subjects_path = Path(f"data/{name}/subjects.json")
     existing: list[dict] = []
     if subjects_path.exists():
         try:
