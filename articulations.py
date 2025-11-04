@@ -791,7 +791,7 @@ def run(desired_universities: list[str] = None) -> None:
         for college in colleges:
             college_id = college["id"]
             college_name = college["name"]
-            agreement_year = all_agreements[college_id]
+            agreement_year = all_agreements.get(college_id, -1)
 
             print(f"Getting articulation: {college_name} (ID {college_id}) -> {university_name} (ID {university_id}) "
                   f"for year ID {agreement_year}")
