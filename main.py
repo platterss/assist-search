@@ -1,19 +1,19 @@
 import json
 
 from agreements import get_agreements
-from classes import ArticulationNode, Conjunction, Course, NodeType
+from classes import Conjunction, SendingArticulationNode, SendingCourse, NodeType
 from pathlib import Path
 
 
-def make_node(data: dict) -> ArticulationNode:
+def make_node(data: dict) -> SendingArticulationNode:
     node_type = NodeType(data["type"])
     conjunction = Conjunction(data["conjunction"]) if data["conjunction"] else None
 
-    courses = [Course(**course_data) for course_data in data["courses"]]
+    courses = [SendingCourse(**course_data) for course_data in data["courses"]]
     children = [make_node(child) for child in data["children"]]
     notes = list(data.get("notes", []))
 
-    return ArticulationNode(
+    return SendingArticulationNode(
         type=node_type,
         conjunction=conjunction,
         courses=courses,
@@ -22,8 +22,8 @@ def make_node(data: dict) -> ArticulationNode:
     )
 
 
-def format_node(node: ArticulationNode) -> str:
-    def fmt(n: ArticulationNode, depth: int = 0) -> list[str]:
+def format_node(node: SendingArticulationNode) -> str:
+    def fmt(n: SendingArticulationNode, depth: int = 0) -> list[str]:
         indent = "  " * depth
         lines: list[str] = []
 

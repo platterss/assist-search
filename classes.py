@@ -15,9 +15,10 @@ class NodeType(str, Enum):
 
 
 @dataclass(frozen=True)
-class Course:
+class SendingCourse:
     prefix: str
     number: str
+    key: str
     title: str
     notes: list[str]
     min_units: float
@@ -25,15 +26,15 @@ class Course:
 
     @property
     def code(self) -> str:
-        return f"{self.prefix} {self.number}"
+        return self.key
 
 
 @dataclass
-class ArticulationNode:
+class SendingArticulationNode:
     type: NodeType
     conjunction: Optional[Conjunction]
-    courses: list[Course]
-    children: list[ArticulationNode]
+    courses: list[SendingCourse]
+    children: list[SendingArticulationNode]
     notes: list[str]
 
     def to_dict(self) -> dict:

@@ -1,7 +1,7 @@
 import json
 import request
 
-from classes import ArticulationNode, Conjunction, Course, NodeType
+from classes import Conjunction, SendingArticulationNode, SendingCourse, NodeType
 from pathlib import Path
 from typing import Optional
 
@@ -16,12 +16,25 @@ def as_obj(x):
 
 
 def make_course_key(prefix: str, number: str) -> str:
-    return f"{prefix} {number.strip()}"
+    return f"{prefix.strip()} {number.strip()}"
 
 
-def make_series_key(prefix: str, members: list[dict]) -> str:
-    nums = "+".join(member["number"].strip() for member in members)
-    return f"{prefix} {nums}"
+def make_series_key(members: list[dict]) -> str:
+    tokens = []
+    prev_prefix = None
+
+    for member in members or []:
+        prefix = str(member["prefix"]).strip()
+        number = str(member["number"]).strip()
+
+        if not tokens or prefix != prev_prefix:
+            tokens.append(f"{prefix} {number}")
+        else:
+            tokens.append(number)
+
+        prev_prefix = prefix
+
+    return " + ".join(tokens)
 
 
 def receiving_key(payload: dict) -> str:
@@ -33,18 +46,19 @@ def receiving_key(payload: dict) -> str:
 
     if receiving_type == "SERIES":
         series = payload["receiving_series"]
-        return make_series_key(series["courses"][0]["prefix"], series["courses"])
+        return make_series_key(series["courses"])
 
     if receiving_type == "REQUIREMENT":
-        return f"{payload["receiving_requirement"]["label"]}"
+        return f"{payload["receiving_requirement"]["name"]}"
 
     if receiving_type == "GE":
-        return f"{payload["receiving_ge"]["label"]}"
+        return f"{payload["receiving_ge"]["name"]}"
 
+    # shouldn't ever happen
     return payload.get("receiving_key", "")
 
 
-def make_course(obj: dict, extra_notes: Optional[list[str]] = None) -> Course:
+def make_sending_course(obj: dict, extra_notes: Optional[list[str]] = None) -> SendingCourse:
     notes = []
 
     for attribute in obj.get("attributes", []) or []:
@@ -59,18 +73,20 @@ def make_course(obj: dict, extra_notes: Optional[list[str]] = None) -> Course:
     if obj["prefix"] is None and obj["courseNumber"] is None:
         print("Found broken course.")
 
-        return Course(
+        return SendingCourse(
             prefix="Unknown",
             number="Course",
+            key=make_course_key("Unknown", "Course"),
             title="Missing Course",
             min_units=-1.0,
             max_units=-1.0,
             notes=["This particular course is broken on ASSIST and displays an empty course."]
         )
 
-    return Course(
+    return SendingCourse(
         prefix=obj["prefix"],
         number=obj["courseNumber"],
+        key=make_course_key(obj["prefix"], obj["courseNumber"]),
         title=obj["courseTitle"],
         min_units=float(obj["minUnits"]),
         max_units=float(obj["maxUnits"]),
@@ -78,7 +94,7 @@ def make_course(obj: dict, extra_notes: Optional[list[str]] = None) -> Course:
     )
 
 
-def parse_course_group(group: dict) -> ArticulationNode:
+def parse_course_group(group: dict) -> SendingArticulationNode:
     internal = group.get("courseConjunction", "And")
     items = sorted(group.get("items", []), key=lambda x: x.get("position", 0))
 
@@ -87,9 +103,9 @@ def parse_course_group(group: dict) -> ArticulationNode:
     ]
 
     if internal.lower() == "and":
-        courses = [make_course(item) for item in items if item.get("type") == "Course"]
+        courses = [make_sending_course(item) for item in items if item.get("type") == "Course"]
 
-        return ArticulationNode(
+        return SendingArticulationNode(
             type=NodeType.COURSE,
             conjunction=Conjunction.AND,
             courses=courses,
@@ -97,15 +113,15 @@ def parse_course_group(group: dict) -> ArticulationNode:
             notes=group_level_notes
         )
 
-    children: list[ArticulationNode] = []
+    children: list[SendingArticulationNode] = []
 
     for item in items:
         if item.get("type") != "Course":
             continue
 
-        course = make_course(item)
+        course = make_sending_course(item)
         children.append(
-            ArticulationNode(
+            SendingArticulationNode(
                 type=NodeType.COURSE,
                 conjunction=Conjunction.AND,
                 courses=[course],
@@ -114,7 +130,7 @@ def parse_course_group(group: dict) -> ArticulationNode:
             )
         )
 
-    return ArticulationNode(
+    return SendingArticulationNode(
         type=NodeType.GROUP,
         conjunction=Conjunction.OR,
         courses=[],
@@ -123,11 +139,11 @@ def parse_course_group(group: dict) -> ArticulationNode:
     )
 
 
-def combine_groups(groups: list[ArticulationNode], course_group_conjunctions: list[dict]) -> ArticulationNode:
+def combine_groups(groups: list[SendingArticulationNode], course_group_conjunctions: list[dict]) -> SendingArticulationNode:
     n = len(groups)
 
     if n == 0:
-        return ArticulationNode(type=NodeType.GROUP, conjunction=Conjunction.AND, courses=[], children=[], notes=[])
+        return SendingArticulationNode(type=NodeType.GROUP, conjunction=Conjunction.AND, courses=[], children=[], notes=[])
 
     if n == 1 and not course_group_conjunctions:
         return groups[0]
@@ -143,9 +159,9 @@ def combine_groups(groups: list[ArticulationNode], course_group_conjunctions: li
 
     if edges and all(edge.lower() == edges[0].lower() for edge in edges):
         conjunction = Conjunction.OR if edges[0].lower() == "or" else Conjunction.AND
-        return ArticulationNode(type=NodeType.GROUP, conjunction=conjunction, courses=[], children=groups, notes=[])
+        return SendingArticulationNode(type=NodeType.GROUP, conjunction=conjunction, courses=[], children=groups, notes=[])
 
-    segments: list[ArticulationNode] = []
+    segments: list[SendingArticulationNode] = []
     start = 0
     for i, edge in enumerate(edges):
         if edge.lower() == "or":
@@ -154,7 +170,7 @@ def combine_groups(groups: list[ArticulationNode], course_group_conjunctions: li
                 segments.append(seg_children[0])
             else:
                 segments.append(
-                    ArticulationNode(
+                    SendingArticulationNode(
                         type=NodeType.GROUP,
                         conjunction=Conjunction.AND,
                         courses=[],
@@ -170,7 +186,7 @@ def combine_groups(groups: list[ArticulationNode], course_group_conjunctions: li
             segments.append(seg_children[0])
         else:
             segments.append(
-                ArticulationNode(
+                SendingArticulationNode(
                     type=NodeType.GROUP,
                     conjunction=Conjunction.AND,
                     courses=[],
@@ -182,10 +198,10 @@ def combine_groups(groups: list[ArticulationNode], course_group_conjunctions: li
     if len(segments) == 1:
         return segments[0]
 
-    return ArticulationNode(type=NodeType.GROUP, conjunction=Conjunction.OR, courses=[], children=segments, notes=[])
+    return SendingArticulationNode(type=NodeType.GROUP, conjunction=Conjunction.OR, courses=[], children=segments, notes=[])
 
 
-def build_articulation_tree(sending_articulation: Optional[dict]) -> Optional[ArticulationNode]:
+def build_articulation_tree(sending_articulation: Optional[dict]) -> Optional[SendingArticulationNode]:
     if not sending_articulation:
         return None
 
@@ -273,38 +289,53 @@ def collect_cell_ids(result: dict) -> set[str]:
     return ids
 
 
+def make_course_dict(data: dict) -> dict:
+    return {
+        "prefix": data["prefix"].strip(),
+        "prefix_description": data["prefixDescription"].strip(),
+        "key": make_course_key(data["prefix"], data["courseNumber"]),
+        "number": data["courseNumber"].strip(),
+        "title": data["courseTitle"].strip(),
+        "min_units": data["minUnits"],
+        "max_units": data["maxUnits"],
+    }
+
+
 def walk_template_assets(assets) -> list[tuple[str | None, str, dict]]:
     assets = as_obj(assets)
     out: list[tuple[str | None, str, dict]] = []
+
+    def is_course_dict(d: dict) -> bool:
+        return isinstance(d, dict) and all(k in d for k in ("prefix", "courseNumber", "courseTitle"))
 
     def dfs(node, cell_id=None):
         if isinstance(node, dict):
             cid = node.get("id", cell_id)
 
-            if all(k in node for k in ("prefix", "courseNumber", "courseTitle")):
-                out.append((cid, "COURSE", {
-                    "prefix": node["prefix"],
-                    "prefix_description": node["prefixDescription"],
-                    "number": node["courseNumber"],
-                    "title": node["courseTitle"],
-                    "min_units": node["minUnits"],
-                    "max_units": node["maxUnits"]
-                }))
+            if is_course_dict(node):
+                out.append((cid, "COURSE", make_course_dict(node)))
+
+            series = node.get("series")
+            if series is not None:
+                courses = [make_course_dict(c) for c in series["courses"] if is_course_dict(c)]
+
+                if courses:
+                    conjunction = series.get("conjunction")
+                    out.append((cid, "SERIES", {
+                        "conjunction": conjunction,
+                        "courses": courses
+                    }))
 
             req = node.get("requirement")
-            if isinstance(req, dict):
+            if req is not None:
                 out.append((cid, "REQUIREMENT", {
-                    "label": req.get("code") or req.get("name") or "Requirement",
-                    "name": req.get("name"),
-                    "code": req.get("code")
+                    "name": req.get("name").strip(),
                 }))
 
             ge = node.get("generalEducationArea")
-            if isinstance(ge, dict):
+            if ge is not None:
                 out.append((cid, "GE", {
-                    "label": ge.get("abbreviation") or ge.get("name") or "GE Area",
-                    "name": ge.get("name"),
-                    "abbreviation": ge.get("abbreviation")
+                    "name": ge.get("name").strip()
                 }))
 
             for v in node.values():
@@ -320,7 +351,7 @@ def walk_template_assets(assets) -> list[tuple[str | None, str, dict]]:
 
 def extract_template_inventory(result: dict) -> list[dict]:
     used = collect_cell_ids(result)
-    items = walk_template_assets(result.get("templateAssets", "[]"))
+    items = walk_template_assets(result["templateAssets"])
 
     out: list[dict] = []
     seen_keys: set[str] = set()
@@ -330,27 +361,41 @@ def extract_template_inventory(result: dict) -> list[dict]:
             continue  # already has an articulation row
 
         if articulation_type == "COURSE":
-            key = f'{payload["prefix"]} {str(payload["number"]).strip()}'
+            key = f'{payload["prefix"]} {str(payload["number"])}'
             if key in seen_keys:
                 continue
+
             seen_keys.add(key)
             out.append({
                 "receiving_key": key,
                 "receiving_type": "COURSE",
-                "receiving": {
-                    "prefix": payload["prefix"],
-                    "prefix_description": payload["prefix_description"],
-                    "number": payload["number"],
-                    "title": payload["title"],
-                    "min_units": payload["min_units"],
-                    "max_units": payload["max_units"],
+                "receiving": payload,
+                "sending_articulation": None,
+            })
+        elif articulation_type == "SERIES":
+            courses = payload.get("courses") or []
+            if not courses:
+                continue
+
+            key = make_series_key(courses)
+            if key in seen_keys:
+                continue
+
+            seen_keys.add(key)
+            out.append({
+                "receiving_key": key,
+                "receiving_type": "SERIES",
+                "receiving_series": {
+                    "conjunction": payload["conjunction"].upper(),
+                    "courses": courses,
                 },
                 "sending_articulation": None,
             })
         elif articulation_type == "REQUIREMENT":
-            key = f'REQ: {payload["label"]}'
+            key = f"{payload["name"]}"
             if key in seen_keys:
                 continue
+
             seen_keys.add(key)
             out.append({
                 "receiving_key": key,
@@ -359,9 +404,10 @@ def extract_template_inventory(result: dict) -> list[dict]:
                 "sending_articulation": None,
             })
         elif articulation_type == "GE":
-            key = f'GE: {payload["label"]}'
+            key = f"{payload["name"]}"
             if key in seen_keys:
                 continue
+
             seen_keys.add(key)
             out.append({
                 "receiving_key": key,
@@ -376,7 +422,7 @@ def extract_template_inventory(result: dict) -> list[dict]:
 def get_course_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
     receiving = articulation["course"]
 
-    key = f"{receiving["prefix"]} {receiving["courseNumber"].strip()}"
+    key = make_course_key(receiving["prefix"], receiving["courseNumber"])
     if key in seen:
         return
 
@@ -384,32 +430,19 @@ def get_course_articulation(articulation: dict, node_dict: dict, seen: set[str],
     out.append({
         "receiving_key": key,
         "receiving_type": "COURSE",
-        "receiving": {
-            "prefix": receiving["prefix"],
-            "prefix_description": receiving["prefixDescription"],
-            "number": receiving["courseNumber"],
-            "title": receiving["courseTitle"],
-            "min_units": receiving["minUnits"],
-            "max_units": receiving["maxUnits"]
-        },
+        "receiving": make_course_dict(receiving),
         "sending_articulation": node_dict
     })
 
 
 def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
     series = articulation["series"]
-
-    series_courses = [{
-        "prefix": member["prefix"],
-        "number": member["courseNumber"],
-        "title": member["courseTitle"]}
-        for member in series.get("courses", [])
-    ]
+    series_courses = [make_course_dict(member) for member in series["courses"]]
 
     if not series_courses:
         return
 
-    series_key = make_series_key(series_courses[0]["prefix"], series_courses)
+    series_key = make_series_key(series_courses)
     if series_key in seen:
         return
 
@@ -418,7 +451,7 @@ def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str],
         "receiving_key": series_key,
         "receiving_type": "SERIES",
         "receiving_series": {
-            "conjunction": (series.get("conjunction") or "And").upper(),
+            "conjunction": series["conjunction"].upper(),
             "courses": series_courses
         },
         "sending_articulation": node_dict
@@ -427,7 +460,7 @@ def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str],
 
 def get_requirement_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
     req = articulation["requirement"]
-    label = req.get("code") or req.get("name") or "Requirement"
+    label = req["name"]
     key = label
 
     if key in seen:
@@ -438,9 +471,7 @@ def get_requirement_articulation(articulation: dict, node_dict: dict, seen: set[
         "receiving_key": key,
         "receiving_type": "REQUIREMENT",
         "receiving_requirement": {
-            "label": label,
-            "name": req.get("name"),
-            "code": req.get("code")
+            "name": req["name"]
         },
         "sending_articulation": node_dict
     })
@@ -448,7 +479,7 @@ def get_requirement_articulation(articulation: dict, node_dict: dict, seen: set[
 
 def get_ge_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
     ge = articulation["generalEducationArea"]
-    label = ge.get("abbreviation") or ge.get("name") or "GE Area"
+    label = ge["name"]
     key = label
 
     if key in seen:
@@ -459,9 +490,7 @@ def get_ge_articulation(articulation: dict, node_dict: dict, seen: set[str], out
         "receiving_key": key,
         "receiving_type": "GE",
         "receiving_ge": {
-            "label": label,
-            "name": ge.get("name"),
-            "abbreviation": ge.get("abbreviation")
+            "name": ge["name"]
         },
         "sending_articulation": node_dict
     })
@@ -504,9 +533,9 @@ def build_receiving_row(subject_prefix: str, key: str, payload: dict) -> dict:
 
         return {
             "type": "COURSE",
-            "key": key,
             "prefix": subject_prefix,
             "number": course["number"],
+            "key": key,
             "title": course["title"],
             "min_units": course["min_units"],
             "max_units": course["max_units"],
@@ -519,36 +548,26 @@ def build_receiving_row(subject_prefix: str, key: str, payload: dict) -> dict:
         return {
             "type": "SERIES",
             "key": key,
-            "prefix": subject_prefix,
             "conjunction": series["conjunction"],
             "courses": series["courses"],
             "articulations": []
         }
 
     if receiving_type == "REQUIREMENT":
-        req = payload["receiving_requirement"]
-
         return {
             "type": "REQUIREMENT",
             "key": key,
-            "prefix": subject_prefix,
-            "label": req["label"],
-            "name": req["name"],
             "articulations": []
         }
 
     if receiving_type == "GE":
-        ge = payload["receiving_ge"]
-
         return {
             "type": "GE",
             "key": key,
-            "prefix": subject_prefix,
-            "label": ge["label"],
-            "name": ge["name"],
             "articulations": []
         }
 
+    # shouldn't ever happen
     return {
         "type": "UNKNOWN",
         "key": key,
@@ -583,27 +602,6 @@ def row_sort_key(row: dict) -> tuple:
         k = parse_num(row.get("key", ""))
         series_flag = 0
         return k[0], k[1], series_flag, row.get("key", "")
-
-
-def subject_bucket(articulation: dict) -> tuple[str, str, str]:
-    receiving_type: str = articulation["receiving_type"]
-
-    if receiving_type == "COURSE":
-        subject = articulation["receiving"]["prefix"]
-        name = articulation["receiving"].get("prefix_description").strip() or subject
-        return subject, subject, name
-
-    if receiving_type == "SERIES":
-        subject = articulation["receiving_series"]["courses"][0]["prefix"]
-        return subject, subject, subject
-
-    if receiving_type == "REQUIREMENT":
-        return "# MISC-REQS #", "# MISC-REQS #", "Miscellaneous Requirements"
-
-    if receiving_type == "GE":
-        return "# GE-REQS #", "# GE-REQS #", "General Education Requirements"
-
-    return "UNKNOWN", "UNKNOWN", "UNKNOWN"
 
 
 def upsert_sending_articulation(art_map: dict, college_name: str, sending: dict | None) -> bool:
@@ -668,6 +666,34 @@ def get_institutions() -> list[dict]:
         return json.load(institutions_file)
 
 
+def subject_bucket(articulation: dict) -> list[tuple[str, str, str]]:
+    receiving_type: str = articulation["receiving_type"]
+
+    if receiving_type == "COURSE":
+        subject = articulation["receiving"]["prefix"]
+        name = articulation["receiving"]["prefix_description"].strip()
+        return [(subject, subject, name)]
+
+    if receiving_type == "SERIES":
+        seen = {}
+
+        for member in articulation["receiving_series"]["courses"]:
+            prefix = member["prefix"].strip()
+            if prefix not in seen:
+                seen[prefix] = (prefix, prefix, member["prefix_description"])
+
+        return list(seen.values())
+
+    if receiving_type == "REQUIREMENT":
+        return [("# MISC-REQS #", "# MISC-REQS #", "Miscellaneous Requirements")]
+
+    if receiving_type == "GE":
+        return [("# GE-REQS #", "# GE-REQS #", "General Education Requirements")]
+
+    # shouldn't ever happen
+    return [("UNKNOWN", "UNKNOWN", "UNKNOWN")]
+
+
 def save_articulations(
     university_name: str,
     college_name: str,
@@ -678,11 +704,12 @@ def save_articulations(
 ) -> None:
     buckets: dict[str, dict] = {}
     for a in all_articulations:
-        directory, prefix, name = subject_bucket(a)
-        if directory == "UNKNOWN":
-            continue
-        b = buckets.setdefault(directory, {"prefix": prefix, "name": name, "items": []})
-        b["items"].append(a)
+        for directory, prefix, name in subject_bucket(a):
+            if directory == "UNKNOWN":
+                continue
+
+            b = buckets.setdefault(directory, {"prefix": prefix, "name": name, "items": []})
+            b["items"].append(a)
 
     for subject_dir, meta in buckets.items():
         subject_prefix = meta["prefix"]
@@ -697,11 +724,13 @@ def save_articulations(
         rows = rows_by_subject_dir.get(subject_dir)
         if rows is None:
             courses_path = Path(f"data/universities/{university_name}/{subject_dir}/courses.json")
+
             if courses_path.exists():
                 with open(courses_path, "r") as f:
                     rows = json.load(f)
             else:
                 rows = []
+
             rows_by_subject_dir[subject_dir] = rows
             changed_subjects.setdefault(subject_dir, False)
 
@@ -716,15 +745,14 @@ def save_articulations(
                 row["key"] = key
                 row["type"] = "COURSE"
             elif rtype == "SERIES":
-                key = make_series_key(row["prefix"], row["courses"])
+                key = make_series_key(row["courses"])
                 row["key"] = key
                 row["type"] = "SERIES"
             else:
-                key = row.get("key") or row.get("label") or row.get("name") or f"{rtype}:{len(index)}"
-                row["key"] = key
+                key = row["key"]
             row.setdefault("articulations", [])
             index[key] = row
-            art_maps[key] = {art.get("sending_name"): art for art in row["articulations"]}
+            art_maps[key] = {art["sending_name"]: art for art in row["articulations"]}
 
         changed = False
 
@@ -735,7 +763,7 @@ def save_articulations(
                 art_maps[key] = {}
                 changed = True
 
-            if upsert_sending_articulation(art_maps[key], college_name, a.get("sending_articulation")):
+            if upsert_sending_articulation(art_maps[key], college_name, a["sending_articulation"]):
                 changed = True
 
         if not changed:
@@ -797,7 +825,7 @@ def run() -> None:
     for university in universities:
         university_id = university["id"]
         university_name = university["name"]
-        print(f"Getting articulations for {university_name} (ID {university_id})")
+        print(f"Getting articulations for {university_name} (ID {university_id}).")
 
         rows_by_subject_dir: dict[str, list[dict]] = {}
         changed_subjects: dict[str, bool] = {}
@@ -806,7 +834,7 @@ def run() -> None:
         for college in colleges:
             college_id = college["id"]
             college_name = college["name"]
-            print(f"Getting articulations between {college_name} (ID {college_id}) and {university_name}.")
+            print(f"Getting articulation: {college_name} (ID {college_id}) -> {university_name} (ID {university_id}).")
 
             all_courses = get_all_courses_json(college_name, college_id, university_id)
 
