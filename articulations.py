@@ -333,8 +333,9 @@ def walk_template_assets(assets) -> list[tuple[str | None, str, dict]]:
                     "name": ge.get("name").strip()
                 }))
 
-            for v in node.values():
-                dfs(v, cid)
+            for k, v in node.items():
+                if k != "series":
+                    dfs(v, cid)
         elif isinstance(node, list):
             for v in node:
                 dfs(v, cell_id)
