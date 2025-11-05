@@ -1215,20 +1215,45 @@
             {
                 "sending_name": "Hartnell College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "PHL",
-                            "number": "15",
-                            "key": "PHL 15",
-                            "title": "Critical Thinking and Logic",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "PHL",
+                                    "number": "15",
+                                    "key": "PHL 15",
+                                    "title": "Critical Thinking and Logic",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "ENGL",
+                                    "number": "C1001",
+                                    "key": "ENGL C1001",
+                                    "title": "Critical Thinking and Writing",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },

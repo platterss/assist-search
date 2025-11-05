@@ -10682,37 +10682,45 @@
                     "courses": [],
                     "children": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "BIOSCI",
-                                    "number": "107",
-                                    "key": "BIOSCI 107",
-                                    "title": "Molecular and Cellular Biology",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "BIOSCI",
+                                            "number": "107",
+                                            "key": "BIOSCI 107",
+                                            "title": "Molecular and Cellular Biology",
+                                            "notes": [],
+                                            "min_units": 4.0,
+                                            "max_units": 4.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "BIOSCI",
+                                            "number": "107H",
+                                            "key": "BIOSCI 107H",
+                                            "title": "Molecular and Cellular Biology - Honors",
+                                            "notes": [],
+                                            "min_units": 4.0,
+                                            "max_units": 4.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "BIOSCI",
-                                    "number": "107H",
-                                    "key": "BIOSCI 107H",
-                                    "title": "Molecular and Cellular Biology - Honors",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
                             "notes": []
                         },
                         {

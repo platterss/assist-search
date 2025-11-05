@@ -7350,20 +7350,45 @@
             {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "STAT",
-                            "number": "C1000",
-                            "key": "STAT C1000",
-                            "title": "Introduction to Statistics",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "PSYC",
+                                    "number": "215",
+                                    "key": "PSYC 215",
+                                    "title": "Introduction to Statistics in Social and Behavioral Sciences",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
