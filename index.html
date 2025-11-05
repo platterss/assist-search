@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIST Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>ASSIST Search</h1>
+        <p class="subtitle">Search for articulations between California community colleges and universities.</p>
+        <br>
+        <div class="header-actions">
+            <a class="github-btn" href="https://github.com/platterss/assist-search" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub repository">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                         0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                         -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                         .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                         -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0
+                         1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+                         1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+                         1.93-.01 2.2 0 .21.15.46.55.38C13.71 14.53 16 11.54 16 8A8 8 0 0 0 8 0z"/>
+              </svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-section">
+            <div class="form-group">
+                <label for="university-select" class="form-label">University</label>
+                <div class="select-wrapper">
+                    <select id="university-select" class="form-control">
+                        <option value="">Select a university...</option>
+                    </select>
+                    <span class="loading-spinner" id="university-loader" style="display: none;"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="subject-select" class="form-label">Subject</label>
+                <div class="select-wrapper">
+                    <select id="subject-select" class="form-control" disabled>
+                        <option value="">Select a subject...</option>
+                    </select>
+                    <span class="loading-spinner" id="subject-loader" style="display: none;"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="course-select" class="form-label">Course</label>
+                <div class="select-wrapper">
+                    <select id="course-select" class="form-control" disabled>
+                        <option value="">Select a course...</option>
+                    </select>
+                    <span class="loading-spinner" id="course-loader" style="display: none;"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="articulation-results" class="articulation-results" style="display: none;">
+            <div class="results-header">
+                <h2>Articulation Results</h2>
+                <p class="selected-course" id="selected-course-display"></p>
+            </div>
+
+            <div id="articulation-loading" class="articulation-loading" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>Loading articulations...</p>
+            </div>
+
+            <div id="articulation-cards" class="articulation-cards"></div>
+
+            <div id="no-articulations" class="no-articulations" style="display: none;">
+                <p>No articulations found for the selected course.<br>It will have to be taken at the university.</p>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
