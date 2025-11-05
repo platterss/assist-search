@@ -3,7 +3,7 @@
 Python data scraper for [ASSIST.org](https://www.assist.org). It is designed to minimize requests to ASSIST and store
 data in a format that allows it to be easily "reverse searched."
 
-This is also a [website]().
+This is also a [website](https://platterss.github.io/assist-search/).
 
 All the data collected is stored in the `data` folder (>400 MB) and is free to use. See the 
 [wiki](https://github.com/platterss/assist-search/wiki) for information on how to use the data.
