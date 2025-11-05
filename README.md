@@ -6,7 +6,7 @@ data in a format that allows it to be easily "reverse searched."
 This is also a [website](https://platterss.github.io/assist-search/).
 
 All the data collected is stored in the `data` folder (>400 MB) and is free to use. See the 
-[wiki](https://github.com/platterss/assist-search/wiki) for information on how to use the data.
+[wiki](https://github.com/platterss/assist-search/wiki) for information on how the data is formatted.
 
 ## Prerequisites
 
@@ -20,6 +20,8 @@ With a populated `data` folder, you can run `main.py` to search for articulation
 ```
 python main.py
 ```
+
+It'd probably be a better experience just loading up `index.html` in your web browser since it'll also use local data.
 
 Articulation data can be fetched by running the articulations.py script.
 
