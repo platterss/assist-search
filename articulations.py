@@ -139,33 +139,50 @@ def parse_course_group(group: dict) -> SendingArticulationNode:
     )
 
 
-def combine_groups(groups: list[SendingArticulationNode], course_group_conjunctions: list[dict]) -> SendingArticulationNode:
+def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: list[dict]) -> SendingArticulationNode:
     n = len(groups)
 
     if n == 0:
-        return SendingArticulationNode(type=NodeType.GROUP, conjunction=Conjunction.AND, courses=[], children=[], notes=[])
+        return SendingArticulationNode(
+            type=NodeType.GROUP,
+            conjunction=Conjunction.AND,
+            courses=[],
+            children=[],
+            notes=[]
+        )
 
-    if n == 1 and not course_group_conjunctions:
+    if n == 1 and not group_conjunctions:
         return groups[0]
 
-    edges = ["And"] * max(0, n - 1)
-    for group in course_group_conjunctions or []:
+    edges: list[Optional[str]] = [None] * max(0, n - 1)
+    for group in group_conjunctions or []:
         conjunction = group.get("groupConjunction", "And")
         begin = int(group.get("sendingCourseGroupBeginPosition", 0))
         end = int(group.get("sendingCourseGroupEndPosition", max(0, n - 1)))
 
-        for i in range(max(0, begin), min(n - 1, end)):
+        low = max(0, begin)
+        high = min(n - 1, end)
+
+        for i in range(low, high):
             edges[i] = conjunction
+
+    edges = [(edge or "Or") for edge in edges]
 
     if edges and all(edge.lower() == edges[0].lower() for edge in edges):
         conjunction = Conjunction.OR if edges[0].lower() == "or" else Conjunction.AND
-        return SendingArticulationNode(type=NodeType.GROUP, conjunction=conjunction, courses=[], children=groups, notes=[])
+        return SendingArticulationNode(
+            type=NodeType.GROUP,
+            conjunction=conjunction,
+            courses=[],
+            children=groups,
+            notes=[]
+        )
 
     segments: list[SendingArticulationNode] = []
     start = 0
     for i, edge in enumerate(edges):
         if edge.lower() == "or":
-            seg_children = groups[start: i + 1]
+            seg_children = groups[start:i + 1]
             if len(seg_children) == 1 and seg_children[0].type == NodeType.COURSE:
                 segments.append(seg_children[0])
             else:
@@ -198,7 +215,13 @@ def combine_groups(groups: list[SendingArticulationNode], course_group_conjuncti
     if len(segments) == 1:
         return segments[0]
 
-    return SendingArticulationNode(type=NodeType.GROUP, conjunction=Conjunction.OR, courses=[], children=segments, notes=[])
+    return SendingArticulationNode(
+        type=NodeType.GROUP,
+        conjunction=Conjunction.OR,
+        courses=[],
+        children=segments,
+        notes=[]
+    )
 
 
 def build_articulation_tree(sending_articulation: Optional[dict]) -> Optional[SendingArticulationNode]:
