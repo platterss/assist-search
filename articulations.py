@@ -103,10 +103,11 @@ def parse_course_group(group: dict) -> SendingArticulationNode:
 
     if internal.lower() == "and":
         courses = [make_sending_course(item) for item in items if item.get("type") == "Course"]
+        conjunction = None if len(courses) == 1 else Conjunction.AND
 
         return SendingArticulationNode(
             type=NodeType.COURSE,
-            conjunction=Conjunction.AND,
+            conjunction=conjunction,
             courses=courses,
             children=[],
             notes=group_level_notes

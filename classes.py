@@ -38,10 +38,18 @@ class SendingArticulationNode:
     notes: list[str]
 
     def to_dict(self) -> dict:
-        return {
-            "type": self.type.value,
-            "conjunction": None if self.conjunction is None else self.conjunction.value,
+        out: dict = {
+            "type": self.type.value
+        }
+
+        # I find it looks better when the conjunction is after the type instead of at the bottom
+        if self.conjunction is not None:
+            out["conjunction"] = self.conjunction.value
+
+        out.update({
             "courses": [asdict(course) for course in self.courses],
             "children": [child.to_dict() for child in self.children],
             "notes": list(self.notes)
-        }
+        })
+
+        return out
