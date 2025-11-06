@@ -64,63 +64,71 @@
                 "sending_name": "Citrus College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunction": "OR",
                     "courses": [],
                     "children": [
                         {
                             "type": "GROUP",
-                            "conjunction": "OR",
+                            "conjunction": "AND",
                             "courses": [],
                             "children": [
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "GROUP",
+                                    "conjunction": "OR",
+                                    "courses": [],
+                                    "children": [
                                         {
-                                            "prefix": "ENGL",
-                                            "number": "C1000",
-                                            "key": "ENGL C1000",
-                                            "title": "Academic Reading and Writing ",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "C1000",
+                                                    "key": "ENGL C1000",
+                                                    "title": "Academic Reading and Writing ",
+                                                    "notes": [],
+                                                    "min_units": 4.0,
+                                                    "max_units": 4.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "C1000 H",
+                                                    "key": "ENGL C1000 H",
+                                                    "title": "Academic Reading and Writing - Honors",
+                                                    "notes": [],
+                                                    "min_units": 4.0,
+                                                    "max_units": 4.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "102",
+                                                    "key": "ENGL 102",
+                                                    "title": "Introduction to Literature",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
                                         }
                                     ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "ENGL",
-                                            "number": "C1000 H",
-                                            "key": "ENGL C1000 H",
-                                            "title": "Academic Reading and Writing - Honors",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "ENGL",
-                                            "number": "102",
-                                            "key": "ENGL 102",
-                                            "title": "Introduction to Literature",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
                                     "notes": []
                                 }
                             ],
@@ -128,151 +136,159 @@
                         },
                         {
                             "type": "GROUP",
-                            "conjunction": "OR",
+                            "conjunction": "AND",
                             "courses": [],
                             "children": [
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "GROUP",
+                                    "conjunction": "OR",
+                                    "courses": [],
+                                    "children": [
                                         {
-                                            "prefix": "ENGL",
-                                            "number": "103",
-                                            "key": "ENGL 103",
-                                            "title": "Composition and Critical Thinking - Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "103",
+                                                    "key": "ENGL 103",
+                                                    "title": "Composition and Critical Thinking - Honors",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "103H",
+                                                    "key": "ENGL 103H",
+                                                    "title": "Composition and Critical Thinking - Honors",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "C1001",
+                                                    "key": "ENGL C1001",
+                                                    "title": " Critical Thinking and Writing ",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "C1001 H",
+                                                    "key": "ENGL C1001 H",
+                                                    "title": " Critical Thinking and Writing - Honors ",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 },
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "GROUP",
+                                    "conjunction": "OR",
+                                    "courses": [],
+                                    "children": [
                                         {
-                                            "prefix": "ENGL",
-                                            "number": "103H",
-                                            "key": "ENGL 103H",
-                                            "title": "Composition and Critical Thinking - Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "HUM",
+                                                    "number": "101",
+                                                    "key": "HUM 101",
+                                                    "title": "Humanities - Prehistory through the Medieval Period",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "HUM",
+                                                    "number": "101H",
+                                                    "key": "HUM 101H",
+                                                    "title": "Humanities- Prehistory through the Medieval Period - Honor",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "HUM",
+                                                    "number": "102",
+                                                    "key": "HUM 102",
+                                                    "title": "Humanities from the Renaissance through the 19th Century",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "HUM",
+                                                    "number": "102H",
+                                                    "key": "HUM 102H",
+                                                    "title": "Humanities from the Renaissance through the 19th Century - Honors",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
                                         }
                                     ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "ENGL",
-                                            "number": "C1001",
-                                            "key": "ENGL C1001",
-                                            "title": " Critical Thinking and Writing ",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "ENGL",
-                                            "number": "C1001 H",
-                                            "key": "ENGL C1001 H",
-                                            "title": " Critical Thinking and Writing - Honors ",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "GROUP",
-                            "conjunction": "OR",
-                            "courses": [],
-                            "children": [
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "101",
-                                            "key": "HUM 101",
-                                            "title": "Humanities - Prehistory through the Medieval Period",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "101H",
-                                            "key": "HUM 101H",
-                                            "title": "Humanities- Prehistory through the Medieval Period - Honor",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "102",
-                                            "key": "HUM 102",
-                                            "title": "Humanities from the Renaissance through the 19th Century",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "102H",
-                                            "key": "HUM 102H",
-                                            "title": "Humanities from the Renaissance through the 19th Century - Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
                                     "notes": []
                                 }
                             ],
@@ -286,81 +302,86 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunction": "OR",
                     "courses": [],
                     "children": [
                         {
-                            "type": "COURSE",
+                            "type": "GROUP",
                             "conjunction": "AND",
-                            "courses": [
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "HUMAN",
-                                    "number": "110",
-                                    "key": "HUMAN 110",
-                                    "title": "Humanities: Ancient Civilizations",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "type": "COURSE",
+                                    "conjunction": "AND",
+                                    "courses": [
+                                        {
+                                            "prefix": "HUMAN",
+                                            "number": "110",
+                                            "key": "HUMAN 110",
+                                            "title": "Humanities: Ancient Civilizations",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        },
+                                        {
+                                            "prefix": "HUMAN",
+                                            "number": "111",
+                                            "key": "HUMAN 111",
+                                            "title": "Humanities:  The Middle Ages and Renaissance",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        },
+                                        {
+                                            "prefix": "HUMAN",
+                                            "number": "112",
+                                            "key": "HUMAN 112",
+                                            "title": "Humanities: The Modern World",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 },
                                 {
-                                    "prefix": "HUMAN",
-                                    "number": "111",
-                                    "key": "HUMAN 111",
-                                    "title": "Humanities:  The Middle Ages and Renaissance",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "type": "COURSE",
+                                    "courses": [
+                                        {
+                                            "prefix": "ENGL",
+                                            "number": "C1000",
+                                            "key": "ENGL C1000",
+                                            "title": "Academic Reading and Writing",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 },
                                 {
-                                    "prefix": "HUMAN",
-                                    "number": "112",
-                                    "key": "HUMAN 112",
-                                    "title": "Humanities: The Modern World",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "type": "COURSE",
+                                    "courses": [
+                                        {
+                                            "prefix": "ENGL",
+                                            "number": "122AL",
+                                            "key": "ENGL 122AL",
+                                            "title": "Academic Reading and Writing for Multilingual Students",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "ENGL",
-                                    "number": "C1000",
-                                    "key": "ENGL C1000",
-                                    "title": "Academic Reading and Writing",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "ENGL",
-                                    "number": "122AL",
-                                    "key": "ENGL 122AL",
-                                    "title": "Academic Reading and Writing for Multilingual Students",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ENGL",
@@ -376,59 +397,63 @@
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "GROUP",
                             "conjunction": "AND",
-                            "courses": [
+                            "courses": [],
+                            "children": [
                                 {
-                                    "prefix": "COMM",
-                                    "number": "121",
-                                    "key": "COMM 121",
-                                    "title": "Persuasion and Critical Thinking",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "type": "COURSE",
+                                    "courses": [
+                                        {
+                                            "prefix": "COMM",
+                                            "number": "121",
+                                            "key": "COMM 121",
+                                            "title": "Persuasion and Critical Thinking",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "courses": [
+                                        {
+                                            "prefix": "ENGL",
+                                            "number": "123",
+                                            "key": "ENGL 123",
+                                            "title": "Critical Thinking: Writing about Literature",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "COURSE",
+                                    "courses": [
+                                        {
+                                            "prefix": "ENGL",
+                                            "number": "123A",
+                                            "key": "ENGL 123A",
+                                            "title": "Critical Thinking: Writing about Literature for Multilingual Students",
+                                            "notes": [],
+                                            "min_units": 4.0,
+                                            "max_units": 4.0
+                                        }
+                                    ],
+                                    "children": [],
+                                    "notes": []
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "ENGL",
-                                    "number": "123",
-                                    "key": "ENGL 123",
-                                    "title": "Critical Thinking: Writing about Literature",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
-                                {
-                                    "prefix": "ENGL",
-                                    "number": "123A",
-                                    "key": "ENGL 123A",
-                                    "title": "Critical Thinking: Writing about Literature for Multilingual Students",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
-                                }
-                            ],
-                            "children": [],
-                            "notes": []
-                        },
-                        {
-                            "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ENGL",
@@ -445,7 +470,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ENGL",
@@ -462,7 +486,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "HIST",
@@ -479,7 +502,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "PHILO",
@@ -496,7 +518,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "SOCIO",
@@ -566,97 +587,105 @@
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunction": "OR",
                     "courses": [],
                     "children": [
                         {
                             "type": "GROUP",
-                            "conjunction": "OR",
+                            "conjunction": "AND",
                             "courses": [],
                             "children": [
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "GROUP",
+                                    "conjunction": "OR",
+                                    "courses": [],
+                                    "children": [
                                         {
-                                            "prefix": "HUM",
-                                            "number": "1",
-                                            "key": "HUM 1",
-                                            "title": "Introduction to Humanities",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "HUM",
+                                                    "number": "1",
+                                                    "key": "HUM 1",
+                                                    "title": "Introduction to Humanities",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "HUM",
+                                                    "number": "1H",
+                                                    "key": "HUM 1H",
+                                                    "title": "Introduction to Humanities Honors",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "HUM",
+                                                    "number": "2",
+                                                    "key": "HUM 2",
+                                                    "title": "The Culture of Ancient Greece and Rome",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "HUM",
+                                                    "number": "3",
+                                                    "key": "HUM 3",
+                                                    "title": "The Culture of Medieval and Renaissance Europe",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "HUM",
+                                                    "number": "4",
+                                                    "key": "HUM 4",
+                                                    "title": "The Culture of the Modern World: 1700 to the Present",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
                                         }
                                     ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "1H",
-                                            "key": "HUM 1H",
-                                            "title": "Introduction to Humanities Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "2",
-                                            "key": "HUM 2",
-                                            "title": "The Culture of Ancient Greece and Rome",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "3",
-                                            "key": "HUM 3",
-                                            "title": "The Culture of Medieval and Renaissance Europe",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "4",
-                                            "key": "HUM 4",
-                                            "title": "The Culture of the Modern World: 1700 to the Present",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
                                     "notes": []
                                 }
                             ],
@@ -664,134 +693,142 @@
                         },
                         {
                             "type": "GROUP",
-                            "conjunction": "OR",
+                            "conjunction": "AND",
                             "courses": [],
                             "children": [
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "GROUP",
+                                    "conjunction": "OR",
+                                    "courses": [],
+                                    "children": [
                                         {
-                                            "prefix": "ESL",
-                                            "number": "1",
-                                            "key": "ESL 1",
-                                            "title": "College Composition for Multilingual Writers",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ESL",
+                                                    "number": "1",
+                                                    "key": "ESL 1",
+                                                    "title": "College Composition for Multilingual Writers",
+                                                    "notes": [],
+                                                    "min_units": 4.0,
+                                                    "max_units": 4.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "C1000",
+                                                    "key": "ENGL C1000",
+                                                    "title": "Academic Reading and Writing",
+                                                    "notes": [],
+                                                    "min_units": 4.0,
+                                                    "max_units": 4.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "C1000H",
+                                                    "key": "ENGL C1000H",
+                                                    "title": "Academic Reading and Writing - Honors",
+                                                    "notes": [],
+                                                    "min_units": 4.0,
+                                                    "max_units": 4.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 },
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "GROUP",
+                                    "conjunction": "OR",
+                                    "courses": [],
+                                    "children": [
                                         {
-                                            "prefix": "ENGL",
-                                            "number": "C1000",
-                                            "key": "ENGL C1000",
-                                            "title": "Academic Reading and Writing",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "LIB",
+                                                    "number": "20",
+                                                    "key": "LIB 20",
+                                                    "title": "Critical Thinking and Advanced Information Literacy",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "LIB",
+                                                    "number": "20H",
+                                                    "key": "LIB 20H",
+                                                    "title": "Critical Thinking and Advanced Information Literacy Honors",
+                                                    "notes": [],
+                                                    "min_units": 3.0,
+                                                    "max_units": 3.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "C1001",
+                                                    "key": "ENGL C1001",
+                                                    "title": "Critical Thinking and Writing",
+                                                    "notes": [],
+                                                    "min_units": 4.0,
+                                                    "max_units": 4.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
+                                        },
+                                        {
+                                            "type": "COURSE",
+                                            "conjunction": "AND",
+                                            "courses": [
+                                                {
+                                                    "prefix": "ENGL",
+                                                    "number": "C1001H",
+                                                    "key": "ENGL C1001H",
+                                                    "title": "Critical Thinking and Writing - Honors",
+                                                    "notes": [],
+                                                    "min_units": 4.0,
+                                                    "max_units": 4.0
+                                                }
+                                            ],
+                                            "children": [],
+                                            "notes": []
                                         }
                                     ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "ENGL",
-                                            "number": "C1000H",
-                                            "key": "ENGL C1000H",
-                                            "title": "Academic Reading and Writing - Honors",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "GROUP",
-                            "conjunction": "OR",
-                            "courses": [],
-                            "children": [
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "LIB",
-                                            "number": "20",
-                                            "key": "LIB 20",
-                                            "title": "Critical Thinking and Advanced Information Literacy",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "LIB",
-                                            "number": "20H",
-                                            "key": "LIB 20H",
-                                            "title": "Critical Thinking and Advanced Information Literacy Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "ENGL",
-                                            "number": "C1001",
-                                            "key": "ENGL C1001",
-                                            "title": "Critical Thinking and Writing",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "ENGL",
-                                            "number": "C1001H",
-                                            "key": "ENGL C1001H",
-                                            "title": "Critical Thinking and Writing - Honors",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        }
-                                    ],
-                                    "children": [],
                                     "notes": []
                                 }
                             ],
@@ -835,63 +872,54 @@
                             "notes": []
                         },
                         {
-                            "type": "GROUP",
-                            "conjunction": "AND",
-                            "courses": [],
-                            "children": [
+                            "type": "COURSE",
+                            "courses": [
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "ENG",
-                                            "number": "211",
-                                            "key": "ENG 211",
-                                            "title": "Creative Nonfiction",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
-                                },
-                                {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "101",
-                                            "key": "HUM 101",
-                                            "title": "Ancient Western World",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        },
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "102",
-                                            "key": "HUM 102",
-                                            "title": "The Middle Ages, Renaissance, and Baroque Eras",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        },
-                                        {
-                                            "prefix": "HUM",
-                                            "number": "103",
-                                            "key": "HUM 103",
-                                            "title": "The Modern World",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        }
-                                    ],
-                                    "children": [],
-                                    "notes": []
+                                    "prefix": "ENG",
+                                    "number": "211",
+                                    "key": "ENG 211",
+                                    "title": "Creative Nonfiction",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
                                 }
                             ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "HUM",
+                                    "number": "101",
+                                    "key": "HUM 101",
+                                    "title": "Ancient Western World",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                },
+                                {
+                                    "prefix": "HUM",
+                                    "number": "102",
+                                    "key": "HUM 102",
+                                    "title": "The Middle Ages, Renaissance, and Baroque Eras",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                },
+                                {
+                                    "prefix": "HUM",
+                                    "number": "103",
+                                    "key": "HUM 103",
+                                    "title": "The Modern World",
+                                    "notes": [],
+                                    "min_units": 4.0,
+                                    "max_units": 4.0
+                                }
+                            ],
+                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1418,7 +1446,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "HUM",
@@ -1435,7 +1462,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "HUM",

@@ -57,7 +57,6 @@
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "LING",
@@ -88,7 +87,6 @@
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ENGL",
@@ -108,7 +106,6 @@
                 "sending_name": "American River College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -128,7 +125,6 @@
                 "sending_name": "Butte College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -148,7 +144,6 @@
                 "sending_name": "Canada College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "LING",
@@ -168,7 +163,6 @@
                 "sending_name": "Coalinga College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "LING",
@@ -188,7 +182,6 @@
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "LING",
@@ -208,7 +201,6 @@
                 "sending_name": "Compton College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -228,7 +220,6 @@
                 "sending_name": "Cosumnes River College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -248,7 +239,6 @@
                 "sending_name": "Cypress College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -313,7 +303,6 @@
                 "sending_name": "East Los Angeles College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTHRO",
@@ -332,20 +321,53 @@
             {
                 "sending_name": "El Camino College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "conjunction": "AND",
-                    "courses": [
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "courses": [],
+                    "children": [
                         {
-                            "prefix": "ANTH",
-                            "number": "4",
-                            "key": "ANTH 4",
-                            "title": "Language and Culture",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "COURSE",
+                            "courses": [
+                                {
+                                    "prefix": "ANTH",
+                                    "number": "4",
+                                    "key": "ANTH 4",
+                                    "title": "Language and Culture",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
+                        },
+                        {
+                            "type": "COURSE",
+                            "conjunction": "AND",
+                            "courses": [
+                                {
+                                    "prefix": "LING",
+                                    "number": "1A",
+                                    "key": "LING 1A",
+                                    "title": "Linguistics 1A: An Introduction to Language and Culture",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                },
+                                {
+                                    "prefix": "LING",
+                                    "number": "1B",
+                                    "key": "LING 1B",
+                                    "title": "Linguistics 1B: Introduction to Language and Culture II",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "children": [],
+                            "notes": []
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
@@ -353,7 +375,6 @@
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "LING",
@@ -373,7 +394,6 @@
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -455,7 +475,6 @@
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -475,7 +494,6 @@
                 "sending_name": "Imperial Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ENGL",
@@ -495,7 +513,6 @@
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -515,7 +532,6 @@
                 "sending_name": "Lake Tahoe Community College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANT",
@@ -540,7 +556,6 @@
                     "children": [
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ANTHR",
@@ -557,7 +572,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "LING",
@@ -580,7 +594,6 @@
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTHRO",
@@ -605,7 +618,6 @@
                     "children": [
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ANTHRO",
@@ -622,7 +634,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "LING",
@@ -645,7 +656,6 @@
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTHR",
@@ -665,7 +675,6 @@
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -685,7 +694,6 @@
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH-",
@@ -705,7 +713,6 @@
                 "sending_name": "Napa Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -725,7 +732,6 @@
                 "sending_name": "Orange Coast College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -745,7 +751,6 @@
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -765,7 +770,6 @@
                 "sending_name": "Palomar College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ENG",
@@ -852,7 +856,6 @@
                     "children": [
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ANTH",
@@ -869,7 +872,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ENGL",
@@ -886,7 +888,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ENGL",
@@ -903,7 +904,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ENGL",
@@ -926,7 +926,6 @@
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -946,7 +945,6 @@
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -966,7 +964,6 @@
                 "sending_name": "San Bernardino Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTHRO",
@@ -986,7 +983,6 @@
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ENGL",
@@ -1006,7 +1002,6 @@
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ENGL",
@@ -1026,7 +1021,6 @@
                 "sending_name": "San Joaquin Delta College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTHR",
@@ -1046,7 +1040,6 @@
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -1071,7 +1064,6 @@
                     "children": [
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "LING",
@@ -1088,7 +1080,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "ANTHRO",
@@ -1111,7 +1102,6 @@
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",
@@ -1131,7 +1121,6 @@
                 "sending_name": "West Valley College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "ANTH",

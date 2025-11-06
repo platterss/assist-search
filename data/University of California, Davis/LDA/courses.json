@@ -22,13 +22,31 @@
                 "sending_name": "Merritt College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "LANHT",
                             "number": "64",
                             "key": "LANHT 64",
                             "title": "Sketching the Cultural Landscape",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Sierra College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "courses": [
+                        {
+                            "prefix": "GEOG",
+                            "number": "2",
+                            "key": "GEOG 2",
+                            "title": "Cultural Geography",
                             "notes": [],
                             "min_units": 3.0,
                             "max_units": 3.0
@@ -63,7 +81,6 @@
                 "sending_name": "Foothill College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "GEOG",
@@ -83,7 +100,6 @@
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "GEOG",
@@ -103,7 +119,6 @@
                 "sending_name": "Monterey Peninsula College",
                 "sending_articulation": {
                     "type": "COURSE",
-                    "conjunction": "AND",
                     "courses": [
                         {
                             "prefix": "GEOG",
@@ -128,7 +143,6 @@
                     "children": [
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "GEOG",
@@ -145,7 +159,6 @@
                         },
                         {
                             "type": "COURSE",
-                            "conjunction": "AND",
                             "courses": [
                                 {
                                     "prefix": "GEOG",
@@ -174,7 +187,58 @@
         "title": "Landscape Representation I",
         "min_units": 4.0,
         "max_units": 4.0,
-        "articulations": []
+        "articulations": [
+            {
+                "sending_name": "Pasadena City College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "courses": [
+                        {
+                            "prefix": "ARCH",
+                            "number": "012A",
+                            "key": "ARCH 012A",
+                            "title": "Visual Communications I",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "West Valley College",
+                "sending_articulation": {
+                    "type": "COURSE",
+                    "conjunction": "AND",
+                    "courses": [
+                        {
+                            "prefix": "ARCH",
+                            "number": "051",
+                            "key": "ARCH 051",
+                            "title": "Architectural Graphics: Drawing & Sketching",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        },
+                        {
+                            "prefix": "ARCH",
+                            "number": "052",
+                            "key": "ARCH 052",
+                            "title": "Architectural Graphics: Color Rendering",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "children": [],
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer"
+                    ]
+                }
+            }
+        ]
     },
     {
         "type": "COURSE",
