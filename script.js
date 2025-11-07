@@ -216,12 +216,12 @@ const conjToType = (c) => (String(c || "").toUpperCase() === "AND" ? "and" : (c 
 
 function normalizeSendingNode(node) {
     const type = String(node?.type || "").toUpperCase();
-    const groups = Array.isArray(node?.course_groups) ? node.course_groups : []
+    const items = Array.isArray(node?.items) ? node.items : []
     const notes = Array.isArray(node.notes) ? node.notes : [];
     const joinType = conjToType(node.conjunction);
 
-    if (type === "SINGLE") {
-        const chips = groups.map(toCourseChip);
+    if (type === "SET") {
+        const chips = items.map(toCourseChip);
         if (chips.length <= 1) {
             return { type: "single", courses: chips.length ? [chips[0]] : [], notes };
         }
@@ -233,8 +233,8 @@ function normalizeSendingNode(node) {
         return { type: "nested", join: null, groups: [{ type: "single", courses: chips, notes }], notes: [] };
     }
 
-    if (type === "MULTI") {
-        const childGroups = groups.map(normalizeSendingNode);
+    if (type === "GROUP") {
+        const childGroups = items.map(normalizeSendingNode);
 
         const allSingles = childGroups.length > 0 && childGroups.every(g => g.type === "single");
         if (allSingles && joinType) {

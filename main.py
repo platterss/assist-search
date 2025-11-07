@@ -8,17 +8,17 @@ def make_node(data: dict) -> SendingArticulationNode:
     node_type = NodeType(data["type"])
     conjunction = Conjunction(data["conjunction"]) if data["conjunction"] else None
 
-    if node_type == NodeType.SINGLE:
-        course_groups = [SendingCourse(**course_data) for course_data in data["course_groups"]]
+    if node_type == NodeType.SET:
+        course_groups = [SendingCourse(**course_data) for course_data in data["items"]]
     else:
-        course_groups = [make_node(child) for child in data["course_groups"]]
+        course_groups = [make_node(child) for child in data["items"]]
 
     notes = list(data.get("notes", []))
 
     return SendingArticulationNode(
         type=node_type,
         conjunction=conjunction,
-        course_groups=course_groups,
+        items=course_groups,
         notes=notes,
     )
 
@@ -28,23 +28,23 @@ def format_node(node: SendingArticulationNode) -> str:
         indent = "  " * depth
         lines: list[str] = []
 
-        if n.type == NodeType.SINGLE:
+        if n.type == NodeType.SET:
             join = n.conjunction.value if n.conjunction else None
-            for i, c in enumerate(n.course_groups):
-                lines.append(f"{indent}{c.code} - {c.title}")
+            for i, c in enumerate(n.items):
+                lines.append(f"{indent}{c.key} - {c.title}")
                 for note in c.notes:
                     lines.append(f"{indent}  - {note}")
-                if i != len(n.course_groups) - 1:
-                    lines.append(f"{indent}{join}")
+                if i != len(n.items) - 1:
+                    lines.append(f"{indent}{indent}{join}")
             for note in n.notes:
                 lines.append(f"{indent}(Note) {note}")
             return lines
 
-        # NodeType.MULTI
+        # NodeType.GROUP
         join = n.conjunction.value if n.conjunction else ""
-        for i, ch in enumerate(n.course_groups):
+        for i, ch in enumerate(n.items):
             lines.extend(fmt(ch, depth + 1))
-            if join and i != len(n.course_groups) - 1:
+            if join and i != len(n.items) - 1:
                 lines.append(f"{indent}{join}")
         for note in n.notes:
             lines.append(f"{indent}(Note) {note}")

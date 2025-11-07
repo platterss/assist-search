@@ -76,7 +76,7 @@ def make_sending_course(obj: dict, extra_notes: Optional[list[str]] = None) -> S
             prefix="Unknown",
             number="Course",
             key=make_course_key("Unknown", "Course"),
-            title="Missing Course",
+            title="Missing",
             min_units=-1.0,
             max_units=-1.0,
             notes=["This particular course is broken on ASSIST and displays an empty course."]
@@ -94,43 +94,45 @@ def make_sending_course(obj: dict, extra_notes: Optional[list[str]] = None) -> S
 
 
 def parse_course_group(group: dict) -> SendingArticulationNode:
-    internal = group.get("courseConjunction", "And")
-    items = sorted(group.get("items", []), key=lambda x: x.get("position", 0))
+    internal = group.get("courseConjunction")
+    conjunction = (internal or "").strip().lower()
 
+    items = sorted(group.get("items", []), key=lambda x: x.get("position", 0))
+    courses = [make_sending_course(item) for item in items if item.get("type") == "Course"]
     group_level_notes: list[str] = [
         a.get("content") for a in group.get("attributes", []) if a.get("content")
     ]
 
-    if internal.lower() == "and":
-        courses = [make_sending_course(item) for item in items if item.get("type") == "Course"]
-        conjunction = None if len(courses) == 1 else Conjunction.AND
+    if conjunction == "or":
+        children: list[SendingArticulationNode] = [
+            SendingArticulationNode(
+                type=NodeType.SET,
+                conjunction=None,
+                items=[course],
+                notes=[]
+            )
+            for course in courses
+        ]
 
         return SendingArticulationNode(
-            type=NodeType.SINGLE,
-            conjunction=conjunction,
-            course_groups=courses,
+            type=NodeType.GROUP,
+            conjunction=Conjunction.OR,
+            items=children,
             notes=group_level_notes
         )
 
-    children: list[SendingArticulationNode] = []
-
-    for item in items:
-        if item.get("type") != "Course":
-            continue
-
-        children.append(
-            SendingArticulationNode(
-                type=NodeType.SINGLE,
-                conjunction=None,
-                course_groups=[make_sending_course(item)],
-                notes=[]
-            )
+    if conjunction == "and":
+        return SendingArticulationNode(
+            type=NodeType.SET,
+            conjunction=None if len(courses) == 1 else Conjunction.AND,
+            items=courses,
+            notes=group_level_notes
         )
 
     return SendingArticulationNode(
-        type=NodeType.MULTI,
-        conjunction=Conjunction.OR,
-        course_groups=children,
+        type=NodeType.SET,
+        conjunction=None,
+        items=courses,
         notes=group_level_notes
     )
 
@@ -140,9 +142,9 @@ def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: li
 
     if n == 0:
         return SendingArticulationNode(
-            type=NodeType.MULTI,
+            type=NodeType.GROUP,
             conjunction=Conjunction.AND,
-            course_groups=[],
+            items=[],
             notes=[]
         )
 
@@ -166,40 +168,42 @@ def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: li
     if edges and all(edge.lower() == edges[0].lower() for edge in edges):
         conjunction = Conjunction.OR if edges[0].lower() == "or" else Conjunction.AND
         return SendingArticulationNode(
-            type=NodeType.MULTI,
+            type=NodeType.GROUP,
             conjunction=conjunction,
-            course_groups=groups,
+            items=groups,
             notes=[]
         )
 
     segments: list[SendingArticulationNode] = []
     start = 0
     for i, edge in enumerate(edges):
-        if edge.lower() == "or":
-            seg_children = groups[start:i + 1]
-            if len(seg_children) == 1 and seg_children[0].type == NodeType.SINGLE:
-                segments.append(seg_children[0])
-            else:
-                segments.append(
-                    SendingArticulationNode(
-                        type=NodeType.MULTI,
-                        conjunction=Conjunction.AND,
-                        course_groups=seg_children,
-                        notes=[],
-                    )
-                )
-            start = i + 1
+        if edge.lower() != "or":
+            continue
 
-    if start < n:
-        seg_children = groups[start:n]
-        if len(seg_children) == 1 and seg_children[0].type == NodeType.SINGLE:
+        seg_children = groups[start:i+1]
+        if len(seg_children) == 1 and seg_children[0].type == NodeType.GROUP:
             segments.append(seg_children[0])
         else:
             segments.append(
                 SendingArticulationNode(
-                    type=NodeType.MULTI,
+                    type=NodeType.GROUP,
                     conjunction=Conjunction.AND,
-                    course_groups=seg_children,
+                    items=seg_children,
+                    notes=[],
+                )
+            )
+        start = i + 1
+
+    if start < n:
+        seg_children = groups[start:n]
+        if len(seg_children) == 1 and seg_children[0].type == NodeType.GROUP:
+            segments.append(seg_children[0])
+        else:
+            segments.append(
+                SendingArticulationNode(
+                    type=NodeType.GROUP,
+                    conjunction=Conjunction.AND,
+                    items=seg_children,
                     notes=[],
                 )
             )
@@ -208,9 +212,9 @@ def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: li
         return segments[0]
 
     return SendingArticulationNode(
-        type=NodeType.MULTI,
+        type=NodeType.GROUP,
         conjunction=Conjunction.OR,
-        course_groups=segments,
+        items=segments,
         notes=[]
     )
 
@@ -788,7 +792,7 @@ def run(desired_universities: list[str] = None) -> None:
     if desired_universities is None or len(desired_universities) == 0:
         desired_universities = ["CSU", "UC", "AICCU"]
 
-    institutions = get_institutions(create_new_if_existing=True)
+    institutions = get_institutions(create_new_if_existing=False)
 
     colleges = sorted([i for i in institutions if i["category"] == "CCC"], key=lambda i: i["name"])
     universities = [i for i in institutions if i["category"] in desired_universities]

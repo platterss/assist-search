@@ -10,8 +10,8 @@ class Conjunction(str, Enum):
 
 
 class NodeType(str, Enum):
-    MULTI = "MULTI"
-    SINGLE = "SINGLE"
+    SET = "SET"
+    GROUP = "GROUP"
 
 
 @dataclass(frozen=True)
@@ -24,36 +24,29 @@ class SendingCourse:
     min_units: float
     max_units: float
 
-    @property
-    def code(self) -> str:
-        return self.key
-
 
 @dataclass
 class SendingArticulationNode:
     type: NodeType
     conjunction: Optional[Conjunction]
-    course_groups: list[Union[SendingCourse, SendingArticulationNode]]
+    items: list[Union[SendingCourse, SendingArticulationNode]]
     notes: list[str]
 
     def to_dict(self) -> dict:
         out: dict = {
-            "type": self.type.value
+            "type": self.type.value,
+            "conjunction": None if self.conjunction is None else self.conjunction.value
         }
 
-        # I find it looks better when the conjunction is after the type instead of at the bottom
-        if self.conjunction is not None:
-            out["conjunction"] = self.conjunction.value
-
         groups = []
-        for group in self.course_groups:
+        for group in self.items:
             if isinstance(group, SendingCourse):
                 groups.append(asdict(group))
             elif isinstance(group, SendingArticulationNode):
                 groups.append(group.to_dict())
 
         out.update({
-            "course_groups": groups,
+            "items": groups,
             "notes": list(self.notes)
         })
 
