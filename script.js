@@ -212,65 +212,46 @@ function toCourseChip(item) {
     return {label, notes};
 }
 
-const conjToType = (c) => (String(c || "").toUpperCase() === "AND" ? "and" : "or");
+const conjToType = (c) => (String(c || "").toUpperCase() === "AND" ? "and" : (c ? "or" : null));
 
 function normalizeSendingNode(node) {
-    const courses = Array.isArray(node.courses) ? node.courses : [];
-    const children = Array.isArray(node.children) ? node.children : [];
+    const type = String(node?.type || "").toUpperCase();
+    const groups = Array.isArray(node?.course_groups) ? node.course_groups : []
     const notes = Array.isArray(node.notes) ? node.notes : [];
     const joinType = conjToType(node.conjunction);
 
-    const allChildrenAreCourseLeaves = (
-        children.length > 0 &&
-        children.every(ch =>
-            ch && ch.type === "COURSE" &&
-            Array.isArray(ch.courses) && ch.courses.length > 0 &&
-            (!Array.isArray(ch.children) || ch.children.length === 0)
-        )
-    );
-
-    if (allChildrenAreCourseLeaves) {
-        const allSingles = children.every(ch => ch.courses.length === 1);
-        if (allSingles) {
-            const chips = children.map(ch => toCourseChip(ch.courses[0]));
-            return {type: joinType, courses: chips, notes};
+    if (type === "SINGLE") {
+        const chips = groups.map(toCourseChip);
+        if (chips.length <= 1) {
+            return { type: "single", courses: chips.length ? [chips[0]] : [], notes };
         }
 
-        const subGroups = children.map(ch => {
-            if (ch.courses.length === 1) {
-                return {
-                    type: "single",
-                    courses: [toCourseChip(ch.courses[0])],
-                    notes: Array.isArray(ch.notes) ? ch.notes : []
-                };
-            }
+        if (joinType) {
+            return { type: joinType, courses: chips, notes };
+        }
 
-            return {
-                type: conjToType(ch.conjunction),
-                courses: ch.courses.map(toCourseChip),
-                notes: Array.isArray(ch.notes) ? ch.notes : []
-            };
-        });
-        return {type: "nested", join: joinType, groups: subGroups, notes};
+        return { type: "nested", join: null, groups: [{ type: "single", courses: chips, notes }], notes: [] };
     }
 
-    if (children.length > 0) {
+    if (type === "MULTI") {
+        const childGroups = groups.map(normalizeSendingNode);
+
+        const allSingles = childGroups.length > 0 && childGroups.every(g => g.type === "single");
+        if (allSingles && joinType) {
+            const flat = childGroups.flatMap(g => g.courses || []);
+            return { type: joinType, courses: flat, notes };
+        }
+
         return {
             type: "nested",
             join: joinType,
-            groups: children.map(normalizeSendingNode),
+            groups: childGroups,
             notes
         };
     }
 
-    if (courses.length <= 1) {
-        const only = courses[0];
-        const chip = only ? toCourseChip(only) : {label: "", notes: []};
-        return {type: "single", courses: [chip], notes};
-    }
-    return {type: joinType, courses: courses.map(toCourseChip), notes};
+    return { type: "single", courses: [], notes: [] };
 }
-
 
 function normalizeArticulations(course) {
     const raw = Array.isArray(course?.articulations) ? course.articulations : [];
@@ -432,8 +413,11 @@ function renderCourseGroup(group) {
         return group.groups.map((g, i) => {
             let html = renderCourseGroup(g);
             if (i < group.groups.length - 1) {
-                const { className, text } = groupSepMeta(group.join || "or");
-                html += `<li class="${className}">${text}</li>`;
+                const join = (group.join || "").toLowerCase();
+                if (join === "and" || join === "or") {
+                    const { className, text } = groupSepMeta(join);
+                    html += `<li class="${className}">${text}</li>`;
+                }
             }
             return html;
         }).join("");

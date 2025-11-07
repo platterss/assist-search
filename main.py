@@ -8,15 +8,17 @@ def make_node(data: dict) -> SendingArticulationNode:
     node_type = NodeType(data["type"])
     conjunction = Conjunction(data["conjunction"]) if data["conjunction"] else None
 
-    courses = [SendingCourse(**course_data) for course_data in data["courses"]]
-    children = [make_node(child) for child in data["children"]]
+    if node_type == NodeType.SINGLE:
+        course_groups = [SendingCourse(**course_data) for course_data in data["course_groups"]]
+    else:
+        course_groups = [make_node(child) for child in data["course_groups"]]
+
     notes = list(data.get("notes", []))
 
     return SendingArticulationNode(
         type=node_type,
         conjunction=conjunction,
-        courses=courses,
-        children=children,
+        course_groups=course_groups,
         notes=notes,
     )
 
@@ -26,22 +28,24 @@ def format_node(node: SendingArticulationNode) -> str:
         indent = "  " * depth
         lines: list[str] = []
 
-        if n.type == NodeType.COURSE:
-            for i, c in enumerate(n.courses):
+        if n.type == NodeType.SINGLE:
+            join = n.conjunction.value if n.conjunction else None
+            for i, c in enumerate(n.course_groups):
                 lines.append(f"{indent}{c.code} - {c.title}")
                 for note in c.notes:
                     lines.append(f"{indent}  - {note}")
-                if i != len(n.courses) - 1:
-                    lines.append(f"{indent}{indent}AND")
+                if i != len(n.course_groups) - 1:
+                    lines.append(f"{indent}{join}")
             for note in n.notes:
                 lines.append(f"{indent}(Note) {note}")
             return lines
 
-        conj = (n.conjunction or Conjunction.AND).value
-        for i, ch in enumerate(n.children):
+        # NodeType.MULTI
+        join = n.conjunction.value if n.conjunction else ""
+        for i, ch in enumerate(n.course_groups):
             lines.extend(fmt(ch, depth + 1))
-            if i != len(n.children) - 1:
-                lines.append(f"{indent}{conj}")
+            if join and i != len(n.course_groups) - 1:
+                lines.append(f"{indent}{join}")
         for note in n.notes:
             lines.append(f"{indent}(Note) {note}")
         return lines
@@ -107,15 +111,15 @@ def handle_courses(university: str, subject: dict) -> dict:
 
     for i, course in enumerate(courses, 1):
         if course["type"] == "COURSE":
-            print(f"{i}: {course["prefix"]} {course["number"]} - {course["title"]}")
+            print(f"{i}: {course["key"]} - {course["title"]}")
         elif course["type"] == "SERIES":
-            nums = " + ".join(c["number"] for c in course["courses"])
-            titles = ", ".join(c["title"] for c in course["courses"])
-            print(f"{i}: {course["prefix"]} {nums} - {titles}")
+            codes = " + ".join(c["key"] for c in course["courses"])
+            titles = " + ".join(c["title"] for c in course["courses"])
+            print(f"{i}: {codes} - {titles}")
         elif course["type"] == "REQUIREMENT":
-            print(f"{i}: {course["name"]}")
+            print(f"{i}: {course["key"]}")
         elif course["type"] == "GE":
-            print(f"{i}: {course["name"]}")
+            print(f"{i}: {course["key"]}")
 
     return courses[int(input("Select the number of the course: ")) - 1]
 

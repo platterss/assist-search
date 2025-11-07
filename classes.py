@@ -1,7 +1,7 @@
 from __future__ import annotations
 from dataclasses import dataclass, asdict
 from enum import Enum
-from typing import Optional
+from typing import Optional, Union
 
 
 class Conjunction(str, Enum):
@@ -10,8 +10,8 @@ class Conjunction(str, Enum):
 
 
 class NodeType(str, Enum):
-    GROUP = "GROUP"
-    COURSE = "COURSE"
+    MULTI = "MULTI"
+    SINGLE = "SINGLE"
 
 
 @dataclass(frozen=True)
@@ -33,8 +33,7 @@ class SendingCourse:
 class SendingArticulationNode:
     type: NodeType
     conjunction: Optional[Conjunction]
-    courses: list[SendingCourse]
-    children: list[SendingArticulationNode]
+    course_groups: list[Union[SendingCourse, SendingArticulationNode]]
     notes: list[str]
 
     def to_dict(self) -> dict:
@@ -46,9 +45,15 @@ class SendingArticulationNode:
         if self.conjunction is not None:
             out["conjunction"] = self.conjunction.value
 
+        groups = []
+        for group in self.course_groups:
+            if isinstance(group, SendingCourse):
+                groups.append(asdict(group))
+            elif isinstance(group, SendingArticulationNode):
+                groups.append(group.to_dict())
+
         out.update({
-            "courses": [asdict(course) for course in self.courses],
-            "children": [child.to_dict() for child in self.children],
+            "course_groups": groups,
             "notes": list(self.notes)
         })
 

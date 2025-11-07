@@ -106,10 +106,9 @@ def parse_course_group(group: dict) -> SendingArticulationNode:
         conjunction = None if len(courses) == 1 else Conjunction.AND
 
         return SendingArticulationNode(
-            type=NodeType.COURSE,
+            type=NodeType.SINGLE,
             conjunction=conjunction,
-            courses=courses,
-            children=[],
+            course_groups=courses,
             notes=group_level_notes
         )
 
@@ -119,22 +118,19 @@ def parse_course_group(group: dict) -> SendingArticulationNode:
         if item.get("type") != "Course":
             continue
 
-        course = make_sending_course(item)
         children.append(
             SendingArticulationNode(
-                type=NodeType.COURSE,
-                conjunction=Conjunction.AND,
-                courses=[course],
-                children=[],
+                type=NodeType.SINGLE,
+                conjunction=None,
+                course_groups=[make_sending_course(item)],
                 notes=[]
             )
         )
 
     return SendingArticulationNode(
-        type=NodeType.GROUP,
+        type=NodeType.MULTI,
         conjunction=Conjunction.OR,
-        courses=[],
-        children=children,
+        course_groups=children,
         notes=group_level_notes
     )
 
@@ -144,10 +140,9 @@ def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: li
 
     if n == 0:
         return SendingArticulationNode(
-            type=NodeType.GROUP,
+            type=NodeType.MULTI,
             conjunction=Conjunction.AND,
-            courses=[],
-            children=[],
+            course_groups=[],
             notes=[]
         )
 
@@ -171,10 +166,9 @@ def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: li
     if edges and all(edge.lower() == edges[0].lower() for edge in edges):
         conjunction = Conjunction.OR if edges[0].lower() == "or" else Conjunction.AND
         return SendingArticulationNode(
-            type=NodeType.GROUP,
+            type=NodeType.MULTI,
             conjunction=conjunction,
-            courses=[],
-            children=groups,
+            course_groups=groups,
             notes=[]
         )
 
@@ -183,15 +177,14 @@ def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: li
     for i, edge in enumerate(edges):
         if edge.lower() == "or":
             seg_children = groups[start:i + 1]
-            if len(seg_children) == 1 and seg_children[0].type == NodeType.COURSE:
+            if len(seg_children) == 1 and seg_children[0].type == NodeType.SINGLE:
                 segments.append(seg_children[0])
             else:
                 segments.append(
                     SendingArticulationNode(
-                        type=NodeType.GROUP,
+                        type=NodeType.MULTI,
                         conjunction=Conjunction.AND,
-                        courses=[],
-                        children=seg_children,
+                        course_groups=seg_children,
                         notes=[],
                     )
                 )
@@ -199,15 +192,14 @@ def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: li
 
     if start < n:
         seg_children = groups[start:n]
-        if len(seg_children) == 1 and seg_children[0].type == NodeType.COURSE:
+        if len(seg_children) == 1 and seg_children[0].type == NodeType.SINGLE:
             segments.append(seg_children[0])
         else:
             segments.append(
                 SendingArticulationNode(
-                    type=NodeType.GROUP,
+                    type=NodeType.MULTI,
                     conjunction=Conjunction.AND,
-                    courses=[],
-                    children=seg_children,
+                    course_groups=seg_children,
                     notes=[],
                 )
             )
@@ -216,10 +208,9 @@ def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: li
         return segments[0]
 
     return SendingArticulationNode(
-        type=NodeType.GROUP,
+        type=NodeType.MULTI,
         conjunction=Conjunction.OR,
-        courses=[],
-        children=segments,
+        course_groups=segments,
         notes=[]
     )
 
