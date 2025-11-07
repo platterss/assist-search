@@ -29,7 +29,7 @@ Articulation data can be fetched by running the articulations.py script.
 python articulations.py <university types>
 ```
 
-where university types are any of:
+where university types are any combination of:
 - CSU
 - UC
 - AICCU
@@ -40,6 +40,8 @@ you would run:
 ```
 python articulations.py CSU UC
 ```
+
+If no university types are provided, it'll default to all three.
 
 The data will be populated in the `data` folder.
 
