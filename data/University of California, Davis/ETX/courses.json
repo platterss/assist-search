@@ -11,8 +11,8 @@
             {
                 "sending_name": "Mendocino College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "BIO",
                             "number": "245",
@@ -23,7 +23,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
@@ -41,14 +40,13 @@
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ANTH",
                                     "number": "V35",
@@ -68,15 +66,14 @@
                                     "max_units": 1.0
                                 }
                             ],
-                            "children": [],
                             "notes": [
                                 "Complete entire sequence at same institution prior to transfer"
                             ]
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "CJ",
                                     "number": "V35",
@@ -96,7 +93,6 @@
                                     "max_units": 1.0
                                 }
                             ],
-                            "children": [],
                             "notes": [
                                 "Complete entire sequence at same institution prior to transfer"
                             ]
@@ -119,8 +115,8 @@
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "HS-",
                             "number": "123",
@@ -131,7 +127,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }

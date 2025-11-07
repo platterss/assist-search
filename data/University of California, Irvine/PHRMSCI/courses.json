@@ -27,8 +27,8 @@
             {
                 "sending_name": "Barstow Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "BIOL",
                             "number": "5",
@@ -42,20 +42,18 @@
                             "max_units": 5.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Lassen Community College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "BIOL",
                                     "number": "22",
@@ -66,13 +64,12 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "BIOL",
                                     "number": "25",
@@ -92,7 +89,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],

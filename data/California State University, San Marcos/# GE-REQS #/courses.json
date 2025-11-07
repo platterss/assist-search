@@ -1,34 +1,37 @@
 [
     {
         "type": "GE",
+        "key": "Critical Thinking",
+        "articulations": []
+    },
+    {
+        "type": "GE",
         "key": "CSU GE Area A1 - Oral Communication",
         "articulations": [
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "COMM",
-                                    "number": "101",
-                                    "key": "COMM 101",
-                                    "title": "Public Speaking",
+                                    "number": "C1000",
+                                    "key": "COMM C1000",
+                                    "title": "Introduction to Public Speaking",
                                     "notes": [],
                                     "min_units": 3.0,
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "COMM",
                                     "number": "106",
@@ -39,12 +42,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "COMM",
                                     "number": "207",
@@ -55,7 +57,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -65,8 +66,8 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "SPCH",
                             "number": "100",
@@ -77,7 +78,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
@@ -90,29 +90,27 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
-                                    "number": "100",
-                                    "key": "ENGL 100",
-                                    "title": "Composition and Reading",
+                                    "number": "C1000",
+                                    "key": "ENGL C1000",
+                                    "title": "Academic Reading and Writing",
                                     "notes": [],
                                     "min_units": 4.0,
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "100H",
@@ -123,7 +121,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -133,13 +130,12 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ENG",
                                     "number": "100",
@@ -150,12 +146,11 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ESL",
                                     "number": "110",
@@ -166,7 +161,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -174,5 +168,15 @@
                 }
             }
         ]
+    },
+    {
+        "type": "GE",
+        "key": "Ethnic Studies",
+        "articulations": []
+    },
+    {
+        "type": "GE",
+        "key": "Oral Communication",
+        "articulations": []
     }
 ]

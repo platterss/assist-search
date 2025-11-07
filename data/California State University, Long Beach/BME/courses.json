@@ -31,13 +31,12 @@
             {
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ENGR",
                                     "number": "R148",
@@ -48,12 +47,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "MATH",
                                     "number": "R148",
@@ -64,7 +62,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],

@@ -11,8 +11,8 @@
             {
                 "sending_name": "Chabot College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ENSC",
                             "number": "11",
@@ -23,15 +23,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "GEOG",
                             "number": "106",
@@ -42,20 +41,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ESRM",
                                     "number": "V01",
@@ -66,12 +63,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ESRM",
                                     "number": "V02",
@@ -82,7 +78,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -92,8 +87,8 @@
             {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ENV SCI",
                             "number": "001",
@@ -104,7 +99,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }

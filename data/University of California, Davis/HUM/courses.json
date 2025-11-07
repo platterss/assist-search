@@ -31,13 +31,12 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "HUMN",
                                     "number": "1",
@@ -48,12 +47,11 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "HUMN",
                                     "number": "2",
@@ -64,7 +62,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -74,8 +71,8 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "HUM",
                             "number": "1",
@@ -86,7 +83,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }

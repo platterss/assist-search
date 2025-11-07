@@ -9,10 +9,28 @@
         "max_units": 3.0,
         "articulations": [
             {
+                "sending_name": "Allan Hancock College",
+                "sending_articulation": {
+                    "type": "SINGLE",
+                    "course_groups": [
+                        {
+                            "prefix": "ASTR",
+                            "number": "100",
+                            "key": "ASTR 100",
+                            "title": "Elementary Astronomy",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "300",
@@ -23,20 +41,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Antelope Valley College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "101",
@@ -49,12 +65,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "101H",
@@ -67,7 +82,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -77,8 +91,8 @@
             {
                 "sending_name": "Bakersfield College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "B3",
@@ -89,15 +103,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Berkeley City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "10",
@@ -108,15 +121,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cerritos College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "103",
@@ -127,15 +139,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cerro Coso Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "PHSC",
                             "number": "C121",
@@ -146,15 +157,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "College of Alameda",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "10",
@@ -165,15 +175,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "102",
@@ -184,20 +193,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Compton College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "120",
@@ -208,12 +215,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "120H",
@@ -224,7 +230,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -234,8 +239,8 @@
             {
                 "sending_name": "Copper Mountain College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "A",
                             "number": "001",
@@ -246,15 +251,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cosumnes River College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "300",
@@ -265,15 +269,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cuesta College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "210",
@@ -284,15 +287,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "110",
@@ -303,20 +305,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cypress College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "116 C",
@@ -329,12 +329,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "116 HC",
@@ -347,7 +346,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -357,13 +355,12 @@
             {
                 "sending_name": "El Camino College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "20",
@@ -374,12 +371,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "20H",
@@ -390,7 +386,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -400,8 +395,8 @@
             {
                 "sending_name": "Folsom Lake College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "300",
@@ -412,20 +407,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ESC",
                                     "number": "116 F",
@@ -438,12 +431,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ESC",
                                     "number": "116HF",
@@ -456,7 +448,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -466,8 +457,8 @@
             {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRO",
                             "number": "110",
@@ -478,15 +469,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "110",
@@ -497,15 +487,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Imperial Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "100",
@@ -518,20 +507,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "20",
@@ -544,12 +531,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "20H",
@@ -562,7 +548,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -572,8 +557,8 @@
             {
                 "sending_name": "Laney College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "10",
@@ -584,15 +569,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "31",
@@ -603,20 +587,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "1",
@@ -629,12 +611,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "1H",
@@ -647,7 +628,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -657,8 +637,8 @@
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "001",
@@ -671,15 +651,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Southwest College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "001",
@@ -692,15 +671,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Trade Technical College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "001",
@@ -713,15 +691,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "001",
@@ -734,15 +711,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Merritt College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "10",
@@ -753,15 +729,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "101",
@@ -774,15 +749,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "M01",
@@ -793,15 +767,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "1A",
@@ -812,20 +785,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "5",
@@ -836,12 +807,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "5H",
@@ -852,7 +822,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -862,13 +831,12 @@
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR-",
                                     "number": "111",
@@ -879,12 +847,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "GEOL-",
                                     "number": "111",
@@ -895,7 +862,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -905,8 +871,8 @@
             {
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "R101",
@@ -917,20 +883,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "120",
@@ -941,12 +905,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "GEOL",
                                     "number": "120",
@@ -957,7 +920,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -967,8 +929,8 @@
             {
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "012",
@@ -981,20 +943,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "110",
@@ -1005,12 +965,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "110H",
@@ -1021,7 +980,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1031,8 +989,8 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "310",
@@ -1043,20 +1001,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "21",
@@ -1069,12 +1025,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "GEOL",
                                     "number": "21",
@@ -1087,7 +1042,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1097,8 +1051,8 @@
             {
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "102",
@@ -1109,15 +1063,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "102",
@@ -1128,15 +1081,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego Miramar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "102",
@@ -1147,20 +1099,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ERTH",
                                     "number": "101",
@@ -1171,12 +1121,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ERTH",
                                     "number": "101H",
@@ -1187,7 +1136,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1197,8 +1145,8 @@
             {
                 "sending_name": "Santa Monica College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "2",
@@ -1209,15 +1157,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "120",
@@ -1228,15 +1175,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "V01",
@@ -1247,15 +1193,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "001",
@@ -1268,15 +1213,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Yuba College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRO",
                             "number": "1",
@@ -1287,7 +1231,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
@@ -1321,8 +1264,8 @@
             {
                 "sending_name": "Barstow Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "1",
@@ -1333,15 +1276,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cerro Coso Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "PHSC",
                             "number": "C125",
@@ -1352,15 +1294,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "35",
@@ -1371,15 +1312,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "College of the Desert",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "A",
                             "number": "3",
@@ -1390,15 +1330,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Palo Verde College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "105",
@@ -1409,15 +1348,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Porterville College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "P101",
@@ -1428,15 +1366,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Santa Monica College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "4",
@@ -1447,15 +1384,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Woodland Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRO",
                             "number": "1L",
@@ -1466,7 +1402,6 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
@@ -1482,10 +1417,30 @@
         "max_units": 1.0,
         "articulations": [
             {
+                "sending_name": "Allan Hancock College",
+                "sending_articulation": {
+                    "type": "SINGLE",
+                    "course_groups": [
+                        {
+                            "prefix": "ASTR",
+                            "number": "121",
+                            "key": "ASTR 121",
+                            "title": "Elementary Astonomy Laboratory",
+                            "notes": [
+                                "Acceptable substitute"
+                            ],
+                            "min_units": 1.0,
+                            "max_units": 1.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "400",
@@ -1498,15 +1453,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Antelope Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "101L",
@@ -1519,15 +1473,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cerritos College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "105L",
@@ -1540,15 +1493,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Compton College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "128",
@@ -1561,15 +1513,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Copper Mountain College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "A",
                             "number": "001L",
@@ -1582,15 +1533,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cosumnes River College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "400",
@@ -1603,15 +1553,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cuesta College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "210L",
@@ -1624,15 +1573,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "112",
@@ -1645,20 +1593,18 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cypress College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "117 C",
@@ -1671,12 +1617,11 @@
                                     "max_units": 1.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "117 HC",
@@ -1689,7 +1634,6 @@
                                     "max_units": 1.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1699,8 +1643,8 @@
             {
                 "sending_name": "El Camino College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "12",
@@ -1713,15 +1657,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Folsom Lake College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "400",
@@ -1734,15 +1677,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ESC",
                             "number": "116LF",
@@ -1755,15 +1697,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRO",
                             "number": "102",
@@ -1776,15 +1717,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "112",
@@ -1797,15 +1737,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "30L",
@@ -1818,15 +1757,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "1L",
@@ -1839,15 +1777,14 @@
                             "max_units": 2.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "002",
@@ -1860,15 +1797,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Southwest College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "005",
@@ -1881,15 +1817,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Trade Technical College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "005",
@@ -1902,15 +1837,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "005",
@@ -1923,15 +1857,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "101L",
@@ -1944,15 +1877,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "M01L",
@@ -1965,15 +1897,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "5L",
@@ -1986,15 +1917,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "R101L",
@@ -2007,15 +1937,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "105L",
@@ -2028,15 +1957,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "112",
@@ -2047,15 +1975,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "400",
@@ -2068,15 +1995,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "111",
@@ -2089,15 +2015,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "111",
@@ -2110,15 +2035,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego Miramar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "111",
@@ -2131,15 +2055,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ERTH",
                             "number": "102",
@@ -2152,15 +2075,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "109",
@@ -2173,15 +2095,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "V01L",
@@ -2194,15 +2115,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "005",
@@ -2215,15 +2135,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Yuba College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRO",
                             "number": "1A",
@@ -2236,7 +2155,6 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
@@ -2264,8 +2182,8 @@
             {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "320",
@@ -2276,15 +2194,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Bakersfield College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "B1",
@@ -2295,15 +2212,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cerritos College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "102",
@@ -2314,15 +2230,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "26",
@@ -2333,15 +2248,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "100",
@@ -2352,15 +2266,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "College of the Desert",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "A",
                             "number": "1",
@@ -2371,20 +2284,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Compton College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "125",
@@ -2395,12 +2306,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "125H",
@@ -2411,7 +2321,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -2421,13 +2330,12 @@
             {
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTRON",
                                     "number": "150",
@@ -2438,12 +2346,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTRON",
                                     "number": "150H",
@@ -2454,7 +2361,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -2464,13 +2370,12 @@
             {
                 "sending_name": "El Camino College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "25",
@@ -2481,12 +2386,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "25H",
@@ -2497,7 +2401,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -2507,8 +2410,8 @@
             {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRO",
                             "number": "120",
@@ -2519,15 +2422,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "32",
@@ -2538,15 +2440,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "1B",
@@ -2557,15 +2458,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "8",
@@ -2576,15 +2476,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "100",
@@ -2595,15 +2494,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "320",
@@ -2614,15 +2512,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "20",
@@ -2635,15 +2532,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "101",
@@ -2656,15 +2552,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "101",
@@ -2677,15 +2572,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego Miramar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "101",
@@ -2698,15 +2592,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Santa Monica College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "1",
@@ -2717,15 +2610,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "100",
@@ -2738,7 +2630,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
@@ -2772,8 +2663,8 @@
             {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "481",
@@ -2784,15 +2675,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "104",
@@ -2803,15 +2693,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "College of the Desert",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "A",
                             "number": "2",
@@ -2822,15 +2711,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR-",
                             "number": "101",
@@ -2841,15 +2729,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Palo Verde College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "110",
@@ -2860,15 +2747,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "001",
@@ -2881,15 +2767,14 @@
                             "max_units": 3.5
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "137",
@@ -2900,15 +2785,14 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Santa Monica College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "3",
@@ -2919,7 +2803,6 @@
                             "max_units": 4.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
@@ -2935,10 +2818,30 @@
         "max_units": 1.0,
         "articulations": [
             {
+                "sending_name": "Allan Hancock College",
+                "sending_articulation": {
+                    "type": "SINGLE",
+                    "course_groups": [
+                        {
+                            "prefix": "ASTR",
+                            "number": "121",
+                            "key": "ASTR 121",
+                            "title": "Elementary Astonomy Laboratory",
+                            "notes": [
+                                "Acceptable substitute"
+                            ],
+                            "min_units": 1.0,
+                            "max_units": 1.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "400",
@@ -2951,15 +2854,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Antelope Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "101L",
@@ -2972,15 +2874,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cerritos College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "105L",
@@ -2993,15 +2894,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Compton College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "128",
@@ -3014,15 +2914,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Copper Mountain College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "A",
                             "number": "001L",
@@ -3035,15 +2934,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cosumnes River College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "400",
@@ -3056,15 +2954,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "160",
@@ -3075,15 +2972,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cuesta College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "210L",
@@ -3096,15 +2992,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "112",
@@ -3117,20 +3012,18 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Cypress College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "117 C",
@@ -3143,12 +3036,11 @@
                                     "max_units": 1.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ASTR",
                                     "number": "117 HC",
@@ -3161,7 +3053,6 @@
                                     "max_units": 1.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -3171,8 +3062,8 @@
             {
                 "sending_name": "El Camino College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "12",
@@ -3185,15 +3076,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Folsom Lake College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "400",
@@ -3206,15 +3096,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ESC",
                             "number": "116LF",
@@ -3227,15 +3116,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRO",
                             "number": "102",
@@ -3248,15 +3136,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "112",
@@ -3269,15 +3156,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "30L",
@@ -3290,15 +3176,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "1L",
@@ -3311,15 +3196,14 @@
                             "max_units": 2.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "002",
@@ -3332,15 +3216,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Southwest College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "005",
@@ -3353,15 +3236,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Trade Technical College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "005",
@@ -3374,15 +3256,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Valley College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "005",
@@ -3395,15 +3276,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "101L",
@@ -3416,15 +3296,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "M01L",
@@ -3437,15 +3316,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "5L",
@@ -3458,15 +3336,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "R101L",
@@ -3479,15 +3356,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "105L",
@@ -3500,15 +3376,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "400",
@@ -3521,15 +3396,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "111",
@@ -3542,15 +3416,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "111",
@@ -3563,15 +3436,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "San Diego Miramar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "111",
@@ -3584,15 +3456,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ERTH",
                             "number": "102",
@@ -3605,15 +3476,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTR",
                             "number": "109",
@@ -3626,15 +3496,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AST",
                             "number": "V01L",
@@ -3647,15 +3516,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRON",
                             "number": "005",
@@ -3668,15 +3536,14 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Yuba College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ASTRO",
                             "number": "1A",
@@ -3689,7 +3556,6 @@
                             "max_units": 1.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }

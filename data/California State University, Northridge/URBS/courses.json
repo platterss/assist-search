@@ -11,14 +11,13 @@
             {
                 "sending_name": "East Los Angeles College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ARC",
                                     "number": "160",
@@ -38,13 +37,12 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ARC",
                                     "number": "160",
@@ -64,7 +62,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],

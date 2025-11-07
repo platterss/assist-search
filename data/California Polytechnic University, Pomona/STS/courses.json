@@ -11,8 +11,8 @@
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ANTH",
                             "number": "50",
@@ -23,20 +23,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "IDS",
                                     "number": "R102",
@@ -47,12 +45,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ANTH",
                                     "number": "R116",
@@ -63,7 +60,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],

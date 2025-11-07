@@ -31,14 +31,12 @@
             {
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ES",
                                     "number": "101",
@@ -49,13 +47,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "conjunction": "AND",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "SOC",
                                     "number": "120",
@@ -66,7 +62,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -76,8 +71,8 @@
             {
                 "sending_name": "Butte College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "MCGS",
                             "number": "8",
@@ -88,35 +83,32 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Columbia College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "AND",
-                    "courses": [],
-                    "children": [],
+                    "course_groups": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "AND",
-                    "courses": [],
-                    "children": [],
+                    "course_groups": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "PCN",
                             "number": "13",
@@ -130,15 +122,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Monterey Peninsula College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ETNC",
                             "number": "10",
@@ -149,20 +140,18 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Napa Valley College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ETHS",
                                     "number": "101",
@@ -176,12 +165,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "HUMA",
                                     "number": "151",
@@ -192,7 +180,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -202,18 +189,17 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "AND",
-                    "courses": [],
-                    "children": [],
+                    "course_groups": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "HIST",
                             "number": "21",
@@ -224,15 +210,14 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Solano Community College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "ETHN",
                             "number": "001",
@@ -243,17 +228,15 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "AND",
-                    "courses": [],
-                    "children": [],
+                    "course_groups": [],
                     "notes": []
                 }
             }
@@ -271,8 +254,8 @@
             {
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "RELS",
                             "number": "32",
@@ -283,7 +266,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
@@ -301,10 +283,9 @@
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "AND",
-                    "courses": [],
-                    "children": [],
+                    "course_groups": [],
                     "notes": []
                 }
             }

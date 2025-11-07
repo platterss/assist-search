@@ -11,8 +11,8 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AIS",
                             "number": "100",
@@ -23,11 +23,20 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
         ]
+    },
+    {
+        "type": "COURSE",
+        "prefix": "AIS",
+        "number": "125",
+        "key": "AIS 125",
+        "title": "Decolonizing the Narrative: American Indian and Indigenous Film and Filmmakers",
+        "min_units": 3.0,
+        "max_units": 3.0,
+        "articulations": []
     },
     {
         "type": "COURSE",
@@ -41,14 +50,13 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "AIS",
                                     "number": "101",
@@ -68,13 +76,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "AS",
                                     "number": "101",
@@ -94,13 +101,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "CS",
                                     "number": "101",
@@ -120,7 +126,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -141,8 +146,8 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AIS",
                             "number": "150",
@@ -153,7 +158,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
@@ -171,8 +175,8 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "COURSE",
-                    "courses": [
+                    "type": "SINGLE",
+                    "course_groups": [
                         {
                             "prefix": "AIS",
                             "number": "105",
@@ -183,7 +187,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }

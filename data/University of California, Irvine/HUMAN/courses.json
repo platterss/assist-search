@@ -63,24 +63,20 @@
             {
                 "sending_name": "Citrus College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "GROUP",
+                            "type": "MULTI",
                             "conjunction": "AND",
-                            "courses": [],
-                            "children": [
+                            "course_groups": [
                                 {
-                                    "type": "GROUP",
+                                    "type": "MULTI",
                                     "conjunction": "OR",
-                                    "courses": [],
-                                    "children": [
+                                    "course_groups": [
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1000",
@@ -91,13 +87,11 @@
                                                     "max_units": 4.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1000 H",
@@ -108,13 +102,11 @@
                                                     "max_units": 4.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "102",
@@ -125,7 +117,6 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         }
                                     ],
@@ -135,19 +126,16 @@
                             "notes": []
                         },
                         {
-                            "type": "GROUP",
+                            "type": "MULTI",
                             "conjunction": "AND",
-                            "courses": [],
-                            "children": [
+                            "course_groups": [
                                 {
-                                    "type": "GROUP",
+                                    "type": "MULTI",
                                     "conjunction": "OR",
-                                    "courses": [],
-                                    "children": [
+                                    "course_groups": [
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "103",
@@ -158,13 +146,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "103H",
@@ -175,13 +161,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1001",
@@ -192,13 +176,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1001 H",
@@ -209,21 +191,18 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         }
                                     ],
                                     "notes": []
                                 },
                                 {
-                                    "type": "GROUP",
+                                    "type": "MULTI",
                                     "conjunction": "OR",
-                                    "courses": [],
-                                    "children": [
+                                    "course_groups": [
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "101",
@@ -234,13 +213,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "101H",
@@ -251,13 +228,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "102",
@@ -268,13 +243,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "102H",
@@ -285,7 +258,6 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         }
                                     ],
@@ -301,19 +273,17 @@
             {
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "GROUP",
+                            "type": "MULTI",
                             "conjunction": "AND",
-                            "courses": [],
-                            "children": [
+                            "course_groups": [
                                 {
-                                    "type": "COURSE",
+                                    "type": "SINGLE",
                                     "conjunction": "AND",
-                                    "courses": [
+                                    "course_groups": [
                                         {
                                             "prefix": "HUMAN",
                                             "number": "110",
@@ -342,12 +312,11 @@
                                             "max_units": 3.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 },
                                 {
-                                    "type": "COURSE",
-                                    "courses": [
+                                    "type": "SINGLE",
+                                    "course_groups": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "C1000",
@@ -358,12 +327,11 @@
                                             "max_units": 3.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 },
                                 {
-                                    "type": "COURSE",
-                                    "courses": [
+                                    "type": "SINGLE",
+                                    "course_groups": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "122AL",
@@ -374,15 +342,14 @@
                                             "max_units": 5.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000E",
@@ -393,17 +360,15 @@
                                     "max_units": 5.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "GROUP",
+                            "type": "MULTI",
                             "conjunction": "AND",
-                            "courses": [],
-                            "children": [
+                            "course_groups": [
                                 {
-                                    "type": "COURSE",
-                                    "courses": [
+                                    "type": "SINGLE",
+                                    "course_groups": [
                                         {
                                             "prefix": "COMM",
                                             "number": "121",
@@ -414,12 +379,11 @@
                                             "max_units": 3.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 },
                                 {
-                                    "type": "COURSE",
-                                    "courses": [
+                                    "type": "SINGLE",
+                                    "course_groups": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "123",
@@ -430,12 +394,11 @@
                                             "max_units": 3.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 },
                                 {
-                                    "type": "COURSE",
-                                    "courses": [
+                                    "type": "SINGLE",
+                                    "course_groups": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "123A",
@@ -446,15 +409,14 @@
                                             "max_units": 4.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1001",
@@ -465,12 +427,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "126A",
@@ -481,12 +442,11 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "HIST",
                                     "number": "122",
@@ -497,12 +457,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "PHILO",
                                     "number": "130",
@@ -513,12 +472,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "SOCIO",
                                     "number": "122",
@@ -529,7 +487,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -539,9 +496,9 @@
             {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "SINGLE",
                     "conjunction": "AND",
-                    "courses": [
+                    "course_groups": [
                         {
                             "prefix": "HUMN",
                             "number": "110",
@@ -579,31 +536,26 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "GROUP",
+                            "type": "MULTI",
                             "conjunction": "AND",
-                            "courses": [],
-                            "children": [
+                            "course_groups": [
                                 {
-                                    "type": "GROUP",
+                                    "type": "MULTI",
                                     "conjunction": "OR",
-                                    "courses": [],
-                                    "children": [
+                                    "course_groups": [
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "1",
@@ -614,13 +566,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "1H",
@@ -631,13 +581,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "2",
@@ -648,13 +596,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "3",
@@ -665,13 +611,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "4",
@@ -682,7 +626,6 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         }
                                     ],
@@ -692,19 +635,16 @@
                             "notes": []
                         },
                         {
-                            "type": "GROUP",
+                            "type": "MULTI",
                             "conjunction": "AND",
-                            "courses": [],
-                            "children": [
+                            "course_groups": [
                                 {
-                                    "type": "GROUP",
+                                    "type": "MULTI",
                                     "conjunction": "OR",
-                                    "courses": [],
-                                    "children": [
+                                    "course_groups": [
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ESL",
                                                     "number": "1",
@@ -715,13 +655,11 @@
                                                     "max_units": 4.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1000",
@@ -732,13 +670,11 @@
                                                     "max_units": 4.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1000H",
@@ -749,21 +685,18 @@
                                                     "max_units": 4.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         }
                                     ],
                                     "notes": []
                                 },
                                 {
-                                    "type": "GROUP",
+                                    "type": "MULTI",
                                     "conjunction": "OR",
-                                    "courses": [],
-                                    "children": [
+                                    "course_groups": [
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "LIB",
                                                     "number": "20",
@@ -774,13 +707,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "LIB",
                                                     "number": "20H",
@@ -791,13 +722,11 @@
                                                     "max_units": 3.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1001",
@@ -808,13 +737,11 @@
                                                     "max_units": 4.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         },
                                         {
-                                            "type": "COURSE",
-                                            "conjunction": "AND",
-                                            "courses": [
+                                            "type": "SINGLE",
+                                            "course_groups": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1001H",
@@ -825,7 +752,6 @@
                                                     "max_units": 4.0
                                                 }
                                             ],
-                                            "children": [],
                                             "notes": []
                                         }
                                     ],
@@ -841,14 +767,13 @@
             {
                 "sending_name": "Lake Tahoe Community College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -868,12 +793,11 @@
                                     "max_units": 5.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "ENG",
                                     "number": "211",
@@ -884,13 +808,12 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "101",
@@ -919,7 +842,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -929,9 +851,9 @@
             {
                 "sending_name": "Los Angeles Harbor College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "SINGLE",
                     "conjunction": "AND",
-                    "courses": [
+                    "course_groups": [
                         {
                             "prefix": "HUMAN",
                             "number": "030",
@@ -969,16 +891,15 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Mission College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "SINGLE",
                     "conjunction": "AND",
-                    "courses": [
+                    "course_groups": [
                         {
                             "prefix": "HUMAN",
                             "number": "030",
@@ -1016,16 +937,15 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "SINGLE",
                     "conjunction": "AND",
-                    "courses": [
+                    "course_groups": [
                         {
                             "prefix": "HUMAN",
                             "number": "031",
@@ -1063,21 +983,19 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "Mission College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "001A",
@@ -1115,13 +1033,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "001A",
@@ -1159,13 +1076,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "001A",
@@ -1203,7 +1119,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1213,14 +1128,13 @@
             {
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUMAN",
                                     "number": "105",
@@ -1258,13 +1172,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUMAN",
                                     "number": "105",
@@ -1302,13 +1215,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUMAN",
                                     "number": "105",
@@ -1346,7 +1258,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1356,19 +1267,16 @@
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "AND",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "GROUP",
+                            "type": "MULTI",
                             "conjunction": "OR",
-                            "courses": [],
-                            "children": [
+                            "course_groups": [
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "SINGLE",
+                                    "course_groups": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "C1000",
@@ -1379,13 +1287,11 @@
                                             "max_units": 4.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 },
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "SINGLE",
+                                    "course_groups": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "C1000H",
@@ -1396,21 +1302,18 @@
                                             "max_units": 4.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "GROUP",
+                            "type": "MULTI",
                             "conjunction": "OR",
-                            "courses": [],
-                            "children": [
+                            "course_groups": [
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "SINGLE",
+                                    "course_groups": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "M01B",
@@ -1421,13 +1324,11 @@
                                             "max_units": 4.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 },
                                 {
-                                    "type": "COURSE",
-                                    "conjunction": "AND",
-                                    "courses": [
+                                    "type": "SINGLE",
+                                    "course_groups": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "M01BH",
@@ -1438,15 +1339,14 @@
                                             "max_units": 4.0
                                         }
                                     ],
-                                    "children": [],
                                     "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "M10A",
@@ -1457,12 +1357,11 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
-                            "courses": [
+                            "type": "SINGLE",
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "M10B",
@@ -1473,7 +1372,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1483,14 +1381,13 @@
             {
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4",
@@ -1528,13 +1425,12 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4H",
@@ -1572,7 +1468,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1582,14 +1477,13 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4",
@@ -1627,13 +1521,12 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4H",
@@ -1671,7 +1564,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1681,14 +1573,13 @@
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "110",
@@ -1726,13 +1617,12 @@
                                     "max_units": 3.5
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "110",
@@ -1770,7 +1660,6 @@
                                     "max_units": 3.5
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1780,14 +1669,13 @@
             {
                 "sending_name": "Riverside City College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4",
@@ -1825,13 +1713,12 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4H",
@@ -1869,7 +1756,6 @@
                                     "max_units": 4.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -1879,14 +1765,13 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "300",
@@ -1924,13 +1809,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "300",
@@ -1968,13 +1852,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "HUM",
                                     "number": "300",
@@ -2012,7 +1895,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -2022,14 +1904,13 @@
             {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
-                    "type": "GROUP",
+                    "type": "MULTI",
                     "conjunction": "OR",
-                    "courses": [],
-                    "children": [
+                    "course_groups": [
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2067,13 +1948,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -2111,13 +1991,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2155,13 +2034,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2199,13 +2077,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -2243,13 +2120,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2287,13 +2163,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -2331,13 +2206,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -2375,13 +2249,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2419,13 +2292,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -2463,13 +2335,12 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         },
                         {
-                            "type": "COURSE",
+                            "type": "SINGLE",
                             "conjunction": "AND",
-                            "courses": [
+                            "course_groups": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2507,7 +2378,6 @@
                                     "max_units": 3.0
                                 }
                             ],
-                            "children": [],
                             "notes": []
                         }
                     ],
@@ -2517,9 +2387,9 @@
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "SINGLE",
                     "conjunction": "AND",
-                    "courses": [
+                    "course_groups": [
                         {
                             "prefix": "ENGL",
                             "number": "C1000",
@@ -2557,16 +2427,15 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             },
             {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
-                    "type": "COURSE",
+                    "type": "SINGLE",
                     "conjunction": "AND",
-                    "courses": [
+                    "course_groups": [
                         {
                             "prefix": "HUMAN",
                             "number": "030",
@@ -2613,7 +2482,6 @@
                             "max_units": 3.0
                         }
                     ],
-                    "children": [],
                     "notes": []
                 }
             }
