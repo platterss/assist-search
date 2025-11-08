@@ -219,6 +219,83 @@ def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: li
     )
 
 
+def is_singleton_set(node: SendingArticulationNode) -> bool:
+    return (
+        node and
+        node.type == NodeType.SET and
+        (node.items is not None) and
+        isinstance(node.items, list) and
+        all(isinstance(item, SendingCourse) for item in node.items) and
+        len(node.items) == 1
+    )
+
+
+def flatten_group_of_singleton_sets(node: SendingArticulationNode) -> SendingArticulationNode:
+    if node.type != NodeType.GROUP:
+        return node
+
+    children = node.items or []
+    if not children:
+        return node
+
+    if not all(isinstance(child, SendingArticulationNode) and is_singleton_set(child) for child in children):
+        return node
+
+    flat_courses: list[SendingCourse] = []
+    for child in children:
+        course = child.items[0]
+
+        if child.notes:
+            course = SendingCourse(
+                prefix=course.prefix,
+                number=course.number,
+                key=course.key,
+                title=course.title,
+                notes=list(course.notes) + list(child.notes),
+                min_units=course.min_units,
+                max_units=course.max_units
+            )
+
+        flat_courses.append(course)
+
+    return SendingArticulationNode(
+        type=NodeType.SET,
+        conjunction=node.conjunction,
+        items=flat_courses,
+        notes=list(node.notes or [])
+    )
+
+
+def normalize_node(node: SendingArticulationNode) -> SendingArticulationNode:
+    if node.type == NodeType.GROUP:
+        normalized_children = [normalize_node(child) for child in (node.items or [])]
+        node = SendingArticulationNode(
+            type=NodeType.GROUP,
+            conjunction=node.conjunction,
+            items=normalized_children,
+            notes=list(node.notes or []),
+        )
+
+        if len(normalized_children) == 1:
+            return normalized_children[0]
+
+        node = flatten_group_of_singleton_sets(node)
+        return node
+
+    if node.type == NodeType.SET:
+        courses = list(node.items or [])
+        conj = node.conjunction if len(courses) > 1 else None
+
+        return SendingArticulationNode(
+            type=NodeType.SET,
+            conjunction=conj,
+            items=courses,
+            notes=list(node.notes or []),
+        )
+
+    return node
+
+
 def build_articulation_tree(sending_articulation: Optional[dict]) -> Optional[SendingArticulationNode]:
     if not sending_articulation:
         return None
@@ -232,7 +309,9 @@ def build_articulation_tree(sending_articulation: Optional[dict]) -> Optional[Se
     groups_raw.sort(key=lambda x: x.get("position", 0))
     normalized = [parse_course_group(g) for g in groups_raw if g.get("type") == "CourseGroup"]
 
-    return combine_groups(normalized, sending_articulation.get("courseGroupConjunctions", []) or [])
+    node = combine_groups(normalized, sending_articulation.get("courseGroupConjunctions", []) or [])
+
+    return normalize_node(node)
 
 
 def request_all_courses(year: int, sending: int, receiving: int, method: str) -> dict:
@@ -792,7 +871,7 @@ def run(desired_universities: list[str] = None) -> None:
     if desired_universities is None or len(desired_universities) == 0:
         desired_universities = ["CSU", "UC", "AICCU"]
 
-    institutions = get_institutions(create_new_if_existing=False)
+    institutions = get_institutions(create_new_if_existing=True)
 
     colleges = sorted([i for i in institutions if i["category"] == "CCC"], key=lambda i: i["name"])
     universities = [i for i in institutions if i["category"] in desired_universities]
@@ -838,7 +917,7 @@ def run(desired_universities: list[str] = None) -> None:
 
         print("\n")
 
-    print("Finished collecting all articulations.")
+    print("Finished saving articulations.")
 
 
 def main():
