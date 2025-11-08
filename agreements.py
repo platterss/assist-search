@@ -1,7 +1,7 @@
 import request
 
 
-def get_agreements(university_id: str) -> dict:
+def get_agreements(university_id: int) -> dict:
     print(f"Getting agreements for university ID {university_id}.")
     url = f"https://www.assist.org/api/institutions/{university_id}/agreements"
     agreements_json: list[dict] = request.get(url=url).json()

@@ -60,7 +60,7 @@ def receiving_key(payload: dict) -> str:
 def make_sending_course(obj: dict, extra_notes: Optional[list[str]] = None) -> SendingCourse:
     notes = []
 
-    for attribute in obj.get("attributes", []) or []:
+    for attribute in obj.get("attributes") or []:
         content = attribute.get("content")
 
         if content:
@@ -94,9 +94,7 @@ def make_sending_course(obj: dict, extra_notes: Optional[list[str]] = None) -> S
 
 
 def parse_course_group(group: dict) -> SendingArticulationNode:
-    internal = group.get("courseConjunction")
-    conjunction = (internal or "").strip().lower()
-
+    conjunction = group.get("courseConjunction", "").strip().lower()
     items = sorted(group.get("items", []), key=lambda x: x.get("position", 0))
     courses = [make_sending_course(item) for item in items if item.get("type") == "Course"]
     group_level_notes: list[str] = [
@@ -223,7 +221,7 @@ def is_singleton_set(node: SendingArticulationNode) -> bool:
     return (
         node and
         node.type == NodeType.SET and
-        (node.items is not None) and
+        node.items is not None and
         isinstance(node.items, list) and
         all(isinstance(item, SendingCourse) for item in node.items) and
         len(node.items) == 1
@@ -234,7 +232,7 @@ def flatten_group_of_singleton_sets(node: SendingArticulationNode) -> SendingArt
     if node.type != NodeType.GROUP:
         return node
 
-    children = node.items or []
+    children = node.items
     if not children:
         return node
 
@@ -268,7 +266,7 @@ def flatten_group_of_singleton_sets(node: SendingArticulationNode) -> SendingArt
 
 def normalize_node(node: SendingArticulationNode) -> SendingArticulationNode:
     if node.type == NodeType.GROUP:
-        normalized_children = [normalize_node(child) for child in (node.items or [])]
+        normalized_children = [normalize_node(child) for child in node.items]
         node = SendingArticulationNode(
             type=NodeType.GROUP,
             conjunction=node.conjunction,
@@ -283,13 +281,12 @@ def normalize_node(node: SendingArticulationNode) -> SendingArticulationNode:
         return node
 
     if node.type == NodeType.SET:
-        courses = list(node.items or [])
-        conj = node.conjunction if len(courses) > 1 else None
+        conj = node.conjunction if len(node.items) > 1 else None
 
         return SendingArticulationNode(
             type=NodeType.SET,
             conjunction=conj,
-            items=courses,
+            items=node.items,
             notes=list(node.notes or []),
         )
 
@@ -304,12 +301,12 @@ def build_articulation_tree(sending_articulation: Optional[dict]) -> Optional[Se
     if isinstance(reason, str) and reason.strip():
         return None
 
-    groups_raw = sending_articulation.get("items", []) or []
-    groups_raw = [group for group in groups_raw if group.get("type") == "CourseGroup"]
+    groups_raw = sending_articulation.get("items", [])
+    groups_raw = [group for group in groups_raw if group["type"] == "CourseGroup"]
     groups_raw.sort(key=lambda x: x.get("position", 0))
-    normalized = [parse_course_group(g) for g in groups_raw if g.get("type") == "CourseGroup"]
+    normalized = [parse_course_group(g) for g in groups_raw if g["type"] == "CourseGroup"]
 
-    node = combine_groups(normalized, sending_articulation.get("courseGroupConjunctions", []) or [])
+    node = combine_groups(normalized, sending_articulation.get("courseGroupConjunctions", []))
 
     return normalize_node(node)
 
@@ -365,7 +362,7 @@ def articulation_to_json_dict(articulation: dict) -> Optional[dict]:
 def extract_cells(payload: dict | list) -> list[dict]:
     result = payload["result"]
 
-    if result["name"] == "All Majors" or result["name"] == "All General Education":
+    if result["name"] in {"All Majors", "All Departments"}:
         return as_obj(result["articulations"])
 
     # All Departments or All Prefixes
@@ -389,7 +386,7 @@ def collect_cell_ids(result: dict) -> set[str]:
     return ids
 
 
-def make_course_dict(data: dict) -> dict:
+def make_receiving_course(data: dict) -> dict:
     return {
         "prefix": data["prefix"].strip(),
         "prefix_description": data["prefixDescription"].strip(),
@@ -413,11 +410,11 @@ def walk_template_assets(assets) -> list[tuple[str | None, str, dict]]:
             cid = node.get("id", cell_id)
 
             if is_course_dict(node):
-                out.append((cid, "COURSE", make_course_dict(node)))
+                out.append((cid, "COURSE", make_receiving_course(node)))
 
             series = node.get("series")
             if series is not None:
-                courses = [make_course_dict(c) for c in series["courses"] if is_course_dict(c)]
+                courses = [make_receiving_course(c) for c in series["courses"] if is_course_dict(c)]
 
                 if courses:
                     conjunction = series.get("conjunction")
@@ -531,14 +528,14 @@ def get_course_articulation(articulation: dict, node_dict: dict, seen: set[str],
     out.append({
         "receiving_key": key,
         "receiving_type": "COURSE",
-        "receiving": make_course_dict(receiving),
+        "receiving": make_receiving_course(receiving),
         "sending_articulation": node_dict
     })
 
 
 def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
     series = articulation["series"]
-    series_courses = [make_course_dict(member) for member in series["courses"]]
+    series_courses = [make_receiving_course(member) for member in series["courses"]]
 
     if not series_courses:
         return
@@ -878,7 +875,7 @@ def run(desired_universities: list[str] = None) -> None:
     if desired_universities is None or len(desired_universities) == 0:
         desired_universities = ["CSU", "UC", "AICCU"]
 
-    institutions = get_institutions(create_new_if_existing=True)
+    institutions = get_institutions(create_new_if_existing=False)
 
     colleges = sorted([i for i in institutions if i["category"] == "CCC"], key=lambda i: i["name"])
     universities = [i for i in institutions if i["category"] in desired_universities]
