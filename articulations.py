@@ -83,10 +83,10 @@ def make_sending_course(obj: dict, extra_notes: Optional[list[str]] = None) -> S
         )
 
     return SendingCourse(
-        prefix=obj["prefix"],
-        number=obj["courseNumber"],
+        prefix=obj["prefix"].strip(),
+        number=obj["courseNumber"].strip(),
         key=make_course_key(obj["prefix"], obj["courseNumber"]),
-        title=obj["courseTitle"],
+        title=obj["courseTitle"].strip(),
         min_units=float(obj["minUnits"]),
         max_units=float(obj["maxUnits"]),
         notes=notes
@@ -331,18 +331,25 @@ def get_all_courses_json(agreement_year: int, sending_id: int, receiving_id: int
     try:
         return request_all_courses(agreement_year, sending_id, receiving_id, "AllMajors")
     except FileNotFoundError:
-        print("All majors was unsuccessful. Attempting all departments.")
+        print("All majors agreement was not found. Attempting all departments.")
 
     try:
         return request_all_courses(agreement_year, sending_id, receiving_id, "AllDepartments")
     except FileNotFoundError:
-        print("All departments was unsuccessful.")
+        print("All departments agreement was not found. Attempting all general education requirements.")
+
+    # Usually, if the departmental agreements are available, the prefix agreements ("AllPrefixes") will be too.
+    # So if there is no departmental agreement, we can save a request and skip to the GE requirements.
+    try:
+        return request_all_courses(agreement_year, sending_id, receiving_id, "AllGeneralEducation")
+    except FileNotFoundError:
+        print("All general education requirements agreement was not found.")
 
     return None
 
 
 def articulation_to_json_dict(articulation: dict) -> Optional[dict]:
-    sending = articulation.get("sendingArticulation", None)
+    sending = articulation.get("sendingArticulation")
 
     if sending is None:
         return None
@@ -358,10 +365,10 @@ def articulation_to_json_dict(articulation: dict) -> Optional[dict]:
 def extract_cells(payload: dict | list) -> list[dict]:
     result = payload["result"]
 
-    if result["name"] == "All Majors":
+    if result["name"] == "All Majors" or result["name"] == "All General Education":
         return as_obj(result["articulations"])
 
-    # All Departments
+    # All Departments or All Prefixes
     cells = []
     for subject in as_obj(result["articulations"]):
         for articulation in subject.get("articulations", []):
@@ -373,7 +380,7 @@ def extract_cells(payload: dict | list) -> list[dict]:
 def collect_cell_ids(result: dict) -> set[str]:
     ids = set()
 
-    for c in as_obj(result.get("articulations", "[]")) or []:
+    for c in as_obj(result.get("articulations", "[]")):
         art = c.get("articulation") or {}
         template_cell_id = c.get("templateCellId") or art.get("templateCellId")
         if template_cell_id:
