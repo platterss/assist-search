@@ -11,12 +11,13 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "AMS",
                                     "number": "200",
@@ -30,8 +31,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "MCS",
                                     "number": "200",
@@ -45,8 +47,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "SOC",
                                     "number": "200",
@@ -97,8 +100,9 @@
             {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "SOC S",
                             "number": "105",
@@ -126,8 +130,9 @@
             {
                 "sending_name": "Folsom Lake College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "HUM",
                             "number": "332",
@@ -146,8 +151,9 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "AMS",
                             "number": "100",
@@ -164,8 +170,9 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "HUM",
                             "number": "332",
@@ -193,8 +200,9 @@
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "SOC",
                             "number": "130",
@@ -250,10 +258,89 @@
         "max_units": 4.0,
         "articulations": [
             {
+                "sending_name": "American River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "SOC",
+                            "number": "350",
+                            "key": "SOC 350",
+                            "title": "Sociology of Popular Culture",
+                            "notes": [
+                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            ],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Berkeley City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "HUMAN",
+                            "number": "15",
+                            "key": "HUMAN 15",
+                            "title": "Popular Culture",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Chabot College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "ES",
+                            "number": "5",
+                            "key": "ES 5",
+                            "title": "Critiquing Race and Gender in Popular Culture",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cosumnes River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "HUM",
+                            "number": "332",
+                            "key": "HUM 332",
+                            "title": "American Humanities",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Folsom Lake College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "HUM",
                             "number": "332",
@@ -272,8 +359,9 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "ETHNST",
                             "number": "10",
@@ -290,8 +378,9 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "SOC",
                             "number": "350",
@@ -319,10 +408,30 @@
         "max_units": 4.0,
         "articulations": [
             {
+                "sending_name": "Bakersfield College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "FDST",
+                            "number": "B2",
+                            "key": "FDST B2",
+                            "title": "Food Customs and Culture",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "NUTR",
                             "number": "108",
@@ -341,8 +450,9 @@
             {
                 "sending_name": "Santa Monica College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "NUTR",
                             "number": "7",
@@ -368,14 +478,154 @@
         "max_units": 4.0,
         "articulations": [
             {
+                "sending_name": "Berkeley City College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "prefix": "MUSIC",
+                                    "number": "15A",
+                                    "key": "MUSIC 15A",
+                                    "title": "Jazz, Blues and Popular Music in American Culture",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "prefix": "MUSIC",
+                                    "number": "15B",
+                                    "key": "MUSIC 15B",
+                                    "title": "Jazz, Blues and Popular Music in American Culture",
+                                    "notes": [],
+                                    "min_units": 3.0,
+                                    "max_units": 3.0
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cabrillo College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "MUS",
+                            "number": "13A",
+                            "key": "MUS 13A",
+                            "title": "Survey of American Popular Music",
+                            "notes": [
+                                "Effective next fall, this course will no longer articulate"
+                            ],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Chabot College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "MUSL",
+                            "number": "8",
+                            "key": "MUSL 8",
+                            "title": "History of Rock and Roll and Popular Music",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Marin",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "MUS",
+                            "number": "105",
+                            "key": "MUS 105",
+                            "title": "Rock, Pop and Jazz",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Redwoods",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "MUS",
+                            "number": "12",
+                            "key": "MUS 12",
+                            "title": "American Popular Music",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Siskiyous",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "MUS",
+                            "number": "1234",
+                            "key": "MUS 1234",
+                            "title": "Diversity in American Music",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "MUS",
                                     "number": "8",
@@ -389,8 +639,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "MUS",
                                     "number": "8H",
@@ -410,8 +661,9 @@
             {
                 "sending_name": "Los Medanos College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "MUSIC",
                             "number": "012",
@@ -428,8 +680,9 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "MUS",
                             "number": "112",
@@ -446,8 +699,9 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "MUFHL",
                             "number": "309",

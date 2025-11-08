@@ -9,10 +9,30 @@
         "max_units": 4.0,
         "articulations": [
             {
+                "sending_name": "Contra Costa College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "prefix": "BIOSC",
+                            "number": "172",
+                            "key": "BIOSC 172",
+                            "title": "Introduction to Biotechnology",
+                            "notes": [],
+                            "min_units": 3.0,
+                            "max_units": 3.0
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "BIOL",
                             "number": "140",
@@ -29,8 +49,9 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "BIOT",
                             "number": "70",
@@ -47,9 +68,9 @@
             {
                 "sending_name": "Merced College",
                 "sending_articulation": {
-                    "type": "SINGLE",
+                    "type": "SET",
                     "conjunction": "AND",
-                    "course_groups": [
+                    "items": [
                         {
                             "prefix": "BIOL",
                             "number": "-32",
@@ -77,8 +98,9 @@
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "SINGLE",
-                    "course_groups": [
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "prefix": "BIOL-",
                             "number": "131",
@@ -95,13 +117,13 @@
             {
                 "sending_name": "Skyline College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "BIOL",
                                     "number": "170",
@@ -126,9 +148,9 @@
                             ]
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "BTEC",
                                     "number": "170",

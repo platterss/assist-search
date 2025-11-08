@@ -63,61 +63,57 @@
             {
                 "sending_name": "Citrus College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "MULTI",
-                            "conjunction": "AND",
-                            "course_groups": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "items": [
                                 {
-                                    "type": "MULTI",
-                                    "conjunction": "OR",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
-                                                {
-                                                    "prefix": "ENGL",
-                                                    "number": "C1000",
-                                                    "key": "ENGL C1000",
-                                                    "title": "Academic Reading and Writing ",
-                                                    "notes": [],
-                                                    "min_units": 4.0,
-                                                    "max_units": 4.0
-                                                }
-                                            ],
-                                            "notes": []
-                                        },
+                                            "prefix": "ENGL",
+                                            "number": "C1000",
+                                            "key": "ENGL C1000",
+                                            "title": "Academic Reading and Writing ",
+                                            "notes": [],
+                                            "min_units": 4.0,
+                                            "max_units": 4.0
+                                        }
+                                    ],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
-                                                {
-                                                    "prefix": "ENGL",
-                                                    "number": "C1000 H",
-                                                    "key": "ENGL C1000 H",
-                                                    "title": "Academic Reading and Writing - Honors",
-                                                    "notes": [],
-                                                    "min_units": 4.0,
-                                                    "max_units": 4.0
-                                                }
-                                            ],
-                                            "notes": []
-                                        },
+                                            "prefix": "ENGL",
+                                            "number": "C1000 H",
+                                            "key": "ENGL C1000 H",
+                                            "title": "Academic Reading and Writing - Honors",
+                                            "notes": [],
+                                            "min_units": 4.0,
+                                            "max_units": 4.0
+                                        }
+                                    ],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
-                                                {
-                                                    "prefix": "ENGL",
-                                                    "number": "102",
-                                                    "key": "ENGL 102",
-                                                    "title": "Introduction to Literature",
-                                                    "notes": [],
-                                                    "min_units": 3.0,
-                                                    "max_units": 3.0
-                                                }
-                                            ],
-                                            "notes": []
+                                            "prefix": "ENGL",
+                                            "number": "102",
+                                            "key": "ENGL 102",
+                                            "title": "Introduction to Literature",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
                                         }
                                     ],
                                     "notes": []
@@ -126,16 +122,17 @@
                             "notes": []
                         },
                         {
-                            "type": "MULTI",
+                            "type": "GROUP",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
-                                    "type": "MULTI",
+                                    "type": "GROUP",
                                     "conjunction": "OR",
-                                    "course_groups": [
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "103",
@@ -149,8 +146,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "103H",
@@ -164,8 +162,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1001",
@@ -179,8 +178,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1001 H",
@@ -197,12 +197,13 @@
                                     "notes": []
                                 },
                                 {
-                                    "type": "MULTI",
+                                    "type": "GROUP",
                                     "conjunction": "OR",
-                                    "course_groups": [
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "101",
@@ -216,8 +217,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "101H",
@@ -231,8 +233,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "102",
@@ -246,8 +249,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "HUM",
                                                     "number": "102H",
@@ -273,17 +277,17 @@
             {
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "MULTI",
+                            "type": "GROUP",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
-                                    "type": "SINGLE",
+                                    "type": "SET",
                                     "conjunction": "AND",
-                                    "course_groups": [
+                                    "items": [
                                         {
                                             "prefix": "HUMAN",
                                             "number": "110",
@@ -315,8 +319,9 @@
                                     "notes": []
                                 },
                                 {
-                                    "type": "SINGLE",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "C1000",
@@ -330,8 +335,9 @@
                                     "notes": []
                                 },
                                 {
-                                    "type": "SINGLE",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "122AL",
@@ -348,27 +354,36 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "GROUP",
+                            "conjunction": "AND",
+                            "items": [
                                 {
-                                    "prefix": "ENGL",
-                                    "number": "C1000E",
-                                    "key": "ENGL C1000E",
-                                    "title": "Academic Reading and Writing ",
-                                    "notes": [],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
+                                        {
+                                            "prefix": "ENGL",
+                                            "number": "C1000E",
+                                            "key": "ENGL C1000E",
+                                            "title": "Academic Reading and Writing ",
+                                            "notes": [],
+                                            "min_units": 5.0,
+                                            "max_units": 5.0
+                                        }
+                                    ],
+                                    "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "MULTI",
+                            "type": "GROUP",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
-                                    "type": "SINGLE",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
                                             "prefix": "COMM",
                                             "number": "121",
@@ -382,8 +397,9 @@
                                     "notes": []
                                 },
                                 {
-                                    "type": "SINGLE",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "123",
@@ -397,8 +413,9 @@
                                     "notes": []
                                 },
                                 {
-                                    "type": "SINGLE",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "123A",
@@ -415,76 +432,116 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "GROUP",
+                            "conjunction": "AND",
+                            "items": [
                                 {
-                                    "prefix": "ENGL",
-                                    "number": "C1001",
-                                    "key": "ENGL C1001",
-                                    "title": "Critical Thinking and Writing",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
+                                        {
+                                            "prefix": "ENGL",
+                                            "number": "C1001",
+                                            "key": "ENGL C1001",
+                                            "title": "Critical Thinking and Writing",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "GROUP",
+                            "conjunction": "AND",
+                            "items": [
                                 {
-                                    "prefix": "ENGL",
-                                    "number": "126A",
-                                    "key": "ENGL 126A",
-                                    "title": "Critical Thinking and Writing for Multilingual Students",
-                                    "notes": [],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
+                                        {
+                                            "prefix": "ENGL",
+                                            "number": "126A",
+                                            "key": "ENGL 126A",
+                                            "title": "Critical Thinking and Writing for Multilingual Students",
+                                            "notes": [],
+                                            "min_units": 4.0,
+                                            "max_units": 4.0
+                                        }
+                                    ],
+                                    "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "GROUP",
+                            "conjunction": "AND",
+                            "items": [
                                 {
-                                    "prefix": "HIST",
-                                    "number": "122",
-                                    "key": "HIST 122",
-                                    "title": "Critical Reasoning in History",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
+                                        {
+                                            "prefix": "HIST",
+                                            "number": "122",
+                                            "key": "HIST 122",
+                                            "title": "Critical Reasoning in History",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "GROUP",
+                            "conjunction": "AND",
+                            "items": [
                                 {
-                                    "prefix": "PHILO",
-                                    "number": "130",
-                                    "key": "PHILO 130",
-                                    "title": "Logic and Critical Thinking",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
+                                        {
+                                            "prefix": "PHILO",
+                                            "number": "130",
+                                            "key": "PHILO 130",
+                                            "title": "Logic and Critical Thinking",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "GROUP",
+                            "conjunction": "AND",
+                            "items": [
                                 {
-                                    "prefix": "SOCIO",
-                                    "number": "122",
-                                    "key": "SOCIO 122",
-                                    "title": "Critical Thinking About Social and Cultural Issues",
-                                    "notes": [],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
+                                        {
+                                            "prefix": "SOCIO",
+                                            "number": "122",
+                                            "key": "SOCIO 122",
+                                            "title": "Critical Thinking About Social and Cultural Issues",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -496,9 +553,9 @@
             {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
-                    "type": "SINGLE",
+                    "type": "SET",
                     "conjunction": "AND",
-                    "course_groups": [
+                    "items": [
                         {
                             "prefix": "HUMN",
                             "number": "110",
@@ -542,91 +599,89 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "MULTI",
-                            "conjunction": "AND",
-                            "course_groups": [
+                            "type": "GROUP",
+                            "conjunction": "OR",
+                            "items": [
                                 {
-                                    "type": "MULTI",
-                                    "conjunction": "OR",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
-                                                {
-                                                    "prefix": "HUM",
-                                                    "number": "1",
-                                                    "key": "HUM 1",
-                                                    "title": "Introduction to Humanities",
-                                                    "notes": [],
-                                                    "min_units": 3.0,
-                                                    "max_units": 3.0
-                                                }
-                                            ],
-                                            "notes": []
-                                        },
+                                            "prefix": "HUM",
+                                            "number": "1",
+                                            "key": "HUM 1",
+                                            "title": "Introduction to Humanities",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
-                                                {
-                                                    "prefix": "HUM",
-                                                    "number": "1H",
-                                                    "key": "HUM 1H",
-                                                    "title": "Introduction to Humanities Honors",
-                                                    "notes": [],
-                                                    "min_units": 3.0,
-                                                    "max_units": 3.0
-                                                }
-                                            ],
-                                            "notes": []
-                                        },
+                                            "prefix": "HUM",
+                                            "number": "1H",
+                                            "key": "HUM 1H",
+                                            "title": "Introduction to Humanities Honors",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
-                                                {
-                                                    "prefix": "HUM",
-                                                    "number": "2",
-                                                    "key": "HUM 2",
-                                                    "title": "The Culture of Ancient Greece and Rome",
-                                                    "notes": [],
-                                                    "min_units": 3.0,
-                                                    "max_units": 3.0
-                                                }
-                                            ],
-                                            "notes": []
-                                        },
+                                            "prefix": "HUM",
+                                            "number": "2",
+                                            "key": "HUM 2",
+                                            "title": "The Culture of Ancient Greece and Rome",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
-                                                {
-                                                    "prefix": "HUM",
-                                                    "number": "3",
-                                                    "key": "HUM 3",
-                                                    "title": "The Culture of Medieval and Renaissance Europe",
-                                                    "notes": [],
-                                                    "min_units": 3.0,
-                                                    "max_units": 3.0
-                                                }
-                                            ],
-                                            "notes": []
-                                        },
+                                            "prefix": "HUM",
+                                            "number": "3",
+                                            "key": "HUM 3",
+                                            "title": "The Culture of Medieval and Renaissance Europe",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
+                                        }
+                                    ],
+                                    "notes": []
+                                },
+                                {
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
-                                                {
-                                                    "prefix": "HUM",
-                                                    "number": "4",
-                                                    "key": "HUM 4",
-                                                    "title": "The Culture of the Modern World: 1700 to the Present",
-                                                    "notes": [],
-                                                    "min_units": 3.0,
-                                                    "max_units": 3.0
-                                                }
-                                            ],
-                                            "notes": []
+                                            "prefix": "HUM",
+                                            "number": "4",
+                                            "key": "HUM 4",
+                                            "title": "The Culture of the Modern World: 1700 to the Present",
+                                            "notes": [],
+                                            "min_units": 3.0,
+                                            "max_units": 3.0
                                         }
                                     ],
                                     "notes": []
@@ -635,16 +690,17 @@
                             "notes": []
                         },
                         {
-                            "type": "MULTI",
+                            "type": "GROUP",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
-                                    "type": "MULTI",
+                                    "type": "GROUP",
                                     "conjunction": "OR",
-                                    "course_groups": [
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "ESL",
                                                     "number": "1",
@@ -658,8 +714,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1000",
@@ -673,8 +730,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1000H",
@@ -691,12 +749,13 @@
                                     "notes": []
                                 },
                                 {
-                                    "type": "MULTI",
+                                    "type": "GROUP",
                                     "conjunction": "OR",
-                                    "course_groups": [
+                                    "items": [
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "LIB",
                                                     "number": "20",
@@ -710,8 +769,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "LIB",
                                                     "number": "20H",
@@ -725,8 +785,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1001",
@@ -740,8 +801,9 @@
                                             "notes": []
                                         },
                                         {
-                                            "type": "SINGLE",
-                                            "course_groups": [
+                                            "type": "SET",
+                                            "conjunction": null,
+                                            "items": [
                                                 {
                                                     "prefix": "ENGL",
                                                     "number": "C1001H",
@@ -767,13 +829,13 @@
             {
                 "sending_name": "Lake Tahoe Community College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -796,8 +858,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "ENG",
                                     "number": "211",
@@ -811,9 +874,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "101",
@@ -851,9 +914,9 @@
             {
                 "sending_name": "Los Angeles Harbor College",
                 "sending_articulation": {
-                    "type": "SINGLE",
+                    "type": "SET",
                     "conjunction": "AND",
-                    "course_groups": [
+                    "items": [
                         {
                             "prefix": "HUMAN",
                             "number": "030",
@@ -897,9 +960,9 @@
             {
                 "sending_name": "Los Angeles Mission College",
                 "sending_articulation": {
-                    "type": "SINGLE",
+                    "type": "SET",
                     "conjunction": "AND",
-                    "course_groups": [
+                    "items": [
                         {
                             "prefix": "HUMAN",
                             "number": "030",
@@ -943,9 +1006,9 @@
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "SINGLE",
+                    "type": "SET",
                     "conjunction": "AND",
-                    "course_groups": [
+                    "items": [
                         {
                             "prefix": "HUMAN",
                             "number": "031",
@@ -989,13 +1052,13 @@
             {
                 "sending_name": "Mission College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "001A",
@@ -1036,9 +1099,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "001A",
@@ -1079,9 +1142,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "001A",
@@ -1128,13 +1191,13 @@
             {
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUMAN",
                                     "number": "105",
@@ -1175,9 +1238,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUMAN",
                                     "number": "105",
@@ -1218,9 +1281,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUMAN",
                                     "number": "105",
@@ -1267,16 +1330,17 @@
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "AND",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "MULTI",
+                            "type": "GROUP",
                             "conjunction": "OR",
-                            "course_groups": [
+                            "items": [
                                 {
-                                    "type": "SINGLE",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "C1000",
@@ -1290,8 +1354,9 @@
                                     "notes": []
                                 },
                                 {
-                                    "type": "SINGLE",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "C1000H",
@@ -1308,12 +1373,13 @@
                             "notes": []
                         },
                         {
-                            "type": "MULTI",
+                            "type": "GROUP",
                             "conjunction": "OR",
-                            "course_groups": [
+                            "items": [
                                 {
-                                    "type": "SINGLE",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "M01B",
@@ -1327,8 +1393,9 @@
                                     "notes": []
                                 },
                                 {
-                                    "type": "SINGLE",
-                                    "course_groups": [
+                                    "type": "SET",
+                                    "conjunction": null,
+                                    "items": [
                                         {
                                             "prefix": "ENGL",
                                             "number": "M01BH",
@@ -1345,8 +1412,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "M10A",
@@ -1360,8 +1428,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "M10B",
@@ -1381,13 +1450,13 @@
             {
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4",
@@ -1428,9 +1497,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4H",
@@ -1477,13 +1546,13 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4",
@@ -1524,9 +1593,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4H",
@@ -1573,13 +1642,13 @@
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "110",
@@ -1620,9 +1689,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "110",
@@ -1669,13 +1738,13 @@
             {
                 "sending_name": "Riverside City College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4",
@@ -1716,9 +1785,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "4H",
@@ -1765,13 +1834,13 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "300",
@@ -1812,9 +1881,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "300",
@@ -1855,9 +1924,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "HUM",
                                     "number": "300",
@@ -1904,13 +1973,13 @@
             {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -1951,9 +2020,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -1994,9 +2063,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2037,9 +2106,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2080,9 +2149,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -2123,9 +2192,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2166,9 +2235,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -2209,9 +2278,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -2252,9 +2321,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2295,9 +2364,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000H",
@@ -2338,9 +2407,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
+                            "type": "SET",
                             "conjunction": "AND",
-                            "course_groups": [
+                            "items": [
                                 {
                                     "prefix": "ENGL",
                                     "number": "C1000",
@@ -2387,9 +2456,9 @@
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "SINGLE",
+                    "type": "SET",
                     "conjunction": "AND",
-                    "course_groups": [
+                    "items": [
                         {
                             "prefix": "ENGL",
                             "number": "C1000",
@@ -2433,9 +2502,9 @@
             {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
-                    "type": "SINGLE",
+                    "type": "SET",
                     "conjunction": "AND",
-                    "course_groups": [
+                    "items": [
                         {
                             "prefix": "HUMAN",
                             "number": "030",

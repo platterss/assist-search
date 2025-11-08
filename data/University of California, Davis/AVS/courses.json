@@ -11,9 +11,9 @@
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "SINGLE",
+                    "type": "SET",
                     "conjunction": "AND",
-                    "course_groups": [
+                    "items": [
                         {
                             "prefix": "ANML SC",
                             "number": "530",
@@ -41,12 +41,13 @@
             {
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
-                    "type": "MULTI",
+                    "type": "GROUP",
                     "conjunction": "OR",
-                    "course_groups": [
+                    "items": [
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "ANSC",
                                     "number": "230",
@@ -60,8 +61,9 @@
                             "notes": []
                         },
                         {
-                            "type": "SINGLE",
-                            "course_groups": [
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "prefix": "ANSC",
                                     "number": "232",
