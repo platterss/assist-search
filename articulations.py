@@ -362,7 +362,7 @@ def articulation_to_json_dict(articulation: dict) -> Optional[dict]:
 def extract_cells(payload: dict | list) -> list[dict]:
     result = payload["result"]
 
-    if result["name"] in {"All Majors", "All Departments"}:
+    if result["name"] in {"All Majors", "All General Education"}:
         return as_obj(result["articulations"])
 
     # All Departments or All Prefixes
