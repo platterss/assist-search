@@ -632,6 +632,7 @@ def build_receiving_row(subject_prefix: str, key: str, payload: dict) -> dict:
         return {
             "type": "COURSE",
             "prefix": subject_prefix,
+            "prefix_description": course["prefix_description"],
             "number": course["number"],
             "key": key,
             "title": course["title"],
