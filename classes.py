@@ -16,6 +16,7 @@ class NodeType(str, Enum):
 
 @dataclass(frozen=True)
 class SendingCourse:
+    subject: str
     prefix: str
     number: str
     key: str

@@ -38,20 +38,19 @@ def make_series_key(members: list[dict]) -> str:
 
 def receiving_key(payload: dict) -> str:
     receiving_type = payload["receiving_type"]
+    receiving = payload["receiving"]
 
     if receiving_type == "COURSE":
-        receiving = payload["receiving"]
         return make_course_key(receiving["prefix"], receiving["number"])
 
     if receiving_type == "SERIES":
-        series = payload["receiving_series"]
-        return make_series_key(series["courses"])
+        return make_series_key(receiving["courses"])
 
-    if receiving_type == "REQUIREMENT":
-        return f"{payload["receiving_requirement"]["name"]}"
+    if receiving_type == "MISCELLANEOUS":
+        return f"{receiving["name"].strip()}"
 
     if receiving_type == "GE":
-        return f"{payload["receiving_ge"]["name"]}"
+        return f"{receiving["name"].strip()}"
 
     # shouldn't ever happen
     return payload.get("receiving_key", "")
@@ -73,6 +72,7 @@ def make_sending_course(obj: dict, extra_notes: Optional[list[str]] = None) -> S
         print("Found broken course.")
 
         return SendingCourse(
+            subject="Unknown",
             prefix="Unknown",
             number="Course",
             key=make_course_key("Unknown", "Course"),
@@ -83,6 +83,7 @@ def make_sending_course(obj: dict, extra_notes: Optional[list[str]] = None) -> S
         )
 
     return SendingCourse(
+        subject=obj["prefixDescription"].strip(),
         prefix=obj["prefix"].strip(),
         number=obj["courseNumber"].strip(),
         key=make_course_key(obj["prefix"], obj["courseNumber"]),
@@ -245,6 +246,7 @@ def flatten_group_of_singleton_sets(node: SendingArticulationNode) -> SendingArt
 
         if child.notes:
             course = SendingCourse(
+                subject=course.subject,
                 prefix=course.prefix,
                 number=course.number,
                 key=course.key,
@@ -388,8 +390,8 @@ def collect_cell_ids(result: dict) -> set[str]:
 
 def make_receiving_course(data: dict) -> dict:
     return {
+        "subject": data["prefixDescription"].strip(),
         "prefix": data["prefix"].strip(),
-        "prefix_description": data["prefixDescription"].strip(),
         "key": make_course_key(data["prefix"], data["courseNumber"]),
         "number": data["courseNumber"].strip(),
         "title": data["courseTitle"].strip(),
@@ -425,7 +427,7 @@ def walk_template_assets(assets) -> list[tuple[str | None, str, dict]]:
 
             req = node.get("requirement")
             if req is not None:
-                out.append((cid, "REQUIREMENT", {
+                out.append((cid, "MISCELLANEOUS", {
                     "name": req.get("name").strip(),
                 }))
 
@@ -483,13 +485,13 @@ def extract_template_inventory(result: dict) -> list[dict]:
             out.append({
                 "receiving_key": key,
                 "receiving_type": "SERIES",
-                "receiving_series": {
+                "receiving": {
                     "conjunction": payload["conjunction"].upper(),
                     "courses": courses,
                 },
                 "sending_articulation": None,
             })
-        elif articulation_type == "REQUIREMENT":
+        elif articulation_type == "MISCELLANEOUS":
             key = f"{payload["name"]}"
             if key in seen_keys:
                 continue
@@ -497,8 +499,8 @@ def extract_template_inventory(result: dict) -> list[dict]:
             seen_keys.add(key)
             out.append({
                 "receiving_key": key,
-                "receiving_type": "REQUIREMENT",
-                "receiving_requirement": payload,
+                "receiving_type": "MISCELLANEOUS",
+                "receiving": payload,
                 "sending_articulation": None,
             })
         elif articulation_type == "GE":
@@ -510,7 +512,7 @@ def extract_template_inventory(result: dict) -> list[dict]:
             out.append({
                 "receiving_key": key,
                 "receiving_type": "GE",
-                "receiving_ge": payload,
+                "receiving": payload,
                 "sending_articulation": None,
             })
 
@@ -548,7 +550,7 @@ def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str],
     out.append({
         "receiving_key": series_key,
         "receiving_type": "SERIES",
-        "receiving_series": {
+        "receiving": {
             "conjunction": series["conjunction"].upper(),
             "courses": series_courses
         },
@@ -556,7 +558,7 @@ def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str],
     })
 
 
-def get_requirement_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
+def get_miscellaneous_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
     req = articulation["requirement"]
     label = req["name"]
     key = label
@@ -567,8 +569,8 @@ def get_requirement_articulation(articulation: dict, node_dict: dict, seen: set[
     seen.add(key)
     out.append({
         "receiving_key": key,
-        "receiving_type": "REQUIREMENT",
-        "receiving_requirement": {
+        "receiving_type": "MISCELLANEOUS",
+        "receiving": {
             "name": req["name"]
         },
         "sending_articulation": node_dict
@@ -587,7 +589,7 @@ def get_ge_articulation(articulation: dict, node_dict: dict, seen: set[str], out
     out.append({
         "receiving_key": key,
         "receiving_type": "GE",
-        "receiving_ge": {
+        "receiving": {
             "name": ge["name"]
         },
         "sending_articulation": node_dict
@@ -609,7 +611,7 @@ def get_articulations(all_courses_json: dict) -> list[dict]:
         elif art["type"] == "Series":
             get_series_articulation(art, node_dict, seen, out)
         elif art["type"] == "Requirement":
-            get_requirement_articulation(art, node_dict, seen, out)
+            get_miscellaneous_articulation(art, node_dict, seen, out)
         elif art["type"] == "GeneralEducation":
             get_ge_articulation(art, node_dict, seen, out)
 
@@ -625,36 +627,33 @@ def get_articulations(all_courses_json: dict) -> list[dict]:
 
 def build_receiving_row(subject_prefix: str, key: str, payload: dict) -> dict:
     receiving_type: str = payload["receiving_type"]
+    receiving = payload["receiving"]
 
     if receiving_type == "COURSE":
-        course = payload["receiving"]
-
         return {
             "type": "COURSE",
+            "subject": receiving["subject"],
             "prefix": subject_prefix,
-            "prefix_description": course["prefix_description"],
-            "number": course["number"],
+            "number": receiving["number"],
             "key": key,
-            "title": course["title"],
-            "min_units": course["min_units"],
-            "max_units": course["max_units"],
+            "title": receiving["title"],
+            "min_units": receiving["min_units"],
+            "max_units": receiving["max_units"],
             "articulations": []
         }
 
     if receiving_type == "SERIES":
-        series = payload["receiving_series"]
-
         return {
             "type": "SERIES",
             "key": key,
-            "conjunction": series["conjunction"],
-            "courses": series["courses"],
+            "conjunction": receiving["conjunction"],
+            "courses": receiving["courses"],
             "articulations": []
         }
 
-    if receiving_type == "REQUIREMENT":
+    if receiving_type == "MISCELLANEOUS":
         return {
-            "type": "REQUIREMENT",
+            "type": "MISCELLANEOUS",
             "key": key,
             "articulations": []
         }
@@ -725,23 +724,24 @@ def upsert_sending_articulation(art_map: dict, college_name: str, sending: dict 
 
 def subject_bucket(articulation: dict) -> list[tuple[str, str, str]]:
     receiving_type: str = articulation["receiving_type"]
+    receiving = articulation["receiving"]
 
     if receiving_type == "COURSE":
-        subject = articulation["receiving"]["prefix"]
-        name = articulation["receiving"]["prefix_description"].strip()
+        subject = receiving["prefix"]
+        name = receiving["subject"].strip()
         return [(subject, subject, name)]
 
     if receiving_type == "SERIES":
         seen = {}
 
-        for member in articulation["receiving_series"]["courses"]:
+        for member in receiving["courses"]:
             prefix = member["prefix"].strip()
             if prefix not in seen:
-                seen[prefix] = (prefix, prefix, member["prefix_description"])
+                seen[prefix] = (prefix, prefix, member["subject"])
 
         return list(seen.values())
 
-    if receiving_type == "REQUIREMENT":
+    if receiving_type == "MISCELLANEOUS":
         return [("# MISC-REQS #", "# MISC-REQS #", "Miscellaneous Requirements")]
 
     if receiving_type == "GE":
