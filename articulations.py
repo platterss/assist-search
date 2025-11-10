@@ -2,9 +2,21 @@ import json
 import request
 import sys
 
-from classes import Conjunction, SendingArticulationNode, SendingCourse, NodeType
+from classes import (
+    Conjunction,
+    Institution,
+    BasicCourse,
+    SendingCourse,
+    SetArticulation,
+    GroupArticulation,
+    ReceivingType,
+    ReceivingCourse,
+    ReceivingSeries,
+    ReceivingMisc,
+    ReceivingGE,
+    ReceivingItem
+)
 from pathlib import Path
-from typing import Optional
 
 from agreements import get_agreements
 from institutions import get_institutions
@@ -14,288 +26,100 @@ def as_obj(x):
     return json.loads(x) if isinstance(x, str) else x
 
 
-def make_course_key(prefix: str, number: str) -> str:
-    return f"{prefix.strip()} {number.strip()}"
-
-
-def make_series_key(members: list[dict]) -> str:
+def make_series_key(members: list[BasicCourse]) -> str:
     tokens = []
     prev_prefix = None
 
     for member in members or []:
-        prefix = str(member["prefix"]).strip()
-        number = str(member["number"]).strip()
-
-        if not tokens or prefix != prev_prefix:
-            tokens.append(f"{prefix} {number}")
+        if not tokens or member.prefix != prev_prefix:
+            tokens.append(member.key)
         else:
-            tokens.append(number)
+            tokens.append(member.number)
 
-        prev_prefix = prefix
+        prev_prefix = member.prefix
 
     return " + ".join(tokens)
 
 
-def receiving_key(payload: dict) -> str:
-    receiving_type = payload["receiving_type"]
-    receiving = payload["receiving"]
-
-    if receiving_type == "COURSE":
-        return make_course_key(receiving["prefix"], receiving["number"])
-
-    if receiving_type == "SERIES":
-        return make_series_key(receiving["courses"])
-
-    if receiving_type == "MISCELLANEOUS":
-        return f"{receiving["name"].strip()}"
-
-    if receiving_type == "GE":
-        return f"{receiving["name"].strip()}"
-
-    # shouldn't ever happen
-    return payload.get("receiving_key", "")
+def make_sending_course(obj: dict, extra_notes: list[str] | None = None) -> SendingCourse:
+    return SendingCourse.from_assist(obj, extra_notes)
 
 
-def make_sending_course(obj: dict, extra_notes: Optional[list[str]] = None) -> SendingCourse:
-    notes = []
-
-    for attribute in obj.get("attributes") or []:
-        content = attribute.get("content")
-
-        if content:
-            notes.append(content)
-
-    if extra_notes:
-        notes.extend(extra_notes)
-
-    if obj["prefix"] is None and obj["courseNumber"] is None:
-        print("Found broken course.")
-
-        return SendingCourse(
-            subject="Unknown",
-            prefix="Unknown",
-            number="Course",
-            key=make_course_key("Unknown", "Course"),
-            title="Missing",
-            min_units=-1.0,
-            max_units=-1.0,
-            notes=["This particular course is broken on ASSIST and displays an empty course."]
-        )
-
-    return SendingCourse(
-        subject=obj["prefixDescription"].strip(),
-        prefix=obj["prefix"].strip(),
-        number=obj["courseNumber"].strip(),
-        key=make_course_key(obj["prefix"], obj["courseNumber"]),
-        title=obj["courseTitle"].strip(),
-        min_units=float(obj["minUnits"]),
-        max_units=float(obj["maxUnits"]),
-        notes=notes
-    )
-
-
-def parse_course_group(group: dict) -> SendingArticulationNode:
+def parse_course_group(group: dict) -> SetArticulation:
     conjunction = group.get("courseConjunction", "").strip().lower()
     items = sorted(group.get("items", []), key=lambda x: x.get("position", 0))
     courses = [make_sending_course(item) for item in items if item.get("type") == "Course"]
-    group_level_notes: list[str] = [
-        a.get("content") for a in group.get("attributes", []) if a.get("content")
-    ]
+    group_level_notes: list[str] = [a.get("content") for a in group.get("attributes", []) if a.get("content")]
 
     if conjunction == "or":
-        children: list[SendingArticulationNode] = [
-            SendingArticulationNode(
-                type=NodeType.SET,
-                conjunction=None,
-                items=[course],
-                notes=[]
-            )
-            for course in courses
-        ]
-
-        return SendingArticulationNode(
-            type=NodeType.GROUP,
-            conjunction=Conjunction.OR,
-            items=children,
-            notes=group_level_notes
-        )
+        conj = Conjunction.OR if len(courses) > 1 else None
+        return SetArticulation(conjunction=conj, items=courses, notes=group_level_notes)
 
     if conjunction == "and":
-        return SendingArticulationNode(
-            type=NodeType.SET,
-            conjunction=None if len(courses) == 1 else Conjunction.AND,
-            items=courses,
-            notes=group_level_notes
-        )
+        conj = Conjunction.AND if len(courses) > 1 else None
+        return SetArticulation(conjunction=conj, items=courses, notes=group_level_notes)
 
-    return SendingArticulationNode(
-        type=NodeType.SET,
-        conjunction=None,
-        items=courses,
-        notes=group_level_notes
-    )
+    return SetArticulation(conjunction=None, items=courses, notes=group_level_notes)
 
 
-def combine_groups(groups: list[SendingArticulationNode], group_conjunctions: list[dict]) -> SendingArticulationNode:
-    n = len(groups)
+def combine_groups(groups: list[SetArticulation | GroupArticulation], group_conjunctions: list[dict], group_positions: list[int]) -> SetArticulation | GroupArticulation:
+    sets: list[SetArticulation] = []
+
+    for group in groups:
+        if isinstance(group, GroupArticulation):
+            for child in group.items:
+                sets.append(child)
+        else:
+            sets.append(group)
+
+    n = len(sets)
 
     if n == 0:
-        return SendingArticulationNode(
-            type=NodeType.GROUP,
-            conjunction=Conjunction.AND,
-            items=[],
-            notes=[]
-        )
+        return GroupArticulation(conjunctions=[], items=[], notes=[])
 
     if n == 1 and not group_conjunctions:
         return groups[0]
 
-    edges: list[Optional[str]] = [None] * max(0, n - 1)
+    conjunctions: list[Conjunction | None] = [None] * max(0, n - 1)
     for group in group_conjunctions or []:
-        conjunction = group.get("groupConjunction", "And")
+        conjunction = group.get("groupConjunction", "And").strip().title()
         begin = int(group.get("sendingCourseGroupBeginPosition", 0))
         end = int(group.get("sendingCourseGroupEndPosition", max(0, n - 1)))
 
-        low = max(0, begin)
-        high = min(n - 1, end)
-
-        for i in range(low, high):
-            edges[i] = conjunction
-
-    edges = [(edge or "Or") for edge in edges]
-
-    if edges and all(edge.lower() == edges[0].lower() for edge in edges):
-        conjunction = Conjunction.OR if edges[0].lower() == "or" else Conjunction.AND
-        return SendingArticulationNode(
-            type=NodeType.GROUP,
-            conjunction=conjunction,
-            items=groups,
-            notes=[]
-        )
-
-    segments: list[SendingArticulationNode] = []
-    start = 0
-    for i, edge in enumerate(edges):
-        if edge.lower() != "or":
+        i = next((idx for idx, pos in enumerate(group_positions) if pos >= begin), None)
+        j = next((idx for idx in range(len(group_positions) - 1, -1, -1) if group_positions[idx] <= end), None)
+        if i is None or j is None or i >= j:
             continue
 
-        seg_children = groups[start:i+1]
-        if len(seg_children) == 1 and seg_children[0].type == NodeType.GROUP:
-            segments.append(seg_children[0])
-        else:
-            segments.append(
-                SendingArticulationNode(
-                    type=NodeType.GROUP,
-                    conjunction=Conjunction.AND,
-                    items=seg_children,
-                    notes=[],
-                )
-            )
-        start = i + 1
+        for k in range(i, j):
+            conjunctions[k] = Conjunction.OR if conjunction.lower() == "or" else Conjunction.AND
 
-    if start < n:
-        seg_children = groups[start:n]
-        if len(seg_children) == 1 and seg_children[0].type == NodeType.GROUP:
-            segments.append(seg_children[0])
-        else:
-            segments.append(
-                SendingArticulationNode(
-                    type=NodeType.GROUP,
-                    conjunction=Conjunction.AND,
-                    items=seg_children,
-                    notes=[],
-                )
-            )
+    final_conjunctions = [conjunction if conjunction is not None else Conjunction.OR for conjunction in conjunctions]
 
-    if len(segments) == 1:
-        return segments[0]
-
-    return SendingArticulationNode(
-        type=NodeType.GROUP,
-        conjunction=Conjunction.OR,
-        items=segments,
-        notes=[]
-    )
+    return GroupArticulation(conjunctions=final_conjunctions, items=sets, notes=[])
 
 
-def is_singleton_set(node: SendingArticulationNode) -> bool:
-    return (
-        node and
-        node.type == NodeType.SET and
-        node.items is not None and
-        isinstance(node.items, list) and
-        all(isinstance(item, SendingCourse) for item in node.items) and
-        len(node.items) == 1
-    )
+def normalize_node(node: SetArticulation | GroupArticulation) -> SetArticulation | GroupArticulation:
+    if isinstance(node, GroupArticulation):
+        items = [SetArticulation(conjunction=(s.conjunction if len(s.items) > 1 else None),
+                                 items=s.items,
+                                 notes=s.notes)
+                 for s in node.items
+                 ]
 
+        if len(items) == 1:
+            return items[0]
 
-def flatten_group_of_singleton_sets(node: SendingArticulationNode) -> SendingArticulationNode:
-    if node.type != NodeType.GROUP:
-        return node
+        return GroupArticulation(conjunctions=node.conjunctions, items=items, notes=node.notes)
 
-    children = node.items
-    if not children:
-        return node
-
-    if not all(isinstance(child, SendingArticulationNode) and is_singleton_set(child) for child in children):
-        return node
-
-    flat_courses: list[SendingCourse] = []
-    for child in children:
-        course = child.items[0]
-
-        if child.notes:
-            course = SendingCourse(
-                subject=course.subject,
-                prefix=course.prefix,
-                number=course.number,
-                key=course.key,
-                title=course.title,
-                notes=list(course.notes) + list(child.notes),
-                min_units=course.min_units,
-                max_units=course.max_units
-            )
-
-        flat_courses.append(course)
-
-    return SendingArticulationNode(
-        type=NodeType.SET,
-        conjunction=node.conjunction,
-        items=flat_courses,
-        notes=list(node.notes or [])
-    )
-
-
-def normalize_node(node: SendingArticulationNode) -> SendingArticulationNode:
-    if node.type == NodeType.GROUP:
-        normalized_children = [normalize_node(child) for child in node.items]
-        node = SendingArticulationNode(
-            type=NodeType.GROUP,
-            conjunction=node.conjunction,
-            items=normalized_children,
-            notes=list(node.notes or []),
-        )
-
-        if len(normalized_children) == 1:
-            return normalized_children[0]
-
-        node = flatten_group_of_singleton_sets(node)
-        return node
-
-    if node.type == NodeType.SET:
+    if isinstance(node, SetArticulation):
         conj = node.conjunction if len(node.items) > 1 else None
-
-        return SendingArticulationNode(
-            type=NodeType.SET,
-            conjunction=conj,
-            items=node.items,
-            notes=list(node.notes or []),
-        )
+        return SetArticulation(conjunction=conj, items=node.items, notes=node.notes)
 
     return node
 
 
-def build_articulation_tree(sending_articulation: Optional[dict]) -> Optional[SendingArticulationNode]:
+def build_articulation_tree(sending_articulation: dict | None) -> dict | None:
     if not sending_articulation:
         return None
 
@@ -306,11 +130,13 @@ def build_articulation_tree(sending_articulation: Optional[dict]) -> Optional[Se
     groups_raw = sending_articulation.get("items", [])
     groups_raw = [group for group in groups_raw if group["type"] == "CourseGroup"]
     groups_raw.sort(key=lambda x: x.get("position", 0))
-    normalized = [parse_course_group(g) for g in groups_raw if g["type"] == "CourseGroup"]
 
-    node = combine_groups(normalized, sending_articulation.get("courseGroupConjunctions", []))
+    normalized = [parse_course_group(g) for g in groups_raw]
+    group_positions = [int(g.get("position", 0)) for g in groups_raw]
 
-    return normalize_node(node)
+    node = combine_groups(normalized, sending_articulation.get("courseGroupConjunctions", []), group_positions)
+
+    return normalize_node(node).to_dict()
 
 
 def request_all_courses(year: int, sending: int, receiving: int, method: str) -> dict:
@@ -347,62 +173,34 @@ def get_all_courses_json(agreement_year: int, sending_id: int, receiving_id: int
     return None
 
 
-def articulation_to_json_dict(articulation: dict) -> Optional[dict]:
+def articulation_to_json_dict(articulation: dict) -> dict | None:
     sending = articulation.get("sendingArticulation")
 
     if sending is None:
         return None
 
-    node = build_articulation_tree(sending)
-
-    if node is None:
-        return None
-
-    return node.to_dict()
+    return build_articulation_tree(sending)
 
 
-def extract_cells(payload: dict | list) -> list[dict]:
-    result = payload["result"]
+def extract_articulation_rows(result: dict) -> list[dict]:
+    articulations = as_obj(result["articulations"])
 
-    if result["name"] in {"All Majors", "All General Education"}:
-        return as_obj(result["articulations"])
+    # All Majors or All General Education
+    if isinstance(articulations[0], dict) and "articulations" not in articulations[0]:
+        return articulations
 
     # All Departments or All Prefixes
-    cells = []
-    for subject in as_obj(result["articulations"]):
-        for articulation in subject.get("articulations", []):
-            cells.append({"articulation": articulation})
+    flat = []
+    for subject in articulations:
+        for row in subject.get("articulations", []) or []:
+            flat.append(row)
 
-    return cells
-
-
-def collect_cell_ids(result: dict) -> set[str]:
-    ids = set()
-
-    for c in as_obj(result.get("articulations", "[]")):
-        art = c.get("articulation") or {}
-        template_cell_id = c.get("templateCellId") or art.get("templateCellId")
-        if template_cell_id:
-            ids.add(template_cell_id)
-
-    return ids
+    return flat
 
 
-def make_receiving_course(data: dict) -> dict:
-    return {
-        "subject": data["prefixDescription"].strip(),
-        "prefix": data["prefix"].strip(),
-        "key": make_course_key(data["prefix"], data["courseNumber"]),
-        "number": data["courseNumber"].strip(),
-        "title": data["courseTitle"].strip(),
-        "min_units": data["minUnits"],
-        "max_units": data["maxUnits"],
-    }
-
-
-def walk_template_assets(assets) -> list[tuple[str | None, str, dict]]:
+def walk_template_assets(assets) -> list[tuple[str | None, ReceivingItem]]:
     assets = as_obj(assets)
-    out: list[tuple[str | None, str, dict]] = []
+    out: list[tuple[str | None, ReceivingItem]] = []
 
     def is_course_dict(d: dict) -> bool:
         return isinstance(d, dict) and all(k in d for k in ("prefix", "courseNumber", "courseTitle"))
@@ -412,30 +210,27 @@ def walk_template_assets(assets) -> list[tuple[str | None, str, dict]]:
             cid = node.get("id", cell_id)
 
             if is_course_dict(node):
-                out.append((cid, "COURSE", make_receiving_course(node)))
+                basic_course = BasicCourse.from_assist(node)
+                out.append((cid, ReceivingItem.from_receiving(basic_course)))
 
             series = node.get("series")
             if series is not None:
-                courses = [make_receiving_course(c) for c in series["courses"] if is_course_dict(c)]
+                courses = [BasicCourse.from_assist(c) for c in series["courses"] if is_course_dict(c)]
 
                 if courses:
-                    conjunction = series.get("conjunction")
-                    out.append((cid, "SERIES", {
-                        "conjunction": conjunction,
-                        "courses": courses
-                    }))
+                    conjunction = Conjunction(series.get("conjunction").upper())
+                    rs = ReceivingSeries(key=make_series_key(courses), conjunction=conjunction, courses=courses)
+                    out.append((cid, ReceivingItem.from_receiving(rs)))
 
             req = node.get("requirement")
             if req is not None:
-                out.append((cid, "MISCELLANEOUS", {
-                    "name": req.get("name").strip(),
-                }))
+                rm = ReceivingMisc(key=req["name"].strip())
+                out.append((cid, ReceivingItem.from_receiving(rm)))
 
             ge = node.get("generalEducationArea")
             if ge is not None:
-                out.append((cid, "GE", {
-                    "name": ge.get("name").strip()
-                }))
+                rg = ReceivingGE(key=ge["name"].strip())
+                out.append((cid, ReceivingItem.from_receiving(rg)))
 
             for k, v in node.items():
                 if k != "series":
@@ -449,95 +244,38 @@ def walk_template_assets(assets) -> list[tuple[str | None, str, dict]]:
     return out
 
 
-def extract_template_inventory(result: dict) -> list[dict]:
-    used = collect_cell_ids(result)
-    items = walk_template_assets(result["templateAssets"])
-
-    out: list[dict] = []
+def extract_template_inventory(template_assets: dict, existing_articulation_cell_ids: set[str]) -> list[ReceivingItem]:
+    items = walk_template_assets(template_assets)
+    out: list[ReceivingItem] = []
     seen_keys: set[str] = set()
 
-    for cell_id, articulation_type, payload in items:
-        if cell_id and cell_id in used:
+    for cell_id, item in items:
+        if cell_id and cell_id in existing_articulation_cell_ids:
             continue  # already has an articulation row
 
-        if articulation_type == "COURSE":
-            key = f'{payload["prefix"]} {str(payload["number"])}'
-            if key in seen_keys:
-                continue
+        if item.key in seen_keys:
+            continue
 
-            seen_keys.add(key)
-            out.append({
-                "receiving_key": key,
-                "receiving_type": "COURSE",
-                "receiving": payload,
-                "sending_articulation": None,
-            })
-        elif articulation_type == "SERIES":
-            courses = payload.get("courses") or []
-            if not courses:
-                continue
-
-            key = make_series_key(courses)
-            if key in seen_keys:
-                continue
-
-            seen_keys.add(key)
-            out.append({
-                "receiving_key": key,
-                "receiving_type": "SERIES",
-                "receiving": {
-                    "conjunction": payload["conjunction"].upper(),
-                    "courses": courses,
-                },
-                "sending_articulation": None,
-            })
-        elif articulation_type == "MISCELLANEOUS":
-            key = f"{payload["name"]}"
-            if key in seen_keys:
-                continue
-
-            seen_keys.add(key)
-            out.append({
-                "receiving_key": key,
-                "receiving_type": "MISCELLANEOUS",
-                "receiving": payload,
-                "sending_articulation": None,
-            })
-        elif articulation_type == "GE":
-            key = f"{payload["name"]}"
-            if key in seen_keys:
-                continue
-
-            seen_keys.add(key)
-            out.append({
-                "receiving_key": key,
-                "receiving_type": "GE",
-                "receiving": payload,
-                "sending_articulation": None,
-            })
+        seen_keys.add(item.key)
+        out.append(item)
 
     return out
 
 
-def get_course_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
+def get_course_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
     receiving = articulation["course"]
+    basic_course = BasicCourse.from_assist(receiving)
 
-    key = make_course_key(receiving["prefix"], receiving["courseNumber"])
-    if key in seen:
+    if basic_course.key in seen:
         return
 
-    seen.add(key)
-    out.append({
-        "receiving_key": key,
-        "receiving_type": "COURSE",
-        "receiving": make_receiving_course(receiving),
-        "sending_articulation": node_dict
-    })
+    seen.add(basic_course.key)
+    out.append(ReceivingItem.from_receiving(basic_course, node_dict))
 
 
-def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
+def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
     series = articulation["series"]
-    series_courses = [make_receiving_course(member) for member in series["courses"]]
+    series_courses = [BasicCourse.from_assist(member) for member in series["courses"]]
 
     if not series_courses:
         return
@@ -547,129 +285,82 @@ def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str],
         return
 
     seen.add(series_key)
-    out.append({
-        "receiving_key": series_key,
-        "receiving_type": "SERIES",
-        "receiving": {
-            "conjunction": series["conjunction"].upper(),
-            "courses": series_courses
-        },
-        "sending_articulation": node_dict
-    })
+    conjunction = Conjunction(series.get("conjunction", "AND").upper())
+    rs = ReceivingSeries(key=series_key, conjunction=conjunction, courses=series_courses)
+    out.append(ReceivingItem.from_receiving(rs, node_dict))
 
 
-def get_miscellaneous_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
-    req = articulation["requirement"]
-    label = req["name"]
-    key = label
+def get_miscellaneous_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
+    name = articulation["requirement"]["name"].strip()
 
-    if key in seen:
+    if name in seen:
         return
 
-    seen.add(key)
-    out.append({
-        "receiving_key": key,
-        "receiving_type": "MISCELLANEOUS",
-        "receiving": {
-            "name": req["name"]
-        },
-        "sending_articulation": node_dict
-    })
+    seen.add(name)
+    rm = ReceivingMisc(key=name)
+    out.append(ReceivingItem.from_receiving(rm, node_dict))
 
 
-def get_ge_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[dict]) -> None:
-    ge = articulation["generalEducationArea"]
-    label = ge["name"]
-    key = label
+def get_ge_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
+    name = articulation["generalEducationArea"]["name"].strip()
 
-    if key in seen:
+    if name in seen:
         return
 
-    seen.add(key)
-    out.append({
-        "receiving_key": key,
-        "receiving_type": "GE",
-        "receiving": {
-            "name": ge["name"]
-        },
-        "sending_articulation": node_dict
-    })
+    seen.add(name)
+    rg = ReceivingGE(key=name)
+    out.append(ReceivingItem.from_receiving(rg, node_dict))
 
 
-def get_articulations(all_courses_json: dict) -> list[dict]:
-    cells = extract_cells(all_courses_json)
+def get_articulations(all_courses_json: dict) -> list[ReceivingItem]:
+    result = all_courses_json["result"]
+    rows = extract_articulation_rows(result)
 
-    out: list[dict] = []
+    out: list[ReceivingItem] = []
     seen: set[str] = set()
 
-    for cell in cells:
-        art = cell.get("articulation") or {}
-        node_dict = articulation_to_json_dict(art)
+    for row in rows:
+        articulation = row["articulation"]
+        node_dict = articulation_to_json_dict(articulation)
 
-        if art["type"] == "Course":
-            get_course_articulation(art, node_dict, seen, out)
-        elif art["type"] == "Series":
-            get_series_articulation(art, node_dict, seen, out)
-        elif art["type"] == "Requirement":
-            get_miscellaneous_articulation(art, node_dict, seen, out)
-        elif art["type"] == "GeneralEducation":
-            get_ge_articulation(art, node_dict, seen, out)
+        receiving_type = articulation["type"]
+        if receiving_type == "Course":
+            get_course_articulation(articulation, node_dict, seen, out)
+        elif receiving_type == "Series":
+            get_series_articulation(articulation, node_dict, seen, out)
+        elif receiving_type == "Requirement":
+            get_miscellaneous_articulation(articulation, node_dict, seen, out)
+        elif receiving_type == "GeneralEducation":
+            get_ge_articulation(articulation, node_dict, seen, out)
 
-    for inv in extract_template_inventory(all_courses_json["result"]):
-        if inv["receiving_key"] in seen:
+    existing_articulation_cell_ids = {row["templateCellId"] for row in rows if row.get("templateCellId")}
+    for inv in extract_template_inventory(result["templateAssets"], existing_articulation_cell_ids):
+        if inv.key in seen:
             continue
 
-        seen.add(inv["receiving_key"])
+        seen.add(inv.key)
         out.append(inv)
 
     return out
 
 
-def build_receiving_row(subject_prefix: str, key: str, payload: dict) -> dict:
-    receiving_type: str = payload["receiving_type"]
-    receiving = payload["receiving"]
+def build_receiving_row(key: str, item: ReceivingItem) -> dict:
+    if item.receiving_type == ReceivingType.COURSE:
+        return ReceivingCourse.from_basic(item.receiving).to_row()
 
-    if receiving_type == "COURSE":
-        return {
-            "type": "COURSE",
-            "subject": receiving["subject"],
-            "prefix": subject_prefix,
-            "number": receiving["number"],
-            "key": key,
-            "title": receiving["title"],
-            "min_units": receiving["min_units"],
-            "max_units": receiving["max_units"],
-            "articulations": []
-        }
+    if item.receiving_type == ReceivingType.SERIES:
+        return item.receiving.to_row()
 
-    if receiving_type == "SERIES":
-        return {
-            "type": "SERIES",
-            "key": key,
-            "conjunction": receiving["conjunction"],
-            "courses": receiving["courses"],
-            "articulations": []
-        }
+    if item.receiving_type == ReceivingType.MISC:
+        return item.receiving.to_row()
 
-    if receiving_type == "MISCELLANEOUS":
-        return {
-            "type": "MISCELLANEOUS",
-            "key": key,
-            "articulations": []
-        }
-
-    if receiving_type == "GE":
-        return {
-            "type": "GE",
-            "key": key,
-            "articulations": []
-        }
+    if item.receiving_type == ReceivingType.GE:
+        return item.receiving.to_row()
 
     # shouldn't ever happen
     return {
         "type": "UNKNOWN",
         "key": key,
-        "prefix": subject_prefix,
         "articulations": []
     }
 
@@ -722,29 +413,25 @@ def upsert_sending_articulation(art_map: dict, college_name: str, sending: dict 
     return False
 
 
-def subject_bucket(articulation: dict) -> list[tuple[str, str, str]]:
-    receiving_type: str = articulation["receiving_type"]
-    receiving = articulation["receiving"]
-
-    if receiving_type == "COURSE":
-        subject = receiving["prefix"]
-        name = receiving["subject"].strip()
+def subject_bucket(item: ReceivingItem) -> list[tuple[str, str, str]]:
+    if item.receiving_type == ReceivingType.COURSE:
+        subject = item.receiving.prefix
+        name = item.receiving.subject or item.receiving.prefix
         return [(subject, subject, name)]
 
-    if receiving_type == "SERIES":
+    if item.receiving_type == ReceivingType.SERIES:
         seen = {}
 
-        for member in receiving["courses"]:
-            prefix = member["prefix"].strip()
-            if prefix not in seen:
-                seen[prefix] = (prefix, prefix, member["subject"])
+        for member in item.receiving.courses:
+            if member.prefix not in seen:
+                seen[member.prefix] = (member.prefix, member.prefix, member.subject)
 
         return list(seen.values())
 
-    if receiving_type == "MISCELLANEOUS":
+    if item.receiving_type == ReceivingType.MISC:
         return [("# MISC-REQS #", "# MISC-REQS #", "Miscellaneous Requirements")]
 
-    if receiving_type == "GE":
+    if item.receiving_type == ReceivingType.GE:
         return [("# GE-REQS #", "# GE-REQS #", "General Education Requirements")]
 
     # shouldn't ever happen
@@ -754,29 +441,29 @@ def subject_bucket(articulation: dict) -> list[tuple[str, str, str]]:
 def save_articulations(
     university_name: str,
     college_name: str,
-    all_articulations: list[dict],
+    all_articulations: list[ReceivingItem],
     rows_by_subject_dir: dict[str, list[dict]],
     changed_subjects: dict[str, bool],
     subjects_map: dict[str, str],
 ) -> None:
-    buckets: dict[str, dict] = {}
-    for a in all_articulations:
-        for directory, prefix, name in subject_bucket(a):
+    buckets: dict[str, dict[str, str | list[ReceivingItem]]] = {}
+    for item in all_articulations:
+        for directory, prefix, name in subject_bucket(item):
             if directory == "UNKNOWN":
                 continue
 
             b = buckets.setdefault(directory, {"prefix": prefix, "name": name, "items": []})
-            b["items"].append(a)
+            b["items"].append(item)
 
     for subject_dir, meta in buckets.items():
-        subject_prefix = meta["prefix"]
-        subject_name = meta["name"]
-        items = meta["items"]
+        prefix: str = meta["prefix"]
+        subject: str = meta["name"]
+        items: list[ReceivingItem] = meta["items"]
 
-        if subject_name:
-            subjects_map[subject_prefix] = subject_name
+        if subject:
+            subjects_map[prefix] = subject
         else:
-            subjects_map.setdefault(subject_prefix, subject_prefix)
+            subjects_map.setdefault(prefix, prefix)
 
         rows = rows_by_subject_dir.get(subject_dir)
         if rows is None:
@@ -794,33 +481,20 @@ def save_articulations(
         index: dict[str, dict] = {}
         art_maps: dict[str, dict] = {}
         for row in rows:
-            rtype = row.get("type", "COURSE")
-            if "key" in row:
-                key = row["key"]
-            elif rtype == "COURSE":
-                key = make_course_key(row["prefix"], row["number"])
-                row["key"] = key
-                row["type"] = "COURSE"
-            elif rtype == "SERIES":
-                key = make_series_key(row["courses"])
-                row["key"] = key
-                row["type"] = "SERIES"
-            else:
-                key = row["key"]
             row.setdefault("articulations", [])
+            key = row["key"]
             index[key] = row
             art_maps[key] = {art["sending_name"]: art for art in row["articulations"]}
 
         changed = False
 
-        for a in items:
-            key = receiving_key(a)
-            if key not in index:
-                index[key] = build_receiving_row(subject_prefix, key, a)
-                art_maps[key] = {}
+        for item in items:
+            if item.key not in index:
+                index[item.key] = build_receiving_row(item.key, item)
+                art_maps[item.key] = {}
                 changed = True
 
-            if upsert_sending_articulation(art_maps[key], college_name, a["sending_articulation"]):
+            if upsert_sending_articulation(art_maps[item.key], college_name, item.sending_articulation):
                 changed = True
 
         if not changed:
@@ -848,6 +522,7 @@ def flush_courses_for_university(name: str, rows: dict[str, list[dict]], subject
 def flush_subjects_for_university(name: str, subjects_map: dict[str, str]) -> None:
     if not subjects_map:
         return
+
     subjects_path = Path(f"data/{name}/subjects.json")
     existing: list[dict] = []
     if subjects_path.exists():
@@ -876,49 +551,45 @@ def run(desired_universities: list[str] = None) -> None:
     if desired_universities is None or len(desired_universities) == 0:
         desired_universities = ["CSU", "UC", "AICCU"]
 
-    institutions = get_institutions(create_new_if_existing=False)
+    institutions: list[Institution] = get_institutions(create_new_if_existing=True)
 
-    colleges = sorted([i for i in institutions if i["category"] == "CCC"], key=lambda i: i["name"])
-    universities = [i for i in institutions if i["category"] in desired_universities]
+    colleges = sorted([i for i in institutions if i.category == "CCC"], key=lambda i: i.name)
+    universities = [i for i in institutions if i.category in desired_universities]
 
     for university in universities:
-        university_id = university["id"]
-        university_name = university["name"]
-        print(f"Getting articulations for {university_name} (ID {university_id}).")
+        print(f"Getting articulations for {university.name} (ID {university.id}).")
 
-        all_agreements = get_agreements(university_id)
+        all_agreements = get_agreements(university.id)
 
         rows_by_subject_dir: dict[str, list[dict]] = {}
         changed_subjects: dict[str, bool] = {}
         subjects_map: dict[str, str] = {}
 
         for college in colleges:
-            college_id = college["id"]
-            college_name = college["name"]
-            agreement_year = all_agreements.get(college_id, -1)
+            agreement_year = all_agreements.get(college.id, -1)
 
-            print(f"Getting articulation: {college_name} (ID {college_id}) -> {university_name} (ID {university_id}) "
+            print(f"Getting articulation: {college.name} (ID {college.id}) -> {university.name} (ID {university.id}) "
                   f"for year ID {agreement_year}")
 
-            all_courses = get_all_courses_json(agreement_year, college_id, university_id)
+            all_courses = get_all_courses_json(agreement_year, college.id, university.id)
 
             if all_courses is None:
-                print(f"{university_name} and {college_name} have no viable agreements.")
+                print(f"{university.name} and {college.name} have no viable agreements.")
                 continue
 
             all_articulations = get_articulations(all_courses)
 
             save_articulations(
-                university_name,
-                college_name,
+                university.name,
+                college.name,
                 all_articulations,
                 rows_by_subject_dir,
                 changed_subjects,
                 subjects_map
             )
 
-        flush_courses_for_university(university_name, rows_by_subject_dir, changed_subjects)
-        flush_subjects_for_university(university_name, subjects_map)
+        flush_courses_for_university(university.name, rows_by_subject_dir, changed_subjects)
+        flush_subjects_for_university(university.name, subjects_map)
 
         print("\n")
 

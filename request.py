@@ -14,7 +14,7 @@ def get(url: str, params=None, **kwargs) -> requests.Response:
 
     # It seems like they allow around 100 requests rather than just 50.
     # 3 seconds will occasionally exceed the rate limit but 4 is safer.
-    print("Sleeping for 4 seconds.")
-    time.sleep(4)
+    print("Sleeping for 3 seconds.")
+    time.sleep(3)
 
     return response

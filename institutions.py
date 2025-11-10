@@ -1,6 +1,7 @@
 import json
 import request
 
+from classes import Institution
 from pathlib import Path
 
 
@@ -28,24 +29,24 @@ def get_latest_institution_name(names: list[dict]) -> str:
     return max(names, key=lambda n: n.get("fromYear", float("-inf")))["name"]
 
 
-def reformat_institutions(raw_institutions) -> list[dict]:
-    institutions: list[dict] = []
+def reformat_institutions(raw_institutions) -> list[Institution]:
+    institutions: list[Institution] = []
 
     for institution in raw_institutions:
         # Mainly for Compton Community College (ID 34)
         if "endId" in institution.keys():
             continue
 
-        data: dict = {"id": institution["id"],
-                      "name": get_latest_institution_name(institution["names"]),
-                      "category": get_institution_type(institution["category"])}
-
-        institutions.append(data)
+        institutions.append(Institution(
+            id=institution["id"],
+            name=get_latest_institution_name(institution["names"]),
+            category=get_institution_type(institution["category"])
+        ))
 
     return institutions
 
 
-def create_institutions_file() -> list[dict]:
+def create_institutions_file() -> list[Institution]:
     print("Getting list of institutions.")
 
     raw_institutions = get_institutions_json()
@@ -54,19 +55,32 @@ def create_institutions_file() -> list[dict]:
     output_file = Path("data/institutions.json")
     output_file.parent.mkdir(exist_ok=True, parents=True)
     with open(output_file, "w") as out:
-        json.dump(formatted_institutions, out, indent=4)
+        json.dump([i.to_dict() for i in formatted_institutions], out, indent=4)
 
     return formatted_institutions
 
 
-def get_institutions(create_new_if_existing: bool = False) -> list[dict]:
+def load_institutions_from_file(institutions_dict: list[dict]) -> list[Institution]:
+    institutions: list[Institution] = []
+
+    for institution in institutions_dict:
+        institutions.append(Institution(
+            id=institution["id"],
+            name=institution["name"],
+            category=institution["category"]
+        ))
+
+    return institutions
+
+
+def get_institutions(create_new_if_existing: bool = False) -> list[Institution]:
     institutions_path = Path("data/institutions.json")
 
     if create_new_if_existing or not institutions_path.exists():
         return create_institutions_file()
 
     with open(institutions_path, "r") as file:
-        return json.load(file)
+        return load_institutions_from_file(json.load(file))
 
 
 if __name__ == "__main__":

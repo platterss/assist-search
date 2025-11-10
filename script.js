@@ -216,26 +216,40 @@ const conjToType = (c) => (String(c || "").toUpperCase() === "AND" ? "and" : (c 
 
 function normalizeSendingNode(node) {
     const type = String(node?.type || "").toUpperCase();
-    const items = Array.isArray(node?.items) ? node.items : []
-    const notes = Array.isArray(node.notes) ? node.notes : [];
-    const joinType = conjToType(node.conjunction);
+    const items = Array.isArray(node?.items) ? node.items : [];
+    const notes = Array.isArray(node?.notes) ? node.notes : [];
+    const joinType = conjToType(node?.conjunction);
+    const joinsArr = Array.isArray(node?.conjunctions)
+        ? node.conjunctions.map(conjToType) // normalized to "and"/"or"
+        : null;
 
     if (type === "SET") {
         const chips = items.map(toCourseChip);
         if (chips.length <= 1) {
             return { type: "single", courses: chips.length ? [chips[0]] : [], notes };
         }
-
         if (joinType) {
             return { type: joinType, courses: chips, notes };
         }
-
-        return { type: "nested", join: null, groups: [{ type: "single", courses: chips, notes }], notes: [] };
+        return { type: "single", courses: chips, notes }; // default to single when unspecified
     }
 
     if (type === "GROUP") {
         const childGroups = items.map(normalizeSendingNode);
 
+        // If a per-edge joins array exists, prefer it and avoid collapsing
+        if (joinsArr && childGroups.length > 0) {
+            // joinsArr should have length childGroups.length - 1; tolerate mismatch gracefully
+            return {
+                type: "nested",
+                join: null,            // no uniform join
+                joins: joinsArr,       // per-edge joins: ["and" | "or", ...]
+                groups: childGroups,
+                notes
+            };
+        }
+
+        // Legacy uniform behavior: collapse GROUP of singles with a uniform join
         const allSingles = childGroups.length > 0 && childGroups.every(g => g.type === "single");
         if (allSingles && joinType) {
             const flat = childGroups.flatMap(g => g.courses || []);
@@ -244,7 +258,7 @@ function normalizeSendingNode(node) {
 
         return {
             type: "nested",
-            join: joinType,
+            join: joinType || "or",   // default to "or" if unspecified
             groups: childGroups,
             notes
         };
@@ -252,6 +266,7 @@ function normalizeSendingNode(node) {
 
     return { type: "single", courses: [], notes: [] };
 }
+
 
 function normalizeArticulations(course) {
     const raw = Array.isArray(course?.articulations) ? course.articulations : [];
@@ -410,10 +425,14 @@ function renderCourseGroup(group) {
     }
 
     if (type === "nested") {
+        // Support per-edge joins array; fallback to uniform join
+        const joins = Array.isArray(group.joins) ? group.joins : null;
         return group.groups.map((g, i) => {
             let html = renderCourseGroup(g);
             if (i < group.groups.length - 1) {
-                const join = (group.join || "").toLowerCase();
+                const join = (joins && (joins[i] === "and" || joins[i] === "or"))
+                    ? joins[i]
+                    : (String(group.join || "or").toLowerCase());
                 if (join === "and" || join === "or") {
                     const { className, text } = groupSepMeta(join);
                     html += `<li class="${className}">${text}</li>`;
@@ -425,6 +444,7 @@ function renderCourseGroup(group) {
 
     return "";
 }
+
 
 universitySelect.addEventListener("change", async (e) => {
     const universityName = e.target.item(e.target.selectedIndex).label

@@ -1,52 +1,46 @@
 import json
 
-from classes import Conjunction, SendingArticulationNode, SendingCourse, NodeType
 from pathlib import Path
 
 
-def make_node(data: dict) -> SendingArticulationNode:
-    node_type = NodeType(data["type"])
-    conjunction = Conjunction(data["conjunction"]) if data["conjunction"] else None
-
-    if node_type == NodeType.SET:
-        course_groups = [SendingCourse(**course_data) for course_data in data["items"]]
-    else:
-        course_groups = [make_node(child) for child in data["items"]]
-
-    notes = list(data.get("notes", []))
-
-    return SendingArticulationNode(
-        type=node_type,
-        conjunction=conjunction,
-        items=course_groups,
-        notes=notes,
-    )
+def upper_conj(c: str | None) -> str:
+    return (c or "").upper()
 
 
-def format_node(node: SendingArticulationNode) -> str:
-    def fmt(n: SendingArticulationNode, depth: int = 0) -> list[str]:
+def format_node(node: dict) -> str:
+    def fmt(n: dict, depth: int = 0) -> list[str]:
         indent = "  " * depth
         lines: list[str] = []
+        node_type = str(n.get("type", "")).upper()
+        items = n.get("items") or []
+        notes = n.get("notes") or []
 
-        if n.type == NodeType.SET:
-            join = n.conjunction.value if n.conjunction else None
-            for i, c in enumerate(n.items):
-                lines.append(f"{indent}{c.key} - {c.title}")
-                for note in c.notes:
+        if node_type == "SET":
+            join = upper_conj(n.get("conjunction"))
+            for i, c in enumerate(items):
+                key = c.get("key", "")
+                title = c.get("title", "")
+                lines.append(f"{indent}{key} - {title}")
+                for note in c.get("notes", []) or []:
                     lines.append(f"{indent}  - {note}")
-                if i != len(n.items) - 1:
+                if i != len(items) - 1 and join:
                     lines.append(f"{indent}{indent}{join}")
-            for note in n.notes:
+            for note in notes:
                 lines.append(f"{indent}(Note) {note}")
             return lines
 
-        # NodeType.GROUP
-        join = n.conjunction.value if n.conjunction else ""
-        for i, ch in enumerate(n.items):
+        joins_arr = n["conjunctions"]
+        conj_list: list[str]
+        conj_list = [upper_conj(j) for j in joins_arr]
+        if len(conj_list) < len(items) - 1:
+            conj_list += ["OR"] * (len(items) - 1 - len(conj_list))
+
+        for i, ch in enumerate(items):
             lines.extend(fmt(ch, depth + 1))
-            if join and i != len(n.items) - 1:
-                lines.append(f"{indent}{join}")
-        for note in n.notes:
+            if i < len(items) - 1 and conj_list[i]:
+                lines.append(f"{indent}{conj_list[i]}")
+
+        for note in notes:
             lines.append(f"{indent}(Note) {note}")
         return lines
 
@@ -54,8 +48,8 @@ def format_node(node: SendingArticulationNode) -> str:
 
 
 def print_articulation(articulation: dict) -> None:
-    print(f"\nFrom: {articulation['sending_name']}")
-    node = make_node(articulation["sending_articulation"])
+    print(f"\nFrom: {articulation["sending_name"]}")
+    node = articulation["sending_articulation"]
     print(format_node(node))
 
 
@@ -84,7 +78,6 @@ def get_course_numbers(university_name: str, subject_prefix: str):
 
 def university_input() -> str:
     universities = get_universities()
-
     uni_types = sorted(set([uni["category"] for uni in universities]))
 
     for i, uni_type in enumerate(uni_types, 1):
@@ -110,15 +103,16 @@ def handle_courses(university: str, subject: dict) -> dict:
     courses: list[dict] = get_course_numbers(university, subject["prefix"])
 
     for i, course in enumerate(courses, 1):
-        if course["type"] == "COURSE":
-            print(f"{i}: {course["key"]} - {course["title"]}")
-        elif course["type"] == "SERIES":
-            codes = " + ".join(c["key"] for c in course["courses"])
-            titles = " + ".join(c["title"] for c in course["courses"])
+        course_type = course["type"]
+        if course_type == "COURSE":
+            print(f"{i}: {course["key"]} - {course.get("title", "")}")
+        elif course_type == "SERIES":
+            codes = " + ".join(c.get("key", "") for c in course.get("courses", []))
+            titles = " + ".join(c.get("title", "") for c in course.get("courses", []))
             print(f"{i}: {codes} - {titles}")
-        elif course["type"] == "REQUIREMENT":
+        elif course_type == "MISCELLANEOUS":
             print(f"{i}: {course["key"]}")
-        elif course["type"] == "GE":
+        elif course_type == "GE":
             print(f"{i}: {course["key"]}")
 
     return courses[int(input("Select the number of the course: ")) - 1]
@@ -145,7 +139,6 @@ def main():
         print_articulations(course)
 
         proceed = input("\nContinue? (y/n) ")
-
         if proceed.lower() != "y":
             break
 
