@@ -21,9 +21,9 @@
                             "number": "160",
                             "key": "SOC 160",
                             "title": "Cities and Urban Life",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "82",
                             "key": "ARCHT 82",
                             "title": "Urban Dynamics - American Cities",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -61,9 +61,9 @@
                             "number": "8",
                             "key": "GEOG 8",
                             "title": "Urban Geography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -81,9 +81,9 @@
                             "number": "R101",
                             "key": "URBS R101",
                             "title": "Introduction to Urban Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -101,9 +101,9 @@
                             "number": "8",
                             "key": "URBAN 8",
                             "title": "Introduction to Urban Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -133,9 +133,9 @@
                             "number": "31",
                             "key": "POL SC 31",
                             "title": "Introduction to Public Policy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -153,9 +153,9 @@
                             "number": "100",
                             "key": "LDR 100",
                             "title": "Introduction to Community, Economic, and Urban Planning and Development",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -185,9 +185,9 @@
                             "number": "120",
                             "key": "BIOL 120",
                             "title": "Humans and the Environment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -205,9 +205,9 @@
                             "number": "B8",
                             "key": "BIOL B8",
                             "title": "Introduction to Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -225,9 +225,9 @@
                             "number": "1",
                             "key": "BIOL 1",
                             "title": "Environmental Biology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -245,9 +245,9 @@
                             "number": "13",
                             "key": "BIOL 13",
                             "title": "Principles of Ecology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -265,9 +265,9 @@
                             "number": "10",
                             "key": "ES 10",
                             "title": "Introduction to Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -285,9 +285,9 @@
                             "number": "115",
                             "key": "ENVS 115",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -305,9 +305,9 @@
                             "number": "105",
                             "key": "BIOL 105",
                             "title": "Humans and the Environment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -325,9 +325,9 @@
                             "number": "C141",
                             "key": "BIOL C141",
                             "title": "Environmental Studies Lecture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -336,28 +336,44 @@
             {
                 "sending_name": "Chabot College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Environmental Studies",
-                            "prefix": "ENST",
-                            "number": "1",
-                            "key": "ENST 1",
-                            "title": "Introduction to Environmental Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Studies",
+                                    "prefix": "ENST",
+                                    "number": "1",
+                                    "key": "ENST 1",
+                                    "title": "Introduction to Environmental Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geography",
-                            "prefix": "GEO",
-                            "number": "10",
-                            "key": "GEO 10",
-                            "title": "Global Environmental Solutions",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEO",
+                                    "number": "10",
+                                    "key": "GEO 10",
+                                    "title": "Global Environmental Solutions",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -375,9 +391,9 @@
                             "number": "145",
                             "key": "BIOL 145",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -395,9 +411,9 @@
                             "number": "20",
                             "key": "BIO 20",
                             "title": "Introduction to Ecology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -415,9 +431,9 @@
                             "number": "13",
                             "key": "BIOL 13",
                             "title": "Environmental Science Lecture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -435,9 +451,9 @@
                             "number": "C106",
                             "key": "BIOL C106",
                             "title": "Human Ecology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -455,9 +471,9 @@
                             "number": "138",
                             "key": "BIOL 138",
                             "title": "Introduction to Environmental Sciences",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -475,9 +491,9 @@
                             "number": "102",
                             "key": "BIOL 102",
                             "title": "Environmental Science and Conservation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -495,9 +511,9 @@
                             "number": "130",
                             "key": "BIOSCI 130",
                             "title": "Environmental Biology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -515,9 +531,9 @@
                             "number": "1",
                             "key": "NR 1",
                             "title": "Conservation of Natural Resources",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -535,9 +551,9 @@
                             "number": "10",
                             "key": "ENVSC 10",
                             "title": "Introduction to Environmental Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -546,28 +562,44 @@
             {
                 "sending_name": "College of the Sequoias",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Agriculture",
-                            "prefix": "AG",
-                            "number": "002",
-                            "key": "AG 002",
-                            "title": "Environmental Conservation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Agriculture",
+                                    "prefix": "AG",
+                                    "number": "002",
+                                    "key": "AG 002",
+                                    "title": "Environmental Conservation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "025",
-                            "key": "BIOL 025",
-                            "title": "Human Ecology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "025",
+                                    "key": "BIOL 025",
+                                    "title": "Human Ecology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -585,9 +617,9 @@
                             "number": "1400",
                             "key": "BIO 1400",
                             "title": "Environmental Principles",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -605,9 +637,9 @@
                             "number": "001",
                             "key": "NR 001",
                             "title": "Conservation of Natural Resources",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -625,9 +657,9 @@
                             "number": "123",
                             "key": "BIOL 123",
                             "title": "Ecology and Environment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -645,9 +677,9 @@
                             "number": "112",
                             "key": "BIO 112",
                             "title": "Contemporary Issues in Environmental Resources",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -665,9 +697,9 @@
                             "number": "103 C",
                             "key": "BIOL 103 C",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -685,9 +717,9 @@
                             "number": "1",
                             "key": "E S 1",
                             "title": "Introduction to Environmental Studies",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -705,9 +737,9 @@
                             "number": "170",
                             "key": "BIOSC 170",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -716,28 +748,44 @@
             {
                 "sending_name": "East Los Angeles College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOLOGY",
-                            "number": "009",
-                            "key": "BIOLOGY 009",
-                            "title": "Human Ecology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOLOGY",
+                                    "number": "009",
+                                    "key": "BIOLOGY 009",
+                                    "title": "Human Ecology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Environmental Science",
-                            "prefix": "ENV SCI",
-                            "number": "001",
-                            "key": "ENV SCI 001",
-                            "title": "Introduction to Environmental Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Science",
+                                    "prefix": "ENV SCI",
+                                    "number": "001",
+                                    "key": "ENV SCI 001",
+                                    "title": "Introduction to Environmental Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -755,9 +803,9 @@
                             "number": "010",
                             "key": "ENVIR 010",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -775,9 +823,9 @@
                             "number": "350",
                             "key": "BIOL 350",
                             "title": "Environmental Biology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -795,9 +843,9 @@
                             "number": "9",
                             "key": "BIOL 9",
                             "title": "Environmental Biology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -815,9 +863,9 @@
                             "number": "12",
                             "key": "GEOL 12",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -835,9 +883,9 @@
                             "number": "105 F",
                             "key": "ENVS 105 F",
                             "title": "Environmental Biology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Environmental Sciences",
@@ -845,9 +893,9 @@
                             "number": "105LF",
                             "key": "ENVS 105LF",
                             "title": "Environmental Biology Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -865,9 +913,9 @@
                             "number": "1",
                             "key": "ECOL 1",
                             "title": "Conservation of Natural Resources",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -885,9 +933,9 @@
                             "number": "106",
                             "key": "GEOG 106",
                             "title": "Human Impact on the Environment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -905,9 +953,9 @@
                             "number": "G130",
                             "key": "ECON G130",
                             "title": "Environmental Economics and Policy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -925,9 +973,9 @@
                             "number": "112",
                             "key": "BIO 112",
                             "title": "Contemporary Issues in Environmental Resources",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -945,9 +993,9 @@
                             "number": "110",
                             "key": "ENVS 110",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -965,9 +1013,9 @@
                             "number": "1",
                             "key": "ENV 1",
                             "title": "Introduction to Environmental Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -985,9 +1033,9 @@
                             "number": "40",
                             "key": "BIO 40",
                             "title": "Humans and the Environment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1005,9 +1053,9 @@
                             "number": "11",
                             "key": "BIO 11",
                             "title": "Environmental Problems of Man",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1025,9 +1073,9 @@
                             "number": "9",
                             "key": "BIOLOGY 9",
                             "title": "Man and His Environment: Biological Processes",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1045,9 +1093,9 @@
                             "number": "-06",
                             "key": "BIOL -06",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1065,9 +1113,9 @@
                             "number": "102",
                             "key": "BIO 102",
                             "title": "Introductory Biology: Ecology and Environmental Biology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1085,9 +1133,9 @@
                             "number": "31",
                             "key": "BIOL 31",
                             "title": "Introduction to Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Biology",
@@ -1095,9 +1143,9 @@
                             "number": "32",
                             "key": "BIOL 32",
                             "title": "Environmental Science Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1115,9 +1163,9 @@
                             "number": "M01",
                             "key": "ENSC M01",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1135,9 +1183,9 @@
                             "number": "6",
                             "key": "BIOL 6",
                             "title": "Humans and the Environment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1146,28 +1194,44 @@
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Environmental Studies",
-                            "prefix": "ENVS-",
-                            "number": "101",
-                            "key": "ENVS- 101",
-                            "title": "Environmental Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Studies",
+                                    "prefix": "ENVS-",
+                                    "number": "101",
+                                    "key": "ENVS- 101",
+                                    "title": "Environmental Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Environmental Studies",
-                            "prefix": "ENVS-",
-                            "number": "101H",
-                            "key": "ENVS- 101H",
-                            "title": "Honors Environmental Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Studies",
+                                    "prefix": "ENVS-",
+                                    "number": "101H",
+                                    "key": "ENVS- 101H",
+                                    "title": "Honors Environmental Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1185,9 +1249,9 @@
                             "number": "112",
                             "key": "BIOL 112",
                             "title": "Introduction to Ecology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1205,9 +1269,9 @@
                             "number": "19",
                             "key": "BIO 19",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1225,9 +1289,9 @@
                             "number": "108",
                             "key": "ENVS 108",
                             "title": "Introduction to the Environment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1236,28 +1300,44 @@
             {
                 "sending_name": "Orange Coast College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Environmental Science and Ecology",
-                            "prefix": "ESEC",
-                            "number": "A100",
-                            "key": "ESEC A100",
-                            "title": "Introduction to Environmental Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Science and Ecology",
+                                    "prefix": "ESEC",
+                                    "number": "A100",
+                                    "key": "ESEC A100",
+                                    "title": "Introduction to Environmental Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Environmental Science and Ecology",
-                            "prefix": "ESEC",
-                            "number": "A100H",
-                            "key": "ESEC A100H",
-                            "title": "Introduction to Environmental Science Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Science and Ecology",
+                                    "prefix": "ESEC",
+                                    "number": "A100H",
+                                    "key": "ESEC A100H",
+                                    "title": "Introduction to Environmental Science Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1275,9 +1355,9 @@
                             "number": "19",
                             "key": "BIO 19",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1295,9 +1375,9 @@
                             "number": "1",
                             "key": "ENV 1",
                             "title": "Introduction to Environmental Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1315,9 +1395,9 @@
                             "number": "104",
                             "key": "BIOL 104",
                             "title": "Human Ecology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1335,9 +1415,9 @@
                             "number": "101",
                             "key": "BIOL 101",
                             "title": "Issues in Environmental Science & Sustainability",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1355,9 +1435,9 @@
                             "number": "101",
                             "key": "BIOL 101",
                             "title": "Issues in Environmental Biology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1366,28 +1446,44 @@
             {
                 "sending_name": "San Jose City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "063",
-                            "key": "BIOL 063",
-                            "title": "Ecology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "063",
+                                    "key": "BIOL 063",
+                                    "title": "Ecology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Environmental Science",
-                            "prefix": "ENVIR",
-                            "number": "010",
-                            "key": "ENVIR 010",
-                            "title": "Environmental Science",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Science",
+                                    "prefix": "ENVIR",
+                                    "number": "010",
+                                    "key": "ENVIR 010",
+                                    "title": "Environmental Science",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1396,38 +1492,62 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "200",
-                            "key": "BIOL 200",
-                            "title": "Human Ecology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "200",
+                                    "key": "BIOL 200",
+                                    "title": "Human Ecology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "259",
-                            "key": "BIOL 259",
-                            "title": "Environmental Biology",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "259",
+                                    "key": "BIOL 259",
+                                    "title": "Environmental Biology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Environmental Studies",
-                            "prefix": "ENVR",
-                            "number": "200",
-                            "key": "ENVR 200",
-                            "title": "Human Ecology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Studies",
+                                    "prefix": "ENVR",
+                                    "number": "200",
+                                    "key": "ENVR 200",
+                                    "title": "Human Ecology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1436,28 +1556,44 @@
             {
                 "sending_name": "Santa Monica College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Environmental Studies",
-                            "prefix": "ENVRN",
-                            "number": "7",
-                            "key": "ENVRN 7",
-                            "title": "Introduction to Environmental Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Studies",
+                                    "prefix": "ENVRN",
+                                    "number": "7",
+                                    "key": "ENVRN 7",
+                                    "title": "Introduction to Environmental Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "7",
-                            "key": "GEOG 7",
-                            "title": "Introduction to Environmental Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "7",
+                                    "key": "GEOG 7",
+                                    "title": "Introduction to Environmental Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1466,28 +1602,44 @@
             {
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIO",
-                            "number": "12",
-                            "key": "BIO 12",
-                            "title": "Basic Concepts of Ecology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIO",
+                                    "number": "12",
+                                    "key": "BIO 12",
+                                    "title": "Basic Concepts of Ecology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "12",
-                            "key": "POLS 12",
-                            "title": "Environmental Policies and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "12",
+                                    "key": "POLS 12",
+                                    "title": "Environmental Policies and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1505,9 +1657,9 @@
                             "number": "259",
                             "key": "BIOL 259",
                             "title": "Environmental Biology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1525,9 +1677,9 @@
                             "number": "60",
                             "key": "AGNR 60",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1545,9 +1697,9 @@
                             "number": "100",
                             "key": "ENVS 100",
                             "title": "Introduction to Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1565,9 +1717,9 @@
                             "number": "012",
                             "key": "BIO 012",
                             "title": "Environmental Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1576,28 +1728,44 @@
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "140",
-                            "key": "BIOL 140",
-                            "title": "Environmental Biology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "140",
+                                    "key": "BIOL 140",
+                                    "title": "Environmental Biology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "145",
-                            "key": "BIOL 145",
-                            "title": "EcoMundo: Ecology and Environmental Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "145",
+                                    "key": "BIOL 145",
+                                    "title": "EcoMundo: Ecology and Environmental Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1615,9 +1783,9 @@
                             "number": "V10",
                             "key": "BIOL V10",
                             "title": "Introduction to Environmental Issues",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1647,9 +1815,9 @@
                             "number": "83",
                             "key": "ARCHT 83",
                             "title": "Urbanscapes & Cultures",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1667,9 +1835,9 @@
                             "number": "016",
                             "key": "SOC 016",
                             "title": "Urban Sociology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

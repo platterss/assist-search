@@ -32,9 +32,9 @@
                             "number": "101",
                             "key": "AJ 101",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -52,9 +52,9 @@
                             "number": "300",
                             "key": "ADMJ 300",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -72,9 +72,9 @@
                             "number": "B1",
                             "key": "CRIM B1",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -92,9 +92,9 @@
                             "number": "1",
                             "key": "ADJU 1",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -112,9 +112,9 @@
                             "number": "2",
                             "key": "AJ 2",
                             "title": "Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -132,9 +132,9 @@
                             "number": "1",
                             "key": "CJ 1",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -152,9 +152,9 @@
                             "number": "101",
                             "key": "AJ 101",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -172,9 +172,9 @@
                             "number": "C101",
                             "key": "ADMJ C101",
                             "title": "Introduction To Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -192,9 +192,9 @@
                             "number": "50",
                             "key": "ADMJ 50",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -212,9 +212,9 @@
                             "number": "1",
                             "key": "CJ 1",
                             "title": "Introduction to the Criminal Justice System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -232,9 +232,9 @@
                             "number": "101",
                             "key": "AJ 101",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -252,9 +252,9 @@
                             "number": "57",
                             "key": "ADMJ 57",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -272,9 +272,9 @@
                             "number": "1",
                             "key": "CRIM 1",
                             "title": "Introduction to Criminology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -283,28 +283,44 @@
             {
                 "sending_name": "Coalinga College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "AOJ",
-                            "number": "001",
-                            "key": "AOJ 001",
-                            "title": "Introduction to Criminal Justice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "AOJ",
+                                    "number": "001",
+                                    "key": "AOJ 001",
+                                    "title": "Introduction to Criminal Justice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "AOJ",
-                            "number": "029",
-                            "key": "AOJ 029",
-                            "title": "Criminology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "AOJ",
+                                    "number": "029",
+                                    "key": "AOJ 029",
+                                    "title": "Criminology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -322,9 +338,9 @@
                             "number": "110",
                             "key": "A J 110",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -342,9 +358,9 @@
                             "number": "100",
                             "key": "ADMJ 100",
                             "title": "Introduction to the Criminal Justice System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -362,9 +378,9 @@
                             "number": "101",
                             "key": "ADMJUS 101",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -382,9 +398,9 @@
                             "number": "1",
                             "key": "CJ 1",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -402,9 +418,9 @@
                             "number": "1",
                             "key": "AJ 1",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -422,9 +438,9 @@
                             "number": "011",
                             "key": "AJ 011",
                             "title": "Intro to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -442,9 +458,9 @@
                             "number": "1001",
                             "key": "ADJ 1001",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -462,9 +478,9 @@
                             "number": "100",
                             "key": "AJ 100",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -482,9 +498,9 @@
                             "number": "120",
                             "key": "ADJUS 120",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -502,9 +518,9 @@
                             "number": "001",
                             "key": "CJ 001",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -522,9 +538,9 @@
                             "number": "202",
                             "key": "CJ 202",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -533,28 +549,44 @@
             {
                 "sending_name": "Cypress College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "AJ",
-                            "number": "110 C",
-                            "key": "AJ 110 C",
-                            "title": "Introduction to Criminal Justice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "AJ",
+                                    "number": "110 C",
+                                    "key": "AJ 110 C",
+                                    "title": "Introduction to Criminal Justice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "292 C",
-                            "key": "SOC 292 C",
-                            "title": "Introduction to Criminology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "292 C",
+                                    "key": "SOC 292 C",
+                                    "title": "Introduction to Criminology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -563,38 +595,62 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "ADMJ",
-                            "number": "1",
-                            "key": "ADMJ 1",
-                            "title": "Introduction to Administration of Justice",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "ADMJ",
+                                    "number": "1",
+                                    "key": "ADMJ 1",
+                                    "title": "Introduction to Administration of Justice",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "ADMJ",
-                            "number": "25",
-                            "key": "ADMJ 25",
-                            "title": "Law and Social Change",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "ADMJ",
+                                    "number": "25",
+                                    "key": "ADMJ 25",
+                                    "title": "Law and Social Change",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Paralegal Studies",
-                            "prefix": "PARA",
-                            "number": "25",
-                            "key": "PARA 25",
-                            "title": "Law and Social Change",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Paralegal Studies",
+                                    "prefix": "PARA",
+                                    "number": "25",
+                                    "key": "PARA 25",
+                                    "title": "Law and Social Change",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -612,9 +668,9 @@
                             "number": "120",
                             "key": "ADJUS 120",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -632,9 +688,9 @@
                             "number": "001",
                             "key": "ADM JUS 001",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -652,9 +708,9 @@
                             "number": "100",
                             "key": "AJ 100",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -672,9 +728,9 @@
                             "number": "010",
                             "key": "AJ 010",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -692,9 +748,9 @@
                             "number": "102",
                             "key": "ADMJ 102",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -712,9 +768,9 @@
                             "number": "300",
                             "key": "ADMJ 300",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -732,9 +788,9 @@
                             "number": "1",
                             "key": "CRIM 1",
                             "title": "Introduction to Criminology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -743,28 +799,44 @@
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "AJ",
-                            "number": "100 F",
-                            "key": "AJ 100 F",
-                            "title": "Introduction to Criminal Justice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "AJ",
+                                    "number": "100 F",
+                                    "key": "AJ 100 F",
+                                    "title": "Introduction to Criminal Justice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "292 F",
-                            "key": "SOC 292 F",
-                            "title": "Introduction to Criminology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "292 F",
+                                    "key": "SOC 292 F",
+                                    "title": "Introduction to Criminology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -782,9 +854,9 @@
                             "number": "10",
                             "key": "AJ 10",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -802,9 +874,9 @@
                             "number": "101",
                             "key": "ADMJ 101",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -822,9 +894,9 @@
                             "number": "G140",
                             "key": "CJ G140",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -842,9 +914,9 @@
                             "number": "110",
                             "key": "AOJ 110",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -862,9 +934,9 @@
                             "number": "1",
                             "key": "ADJ 1",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -882,9 +954,9 @@
                             "number": "100",
                             "key": "AJ 100",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -902,9 +974,9 @@
                             "number": "2",
                             "key": "AJ 2",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -922,9 +994,9 @@
                             "number": "101",
                             "key": "CRJ 101",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -942,9 +1014,9 @@
                             "number": "50",
                             "key": "AJ 50",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -953,48 +1025,80 @@
             {
                 "sending_name": "Lassen Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "AJ",
-                            "number": "8",
-                            "key": "AJ 8",
-                            "title": "Criminal Court Process",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "AJ",
+                                    "number": "8",
+                                    "key": "AJ 8",
+                                    "title": "Criminal Court Process",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "AJ",
-                            "number": "10",
-                            "key": "AJ 10",
-                            "title": "Criminology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "AJ",
+                                    "number": "10",
+                                    "key": "AJ 10",
+                                    "title": "Criminology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "AJ",
-                            "number": "12",
-                            "key": "AJ 12",
-                            "title": "Introduction to Criminal Justice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "AJ",
+                                    "number": "12",
+                                    "key": "AJ 12",
+                                    "title": "Introduction to Criminal Justice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "AJ",
-                            "number": "20",
-                            "key": "AJ 20",
-                            "title": "Criminal Law",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administration of Justice",
+                                    "prefix": "AJ",
+                                    "number": "20",
+                                    "key": "AJ 20",
+                                    "title": "Criminal Law",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1012,9 +1116,9 @@
                             "number": "001",
                             "key": "AOJ 001",
                             "title": "Introduction to Criminology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1032,9 +1136,9 @@
                             "number": "2",
                             "key": "ADJUS 2",
                             "title": "Introduction, Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1052,9 +1156,9 @@
                             "number": "001",
                             "key": "ADM JUS 001",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1072,9 +1176,9 @@
                             "number": "001",
                             "key": "ADM JUS 001",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1092,9 +1196,9 @@
                             "number": "001",
                             "key": "ADM JUS 001",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1112,9 +1216,9 @@
                             "number": "001",
                             "key": "ADM JUS 001",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1132,9 +1236,9 @@
                             "number": "001",
                             "key": "ADM JUS 001",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1152,9 +1256,9 @@
                             "number": "001",
                             "key": "ADM JUS 001",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1172,9 +1276,9 @@
                             "number": "001",
                             "key": "ADM JUS 001",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1192,9 +1296,9 @@
                             "number": "110",
                             "key": "ADJUS 110",
                             "title": "Introduction to the Criminal Justice System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1212,9 +1316,9 @@
                             "number": "1",
                             "key": "CRIM 1",
                             "title": "Introduction to Criminology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1232,9 +1336,9 @@
                             "number": "200",
                             "key": "ADJ 200",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1252,9 +1356,9 @@
                             "number": "-02",
                             "key": "CRIM -02",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1272,9 +1376,9 @@
                             "number": "21",
                             "key": "ADJUS 21",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1292,9 +1396,9 @@
                             "number": "100",
                             "key": "ADM 100",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1312,9 +1416,9 @@
                             "number": "050",
                             "key": "SOC 050",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1332,9 +1436,9 @@
                             "number": "201",
                             "key": "ADJU 201",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1352,9 +1456,9 @@
                             "number": "2",
                             "key": "ADMJ 2",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1363,38 +1467,62 @@
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Criminal Justice",
-                            "prefix": "CJ",
-                            "number": "M01",
-                            "key": "CJ M01",
-                            "title": "Introduction to Criminal Justice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Criminal Justice",
+                                    "prefix": "CJ",
+                                    "number": "M01",
+                                    "key": "CJ M01",
+                                    "title": "Introduction to Criminal Justice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Criminal Justice",
-                            "prefix": "CJ",
-                            "number": "M01H",
-                            "key": "CJ M01H",
-                            "title": "Honors: Introduction to Criminal Justice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Criminal Justice",
+                                    "prefix": "CJ",
+                                    "number": "M01H",
+                                    "key": "CJ M01H",
+                                    "title": "Honors: Introduction to Criminal Justice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "M160",
-                            "key": "SOC M160",
-                            "title": "Introduction to Criminology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "M160",
+                                    "key": "SOC M160",
+                                    "title": "Introduction to Criminology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1412,9 +1540,9 @@
                             "number": "1",
                             "key": "ADJ 1",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Administration of Justice",
@@ -1422,9 +1550,9 @@
                             "number": "1H",
                             "key": "ADJ 1H",
                             "title": "Honors Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1442,9 +1570,9 @@
                             "number": "1",
                             "key": "ADJU 1",
                             "title": "The Administration of Justice System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1462,9 +1590,9 @@
                             "number": "102",
                             "key": "AJ- 102",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1482,9 +1610,9 @@
                             "number": "120",
                             "key": "ADMJ 120",
                             "title": "Introduction to the Criminal Justice System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1502,9 +1630,9 @@
                             "number": "1",
                             "key": "ADJ 1",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Administration of Justice",
@@ -1512,9 +1640,9 @@
                             "number": "1H",
                             "key": "ADJ 1H",
                             "title": "Honors Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1532,9 +1660,9 @@
                             "number": "101",
                             "key": "AJ 101",
                             "title": "Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1552,9 +1680,9 @@
                             "number": "100",
                             "key": "AJ 100",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1572,9 +1700,9 @@
                             "number": "010",
                             "key": "AJ 010",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1592,9 +1720,9 @@
                             "number": "P102",
                             "key": "ADMJ P102",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1612,9 +1740,9 @@
                             "number": "1",
                             "key": "CRIM 1",
                             "title": "Introduction to Criminology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1632,9 +1760,9 @@
                             "number": "101",
                             "key": "AJ 101",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1652,9 +1780,9 @@
                             "number": "1",
                             "key": "ADJ 1",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1672,9 +1800,9 @@
                             "number": "300",
                             "key": "ADMJ 300",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1692,9 +1820,9 @@
                             "number": "37",
                             "key": "HS 37",
                             "title": "Introduction to Criminology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1712,9 +1840,9 @@
                             "number": "101",
                             "key": "ADJUS 101",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1732,9 +1860,9 @@
                             "number": "101",
                             "key": "ADJU 101",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1752,9 +1880,9 @@
                             "number": "101",
                             "key": "ADJU 101",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1772,9 +1900,9 @@
                             "number": "21",
                             "key": "AJ 21",
                             "title": "Criminal Justice in Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1792,9 +1920,9 @@
                             "number": "010",
                             "key": "AJ 010",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1812,9 +1940,9 @@
                             "number": "101",
                             "key": "CJ 101",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1832,9 +1960,9 @@
                             "number": "101",
                             "key": "AJ 101",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1852,9 +1980,9 @@
                             "number": "1",
                             "key": "AD JUS 1",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1872,9 +2000,9 @@
                             "number": "21",
                             "key": "AJ 21",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1892,9 +2020,9 @@
                             "number": "101",
                             "key": "CJ 101",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1912,9 +2040,9 @@
                             "number": "10",
                             "key": "ADJU 10",
                             "title": "Introduction to the Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1932,9 +2060,9 @@
                             "number": "50",
                             "key": "ADMJ 50",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1952,9 +2080,9 @@
                             "number": "100",
                             "key": "ADMJ 100",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1972,9 +2100,9 @@
                             "number": "001",
                             "key": "CJ 001",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1992,9 +2120,9 @@
                             "number": "111",
                             "key": "AJ 111",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2012,9 +2140,9 @@
                             "number": "V01",
                             "key": "CJ V01",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2032,9 +2160,9 @@
                             "number": "101",
                             "key": "CJ 101",
                             "title": "Introduction to Criminal Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2052,9 +2180,9 @@
                             "number": "001",
                             "key": "ADM JUS 001",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2072,9 +2200,9 @@
                             "number": "001",
                             "key": "ADMJ 001",
                             "title": "Introduction to Administration of Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2092,9 +2220,9 @@
                             "number": "10",
                             "key": "AJ 10",
                             "title": "Introduction to Criminal Justice System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2112,9 +2240,9 @@
                             "number": "10",
                             "key": "AJ 10",
                             "title": "Introduction to Criminal Justice System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

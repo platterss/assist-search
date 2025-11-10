@@ -12,38 +12,62 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "American Studies",
-                            "prefix": "AMS",
-                            "number": "200",
-                            "key": "AMS 200",
-                            "title": "Race, Class, and Ethnic Groups in America",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "American Studies",
+                                    "prefix": "AMS",
+                                    "number": "200",
+                                    "key": "AMS 200",
+                                    "title": "Race, Class, and Ethnic Groups in America",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Multicultural Studies",
-                            "prefix": "MCS",
-                            "number": "200",
-                            "key": "MCS 200",
-                            "title": "Race, Class, and Ethnic Groups in America",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Multicultural Studies",
+                                    "prefix": "MCS",
+                                    "number": "200",
+                                    "key": "MCS 200",
+                                    "title": "Race, Class, and Ethnic Groups in America",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "200",
-                            "key": "SOC 200",
-                            "title": "Race, Class, and Ethnic Groups in America",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "200",
+                                    "key": "SOC 200",
+                                    "title": "Race, Class, and Ethnic Groups in America",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -95,9 +119,9 @@
                             "number": "105",
                             "key": "SOC S 105",
                             "title": "Our Digital World: The Internet, Social Media, and Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -127,11 +151,11 @@
                             "number": "332",
                             "key": "HUM 332",
                             "title": "American Humanities",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -149,9 +173,9 @@
                             "number": "100",
                             "key": "AMS 100",
                             "title": "American Culture and Identity",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -169,9 +193,9 @@
                             "number": "332",
                             "key": "HUM 332",
                             "title": "American Humanities",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -201,9 +225,9 @@
                             "number": "130",
                             "key": "SOC 130",
                             "title": "Introduction to Disability Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -266,11 +290,11 @@
                             "number": "350",
                             "key": "SOC 350",
                             "title": "Sociology of Popular Culture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -288,9 +312,9 @@
                             "number": "15",
                             "key": "HUMAN 15",
                             "title": "Popular Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -308,9 +332,9 @@
                             "number": "5",
                             "key": "ES 5",
                             "title": "Critiquing Race and Gender in Popular Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -328,9 +352,9 @@
                             "number": "332",
                             "key": "HUM 332",
                             "title": "American Humanities",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -348,11 +372,11 @@
                             "number": "332",
                             "key": "HUM 332",
                             "title": "American Humanities",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -370,9 +394,9 @@
                             "number": "10",
                             "key": "ETHNST 10",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -390,11 +414,11 @@
                             "number": "350",
                             "key": "SOC 350",
                             "title": "Sociology of Popular Culture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -424,9 +448,9 @@
                             "number": "B2",
                             "key": "FDST B2",
                             "title": "Food Customs and Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -444,11 +468,11 @@
                             "number": "108",
                             "key": "NUTR 108",
                             "title": "Cultural Aspects of Food and Nutrition",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Effective next fall, this course will no longer articulate"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -466,9 +490,9 @@
                             "number": "7",
                             "key": "NUTR 7",
                             "title": "Food and Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -489,28 +513,44 @@
             {
                 "sending_name": "Berkeley City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Music",
-                            "prefix": "MUSIC",
-                            "number": "15A",
-                            "key": "MUSIC 15A",
-                            "title": "Jazz, Blues and Popular Music in American Culture",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Music",
+                                    "prefix": "MUSIC",
+                                    "number": "15A",
+                                    "key": "MUSIC 15A",
+                                    "title": "Jazz, Blues and Popular Music in American Culture",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Music",
-                            "prefix": "MUSIC",
-                            "number": "15B",
-                            "key": "MUSIC 15B",
-                            "title": "Jazz, Blues and Popular Music in American Culture",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Music",
+                                    "prefix": "MUSIC",
+                                    "number": "15B",
+                                    "key": "MUSIC 15B",
+                                    "title": "Jazz, Blues and Popular Music in American Culture",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -528,11 +568,11 @@
                             "number": "13A",
                             "key": "MUS 13A",
                             "title": "Survey of American Popular Music",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Effective next fall, this course will no longer articulate"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -550,9 +590,9 @@
                             "number": "8",
                             "key": "MUSL 8",
                             "title": "History of Rock and Roll and Popular Music",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -570,9 +610,9 @@
                             "number": "105",
                             "key": "MUS 105",
                             "title": "Rock, Pop and Jazz",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -590,9 +630,9 @@
                             "number": "12",
                             "key": "MUS 12",
                             "title": "American Popular Music",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -610,9 +650,9 @@
                             "number": "1234",
                             "key": "MUS 1234",
                             "title": "Diversity in American Music",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -621,28 +661,44 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Music",
-                            "prefix": "MUS",
-                            "number": "8",
-                            "key": "MUS 8",
-                            "title": "Music of American Cultures",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Music",
+                                    "prefix": "MUS",
+                                    "number": "8",
+                                    "key": "MUS 8",
+                                    "title": "Music of American Cultures",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Music",
-                            "prefix": "MUS",
-                            "number": "8H",
-                            "key": "MUS 8H",
-                            "title": "Honors Music of American Cultures",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Music",
+                                    "prefix": "MUS",
+                                    "number": "8H",
+                                    "key": "MUS 8H",
+                                    "title": "Honors Music of American Cultures",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -660,9 +716,9 @@
                             "number": "012",
                             "key": "MUSIC 012",
                             "title": "Popular Music in American Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -680,9 +736,9 @@
                             "number": "112",
                             "key": "MUS 112",
                             "title": "American Popular Music",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -700,11 +756,11 @@
                             "number": "309",
                             "key": "MUFHL 309",
                             "title": "Introduction to American Popular Music",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []

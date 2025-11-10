@@ -32,9 +32,9 @@
                             "number": "221",
                             "key": "ARCH 221",
                             "title": "Design and Visual Communication 1",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Architecture",
@@ -42,9 +42,9 @@
                             "number": "222",
                             "key": "ARCH 222",
                             "title": "Design and Visual Communication II",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -60,8 +60,8 @@
             {
                 "subject": "Landscape Architecture",
                 "prefix": "LA",
-                "key": "LA 170",
                 "number": "170",
+                "key": "LA 170",
                 "title": "Principles of Design Communication",
                 "min_units": 4.0,
                 "max_units": 4.0
@@ -69,8 +69,8 @@
             {
                 "subject": "Landscape Architecture",
                 "prefix": "LA",
-                "key": "LA 202",
                 "number": "202",
+                "key": "LA 202",
                 "title": "Design Fundamentals I",
                 "min_units": 4.0,
                 "max_units": 4.0
@@ -157,28 +157,44 @@
             {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "330",
-                            "key": "GEOG 330",
-                            "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "330",
+                                    "key": "GEOG 330",
+                                    "title": "Introduction to Geographic Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "334",
-                            "key": "GEOG 334",
-                            "title": "Introduction to GIS Software Applications",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "334",
+                                    "key": "GEOG 334",
+                                    "title": "Introduction to GIS Software Applications",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -196,9 +212,9 @@
                             "number": "B11",
                             "key": "FORE B11",
                             "title": "Geographic Information Systems in Natural Resources",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -216,9 +232,9 @@
                             "number": "20",
                             "key": "GEOG 20",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -236,9 +252,9 @@
                             "number": "17",
                             "key": "GEOG 17",
                             "title": "Introduction to Geographic Information Systems and Techniques",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -256,9 +272,9 @@
                             "number": "10",
                             "key": "GEOG 10",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -276,9 +292,9 @@
                             "number": "125",
                             "key": "GEOG 125",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -296,9 +312,9 @@
                             "number": "63",
                             "key": "GEOGR 63",
                             "title": "Creating a Basic GIS Map",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -316,9 +332,9 @@
                             "number": "126",
                             "key": "GEOG 126",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -336,9 +352,9 @@
                             "number": "335",
                             "key": "GEOG 335",
                             "title": "Introduction to Geographic Information Systems Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -347,28 +363,44 @@
             {
                 "sending_name": "Cuesta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "230",
-                            "key": "GEOL 230",
-                            "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "230",
+                                    "key": "GEOL 230",
+                                    "title": "Introduction to Geographic Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "230",
-                            "key": "GEOG 230",
-                            "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "230",
+                                    "key": "GEOG 230",
+                                    "title": "Introduction to Geographic Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -377,28 +409,44 @@
             {
                 "sending_name": "East Los Angeles College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geographic Information Systems",
-                            "prefix": "GIS",
-                            "number": "025",
-                            "key": "GIS 025",
-                            "title": "Introduction to Geographic Information Systems and Laboratory",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems",
+                                    "prefix": "GIS",
+                                    "number": "025",
+                                    "key": "GIS 025",
+                                    "title": "Introduction to Geographic Information Systems and Laboratory",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "025",
-                            "key": "GEOG 025",
-                            "title": "Introduction to Geographic Information Systems and Laboratory",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "025",
+                                    "key": "GEOG 025",
+                                    "title": "Introduction to Geographic Information Systems and Laboratory",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -416,9 +464,9 @@
                             "number": "8",
                             "key": "GEOG 8",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -427,28 +475,44 @@
             {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "201",
-                            "key": "GEOG 201",
-                            "title": "Introduction to Geographic Information Systems (GIS)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "201",
+                                    "key": "GEOG 201",
+                                    "title": "Introduction to Geographic Information Systems (GIS)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Environmental Studies",
-                            "prefix": "ENVR",
-                            "number": "201",
-                            "key": "ENVR 201",
-                            "title": "Introduction to Geographical Information Systems (GIS)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Studies",
+                                    "prefix": "ENVR",
+                                    "number": "201",
+                                    "key": "ENVR 201",
+                                    "title": "Introduction to Geographical Information Systems (GIS)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -457,28 +521,44 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geospatial Technology",
-                            "prefix": "GIST",
-                            "number": "11",
-                            "key": "GIST 11",
-                            "title": "Introduction to Mapping & Spatial Reasoning",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geospatial Technology",
+                                    "prefix": "GIST",
+                                    "number": "11",
+                                    "key": "GIST 11",
+                                    "title": "Introduction to Mapping & Spatial Reasoning",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "11",
-                            "key": "GEOG 11",
-                            "title": "Introduction to Mapping & Spatial Reasoning",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "11",
+                                    "key": "GEOG 11",
+                                    "title": "Introduction to Mapping & Spatial Reasoning",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -496,9 +576,9 @@
                             "number": "155",
                             "key": "GEOG 155",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -516,9 +596,9 @@
                             "number": "104",
                             "key": "GEOG 104",
                             "title": "Introduction to Geographic Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -536,9 +616,9 @@
                             "number": "12",
                             "key": "GEOG 12",
                             "title": "Introduction to Digital Mapping",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -556,9 +636,9 @@
                             "number": "15",
                             "key": "GEOG 15",
                             "title": "Introduction to GIS",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -576,9 +656,9 @@
                             "number": "10",
                             "key": "GEOG 10",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -587,28 +667,44 @@
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "025",
-                            "key": "GEOG 025",
-                            "title": "Introduction to Geographic Information Systems and Laboratory",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "025",
+                                    "key": "GEOG 025",
+                                    "title": "Introduction to Geographic Information Systems and Laboratory",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geographic Information Systems",
-                            "prefix": "GIS",
-                            "number": "025",
-                            "key": "GIS 025",
-                            "title": "Introduction to Geographic Information Systems and Laboratory",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems",
+                                    "prefix": "GIS",
+                                    "number": "025",
+                                    "key": "GIS 025",
+                                    "title": "Introduction to Geographic Information Systems and Laboratory",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -626,9 +722,9 @@
                             "number": "M01",
                             "key": "GIS M01",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -646,9 +742,9 @@
                             "number": "8",
                             "key": "GEG 8",
                             "title": "Introduction To Geographic Information Systems, with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -666,9 +762,9 @@
                             "number": "A190",
                             "key": "GEOG A190",
                             "title": "Digital Mapping: Introduction to GIS",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -686,9 +782,9 @@
                             "number": "R106",
                             "key": "GEOG R106",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -706,9 +802,9 @@
                             "number": "120",
                             "key": "GEOG 120",
                             "title": "Digital Earth: Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -726,9 +822,9 @@
                             "number": "011",
                             "key": "GEOG 011",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -746,9 +842,9 @@
                             "number": "18",
                             "key": "FOR 18",
                             "title": "Remote Sensing & Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -766,9 +862,9 @@
                             "number": "8",
                             "key": "GEG 8",
                             "title": "Introduction to Geographic Information Systems, with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -786,9 +882,9 @@
                             "number": "334",
                             "key": "GEOG 334",
                             "title": "Introduction to GIS Software Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -797,28 +893,44 @@
             {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "110",
-                            "key": "GEOG 110",
-                            "title": "Introduction to Geographic Information Systems (GIS)",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "110",
+                                    "key": "GEOG 110",
+                                    "title": "Introduction to Geographic Information Systems (GIS)",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geographic Information Systems",
-                            "prefix": "GIS",
-                            "number": "110",
-                            "key": "GIS 110",
-                            "title": "Introduction to Geographic Information Systems (GIS)",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems",
+                                    "prefix": "GIS",
+                                    "number": "110",
+                                    "key": "GIS 110",
+                                    "title": "Introduction to Geographic Information Systems (GIS)",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -827,28 +939,44 @@
             {
                 "sending_name": "San Bernardino Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "130",
-                            "key": "GEOG 130",
-                            "title": "Introduction to Geographic Information Systems (GIS)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "130",
+                                    "key": "GEOG 130",
+                                    "title": "Introduction to Geographic Information Systems (GIS)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geographic Information Systems",
-                            "prefix": "GIS",
-                            "number": "130",
-                            "key": "GIS 130",
-                            "title": "Introduction to Geographic Information Systems (GIS)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems",
+                                    "prefix": "GIS",
+                                    "number": "130",
+                                    "key": "GIS 130",
+                                    "title": "Introduction to Geographic Information Systems (GIS)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -857,28 +985,44 @@
             {
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geographic Information Systems (GISG)",
-                            "prefix": "GISG",
-                            "number": "104",
-                            "key": "GISG 104",
-                            "title": "Geographic Information Science and Spatial Reasoning",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems (GISG)",
+                                    "prefix": "GISG",
+                                    "number": "104",
+                                    "key": "GISG 104",
+                                    "title": "Geographic Information Science and Spatial Reasoning",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geographic Information Systems (GISG)",
-                            "prefix": "GISG",
-                            "number": "110",
-                            "key": "GISG 110",
-                            "title": "Introduction to Mapping and Geographic Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems (GISG)",
+                                    "prefix": "GISG",
+                                    "number": "110",
+                                    "key": "GISG 110",
+                                    "title": "Introduction to Mapping and Geographic Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -887,28 +1031,44 @@
             {
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geographic Information Systems",
-                            "prefix": "GISG",
-                            "number": "104",
-                            "key": "GISG 104",
-                            "title": "Geographic Information Science and Spatial Reasoning",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems",
+                                    "prefix": "GISG",
+                                    "number": "104",
+                                    "key": "GISG 104",
+                                    "title": "Geographic Information Science and Spatial Reasoning",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geographic Information Systems",
-                            "prefix": "GISG",
-                            "number": "110",
-                            "key": "GISG 110",
-                            "title": "Introduction to Mapping and Geographic Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems",
+                                    "prefix": "GISG",
+                                    "number": "110",
+                                    "key": "GISG 110",
+                                    "title": "Introduction to Mapping and Geographic Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -926,9 +1086,9 @@
                             "number": "171",
                             "key": "GEOG 171",
                             "title": "Introduction to Geographic Information Systems and Maps",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geography",
@@ -936,9 +1096,9 @@
                             "number": "172",
                             "key": "GEOG 172",
                             "title": "Geographic Information Systems: Software Applications",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -956,9 +1116,9 @@
                             "number": "40",
                             "key": "GIS 40",
                             "title": "Introduction to Geographic Information Systems (GIS)",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -976,9 +1136,9 @@
                             "number": "10",
                             "key": "GEOG 10",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -996,9 +1156,9 @@
                             "number": "90",
                             "key": "GEOG 90",
                             "title": "Introduction to Geographic Information Systems (GIS)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1016,9 +1176,9 @@
                             "number": "300",
                             "key": "GEOG 300",
                             "title": "Geographic Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1036,9 +1196,9 @@
                             "number": "010",
                             "key": "GEOG 010",
                             "title": "Introduction to Geographic Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1047,48 +1207,80 @@
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geographic Information Systems",
-                            "prefix": "GIS",
-                            "number": "V22",
-                            "key": "GIS V22",
-                            "title": "Fundamentals of Mapping and Geographic Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems",
+                                    "prefix": "GIS",
+                                    "number": "V22",
+                                    "key": "GIS V22",
+                                    "title": "Fundamentals of Mapping and Geographic Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geographic Information Systems",
-                            "prefix": "GIS",
-                            "number": "V26",
-                            "key": "GIS V26",
-                            "title": "Introduction to Geographic Information Systems Software",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geographic Information Systems",
+                                    "prefix": "GIS",
+                                    "number": "V26",
+                                    "key": "GIS V26",
+                                    "title": "Introduction to Geographic Information Systems Software",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "V22",
-                            "key": "GEOG V22",
-                            "title": "Fundamentals of Mapping and Geographic Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "V22",
+                                    "key": "GEOG V22",
+                                    "title": "Fundamentals of Mapping and Geographic Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "V26",
-                            "key": "GEOG V26",
-                            "title": "Introduction to Geographic Information Systems Software",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "V26",
+                                    "key": "GEOG V26",
+                                    "title": "Introduction to Geographic Information Systems Software",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1129,9 +1321,9 @@
                             "number": "52C",
                             "key": "HORT 52C",
                             "title": "Horticultural Practices: Plant Installation & Maintenance",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Environmental Horticulture and Design",
@@ -1139,9 +1331,9 @@
                             "number": "23",
                             "key": "HORT 23",
                             "title": "Plant Materials: California Native Plants",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1159,9 +1351,9 @@
                             "number": "412",
                             "key": "BIOL 412",
                             "title": "Plant Biology",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

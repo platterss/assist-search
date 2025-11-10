@@ -32,9 +32,9 @@
                             "number": "B1",
                             "key": "JAPN B1",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -52,9 +52,9 @@
                             "number": "101",
                             "key": "JAPN 101",
                             "title": "Elementary Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -72,9 +72,9 @@
                             "number": "1",
                             "key": "JPN 1",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -92,9 +92,9 @@
                             "number": "101",
                             "key": "JAPA 101",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -112,9 +112,9 @@
                             "number": "101",
                             "key": "JAPN 101",
                             "title": "College Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -132,9 +132,9 @@
                             "number": "101 C",
                             "key": "JAPN 101 C",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -152,9 +152,9 @@
                             "number": "1",
                             "key": "JAPA 1",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -172,9 +172,9 @@
                             "number": "101 F",
                             "key": "JAPN 101 F",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -192,9 +192,9 @@
                             "number": "101",
                             "key": "JAPAN 101",
                             "title": "Beginning Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -212,9 +212,9 @@
                             "number": "120",
                             "key": "JAPN 120",
                             "title": "Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -223,28 +223,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Japanese",
-                            "prefix": "JA",
-                            "number": "1",
-                            "key": "JA 1",
-                            "title": "Beginning Japanese I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Japanese",
+                                    "prefix": "JA",
+                                    "number": "1",
+                                    "key": "JA 1",
+                                    "title": "Beginning Japanese I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Japanese",
-                            "prefix": "JA",
-                            "number": "1H",
-                            "key": "JA 1H",
-                            "title": "Beginning Japanese I Honors",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Japanese",
+                                    "prefix": "JA",
+                                    "number": "1H",
+                                    "key": "JA 1H",
+                                    "title": "Beginning Japanese I Honors",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -262,29 +278,9 @@
                             "number": "1A",
                             "key": "JAPAN 1A",
                             "title": "Elementary Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Long Beach City College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Japanese",
-                            "prefix": "JAPAN",
-                            "number": "1",
-                            "key": "JAPAN 1",
-                            "title": "Elementary Japanese",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -302,9 +298,9 @@
                             "number": "001",
                             "key": "JAPAN 001",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -313,28 +309,44 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Japanese",
-                            "prefix": "JAPN",
-                            "number": "101",
-                            "key": "JAPN 101",
-                            "title": "Elementary Japanese (First Semester)",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Japanese",
+                                    "prefix": "JAPN",
+                                    "number": "101",
+                                    "key": "JAPN 101",
+                                    "title": "Elementary Japanese (First Semester)",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Japanese",
-                            "prefix": "JAPN",
-                            "number": "101H",
-                            "key": "JAPN 101H",
-                            "title": "Elementary Japanese (First Semester) (Honors)",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Japanese",
+                                    "prefix": "JAPN",
+                                    "number": "101H",
+                                    "key": "JAPN 101H",
+                                    "title": "Elementary Japanese (First Semester) (Honors)",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -352,9 +364,9 @@
                             "number": "M100",
                             "key": "JAPN M100",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -372,9 +384,9 @@
                             "number": "1",
                             "key": "JAPN 1",
                             "title": "Elementary Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -392,9 +404,9 @@
                             "number": "101",
                             "key": "JAPN 101",
                             "title": "Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -412,9 +424,9 @@
                             "number": "001",
                             "key": "JAPN 001",
                             "title": "Elementary Japanese - Level 1",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -432,9 +444,9 @@
                             "number": "101",
                             "key": "JAPN 101",
                             "title": "Japanese I",
-                            "notes": [],
                             "min_units": 4.5,
-                            "max_units": 4.5
+                            "max_units": 4.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -452,9 +464,9 @@
                             "number": "401",
                             "key": "JAPAN 401",
                             "title": "Elementary Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -472,9 +484,9 @@
                             "number": "1",
                             "key": "JA 1",
                             "title": "Elementary Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -492,9 +504,9 @@
                             "number": "101",
                             "key": "JAPN 101",
                             "title": "First Course in Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -512,9 +524,9 @@
                             "number": "101",
                             "key": "JAPN 101",
                             "title": "Beginning Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -532,9 +544,9 @@
                             "number": "1",
                             "key": "JAPAN 1",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -544,7 +556,9 @@
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -556,9 +570,9 @@
                                     "number": "101",
                                     "key": "JPN 101",
                                     "title": "Beginning Japanese I",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -573,9 +587,9 @@
                                     "number": "101A",
                                     "key": "JPN 101A",
                                     "title": "Introductory Elementary Japanese",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Japanese",
@@ -583,9 +597,9 @@
                                     "number": "101B",
                                     "key": "JPN 101B",
                                     "title": "Continuation of Elementary Japanese",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -606,9 +620,9 @@
                             "number": "V01",
                             "key": "JAPN V01",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -626,9 +640,9 @@
                             "number": "001",
                             "key": "JAPAN 001",
                             "title": "Elementary Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -658,9 +672,9 @@
                             "number": "B2",
                             "key": "JAPN B2",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -678,9 +692,9 @@
                             "number": "102",
                             "key": "JAPN 102",
                             "title": "Elementary Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -698,9 +712,9 @@
                             "number": "2",
                             "key": "JPN 2",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -718,9 +732,9 @@
                             "number": "102",
                             "key": "JAPA 102",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -738,9 +752,9 @@
                             "number": "102",
                             "key": "JAPN 102",
                             "title": "College Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -758,9 +772,9 @@
                             "number": "102 C",
                             "key": "JAPN 102 C",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -778,9 +792,9 @@
                             "number": "2",
                             "key": "JAPA 2",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -798,9 +812,9 @@
                             "number": "102 F",
                             "key": "JAPN 102 F",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -818,9 +832,9 @@
                             "number": "102",
                             "key": "JAPAN 102",
                             "title": "Beginning Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -838,9 +852,9 @@
                             "number": "121",
                             "key": "JAPN 121",
                             "title": "Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -849,28 +863,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Japanese",
-                            "prefix": "JA",
-                            "number": "2",
-                            "key": "JA 2",
-                            "title": "Beginning Japanese II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Japanese",
+                                    "prefix": "JA",
+                                    "number": "2",
+                                    "key": "JA 2",
+                                    "title": "Beginning Japanese II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Japanese",
-                            "prefix": "JA",
-                            "number": "2H",
-                            "key": "JA 2H",
-                            "title": "Beginning Japanese II Honors",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Japanese",
+                                    "prefix": "JA",
+                                    "number": "2H",
+                                    "key": "JA 2H",
+                                    "title": "Beginning Japanese II Honors",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -888,29 +918,9 @@
                             "number": "1B",
                             "key": "JAPAN 1B",
                             "title": "Elementary Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Long Beach City College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Japanese",
-                            "prefix": "JAPAN",
-                            "number": "2",
-                            "key": "JAPAN 2",
-                            "title": "Elementary Japanese",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -928,9 +938,9 @@
                             "number": "002",
                             "key": "JAPAN 002",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -948,9 +958,9 @@
                             "number": "102",
                             "key": "JAPN 102",
                             "title": "Elementary Japanese (Second Semester)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -968,9 +978,9 @@
                             "number": "M110",
                             "key": "JAPN M110",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -988,9 +998,9 @@
                             "number": "2",
                             "key": "JAPN 2",
                             "title": "Continuing Elementary Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1008,9 +1018,9 @@
                             "number": "102",
                             "key": "JAPN 102",
                             "title": "Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1028,9 +1038,9 @@
                             "number": "002",
                             "key": "JAPN 002",
                             "title": "Elementary Japanese - Level 2",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1048,9 +1058,9 @@
                             "number": "102",
                             "key": "JAPN 102",
                             "title": "Japanese II",
-                            "notes": [],
                             "min_units": 4.5,
-                            "max_units": 4.5
+                            "max_units": 4.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1068,9 +1078,9 @@
                             "number": "402",
                             "key": "JAPAN 402",
                             "title": "Elementary Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1088,9 +1098,9 @@
                             "number": "2",
                             "key": "JA 2",
                             "title": "Elementary Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1108,9 +1118,9 @@
                             "number": "102",
                             "key": "JAPN 102",
                             "title": "Second Course in Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1128,9 +1138,9 @@
                             "number": "102",
                             "key": "JAPN 102",
                             "title": "Beginning Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1148,9 +1158,9 @@
                             "number": "2",
                             "key": "JAPAN 2",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1168,9 +1178,9 @@
                             "number": "102",
                             "key": "JPN 102",
                             "title": "Beginning Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1188,9 +1198,9 @@
                             "number": "V02",
                             "key": "JAPN V02",
                             "title": "Elementary Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1231,9 +1241,9 @@
                             "number": "B3",
                             "key": "JAPN B3",
                             "title": "Intermediate Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1251,9 +1261,9 @@
                             "number": "201",
                             "key": "JAPN 201",
                             "title": "Intermediate Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1271,9 +1281,9 @@
                             "number": "103",
                             "key": "JAPN 103",
                             "title": "College Japanese III",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1291,9 +1301,9 @@
                             "number": "203 C",
                             "key": "JAPN 203 C",
                             "title": "Intermediate Japanese III",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1311,9 +1321,9 @@
                             "number": "3",
                             "key": "JAPA 3",
                             "title": "Intermediate Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1331,9 +1341,9 @@
                             "number": "203 F",
                             "key": "JAPN 203 F",
                             "title": "Intermediate Japanese III",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1351,9 +1361,9 @@
                             "number": "103",
                             "key": "JAPAN 103",
                             "title": "Intermediate Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1371,9 +1381,9 @@
                             "number": "220",
                             "key": "JAPN 220",
                             "title": "Japanese III",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1391,9 +1401,9 @@
                             "number": "3",
                             "key": "JA 3",
                             "title": "Intermediate Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1411,29 +1421,9 @@
                             "number": "2A",
                             "key": "JAPAN 2A",
                             "title": "Intermediate Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Long Beach City College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Japanese",
-                            "prefix": "JAPAN",
-                            "number": "3",
-                            "key": "JAPAN 3",
-                            "title": "Intermediate Japanese",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1451,9 +1441,9 @@
                             "number": "003",
                             "key": "JAPAN 003",
                             "title": "Intermediate Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1471,9 +1461,9 @@
                             "number": "201",
                             "key": "JAPN 201",
                             "title": "Intermediate Japanese (Third Semester)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1491,9 +1481,9 @@
                             "number": "3",
                             "key": "JAPN 3",
                             "title": "Intermediate Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1511,9 +1501,9 @@
                             "number": "201",
                             "key": "JAPN 201",
                             "title": "Japanese III",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1531,9 +1521,9 @@
                             "number": "003",
                             "key": "JAPN 003",
                             "title": "Intermediate Japanese - Level 1",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1551,9 +1541,9 @@
                             "number": "411",
                             "key": "JAPAN 411",
                             "title": "Intermediate Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1571,9 +1561,9 @@
                             "number": "3",
                             "key": "JA 3",
                             "title": "Intermediate Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1591,9 +1581,9 @@
                             "number": "201",
                             "key": "JAPN 201",
                             "title": "Third Course in Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1611,9 +1601,9 @@
                             "number": "103",
                             "key": "JAPN 103",
                             "title": "Intermediate Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1631,9 +1621,9 @@
                             "number": "3",
                             "key": "JAPAN 3",
                             "title": "Intermediate Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1651,9 +1641,9 @@
                             "number": "201",
                             "key": "JPN 201",
                             "title": "Intermediate Japanese I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1683,9 +1673,9 @@
                             "number": "B4",
                             "key": "JAPN B4",
                             "title": "Intermediate Japanese II",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1703,9 +1693,9 @@
                             "number": "202",
                             "key": "JAPN 202",
                             "title": "Intermediate Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1723,9 +1713,9 @@
                             "number": "104",
                             "key": "JAPN 104",
                             "title": "College Japanese IV",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1743,9 +1733,9 @@
                             "number": "204 C",
                             "key": "JAPN 204 C",
                             "title": "Intermediate Japanese IV",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1763,9 +1753,9 @@
                             "number": "4",
                             "key": "JAPA 4",
                             "title": "Intermediate Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1783,9 +1773,9 @@
                             "number": "204 F",
                             "key": "JAPN 204 F",
                             "title": "Intermediate Japanese IV",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1803,9 +1793,9 @@
                             "number": "104",
                             "key": "JAPAN 104",
                             "title": "Intermediate Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1823,9 +1813,9 @@
                             "number": "221",
                             "key": "JAPN 221",
                             "title": "Japanese IV",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1843,29 +1833,9 @@
                             "number": "4",
                             "key": "JA 4",
                             "title": "Intermediate Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Long Beach City College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Japanese",
-                            "prefix": "JAPAN",
-                            "number": "4",
-                            "key": "JAPAN 4",
-                            "title": "Intermediate Japanese",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1883,9 +1853,9 @@
                             "number": "004",
                             "key": "JAPAN 004",
                             "title": "Intermediate Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1903,9 +1873,9 @@
                             "number": "202",
                             "key": "JAPN 202",
                             "title": "Intermediate Japanese (Fourth Semester)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1923,9 +1893,9 @@
                             "number": "4",
                             "key": "JAPN 4",
                             "title": "Continuing Intermediate Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1943,9 +1913,9 @@
                             "number": "202",
                             "key": "JAPN 202",
                             "title": "Japanese IV",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1963,9 +1933,9 @@
                             "number": "004",
                             "key": "JAPN 004",
                             "title": "Intermediate Japanese - Level 2",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1983,9 +1953,9 @@
                             "number": "412",
                             "key": "JAPAN 412",
                             "title": "Intermediate Japanese",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2003,9 +1973,9 @@
                             "number": "4",
                             "key": "JA 4",
                             "title": "Intermediate Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2023,9 +1993,9 @@
                             "number": "202",
                             "key": "JAPN 202",
                             "title": "Fourth Course in Japanese",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2043,9 +2013,9 @@
                             "number": "104",
                             "key": "JAPN 104",
                             "title": "Intermediate Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2063,9 +2033,9 @@
                             "number": "4",
                             "key": "JAPAN 4",
                             "title": "Intermediate Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2083,9 +2053,9 @@
                             "number": "202",
                             "key": "JPN 202",
                             "title": "Intermediate Japanese II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2115,9 +2085,9 @@
                             "number": "200 C",
                             "key": "JAPN 200 C",
                             "title": "Conversational Japanese",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2135,9 +2105,9 @@
                             "number": "22",
                             "key": "JAPA 22",
                             "title": "Intermediate Conversational Japanese",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2155,9 +2125,9 @@
                             "number": "210",
                             "key": "JAPN 210",
                             "title": "Intermediate Conversation I and Reading",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2175,9 +2145,9 @@
                             "number": "53",
                             "key": "JAPN 53",
                             "title": "Conversational Japanese",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2186,28 +2156,44 @@
             {
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Japanese",
-                            "prefix": "JAPN",
-                            "number": "008A",
-                            "key": "JAPN 008A",
-                            "title": "Introduction to Japanese Conversation - Level 1",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Japanese",
+                                    "prefix": "JAPN",
+                                    "number": "008A",
+                                    "key": "JAPN 008A",
+                                    "title": "Introduction to Japanese Conversation - Level 1",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Japanese",
-                            "prefix": "JAPN",
-                            "number": "008B",
-                            "key": "JAPN 008B",
-                            "title": "Introduction to Japanese Conversation - Level 2",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Japanese",
+                                    "prefix": "JAPN",
+                                    "number": "008B",
+                                    "key": "JAPN 008B",
+                                    "title": "Introduction to Japanese Conversation - Level 2",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2225,9 +2211,9 @@
                             "number": "210",
                             "key": "JAPN 210",
                             "title": "Conversation and Composition in Japanese I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2245,9 +2231,9 @@
                             "number": "140",
                             "key": "JAPN 140",
                             "title": "Intermediate Japanese Conversation I",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2265,9 +2251,9 @@
                             "number": "8",
                             "key": "JAPAN 8",
                             "title": "Conversational Japanese",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2297,11 +2283,11 @@
                             "number": "130",
                             "key": "JAPN 130",
                             "title": "Introduction of Japanese Culture and Literature",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Acceptable substitute"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -2319,9 +2305,9 @@
                             "number": "012",
                             "key": "JAPN 012",
                             "title": "Japanese Literature in Translation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

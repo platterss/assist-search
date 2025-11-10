@@ -43,9 +43,9 @@
                             "number": "B47",
                             "key": "ENGR B47",
                             "title": "Introduction to Engineering and Design",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -63,9 +63,9 @@
                             "number": "12",
                             "key": "DFT 12",
                             "title": "Beginning AutoCAD Drafting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -83,9 +83,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Engineering as a Profession",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -93,9 +93,9 @@
                             "number": "25",
                             "key": "ENGR 25",
                             "title": "Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -104,28 +104,44 @@
             {
                 "sending_name": "College of the Redwoods",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "23",
-                            "key": "ENGR 23",
-                            "title": "Engineering Design Graphics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "23",
+                                    "key": "ENGR 23",
+                                    "title": "Engineering Design Graphics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DT",
-                            "number": "23",
-                            "key": "DT 23",
-                            "title": "Engineering Design Graphics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DT",
+                                    "number": "23",
+                                    "key": "DT 23",
+                                    "title": "Engineering Design Graphics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -143,9 +159,9 @@
                             "number": "226",
                             "key": "ENGR 226",
                             "title": "Engineering Drawing",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -163,9 +179,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -183,9 +199,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -203,9 +219,9 @@
                             "number": "M04",
                             "key": "ENGR M04",
                             "title": "Engineering Design/CAD",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -214,28 +230,44 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DT",
-                            "number": "101",
-                            "key": "DT 101",
-                            "title": "AutoCAD I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DT",
+                                    "number": "101",
+                                    "key": "DT 101",
+                                    "title": "AutoCAD I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DT",
-                            "number": "101",
-                            "key": "DT 101",
-                            "title": "AutoCAD I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DT",
+                                    "number": "101",
+                                    "key": "DT 101",
+                                    "title": "AutoCAD I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -253,9 +285,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -273,9 +305,9 @@
                             "number": "4",
                             "key": "ENE 4",
                             "title": "Introduction to Engineering Design",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -293,9 +325,9 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -313,9 +345,9 @@
                             "number": "25",
                             "key": "ENGR 25",
                             "title": "Engineering Graphics and Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -345,9 +377,9 @@
                             "number": "152",
                             "key": "ENGR 152",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -365,9 +397,9 @@
                             "number": "420",
                             "key": "ENGR 420",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -385,9 +417,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -405,9 +437,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -425,9 +457,9 @@
                             "number": "230",
                             "key": "ENGR 230",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -445,9 +477,9 @@
                             "number": "36",
                             "key": "ENGR 36",
                             "title": "Engineering Mechanics-Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -465,9 +497,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -485,9 +517,9 @@
                             "number": "235",
                             "key": "ENGG 235",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -505,9 +537,9 @@
                             "number": "230",
                             "key": "ENGR 230",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -525,9 +557,9 @@
                             "number": "002",
                             "key": "ENGR 002",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -545,9 +577,9 @@
                             "number": "2035",
                             "key": "ENGR 2035",
                             "title": "Mechanics for Engineers - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -565,9 +597,9 @@
                             "number": "109",
                             "key": "ENGR 109",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -585,9 +617,9 @@
                             "number": "420",
                             "key": "ENGR 420",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -605,9 +637,9 @@
                             "number": "250",
                             "key": "ENGR 250",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -625,9 +657,9 @@
                             "number": "200",
                             "key": "ENGR 200",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -645,9 +677,9 @@
                             "number": "201 C",
                             "key": "ENGR 201 C",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -665,9 +697,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -685,9 +717,9 @@
                             "number": "255",
                             "key": "ENGIN 255",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -705,9 +737,9 @@
                             "number": "9",
                             "key": "ENGR 9",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -725,9 +757,9 @@
                             "number": "069",
                             "key": "ENGR 069",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -745,9 +777,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -765,9 +797,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -785,9 +817,9 @@
                             "number": "201 F",
                             "key": "ENGR 201 F",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -805,9 +837,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -825,9 +857,9 @@
                             "number": "35",
                             "key": "ENGIN 35",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -845,9 +877,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -865,9 +897,9 @@
                             "number": "131",
                             "key": "ENG GEN 131",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Physics",
@@ -875,9 +907,9 @@
                             "number": "101",
                             "key": "PHYSICS 101",
                             "title": "Physics for Engineers and Scientists I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -895,9 +927,9 @@
                             "number": "036",
                             "key": "ENGIN 036",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -915,9 +947,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -935,9 +967,9 @@
                             "number": "202",
                             "key": "EGR 202",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -955,9 +987,9 @@
                             "number": "-15",
                             "key": "ENGR -15",
                             "title": "Elementary Mechanics (Statics)",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -975,9 +1007,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -995,9 +1027,9 @@
                             "number": "M16",
                             "key": "ENGR M16",
                             "title": "Engineering Statics and Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1015,9 +1047,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1035,9 +1067,9 @@
                             "number": "241",
                             "key": "ENGI 241",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1055,9 +1087,9 @@
                             "number": "A280",
                             "key": "ENGR A280",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1075,9 +1107,9 @@
                             "number": "235",
                             "key": "ENGR 235",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1095,9 +1127,9 @@
                             "number": "011",
                             "key": "ENGR 011",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1115,9 +1147,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1135,9 +1167,9 @@
                             "number": "35",
                             "key": "ENE 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1155,9 +1187,9 @@
                             "number": "422",
                             "key": "ENGR 422",
                             "title": "Engineering Mechanics, Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1175,9 +1207,9 @@
                             "number": "31",
                             "key": "ENGR 31",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1195,9 +1227,9 @@
                             "number": "265",
                             "key": "ENGR 265",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1215,9 +1247,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1235,9 +1267,9 @@
                             "number": "032",
                             "key": "ENGR 032",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1255,9 +1287,9 @@
                             "number": "235",
                             "key": "ENGR 235",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1275,9 +1307,9 @@
                             "number": "34",
                             "key": "ENGR 34",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1295,9 +1327,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1315,9 +1347,9 @@
                             "number": "130",
                             "key": "ENGR 130",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1335,9 +1367,9 @@
                             "number": "030",
                             "key": "ENGR 030",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1355,9 +1387,9 @@
                             "number": "140",
                             "key": "ENGR 140",
                             "title": "Engineering Statistics",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1375,9 +1407,9 @@
                             "number": "V12",
                             "key": "ENGR V12",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1407,9 +1439,9 @@
                             "number": "36",
                             "key": "ENGR 36",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1427,9 +1459,9 @@
                             "number": "251",
                             "key": "ENGR 251",
                             "title": "Engineering Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1447,9 +1479,9 @@
                             "number": "220",
                             "key": "ENGR 220",
                             "title": "Engineering Mechanics - Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1467,9 +1499,9 @@
                             "number": "47",
                             "key": "ENGR 47",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1487,9 +1519,9 @@
                             "number": "046",
                             "key": "ENGIN 046",
                             "title": "Engineering Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1507,9 +1539,9 @@
                             "number": "41",
                             "key": "ENGR 41",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1527,9 +1559,9 @@
                             "number": "236",
                             "key": "ENGR 236",
                             "title": "Engineering Mechanics - Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1547,9 +1579,9 @@
                             "number": "240",
                             "key": "ENGR 240",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1567,9 +1599,9 @@
                             "number": "121",
                             "key": "PHYS 121",
                             "title": "Mechanics of Solids and Fluids",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1587,9 +1619,9 @@
                             "number": "251",
                             "key": "ENGR 251",
                             "title": "Engineering Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

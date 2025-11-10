@@ -12,28 +12,44 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1000",
-                            "key": "ENGL C1000",
-                            "title": "Academic Reading and Writing",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "English",
+                                    "prefix": "ENGL",
+                                    "number": "C1000",
+                                    "key": "ENGL C1000",
+                                    "title": "Academic Reading and Writing",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "English as a Second Language",
-                            "prefix": "ESL",
-                            "number": "110",
-                            "key": "ESL 110",
-                            "title": "College Composition for Non-Native Speakers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "English as a Second Language",
+                                    "prefix": "ESL",
+                                    "number": "110",
+                                    "key": "ESL 110",
+                                    "title": "College Composition for Non-Native Speakers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []

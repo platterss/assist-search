@@ -29,8 +29,8 @@
             {
                 "subject": "Computing",
                 "prefix": "COM",
-                "key": "COM 210",
                 "number": "210",
+                "key": "COM 210",
                 "title": "Programming for Scientific Computing",
                 "min_units": 2.0,
                 "max_units": 2.0
@@ -38,8 +38,8 @@
             {
                 "subject": "Computing",
                 "prefix": "COM",
-                "key": "COM 210L",
                 "number": "210L",
+                "key": "COM 210L",
                 "title": "Oceanography Computer Programming Lab",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -58,9 +58,9 @@
                             "number": "125",
                             "key": "ENGR 125",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -78,9 +78,9 @@
                             "number": "B20",
                             "key": "ENGR B20",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -98,9 +98,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -118,9 +118,9 @@
                             "number": "30",
                             "key": "ENGR 30",
                             "title": "Computer Applications in Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -138,9 +138,9 @@
                             "number": "215",
                             "key": "ENGR 215",
                             "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -158,9 +158,9 @@
                             "number": "220",
                             "key": "ENGR 220",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -169,38 +169,62 @@
             {
                 "sending_name": "Chabot College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "25",
-                            "key": "ENGR 25",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "25",
+                                    "key": "ENGR 25",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "25",
-                            "key": "PHYS 25",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "25",
+                                    "key": "PHYS 25",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MTH",
-                            "number": "25",
-                            "key": "MTH 25",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MTH",
+                                    "number": "25",
+                                    "key": "MTH 25",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -218,9 +242,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -238,9 +262,9 @@
                             "number": "150",
                             "key": "ENGG 150",
                             "title": "Programming in MATLAB for Engineers",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -258,9 +282,9 @@
                             "number": "215",
                             "key": "ENGR 215",
                             "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -269,28 +293,44 @@
             {
                 "sending_name": "College of the Sequoias",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "020",
-                            "key": "ENGR 020",
-                            "title": "MATLAB Programming",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "020",
+                                    "key": "ENGR 020",
+                                    "title": "MATLAB Programming",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CSCI",
-                            "number": "020",
-                            "key": "CSCI 020",
-                            "title": "MATLAB Programming",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "020",
+                                    "key": "CSCI 020",
+                                    "title": "MATLAB Programming",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -308,9 +348,9 @@
                             "number": "170",
                             "key": "ENGIN 170",
                             "title": "Programming for Engineering Science - MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -328,9 +368,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Computational Methods for Engineers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -348,9 +388,9 @@
                             "number": "220 C",
                             "key": "ENGR 220 C",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -368,9 +408,9 @@
                             "number": "136",
                             "key": "ENGIN 136",
                             "title": "Computer Programming for Engineers Using MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -388,9 +428,9 @@
                             "number": "17",
                             "key": "CSCI 17",
                             "title": "Computer Programming in MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -408,9 +448,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -428,9 +468,9 @@
                             "number": "220 F",
                             "key": "ENGR 220 F",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -448,9 +488,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Engineering Programming and Problem Solving",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -468,9 +508,9 @@
                             "number": "156",
                             "key": "ENGR 156",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -488,9 +528,9 @@
                             "number": "G220",
                             "key": "ENGR G220",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -508,9 +548,9 @@
                             "number": "5",
                             "key": "EGN 5",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -528,9 +568,9 @@
                             "number": "26",
                             "key": "ENGR 26",
                             "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -548,9 +588,9 @@
                             "number": "122",
                             "key": "ENG GEN 122",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -568,9 +608,9 @@
                             "number": "-21",
                             "key": "ENGR -21",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Science",
@@ -578,9 +618,9 @@
                             "number": "-21",
                             "key": "CPSC -21",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -598,9 +638,9 @@
                             "number": "005",
                             "key": "MAT 005",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -618,9 +658,9 @@
                             "number": "17",
                             "key": "ENGR 17",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -638,9 +678,9 @@
                             "number": "M10",
                             "key": "ENGR M10",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -658,9 +698,9 @@
                             "number": "7",
                             "key": "ENGR 7",
                             "title": "Programming Applications for Engineers",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -678,9 +718,9 @@
                             "number": "160",
                             "key": "ENGI 160",
                             "title": "Programming with MATLAB for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -698,9 +738,9 @@
                             "number": "48",
                             "key": "ENE 48",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -718,9 +758,9 @@
                             "number": "A220",
                             "key": "ENGR A220",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -738,9 +778,9 @@
                             "number": "R148",
                             "key": "ENGR R148",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Mathematics",
@@ -748,9 +788,9 @@
                             "number": "R148",
                             "key": "MATH R148",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -768,9 +808,9 @@
                             "number": "018",
                             "key": "ENGR 018",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -788,9 +828,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -808,9 +848,9 @@
                             "number": "212",
                             "key": "ENGR 212",
                             "title": "Computational Methods in MATLAB/Octave",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -828,9 +868,9 @@
                             "number": "405",
                             "key": "ENGR 405",
                             "title": "Engineering Problem Solving",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -848,9 +888,9 @@
                             "number": "008",
                             "key": "ENGR 008",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -868,9 +908,9 @@
                             "number": "133",
                             "key": "CS 133",
                             "title": "Introduction to Programming for Engineers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -888,9 +928,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Programming in MATLAB for Engineers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -908,9 +948,9 @@
                             "number": "220",
                             "key": "ENGR 220",
                             "title": "Programming and Problem Solving in Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -928,9 +968,9 @@
                             "number": "215",
                             "key": "ENGR 215",
                             "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -948,9 +988,9 @@
                             "number": "026",
                             "key": "ENGR 026",
                             "title": "Mathematics and Engineering Problem Solving Using Matlab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Mathematics",
@@ -958,9 +998,9 @@
                             "number": "026",
                             "key": "MATH 026",
                             "title": "Mathematics and Engineering Problem Solving Using Matlab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -978,9 +1018,9 @@
                             "number": "221",
                             "key": "ENGR 221",
                             "title": "Computer Programming and Applications - MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -998,9 +1038,9 @@
                             "number": "V14",
                             "key": "ENGR V14",
                             "title": "MATLAB: Programming and Problem Solving",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1018,9 +1058,9 @@
                             "number": "060",
                             "key": "ENGR 060",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

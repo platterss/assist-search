@@ -21,9 +21,9 @@
                             "number": "140",
                             "key": "ET 140",
                             "title": "Engineering Drawing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -61,9 +61,9 @@
                             "number": "140",
                             "key": "ENGR 140",
                             "title": "Engineering 3D Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -81,9 +81,9 @@
                             "number": "B24",
                             "key": "ENGR B24",
                             "title": "Engineering Graphics with Solidworks",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -101,9 +101,9 @@
                             "number": "2",
                             "key": "DFT 2",
                             "title": "Engineering Graphics I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -121,9 +121,9 @@
                             "number": "25",
                             "key": "ENGR 25",
                             "title": "Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -131,9 +131,9 @@
                             "number": "26",
                             "key": "ENGR 26",
                             "title": "Solid Modeling",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -151,9 +151,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -171,9 +171,9 @@
                             "number": "112",
                             "key": "ENGR 112",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -182,38 +182,62 @@
             {
                 "sending_name": "Chabot College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "22",
-                            "key": "ENGR 22",
-                            "title": "Engineering Design Graphics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "22",
+                                    "key": "ENGR 22",
+                                    "title": "Engineering Design Graphics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Machine Tool Technology",
-                            "prefix": "MTT",
-                            "number": "81A",
-                            "key": "MTT 81A",
-                            "title": "SolidWorks for Machine Shops",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Machine Tool Technology",
+                                    "prefix": "MTT",
+                                    "number": "81A",
+                                    "key": "MTT 81A",
+                                    "title": "SolidWorks for Machine Shops",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Apprenticeship: Precision Manufacturing",
-                            "prefix": "APPM",
-                            "number": "9781A",
-                            "key": "APPM 9781A",
-                            "title": "SolidWorks for Machine Shops",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Apprenticeship: Precision Manufacturing",
+                                    "prefix": "APPM",
+                                    "number": "9781A",
+                                    "key": "APPM 9781A",
+                                    "title": "SolidWorks for Machine Shops",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -231,9 +255,9 @@
                             "number": "24",
                             "key": "ENGN 24",
                             "title": "Engineering Design Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -251,9 +275,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -271,9 +295,9 @@
                             "number": "125",
                             "key": "ENGG 125",
                             "title": "Introductory Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -291,9 +315,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -311,9 +335,9 @@
                             "number": "110",
                             "key": "ENGR 110",
                             "title": "Introduction to Engineering Graphics with AutoCAD",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -321,11 +345,11 @@
                             "number": "114",
                             "key": "ENGR 114",
                             "title": "Solids Modeling for Mechanical Drafting",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Complete entire sequence prior to transfer"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -343,9 +367,9 @@
                             "number": "23",
                             "key": "ENGR 23",
                             "title": "Engineering Design Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -363,9 +387,9 @@
                             "number": "001",
                             "key": "ENGR 001",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -383,9 +407,9 @@
                             "number": "200",
                             "key": "ENGIN 200",
                             "title": "Engineering Design Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -403,9 +427,9 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -423,9 +447,9 @@
                             "number": "226",
                             "key": "ENGR 226",
                             "title": "Engineering Drawing",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -443,9 +467,9 @@
                             "number": "102 C",
                             "key": "ENGR 102 C",
                             "title": "Engineering Design Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -453,11 +477,11 @@
                             "number": "205 C",
                             "key": "ENGR 205 C",
                             "title": "Advanced 3D Solid Modeling and Simulation",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Complete entire sequence at same institution prior to transfer"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -475,9 +499,9 @@
                             "number": "120",
                             "key": "ENGIN 120",
                             "title": "Engineering Drawing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -495,9 +519,9 @@
                             "number": "018",
                             "key": "ENGR 018",
                             "title": "Engineering Design and Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -515,9 +539,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -526,38 +550,62 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Aided Drafting and Design",
-                            "prefix": "CADD",
-                            "number": "14",
-                            "key": "CADD 14",
-                            "title": "2D CAD I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Aided Drafting and Design",
+                                    "prefix": "CADD",
+                                    "number": "14",
+                                    "key": "CADD 14",
+                                    "title": "2D CAD I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drafting",
-                            "prefix": "DRAFT",
-                            "number": "12",
-                            "key": "DRAFT 12",
-                            "title": "Drafting Practices",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting",
+                                    "prefix": "DRAFT",
+                                    "number": "12",
+                                    "key": "DRAFT 12",
+                                    "title": "Drafting Practices",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "2",
-                            "key": "ENGR 2",
-                            "title": "Graphics",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "2",
+                                    "key": "ENGR 2",
+                                    "title": "Graphics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -575,9 +623,9 @@
                             "number": "1",
                             "key": "ENGR 1",
                             "title": "Graphical Communication and Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -595,9 +643,9 @@
                             "number": "122",
                             "key": "ENGR 122",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -615,9 +663,9 @@
                             "number": "2",
                             "key": "EGN 2",
                             "title": "Engineering Graphics and Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -635,9 +683,9 @@
                             "number": "50",
                             "key": "DR 50",
                             "title": "Introduction to Computer-Aided Drafting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -646,28 +694,44 @@
             {
                 "sending_name": "Laney College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Architecture",
-                            "prefix": "ARCH",
-                            "number": "104A",
-                            "key": "ARCH 104A",
-                            "title": "Beginning CAD",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Architecture",
+                                    "prefix": "ARCH",
+                                    "number": "104A",
+                                    "key": "ARCH 104A",
+                                    "title": "Beginning CAD",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGIN",
-                            "number": "22",
-                            "key": "ENGIN 22",
-                            "title": "Engineering Graphics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGIN",
+                                    "number": "22",
+                                    "key": "ENGIN 22",
+                                    "title": "Engineering Graphics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -685,9 +749,9 @@
                             "number": "23",
                             "key": "ENGR 23",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -696,38 +760,62 @@
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Aid Design",
-                            "prefix": "CAD",
-                            "number": "1",
-                            "key": "CAD 1",
-                            "title": "Intro Computer Aided Design SolidWorks",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Aid Design",
+                                    "prefix": "CAD",
+                                    "number": "1",
+                                    "key": "CAD 1",
+                                    "title": "Intro Computer Aided Design SolidWorks",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "3A",
-                            "key": "ENGR 3A",
-                            "title": "Essential Engr Graphics & 3D CAD Drafting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "3A",
+                                    "key": "ENGR 3A",
+                                    "title": "Essential Engr Graphics & 3D CAD Drafting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "3B",
-                            "key": "ENGR 3B",
-                            "title": "Advanced Engr Graphics & 3D CAD Drafting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "3B",
+                                    "key": "ENGR 3B",
+                                    "title": "Advanced Engr Graphics & 3D CAD Drafting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -745,9 +833,9 @@
                             "number": "025",
                             "key": "ENGIN 025",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -765,9 +853,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -776,28 +864,44 @@
             {
                 "sending_name": "Merced College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer-Aided Design & 3D Modeling",
-                            "prefix": "CADM",
-                            "number": "-02",
-                            "key": "CADM -02",
-                            "title": "Descriptive Geometry",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer-Aided Design & 3D Modeling",
+                                    "prefix": "CADM",
+                                    "number": "-02",
+                                    "key": "CADM -02",
+                                    "title": "Descriptive Geometry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "-35",
-                            "key": "ENGR -35",
-                            "title": "Engineering Graphics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "-35",
+                                    "key": "ENGR -35",
+                                    "title": "Engineering Graphics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -815,9 +919,9 @@
                             "number": "025",
                             "key": "EGR 025",
                             "title": "Engineering Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -835,9 +939,9 @@
                             "number": "127",
                             "key": "ENGR 127",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -855,9 +959,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Design Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -875,9 +979,9 @@
                             "number": "M04",
                             "key": "ENGR M04",
                             "title": "Engineering Design/CAD",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -895,9 +999,9 @@
                             "number": "24",
                             "key": "ENGR 24",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -915,9 +1019,9 @@
                             "number": "122",
                             "key": "ENGI 122",
                             "title": "Engineering Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -935,9 +1039,9 @@
                             "number": "115",
                             "key": "ENGI 115",
                             "title": "Engineering Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -955,9 +1059,9 @@
                             "number": "002",
                             "key": "ENGR 002",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -966,28 +1070,44 @@
             {
                 "sending_name": "Reedley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "2",
-                            "key": "ENGR 2",
-                            "title": "Engineering Graphics",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "2",
+                                    "key": "ENGR 2",
+                                    "title": "Engineering Graphics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "5",
-                            "key": "ENGR 5",
-                            "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "5",
+                                    "key": "ENGR 5",
+                                    "title": "Programming and Problem Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1005,9 +1125,9 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1016,28 +1136,44 @@
             {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DR",
-                            "number": "50",
-                            "key": "DR 50",
-                            "title": "Introduction to Computer-Aided Drafting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DR",
+                                    "number": "50",
+                                    "key": "DR 50",
+                                    "title": "Introduction to Computer-Aided Drafting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Architecture",
-                            "prefix": "ARCH",
-                            "number": "50",
-                            "key": "ARCH 50",
-                            "title": "Introduction to Computer-Aided Drafting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Architecture",
+                                    "prefix": "ARCH",
+                                    "number": "50",
+                                    "key": "ARCH 50",
+                                    "title": "Introduction to Computer-Aided Drafting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1055,9 +1191,9 @@
                             "number": "151",
                             "key": "ENGE 151",
                             "title": "Computer-Aided Design",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1066,28 +1202,44 @@
             {
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGE",
-                            "number": "151",
-                            "key": "ENGE 151",
-                            "title": "Computer-Aided Design",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGE",
+                                    "number": "151",
+                                    "key": "ENGE 151",
+                                    "title": "Computer-Aided Design",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Architecture",
-                            "prefix": "ARCH",
-                            "number": "112",
-                            "key": "ARCH 112",
-                            "title": "AutoCAD",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Architecture",
+                                    "prefix": "ARCH",
+                                    "number": "112",
+                                    "key": "ARCH 112",
+                                    "title": "AutoCAD",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1105,9 +1257,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1125,9 +1277,9 @@
                             "number": "006",
                             "key": "ENGR 006",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1145,9 +1297,9 @@
                             "number": "125",
                             "key": "ENGR 125",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1156,28 +1308,44 @@
             {
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting",
-                            "prefix": "DRFT",
-                            "number": "130",
-                            "key": "DRFT 130",
-                            "title": "Computer-Assisted Drafting and Design I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting",
+                                    "prefix": "DRFT",
+                                    "number": "130",
+                                    "key": "DRFT 130",
+                                    "title": "Computer-Assisted Drafting and Design I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drafting",
-                            "prefix": "DRFT",
-                            "number": "131",
-                            "key": "DRFT 131",
-                            "title": "Computer-Assisted Drafting and Design II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting",
+                                    "prefix": "DRFT",
+                                    "number": "131",
+                                    "key": "DRFT 131",
+                                    "title": "Computer-Assisted Drafting and Design II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1186,28 +1354,44 @@
             {
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Applied Technology",
-                            "prefix": "APTE",
-                            "number": "46",
-                            "key": "APTE 46",
-                            "title": "Introduction to Computer-Aided Drafting",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Applied Technology",
+                                    "prefix": "APTE",
+                                    "number": "46",
+                                    "key": "APTE 46",
+                                    "title": "Introduction to Computer-Aided Drafting",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "25",
-                            "key": "ENGR 25",
-                            "title": "Engineering Graphics and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "25",
+                                    "key": "ENGR 25",
+                                    "title": "Engineering Graphics and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1216,28 +1400,44 @@
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Aided Design",
-                            "prefix": "CAD",
-                            "number": "220",
-                            "key": "CAD 220",
-                            "title": "Introduction to CAD/CAM Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Aided Design",
+                                    "prefix": "CAD",
+                                    "number": "220",
+                                    "key": "CAD 220",
+                                    "title": "Introduction to CAD/CAM Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "110",
-                            "key": "ENGR 110",
-                            "title": "Engineering Design and Graphics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "110",
+                                    "key": "ENGR 110",
+                                    "title": "Engineering Design and Graphics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1255,9 +1455,9 @@
                             "number": "1510",
                             "key": "ENER 1510",
                             "title": "Introduction to Energy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1266,38 +1466,62 @@
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Architecture",
-                            "prefix": "ARCH",
-                            "number": "V23",
-                            "key": "ARCH V23",
-                            "title": "Introduction to AutoCAD",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Architecture",
+                                    "prefix": "ARCH",
+                                    "number": "V23",
+                                    "key": "ARCH V23",
+                                    "title": "Introduction to AutoCAD",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drafting",
-                            "prefix": "DRFT",
-                            "number": "V05A",
-                            "key": "DRFT V05A",
-                            "title": "Introduction to AutoCAD",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting",
+                                    "prefix": "DRFT",
+                                    "number": "V05A",
+                                    "key": "DRFT V05A",
+                                    "title": "Introduction to AutoCAD",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "V02",
-                            "key": "ENGR V02",
-                            "title": "Engineering Graphics and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "V02",
+                                    "key": "ENGR V02",
+                                    "title": "Engineering Graphics and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1315,9 +1539,9 @@
                             "number": "020",
                             "key": "ENGR 020",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1347,9 +1571,9 @@
                             "number": "125",
                             "key": "ENGR 125",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1367,9 +1591,9 @@
                             "number": "B19C",
                             "key": "ENGR B19C",
                             "title": "C++ Programming for Engineers & Scientists",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1387,9 +1611,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1398,28 +1622,44 @@
             {
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "11",
-                            "key": "CS 11",
-                            "title": "Introduction to Programming Concepts and Methodology, C++",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "11",
+                                    "key": "CS 11",
+                                    "title": "Introduction to Programming Concepts and Methodology, C++",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "30",
-                            "key": "ENGR 30",
-                            "title": "Computer Applications in Engineering",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "30",
+                                    "key": "ENGR 30",
+                                    "title": "Computer Applications in Engineering",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1428,28 +1668,44 @@
             {
                 "sending_name": "Canada College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Science",
-                            "prefix": "CIS",
-                            "number": "250",
-                            "key": "CIS 250",
-                            "title": "Introduction to Object Oriented Programming: C++",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Science",
+                                    "prefix": "CIS",
+                                    "number": "250",
+                                    "key": "CIS 250",
+                                    "title": "Introduction to Object Oriented Programming: C++",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "215",
-                            "key": "ENGR 215",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "215",
+                                    "key": "ENGR 215",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1467,9 +1723,9 @@
                             "number": "220",
                             "key": "ENGR 220",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1478,38 +1734,62 @@
             {
                 "sending_name": "Chabot College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "25",
-                            "key": "ENGR 25",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "25",
+                                    "key": "ENGR 25",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MTH",
-                            "number": "25",
-                            "key": "MTH 25",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MTH",
+                                    "number": "25",
+                                    "key": "MTH 25",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "25",
-                            "key": "PHYS 25",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "25",
+                                    "key": "PHYS 25",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1527,9 +1807,9 @@
                             "number": "38",
                             "key": "ENGN 38",
                             "title": "Introduction to Programming Concepts and Methodologies for Engineers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1538,28 +1818,44 @@
             {
                 "sending_name": "Clovis Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "40",
-                            "key": "ENGR 40",
-                            "title": "Programming for Scientists and Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "40",
+                                    "key": "ENGR 40",
+                                    "title": "Programming for Scientists and Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "5",
-                            "key": "ENGR 5",
-                            "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "5",
+                                    "key": "ENGR 5",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1568,28 +1864,44 @@
             {
                 "sending_name": "College of Marin",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGG",
-                            "number": "150",
-                            "key": "ENGG 150",
-                            "title": "Programming in MATLAB for Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGG",
+                                    "number": "150",
+                                    "key": "ENGG 150",
+                                    "title": "Programming in MATLAB for Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "COMP",
-                            "number": "150",
-                            "key": "COMP 150",
-                            "title": "Programming in MATLAB for Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "COMP",
+                                    "number": "150",
+                                    "key": "COMP 150",
+                                    "title": "Programming in MATLAB for Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1598,28 +1910,44 @@
             {
                 "sending_name": "College of San Mateo",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer and Information Science",
-                            "prefix": "CIS",
-                            "number": "278",
-                            "key": "CIS 278",
-                            "title": "(CS1) Programming Methods: C++",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer and Information Science",
+                                    "prefix": "CIS",
+                                    "number": "278",
+                                    "key": "CIS 278",
+                                    "title": "(CS1) Programming Methods: C++",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "215",
-                            "key": "ENGR 215",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "215",
+                                    "key": "ENGR 215",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1637,9 +1965,9 @@
                             "number": "220",
                             "key": "ENGR 220",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1648,28 +1976,44 @@
             {
                 "sending_name": "Contra Costa College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "135",
-                            "key": "CIS 135",
-                            "title": "Introduction to Computers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "135",
+                                    "key": "CIS 135",
+                                    "title": "Introduction to Computers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGIN",
-                            "number": "170",
-                            "key": "ENGIN 170",
-                            "title": "Programming for Engineering Science - MATLAB",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGIN",
+                                    "number": "170",
+                                    "key": "ENGIN 170",
+                                    "title": "Programming for Engineering Science - MATLAB",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1678,28 +2022,44 @@
             {
                 "sending_name": "Cuesta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "210",
-                            "key": "ENGR 210",
-                            "title": "Computational Methods for Engineers",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "210",
+                                    "key": "ENGR 210",
+                                    "title": "Computational Methods for Engineers",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "231",
-                            "key": "CS 231",
-                            "title": "Fundamentals of Computer Science I",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "231",
+                                    "key": "CS 231",
+                                    "title": "Fundamentals of Computer Science I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1717,9 +2077,9 @@
                             "number": "120",
                             "key": "ENGR 120",
                             "title": "Engineering Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1737,9 +2097,9 @@
                             "number": "220 C",
                             "key": "ENGR 220 C",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1748,28 +2108,44 @@
             {
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGIN",
-                            "number": "135",
-                            "key": "ENGIN 135",
-                            "title": "Programming for Scientists and Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGIN",
+                                    "number": "135",
+                                    "key": "ENGIN 135",
+                                    "title": "Programming for Scientists and Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGIN",
-                            "number": "136",
-                            "key": "ENGIN 136",
-                            "title": "Computer Programming for Engineers Using MATLAB",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGIN",
+                                    "number": "136",
+                                    "key": "ENGIN 136",
+                                    "title": "Computer Programming for Engineers Using MATLAB",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1787,9 +2163,9 @@
                             "number": "121",
                             "key": "ENG GEN 121",
                             "title": "Programming for Engineers: C++",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1798,38 +2174,62 @@
             {
                 "sending_name": "Evergreen Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "050",
-                            "key": "ENGR 050",
-                            "title": "Introduction to Computing",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "050",
+                                    "key": "ENGR 050",
+                                    "title": "Introduction to Computing",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "COMSC",
-                            "number": "041",
-                            "key": "COMSC 041",
-                            "title": "Programming Concepts and Methodology I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "COMSC",
+                                    "number": "041",
+                                    "key": "COMSC 041",
+                                    "title": "Programming Concepts and Methodology I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "030",
-                            "key": "ENGR 030",
-                            "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "030",
+                                    "key": "ENGR 030",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1847,9 +2247,9 @@
                             "number": "11",
                             "key": "ENGR 11",
                             "title": "Programming & Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1858,28 +2258,44 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Technology",
-                            "prefix": "CIT",
-                            "number": "66",
-                            "key": "CIT 66",
-                            "title": "Beginning C++ Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Technology",
+                                    "prefix": "CIT",
+                                    "number": "66",
+                                    "key": "CIT 66",
+                                    "title": "Beginning C++ Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "5",
-                            "key": "ENGR 5",
-                            "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "5",
+                                    "key": "ENGR 5",
+                                    "title": "Programming and Problem Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1897,9 +2313,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Engineering Programming and Problem Solving",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1917,9 +2333,9 @@
                             "number": "156",
                             "key": "ENGR 156",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1928,28 +2344,44 @@
             {
                 "sending_name": "Hartnell College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Sciences and Information Systems",
-                            "prefix": "CSS",
-                            "number": "4",
-                            "key": "CSS 4",
-                            "title": "Programming for Scientists and Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Sciences and Information Systems",
+                                    "prefix": "CSS",
+                                    "number": "4",
+                                    "key": "CSS 4",
+                                    "title": "Programming for Scientists and Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "EGN",
-                            "number": "5",
-                            "key": "EGN 5",
-                            "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "EGN",
+                                    "number": "5",
+                                    "key": "EGN 5",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1958,28 +2390,44 @@
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "1",
-                            "key": "CS 1",
-                            "title": "Computing Fundamentals I",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "1",
+                                    "key": "CS 1",
+                                    "title": "Computing Fundamentals I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "26",
-                            "key": "ENGR 26",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "26",
+                                    "key": "ENGR 26",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1997,9 +2445,9 @@
                             "number": "020",
                             "key": "ENGIN 020",
                             "title": "Programming with C++ for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2017,9 +2465,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Programming for Scientists and Engineers",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2028,28 +2476,44 @@
             {
                 "sending_name": "Mission College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "EGR",
-                            "number": "030",
-                            "key": "EGR 030",
-                            "title": "Introduction to Computing for Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "EGR",
+                                    "number": "030",
+                                    "key": "EGR 030",
+                                    "title": "Introduction to Computing for Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "005",
-                            "key": "MAT 005",
-                            "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MAT",
+                                    "number": "005",
+                                    "key": "MAT 005",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2067,9 +2531,9 @@
                             "number": "17",
                             "key": "ENGR 17",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2087,9 +2551,9 @@
                             "number": "7",
                             "key": "ENGR 7",
                             "title": "Programming Applications for Engineers",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2107,9 +2571,9 @@
                             "number": "111",
                             "key": "ENGI 111",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2127,9 +2591,9 @@
                             "number": "018",
                             "key": "ENGR 018",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2147,9 +2611,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2167,9 +2631,9 @@
                             "number": "405",
                             "key": "ENGR 405",
                             "title": "Engineering Problem Solving",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2178,28 +2642,44 @@
             {
                 "sending_name": "San Joaquin Delta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science Programming",
-                            "prefix": "CSP",
-                            "number": "31A",
-                            "key": "CSP 31A",
-                            "title": "C++ Programming I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science Programming",
+                                    "prefix": "CSP",
+                                    "number": "31A",
+                                    "key": "CSP 31A",
+                                    "title": "C++ Programming I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "29",
-                            "key": "ENGR 29",
-                            "title": "Engineering Applications for Digital Computations",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "29",
+                                    "key": "ENGR 29",
+                                    "title": "Engineering Applications for Digital Computations",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2217,9 +2697,9 @@
                             "number": "008",
                             "key": "ENGR 008",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2237,9 +2717,9 @@
                             "number": "100",
                             "key": "CMPR 100",
                             "title": "The Computer and Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2257,9 +2737,9 @@
                             "number": "133",
                             "key": "CS 133",
                             "title": "Introduction to Programming for Engineers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2277,9 +2757,9 @@
                             "number": "100",
                             "key": "CMPR 100",
                             "title": "The Computer and Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2288,28 +2768,44 @@
             {
                 "sending_name": "Skyline College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer and Information Science",
-                            "prefix": "CIS",
-                            "number": "250",
-                            "key": "CIS 250",
-                            "title": "Introduction to Object-Oriented Programming: C++",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer and Information Science",
+                                    "prefix": "CIS",
+                                    "number": "250",
+                                    "key": "CIS 250",
+                                    "title": "Introduction to Object-Oriented Programming: C++",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "215",
-                            "key": "ENGR 215",
-                            "title": "Computational Methods for Engineers and Scientists",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "215",
+                                    "key": "ENGR 215",
+                                    "title": "Computational Methods for Engineers and Scientists",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2327,9 +2823,9 @@
                             "number": "130",
                             "key": "MATH 130",
                             "title": "Introduction to Computer Programming",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2347,9 +2843,9 @@
                             "number": "1550",
                             "key": "ENGR 1550",
                             "title": "Computer Programming and Problem Solving with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2367,9 +2863,9 @@
                             "number": "V14",
                             "key": "ENGR V14",
                             "title": "MATLAB: Programming and Problem Solving",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2378,28 +2874,44 @@
             {
                 "sending_name": "West Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "021",
-                            "key": "ENGR 021",
-                            "title": "Intro Computing for Scientists and Engineers",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "021",
+                                    "key": "ENGR 021",
+                                    "title": "Intro Computing for Scientists and Engineers",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "060",
-                            "key": "ENGR 060",
-                            "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "060",
+                                    "key": "ENGR 060",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []

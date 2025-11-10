@@ -21,9 +21,9 @@
                             "number": "324",
                             "key": "LIBR 324",
                             "title": "Critical Thinking and Information Literacy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "2",
                             "key": "COSA 2",
                             "title": "Critical Thinking Using Computers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -73,9 +73,9 @@
                             "number": "101",
                             "key": "CBIS 101",
                             "title": "Computer Concepts & Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -93,9 +93,9 @@
                             "number": "310",
                             "key": "CISC 310",
                             "title": "Introduction to Computer Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -113,9 +113,9 @@
                             "number": "221",
                             "key": "CA 221",
                             "title": "Computer Concepts and Applications in Business",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -133,9 +133,9 @@
                             "number": "B5",
                             "key": "COMP B5",
                             "title": "Introduction to Microsoft Office",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -153,9 +153,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -173,9 +173,9 @@
                             "number": "2",
                             "key": "CSCI 2",
                             "title": "Business and Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -193,9 +193,9 @@
                             "number": "5",
                             "key": "BUS 5",
                             "title": "Business Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -213,9 +213,9 @@
                             "number": "103",
                             "key": "BUS. 103",
                             "title": "Introduction to Business Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -233,9 +233,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -253,9 +253,9 @@
                             "number": "C101",
                             "key": "IT C101",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -264,28 +264,44 @@
             {
                 "sending_name": "Chabot College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Application Systems",
-                            "prefix": "CAS",
-                            "number": "50",
-                            "key": "CAS 50",
-                            "title": "Introduction to Computer Application Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Application Systems",
+                                    "prefix": "CAS",
+                                    "number": "50",
+                                    "key": "CAS 50",
+                                    "title": "Introduction to Computer Application Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CSCI",
-                            "number": "8",
-                            "key": "CSCI 8",
-                            "title": "Computer Literacy",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "8",
+                                    "key": "CSCI 8",
+                                    "title": "Computer Literacy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -303,9 +319,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -323,9 +339,9 @@
                             "number": "130",
                             "key": "ITIS 130",
                             "title": "Microcomputer Applications I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -334,38 +350,62 @@
             {
                 "sending_name": "City College of San Francisco",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Networking and Information Technology",
-                            "prefix": "CNIT",
-                            "number": "100",
-                            "key": "CNIT 100",
-                            "title": "Introduction to Computers using PCs",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Networking and Information Technology",
+                                    "prefix": "CNIT",
+                                    "number": "100",
+                                    "key": "CNIT 100",
+                                    "title": "Introduction to Computers using PCs",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Networking and Information Technology",
-                            "prefix": "CNIT",
-                            "number": "100M",
-                            "key": "CNIT 100M",
-                            "title": "Introduction to Apple Computers",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Networking and Information Technology",
+                                    "prefix": "CNIT",
+                                    "number": "100M",
+                                    "key": "CNIT 100M",
+                                    "title": "Introduction to Apple Computers",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Microcomputer Application for Business",
-                            "prefix": "MABS",
-                            "number": "60",
-                            "key": "MABS 60",
-                            "title": "Introduction to Computer Applications for Business",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Microcomputer Application for Business",
+                                    "prefix": "MABS",
+                                    "number": "60",
+                                    "key": "MABS 60",
+                                    "title": "Introduction to Computer Applications for Business",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -383,9 +423,9 @@
                             "number": "15",
                             "key": "IS 15",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -403,9 +443,9 @@
                             "number": "007",
                             "key": "CIS 007",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -423,9 +463,9 @@
                             "number": "C100",
                             "key": "CIS C100",
                             "title": "Introduction to Business Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Information Science",
@@ -433,9 +473,9 @@
                             "number": "C111",
                             "key": "CIS C111",
                             "title": "Intro to Information Systems and Programming",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -453,9 +493,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -473,9 +513,9 @@
                             "number": "110",
                             "key": "CIS 110",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -493,9 +533,9 @@
                             "number": "140",
                             "key": "CAWT 140",
                             "title": "Microsoft Office",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -513,9 +553,9 @@
                             "number": "10",
                             "key": "CIS 10",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -533,9 +573,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -544,28 +584,44 @@
             {
                 "sending_name": "College of the Sequoias",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer",
-                            "prefix": "COMP",
-                            "number": "005",
-                            "key": "COMP 005",
-                            "title": "Computer Concepts",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer",
+                                    "prefix": "COMP",
+                                    "number": "005",
+                                    "key": "COMP 005",
+                                    "title": "Computer Concepts",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer",
-                            "prefix": "COMP",
-                            "number": "130",
-                            "key": "COMP 130",
-                            "title": "Intro to Personal Computers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer",
+                                    "prefix": "COMP",
+                                    "number": "130",
+                                    "key": "COMP 130",
+                                    "title": "Intro to Personal Computers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -583,9 +639,9 @@
                             "number": "1001",
                             "key": "CSCI 1001",
                             "title": "Introduction to Computer Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -603,9 +659,9 @@
                             "number": "1",
                             "key": "COMP 1",
                             "title": "Computer Concepts and Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -623,9 +679,9 @@
                             "number": "113",
                             "key": "CIS 113",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -643,9 +699,9 @@
                             "number": "135",
                             "key": "CIS 135",
                             "title": "Introduction to Computers",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -663,9 +719,9 @@
                             "number": "070A",
                             "key": "CIS 070A",
                             "title": "Computer Business Applications for Windows",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -683,9 +739,9 @@
                             "number": "310",
                             "key": "CISC 310",
                             "title": "Introduction to Computer Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -703,9 +759,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computer and Information Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -723,9 +779,9 @@
                             "number": "210",
                             "key": "CIS 210",
                             "title": "Introduction to Computer Applications",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -743,9 +799,9 @@
                             "number": "110",
                             "key": "CIS 110",
                             "title": "Principles of Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -763,9 +819,9 @@
                             "number": "111 C",
                             "key": "CIS 111 C",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -783,9 +839,9 @@
                             "number": "3",
                             "key": "CIS 3",
                             "title": "Business Information Systems",
-                            "notes": [],
                             "min_units": 4.5,
-                            "max_units": 4.5
+                            "max_units": 4.5,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Information Systems",
@@ -793,9 +849,9 @@
                             "number": "4",
                             "key": "CIS 4",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 4.5,
-                            "max_units": 4.5
+                            "max_units": 4.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -813,9 +869,9 @@
                             "number": "101",
                             "key": "COMSC 101",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -833,9 +889,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -853,9 +909,9 @@
                             "number": "13",
                             "key": "CIS 13",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -873,9 +929,9 @@
                             "number": "010",
                             "key": "CIT 010",
                             "title": "Computer and Information Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -893,9 +949,9 @@
                             "number": "111",
                             "key": "BUS 111",
                             "title": "Introduction to Information Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -913,9 +969,9 @@
                             "number": "310",
                             "key": "CISC 310",
                             "title": "Introduction to Computer Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -933,9 +989,9 @@
                             "number": "11",
                             "key": "BUSI 11",
                             "title": "Introduction to Information Systems",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -953,9 +1009,9 @@
                             "number": "15",
                             "key": "CIT 15",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -964,28 +1020,44 @@
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "100 F",
-                            "key": "CIS 100 F",
-                            "title": "Introduction to Personal Computers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "100 F",
+                                    "key": "CIS 100 F",
+                                    "title": "Introduction to Personal Computers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "111 F",
-                            "key": "CIS 111 F",
-                            "title": "Introduction to Information Systems",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "111 F",
+                                    "key": "CIS 111 F",
+                                    "title": "Introduction to Information Systems",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1003,9 +1075,9 @@
                             "number": "2",
                             "key": "CSIS 2",
                             "title": "Computers in Business",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1023,9 +1095,9 @@
                             "number": "101",
                             "key": "CS/IS 101",
                             "title": "Introduction to Computer and Information Systems",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1043,9 +1115,9 @@
                             "number": "G130",
                             "key": "CS G130",
                             "title": "Survey of Computer Science/Information Technology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1063,9 +1135,9 @@
                             "number": "110",
                             "key": "CSIS 110",
                             "title": "Principles of Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1083,9 +1155,9 @@
                             "number": "43",
                             "key": "BUS 43",
                             "title": "Business Information Systems and Information Literacy",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1103,9 +1175,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1123,9 +1195,9 @@
                             "number": "1",
                             "key": "CS 1",
                             "title": "Introduction to Computer Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1143,9 +1215,9 @@
                             "number": "5",
                             "key": "CIS 5",
                             "title": "Introduction to Computer Science",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1163,9 +1235,9 @@
                             "number": "50",
                             "key": "CIS 50",
                             "title": "Introduction to Computing Information Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1183,9 +1255,9 @@
                             "number": "007",
                             "key": "CIS 007",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1194,28 +1266,44 @@
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer and Office Studies Application Software",
-                            "prefix": "COSA",
-                            "number": "30",
-                            "key": "COSA 30",
-                            "title": "Introduction to Computers",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer and Office Studies Application Software",
+                                    "prefix": "COSA",
+                                    "number": "30",
+                                    "key": "COSA 30",
+                                    "title": "Introduction to Computers",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer and Office Studies Application Software",
-                            "prefix": "COSA",
-                            "number": "50",
-                            "key": "COSA 50",
-                            "title": "Intro to IT Concepts & Apps.",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer and Office Studies Application Software",
+                                    "prefix": "COSA",
+                                    "number": "50",
+                                    "key": "COSA 50",
+                                    "title": "Intro to IT Concepts & Apps.",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1224,28 +1312,44 @@
             {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "101",
-                            "key": "CIS 101",
-                            "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "101",
+                                    "key": "CIS 101",
+                                    "title": "Introduction to Computers and Their Uses",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "101",
-                            "key": "CS 101",
-                            "title": "Introduction to Computer Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "101",
+                                    "key": "CS 101",
+                                    "title": "Introduction to Computer Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1263,9 +1367,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Applications and Office Technologies",
@@ -1273,9 +1377,9 @@
                             "number": "082",
                             "key": "CAOT 082",
                             "title": "Microsoft Office Suite",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1293,9 +1397,9 @@
                             "number": "124",
                             "key": "CIS 124",
                             "title": "Data Analytics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1304,28 +1408,44 @@
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Applications and Office Technology",
-                            "prefix": "CAOT",
-                            "number": "082",
-                            "key": "CAOT 082",
-                            "title": "Microsoft Office Suite",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Applications and Office Technology",
+                                    "prefix": "CAOT",
+                                    "number": "082",
+                                    "key": "CAOT 082",
+                                    "title": "Microsoft Office Suite",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "101",
-                            "key": "CIS 101",
-                            "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "101",
+                                    "key": "CIS 101",
+                                    "title": "Introduction to Computers and Their Uses",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1343,9 +1463,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1354,28 +1474,44 @@
             {
                 "sending_name": "Los Angeles Trade Technical College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "104",
-                            "key": "CIS 104",
-                            "title": "Microcomputer Application Software",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "104",
+                                    "key": "CIS 104",
+                                    "title": "Microcomputer Application Software",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "101",
-                            "key": "CIS 101",
-                            "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "101",
+                                    "key": "CIS 101",
+                                    "title": "Introduction to Computers and Their Uses",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1384,38 +1520,62 @@
             {
                 "sending_name": "Los Angeles Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Applications and Office Technology",
-                            "prefix": "CAOT",
-                            "number": "082",
-                            "key": "CAOT 082",
-                            "title": "Microsoft Office Suite",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Applications and Office Technology",
+                                    "prefix": "CAOT",
+                                    "number": "082",
+                                    "key": "CAOT 082",
+                                    "title": "Microsoft Office Suite",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "101",
-                            "key": "CIS 101",
-                            "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "101",
+                                    "key": "CIS 101",
+                                    "title": "Introduction to Computers and Their Uses",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "104",
-                            "key": "CIS 104",
-                            "title": "Microcomputer Application Software",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "104",
+                                    "key": "CIS 104",
+                                    "title": "Microcomputer Application Software",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1433,9 +1593,9 @@
                             "number": "040",
                             "key": "COMSC 040",
                             "title": "Introduction to Computer and Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1453,9 +1613,9 @@
                             "number": "15",
                             "key": "IS 15",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1473,9 +1633,9 @@
                             "number": "104",
                             "key": "CSC 104",
                             "title": "Computers and Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1493,9 +1653,9 @@
                             "number": "-30",
                             "key": "AOM -30",
                             "title": "Introduction to Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1513,9 +1673,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1533,9 +1693,9 @@
                             "number": "120",
                             "key": "CSIT 120",
                             "title": "Fundamentals of Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1544,28 +1704,44 @@
             {
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CSCI",
-                            "number": "201",
-                            "key": "CSCI 201",
-                            "title": "General Computer Literacy",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "201",
+                                    "key": "CSCI 201",
+                                    "title": "General Computer Literacy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CSCI",
-                            "number": "220",
-                            "key": "CSCI 220",
-                            "title": "Computer Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "220",
+                                    "key": "CSCI 220",
+                                    "title": "Computer Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1583,9 +1759,9 @@
                             "number": "1",
                             "key": "CSIS 1",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1603,9 +1779,9 @@
                             "number": "M140",
                             "key": "BUS M140",
                             "title": "Business Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1623,9 +1799,9 @@
                             "number": "1A",
                             "key": "CIS 1A",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1643,9 +1819,9 @@
                             "number": "11",
                             "key": "CISB 11",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Information Systems: Beginning",
@@ -1653,9 +1829,9 @@
                             "number": "15",
                             "key": "CISB 15",
                             "title": "Microcomputer Applications",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1673,9 +1849,9 @@
                             "number": "101",
                             "key": "CSIS- 101",
                             "title": "Introduction to Computers and Data Processing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1693,9 +1869,9 @@
                             "number": "101",
                             "key": "COMS 101",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1704,38 +1880,62 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Applications & Office Technology",
-                            "prefix": "CAT",
-                            "number": "3",
-                            "key": "CAT 3",
-                            "title": "Computer Applications for Business",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Applications & Office Technology",
+                                    "prefix": "CAT",
+                                    "number": "3",
+                                    "key": "CAT 3",
+                                    "title": "Computer Applications for Business",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "1A",
-                            "key": "CIS 1A",
-                            "title": "Introduction to Computer Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "1A",
+                                    "key": "CIS 1A",
+                                    "title": "Introduction to Computer Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "3",
-                            "key": "CIS 3",
-                            "title": "Computer Applications for Business",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "3",
+                                    "key": "CIS 3",
+                                    "title": "Computer Applications for Business",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1753,9 +1953,9 @@
                             "number": "A111",
                             "key": "CIS A111",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1773,9 +1973,9 @@
                             "number": "R100",
                             "key": "CIS R100",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1793,9 +1993,9 @@
                             "number": "102",
                             "key": "CIS 102",
                             "title": "Personal Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1813,9 +2013,9 @@
                             "number": "105",
                             "key": "CSIT 105",
                             "title": "Computer Concepts and Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1833,9 +2033,9 @@
                             "number": "025",
                             "key": "BIT 025",
                             "title": "Survey of Computer Technology in Business",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Information Systems",
@@ -1843,9 +2043,9 @@
                             "number": "010",
                             "key": "CIS 010",
                             "title": "Introduction to Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1863,9 +2063,9 @@
                             "number": "15",
                             "key": "IS 15",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1883,9 +2083,9 @@
                             "number": "101",
                             "key": "CIT 101",
                             "title": "Introduction to Computer Information Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1894,38 +2094,62 @@
             {
                 "sending_name": "Riverside City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "1A",
-                            "key": "CIS 1A",
-                            "title": "Introduction to Computer Information Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "1A",
+                                    "key": "CIS 1A",
+                                    "title": "Introduction to Computer Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Applications & Office Technology",
-                            "prefix": "CAT",
-                            "number": "3",
-                            "key": "CAT 3",
-                            "title": "Computer Applications for Business",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Applications & Office Technology",
+                                    "prefix": "CAT",
+                                    "number": "3",
+                                    "key": "CAT 3",
+                                    "title": "Computer Applications for Business",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "3",
-                            "key": "CIS 3",
-                            "title": "Computer Applications for Business",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "3",
+                                    "key": "CIS 3",
+                                    "title": "Computer Applications for Business",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1935,7 +2159,11 @@
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1947,9 +2175,9 @@
                                     "number": "305",
                                     "key": "CISA 305",
                                     "title": "Beginning Word Processing",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Computer Information Science - Application",
@@ -1957,9 +2185,9 @@
                                     "number": "315",
                                     "key": "CISA 315",
                                     "title": "Introduction to Spreadsheets",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1974,9 +2202,9 @@
                                     "number": "305",
                                     "key": "CISA 305",
                                     "title": "Beginning Word Processing",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Computer Information Science - Application",
@@ -1984,9 +2212,9 @@
                                     "number": "316",
                                     "key": "CISA 316",
                                     "title": "Introduction to Spreadsheets",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2001,9 +2229,9 @@
                                     "number": "306",
                                     "key": "CISA 306",
                                     "title": "Intermediate Word Processing",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Computer Information Science - Application",
@@ -2011,9 +2239,9 @@
                                     "number": "315",
                                     "key": "CISA 315",
                                     "title": "Introduction to Spreadsheets",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2028,9 +2256,9 @@
                                     "number": "306",
                                     "key": "CISA 306",
                                     "title": "Intermediate Word Processing",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Computer Information Science - Application",
@@ -2038,9 +2266,9 @@
                                     "number": "316",
                                     "key": "CISA 316",
                                     "title": "Introduction to Spreadsheets",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2061,9 +2289,9 @@
                             "number": "1",
                             "key": "CIM 1",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2081,9 +2309,9 @@
                             "number": "101",
                             "key": "CIT 101",
                             "title": "Introduction to Computer Literacy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2101,9 +2329,9 @@
                             "number": "181",
                             "key": "CISC 181",
                             "title": "Principles of Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2121,9 +2349,9 @@
                             "number": "181",
                             "key": "CISC 181",
                             "title": "Principles of Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2141,9 +2369,9 @@
                             "number": "181",
                             "key": "CISC 181",
                             "title": "Principles of Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2161,9 +2389,9 @@
                             "number": "12",
                             "key": "CS 12",
                             "title": "Introduction to Management Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2181,9 +2409,9 @@
                             "number": "041",
                             "key": "CIS 041",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2201,9 +2429,9 @@
                             "number": "150",
                             "key": "BUS 150",
                             "title": "Introduction to Information Systems and Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Science",
@@ -2211,9 +2439,9 @@
                             "number": "100",
                             "key": "CMPR 100",
                             "title": "The Computer and Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2222,28 +2450,44 @@
             {
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "101",
-                            "key": "CIS 101",
-                            "title": "Introduction to Computers and Information Systems",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "101",
+                                    "key": "CIS 101",
+                                    "title": "Introduction to Computers and Information Systems",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Applications and Office Management",
-                            "prefix": "COMP",
-                            "number": "101",
-                            "key": "COMP 101",
-                            "title": "Introduction to Computer Applications",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Applications and Office Management",
+                                    "prefix": "COMP",
+                                    "number": "101",
+                                    "key": "COMP 101",
+                                    "title": "Introduction to Computer Applications",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2261,9 +2505,9 @@
                             "number": "4",
                             "key": "CIS 4",
                             "title": "Business Information Systems with Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Information Systems",
@@ -2271,9 +2515,9 @@
                             "number": "30",
                             "key": "CIS 30",
                             "title": "Introduction to Excel",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2291,9 +2535,9 @@
                             "number": "5",
                             "key": "CS 5",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2311,9 +2555,9 @@
                             "number": "100",
                             "key": "CMPR 100",
                             "title": "The Computer and Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2331,9 +2575,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Computer Literacy Workshop",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2351,9 +2595,9 @@
                             "number": "200",
                             "key": "BCM. 200",
                             "title": "Introduction to Computer Applications and Suites",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Business",
@@ -2361,9 +2605,9 @@
                             "number": "103",
                             "key": "BUS. 103",
                             "title": "Introduction to Business Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2381,9 +2625,9 @@
                             "number": "001",
                             "key": "CIS 001",
                             "title": "Introduction to Computer Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2401,9 +2645,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Business Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2421,9 +2665,9 @@
                             "number": "2020",
                             "key": "CIS 2020",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2441,9 +2685,9 @@
                             "number": "V17",
                             "key": "BUS V17",
                             "title": "Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2461,9 +2705,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2481,9 +2725,9 @@
                             "number": "002",
                             "key": "CIST 002",
                             "title": "Introduction to Computing",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2501,9 +2745,9 @@
                             "number": "15",
                             "key": "BCA 15",
                             "title": "Business Computer Applications-Beginning",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2521,9 +2765,9 @@
                             "number": "30",
                             "key": "GNBUS 30",
                             "title": "Business Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

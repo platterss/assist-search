@@ -13,7 +13,7 @@
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -30,9 +30,9 @@
                             "number": "16",
                             "key": "POS 16",
                             "title": "Vital Political Problems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -50,9 +50,9 @@
                             "number": "1",
                             "key": "POLSC 1",
                             "title": "Political Controversies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -70,12 +70,12 @@
                             "number": "110",
                             "key": "POLSC 110",
                             "title": "International Relations",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -93,9 +93,9 @@
                             "number": "104",
                             "key": "POLS 104",
                             "title": "American Government: Policy Issues / Process",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -125,9 +125,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -136,28 +136,44 @@
             {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "American Government and Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "American Government and Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -166,28 +182,44 @@
             {
                 "sending_name": "Antelope Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "101",
-                            "key": "POLS 101",
-                            "title": "American Political Institutions",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "101",
+                                    "key": "POLS 101",
+                                    "title": "American Political Institutions",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "101H",
-                            "key": "POLS 101H",
-                            "title": "American Political Institutions",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "101H",
+                                    "key": "POLS 101H",
+                                    "title": "American Political Institutions",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -205,9 +237,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -225,9 +257,9 @@
                             "number": "1",
                             "key": "POLI 1",
                             "title": "American Political Institutions",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -245,9 +277,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -265,9 +297,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -276,28 +308,44 @@
             {
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Policial Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Policial Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Policial Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "American Government and Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Policial Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "American Government and Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -315,9 +363,9 @@
                             "number": "210",
                             "key": "PLSC 210",
                             "title": "American Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -335,9 +383,9 @@
                             "number": "101",
                             "key": "POL 101",
                             "title": "American Political Institutions",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -346,28 +394,44 @@
             {
                 "sending_name": "Cerro Coso Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C101",
-                            "key": "POLS C101",
-                            "title": "American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C101",
+                                    "key": "POLS C101",
+                                    "title": "American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C101H",
-                            "key": "POLS C101H",
-                            "title": "American Government: Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C101H",
+                                    "key": "POLS C101H",
+                                    "title": "American Government: Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -385,9 +449,9 @@
                             "number": "1",
                             "key": "POSC 1",
                             "title": "Introduction to American Government",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -405,9 +469,9 @@
                             "number": "1",
                             "key": "PS 1",
                             "title": "American Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -416,28 +480,44 @@
             {
                 "sending_name": "Citrus College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLI",
-                            "number": "103",
-                            "key": "POLI 103",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLI",
+                                    "number": "103",
+                                    "key": "POLI 103",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLI",
-                            "number": "103H",
-                            "key": "POLI 103H",
-                            "title": "American Government and Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLI",
+                                    "number": "103H",
+                                    "key": "POLI 103H",
+                                    "title": "American Government and Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -455,9 +535,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -475,9 +555,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Political Science",
@@ -485,9 +565,9 @@
                             "number": "C1000H",
                             "key": "POLS C1000H",
                             "title": "American Government and Politics - Honors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -505,9 +585,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -525,9 +605,9 @@
                             "number": "C180",
                             "key": "PSCI C180",
                             "title": "American Government",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -545,9 +625,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -556,28 +636,44 @@
             {
                 "sending_name": "College of Marin",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "100",
-                            "key": "POLS 100",
-                            "title": "American Political Institutions",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "100",
+                                    "key": "POLS 100",
+                                    "title": "American Political Institutions",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -595,9 +691,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "Introduction to American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -615,9 +711,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Political Science",
@@ -625,9 +721,9 @@
                             "number": "C1000H",
                             "key": "POLS C1000H",
                             "title": "American Government and Politics - Honors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -645,9 +741,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -665,9 +761,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -685,9 +781,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -705,9 +801,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -725,9 +821,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -736,28 +832,44 @@
             {
                 "sending_name": "Compton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLI",
-                            "number": "101",
-                            "key": "POLI 101",
-                            "title": "Governments of the United States and California",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLI",
+                                    "number": "101",
+                                    "key": "POLI 101",
+                                    "title": "Governments of the United States and California",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLI",
-                            "number": "101H",
-                            "key": "POLI 101H",
-                            "title": "Honors Governments of the United States and California",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLI",
+                                    "number": "101H",
+                                    "key": "POLI 101H",
+                                    "title": "Honors Governments of the United States and California",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -775,9 +887,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -795,9 +907,9 @@
                             "number": "001",
                             "key": "PS 001",
                             "title": "Introduction to Government",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -806,28 +918,44 @@
             {
                 "sending_name": "Cosumnes River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "Introduction to Government: United States - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "Introduction to Government: United States - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -836,28 +964,44 @@
             {
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLIT",
-                            "number": "100",
-                            "key": "POLIT 100",
-                            "title": "American Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLIT",
+                                    "number": "100",
+                                    "key": "POLIT 100",
+                                    "title": "American Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLIT",
-                            "number": "100H",
-                            "key": "POLIT 100H",
-                            "title": "American Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLIT",
+                                    "number": "100H",
+                                    "key": "POLIT 100H",
+                                    "title": "American Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -875,9 +1019,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -895,9 +1039,9 @@
                             "number": "121",
                             "key": "POSC 121",
                             "title": "Introduction to U.S. Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -906,28 +1050,44 @@
             {
                 "sending_name": "Cypress College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POSC",
-                            "number": "100 C",
-                            "key": "POSC 100 C",
-                            "title": "United States Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POSC",
+                                    "number": "100 C",
+                                    "key": "POSC 100 C",
+                                    "title": "United States Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POSC",
-                            "number": "100HC",
-                            "key": "POSC 100HC",
-                            "title": "Honors United States Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POSC",
+                                    "number": "100HC",
+                                    "key": "POSC 100HC",
+                                    "title": "Honors United States Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -936,28 +1096,44 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "American Government and Politics - HONORS",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "American Government and Politics - HONORS",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -966,38 +1142,62 @@
             {
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "122",
-                            "key": "POLS 122",
-                            "title": "Latinx Politics and American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "122",
+                                    "key": "POLS 122",
+                                    "title": "Latinx Politics and American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "123",
-                            "key": "POLS 123",
-                            "title": "Black Politics and American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "123",
+                                    "key": "POLS 123",
+                                    "title": "Black Politics and American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1015,9 +1215,9 @@
                             "number": "001",
                             "key": "POL SCI 001",
                             "title": "The Government of the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1035,9 +1235,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Political Science",
@@ -1045,9 +1245,9 @@
                             "number": "C1000H",
                             "key": "POLS C1000H",
                             "title": "American Government and Politics Honors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1065,9 +1265,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1085,9 +1285,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1105,9 +1305,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1125,9 +1325,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1145,9 +1345,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Political Science",
@@ -1155,9 +1355,9 @@
                             "number": "C1000H",
                             "key": "POLS C1000H",
                             "title": "American Government and Politics - Honors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1166,28 +1366,44 @@
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POSC",
-                            "number": "100 F",
-                            "key": "POSC 100 F",
-                            "title": "American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POSC",
+                                    "number": "100 F",
+                                    "key": "POSC 100 F",
+                                    "title": "American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POSC",
-                            "number": "100HF",
-                            "key": "POSC 100HF",
-                            "title": "Honors American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POSC",
+                                    "number": "100HF",
+                                    "key": "POSC 100HF",
+                                    "title": "Honors American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1205,9 +1421,9 @@
                             "number": "1",
                             "key": "POLS 1",
                             "title": "Introduction to American Government",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1225,9 +1441,9 @@
                             "number": "101",
                             "key": "POL S 101",
                             "title": "Introduction to United States and California Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1236,38 +1452,62 @@
             {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "G181",
-                            "key": "ETHS G181",
-                            "title": "American Government: The Politics of Race and Ethnicity",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "G181",
+                                    "key": "ETHS G181",
+                                    "title": "American Government: The Politics of Race and Ethnicity",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "PSCI",
-                            "number": "G180",
-                            "key": "PSCI G180",
-                            "title": "American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "PSCI",
+                                    "number": "G180",
+                                    "key": "PSCI G180",
+                                    "title": "American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "PSCI",
-                            "number": "G181",
-                            "key": "PSCI G181",
-                            "title": "American Government: The Politics of Race and Ethnicity",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "PSCI",
+                                    "number": "G181",
+                                    "key": "PSCI G181",
+                                    "title": "American Government: The Politics of Race and Ethnicity",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1285,9 +1525,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1305,9 +1545,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1316,28 +1556,44 @@
             {
                 "sending_name": "Imperial Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "102",
-                            "key": "POLS 102",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "102",
+                                    "key": "POLS 102",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "110",
-                            "key": "POLS 110",
-                            "title": "American Institutions and History",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "110",
+                                    "key": "POLS 110",
+                                    "title": "American Institutions and History",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1346,28 +1602,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "PS",
-                            "number": "1",
-                            "key": "PS 1",
-                            "title": "American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "PS",
+                                    "number": "1",
+                                    "key": "PS 1",
+                                    "title": "American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "PS",
-                            "number": "1H",
-                            "key": "PS 1H",
-                            "title": "American Government Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "PS",
+                                    "number": "1H",
+                                    "key": "PS 1H",
+                                    "title": "American Government Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1385,9 +1657,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1405,9 +1677,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1425,9 +1697,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1445,9 +1717,9 @@
                             "number": "1",
                             "key": "PLSC 1",
                             "title": "American Institutions",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1465,9 +1737,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1476,28 +1748,44 @@
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLSC",
-                            "number": "1",
-                            "key": "POLSC 1",
-                            "title": "Introduction to Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLSC",
+                                    "number": "1",
+                                    "key": "POLSC 1",
+                                    "title": "Introduction to Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLSC",
-                            "number": "1H",
-                            "key": "POLSC 1H",
-                            "title": "Honors Introduction to Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLSC",
+                                    "number": "1H",
+                                    "key": "POLSC 1H",
+                                    "title": "Honors Introduction to Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1515,9 +1803,9 @@
                             "number": "001",
                             "key": "POL SCI 001",
                             "title": "The Government of the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1535,9 +1823,9 @@
                             "number": "001",
                             "key": "POL SCI 001",
                             "title": "The Government of the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1555,9 +1843,9 @@
                             "number": "001",
                             "key": "POL SCI 001",
                             "title": "The Government of the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1575,9 +1863,9 @@
                             "number": "001",
                             "key": "POL SCI 001",
                             "title": "The Government of the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1595,9 +1883,9 @@
                             "number": "001",
                             "key": "POL SCI 001",
                             "title": "The Government of the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1615,9 +1903,9 @@
                             "number": "001",
                             "key": "POL SCI 001",
                             "title": "The Government of the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1635,9 +1923,9 @@
                             "number": "001",
                             "key": "POL SCI 001",
                             "title": "The Government of the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1655,9 +1943,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1675,9 +1963,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Political Science",
@@ -1685,9 +1973,9 @@
                             "number": "C1000H",
                             "key": "POLS C1000H",
                             "title": "American Government and Politics - Honors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1705,9 +1993,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1716,28 +2004,44 @@
             {
                 "sending_name": "Merced College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "American Government and Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "American Government and Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1755,9 +2059,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1775,9 +2079,9 @@
                             "number": "102",
                             "key": "PLSC 102",
                             "title": "American Institutions and History",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1786,28 +2090,44 @@
             {
                 "sending_name": "Mission College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POL",
-                            "number": "001",
-                            "key": "POL 001",
-                            "title": "American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POL",
+                                    "number": "001",
+                                    "key": "POL 001",
+                                    "title": "American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POL",
-                            "number": "001H",
-                            "key": "POL 001H",
-                            "title": "American Government - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POL",
+                                    "number": "001H",
+                                    "key": "POL 001H",
+                                    "title": "American Government - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1825,9 +2145,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1845,9 +2165,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1856,28 +2176,44 @@
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "American Government and Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "American Government and Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1886,28 +2222,44 @@
             {
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POL",
-                            "number": "1",
-                            "key": "POL 1",
-                            "title": "American Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POL",
+                                    "number": "1",
+                                    "key": "POL 1",
+                                    "title": "American Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POL",
-                            "number": "1H",
-                            "key": "POL 1H",
-                            "title": "Honors American Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POL",
+                                    "number": "1H",
+                                    "key": "POL 1H",
+                                    "title": "Honors American Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1916,28 +2268,44 @@
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLI",
-                            "number": "1",
-                            "key": "POLI 1",
-                            "title": "Introduction to American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLI",
+                                    "number": "1",
+                                    "key": "POLI 1",
+                                    "title": "Introduction to American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLI",
-                            "number": "1H",
-                            "key": "POLI 1H",
-                            "title": "Introduction to American Government and Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLI",
+                                    "number": "1H",
+                                    "key": "POLI 1H",
+                                    "title": "Introduction to American Government and Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1946,28 +2314,44 @@
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "PS-",
-                            "number": "101",
-                            "key": "PS- 101",
-                            "title": "Introduction to American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "PS-",
+                                    "number": "101",
+                                    "key": "PS- 101",
+                                    "title": "Introduction to American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "PS-",
-                            "number": "101H",
-                            "key": "PS- 101H",
-                            "title": "Honors Introduction to American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "PS-",
+                                    "number": "101H",
+                                    "key": "PS- 101H",
+                                    "title": "Honors Introduction to American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1985,9 +2369,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1996,28 +2380,44 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POL",
-                            "number": "1",
-                            "key": "POL 1",
-                            "title": "American Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POL",
+                                    "number": "1",
+                                    "key": "POL 1",
+                                    "title": "American Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POL",
-                            "number": "1H",
-                            "key": "POL 1H",
-                            "title": "Honors American Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POL",
+                                    "number": "1H",
+                                    "key": "POL 1H",
+                                    "title": "Honors American Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2035,9 +2435,9 @@
                             "number": "102",
                             "key": "PS 102",
                             "title": "Introduction to American Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2046,28 +2446,44 @@
             {
                 "sending_name": "Orange Coast College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "PSCI",
-                            "number": "A180",
-                            "key": "PSCI A180",
-                            "title": "American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "PSCI",
+                                    "number": "A180",
+                                    "key": "PSCI A180",
+                                    "title": "American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "PSCI",
-                            "number": "A180H",
-                            "key": "PSCI A180H",
-                            "title": "American Government Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "PSCI",
+                                    "number": "A180H",
+                                    "key": "PSCI A180H",
+                                    "title": "American Government Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2085,9 +2501,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2105,9 +2521,9 @@
                             "number": "145",
                             "key": "POS 145",
                             "title": "American Political Institutions",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2125,9 +2541,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2145,9 +2561,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2165,9 +2581,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2185,9 +2601,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Political Science",
@@ -2195,9 +2611,9 @@
                             "number": "C1000H",
                             "key": "POLS C1000H",
                             "title": "American Government and Politics Honors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2215,9 +2631,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Political Science",
@@ -2225,9 +2641,9 @@
                             "number": "C1000H",
                             "key": "POLS C1000H",
                             "title": "American Government and Politics - Honors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2236,28 +2652,44 @@
             {
                 "sending_name": "Riverside City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POL",
-                            "number": "1",
-                            "key": "POL 1",
-                            "title": "American Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POL",
+                                    "number": "1",
+                                    "key": "POL 1",
+                                    "title": "American Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POL",
-                            "number": "1H",
-                            "key": "POL 1H",
-                            "title": "Honors American Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POL",
+                                    "number": "1H",
+                                    "key": "POL 1H",
+                                    "title": "Honors American Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2266,28 +2698,44 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "American Government and Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "American Government and Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2296,28 +2744,44 @@
             {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "American Government and Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "American Government and Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2326,28 +2790,44 @@
             {
                 "sending_name": "San Bernardino Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLIT",
-                            "number": "100",
-                            "key": "POLIT 100",
-                            "title": "American Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLIT",
+                                    "number": "100",
+                                    "key": "POLIT 100",
+                                    "title": "American Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLIT",
-                            "number": "100H",
-                            "key": "POLIT 100H",
-                            "title": "American Politics-Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLIT",
+                                    "number": "100H",
+                                    "key": "POLIT 100H",
+                                    "title": "American Politics-Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2365,9 +2845,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2385,9 +2865,9 @@
                             "number": "102",
                             "key": "POLI 102",
                             "title": "Introduction to American Government",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2405,9 +2885,9 @@
                             "number": "102",
                             "key": "POLI 102",
                             "title": "Introduction to American Government",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2416,28 +2896,44 @@
             {
                 "sending_name": "San Joaquin Delta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "American Government and Politics Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "American Government and Politics Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2455,9 +2951,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Political Science",
@@ -2465,9 +2961,9 @@
                             "number": "C1000H",
                             "key": "POLS C1000H",
                             "title": "American Government and Politics \u2013 Honors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2476,28 +2972,44 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLT",
-                            "number": "101",
-                            "key": "POLT 101",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLT",
+                                    "number": "101",
+                                    "key": "POLT 101",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLT",
-                            "number": "101H",
-                            "key": "POLT 101H",
-                            "title": "Honors American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLT",
+                                    "number": "101H",
+                                    "key": "POLT 101H",
+                                    "title": "Honors American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2515,9 +3027,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2535,9 +3047,9 @@
                             "number": "1",
                             "key": "POL SC 1",
                             "title": "National and California Government",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2555,9 +3067,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2566,28 +3078,44 @@
             {
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLT",
-                            "number": "101",
-                            "key": "POLT 101",
-                            "title": "Introduction to American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLT",
+                                    "number": "101",
+                                    "key": "POLT 101",
+                                    "title": "Introduction to American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLT",
-                            "number": "101H",
-                            "key": "POLT 101H",
-                            "title": "Honors Introduction to American Government",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLT",
+                                    "number": "101H",
+                                    "key": "POLT 101H",
+                                    "title": "Honors Introduction to American Government",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2605,9 +3133,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2625,9 +3153,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2645,9 +3173,9 @@
                             "number": "200",
                             "key": "PLSC 200",
                             "title": "National, State and Local Government",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2665,9 +3193,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2685,9 +3213,9 @@
                             "number": "102",
                             "key": "PS 102",
                             "title": "Introduction to American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2705,9 +3233,9 @@
                             "number": "1501",
                             "key": "POSC 1501",
                             "title": "Government",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2725,9 +3253,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2745,9 +3273,9 @@
                             "number": "102",
                             "key": "POLS 102",
                             "title": "Introduction to American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2765,9 +3293,9 @@
                             "number": "001",
                             "key": "POL SCI 001",
                             "title": "The Government of the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2776,28 +3304,44 @@
             {
                 "sending_name": "West Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000",
-                            "key": "POLS C1000",
-                            "title": "American Government and Politics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000",
+                                    "key": "POLS C1000",
+                                    "title": "American Government and Politics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "C1000H",
-                            "key": "POLS C1000H",
-                            "title": "American Government and Politics - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "C1000H",
+                                    "key": "POLS C1000H",
+                                    "title": "American Government and Politics - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2815,9 +3359,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2835,9 +3379,9 @@
                             "number": "C1000",
                             "key": "POLS C1000",
                             "title": "American Government and Politics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

@@ -21,11 +21,11 @@
                             "number": "300",
                             "key": "VITI 300",
                             "title": "Viticulture and Enology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -43,9 +43,9 @@
                             "number": "97",
                             "key": "ABT 97",
                             "title": "Vineyard Production and Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -63,9 +63,9 @@
                             "number": "3",
                             "key": "PLS 3",
                             "title": "General Viticulture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -83,9 +83,9 @@
                             "number": "100",
                             "key": "WINE- 100",
                             "title": "Introduction to Viticulture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -103,9 +103,9 @@
                             "number": "130",
                             "key": "VWT 130",
                             "title": "Genl Viticulture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -123,9 +123,9 @@
                             "number": "3",
                             "key": "PLS 3",
                             "title": "General Viticulture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -134,28 +134,44 @@
             {
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Viticulture",
-                            "prefix": "VIT",
-                            "number": "1",
-                            "key": "VIT 1",
-                            "title": "Introduction to Viticulture, Winemaking, Wines of the World",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Viticulture",
+                                    "prefix": "VIT",
+                                    "number": "1",
+                                    "key": "VIT 1",
+                                    "title": "Introduction to Viticulture, Winemaking, Wines of the World",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Wine Studies",
-                            "prefix": "WINE",
-                            "number": "1",
-                            "key": "WINE 1",
-                            "title": "Introduction to Viticulture, Winemaking, Wines of the World",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Wine Studies",
+                                    "prefix": "WINE",
+                                    "number": "1",
+                                    "key": "WINE 1",
+                                    "title": "Introduction to Viticulture, Winemaking, Wines of the World",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -185,11 +201,11 @@
                             "number": "300",
                             "key": "VITI 300",
                             "title": "Viticulture and Enology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -207,9 +223,9 @@
                             "number": "148",
                             "key": "HORT 148",
                             "title": "Introduction to Wine Production",
-                            "notes": [],
                             "min_units": 1.5,
-                            "max_units": 1.5
+                            "max_units": 1.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -227,9 +243,9 @@
                             "number": "136",
                             "key": "VWT 136",
                             "title": "Wines of the World",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -247,9 +263,9 @@
                             "number": "3",
                             "key": "WINE 3",
                             "title": "Introduction to Enology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

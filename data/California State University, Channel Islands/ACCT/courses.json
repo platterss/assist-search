@@ -21,9 +21,9 @@
                             "number": "131",
                             "key": "ACCT 131",
                             "title": "Financial Accounting 1",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Accounting",
@@ -31,9 +31,9 @@
                             "number": "132",
                             "key": "ACCT 132",
                             "title": "Financial Accounting 2",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -51,9 +51,9 @@
                             "number": "301",
                             "key": "ACCT 301",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -71,9 +71,9 @@
                             "number": "201",
                             "key": "ACCT 201",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -91,9 +91,9 @@
                             "number": "B1",
                             "key": "BSAD B1",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -111,9 +111,9 @@
                             "number": "1",
                             "key": "ACCT 1",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -131,9 +131,9 @@
                             "number": "1A",
                             "key": "BUS 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -151,9 +151,9 @@
                             "number": "2",
                             "key": "ACCT 2",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -171,9 +171,9 @@
                             "number": "1A",
                             "key": "ACCT 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -191,9 +191,9 @@
                             "number": "121",
                             "key": "ACTG 121",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -211,9 +211,9 @@
                             "number": "101",
                             "key": "ACCT 101",
                             "title": "Fundamentals of Accounting I",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -231,9 +231,9 @@
                             "number": "C101",
                             "key": "BSAD C101",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -251,9 +251,9 @@
                             "number": "1A",
                             "key": "BUS 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -271,9 +271,9 @@
                             "number": "1A",
                             "key": "ACCTG 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -282,28 +282,44 @@
             {
                 "sending_name": "Citrus College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "101",
-                            "key": "ACCT 101",
-                            "title": "Financial Accounting",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "101",
+                                    "key": "ACCT 101",
+                                    "title": "Financial Accounting",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "101H",
-                            "key": "ACCT 101H",
-                            "title": "Financial Accounting - Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "101H",
+                                    "key": "ACCT 101H",
+                                    "title": "Financial Accounting - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -321,9 +337,9 @@
                             "number": "1",
                             "key": "ACCT 1",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -341,9 +357,9 @@
                             "number": "4A",
                             "key": "ACCTG 4A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -361,9 +377,9 @@
                             "number": "001A",
                             "key": "BUS 001A",
                             "title": "Beginning Principles of Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -381,9 +397,9 @@
                             "number": "C101",
                             "key": "ACCT C101",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -401,9 +417,9 @@
                             "number": "1A",
                             "key": "BUS 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -421,9 +437,9 @@
                             "number": "112",
                             "key": "BUS 112",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -441,9 +457,9 @@
                             "number": "121",
                             "key": "ACTG 121",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -461,9 +477,9 @@
                             "number": "201",
                             "key": "BUS 201",
                             "title": "Principles of Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -481,9 +497,9 @@
                             "number": "20A",
                             "key": "BUAC 20A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -501,9 +517,9 @@
                             "number": "1A",
                             "key": "BUS 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -521,9 +537,9 @@
                             "number": "001",
                             "key": "ACCT 001",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -541,9 +557,9 @@
                             "number": "1001",
                             "key": "BA 1001",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -561,9 +577,9 @@
                             "number": "2A",
                             "key": "BUSAD 2A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -581,9 +597,9 @@
                             "number": "101",
                             "key": "BUS 101",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -601,9 +617,9 @@
                             "number": "186",
                             "key": "BUS 186",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -621,9 +637,9 @@
                             "number": "001",
                             "key": "ACCT 001",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.5,
-                            "max_units": 4.5
+                            "max_units": 4.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -641,9 +657,9 @@
                             "number": "301",
                             "key": "ACCT 301",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -661,9 +677,9 @@
                             "number": "208",
                             "key": "ACCT 208",
                             "title": "Introduction to Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -681,9 +697,9 @@
                             "number": "201A",
                             "key": "ACCT 201A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -701,9 +717,9 @@
                             "number": "120",
                             "key": "BUS 120",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -721,9 +737,9 @@
                             "number": "101 C",
                             "key": "ACCT 101 C",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -733,7 +749,9 @@
                 "sending_name": "De Anza College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -745,9 +763,9 @@
                                     "number": "1A",
                                     "key": "ACCT 1A",
                                     "title": "Financial Accounting I",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Accounting",
@@ -755,9 +773,9 @@
                                     "number": "1B",
                                     "key": "ACCT 1B",
                                     "title": "Financial Accounting II",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -772,9 +790,9 @@
                                     "number": "1AH",
                                     "key": "ACCT 1AH",
                                     "title": "Financial Accounting I - HONORS",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Accounting",
@@ -782,9 +800,9 @@
                                     "number": "1BH",
                                     "key": "ACCT 1BH",
                                     "title": "Financial Accounting II - HONORS",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -805,9 +823,9 @@
                             "number": "186",
                             "key": "BUSAC 186",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -825,9 +843,9 @@
                             "number": "001",
                             "key": "ACCTG 001",
                             "title": "Introductory Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -845,9 +863,9 @@
                             "number": "150",
                             "key": "BUS 150",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -865,9 +883,9 @@
                             "number": "001A",
                             "key": "ACCTG 001A",
                             "title": "Principles of Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -885,9 +903,9 @@
                             "number": "102",
                             "key": "BUS 102",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -905,9 +923,9 @@
                             "number": "301",
                             "key": "ACCT 301",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -917,7 +935,11 @@
                 "sending_name": "Foothill College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -929,9 +951,9 @@
                                     "number": "1A",
                                     "key": "ACTG 1A",
                                     "title": "Financial Accounting I",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Accounting",
@@ -939,9 +961,9 @@
                                     "number": "1B",
                                     "key": "ACTG 1B",
                                     "title": "Financial Accounting II",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -956,9 +978,9 @@
                                     "number": "1A",
                                     "key": "ACTG 1A",
                                     "title": "Financial Accounting I",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Accounting",
@@ -966,9 +988,9 @@
                                     "number": "1BH",
                                     "key": "ACTG 1BH",
                                     "title": "Honors Financial Accounting II",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -983,9 +1005,9 @@
                                     "number": "1AH",
                                     "key": "ACTG 1AH",
                                     "title": "Honors Financial Accounting I",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Accounting",
@@ -993,9 +1015,9 @@
                                     "number": "1B",
                                     "key": "ACTG 1B",
                                     "title": "Financial Accounting II",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1010,9 +1032,9 @@
                                     "number": "1AH",
                                     "key": "ACTG 1AH",
                                     "title": "Honors Financial Accounting I",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Accounting",
@@ -1020,9 +1042,9 @@
                                     "number": "1BH",
                                     "key": "ACTG 1BH",
                                     "title": "Honors Financial Accounting II",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1043,9 +1065,9 @@
                             "number": "4A",
                             "key": "ACCTG 4A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1054,28 +1076,44 @@
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "101AF",
-                            "key": "ACCT 101AF",
-                            "title": "Financial Accounting",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "101AF",
+                                    "key": "ACCT 101AF",
+                                    "title": "Financial Accounting",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "102HF",
-                            "key": "ACCT 102HF",
-                            "title": "Honors Financial Accounting",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "102HF",
+                                    "key": "ACCT 102HF",
+                                    "title": "Honors Financial Accounting",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1093,9 +1131,9 @@
                             "number": "20",
                             "key": "ACCT 20",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1113,9 +1151,9 @@
                             "number": "101",
                             "key": "ACCTG 101",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1133,9 +1171,9 @@
                             "number": "G101",
                             "key": "ACCT G101",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1153,9 +1191,9 @@
                             "number": "120",
                             "key": "BUS 120",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1173,9 +1211,9 @@
                             "number": "1A",
                             "key": "BUS 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1193,9 +1231,9 @@
                             "number": "210",
                             "key": "ACCT 210",
                             "title": "Principles of Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1204,28 +1242,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "1A",
-                            "key": "ACCT 1A",
-                            "title": "Financial Accounting",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1A",
+                                    "key": "ACCT 1A",
+                                    "title": "Financial Accounting",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "1AH",
-                            "key": "ACCT 1AH",
-                            "title": "Financial Accounting Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1AH",
+                                    "key": "ACCT 1AH",
+                                    "title": "Financial Accounting Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1243,9 +1297,9 @@
                             "number": "110A",
                             "key": "BSN 110A",
                             "title": "Financial Accounting I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Business",
@@ -1253,9 +1307,9 @@
                             "number": "110B",
                             "key": "BSN 110B",
                             "title": "Financial Accounting II",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1273,9 +1327,9 @@
                             "number": "1A",
                             "key": "BUS 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1293,9 +1347,9 @@
                             "number": "1A",
                             "key": "BUSN 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1313,9 +1367,9 @@
                             "number": "1A",
                             "key": "BUS 1A",
                             "title": "Accounting Principles - Financial",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1333,9 +1387,9 @@
                             "number": "001A",
                             "key": "BUS 001A",
                             "title": "Beginning Principles of Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1353,9 +1407,9 @@
                             "number": "1A",
                             "key": "ACCTG 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1373,9 +1427,9 @@
                             "number": "001",
                             "key": "ACCTG 001",
                             "title": "Introductory Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1393,9 +1447,9 @@
                             "number": "001",
                             "key": "ACCTG 001",
                             "title": "Introductory Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1413,9 +1467,9 @@
                             "number": "001",
                             "key": "ACCTG 001",
                             "title": "Introductory Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1433,9 +1487,9 @@
                             "number": "001",
                             "key": "ACCTG 001",
                             "title": "Introductory Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1453,9 +1507,9 @@
                             "number": "001",
                             "key": "ACCTG 001",
                             "title": "Introductory Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1473,9 +1527,9 @@
                             "number": "001",
                             "key": "ACCTG 001",
                             "title": "Introductory Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1493,9 +1547,9 @@
                             "number": "001",
                             "key": "ACCTG 001",
                             "title": "Introductory Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1513,9 +1567,9 @@
                             "number": "186",
                             "key": "BUS 186",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1533,9 +1587,9 @@
                             "number": "4A",
                             "key": "ACCTG 4A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1553,9 +1607,9 @@
                             "number": "200",
                             "key": "BUS 200",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1573,9 +1627,9 @@
                             "number": "-04A",
                             "key": "ACTG -04A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1593,9 +1647,9 @@
                             "number": "1A",
                             "key": "BUS 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1613,9 +1667,9 @@
                             "number": "201",
                             "key": "ACCT 201",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1633,9 +1687,9 @@
                             "number": "001A",
                             "key": "ACC 001A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1653,9 +1707,9 @@
                             "number": "201",
                             "key": "BUSAD 201",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1673,9 +1727,9 @@
                             "number": "3A",
                             "key": "BUSI 3A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1693,9 +1747,9 @@
                             "number": "M110",
                             "key": "ACCT M110",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1713,9 +1767,9 @@
                             "number": "1A",
                             "key": "ACC 1A",
                             "title": "Principles of Accounting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1733,9 +1787,9 @@
                             "number": "7",
                             "key": "BUSA 7",
                             "title": "Principles of Accounting - Financial",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1744,28 +1798,44 @@
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting/Bookkeeping",
-                            "prefix": "ACCT-",
-                            "number": "124",
-                            "key": "ACCT- 124",
-                            "title": "Financial Accounting - Principles of Accounting I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting/Bookkeeping",
+                                    "prefix": "ACCT-",
+                                    "number": "124",
+                                    "key": "ACCT- 124",
+                                    "title": "Financial Accounting - Principles of Accounting I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting/Bookkeeping",
-                            "prefix": "ACCT-",
-                            "number": "124H",
-                            "key": "ACCT- 124H",
-                            "title": "Honors Financial Accounting - Principles of Accounting I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting/Bookkeeping",
+                                    "prefix": "ACCT-",
+                                    "number": "124H",
+                                    "key": "ACCT- 124H",
+                                    "title": "Honors Financial Accounting - Principles of Accounting I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1783,9 +1853,9 @@
                             "number": "125",
                             "key": "ACCT 125",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1803,9 +1873,9 @@
                             "number": "1A",
                             "key": "ACC 1A",
                             "title": "Principles of Accounting, I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1823,9 +1893,9 @@
                             "number": "101A",
                             "key": "BA 101A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1834,28 +1904,44 @@
             {
                 "sending_name": "Orange Coast College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "A101",
-                            "key": "ACCT A101",
-                            "title": "Financial Accounting",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "A101",
+                                    "key": "ACCT A101",
+                                    "title": "Financial Accounting",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "A101H",
-                            "key": "ACCT A101H",
-                            "title": "Financial Accounting Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "A101H",
+                                    "key": "ACCT A101H",
+                                    "title": "Financial Accounting Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1864,28 +1950,44 @@
             {
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "R101",
-                            "key": "ACCT R101",
-                            "title": "Financial Accounting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "R101",
+                                    "key": "ACCT R101",
+                                    "title": "Financial Accounting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "R101H",
-                            "key": "ACCT R101H",
-                            "title": "Honors: Financial Accounting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "R101H",
+                                    "key": "ACCT R101H",
+                                    "title": "Honors: Financial Accounting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1903,9 +2005,9 @@
                             "number": "101",
                             "key": "ACC 101",
                             "title": "Principles of Accounting I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1923,9 +2025,9 @@
                             "number": "201",
                             "key": "ACCT 201",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1943,9 +2045,9 @@
                             "number": "001A",
                             "key": "ACCT 001A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1963,9 +2065,9 @@
                             "number": "P110",
                             "key": "ACCT P110",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1983,9 +2085,9 @@
                             "number": "4A",
                             "key": "ACCTG 4A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1994,28 +2096,44 @@
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "101",
-                            "key": "ACCT 101",
-                            "title": "Financial Accounting",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "101",
+                                    "key": "ACCT 101",
+                                    "title": "Financial Accounting",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "101H",
-                            "key": "ACCT 101H",
-                            "title": "Financial Accounting Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "101H",
+                                    "key": "ACCT 101H",
+                                    "title": "Financial Accounting Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2033,9 +2151,9 @@
                             "number": "1A",
                             "key": "ACC 1A",
                             "title": "Principles of Accounting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2053,9 +2171,9 @@
                             "number": "301",
                             "key": "ACCT 301",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2073,9 +2191,9 @@
                             "number": "1A",
                             "key": "ACCT 1A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2093,9 +2211,9 @@
                             "number": "200",
                             "key": "ACCT 200",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2113,9 +2231,9 @@
                             "number": "116A",
                             "key": "ACCT 116A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2133,9 +2251,9 @@
                             "number": "116A",
                             "key": "ACCT 116A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2153,9 +2271,9 @@
                             "number": "116A",
                             "key": "ACCT 116A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2173,9 +2291,9 @@
                             "number": "3",
                             "key": "BUS 3",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2193,9 +2311,9 @@
                             "number": "020",
                             "key": "ACCTG 020",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2213,9 +2331,9 @@
                             "number": "101",
                             "key": "ACCT 101",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2233,9 +2351,9 @@
                             "number": "230",
                             "key": "ACCT 230",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2253,9 +2371,9 @@
                             "number": "1",
                             "key": "ACCTG 1",
                             "title": "Introduction to Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2273,9 +2391,9 @@
                             "number": "1",
                             "key": "BAD 1",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2293,9 +2411,9 @@
                             "number": "101",
                             "key": "ACCT 101",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2313,9 +2431,9 @@
                             "number": "2",
                             "key": "ACCT 2",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2333,9 +2451,9 @@
                             "number": "201",
                             "key": "BUS 201",
                             "title": "Financial Accounting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Business",
@@ -2343,9 +2461,9 @@
                             "number": "202",
                             "key": "BUS 202",
                             "title": "Financial Accounting II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2363,9 +2481,9 @@
                             "number": "121",
                             "key": "ACTG 121",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2383,9 +2501,9 @@
                             "number": "001",
                             "key": "ACCT 001",
                             "title": "Principles of Accounting - Financial",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2403,9 +2521,9 @@
                             "number": "101",
                             "key": "ACCT 101",
                             "title": "Principles of Accounting I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2423,9 +2541,9 @@
                             "number": "2220",
                             "key": "BSAD 2220",
                             "title": "Introduction to Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2443,9 +2561,9 @@
                             "number": "V01A",
                             "key": "ACCT V01A",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2463,9 +2581,9 @@
                             "number": "103",
                             "key": "BADM 103",
                             "title": "Financial Accounting Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2483,9 +2601,9 @@
                             "number": "001",
                             "key": "ACCTG 001",
                             "title": "Introductory Accounting I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2503,9 +2621,9 @@
                             "number": "010",
                             "key": "ACCT 010",
                             "title": "Financial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2523,9 +2641,9 @@
                             "number": "1",
                             "key": "ACCT 1",
                             "title": "Principles of Accounting - Financial",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Accounting",
@@ -2533,9 +2651,9 @@
                             "number": "1A",
                             "key": "ACCT 1A",
                             "title": "Principles of Accounting - Financial Lab",
-                            "notes": [],
                             "min_units": 0.5,
-                            "max_units": 0.5
+                            "max_units": 0.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2553,9 +2671,9 @@
                             "number": "11",
                             "key": "ACCT 11",
                             "title": "Principles of Accounting-Financial",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2585,9 +2703,9 @@
                             "number": "140",
                             "key": "ACCT 140",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2605,9 +2723,9 @@
                             "number": "311",
                             "key": "ACCT 311",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2625,9 +2743,9 @@
                             "number": "205",
                             "key": "ACCT 205",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2645,9 +2763,9 @@
                             "number": "B2",
                             "key": "BSAD B2",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2665,9 +2783,9 @@
                             "number": "4",
                             "key": "ACCT 4",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2685,9 +2803,9 @@
                             "number": "1B",
                             "key": "BUS 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2705,9 +2823,9 @@
                             "number": "4",
                             "key": "ACCT 4",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2725,9 +2843,9 @@
                             "number": "1B",
                             "key": "ACCT 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2745,9 +2863,9 @@
                             "number": "131",
                             "key": "ACTG 131",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2765,9 +2883,9 @@
                             "number": "102",
                             "key": "ACCT 102",
                             "title": "Fundamentals of Accounting II",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2785,9 +2903,9 @@
                             "number": "C102",
                             "key": "BSAD C102",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2805,9 +2923,9 @@
                             "number": "1B",
                             "key": "BUS 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2825,9 +2943,9 @@
                             "number": "1B",
                             "key": "ACCTG 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2836,28 +2954,44 @@
             {
                 "sending_name": "Citrus College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "102",
-                            "key": "ACCT 102",
-                            "title": "Managerial Accounting",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "102",
+                                    "key": "ACCT 102",
+                                    "title": "Managerial Accounting",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "102H",
-                            "key": "ACCT 102H",
-                            "title": "Managerial Accounting - Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "102H",
+                                    "key": "ACCT 102H",
+                                    "title": "Managerial Accounting - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2875,9 +3009,9 @@
                             "number": "2",
                             "key": "ACCT 2",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2895,9 +3029,9 @@
                             "number": "4B",
                             "key": "ACCTG 4B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2915,9 +3049,9 @@
                             "number": "001B",
                             "key": "BUS 001B",
                             "title": "Elementary Principles of Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2935,9 +3069,9 @@
                             "number": "C102",
                             "key": "ACCT C102",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2955,9 +3089,9 @@
                             "number": "1B",
                             "key": "BUS 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2975,9 +3109,9 @@
                             "number": "113",
                             "key": "BUS 113",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2995,9 +3129,9 @@
                             "number": "131",
                             "key": "ACTG 131",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3015,9 +3149,9 @@
                             "number": "202",
                             "key": "BUS 202",
                             "title": "Principles of Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3035,9 +3169,9 @@
                             "number": "20B",
                             "key": "BUAC 20B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3055,9 +3189,9 @@
                             "number": "1B",
                             "key": "BUS 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3075,9 +3209,9 @@
                             "number": "002",
                             "key": "ACCT 002",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3095,9 +3229,9 @@
                             "number": "1501",
                             "key": "BA 1501",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3115,9 +3249,9 @@
                             "number": "2B",
                             "key": "BUSAD 2B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3135,9 +3269,9 @@
                             "number": "102",
                             "key": "BUS 102",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3155,9 +3289,9 @@
                             "number": "187",
                             "key": "BUS 187",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3175,9 +3309,9 @@
                             "number": "002",
                             "key": "ACCT 002",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3195,9 +3329,9 @@
                             "number": "311",
                             "key": "ACCT 311",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3215,9 +3349,9 @@
                             "number": "209",
                             "key": "ACCT 209",
                             "title": "Introduction to Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3235,9 +3369,9 @@
                             "number": "201B",
                             "key": "ACCT 201B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3255,9 +3389,9 @@
                             "number": "121",
                             "key": "BUS 121",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3275,9 +3409,9 @@
                             "number": "102 C",
                             "key": "ACCT 102 C",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3286,28 +3420,44 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "1C",
-                            "key": "ACCT 1C",
-                            "title": "Managerial Accounting",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1C",
+                                    "key": "ACCT 1C",
+                                    "title": "Managerial Accounting",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "1CH",
-                            "key": "ACCT 1CH",
-                            "title": "Managerial Accounting - HONORS",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1CH",
+                                    "key": "ACCT 1CH",
+                                    "title": "Managerial Accounting - HONORS",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3325,9 +3475,9 @@
                             "number": "187",
                             "key": "BUSAC 187",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3345,9 +3495,9 @@
                             "number": "002",
                             "key": "ACCTG 002",
                             "title": "Introductory Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3365,9 +3515,9 @@
                             "number": "151",
                             "key": "BUS 151",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3385,9 +3535,9 @@
                             "number": "001B",
                             "key": "ACCTG 001B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3405,9 +3555,9 @@
                             "number": "104",
                             "key": "BUS 104",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3425,9 +3575,9 @@
                             "number": "311",
                             "key": "ACCT 311",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3436,28 +3586,44 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACTG",
-                            "number": "1C",
-                            "key": "ACTG 1C",
-                            "title": "Managerial Accounting",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACTG",
+                                    "number": "1C",
+                                    "key": "ACTG 1C",
+                                    "title": "Managerial Accounting",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACTG",
-                            "number": "1CH",
-                            "key": "ACTG 1CH",
-                            "title": "Honors Managerial Accounting",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACTG",
+                                    "number": "1CH",
+                                    "key": "ACTG 1CH",
+                                    "title": "Honors Managerial Accounting",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3475,9 +3641,9 @@
                             "number": "4B",
                             "key": "ACCTG 4B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3495,9 +3661,9 @@
                             "number": "101BF",
                             "key": "ACCT 101BF",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3515,9 +3681,9 @@
                             "number": "21",
                             "key": "ACCT 21",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3535,9 +3701,9 @@
                             "number": "102",
                             "key": "ACCTG 102",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3555,9 +3721,9 @@
                             "number": "G102",
                             "key": "ACCT G102",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3575,9 +3741,9 @@
                             "number": "121",
                             "key": "BUS 121",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3595,9 +3761,9 @@
                             "number": "1B",
                             "key": "BUS 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3615,9 +3781,9 @@
                             "number": "220",
                             "key": "ACCT 220",
                             "title": "Principles of Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3626,28 +3792,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "1B",
-                            "key": "ACCT 1B",
-                            "title": "Managerial Accounting",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1B",
+                                    "key": "ACCT 1B",
+                                    "title": "Managerial Accounting",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "1BH",
-                            "key": "ACCT 1BH",
-                            "title": "Managerial Accounting Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1BH",
+                                    "key": "ACCT 1BH",
+                                    "title": "Managerial Accounting Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3665,9 +3847,9 @@
                             "number": "110C",
                             "key": "BSN 110C",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3685,9 +3867,9 @@
                             "number": "1B",
                             "key": "BUS 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3705,9 +3887,9 @@
                             "number": "1B",
                             "key": "BUSN 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3725,9 +3907,9 @@
                             "number": "1B",
                             "key": "BUS 1B",
                             "title": "Accounting Principles - Managerial",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3745,9 +3927,9 @@
                             "number": "001B",
                             "key": "BUS 001B",
                             "title": "Elementary Principles of Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3765,9 +3947,9 @@
                             "number": "1B",
                             "key": "ACCTG 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3785,9 +3967,9 @@
                             "number": "002",
                             "key": "ACCTG 002",
                             "title": "Introductory Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3805,9 +3987,9 @@
                             "number": "002",
                             "key": "ACCTG 002",
                             "title": "Introductory Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3825,9 +4007,9 @@
                             "number": "002",
                             "key": "ACCTG 002",
                             "title": "Introductory Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3845,9 +4027,9 @@
                             "number": "002",
                             "key": "ACCTG 002",
                             "title": "Introductory Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3865,9 +4047,9 @@
                             "number": "002",
                             "key": "ACCTG 002",
                             "title": "Introductory Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3885,9 +4067,9 @@
                             "number": "002",
                             "key": "ACCTG 002",
                             "title": "Introductory Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3905,9 +4087,9 @@
                             "number": "002",
                             "key": "ACCTG 002",
                             "title": "Introductory Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3925,9 +4107,9 @@
                             "number": "187",
                             "key": "BUS 187",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3945,9 +4127,9 @@
                             "number": "4B",
                             "key": "ACCTG 4B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3965,9 +4147,9 @@
                             "number": "201",
                             "key": "BUS 201",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3985,9 +4167,9 @@
                             "number": "-04B",
                             "key": "ACTG -04B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4005,9 +4187,9 @@
                             "number": "1B",
                             "key": "BUS 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4025,9 +4207,9 @@
                             "number": "202",
                             "key": "ACCT 202",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4045,9 +4227,9 @@
                             "number": "001B",
                             "key": "ACC 001B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4065,9 +4247,9 @@
                             "number": "202",
                             "key": "BUSAD 202",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4085,9 +4267,9 @@
                             "number": "3B",
                             "key": "BUSI 3B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4105,9 +4287,9 @@
                             "number": "M120",
                             "key": "ACCT M120",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4125,9 +4307,9 @@
                             "number": "1B",
                             "key": "ACC 1B",
                             "title": "Principles of Accounting II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4145,9 +4327,9 @@
                             "number": "8",
                             "key": "BUSA 8",
                             "title": "Principles of Accounting - Managerial",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4156,28 +4338,44 @@
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting/Bookkeeping",
-                            "prefix": "ACCT-",
-                            "number": "125",
-                            "key": "ACCT- 125",
-                            "title": "Managerial Accounting - Principles of Accounting II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting/Bookkeeping",
+                                    "prefix": "ACCT-",
+                                    "number": "125",
+                                    "key": "ACCT- 125",
+                                    "title": "Managerial Accounting - Principles of Accounting II",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting/Bookkeeping",
-                            "prefix": "ACCT-",
-                            "number": "125H",
-                            "key": "ACCT- 125H",
-                            "title": "Honors Managerial Accounting - Principles of Accounting II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting/Bookkeeping",
+                                    "prefix": "ACCT-",
+                                    "number": "125H",
+                                    "key": "ACCT- 125H",
+                                    "title": "Honors Managerial Accounting - Principles of Accounting II",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4195,9 +4393,9 @@
                             "number": "126",
                             "key": "ACCT 126",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4215,9 +4413,9 @@
                             "number": "1B",
                             "key": "ACC 1B",
                             "title": "Principles of Accounting, II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4235,9 +4433,9 @@
                             "number": "101B",
                             "key": "BA 101B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4246,28 +4444,44 @@
             {
                 "sending_name": "Orange Coast College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "A102",
-                            "key": "ACCT A102",
-                            "title": "Managerial Accounting",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "A102",
+                                    "key": "ACCT A102",
+                                    "title": "Managerial Accounting",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "A102H",
-                            "key": "ACCT A102H",
-                            "title": "Managerial Accounting Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "A102H",
+                                    "key": "ACCT A102H",
+                                    "title": "Managerial Accounting Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4285,9 +4499,9 @@
                             "number": "R102",
                             "key": "ACCT R102",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4305,9 +4519,9 @@
                             "number": "102",
                             "key": "ACC 102",
                             "title": "Principles of Accounting II",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4325,9 +4539,9 @@
                             "number": "202",
                             "key": "ACCT 202",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4345,9 +4559,9 @@
                             "number": "001B",
                             "key": "ACCT 001B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4365,9 +4579,9 @@
                             "number": "P120",
                             "key": "ACCT P120",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4385,9 +4599,9 @@
                             "number": "4B",
                             "key": "ACCTG 4B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4396,28 +4610,44 @@
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "102",
-                            "key": "ACCT 102",
-                            "title": "Managerial Accounting",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "102",
+                                    "key": "ACCT 102",
+                                    "title": "Managerial Accounting",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "102H",
-                            "key": "ACCT 102H",
-                            "title": "Managerial Accounting Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "102H",
+                                    "key": "ACCT 102H",
+                                    "title": "Managerial Accounting Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4435,9 +4665,9 @@
                             "number": "1B",
                             "key": "ACC 1B",
                             "title": "Principles of Accounting II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4455,9 +4685,9 @@
                             "number": "311",
                             "key": "ACCT 311",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4475,9 +4705,9 @@
                             "number": "1B",
                             "key": "ACCT 1B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4495,9 +4725,9 @@
                             "number": "201",
                             "key": "ACCT 201",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4515,9 +4745,9 @@
                             "number": "116B",
                             "key": "ACCT 116B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4535,9 +4765,9 @@
                             "number": "116B",
                             "key": "ACCT 116B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4555,9 +4785,9 @@
                             "number": "116B",
                             "key": "ACCT 116B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4575,9 +4805,9 @@
                             "number": "4",
                             "key": "BUS 4",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4595,9 +4825,9 @@
                             "number": "021",
                             "key": "ACCTG 021",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4615,9 +4845,9 @@
                             "number": "102",
                             "key": "ACCT 102",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4635,9 +4865,9 @@
                             "number": "240",
                             "key": "ACCT 240",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4655,9 +4885,9 @@
                             "number": "2",
                             "key": "ACCTG 2",
                             "title": "Corporate Financial and Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4675,9 +4905,9 @@
                             "number": "2",
                             "key": "BAD 2",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4695,9 +4925,9 @@
                             "number": "102",
                             "key": "ACCT 102",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4715,9 +4945,9 @@
                             "number": "4",
                             "key": "ACCT 4",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4735,9 +4965,9 @@
                             "number": "203",
                             "key": "BUS 203",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4755,9 +4985,9 @@
                             "number": "131",
                             "key": "ACTG 131",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4775,9 +5005,9 @@
                             "number": "002",
                             "key": "ACCT 002",
                             "title": "Principles of Accounting - Managerial",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4795,9 +5025,9 @@
                             "number": "102",
                             "key": "ACCT 102",
                             "title": "Principles of Accounting II - Managerial",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4815,9 +5045,9 @@
                             "number": "2221",
                             "key": "BSAD 2221",
                             "title": "Introduction to Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4835,9 +5065,9 @@
                             "number": "V01B",
                             "key": "ACCT V01B",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4855,9 +5085,9 @@
                             "number": "104",
                             "key": "BADM 104",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4875,9 +5105,9 @@
                             "number": "002",
                             "key": "ACCTG 002",
                             "title": "Introductory Accounting II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4895,9 +5125,9 @@
                             "number": "011",
                             "key": "ACCT 011",
                             "title": "Managerial Accounting",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4915,9 +5145,9 @@
                             "number": "2",
                             "key": "ACCT 2",
                             "title": "Principles of Accounting-Managerial",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4935,9 +5165,9 @@
                             "number": "12",
                             "key": "ACCT 12",
                             "title": "Principles of Accounting - Managerial",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

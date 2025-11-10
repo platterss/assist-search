@@ -12,28 +12,44 @@
             {
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "100",
-                            "key": "GEOL 100",
-                            "title": "Physical Geology",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "100",
+                                    "key": "GEOL 100",
+                                    "title": "Physical Geology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "141",
-                            "key": "GEOL 141",
-                            "title": "Environmental Geology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "141",
+                                    "key": "GEOL 141",
+                                    "title": "Environmental Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -51,9 +67,9 @@
                             "number": "300",
                             "key": "GEOL 300",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -71,9 +87,9 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -83,7 +99,9 @@
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -95,9 +113,9 @@
                                     "number": "10",
                                     "key": "GEOL 10",
                                     "title": "Physical Geology",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -112,9 +130,9 @@
                                     "number": "10",
                                     "key": "ES 10",
                                     "title": "Introduction to Environmental Science",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Environmental Science",
@@ -122,9 +140,9 @@
                                     "number": "10L",
                                     "key": "ES 10L",
                                     "title": "Introduction to Environmental Science Lab",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -145,9 +163,9 @@
                             "number": "110",
                             "key": "ESCI 110",
                             "title": "Introduction to Earth Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -156,28 +174,44 @@
             {
                 "sending_name": "Cerro Coso Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "C101",
-                            "key": "GEOG C101",
-                            "title": "Physical Geography Lecture",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "C101",
+                                    "key": "GEOG C101",
+                                    "title": "Physical Geography Lecture",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Physical Science",
-                            "prefix": "PHSC",
-                            "number": "C101",
-                            "key": "PHSC C101",
-                            "title": "General Earth Sciences Lecture",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Physical Science",
+                                    "prefix": "PHSC",
+                                    "number": "C101",
+                                    "key": "PHSC C101",
+                                    "title": "General Earth Sciences Lecture",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -195,9 +229,9 @@
                             "number": "120",
                             "key": "ESCI 120",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -215,9 +249,9 @@
                             "number": "10",
                             "key": "GEOL 10",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -235,9 +269,9 @@
                             "number": "10",
                             "key": "GEOL 10",
                             "title": "Introduction to Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -255,9 +289,9 @@
                             "number": "100",
                             "key": "GEOLOGY 100",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -275,9 +309,9 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -295,9 +329,9 @@
                             "number": "001",
                             "key": "GEOL 001",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -315,9 +349,9 @@
                             "number": "5",
                             "key": "ESC 5",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -335,9 +369,9 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -355,9 +389,9 @@
                             "number": "120",
                             "key": "GEOL 120",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -375,9 +409,9 @@
                             "number": "001",
                             "key": "G 001",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -386,28 +420,44 @@
             {
                 "sending_name": "Cosumnes River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "300",
-                            "key": "GEOG 300",
-                            "title": "Physical Geography: Exploring Earth's Environmental Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "300",
+                                    "key": "GEOG 300",
+                                    "title": "Physical Geography: Exploring Earth's Environmental Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "300",
-                            "key": "GEOL 300",
-                            "title": "Physical Geology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "300",
+                                    "key": "GEOL 300",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -425,9 +475,9 @@
                             "number": "10",
                             "key": "GEOL 10",
                             "title": "Introductory Geology",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -445,9 +495,9 @@
                             "number": "120",
                             "key": "GEOL 120",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -465,9 +515,9 @@
                             "number": "001",
                             "key": "EARTH 001",
                             "title": "Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -485,9 +535,9 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -505,9 +555,9 @@
                             "number": "102",
                             "key": "GEOL 102",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -516,28 +566,44 @@
             {
                 "sending_name": "Folsom Lake College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "300",
-                            "key": "GEOG 300",
-                            "title": "Physical Geography: Exploring Earth's Environmental Systems",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "300",
+                                    "key": "GEOG 300",
+                                    "title": "Physical Geography: Exploring Earth's Environmental Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "300",
-                            "key": "GEOL 300",
-                            "title": "Physical Geology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "300",
+                                    "key": "GEOL 300",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -555,9 +621,9 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -575,9 +641,9 @@
                             "number": "100 F",
                             "key": "ESC 100 F",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -595,9 +661,9 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -615,9 +681,9 @@
                             "number": "1",
                             "key": "GEL 1",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -635,9 +701,9 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -655,9 +721,9 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -675,9 +741,9 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -695,9 +761,9 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Introduction to Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -715,9 +781,9 @@
                             "number": "101H",
                             "key": "GEOL 101H",
                             "title": "Physical Geology (Honors)",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -735,9 +801,9 @@
                             "number": "161",
                             "key": "EASCI 161",
                             "title": "Introduction to Earth Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -755,9 +821,9 @@
                             "number": "M02",
                             "key": "GEOL M02",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -775,9 +841,9 @@
                             "number": "100",
                             "key": "GEOL- 100",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -795,9 +861,9 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Introduction to Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -815,9 +881,9 @@
                             "number": "150",
                             "key": "GEOL 150",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -835,9 +901,9 @@
                             "number": "1",
                             "key": "GEO 1",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -855,9 +921,9 @@
                             "number": "305",
                             "key": "GEOL 305",
                             "title": "Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -875,9 +941,9 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Introduction to Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -885,9 +951,9 @@
                             "number": "111",
                             "key": "GEOL 111",
                             "title": "Introduction to Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -905,9 +971,9 @@
                             "number": "104",
                             "key": "GEOL 104",
                             "title": "Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -925,9 +991,9 @@
                             "number": "104",
                             "key": "GEOL 104",
                             "title": "Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -945,9 +1011,9 @@
                             "number": "104",
                             "key": "GEOL 104",
                             "title": "Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -956,48 +1022,80 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Earth Science",
-                            "prefix": "ERTH",
-                            "number": "110",
-                            "key": "ERTH 110",
-                            "title": "Planet Earth: Introduction to Earth Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth Science",
+                                    "prefix": "ERTH",
+                                    "number": "110",
+                                    "key": "ERTH 110",
+                                    "title": "Planet Earth: Introduction to Earth Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Earth Science",
-                            "prefix": "ERTH",
-                            "number": "110H",
-                            "key": "ERTH 110H",
-                            "title": "Honors Planet Earth: Introduction to Earth Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth Science",
+                                    "prefix": "ERTH",
+                                    "number": "110H",
+                                    "key": "ERTH 110H",
+                                    "title": "Honors Planet Earth: Introduction to Earth Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "101",
-                            "key": "GEOL 101",
-                            "title": "Dynamic Earth: Introduction to Geology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "101",
+                                    "key": "GEOL 101",
+                                    "title": "Dynamic Earth: Introduction to Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Earth Science",
-                            "prefix": "ERTH",
-                            "number": "115",
-                            "key": "ERTH 115",
-                            "title": "Earth Science for Educators",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth Science",
+                                    "prefix": "ERTH",
+                                    "number": "115",
+                                    "key": "ERTH 115",
+                                    "title": "Earth Science for Educators",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1015,9 +1113,9 @@
                             "number": "111",
                             "key": "ERTH 111",
                             "title": "Dynamic Earth-Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1035,9 +1133,9 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "The Earth",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1046,28 +1144,44 @@
             {
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Earth Sciences",
-                            "prefix": "ERTH",
-                            "number": "120",
-                            "key": "ERTH 120",
-                            "title": "Earth Sciences",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth Sciences",
+                                    "prefix": "ERTH",
+                                    "number": "120",
+                                    "key": "ERTH 120",
+                                    "title": "Earth Sciences",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Earth Sciences",
-                            "prefix": "ERTH",
-                            "number": "100",
-                            "key": "ERTH 100",
-                            "title": "Physical Geology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth Sciences",
+                                    "prefix": "ERTH",
+                                    "number": "100",
+                                    "key": "ERTH 100",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1085,9 +1199,9 @@
                             "number": "1",
                             "key": "ESCI 1",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1105,9 +1219,9 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "Survey of Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1125,9 +1239,9 @@
                             "number": "001",
                             "key": "GEOL 001",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1145,9 +1259,9 @@
                             "number": "104",
                             "key": "GEOL 104",
                             "title": "Introduction to Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1165,9 +1279,9 @@
                             "number": "V02",
                             "key": "GEOL V02",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1185,9 +1299,9 @@
                             "number": "001",
                             "key": "GEOG 001",
                             "title": "Physical Geography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1217,9 +1331,9 @@
                             "number": "112",
                             "key": "PHSC 112",
                             "title": "Earth and the Universe",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1237,9 +1351,9 @@
                             "number": "310",
                             "key": "GEOL 310",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1257,9 +1371,9 @@
                             "number": "102",
                             "key": "GEOL 102",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1277,9 +1391,9 @@
                             "number": "201",
                             "key": "GEOL 201",
                             "title": "Earth History",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1297,9 +1411,9 @@
                             "number": "121",
                             "key": "ESCI 121",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1317,9 +1431,9 @@
                             "number": "11",
                             "key": "GEOL 11",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1337,9 +1451,9 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1357,9 +1471,9 @@
                             "number": "102",
                             "key": "GEOLOGY 102",
                             "title": "Earth History & The Fossil Record",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1377,9 +1491,9 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Historical Geology with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1397,9 +1511,9 @@
                             "number": "103 C",
                             "key": "GEOL 103 C",
                             "title": "Our Evolving Earth",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1417,9 +1531,9 @@
                             "number": "121",
                             "key": "GEOL 121",
                             "title": "Earth and Life Through Time",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1437,9 +1551,9 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "History of Planet Earth",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1457,9 +1571,9 @@
                             "number": "104",
                             "key": "GEOL 104",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1477,9 +1591,9 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1497,9 +1611,9 @@
                             "number": "103 F",
                             "key": "ESC 103 F",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1517,9 +1631,9 @@
                             "number": "6",
                             "key": "GEL 6",
                             "title": "History of the Earth",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1528,28 +1642,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "2",
-                            "key": "GEOL 2",
-                            "title": "Historical Geology",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "2",
+                                    "key": "GEOL 2",
+                                    "title": "Historical Geology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "22",
-                            "key": "GEOL 22",
-                            "title": "Earth History",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "22",
+                                    "key": "GEOL 22",
+                                    "title": "Earth History",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1567,9 +1697,9 @@
                             "number": "103",
                             "key": "GEL 103",
                             "title": "History of the Earth and its Life",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1578,28 +1708,44 @@
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "3",
-                            "key": "GEOL 3",
-                            "title": "Historical Geology",
-                            "notes": [],
-                            "min_units": 4.5,
-                            "max_units": 4.5
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "3",
+                                    "key": "GEOL 3",
+                                    "title": "Historical Geology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "3H",
-                            "key": "GEOL 3H",
-                            "title": "Honors Historical Geology",
-                            "notes": [],
-                            "min_units": 4.5,
-                            "max_units": 4.5
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "3H",
+                                    "key": "GEOL 3H",
+                                    "title": "Honors Historical Geology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1617,9 +1763,9 @@
                             "number": "001",
                             "key": "EARTH 001",
                             "title": "Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1637,9 +1783,9 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1657,9 +1803,9 @@
                             "number": "M03",
                             "key": "GEOL M03",
                             "title": "Earth History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1677,9 +1823,9 @@
                             "number": "105",
                             "key": "GEOL- 105",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1697,9 +1843,9 @@
                             "number": "R114",
                             "key": "GEOL R114",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -1707,9 +1853,9 @@
                             "number": "R114L",
                             "key": "GEOL R114L",
                             "title": "Historical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1727,9 +1873,9 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1747,9 +1893,9 @@
                             "number": "1B",
                             "key": "GEO 1B",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1767,9 +1913,9 @@
                             "number": "310",
                             "key": "GEOL 310",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1787,9 +1933,9 @@
                             "number": "112",
                             "key": "GEOL 112",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1807,9 +1953,9 @@
                             "number": "201",
                             "key": "GEOL 201",
                             "title": "The Earth Through Time",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1827,9 +1973,9 @@
                             "number": "112",
                             "key": "ERTH 112",
                             "title": "History of the Earth",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1847,9 +1993,9 @@
                             "number": "111",
                             "key": "ERTH 111",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1867,9 +2013,9 @@
                             "number": "6",
                             "key": "ESCI 6",
                             "title": "Ancient Life",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1887,9 +2033,9 @@
                             "number": "3",
                             "key": "ESCI 3",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1907,9 +2053,9 @@
                             "number": "220",
                             "key": "GEOL 220",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1927,9 +2073,9 @@
                             "number": "V03",
                             "key": "GEOL V03",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1959,9 +2105,9 @@
                             "number": "10",
                             "key": "GEOG 10",
                             "title": "Living in a Hazardous Environment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2024,9 +2170,9 @@
                             "number": "10",
                             "key": "GEOL 10",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2035,28 +2181,44 @@
             {
                 "sending_name": "Cerro Coso Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Physical Science",
-                            "prefix": "PHSC",
-                            "number": "C105",
-                            "key": "PHSC C105",
-                            "title": "General Earth Sciences",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Physical Science",
+                                    "prefix": "PHSC",
+                                    "number": "C105",
+                                    "key": "PHSC C105",
+                                    "title": "General Earth Sciences",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "C111",
-                            "key": "GEOL C111",
-                            "title": "Physical Geology",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "C111",
+                                    "key": "GEOL C111",
+                                    "title": "Physical Geology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2074,9 +2236,9 @@
                             "number": "001",
                             "key": "GEOL 001",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2085,28 +2247,44 @@
             {
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "100",
-                            "key": "GEOL 100",
-                            "title": "Physical Geology",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "100",
+                                    "key": "GEOL 100",
+                                    "title": "Physical Geology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "100H",
-                            "key": "GEOL 100H",
-                            "title": "Physical Geology - Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "100H",
+                                    "key": "GEOL 100H",
+                                    "title": "Physical Geology - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2124,9 +2302,9 @@
                             "number": "100 C",
                             "key": "GEOL 100 C",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -2134,9 +2312,9 @@
                             "number": "101 C",
                             "key": "GEOL 101 C",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2154,9 +2332,9 @@
                             "number": "121",
                             "key": "GEOL 121",
                             "title": "Earth and Life Through Time",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -2164,9 +2342,9 @@
                             "number": "124",
                             "key": "GEOL 124",
                             "title": "Earth and Life Through Time Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2184,9 +2362,9 @@
                             "number": "012",
                             "key": "PHYSC 012",
                             "title": "Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2196,7 +2374,9 @@
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -2208,9 +2388,9 @@
                                     "number": "101",
                                     "key": "GEOL 101",
                                     "title": "Physical Geology",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Geology",
@@ -2218,9 +2398,9 @@
                                     "number": "111",
                                     "key": "GEOL 111",
                                     "title": "Physical Geology Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2235,9 +2415,9 @@
                                     "number": "101H",
                                     "key": "GEOL 101H",
                                     "title": "Honors Physical Geology",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Geology",
@@ -2245,9 +2425,9 @@
                                     "number": "111H",
                                     "key": "GEOL 111H",
                                     "title": "Honors Physical Geology Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2259,28 +2439,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "1",
-                            "key": "GEOL 1",
-                            "title": "Physical Geology",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "1",
+                                    "key": "GEOL 1",
+                                    "title": "Physical Geology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Earth Science",
-                            "prefix": "ERTH",
-                            "number": "20",
-                            "key": "ERTH 20",
-                            "title": "Introduction to Earth Science",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth Science",
+                                    "prefix": "ERTH",
+                                    "number": "20",
+                                    "key": "ERTH 20",
+                                    "title": "Introduction to Earth Science",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2298,9 +2494,9 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -2308,9 +2504,9 @@
                             "number": "2L",
                             "key": "GEOL 2L",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2328,9 +2524,9 @@
                             "number": "110",
                             "key": "GEOL 110",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -2338,9 +2534,9 @@
                             "number": "111",
                             "key": "GEOL 111",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2358,9 +2554,9 @@
                             "number": "R101",
                             "key": "GEOL R101",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2378,9 +2574,9 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -2388,9 +2584,9 @@
                             "number": "100L",
                             "key": "GEOL 100L",
                             "title": "Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2408,9 +2604,9 @@
                             "number": "300",
                             "key": "GEOL 300",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -2418,9 +2614,9 @@
                             "number": "301",
                             "key": "GEOL 301",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2438,9 +2634,9 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -2448,9 +2644,9 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2468,9 +2664,9 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -2478,9 +2674,9 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2498,9 +2694,9 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Geology",
@@ -2508,9 +2704,9 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2528,9 +2724,9 @@
                             "number": "111",
                             "key": "ERTH 111",
                             "title": "Dynamic Earth-Physical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Earth and Planetary Sciences",
@@ -2538,9 +2734,9 @@
                             "number": "111L",
                             "key": "ERTH 111L",
                             "title": "Dynamic Earth-Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2592,9 +2788,9 @@
                             "number": "105",
                             "key": "GEOL 105",
                             "title": "Earth and Life through Time",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2612,9 +2808,9 @@
                             "number": "150",
                             "key": "GEOL 150",
                             "title": "Dinosaurs and Earth History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

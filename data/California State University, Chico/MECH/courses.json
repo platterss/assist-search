@@ -13,7 +13,7 @@
                 "sending_name": "American River College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -30,9 +30,9 @@
                             "number": "2",
                             "key": "DFT 2",
                             "title": "Engineering Graphics I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -50,9 +50,9 @@
                             "number": "25",
                             "key": "ENGR 25",
                             "title": "Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -70,9 +70,9 @@
                             "number": "200",
                             "key": "ENGIN 200",
                             "title": "Engineering Design Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -90,12 +90,12 @@
                             "number": "120",
                             "key": "ENGIN 120",
                             "title": "Engineering Drawing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -113,9 +113,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -125,7 +125,7 @@
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -142,9 +142,9 @@
                             "number": "75",
                             "key": "CMA 75",
                             "title": "Engineering Drawing with SolidWorks",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -162,9 +162,9 @@
                             "number": "25",
                             "key": "WT 25",
                             "title": "SolidWorks Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -182,9 +182,9 @@
                             "number": "025",
                             "key": "ENGIN 025",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -202,9 +202,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -222,9 +222,9 @@
                             "number": "24",
                             "key": "ENGR 24",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -233,28 +233,44 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DFT",
-                            "number": "42",
-                            "key": "DFT 42",
-                            "title": "SolidWorks I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DFT",
+                                    "number": "42",
+                                    "key": "DFT 42",
+                                    "title": "SolidWorks I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENE",
-                            "number": "42",
-                            "key": "ENE 42",
-                            "title": "SolidWorks I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENE",
+                                    "number": "42",
+                                    "key": "ENE 42",
+                                    "title": "SolidWorks I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -272,9 +288,9 @@
                             "number": "R150",
                             "key": "ENGR R150",
                             "title": "Engineering Graphics and Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -292,9 +308,9 @@
                             "number": "006",
                             "key": "ENGR 006",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -303,28 +319,44 @@
             {
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Applied Technology",
-                            "prefix": "APTE",
-                            "number": "46",
-                            "key": "APTE 46",
-                            "title": "Introduction to Computer-Aided Drafting",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Applied Technology",
+                                    "prefix": "APTE",
+                                    "number": "46",
+                                    "key": "APTE 46",
+                                    "title": "Introduction to Computer-Aided Drafting",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "25",
-                            "key": "ENGR 25",
-                            "title": "Engineering Graphics and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "25",
+                                    "key": "ENGR 25",
+                                    "title": "Engineering Graphics and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -342,9 +374,9 @@
                             "number": "22",
                             "key": "ENGR 22",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -362,9 +394,9 @@
                             "number": "11",
                             "key": "ADVM 11",
                             "title": "Three-Dimensional Modeling",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -382,9 +414,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -394,7 +426,7 @@
                 "sending_name": "Ventura College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -415,7 +447,7 @@
                 "sending_name": "American River College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -432,9 +464,9 @@
                             "number": "2",
                             "key": "DFT 2",
                             "title": "Engineering Graphics I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -444,7 +476,7 @@
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -453,7 +485,7 @@
                 "sending_name": "Contra Costa College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -470,9 +502,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -482,7 +514,7 @@
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -499,9 +531,9 @@
                             "number": "75",
                             "key": "CMA 75",
                             "title": "Engineering Drawing with SolidWorks",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -519,9 +551,9 @@
                             "number": "25",
                             "key": "WT 25",
                             "title": "SolidWorks Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -539,9 +571,9 @@
                             "number": "025",
                             "key": "ENGIN 025",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -559,9 +591,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -579,9 +611,9 @@
                             "number": "210",
                             "key": "MFG 210",
                             "title": "Advanced CAD",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -590,28 +622,44 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DFT",
-                            "number": "42",
-                            "key": "DFT 42",
-                            "title": "SolidWorks I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DFT",
+                                    "number": "42",
+                                    "key": "DFT 42",
+                                    "title": "SolidWorks I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENE",
-                            "number": "42",
-                            "key": "ENE 42",
-                            "title": "SolidWorks I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENE",
+                                    "number": "42",
+                                    "key": "ENE 42",
+                                    "title": "SolidWorks I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -629,9 +677,9 @@
                             "number": "R150",
                             "key": "ENGR R150",
                             "title": "Engineering Graphics and Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -649,9 +697,9 @@
                             "number": "006",
                             "key": "ENGR 006",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -661,7 +709,7 @@
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -670,7 +718,7 @@
                 "sending_name": "Shasta College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -687,9 +735,9 @@
                             "number": "11",
                             "key": "ADVM 11",
                             "title": "Three-Dimensional Modeling",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -699,7 +747,7 @@
                 "sending_name": "Ventura College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -720,7 +768,7 @@
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -737,12 +785,12 @@
                             "number": "1",
                             "key": "ENGR 1",
                             "title": "Introduction to Engineering",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -752,7 +800,7 @@
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -761,7 +809,7 @@
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -770,7 +818,7 @@
                 "sending_name": "Oxnard College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -799,9 +847,9 @@
                             "number": "8",
                             "key": "DFT 8",
                             "title": "Engineering Graphics II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -811,7 +859,7 @@
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -820,7 +868,7 @@
                 "sending_name": "Contra Costa College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -829,7 +877,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -838,7 +886,7 @@
                 "sending_name": "Norco College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -847,7 +895,7 @@
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -856,7 +904,7 @@
                 "sending_name": "Shasta College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -873,9 +921,9 @@
                             "number": "2",
                             "key": "ADVM 2",
                             "title": "Technical Drafting II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Advanced Manufacturing",
@@ -883,9 +931,9 @@
                             "number": "12",
                             "key": "ADVM 12",
                             "title": "Geometric Dimensioning and Tolerancing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -915,12 +963,12 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Programming and Problem-Solving in MATLAB",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -938,9 +986,9 @@
                             "number": "30",
                             "key": "ENGR 30",
                             "title": "Computer Applications in Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -958,12 +1006,12 @@
                             "number": "005",
                             "key": "MAT 005",
                             "title": "Programming and Problem-Solving in MATLAB",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -981,9 +1029,9 @@
                             "number": "183",
                             "key": "ENGR- 183",
                             "title": "Programming with MATLAB for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1001,12 +1049,12 @@
                             "number": "R148",
                             "key": "ENGR R148",
                             "title": "Programming and Problem-Solving in MATLAB",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Mathematics",
@@ -1014,12 +1062,12 @@
                             "number": "R148",
                             "key": "MATH R148",
                             "title": "Programming and Problem-Solving in MATLAB",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1037,9 +1085,9 @@
                             "number": "008",
                             "key": "ENGR 008",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1069,9 +1117,9 @@
                             "number": "161",
                             "key": "ENGR 161",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1089,9 +1137,9 @@
                             "number": "412",
                             "key": "ENGR 412",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1109,9 +1157,9 @@
                             "number": "130",
                             "key": "ENGR 130",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1129,9 +1177,9 @@
                             "number": "B45",
                             "key": "ENGR B45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1149,9 +1197,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1169,9 +1217,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1189,9 +1237,9 @@
                             "number": "270",
                             "key": "ENGR 270",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1209,9 +1257,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 4.5,
-                            "max_units": 4.5
+                            "max_units": 4.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1229,9 +1277,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1249,9 +1297,9 @@
                             "number": "45",
                             "key": "ENGN 45",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1269,9 +1317,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1289,9 +1337,9 @@
                             "number": "245",
                             "key": "ENGG 245",
                             "title": "Engineering Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1309,9 +1357,9 @@
                             "number": "270",
                             "key": "ENGR 270",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1329,9 +1377,9 @@
                             "number": "151",
                             "key": "ENGR 151",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1349,9 +1397,9 @@
                             "number": "003",
                             "key": "ENGR 003",
                             "title": "Materials Sci & Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1369,9 +1417,9 @@
                             "number": "240",
                             "key": "ENGIN 240",
                             "title": "Properties of Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1389,9 +1437,9 @@
                             "number": "412",
                             "key": "ENGR 412",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1409,9 +1457,9 @@
                             "number": "246",
                             "key": "ENGR 246",
                             "title": "Materials Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1429,9 +1477,9 @@
                             "number": "260",
                             "key": "ENGR 260",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1449,12 +1497,12 @@
                             "number": "240",
                             "key": "ENGIN 240",
                             "title": "Properties of Engineering Materials",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1472,9 +1520,9 @@
                             "number": "151",
                             "key": "ENG GEN 151",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1483,28 +1531,44 @@
             {
                 "sending_name": "Evergreen Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "066",
-                            "key": "ENGR 066",
-                            "title": "Properties of Materials",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "066",
+                                    "key": "ENGR 066",
+                                    "title": "Properties of Materials",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "066A",
-                            "key": "ENGR 066A",
-                            "title": "Introduction to Materials",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "066A",
+                                    "key": "ENGR 066A",
+                                    "title": "Introduction to Materials",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1522,9 +1586,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1542,9 +1606,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1562,9 +1626,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1582,9 +1646,9 @@
                             "number": "140",
                             "key": "ENGR 140",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1602,9 +1666,9 @@
                             "number": "4",
                             "key": "EGN 4",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1622,9 +1686,9 @@
                             "number": "54",
                             "key": "ENGR 54",
                             "title": "Principles of Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1642,9 +1706,9 @@
                             "number": "45",
                             "key": "ENGIN 45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1662,9 +1726,9 @@
                             "number": "46",
                             "key": "ENGR 46",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1682,9 +1746,9 @@
                             "number": "151",
                             "key": "ENG GEN 151",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1702,9 +1766,9 @@
                             "number": "151",
                             "key": "ENG GEN 151",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1722,9 +1786,9 @@
                             "number": "151",
                             "key": "ENG GEN 151",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1742,9 +1806,9 @@
                             "number": "030",
                             "key": "ENGIN 030",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1762,9 +1826,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1782,9 +1846,9 @@
                             "number": "-45",
                             "key": "ENGR -45",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1802,9 +1866,9 @@
                             "number": "026",
                             "key": "EGR 026",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1822,9 +1886,9 @@
                             "number": "130",
                             "key": "ENGR 130",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1842,9 +1906,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1862,9 +1926,9 @@
                             "number": "M12",
                             "key": "ENGR M12",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1882,9 +1946,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1902,9 +1966,9 @@
                             "number": "240",
                             "key": "ENGI 240",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1922,9 +1986,9 @@
                             "number": "40",
                             "key": "ENE 40",
                             "title": "Material Science and Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1942,9 +2006,9 @@
                             "number": "140",
                             "key": "ENGI 140",
                             "title": "Materials Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1962,9 +2026,9 @@
                             "number": "A210",
                             "key": "ENGR A210",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1982,9 +2046,9 @@
                             "number": "R140",
                             "key": "ENGR R140",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2002,9 +2066,9 @@
                             "number": "245",
                             "key": "ENGR 245",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2022,9 +2086,9 @@
                             "number": "014",
                             "key": "ENGR 014",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2042,9 +2106,9 @@
                             "number": "P140",
                             "key": "ENGR P140",
                             "title": "Material Science and Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2062,9 +2126,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2082,9 +2146,9 @@
                             "number": "141",
                             "key": "ENGR 141",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2102,9 +2166,9 @@
                             "number": "412",
                             "key": "ENGR 412",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2122,9 +2186,9 @@
                             "number": "210",
                             "key": "ENGE 210",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2142,9 +2206,9 @@
                             "number": "210",
                             "key": "ENGE 210",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2162,9 +2226,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2182,9 +2246,9 @@
                             "number": "038",
                             "key": "ENGR 038",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2202,9 +2266,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2222,9 +2286,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2242,9 +2306,9 @@
                             "number": "140B",
                             "key": "ENGR 140B",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2262,9 +2326,9 @@
                             "number": "270",
                             "key": "ENGR 270",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2282,9 +2346,9 @@
                             "number": "045",
                             "key": "ENGR 045",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2302,9 +2366,9 @@
                             "number": "260",
                             "key": "ENGR 260",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2322,9 +2386,9 @@
                             "number": "2300",
                             "key": "ENGR 2300",
                             "title": "Materials Science and Engineering with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2342,9 +2406,9 @@
                             "number": "V18",
                             "key": "ENGR V18",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2374,9 +2438,9 @@
                             "number": "162",
                             "key": "ENGR 162",
                             "title": "Materials Science Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2394,9 +2458,9 @@
                             "number": "412",
                             "key": "ENGR 412",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2414,9 +2478,9 @@
                             "number": "130",
                             "key": "ENGR 130",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2434,9 +2498,9 @@
                             "number": "B45",
                             "key": "ENGR B45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2454,9 +2518,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2474,9 +2538,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2494,9 +2558,9 @@
                             "number": "270",
                             "key": "ENGR 270",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2514,9 +2578,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 4.5,
-                            "max_units": 4.5
+                            "max_units": 4.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2534,9 +2598,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2554,9 +2618,9 @@
                             "number": "245",
                             "key": "ENGG 245",
                             "title": "Engineering Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2574,9 +2638,9 @@
                             "number": "270",
                             "key": "ENGR 270",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2594,9 +2658,9 @@
                             "number": "151L",
                             "key": "ENGR 151L",
                             "title": "Materials of Engineering Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2614,9 +2678,9 @@
                             "number": "003",
                             "key": "ENGR 003",
                             "title": "Materials Sci & Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2634,9 +2698,9 @@
                             "number": "240",
                             "key": "ENGIN 240",
                             "title": "Properties of Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2654,9 +2718,9 @@
                             "number": "412",
                             "key": "ENGR 412",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2674,9 +2738,9 @@
                             "number": "246L",
                             "key": "ENGR 246L",
                             "title": "Materials Engineering Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2694,9 +2758,9 @@
                             "number": "240",
                             "key": "ENGIN 240",
                             "title": "Properties of Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2714,9 +2778,9 @@
                             "number": "066L",
                             "key": "ENGR 066L",
                             "title": "Introduction to Materials Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2734,9 +2798,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2754,9 +2818,9 @@
                             "number": "4L",
                             "key": "ENGR 4L",
                             "title": "Engineering Materials Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2774,9 +2838,9 @@
                             "number": "141",
                             "key": "ENGR 141",
                             "title": "Materials Science and Engineering Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2794,9 +2858,9 @@
                             "number": "4",
                             "key": "EGN 4",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2814,9 +2878,9 @@
                             "number": "45",
                             "key": "ENGIN 45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2834,9 +2898,9 @@
                             "number": "46",
                             "key": "ENGR 46",
                             "title": "Materials of Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2854,9 +2918,9 @@
                             "number": "030",
                             "key": "ENGIN 030",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2874,9 +2938,9 @@
                             "number": "4L",
                             "key": "ENGR 4L",
                             "title": "Engineering Materials Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2894,9 +2958,9 @@
                             "number": "-45",
                             "key": "ENGR -45",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2914,9 +2978,9 @@
                             "number": "026",
                             "key": "EGR 026",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2934,9 +2998,9 @@
                             "number": "130",
                             "key": "ENGR 130",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2954,9 +3018,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2974,9 +3038,9 @@
                             "number": "M12L",
                             "key": "ENGR M12L",
                             "title": "Engineering Materials Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2994,9 +3058,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3014,9 +3078,9 @@
                             "number": "240",
                             "key": "ENGI 240",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3034,9 +3098,9 @@
                             "number": "40",
                             "key": "ENE 40",
                             "title": "Material Science and Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3054,9 +3118,9 @@
                             "number": "140",
                             "key": "ENGI 140",
                             "title": "Materials Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3074,9 +3138,9 @@
                             "number": "R140L",
                             "key": "ENGR R140L",
                             "title": "Materials Science and Engineering Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3094,9 +3158,9 @@
                             "number": "245",
                             "key": "ENGR 245",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3114,9 +3178,9 @@
                             "number": "P140L",
                             "key": "ENGR P140L",
                             "title": "Material Science and Engineering Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3134,9 +3198,9 @@
                             "number": "4L",
                             "key": "ENGR 4L",
                             "title": "Engineering Materials Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3154,9 +3218,9 @@
                             "number": "141L",
                             "key": "ENGR 141L",
                             "title": "Materials Science and Engineering Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3174,9 +3238,9 @@
                             "number": "412",
                             "key": "ENGR 412",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3194,9 +3258,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3214,9 +3278,9 @@
                             "number": "038L",
                             "key": "ENGR 038L",
                             "title": "Materials Science and Engineering Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3234,9 +3298,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3254,9 +3318,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3274,9 +3338,9 @@
                             "number": "140B",
                             "key": "ENGR 140B",
                             "title": "Materials Science and Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3294,9 +3358,9 @@
                             "number": "270",
                             "key": "ENGR 270",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3314,9 +3378,9 @@
                             "number": "045",
                             "key": "ENGR 045",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3334,9 +3398,9 @@
                             "number": "261",
                             "key": "ENGR 261",
                             "title": "Materials Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3354,9 +3418,9 @@
                             "number": "2300",
                             "key": "ENGR 2300",
                             "title": "Materials Science and Engineering with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3374,9 +3438,9 @@
                             "number": "V18L",
                             "key": "ENGR V18L",
                             "title": "Engineering Materials Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

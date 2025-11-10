@@ -21,9 +21,9 @@
                             "number": "101",
                             "key": "THEA 101",
                             "title": "Applied Professional Acting 1",
-                            "notes": [],
                             "min_units": 10.0,
-                            "max_units": 10.0
+                            "max_units": 10.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "16C",
                             "key": "THTR 16C",
                             "title": "Intermediate Dramatic Writing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -61,9 +61,9 @@
                             "number": "214",
                             "key": "DRA 214",
                             "title": "Script Analysis",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -81,9 +81,9 @@
                             "number": "101",
                             "key": "THTR 101",
                             "title": "Introduction to Narrative Theory",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -113,9 +113,9 @@
                             "number": "104",
                             "key": "DRMA 104",
                             "title": "Acting 1",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -133,9 +133,9 @@
                             "number": "350",
                             "key": "TA 350",
                             "title": "Theory and Techniques of Acting 1",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -153,9 +153,9 @@
                             "number": "B2A",
                             "key": "THEA B2A",
                             "title": "Elements of Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -173,9 +173,9 @@
                             "number": "1",
                             "key": "TART 1",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -193,9 +193,9 @@
                             "number": "8",
                             "key": "DRAM 8",
                             "title": "Principles of Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -213,9 +213,9 @@
                             "number": "10A",
                             "key": "TA 10A",
                             "title": "Basic Acting Techniques",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -233,9 +233,9 @@
                             "number": "200",
                             "key": "DRAM 200",
                             "title": "Acting I: Acting for the Stage and the Camera",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -253,9 +253,9 @@
                             "number": "110",
                             "key": "TH 110",
                             "title": "Fundamentals of Acting",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -264,28 +264,44 @@
             {
                 "sending_name": "Chabot College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Theater Arts",
-                            "prefix": "THTR",
-                            "number": "1",
-                            "key": "THTR 1",
-                            "title": "Introduction to Acting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theater Arts",
+                                    "prefix": "THTR",
+                                    "number": "1",
+                                    "key": "THTR 1",
+                                    "title": "Introduction to Acting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Theater Arts",
-                            "prefix": "THTR",
-                            "number": "2A",
-                            "key": "THTR 2A",
-                            "title": "Intermediate Acting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theater Arts",
+                                    "prefix": "THTR",
+                                    "number": "2A",
+                                    "key": "THTR 2A",
+                                    "title": "Intermediate Acting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -303,9 +319,9 @@
                             "number": "10",
                             "key": "THEATRE 10",
                             "title": "Principle of Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -323,9 +339,9 @@
                             "number": "201",
                             "key": "THEA 201",
                             "title": "Stage Acting I - Beginning",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -343,9 +359,9 @@
                             "number": "150A",
                             "key": "TH A 150A",
                             "title": "Beginning Acting Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -363,9 +379,9 @@
                             "number": "014",
                             "key": "PA 014",
                             "title": "Fundamentals of Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -383,9 +399,9 @@
                             "number": "C106",
                             "key": "THEA C106",
                             "title": "Acting Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -403,9 +419,9 @@
                             "number": "30A",
                             "key": "DRAMA 30A",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -423,9 +439,9 @@
                             "number": "002",
                             "key": "DRAM 002",
                             "title": "Fundamentals of Acting 1",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -443,9 +459,9 @@
                             "number": "1100",
                             "key": "THEA 1100",
                             "title": "Principles of Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -463,9 +479,9 @@
                             "number": "42",
                             "key": "DRAMA 42",
                             "title": "Acting Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -483,9 +499,9 @@
                             "number": "114",
                             "key": "THEA 114",
                             "title": "Fundamentals of Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -503,9 +519,9 @@
                             "number": "350",
                             "key": "TA 350",
                             "title": "Theory and Techniques of Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -514,28 +530,44 @@
             {
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Theatre Arts",
-                            "prefix": "THART",
-                            "number": "120",
-                            "key": "THART 120",
-                            "title": "Beginning Acting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theatre Arts",
+                                    "prefix": "THART",
+                                    "number": "120",
+                                    "key": "THART 120",
+                                    "title": "Beginning Acting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Theatre Arts",
-                            "prefix": "THART",
-                            "number": "220",
-                            "key": "THART 220",
-                            "title": "Intermediate Acting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theatre Arts",
+                                    "prefix": "THART",
+                                    "number": "220",
+                                    "key": "THART 220",
+                                    "title": "Intermediate Acting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -553,9 +585,9 @@
                             "number": "200",
                             "key": "DRA 200",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -573,9 +605,9 @@
                             "number": "120 C",
                             "key": "THEA 120 C",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -593,9 +625,9 @@
                             "number": "20A",
                             "key": "THEA 20A",
                             "title": "Theory and Technique of Acting (Introduction)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Theater Arts",
@@ -603,9 +635,9 @@
                             "number": "20B",
                             "key": "THEA 20B",
                             "title": "Theory and Technique of Acting (Modern Period)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -623,9 +655,9 @@
                             "number": "122",
                             "key": "DRAMA 122",
                             "title": "Basic Principles of Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -643,9 +675,9 @@
                             "number": "270",
                             "key": "THEATER 270",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -663,9 +695,9 @@
                             "number": "114",
                             "key": "THEA 114",
                             "title": "Fundamentals of Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -683,9 +715,9 @@
                             "number": "105",
                             "key": "THEA 105",
                             "title": "Introduction to Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -703,9 +735,9 @@
                             "number": "41",
                             "key": "TA 41",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -723,9 +755,9 @@
                             "number": "G106",
                             "key": "THEA G106",
                             "title": "Acting 1",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -734,38 +766,62 @@
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Theater Arts",
-                            "prefix": "THTR",
-                            "number": "130",
-                            "key": "THTR 130",
-                            "title": "Acting I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theater Arts",
+                                    "prefix": "THTR",
+                                    "number": "130",
+                                    "key": "THTR 130",
+                                    "title": "Acting I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Theater Arts",
-                            "prefix": "THTR",
-                            "number": "131",
-                            "key": "THTR 131",
-                            "title": "Acting II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theater Arts",
+                                    "prefix": "THTR",
+                                    "number": "131",
+                                    "key": "THTR 131",
+                                    "title": "Acting II",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Theater Arts",
-                            "prefix": "THTR",
-                            "number": "230",
-                            "key": "THTR 230",
-                            "title": "Acting III",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theater Arts",
+                                    "prefix": "THTR",
+                                    "number": "230",
+                                    "key": "THTR 230",
+                                    "title": "Acting III",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -783,9 +839,9 @@
                             "number": "10",
                             "key": "TAC 10",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -803,9 +859,9 @@
                             "number": "1",
                             "key": "TA 1",
                             "title": "Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -823,9 +879,9 @@
                             "number": "105A",
                             "key": "THE 105A",
                             "title": "Introduction to Acting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -834,28 +890,44 @@
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Theater Arts",
-                            "prefix": "THEA",
-                            "number": "1A",
-                            "key": "THEA 1A",
-                            "title": "Theory/Practice of Acting I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theater Arts",
+                                    "prefix": "THEA",
+                                    "number": "1A",
+                                    "key": "THEA 1A",
+                                    "title": "Theory/Practice of Acting I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Theater Arts",
-                            "prefix": "THEA",
-                            "number": "1B",
-                            "key": "THEA 1B",
-                            "title": "Theory/Practice of Acting II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theater Arts",
+                                    "prefix": "THEA",
+                                    "number": "1B",
+                                    "key": "THEA 1B",
+                                    "title": "Theory/Practice of Acting II",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -873,9 +945,9 @@
                             "number": "1",
                             "key": "TART 1",
                             "title": "Acting 1 - Introduction to Acting",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -893,9 +965,9 @@
                             "number": "270",
                             "key": "THEATER 270",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -913,9 +985,9 @@
                             "number": "270",
                             "key": "THEATER 270",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -933,9 +1005,9 @@
                             "number": "270",
                             "key": "THEATER 270",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -953,9 +1025,9 @@
                             "number": "270",
                             "key": "THEATER 270",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -973,9 +1045,9 @@
                             "number": "270",
                             "key": "THEATER 270",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -984,28 +1056,44 @@
             {
                 "sending_name": "Los Medanos College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drama",
-                            "prefix": "DRAMA",
-                            "number": "020",
-                            "key": "DRAMA 020",
-                            "title": "Principles of Acting I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drama",
+                                    "prefix": "DRAMA",
+                                    "number": "020",
+                                    "key": "DRAMA 020",
+                                    "title": "Principles of Acting I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drama",
-                            "prefix": "DRAMA",
-                            "number": "050",
-                            "key": "DRAMA 050",
-                            "title": "Theatrical Production I: Beginning Acting for Performance",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drama",
+                                    "prefix": "DRAMA",
+                                    "number": "050",
+                                    "key": "DRAMA 050",
+                                    "title": "Theatrical Production I: Beginning Acting for Performance",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1023,9 +1111,9 @@
                             "number": "210B",
                             "key": "THE 210B",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1043,9 +1131,9 @@
                             "number": "-10",
                             "key": "THTR -10",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1063,9 +1151,9 @@
                             "number": "130",
                             "key": "DRAM 130",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1083,9 +1171,9 @@
                             "number": "160",
                             "key": "THETR 160",
                             "title": "Fundamentals of Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1103,9 +1191,9 @@
                             "number": "11",
                             "key": "THTR 11",
                             "title": "Principles of Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1123,9 +1211,9 @@
                             "number": "110",
                             "key": "THEA 110",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1143,9 +1231,9 @@
                             "number": "A106",
                             "key": "THEA A106",
                             "title": "Acting Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1163,9 +1251,9 @@
                             "number": "115",
                             "key": "TA 115",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1183,9 +1271,9 @@
                             "number": "002A",
                             "key": "THRT 002A",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1203,9 +1291,9 @@
                             "number": "110",
                             "key": "THTR 110",
                             "title": "Principles of Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1223,9 +1311,9 @@
                             "number": "350",
                             "key": "TA 350",
                             "title": "Theory and Techniques of Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1243,9 +1331,9 @@
                             "number": "1",
                             "key": "TA 1",
                             "title": "Fundamentals of Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1263,9 +1351,9 @@
                             "number": "120",
                             "key": "THART 120",
                             "title": "Acting Fundamentals I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1283,9 +1371,9 @@
                             "number": "132",
                             "key": "DRAM 132",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1303,9 +1391,9 @@
                             "number": "132",
                             "key": "DRAM 132",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1323,9 +1411,9 @@
                             "number": "31",
                             "key": "DRAMA 31",
                             "title": "Acting I: Introduction to Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1343,9 +1431,9 @@
                             "number": "110",
                             "key": "THEA 110",
                             "title": "Acting Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1354,28 +1442,44 @@
             {
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Theater Arts",
-                            "prefix": "TA",
-                            "number": "111",
-                            "key": "TA 111",
-                            "title": "Beginning Acting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theater Arts",
+                                    "prefix": "TA",
+                                    "number": "111",
+                                    "key": "TA 111",
+                                    "title": "Beginning Acting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Theater Arts",
-                            "prefix": "TA",
-                            "number": "112",
-                            "key": "TA 112",
-                            "title": "Intermediate Acting A",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theater Arts",
+                                    "prefix": "TA",
+                                    "number": "112",
+                                    "key": "TA 112",
+                                    "title": "Intermediate Acting A",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1393,9 +1497,9 @@
                             "number": "10A",
                             "key": "THAR 10A",
                             "title": "Introduction to Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1413,9 +1517,9 @@
                             "number": "110",
                             "key": "THEA 110",
                             "title": "Acting Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1433,9 +1537,9 @@
                             "number": "12",
                             "key": "THTR 12",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1453,9 +1557,9 @@
                             "number": "10A",
                             "key": "THEA 10A",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1473,9 +1577,9 @@
                             "number": "001",
                             "key": "THEA 001",
                             "title": "Acting 1",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1493,9 +1597,9 @@
                             "number": "110",
                             "key": "TA 110",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1513,9 +1617,9 @@
                             "number": "V02A",
                             "key": "THA V02A",
                             "title": "Acting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1533,9 +1637,9 @@
                             "number": "106",
                             "key": "TA 106",
                             "title": "Beginning Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1565,9 +1669,9 @@
                             "number": "11",
                             "key": "TA 11",
                             "title": "Voice and Diction for the Theatre",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1585,9 +1689,9 @@
                             "number": "7",
                             "key": "THTR 7",
                             "title": "Voice for the Actor",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1605,9 +1709,9 @@
                             "number": "30B",
                             "key": "DRAMA 30B",
                             "title": "Acting II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1625,9 +1729,9 @@
                             "number": "315",
                             "key": "RTVF 315",
                             "title": "Voice and Diction for Broadcasting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1645,9 +1749,9 @@
                             "number": "110",
                             "key": "THART 110",
                             "title": "Voice and Diction",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1665,9 +1769,9 @@
                             "number": "129 C",
                             "key": "THEA 129 C",
                             "title": "Voice and Diction",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1685,9 +1789,9 @@
                             "number": "240",
                             "key": "THEATER 240",
                             "title": "Voice and Articulation for the Theater",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1696,28 +1800,44 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Theatre Arts",
-                            "prefix": "TA",
-                            "number": "12",
-                            "key": "TA 12",
-                            "title": "Fundamentals of Oral Interpretation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theatre Arts",
+                                    "prefix": "TA",
+                                    "number": "12",
+                                    "key": "TA 12",
+                                    "title": "Fundamentals of Oral Interpretation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Theatre Arts",
-                            "prefix": "TA",
-                            "number": "46",
-                            "key": "TA 46",
-                            "title": "Voice for the Actor",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theatre Arts",
+                                    "prefix": "TA",
+                                    "number": "46",
+                                    "key": "TA 46",
+                                    "title": "Voice for the Actor",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1735,9 +1855,9 @@
                             "number": "129 F",
                             "key": "THEA 129 F",
                             "title": "Voice for the Actor",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1755,9 +1875,9 @@
                             "number": "106A",
                             "key": "THE 106A",
                             "title": "Voice and Diction for the Stage",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1775,9 +1895,9 @@
                             "number": "240",
                             "key": "THEATER 240",
                             "title": "Voice and Articulation for the Theater",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1795,9 +1915,9 @@
                             "number": "240",
                             "key": "THEATER 240",
                             "title": "Voice and Articulation for the Theater",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1815,9 +1935,9 @@
                             "number": "022",
                             "key": "DRAMA 022",
                             "title": "Principles of Voice for Acting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1835,9 +1955,9 @@
                             "number": "110",
                             "key": "DRAM 110",
                             "title": "Voice and Diction",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1855,9 +1975,9 @@
                             "number": "3",
                             "key": "SPCH 3",
                             "title": "Voice and Diction",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1875,9 +1995,9 @@
                             "number": "A200",
                             "key": "THEA A200",
                             "title": "Voice and Articulation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1895,9 +2015,9 @@
                             "number": "003",
                             "key": "SPCH 003",
                             "title": "Voice and Diction",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1915,9 +2035,9 @@
                             "number": "35",
                             "key": "TA 35",
                             "title": "Voice and Diction",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1935,9 +2055,9 @@
                             "number": "110",
                             "key": "THART 110",
                             "title": "Voice and Diction for Actors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1955,9 +2075,9 @@
                             "number": "114",
                             "key": "TA 114",
                             "title": "Voice and Diction",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1987,9 +2107,9 @@
                             "number": "437",
                             "key": "TA 437",
                             "title": "Stage Make-up I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2007,9 +2127,9 @@
                             "number": "33",
                             "key": "TA 33",
                             "title": "Makeup and Masks",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2027,9 +2147,9 @@
                             "number": "123",
                             "key": "TH 123",
                             "title": "Stage Make-Up",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2047,9 +2167,9 @@
                             "number": "1150",
                             "key": "THEA 1150",
                             "title": "Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2067,9 +2187,9 @@
                             "number": "147 C",
                             "key": "THEA 147 C",
                             "title": "Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2087,9 +2207,9 @@
                             "number": "188",
                             "key": "THEA 188",
                             "title": "Fundamentals of Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2107,9 +2227,9 @@
                             "number": "28",
                             "key": "TA 28",
                             "title": "Introduction to Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2127,9 +2247,9 @@
                             "number": "172 F",
                             "key": "THEA 172 F",
                             "title": "Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2147,9 +2267,9 @@
                             "number": "49",
                             "key": "TA 49",
                             "title": "Stage Makeup Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2167,9 +2287,9 @@
                             "number": "450",
                             "key": "THEATER 450",
                             "title": "Beginning Stage Make-up",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2187,9 +2307,9 @@
                             "number": "25",
                             "key": "THEA 25",
                             "title": "Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2207,9 +2327,9 @@
                             "number": "16",
                             "key": "THTR 16",
                             "title": "Theatrical Make-Up",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2227,9 +2347,9 @@
                             "number": "122",
                             "key": "THA- 122",
                             "title": "Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2247,9 +2367,9 @@
                             "number": "109",
                             "key": "TA 109",
                             "title": "Introduction to Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2267,9 +2387,9 @@
                             "number": "437",
                             "key": "TA 437",
                             "title": "Stage Make-up I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2287,9 +2407,9 @@
                             "number": "43",
                             "key": "TA 43",
                             "title": "Stage Make-Up",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2307,9 +2427,9 @@
                             "number": "165",
                             "key": "THART 165",
                             "title": "Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2327,9 +2447,9 @@
                             "number": "124",
                             "key": "DRAM 124",
                             "title": "Makeup for the Stage",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2347,9 +2467,9 @@
                             "number": "124",
                             "key": "DRAM 124",
                             "title": "Makeup for the Stage",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2367,9 +2487,9 @@
                             "number": "15A",
                             "key": "DRAMA 15A",
                             "title": "Makeup for the Theatre",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2387,9 +2507,9 @@
                             "number": "136",
                             "key": "TA 136",
                             "title": "Theatrical Makeup Techniques",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2407,9 +2527,9 @@
                             "number": "22",
                             "key": "THAR 22",
                             "title": "Theatrical Makeup Design for Stage and Screen",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2427,9 +2547,9 @@
                             "number": "34",
                             "key": "THTR 34",
                             "title": "Makeup",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2447,9 +2567,9 @@
                             "number": "17",
                             "key": "THEA 17",
                             "title": "Stage Makeup",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2467,9 +2587,9 @@
                             "number": "V06A",
                             "key": "THA V06A",
                             "title": "Make-Up I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2510,9 +2630,9 @@
                             "number": "420",
                             "key": "TA 420",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2530,9 +2650,9 @@
                             "number": "28",
                             "key": "TA 28",
                             "title": "Backstage Theatre",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2550,9 +2670,9 @@
                             "number": "035",
                             "key": "PA 035",
                             "title": "Theater Crafts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2570,9 +2690,9 @@
                             "number": "1600",
                             "key": "THEA 1600",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2590,9 +2710,9 @@
                             "number": "420",
                             "key": "TA 420",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2610,9 +2730,9 @@
                             "number": "176",
                             "key": "THART 176",
                             "title": "Fundamentals of Stagecraft I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2630,9 +2750,9 @@
                             "number": "211",
                             "key": "DRA 211",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2650,9 +2770,9 @@
                             "number": "140 C",
                             "key": "THEA 140 C",
                             "title": "Introduction to Theater Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2670,9 +2790,9 @@
                             "number": "25",
                             "key": "TA 25",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2690,9 +2810,9 @@
                             "number": "40",
                             "key": "THEA 40",
                             "title": "Introduction to Technical Theater",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Theater Arts",
@@ -2700,9 +2820,9 @@
                             "number": "46",
                             "key": "THEA 46",
                             "title": "College Theatre-Management",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2720,9 +2840,9 @@
                             "number": "040",
                             "key": "DRAMA 040",
                             "title": "Theatrical Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2740,9 +2860,9 @@
                             "number": "208A",
                             "key": "THE 208A",
                             "title": "Stagecraft I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2760,9 +2880,9 @@
                             "number": "-30",
                             "key": "THTR -30",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2771,28 +2891,44 @@
             {
                 "sending_name": "Monterey Peninsula College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Theatre Arts",
-                            "prefix": "THEA",
-                            "number": "21A",
-                            "key": "THEA 21A",
-                            "title": "Theatre Workshop I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theatre Arts",
+                                    "prefix": "THEA",
+                                    "number": "21A",
+                                    "key": "THEA 21A",
+                                    "title": "Theatre Workshop I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Theatre Arts",
-                            "prefix": "THEA",
-                            "number": "21B",
-                            "key": "THEA 21B",
-                            "title": "Theatre Workshop II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Theatre Arts",
+                                    "prefix": "THEA",
+                                    "number": "21B",
+                                    "key": "THEA 21B",
+                                    "title": "Theatre Workshop II",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2810,9 +2946,9 @@
                             "number": "M20",
                             "key": "TTHA M20",
                             "title": "Stagecrafts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2830,9 +2966,9 @@
                             "number": "14",
                             "key": "THTR 14",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2850,9 +2986,9 @@
                             "number": "117",
                             "key": "THA- 117",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2870,9 +3006,9 @@
                             "number": "141",
                             "key": "THEA 141",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2890,9 +3026,9 @@
                             "number": "108",
                             "key": "TA 108",
                             "title": "Stagecraft and Scene Design for Theatre and Television",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2910,9 +3046,9 @@
                             "number": "420",
                             "key": "TA 420",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2930,9 +3066,9 @@
                             "number": "40",
                             "key": "ETT 40",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2950,9 +3086,9 @@
                             "number": "160X4",
                             "key": "THART 160X4",
                             "title": "Technical Theatre in Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2970,9 +3106,9 @@
                             "number": "123",
                             "key": "DRAM 123",
                             "title": "Beginning Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2990,9 +3126,9 @@
                             "number": "121",
                             "key": "TA 121",
                             "title": "Introduction to Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3010,9 +3146,9 @@
                             "number": "20",
                             "key": "THAR 20",
                             "title": "Introduction to Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3030,9 +3166,9 @@
                             "number": "30",
                             "key": "THTR 30",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3050,9 +3186,9 @@
                             "number": "003",
                             "key": "THEA 003",
                             "title": "Stagecraft",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3070,9 +3206,9 @@
                             "number": "V05A",
                             "key": "THA V05A",
                             "title": "Stagecraft I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

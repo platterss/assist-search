@@ -21,9 +21,9 @@
                             "number": "9",
                             "key": "AUTOT 9",
                             "title": "Automotive Essentials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "-04",
                             "key": "AUTO -04",
                             "title": "Automotive Mechanics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -53,7 +53,9 @@
                 "sending_name": "Reedley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -65,9 +67,9 @@
                                     "number": "9",
                                     "key": "AUTOT 9",
                                     "title": "Automotive Essentials",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Automotive Technology",
@@ -75,9 +77,9 @@
                                     "number": "10",
                                     "key": "AUTOT 10",
                                     "title": "Automotive Technician Program",
-                                    "notes": [],
                                     "min_units": 16.0,
-                                    "max_units": 16.0
+                                    "max_units": 16.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -92,9 +94,9 @@
                                     "number": "9",
                                     "key": "AUTOT 9",
                                     "title": "Automotive Essentials",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -115,9 +117,9 @@
                             "number": "101",
                             "key": "AUTO 101",
                             "title": "Introduction to Auto Mechanics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -147,9 +149,9 @@
                             "number": "140",
                             "key": "ET 140",
                             "title": "Engineering Drawing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -158,38 +160,62 @@
             {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Design Technology",
-                            "prefix": "DESGN",
-                            "number": "310",
-                            "key": "DESGN 310",
-                            "title": "Graphic Analysis and Documentation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Design Technology",
+                                    "prefix": "DESGN",
+                                    "number": "310",
+                                    "key": "DESGN 310",
+                                    "title": "Graphic Analysis and Documentation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Design Technology",
-                            "prefix": "DESGN",
-                            "number": "320",
-                            "key": "DESGN 320",
-                            "title": "Three Dimensional Graphics and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Design Technology",
+                                    "prefix": "DESGN",
+                                    "number": "320",
+                                    "key": "DESGN 320",
+                                    "title": "Three Dimensional Graphics and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Design Technology",
-                            "prefix": "DESGN",
-                            "number": "328",
-                            "key": "DESGN 328",
-                            "title": "Engineering Modeling and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Design Technology",
+                                    "prefix": "DESGN",
+                                    "number": "328",
+                                    "key": "DESGN 328",
+                                    "title": "Engineering Modeling and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -207,9 +233,9 @@
                             "number": "226",
                             "key": "ENGR 226",
                             "title": "Engineering Drawing",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -227,9 +253,9 @@
                             "number": "120",
                             "key": "ENGIN 120",
                             "title": "Engineering Drawing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -238,28 +264,44 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting",
-                            "prefix": "DRAFT",
-                            "number": "12",
-                            "key": "DRAFT 12",
-                            "title": "Drafting Practices",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting",
+                                    "prefix": "DRAFT",
+                                    "number": "12",
+                                    "key": "DRAFT 12",
+                                    "title": "Drafting Practices",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "2",
-                            "key": "ENGR 2",
-                            "title": "Graphics",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "2",
+                                    "key": "ENGR 2",
+                                    "title": "Graphics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -277,9 +319,9 @@
                             "number": "025",
                             "key": "ENGIN 025",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -297,9 +339,9 @@
                             "number": "74",
                             "key": "MFGT 74",
                             "title": "2D CAD/CAM",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -317,9 +359,9 @@
                             "number": "-11",
                             "key": "CADM -11",
                             "title": "Fundamentals of Computer-Aided Drafting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -337,9 +379,9 @@
                             "number": "127",
                             "key": "ENGR 127",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -348,28 +390,44 @@
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering Technology",
-                            "prefix": "ENGT",
-                            "number": "101",
-                            "key": "ENGT 101",
-                            "title": "Introduction to Technical Drawing & Graphics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering Technology",
+                                    "prefix": "ENGT",
+                                    "number": "101",
+                                    "key": "ENGT 101",
+                                    "title": "Introduction to Technical Drawing & Graphics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering Technology",
-                            "prefix": "ENGT",
-                            "number": "150",
-                            "key": "ENGT 150",
-                            "title": "AutoCAD for Basic CADD Applications",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering Technology",
+                                    "prefix": "ENGT",
+                                    "number": "150",
+                                    "key": "ENGT 150",
+                                    "title": "AutoCAD for Basic CADD Applications",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -387,9 +445,9 @@
                             "number": "151",
                             "key": "ENGE 151",
                             "title": "Computer-Aided Design",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -407,9 +465,9 @@
                             "number": "151",
                             "key": "ENGE 151",
                             "title": "Computer-Aided Design",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -418,28 +476,44 @@
             {
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting",
-                            "prefix": "DRFT",
-                            "number": "101",
-                            "key": "DRFT 101",
-                            "title": "Basic Drafting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting",
+                                    "prefix": "DRFT",
+                                    "number": "101",
+                                    "key": "DRFT 101",
+                                    "title": "Basic Drafting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drafting",
-                            "prefix": "DRFT",
-                            "number": "120",
-                            "key": "DRFT 120",
-                            "title": "Architectural Drafting I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting",
+                                    "prefix": "DRFT",
+                                    "number": "120",
+                                    "key": "DRFT 120",
+                                    "title": "Architectural Drafting I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -480,9 +554,9 @@
                             "number": "118",
                             "key": "CNET 118",
                             "title": "Fund of DC and AC Circuits",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Networking & Electronics Technology",
@@ -490,9 +564,9 @@
                             "number": "119",
                             "key": "CNET 119",
                             "title": "Fund of AC and DC Circuits Lab",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Networking & Electronics Technology",
@@ -500,9 +574,9 @@
                             "number": "122",
                             "key": "CNET 122",
                             "title": "Electronic Devices and Circuits",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Networking & Electronics Technology",
@@ -510,9 +584,9 @@
                             "number": "123",
                             "key": "CNET 123",
                             "title": "Electronic Devices and Circuits Lab",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -530,9 +604,9 @@
                             "number": "302",
                             "key": "ET 302",
                             "title": "Principles of Electricity and Electronics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -550,9 +624,9 @@
                             "number": "101",
                             "key": "ELTE 101",
                             "title": "Survey of Electronics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -570,9 +644,9 @@
                             "number": "3",
                             "key": "ARM 3",
                             "title": "Electricity and Electronics (AC&DC)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -590,9 +664,9 @@
                             "number": "110",
                             "key": "ITEC 110",
                             "title": "Electricty and Electronics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -610,9 +684,9 @@
                             "number": "213",
                             "key": "EET 213",
                             "title": "Electronics Fundamentals",
-                            "notes": [],
                             "min_units": 6.0,
-                            "max_units": 6.0
+                            "max_units": 6.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -630,9 +704,9 @@
                             "number": "100",
                             "key": "EET 100",
                             "title": "Direct Current Circuits",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Electrical/Electronics Technology",
@@ -640,9 +714,9 @@
                             "number": "105",
                             "key": "EET 105",
                             "title": "Alternating Current Circuits",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Electrical/Electronics Technology",
@@ -650,9 +724,9 @@
                             "number": "116",
                             "key": "EET 116",
                             "title": "Electronics I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -670,9 +744,9 @@
                             "number": "51",
                             "key": "EST 51",
                             "title": "Direct Current Fundamentals of Electronics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Electrical Systems Technology",
@@ -680,9 +754,9 @@
                             "number": "52",
                             "key": "EST 52",
                             "title": "Alternating Current Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -692,7 +766,7 @@
                 "sending_name": "Merced College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -709,9 +783,9 @@
                             "number": "208",
                             "key": "ELTEC 208",
                             "title": "Fundamentals of Electricity and Electronics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -721,7 +795,10 @@
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -733,9 +810,9 @@
                                     "number": "111",
                                     "key": "ELCT 111",
                                     "title": "Electrical Theory I",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Electricity",
@@ -743,9 +820,9 @@
                                     "number": "111L",
                                     "key": "ELCT 111L",
                                     "title": "Electrical Laboratory I",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Electricity",
@@ -753,9 +830,9 @@
                                     "number": "121",
                                     "key": "ELCT 121",
                                     "title": "Electrical Theory II",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Electricity",
@@ -763,9 +840,9 @@
                                     "number": "121L",
                                     "key": "ELCT 121L",
                                     "title": "Electrical Laboratory II",
-                                    "notes": [],
                                     "min_units": 2.0,
-                                    "max_units": 2.0
+                                    "max_units": 2.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -780,9 +857,9 @@
                                     "number": "124",
                                     "key": "ELDT 124",
                                     "title": "Basic DC Electronics",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Electronic Systems",
@@ -790,9 +867,9 @@
                                     "number": "124L",
                                     "key": "ELDT 124L",
                                     "title": "Basic DC Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Electronic Systems",
@@ -800,9 +877,9 @@
                                     "number": "125",
                                     "key": "ELDT 125",
                                     "title": "AC Circuit Analysis",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Electronic Systems",
@@ -810,9 +887,9 @@
                                     "number": "125L",
                                     "key": "ELDT 125L",
                                     "title": "DC/AC Circuit Analysis Laboratory with Pspice",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -827,9 +904,9 @@
                                     "number": "143",
                                     "key": "ELDT 143",
                                     "title": "Semiconductor Devices",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -850,9 +927,9 @@
                             "number": "11",
                             "key": "ELECT 11",
                             "title": "AC and DC Network Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Electronic Technology",
@@ -860,9 +937,9 @@
                             "number": "12",
                             "key": "ELECT 12",
                             "title": "Solid State Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -872,7 +949,7 @@
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -901,9 +978,9 @@
                             "number": "300",
                             "key": "CISN 300",
                             "title": "Network Systems Administration",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -921,9 +998,9 @@
                             "number": "171",
                             "key": "CA 171",
                             "title": "Introduction to Networking",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -941,9 +1018,9 @@
                             "number": "81",
                             "key": "CIS 81",
                             "title": "Introduction to Networks",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -961,9 +1038,9 @@
                             "number": "63",
                             "key": "IS 63",
                             "title": "Computer Networking Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -981,9 +1058,9 @@
                             "number": "260",
                             "key": "CNET 260",
                             "title": "Networking Fundamentals",
-                            "notes": [],
                             "min_units": 2.5,
-                            "max_units": 2.5
+                            "max_units": 2.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -993,7 +1070,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1010,9 +1087,9 @@
                             "number": "61",
                             "key": "EST 61",
                             "title": "Networking Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Electrical Systems Technology",
@@ -1020,9 +1097,9 @@
                             "number": "62",
                             "key": "EST 62",
                             "title": "Commercial & Industrial Networking",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1040,9 +1117,9 @@
                             "number": "M05",
                             "key": "CNSE M05",
                             "title": "Fundamentals of Computer Networking",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1060,9 +1137,9 @@
                             "number": "30A",
                             "key": "CNT 30A",
                             "title": "Introduction to Computer Networks",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Network Technology",
@@ -1070,9 +1147,9 @@
                             "number": "30B",
                             "key": "CNT 30B",
                             "title": "Switching, Routing, and Wireless Essentials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1090,9 +1167,9 @@
                             "number": "125",
                             "key": "CNEE 125",
                             "title": "CCNA I: Introduction to Switching and Routing",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1122,9 +1199,9 @@
                             "number": "176",
                             "key": "CA 176",
                             "title": "Windows Server Networking",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1142,9 +1219,9 @@
                             "number": "82",
                             "key": "CIS 82",
                             "title": "Switching, Routing, and Wireless Essentials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1162,9 +1239,9 @@
                             "number": "64",
                             "key": "IS 64",
                             "title": "Computer Networking II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1182,9 +1259,9 @@
                             "number": "M13",
                             "key": "CNSE M13",
                             "title": "Internetworking & TCP/IP",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1202,9 +1279,9 @@
                             "number": "30C",
                             "key": "CNT 30C",
                             "title": "Enterprise Networking, Security, and Automation",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Network Technology",
@@ -1212,9 +1289,9 @@
                             "number": "30D",
                             "key": "CNT 30D",
                             "title": "Enterprise Networking",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1232,9 +1309,9 @@
                             "number": "126",
                             "key": "CNEE 126",
                             "title": "CCNA II: Advanced Routing and Switching",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1264,9 +1341,9 @@
                             "number": "106",
                             "key": "WLDT 106",
                             "title": "Beginning Welding",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1284,9 +1361,9 @@
                             "number": "B1A",
                             "key": "WELD B1A",
                             "title": "Oxygen-Acetylene Welding and Cutting",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Welding",
@@ -1294,9 +1371,9 @@
                             "number": "B1B",
                             "key": "WELD B1B",
                             "title": "Introduction to the Welding Processes",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1314,9 +1391,9 @@
                             "number": "112",
                             "key": "ITEC 112",
                             "title": "Welding Principles 1",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1334,9 +1411,9 @@
                             "number": "270A",
                             "key": "WELD 270A",
                             "title": "Basic Welding",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1345,28 +1422,44 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Welding Technology",
-                            "prefix": "WELD",
-                            "number": "1",
-                            "key": "WELD 1",
-                            "title": "Exploring Welding/Metals",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Welding Technology",
+                                    "prefix": "WELD",
+                                    "number": "1",
+                                    "key": "WELD 1",
+                                    "title": "Exploring Welding/Metals",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Welding Technology",
-                            "prefix": "WELD",
-                            "number": "2A",
-                            "key": "WELD 2A",
-                            "title": "Introduction to Welding Technology",
-                            "notes": [],
-                            "min_units": 6.0,
-                            "max_units": 6.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Welding Technology",
+                                    "prefix": "WELD",
+                                    "number": "2A",
+                                    "key": "WELD 2A",
+                                    "title": "Introduction to Welding Technology",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1376,7 +1469,7 @@
                 "sending_name": "Lemoore College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1393,9 +1486,9 @@
                             "number": "010",
                             "key": "WELD 010",
                             "title": "Basic Arc Welding Theory",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Welding",
@@ -1403,9 +1496,9 @@
                             "number": "011",
                             "key": "WELD 011",
                             "title": "Basic Shielded Metal Arc Welding Practice",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1423,9 +1516,9 @@
                             "number": "60",
                             "key": "MFGT 60",
                             "title": "Introduction to Welding",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1435,7 +1528,7 @@
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1452,9 +1545,9 @@
                             "number": "60",
                             "key": "MFGT 60",
                             "title": "Introduction to Welding",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1476,7 +1569,7 @@
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1485,7 +1578,7 @@
                 "sending_name": "Bakersfield College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1502,9 +1595,9 @@
                             "number": "111",
                             "key": "ITEC 111",
                             "title": "Manufacturing Processes",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1514,7 +1607,7 @@
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1523,7 +1616,7 @@
                 "sending_name": "Los Medanos College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1532,7 +1625,9 @@
                 "sending_name": "Madera Community College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1544,9 +1639,9 @@
                                     "number": "80",
                                     "key": "MFGT 80",
                                     "title": "Introduction to Machine Shop",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Manufacturing Technology",
@@ -1554,9 +1649,9 @@
                                     "number": "81",
                                     "key": "MFGT 81",
                                     "title": "Intermediate Machine Shop",
-                                    "notes": [],
                                     "min_units": 6.0,
-                                    "max_units": 6.0
+                                    "max_units": 6.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1571,9 +1666,9 @@
                                     "number": "52",
                                     "key": "MFGT 52",
                                     "title": "Manufacturing Fabrication",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1586,7 +1681,7 @@
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1603,9 +1698,9 @@
                             "number": "80",
                             "key": "MFGT 80",
                             "title": "Introduction to Machine Shop",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         },
                         {
                             "subject": "Manufacturing Technology",
@@ -1613,9 +1708,9 @@
                             "number": "81",
                             "key": "MFGT 81",
                             "title": "Intermediate Machine Shop",
-                            "notes": [],
                             "min_units": 6.0,
-                            "max_units": 6.0
+                            "max_units": 6.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1633,9 +1728,9 @@
                             "number": "120",
                             "key": "MFET 120",
                             "title": "Manufacturing Processes",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1653,9 +1748,9 @@
                             "number": "16",
                             "key": "MACH 16",
                             "title": "Machine Tool Process",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1685,9 +1780,9 @@
                             "number": "B1",
                             "key": "WOOD B1",
                             "title": "Introduction to Woodworking",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1709,7 +1804,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1726,9 +1821,9 @@
                             "number": "20",
                             "key": "INDUS 20",
                             "title": "Industrial Safety and Health",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

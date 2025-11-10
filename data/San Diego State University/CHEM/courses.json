@@ -21,9 +21,9 @@
                             "number": "3",
                             "key": "CHEM 3",
                             "title": "Introductory Inorganic Chemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Chemistry",
@@ -31,9 +31,9 @@
                             "number": "3L",
                             "key": "CHEM 3L",
                             "title": "Introductory Inorganic Chemistry Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": [
@@ -53,9 +53,9 @@
                             "number": "40",
                             "key": "CHEM 40",
                             "title": "Introduction to Chemical Principles",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -64,28 +64,44 @@
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "151",
-                            "key": "CHEM 151",
-                            "title": "Preparatory General Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "151",
+                                    "key": "CHEM 151",
+                                    "title": "Preparatory General Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "151H",
-                            "key": "CHEM 151H",
-                            "title": "Preparatory General Chemistry - Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "151H",
+                                    "key": "CHEM 151H",
+                                    "title": "Preparatory General Chemistry - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -103,9 +119,9 @@
                             "number": "3",
                             "key": "CH 3",
                             "title": "Introductory General Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -123,9 +139,9 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "Introductory Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -143,9 +159,9 @@
                             "number": "120",
                             "key": "CHEM 120",
                             "title": "Preparation for General Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -154,42 +170,66 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "10",
-                            "key": "CHEM 10",
-                            "title": "Introductory Chemistry",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "10",
+                                    "key": "CHEM 10",
+                                    "title": "Introductory Chemistry",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "30A",
-                            "key": "CHEM 30A",
-                            "title": "Introduction to General, Organic and Biochemistry I",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "30A",
+                                    "key": "CHEM 30A",
+                                    "title": "Introduction to General, Organic and Biochemistry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
                             ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "25",
-                            "key": "CHEM 25",
-                            "title": "Preparation Course for General Chemistry",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "25",
+                                    "key": "CHEM 25",
+                                    "title": "Preparation Course for General Chemistry",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
                             ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -207,9 +247,9 @@
                             "number": "108",
                             "key": "CHEM 108",
                             "title": "Introductory Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -218,28 +258,44 @@
             {
                 "sending_name": "El Camino College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "4",
-                            "key": "CHEM 4",
-                            "title": "Beginning Chemistry",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "4",
+                                    "key": "CHEM 4",
+                                    "title": "Beginning Chemistry",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "4H",
-                            "key": "CHEM 4H",
-                            "title": "Honors Beginning Chemistry",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "4H",
+                                    "key": "CHEM 4H",
+                                    "title": "Honors Beginning Chemistry",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -248,28 +304,44 @@
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "115",
-                            "key": "CHEM 115",
-                            "title": "Fundamentals of Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "115",
+                                    "key": "CHEM 115",
+                                    "title": "Fundamentals of Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "120",
-                            "key": "CHEM 120",
-                            "title": "Preparation for General Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "120",
+                                    "key": "CHEM 120",
+                                    "title": "Preparation for General Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -287,9 +359,9 @@
                             "number": "100",
                             "key": "CHEM 100",
                             "title": "Introduction to Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -298,28 +370,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "3",
-                            "key": "CHEM 3",
-                            "title": "Fundamental Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "3",
+                                    "key": "CHEM 3",
+                                    "title": "Fundamental Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "4",
-                            "key": "CHEM 4",
-                            "title": "Introduction to General & Organic Chemistry & Biochemistry",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "4",
+                                    "key": "CHEM 4",
+                                    "title": "Introduction to General & Organic Chemistry & Biochemistry",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -337,9 +425,9 @@
                             "number": "31",
                             "key": "CHEM 31",
                             "title": "Introduction to College Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -348,28 +436,44 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "115",
-                            "key": "CHEM 115",
-                            "title": "Introductory General Chemistry: For Allied Health Majors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "115",
+                                    "key": "CHEM 115",
+                                    "title": "Introductory General Chemistry: For Allied Health Majors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "115H",
-                            "key": "CHEM 115H",
-                            "title": "Introductory Chemistry  General: For Allied Health Majors (Honors)",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "115H",
+                                    "key": "CHEM 115H",
+                                    "title": "Introductory Chemistry  General: For Allied Health Majors (Honors)",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -387,9 +491,9 @@
                             "number": "M12",
                             "key": "CHEM M12",
                             "title": "Introductory Chemistry I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -407,9 +511,9 @@
                             "number": "2A",
                             "key": "CHE 2A",
                             "title": "Introductory Chemistry, I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -427,9 +531,9 @@
                             "number": "100",
                             "key": "CHEM- 100",
                             "title": "Introduction to Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -438,28 +542,44 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "2A",
-                            "key": "CHE 2A",
-                            "title": "Introductory Chemistry, I",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "2A",
+                                    "key": "CHE 2A",
+                                    "title": "Introductory Chemistry, I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "3",
-                            "key": "CHE 3",
-                            "title": "Fundamentals of Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "3",
+                                    "key": "CHE 3",
+                                    "title": "Fundamentals of Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -477,9 +597,9 @@
                             "number": "A130",
                             "key": "CHEM A130",
                             "title": "Preparation for General Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -497,9 +617,9 @@
                             "number": "R110",
                             "key": "CHEM R110",
                             "title": "Elementary Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -517,9 +637,9 @@
                             "number": "100",
                             "key": "CHEM 100",
                             "title": "Fundamentals of Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -528,28 +648,44 @@
             {
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "002A",
-                            "key": "CHEM 002A",
-                            "title": "Chemistry - General, Organic and Biochemistry I",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "002A",
+                                    "key": "CHEM 002A",
+                                    "title": "Chemistry - General, Organic and Biochemistry I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "022",
-                            "key": "CHEM 022",
-                            "title": "Introductory Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "022",
+                                    "key": "CHEM 022",
+                                    "title": "Introductory Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -558,28 +694,44 @@
             {
                 "sending_name": "Riverside City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "2A",
-                            "key": "CHE 2A",
-                            "title": "Introductory Chemistry, I",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "2A",
+                                    "key": "CHE 2A",
+                                    "title": "Introductory Chemistry, I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "3",
-                            "key": "CHE 3",
-                            "title": "Fundamentals of Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "3",
+                                    "key": "CHE 3",
+                                    "title": "Fundamentals of Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -597,9 +749,9 @@
                             "number": "300",
                             "key": "CHEM 300",
                             "title": "Beginning Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -608,28 +760,44 @@
             {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "3",
-                            "key": "CHEM 3",
-                            "title": "Fundamental Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "3",
+                                    "key": "CHEM 3",
+                                    "title": "Fundamental Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "8",
-                            "key": "CHEM 8",
-                            "title": "Introduction to General, Organic, and Biochemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "8",
+                                    "key": "CHEM 8",
+                                    "title": "Introduction to General, Organic, and Biochemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -639,7 +807,9 @@
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -651,11 +821,11 @@
                                     "number": "100",
                                     "key": "CHEM 100",
                                     "title": "Fundamentals of Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -663,9 +833,9 @@
                                     "number": "100L",
                                     "key": "CHEM 100L",
                                     "title": "Fundamentals of Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -680,12 +850,12 @@
                                     "number": "152",
                                     "key": "CHEM 152",
                                     "title": "Introduction to General Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": [
                                         "Acceptable substitute",
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -693,9 +863,9 @@
                                     "number": "152L",
                                     "key": "CHEM 152L",
                                     "title": "Introduction to General Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -708,7 +878,9 @@
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -720,11 +892,11 @@
                                     "number": "100",
                                     "key": "CHEM 100",
                                     "title": "Fundamentals of Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -732,9 +904,9 @@
                                     "number": "100L",
                                     "key": "CHEM 100L",
                                     "title": "Fundamentals of Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -749,12 +921,12 @@
                                     "number": "152",
                                     "key": "CHEM 152",
                                     "title": "Introduction to General Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": [
                                         "Acceptable substitute",
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -762,9 +934,9 @@
                                     "number": "152L",
                                     "key": "CHEM 152L",
                                     "title": "Introduction to General Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -777,7 +949,9 @@
                 "sending_name": "San Diego Miramar College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -789,11 +963,11 @@
                                     "number": "100",
                                     "key": "CHEM 100",
                                     "title": "Fundamentals of Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -801,9 +975,9 @@
                                     "number": "100L",
                                     "key": "CHEM 100L",
                                     "title": "Fundamentals of Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -818,12 +992,12 @@
                                     "number": "152",
                                     "key": "CHEM 152",
                                     "title": "Introduction to General Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": [
                                         "Acceptable substitute",
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -831,9 +1005,9 @@
                                     "number": "152L",
                                     "key": "CHEM 152L",
                                     "title": "Introduction to General Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -854,9 +1028,9 @@
                             "number": "209",
                             "key": "CHEM 209",
                             "title": "Introductory Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -874,9 +1048,9 @@
                             "number": "101",
                             "key": "CHEM 101",
                             "title": "Introductory Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -894,9 +1068,9 @@
                             "number": "10",
                             "key": "CHEM 10",
                             "title": "Introductory General Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -914,9 +1088,9 @@
                             "number": "42",
                             "key": "CHEM 42",
                             "title": "Introductory General Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -934,9 +1108,9 @@
                             "number": "100",
                             "key": "CHEM 100",
                             "title": "Introductory Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -954,9 +1128,9 @@
                             "number": "2A",
                             "key": "CHEM 2A",
                             "title": "Introduction to Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -965,30 +1139,46 @@
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "100",
-                            "key": "CHEM 100",
-                            "title": "Introduction to General Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "100",
+                                    "key": "CHEM 100",
+                                    "title": "Introduction to General Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "170",
-                            "key": "CHEM 170",
-                            "title": "Preparation for General Chemistry",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "170",
+                                    "key": "CHEM 170",
+                                    "title": "Preparation for General Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1006,11 +1196,11 @@
                             "number": "V20",
                             "key": "CHEM V20",
                             "title": "Elementary Chemistry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -1018,9 +1208,9 @@
                             "number": "V20L",
                             "key": "CHEM V20L",
                             "title": "Elementary Chemistry Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1029,28 +1219,44 @@
             {
                 "sending_name": "West Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "002",
-                            "key": "CHEM 002",
-                            "title": "Introductory to Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "002",
+                                    "key": "CHEM 002",
+                                    "title": "Introductory to Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "030A",
-                            "key": "CHEM 030A",
-                            "title": "Fundamentals of Chemistry",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "030A",
+                                    "key": "CHEM 030A",
+                                    "title": "Fundamentals of Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1080,9 +1286,9 @@
                             "number": "309",
                             "key": "CHEM 309",
                             "title": "Integrated General, Organic, and Biological Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1100,11 +1306,11 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "Introductory Chemistry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -1112,9 +1318,9 @@
                             "number": "211",
                             "key": "CHEM 211",
                             "title": "Introductory Organic/Biochemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1132,9 +1338,9 @@
                             "number": "102",
                             "key": "CHEM 102",
                             "title": "Introduction to General, Organic and Biological Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1152,11 +1358,11 @@
                             "number": "30A",
                             "key": "CHEM 30A",
                             "title": "Introduction to General, Organic and Biochemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -1164,9 +1370,9 @@
                             "number": "30B",
                             "key": "CHEM 30B",
                             "title": "Introduction to General, Organic and Biochemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1176,7 +1382,9 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1188,9 +1396,9 @@
                                     "number": "107",
                                     "key": "CHEM 107",
                                     "title": "Integrated Inorganic, Organic, and Biological Chemistry",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1205,11 +1413,11 @@
                                     "number": "108",
                                     "key": "CHEM 108",
                                     "title": "Introductory Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -1217,9 +1425,9 @@
                                     "number": "109",
                                     "key": "CHEM 109",
                                     "title": "Introduction to Organic and Biochemistry",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": [
@@ -1242,9 +1450,9 @@
                             "number": "20",
                             "key": "CHEM 20",
                             "title": "Fundamentals of Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1262,9 +1470,9 @@
                             "number": "102",
                             "key": "CHEM 102",
                             "title": "Introduction to General, Organic and Biological Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1282,9 +1490,9 @@
                             "number": "4",
                             "key": "CHEM 4",
                             "title": "Introduction to General & Organic Chemistry & Biochemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1294,7 +1502,9 @@
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1306,9 +1516,9 @@
                                     "number": "112",
                                     "key": "CHEM 112",
                                     "title": "Introductory General, Organic and Biological Chemistry: For Allied Health Majors",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1323,11 +1533,11 @@
                                     "number": "116",
                                     "key": "CHEM 116",
                                     "title": "Introductory Organic and Biological Chemistry: For Allied Health Majors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -1335,9 +1545,9 @@
                                     "number": "140",
                                     "key": "CHEM 140",
                                     "title": "Preparation for General Chemistry: For Science Majors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1358,9 +1568,9 @@
                             "number": "M11",
                             "key": "CHEM M11",
                             "title": "Foundations of General, Organic, and Biochemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1378,11 +1588,11 @@
                             "number": "2A",
                             "key": "CHE 2A",
                             "title": "Introductory Chemistry, I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -1390,9 +1600,9 @@
                             "number": "2B",
                             "key": "CHE 2B",
                             "title": "Introductory Chemistry, II",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1410,9 +1620,9 @@
                             "number": "107",
                             "key": "CHEM- 107",
                             "title": "Chemistry of Life",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1430,11 +1640,11 @@
                             "number": "2A",
                             "key": "CHE 2A",
                             "title": "Introductory Chemistry, I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -1442,9 +1652,9 @@
                             "number": "2B",
                             "key": "CHE 2B",
                             "title": "Introductory Chemistry, II",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1462,9 +1672,9 @@
                             "number": "A110",
                             "key": "CHEM A110",
                             "title": "Introduction to Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1482,9 +1692,9 @@
                             "number": "R104",
                             "key": "CHEM R104",
                             "title": "General, Organic, and Biological Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1502,9 +1712,9 @@
                             "number": "104",
                             "key": "CHEM 104",
                             "title": "General Organic and Biochemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1522,11 +1732,11 @@
                             "number": "2A",
                             "key": "CHE 2A",
                             "title": "Introductory Chemistry, I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -1534,9 +1744,9 @@
                             "number": "2B",
                             "key": "CHE 2B",
                             "title": "Introductory Chemistry, II",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1554,11 +1764,11 @@
                             "number": "100",
                             "key": "CHEM 100",
                             "title": "Fundamentals of Chemistry",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -1566,9 +1776,9 @@
                             "number": "100L",
                             "key": "CHEM 100L",
                             "title": "Fundamentals of Chemistry Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         },
                         {
                             "subject": "Chemistry",
@@ -1576,9 +1786,9 @@
                             "number": "130",
                             "key": "CHEM 130",
                             "title": "Introduction to Organic and Biological Chemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Chemistry",
@@ -1586,9 +1796,9 @@
                             "number": "130L",
                             "key": "CHEM 130L",
                             "title": "Introduction to Organic and Biological Chemistry Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1598,7 +1808,9 @@
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1610,9 +1822,9 @@
                                     "number": "103",
                                     "key": "CHEM 103",
                                     "title": "General, Organic, and Biological Chemistry",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1627,11 +1839,11 @@
                                     "number": "100",
                                     "key": "CHEM 100",
                                     "title": "Fundamentals of Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -1639,9 +1851,9 @@
                                     "number": "100L",
                                     "key": "CHEM 100L",
                                     "title": "Fundamentals of Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -1649,9 +1861,9 @@
                                     "number": "130",
                                     "key": "CHEM 130",
                                     "title": "Introduction to Organic and Biological Chemistry",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -1659,9 +1871,9 @@
                                     "number": "130L",
                                     "key": "CHEM 130L",
                                     "title": "Introduction to Organic and Biological Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1674,7 +1886,9 @@
                 "sending_name": "San Diego Miramar College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1686,9 +1900,9 @@
                                     "number": "103",
                                     "key": "CHEM 103",
                                     "title": "General, Organic, and Biological Chemistry",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1703,11 +1917,11 @@
                                     "number": "100",
                                     "key": "CHEM 100",
                                     "title": "Fundamentals of Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -1715,9 +1929,9 @@
                                     "number": "100L",
                                     "key": "CHEM 100L",
                                     "title": "Fundamentals of Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -1725,9 +1939,9 @@
                                     "number": "130",
                                     "key": "CHEM 130",
                                     "title": "Introduction to Organic and Biological Chemistry",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -1735,9 +1949,9 @@
                                     "number": "130L",
                                     "key": "CHEM 130L",
                                     "title": "Introduction to Organic and Biological Chemistry Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1758,9 +1972,9 @@
                             "number": "19",
                             "key": "CHEM 19",
                             "title": "Fundamentals of General, Organic, and Biological Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1778,9 +1992,9 @@
                             "number": "60",
                             "key": "CHEM 60",
                             "title": "General, Organic, and Biological Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1798,9 +2012,9 @@
                             "number": "102",
                             "key": "CHEM 102",
                             "title": "General, Organic, and Biological Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1830,9 +2044,9 @@
                             "number": "30B",
                             "key": "CHEM 30B",
                             "title": "Introduction to General, Organic and Biochemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1850,9 +2064,9 @@
                             "number": "116",
                             "key": "CHEM 116",
                             "title": "Introductory Organic and Biochemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1870,11 +2084,11 @@
                             "number": "204",
                             "key": "CHEM 204",
                             "title": "Organic Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": [
                                 "Acceptable substitute"
-                            ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1892,11 +2106,11 @@
                             "number": "116",
                             "key": "CHEM 116",
                             "title": "Introductory Organic and Biological Chemistry: For Allied Health Majors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Acceptable substitute"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1914,9 +2128,9 @@
                             "number": "R112",
                             "key": "CHEM R112",
                             "title": "Elementary Organic and Biological Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1934,9 +2148,9 @@
                             "number": "105",
                             "key": "CHEM 105",
                             "title": "Fundamentals of Organic Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1954,9 +2168,9 @@
                             "number": "130",
                             "key": "CHEM 130",
                             "title": "Introduction to Organic and Biological Chemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1974,9 +2188,9 @@
                             "number": "130",
                             "key": "CHEM 130",
                             "title": "Introduction to Organic and Biological Chemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1994,9 +2208,9 @@
                             "number": "130",
                             "key": "CHEM 130",
                             "title": "Introduction to Organic and Biological Chemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2014,9 +2228,9 @@
                             "number": "2B",
                             "key": "CHEM 2B",
                             "title": "Introduction to Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2034,9 +2248,9 @@
                             "number": "110",
                             "key": "CHEM 110",
                             "title": "Elementary Organic and Biological Chemistry",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2054,9 +2268,9 @@
                             "number": "030B",
                             "key": "CHEM 030B",
                             "title": "Fundamentals of Chemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2086,9 +2300,9 @@
                             "number": "117",
                             "key": "CHEM 117",
                             "title": "Introductory Biochemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2106,9 +2320,9 @@
                             "number": "83",
                             "key": "BIO 83",
                             "title": "Biochemistry and Molecular Biology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2126,9 +2340,9 @@
                             "number": "205",
                             "key": "CHEM 205",
                             "title": "Introductory Biochemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2146,9 +2360,9 @@
                             "number": "160",
                             "key": "CHEM 160",
                             "title": "Introductory Biochemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2166,9 +2380,9 @@
                             "number": "160",
                             "key": "CHEM 160",
                             "title": "Introductory Biochemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2186,9 +2400,9 @@
                             "number": "160",
                             "key": "CHEM 160",
                             "title": "Introductory Biochemistry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2218,9 +2432,9 @@
                             "number": "400",
                             "key": "CHEM 400",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2238,9 +2452,9 @@
                             "number": "1A",
                             "key": "CHEM 1A",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2258,9 +2472,9 @@
                             "number": "101A",
                             "key": "CHEM 101A",
                             "title": "General College Chemistry",
-                            "notes": [],
                             "min_units": 6.0,
-                            "max_units": 6.0
+                            "max_units": 6.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2278,9 +2492,9 @@
                             "number": "210",
                             "key": "CHEM 210",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2289,28 +2503,44 @@
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "201",
-                            "key": "CHEM 201",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "201",
+                                    "key": "CHEM 201",
+                                    "title": "General Chemistry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "201H",
-                            "key": "CHEM 201H",
-                            "title": "General Chemistry I - Honors",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "201H",
+                                    "key": "CHEM 201H",
+                                    "title": "General Chemistry I - Honors",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2328,9 +2558,9 @@
                             "number": "1A",
                             "key": "CH 1A",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2348,9 +2578,9 @@
                             "number": "201A",
                             "key": "CHEM 201A",
                             "title": "General College Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2368,9 +2598,9 @@
                             "number": "141",
                             "key": "CHEM 141",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2380,7 +2610,9 @@
                 "sending_name": "De Anza College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -2392,11 +2624,11 @@
                                     "number": "1A",
                                     "key": "CHEM 1A",
                                     "title": "General Chemistry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -2404,9 +2636,9 @@
                                     "number": "1B",
                                     "key": "CHEM 1B",
                                     "title": "General Chemistry II",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2421,11 +2653,11 @@
                                     "number": "1AH",
                                     "key": "CHEM 1AH",
                                     "title": "General Chemistry I - HONORS",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -2433,9 +2665,9 @@
                                     "number": "1BH",
                                     "key": "CHEM 1BH",
                                     "title": "General Chemistry II - HONORS",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2456,9 +2688,9 @@
                             "number": "120",
                             "key": "CHEM 120",
                             "title": "General College Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2476,9 +2708,9 @@
                             "number": "1A",
                             "key": "CHEM 1A",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2496,9 +2728,9 @@
                             "number": "G180",
                             "key": "CHEM G180",
                             "title": "General Chemistry A",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2516,9 +2748,9 @@
                             "number": "141",
                             "key": "CHEM 141",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2536,9 +2768,9 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "General Inorganic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2556,9 +2788,9 @@
                             "number": "1A",
                             "key": "CHEM 1A",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2576,9 +2808,9 @@
                             "number": "1A",
                             "key": "CHEM 1A",
                             "title": "General College Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2587,28 +2819,44 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "150",
-                            "key": "CHEM 150",
-                            "title": "General Chemistry I: For Science Majors",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "150",
+                                    "key": "CHEM 150",
+                                    "title": "General Chemistry I: For Science Majors",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "150H",
-                            "key": "CHEM 150H",
-                            "title": "General Chemistry I : For Science Majors (Honors)",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "150H",
+                                    "key": "CHEM 150H",
+                                    "title": "General Chemistry I : For Science Majors (Honors)",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2617,28 +2865,44 @@
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "M01A",
-                            "key": "CHEM M01A",
-                            "title": "General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "M01A",
+                                    "key": "CHEM M01A",
+                                    "title": "General Chemistry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "M01AH",
-                            "key": "CHEM M01AH",
-                            "title": "Honors: General Chemistry I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "M01AH",
+                                    "key": "CHEM M01AH",
+                                    "title": "Honors: General Chemistry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2647,28 +2911,44 @@
             {
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "1A",
-                            "key": "CHE 1A",
-                            "title": "General Chemistry, I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "1A",
+                                    "key": "CHE 1A",
+                                    "title": "General Chemistry, I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "1AH",
-                            "key": "CHE 1AH",
-                            "title": "Honors General Chemistry, I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "1AH",
+                                    "key": "CHE 1AH",
+                                    "title": "Honors General Chemistry, I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2686,9 +2966,9 @@
                             "number": "101",
                             "key": "CHEM- 101",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2706,9 +2986,9 @@
                             "number": "1A",
                             "key": "CHE 1A",
                             "title": "General Chemistry, I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2726,9 +3006,9 @@
                             "number": "A180",
                             "key": "CHEM A180",
                             "title": "General Chemistry A",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2746,9 +3026,9 @@
                             "number": "R120",
                             "key": "CHEM R120",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2766,11 +3046,11 @@
                             "number": "110",
                             "key": "CHEM 110",
                             "title": "General Chemistry",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -2778,9 +3058,9 @@
                             "number": "110L",
                             "key": "CHEM 110L",
                             "title": "General Chemistry Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2798,9 +3078,9 @@
                             "number": "001A",
                             "key": "CHEM 001A",
                             "title": "General Chemistry and Chemical Analysis I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2809,28 +3089,44 @@
             {
                 "sending_name": "Riverside City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "1A",
-                            "key": "CHE 1A",
-                            "title": "General Chemistry, I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "1A",
+                                    "key": "CHE 1A",
+                                    "title": "General Chemistry, I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "1AH",
-                            "key": "CHE 1AH",
-                            "title": "Honors General Chemistry, I",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "1AH",
+                                    "key": "CHE 1AH",
+                                    "title": "Honors General Chemistry, I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2848,9 +3144,9 @@
                             "number": "400",
                             "key": "CHEM 400",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2868,9 +3164,9 @@
                             "number": "1A",
                             "key": "CHEM 1A",
                             "title": "General Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2888,11 +3184,11 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "General Chemistry I - Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -2900,9 +3196,9 @@
                             "number": "200L",
                             "key": "CHEM 200L",
                             "title": "General Chemistry I - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2920,11 +3216,11 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "General Chemistry I - Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -2932,9 +3228,9 @@
                             "number": "200L",
                             "key": "CHEM 200L",
                             "title": "General Chemistry I - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2952,11 +3248,11 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "General Chemistry I - Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -2964,9 +3260,9 @@
                             "number": "200L",
                             "key": "CHEM 200L",
                             "title": "General Chemistry I - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2984,9 +3280,9 @@
                             "number": "155",
                             "key": "CHEM 155",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3004,9 +3300,9 @@
                             "number": "11",
                             "key": "CHEM 11",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3024,11 +3320,11 @@
                             "number": "3A",
                             "key": "CHEM 3A",
                             "title": "General Chemistry Part 1: Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -3036,9 +3332,9 @@
                             "number": "3AL",
                             "key": "CHEM 3AL",
                             "title": "General Chemistry Part 1: Lab",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3056,9 +3352,9 @@
                             "number": "200A",
                             "key": "CHEM 200A",
                             "title": "General Chemistry A",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         },
                         {
                             "subject": "Chemistry",
@@ -3066,9 +3362,9 @@
                             "number": "200AH",
                             "key": "CHEM 200AH",
                             "title": "Honors General Chemistry AH",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3078,7 +3374,9 @@
                 "sending_name": "Sierra College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -3090,9 +3388,9 @@
                                     "number": "1A",
                                     "key": "CHEM 1A",
                                     "title": "General Chemistry I",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -3107,11 +3405,11 @@
                                     "number": "3A",
                                     "key": "CHEM 3A",
                                     "title": "General Chemistry I - Part 1",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 3.0,
-                                    "max_units": 3.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -3119,9 +3417,9 @@
                                     "number": "3B",
                                     "key": "CHEM 3B",
                                     "title": "General Chemistry I - Part 2",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -3142,9 +3440,9 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3162,9 +3460,9 @@
                             "number": "001A",
                             "key": "CHEM 001A",
                             "title": "General Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3194,9 +3492,9 @@
                             "number": "401",
                             "key": "CHEM 401",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3214,9 +3512,9 @@
                             "number": "1B",
                             "key": "CHEM 1B",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3234,9 +3532,9 @@
                             "number": "101B",
                             "key": "CHEM 101B",
                             "title": "General College Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3254,9 +3552,9 @@
                             "number": "220",
                             "key": "CHEM 220",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3274,9 +3572,9 @@
                             "number": "202",
                             "key": "CHEM 202",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3294,9 +3592,9 @@
                             "number": "1B",
                             "key": "CH 1B",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3314,9 +3612,9 @@
                             "number": "201B",
                             "key": "CHEM 201B",
                             "title": "General College Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3334,9 +3632,9 @@
                             "number": "142",
                             "key": "CHEM 142",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3346,7 +3644,9 @@
                 "sending_name": "De Anza College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -3358,11 +3658,11 @@
                                     "number": "1B",
                                     "key": "CHEM 1B",
                                     "title": "General Chemistry II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -3370,9 +3670,9 @@
                                     "number": "1C",
                                     "key": "CHEM 1C",
                                     "title": "General Chemistry III",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -3387,11 +3687,11 @@
                                     "number": "1BH",
                                     "key": "CHEM 1BH",
                                     "title": "General Chemistry II - HONORS",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
                                     "notes": [
                                         "Articulates as a sequence only"
-                                    ],
-                                    "min_units": 5.0,
-                                    "max_units": 5.0
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -3399,9 +3699,9 @@
                                     "number": "1CH",
                                     "key": "CHEM 1CH",
                                     "title": "General Chemistry III - HONORS",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -3422,9 +3722,9 @@
                             "number": "121",
                             "key": "CHEM 121",
                             "title": "General College Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3442,9 +3742,9 @@
                             "number": "1B",
                             "key": "CHEM 1B",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3462,9 +3762,9 @@
                             "number": "142",
                             "key": "CHEM 142",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3482,9 +3782,9 @@
                             "number": "202",
                             "key": "CHEM 202",
                             "title": "General Inorganic Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3502,9 +3802,9 @@
                             "number": "1B",
                             "key": "CHEM 1B",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3513,28 +3813,44 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "151",
-                            "key": "CHEM 151",
-                            "title": "General Chemistry II: For Science Majors",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "151",
+                                    "key": "CHEM 151",
+                                    "title": "General Chemistry II: For Science Majors",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "151H",
-                            "key": "CHEM 151H",
-                            "title": "General Chemistry II : For Science Majors (Honors)",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "151H",
+                                    "key": "CHEM 151H",
+                                    "title": "General Chemistry II : For Science Majors (Honors)",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3552,9 +3868,9 @@
                             "number": "M01B",
                             "key": "CHEM M01B",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3563,28 +3879,44 @@
             {
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "1B",
-                            "key": "CHE 1B",
-                            "title": "General Chemistry, II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "1B",
+                                    "key": "CHE 1B",
+                                    "title": "General Chemistry, II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "1BH",
-                            "key": "CHE 1BH",
-                            "title": "Honors General Chemistry, II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "1BH",
+                                    "key": "CHE 1BH",
+                                    "title": "Honors General Chemistry, II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3602,9 +3934,9 @@
                             "number": "102",
                             "key": "CHEM- 102",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3622,9 +3954,9 @@
                             "number": "1B",
                             "key": "CHE 1B",
                             "title": "General Chemistry, II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3642,9 +3974,9 @@
                             "number": "A185",
                             "key": "CHEM A185",
                             "title": "General Chemistry B",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3662,9 +3994,9 @@
                             "number": "R122",
                             "key": "CHEM R122",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3682,11 +4014,11 @@
                             "number": "115",
                             "key": "CHEM 115",
                             "title": "General Chemistry",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -3694,9 +4026,9 @@
                             "number": "115L",
                             "key": "CHEM 115L",
                             "title": "General Chemistry Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3714,9 +4046,9 @@
                             "number": "001B",
                             "key": "CHEM 001B",
                             "title": "General Chemistry and Chemical Analysis II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3725,28 +4057,44 @@
             {
                 "sending_name": "Riverside City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "1B",
-                            "key": "CHE 1B",
-                            "title": "General Chemistry, II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "1B",
+                                    "key": "CHE 1B",
+                                    "title": "General Chemistry, II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHE",
-                            "number": "1BH",
-                            "key": "CHE 1BH",
-                            "title": "Honors General Chemistry, II",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHE",
+                                    "number": "1BH",
+                                    "key": "CHE 1BH",
+                                    "title": "Honors General Chemistry, II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3764,9 +4112,9 @@
                             "number": "401",
                             "key": "CHEM 401",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3784,9 +4132,9 @@
                             "number": "1B",
                             "key": "CHEM 1B",
                             "title": "General Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3804,11 +4152,11 @@
                             "number": "201",
                             "key": "CHEM 201",
                             "title": "General Chemistry II - Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -3816,9 +4164,9 @@
                             "number": "201L",
                             "key": "CHEM 201L",
                             "title": "General Chemistry II - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3836,11 +4184,11 @@
                             "number": "201",
                             "key": "CHEM 201",
                             "title": "General Chemistry II - Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -3848,9 +4196,9 @@
                             "number": "201L",
                             "key": "CHEM 201L",
                             "title": "General Chemistry II - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3868,11 +4216,11 @@
                             "number": "201",
                             "key": "CHEM 201",
                             "title": "General Chemistry II - Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -3880,9 +4228,9 @@
                             "number": "201L",
                             "key": "CHEM 201L",
                             "title": "General Chemistry II - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3900,9 +4248,9 @@
                             "number": "156",
                             "key": "CHEM 156",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3920,9 +4268,9 @@
                             "number": "12",
                             "key": "CHEM 12",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3940,9 +4288,9 @@
                             "number": "3B",
                             "key": "CHEM 3B",
                             "title": "General Chemistry Part 2",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3960,9 +4308,9 @@
                             "number": "1B",
                             "key": "CHEM 1B",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3980,9 +4328,9 @@
                             "number": "002",
                             "key": "CHEM 002",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4000,9 +4348,9 @@
                             "number": "210",
                             "key": "CHEM 210",
                             "title": "General Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4020,9 +4368,9 @@
                             "number": "001B",
                             "key": "CHEM 001B",
                             "title": "General Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4052,11 +4400,11 @@
                             "number": "141",
                             "key": "CHEM 141",
                             "title": "General Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": [
                                 "Acceptable substitute"
-                            ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4074,9 +4422,9 @@
                             "number": "1A",
                             "key": "CHEM 1A",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4094,11 +4442,11 @@
                             "number": "141",
                             "key": "CHEM 141",
                             "title": "General Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": [
                                 "Acceptable substitute"
-                            ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4107,28 +4455,44 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "150",
-                            "key": "CHEM 150",
-                            "title": "General Chemistry I: For Science Majors",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "150",
+                                    "key": "CHEM 150",
+                                    "title": "General Chemistry I: For Science Majors",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "150H",
-                            "key": "CHEM 150H",
-                            "title": "General Chemistry I : For Science Majors (Honors)",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "150H",
+                                    "key": "CHEM 150H",
+                                    "title": "General Chemistry I : For Science Majors (Honors)",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4146,12 +4510,12 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "General Chemistry I - Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Acceptable substitute",
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -4159,9 +4523,9 @@
                             "number": "200L",
                             "key": "CHEM 200L",
                             "title": "General Chemistry I - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4179,12 +4543,12 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "General Chemistry I - Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Acceptable substitute",
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -4192,9 +4556,9 @@
                             "number": "200L",
                             "key": "CHEM 200L",
                             "title": "General Chemistry I - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4212,12 +4576,12 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "General Chemistry I - Lecture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Acceptable substitute",
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -4225,9 +4589,9 @@
                             "number": "200L",
                             "key": "CHEM 200L",
                             "title": "General Chemistry I - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4245,9 +4609,9 @@
                             "number": "200",
                             "key": "CHEM 200",
                             "title": "General Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4277,9 +4641,9 @@
                             "number": "255",
                             "key": "CHEM 255",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4297,9 +4661,9 @@
                             "number": "241",
                             "key": "CHEM 241",
                             "title": "Organic Chemistry I Lecture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4317,9 +4681,9 @@
                             "number": "A220",
                             "key": "CHEM A220",
                             "title": "Organic Chemistry A",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4337,9 +4701,9 @@
                             "number": "231",
                             "key": "CHEM 231",
                             "title": "Organic Chemistry I - Lecture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4357,9 +4721,9 @@
                             "number": "231",
                             "key": "CHEM 231",
                             "title": "Organic Chemistry I - Lecture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4377,9 +4741,9 @@
                             "number": "231",
                             "key": "CHEM 231",
                             "title": "Organic Chemistry I - Lecture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4397,9 +4761,9 @@
                             "number": "211",
                             "key": "CHEM 211",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4415,8 +4779,8 @@
             {
                 "subject": "Chemistry",
                 "prefix": "CHEM",
-                "key": "CHEM 232",
                 "number": "232",
+                "key": "CHEM 232",
                 "title": "Organic Chemistry",
                 "min_units": 3.0,
                 "max_units": 3.0
@@ -4424,8 +4788,8 @@
             {
                 "subject": "Chemistry",
                 "prefix": "CHEM",
-                "key": "CHEM 232L",
                 "number": "232L",
+                "key": "CHEM 232L",
                 "title": "Organic Chemistry Laboratory",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -4444,9 +4808,9 @@
                             "number": "420",
                             "key": "CHEM 420",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4464,9 +4828,9 @@
                             "number": "231",
                             "key": "CHEM 231",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4484,9 +4848,9 @@
                             "number": "255",
                             "key": "CHEM 255",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4504,9 +4868,9 @@
                             "number": "10A",
                             "key": "CH 10A",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4524,9 +4888,9 @@
                             "number": "231",
                             "key": "CHEM 231",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4544,11 +4908,11 @@
                             "number": "12A",
                             "key": "CHEM 12A",
                             "title": "Organic Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            ]
                         },
                         {
                             "subject": "Chemistry",
@@ -4556,9 +4920,9 @@
                             "number": "12B",
                             "key": "CHEM 12B",
                             "title": "Organic Chemistry II",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4576,9 +4940,9 @@
                             "number": "226",
                             "key": "CHEM 226",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4596,9 +4960,9 @@
                             "number": "231",
                             "key": "CHEM 231",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4616,9 +4980,9 @@
                             "number": "204",
                             "key": "CHEM 204",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4636,9 +5000,9 @@
                             "number": "12A",
                             "key": "CHEM 12A",
                             "title": "Organic Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4647,28 +5011,44 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "210",
-                            "key": "CHEM 210",
-                            "title": "Organic Chemistry I: For Science Majors",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "210",
+                                    "key": "CHEM 210",
+                                    "title": "Organic Chemistry I: For Science Majors",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "210H",
-                            "key": "CHEM 210H",
-                            "title": "Organic Chemistry I: For Science Majors (Honors)",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "210H",
+                                    "key": "CHEM 210H",
+                                    "title": "Organic Chemistry I: For Science Majors (Honors)",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4686,9 +5066,9 @@
                             "number": "M07A",
                             "key": "CHEM M07A",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4706,9 +5086,9 @@
                             "number": "112",
                             "key": "CHEM- 112",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4726,9 +5106,9 @@
                             "number": "12A",
                             "key": "CHE 12A",
                             "title": "Organic Chemistry, I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4746,9 +5126,9 @@
                             "number": "R130",
                             "key": "CHEM R130",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4766,9 +5146,9 @@
                             "number": "220",
                             "key": "CHEM 220",
                             "title": "Organic Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4786,9 +5166,9 @@
                             "number": "008A",
                             "key": "CHEM 008A",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4806,9 +5186,9 @@
                             "number": "12A",
                             "key": "CHE 12A",
                             "title": "Organic Chemistry, I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4826,9 +5206,9 @@
                             "number": "12A",
                             "key": "CHEM 12A",
                             "title": "Organic Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4846,9 +5226,9 @@
                             "number": "21",
                             "key": "CHEM 21",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4866,9 +5246,9 @@
                             "number": "12A",
                             "key": "CHEM 12A",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4886,9 +5266,9 @@
                             "number": "240",
                             "key": "CHEM 240",
                             "title": "Organic Chemistry I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4918,9 +5298,9 @@
                             "number": "241L",
                             "key": "CHEM 241L",
                             "title": "Organic Chemistry I Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4938,9 +5318,9 @@
                             "number": "A220L",
                             "key": "CHEM A220L",
                             "title": "Organic Chemistry A Lab",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4958,9 +5338,9 @@
                             "number": "231L",
                             "key": "CHEM 231L",
                             "title": "Organic Chemistry Laboratory I",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4978,9 +5358,9 @@
                             "number": "231L",
                             "key": "CHEM 231L",
                             "title": "Organic Chemistry I Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4998,9 +5378,9 @@
                             "number": "231L",
                             "key": "CHEM 231L",
                             "title": "Organic Chemistry I - Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5018,9 +5398,9 @@
                             "number": "221",
                             "key": "CHEM 221",
                             "title": "Organic Chemistry Laboratory I",
-                            "notes": [],
                             "min_units": 2.3,
-                            "max_units": 2.3
+                            "max_units": 2.3,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5050,9 +5430,9 @@
                             "number": "230",
                             "key": "CHEM 230",
                             "title": "Analytical Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5070,9 +5450,9 @@
                             "number": "251",
                             "key": "CHEM 251",
                             "title": "Quantitative Analytical Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5090,9 +5470,9 @@
                             "number": "251",
                             "key": "CHEM 251",
                             "title": "Quantitative Analytical Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5110,9 +5490,9 @@
                             "number": "251",
                             "key": "CHEM 251",
                             "title": "Quantitative Analytical Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5130,9 +5510,9 @@
                             "number": "5",
                             "key": "CHEM 5",
                             "title": "Chemistry - Quantitative Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5150,9 +5530,9 @@
                             "number": "250",
                             "key": "CHEM 250",
                             "title": "Analytical Chemistry",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

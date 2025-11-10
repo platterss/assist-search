@@ -21,9 +21,9 @@
                             "number": "10",
                             "key": "CS 10",
                             "title": "Introduction to Computer Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -53,9 +53,9 @@
                             "number": "401",
                             "key": "CISP 401",
                             "title": "Object Oriented Programming with Java",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -73,9 +73,9 @@
                             "number": "221",
                             "key": "CS 221",
                             "title": "Introduction to Object Oriented Programming in Java",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -84,30 +84,46 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "111",
-                            "key": "CS 111",
-                            "title": "Introduction to Computer Science I: Java",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "111",
+                                    "key": "CS 111",
+                                    "title": "Introduction to Computer Science I: Java",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "150",
-                            "key": "CS 150",
-                            "title": "C++ Programming",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "150",
+                                    "key": "CS 150",
+                                    "title": "C++ Programming",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -125,9 +141,9 @@
                             "number": "18A",
                             "key": "CIS 18A",
                             "title": "JAVA Programming: Objects",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -145,9 +161,9 @@
                             "number": "18A",
                             "key": "CIS 18A",
                             "title": "JAVA Programming: Objects",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -165,9 +181,9 @@
                             "number": "112",
                             "key": "CSCI 112",
                             "title": "Programming Fundamentals I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -176,28 +192,44 @@
             {
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "107",
-                            "key": "MATH 107",
-                            "title": "Introduction to Scientific Programming",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "107",
+                                    "key": "MATH 107",
+                                    "title": "Introduction to Scientific Programming",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer and Information Sciences",
-                            "prefix": "CISC",
-                            "number": "190",
-                            "key": "CISC 190",
-                            "title": "Java Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer and Information Sciences",
+                                    "prefix": "CISC",
+                                    "number": "190",
+                                    "key": "CISC 190",
+                                    "title": "Java Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -213,8 +245,8 @@
             {
                 "subject": "Computer Science",
                 "prefix": "CS",
-                "key": "CS 150",
                 "number": "150",
+                "key": "CS 150",
                 "title": "Introduction to Computer Programming",
                 "min_units": 3.0,
                 "max_units": 3.0
@@ -222,8 +254,8 @@
             {
                 "subject": "Computer Science",
                 "prefix": "CS",
-                "key": "CS 150L",
                 "number": "150L",
+                "key": "CS 150L",
                 "title": "Introductory Computer Programming Laboratory",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -233,28 +265,44 @@
             {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "181",
-                            "key": "CS 181",
-                            "title": "Introduction to C++ Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "181",
+                                    "key": "CS 181",
+                                    "title": "Introduction to C++ Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "182",
-                            "key": "CS 182",
-                            "title": "Introduction to JAVA Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "182",
+                                    "key": "CS 182",
+                                    "title": "Introduction to JAVA Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -263,40 +311,64 @@
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science Information Systems",
-                            "prefix": "CSIS",
-                            "number": "250",
-                            "key": "CSIS 250",
-                            "title": "Introduction to Python Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
-                        },
-                        {
-                            "subject": "Computer Science Information Systems",
-                            "prefix": "CSIS",
-                            "number": "293",
-                            "key": "CSIS 293",
-                            "title": "Introduction to Java Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
-                        },
-                        {
-                            "subject": "Computer Science Information Systems",
-                            "prefix": "CSIS",
-                            "number": "296",
-                            "key": "CSIS 296",
-                            "title": "Introduction to C++ Programming",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science Information Systems",
+                                    "prefix": "CSIS",
+                                    "number": "250",
+                                    "key": "CSIS 250",
+                                    "title": "Introduction to Python Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science Information Systems",
+                                    "prefix": "CSIS",
+                                    "number": "293",
+                                    "key": "CSIS 293",
+                                    "title": "Introduction to Java Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science Information Systems",
+                                    "prefix": "CSIS",
+                                    "number": "296",
+                                    "key": "CSIS 296",
+                                    "title": "Introduction to C++ Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -314,9 +386,9 @@
                             "number": "221",
                             "key": "CS 221",
                             "title": "Introduction to Object Oriented Programming in Java",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -334,9 +406,9 @@
                             "number": "112",
                             "key": "CSCI 112",
                             "title": "Programming Fundamentals I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -354,9 +426,9 @@
                             "number": "190",
                             "key": "CISC 190",
                             "title": "Java Programming",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -374,9 +446,9 @@
                             "number": "190",
                             "key": "CISC 190",
                             "title": "Java Programming",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -394,9 +466,9 @@
                             "number": "190",
                             "key": "CISC 190",
                             "title": "Java Programming",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -414,9 +486,9 @@
                             "number": "130",
                             "key": "MATH 130",
                             "title": "Introduction to Computer Programming",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -457,9 +529,9 @@
                             "number": "430",
                             "key": "CISP 430",
                             "title": "Data Structures",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -477,9 +549,9 @@
                             "number": "231",
                             "key": "CS 231",
                             "title": "Introduction to Data Structures",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -497,9 +569,9 @@
                             "number": "113",
                             "key": "CS 113",
                             "title": "Basic Data Structures and Algorithms",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -517,9 +589,9 @@
                             "number": "18C",
                             "key": "CIS 18C",
                             "title": "Java Programming: Data Structures",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -537,9 +609,9 @@
                             "number": "18C",
                             "key": "CIS 18C",
                             "title": "Java Programming: Data Structures",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -548,30 +620,46 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science and Information Systems - Computer Science",
-                            "prefix": "CSCI",
-                            "number": "210",
-                            "key": "CSCI 210",
-                            "title": "Data Structures",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science and Information Systems - Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "210",
+                                    "key": "CSCI 210",
+                                    "title": "Data Structures",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science and Information Systems - Computer Science",
-                            "prefix": "CSCI",
-                            "number": "114",
-                            "key": "CSCI 114",
-                            "title": "Programming Fundamentals II",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science and Information Systems - Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "114",
+                                    "key": "CSCI 114",
+                                    "title": "Programming Fundamentals II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -587,8 +675,8 @@
             {
                 "subject": "Computer Science",
                 "prefix": "CS",
-                "key": "CS 160",
                 "number": "160",
+                "key": "CS 160",
                 "title": "Intermediate Computer Programming",
                 "min_units": 3.0,
                 "max_units": 3.0
@@ -596,8 +684,8 @@
             {
                 "subject": "Computer Science",
                 "prefix": "CS",
-                "key": "CS 160L",
                 "number": "160L",
+                "key": "CS 160L",
                 "title": "Intermediate Computer Programming Laboratory",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -607,28 +695,44 @@
             {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "281",
-                            "key": "CS 281",
-                            "title": "Intermediate C++ Programming and Fundamental Data Structures",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "281",
+                                    "key": "CS 281",
+                                    "title": "Intermediate C++ Programming and Fundamental Data Structures",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "282",
-                            "key": "CS 282",
-                            "title": "Intermediate Java Programming and Fundamental Data Structures",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "282",
+                                    "key": "CS 282",
+                                    "title": "Intermediate Java Programming and Fundamental Data Structures",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -637,40 +741,64 @@
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science Information Systems",
-                            "prefix": "CSIS",
-                            "number": "251",
-                            "key": "CSIS 251",
-                            "title": "Intermediate Python Programming and Fundamental Structures",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
-                        },
-                        {
-                            "subject": "Computer Science Information Systems",
-                            "prefix": "CSIS",
-                            "number": "294",
-                            "key": "CSIS 294",
-                            "title": "Intermediate Java Programming and Fundamental Data Structures",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
-                        },
-                        {
-                            "subject": "Computer Science Information Systems",
-                            "prefix": "CSIS",
-                            "number": "297",
-                            "key": "CSIS 297",
-                            "title": "Intermediate C++ Programming",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science Information Systems",
+                                    "prefix": "CSIS",
+                                    "number": "251",
+                                    "key": "CSIS 251",
+                                    "title": "Intermediate Python Programming and Fundamental Structures",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science Information Systems",
+                                    "prefix": "CSIS",
+                                    "number": "294",
+                                    "key": "CSIS 294",
+                                    "title": "Intermediate Java Programming and Fundamental Data Structures",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science Information Systems",
+                                    "prefix": "CSIS",
+                                    "number": "297",
+                                    "key": "CSIS 297",
+                                    "title": "Intermediate C++ Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -688,9 +816,9 @@
                             "number": "231",
                             "key": "CS 231",
                             "title": "Introduction to Data Structures",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -699,28 +827,44 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science and Information Systems - Computer Science",
-                            "prefix": "CSCI",
-                            "number": "210",
-                            "key": "CSCI 210",
-                            "title": "Data Structures",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science and Information Systems - Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "210",
+                                    "key": "CSCI 210",
+                                    "title": "Data Structures",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science and Information Systems - Computer Science",
-                            "prefix": "CSCI",
-                            "number": "222",
-                            "key": "CSCI 222",
-                            "title": "C++ and Object-Oriented Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science and Information Systems - Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "222",
+                                    "key": "CSCI 222",
+                                    "title": "C++ and Object-Oriented Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -738,9 +882,9 @@
                             "number": "192",
                             "key": "CISC 192",
                             "title": "C/C++ Programming",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -749,28 +893,44 @@
             {
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer and Information Sciences",
-                            "prefix": "CISC",
-                            "number": "191",
-                            "key": "CISC 191",
-                            "title": "Intermediate Java Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer and Information Sciences",
+                                    "prefix": "CISC",
+                                    "number": "191",
+                                    "key": "CISC 191",
+                                    "title": "Intermediate Java Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer and Information Sciences",
-                            "prefix": "CISC",
-                            "number": "187",
-                            "key": "CISC 187",
-                            "title": "Data Structures in C++",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer and Information Sciences",
+                                    "prefix": "CISC",
+                                    "number": "187",
+                                    "key": "CISC 187",
+                                    "title": "Data Structures in C++",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -779,28 +939,44 @@
             {
                 "sending_name": "San Diego Miramar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer and Information Sciences",
-                            "prefix": "CISC",
-                            "number": "191",
-                            "key": "CISC 191",
-                            "title": "Intermediate Java Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer and Information Sciences",
+                                    "prefix": "CISC",
+                                    "number": "191",
+                                    "key": "CISC 191",
+                                    "title": "Intermediate Java Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer and Information Sciences",
-                            "prefix": "CISC",
-                            "number": "192",
-                            "key": "CISC 192",
-                            "title": "C/C++ Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer and Information Sciences",
+                                    "prefix": "CISC",
+                                    "number": "192",
+                                    "key": "CISC 192",
+                                    "title": "C/C++ Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -818,9 +994,9 @@
                             "number": "140",
                             "key": "MATH 140",
                             "title": "Data Structures and Algorithms",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -861,9 +1037,9 @@
                             "number": "128",
                             "key": "CSIT 128",
                             "title": "Foundations of Data Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Science and Information Systems - Information Technology",
@@ -871,11 +1047,11 @@
                             "number": "175",
                             "key": "CSIT 175",
                             "title": "Python Programming",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -905,9 +1081,9 @@
                             "number": "279",
                             "key": "CIS 279",
                             "title": "(CS2) Data Structures: C ++",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -925,9 +1101,9 @@
                             "number": "A200",
                             "key": "CS A200",
                             "title": "Data Structures",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -945,9 +1121,9 @@
                             "number": "210",
                             "key": "CSCI 210",
                             "title": "Data Structures",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -965,9 +1141,9 @@
                             "number": "1D",
                             "key": "CS 1D",
                             "title": "Data Structures",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -985,9 +1161,9 @@
                             "number": "187",
                             "key": "CISC 187",
                             "title": "Data Structures in C ++",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1005,9 +1181,9 @@
                             "number": "187",
                             "key": "CISC 187",
                             "title": "Data Structures in C++",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1025,9 +1201,9 @@
                             "number": "V15",
                             "key": "CS V15",
                             "title": "Data Structures and Algorithms",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1057,9 +1233,9 @@
                             "number": "310",
                             "key": "CISP 310",
                             "title": "Computer Architecture and Organization",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1077,9 +1253,9 @@
                             "number": "165",
                             "key": "CS 165",
                             "title": "Assembly Language and Machine Architecture",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1097,9 +1273,9 @@
                             "number": "165",
                             "key": "CSIS 165",
                             "title": "Assembly Language and Machine Architecture",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1117,9 +1293,9 @@
                             "number": "281",
                             "key": "CS 281",
                             "title": "Assembly Language and Machine Organization",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1137,9 +1313,9 @@
                             "number": "220",
                             "key": "CS 220",
                             "title": "Computer Architecture and Assembly Language",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1157,9 +1333,9 @@
                             "number": "11",
                             "key": "CIS 11",
                             "title": "Computer Architecture and Organization: Assembly",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1177,9 +1353,9 @@
                             "number": "118B",
                             "key": "CSIS- 118B",
                             "title": "Computer Organization & Assembly Language",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1197,9 +1373,9 @@
                             "number": "11",
                             "key": "CIS 11",
                             "title": "Computer Architecture and Organization: Assembly",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1217,9 +1393,9 @@
                             "number": "212",
                             "key": "CSCI 212",
                             "title": "Machine Organization and Assembly Language",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1237,9 +1413,9 @@
                             "number": "211",
                             "key": "CISC 211",
                             "title": "Computer Organization and Assembly Language",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1257,9 +1433,9 @@
                             "number": "211",
                             "key": "CISC 211",
                             "title": "Computer Organization and Assembly Language",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1277,9 +1453,9 @@
                             "number": "230",
                             "key": "MATH 230",
                             "title": "Computer Organization and Architecture",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

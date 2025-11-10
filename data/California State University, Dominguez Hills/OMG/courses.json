@@ -21,9 +21,9 @@
                             "number": "B49E",
                             "key": "BSAD B49E",
                             "title": "Transportation Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "101",
                             "key": "LOGTIC 101",
                             "title": "Technology in Global Logistics",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         },
                         {
                             "subject": "Logistics",
@@ -51,9 +51,9 @@
                             "number": "102",
                             "key": "LOGTIC 102",
                             "title": "Concepts in Global Logistics",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -71,9 +71,9 @@
                             "number": "86",
                             "key": "BUS 86",
                             "title": "Transportation and Traffic Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -91,9 +91,9 @@
                             "number": "120",
                             "key": "LOG 120",
                             "title": "Transportation Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -111,9 +111,9 @@
                             "number": "182",
                             "key": "BUS 182",
                             "title": "Logistics and Transportation Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -131,9 +131,9 @@
                             "number": "81",
                             "key": "BUS 81",
                             "title": "Transportation Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -142,28 +142,44 @@
             {
                 "sending_name": "Southwestern College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Business",
-                            "prefix": "BUS",
-                            "number": "173",
-                            "key": "BUS 173",
-                            "title": "Distribution Centers and Lean 6 Sigma",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Business",
+                                    "prefix": "BUS",
+                                    "number": "173",
+                                    "key": "BUS 173",
+                                    "title": "Distribution Centers and Lean 6 Sigma",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Business",
-                            "prefix": "BUS",
-                            "number": "126",
-                            "key": "BUS 126",
-                            "title": "Supply Chain Logistics Technology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Business",
+                                    "prefix": "BUS",
+                                    "number": "126",
+                                    "key": "BUS 126",
+                                    "title": "Supply Chain Logistics Technology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -193,9 +209,9 @@
                             "number": "3",
                             "key": "BUMA 3",
                             "title": "Business Statistics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -204,32 +220,48 @@
             {
                 "sending_name": "Compton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Statistics CCN",
-                            "prefix": "STAT",
-                            "number": "C1000",
-                            "key": "STAT C1000",
-                            "title": "Introduction to Statistics",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Statistics CCN",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         },
                         {
-                            "subject": "Statistics CCN",
-                            "prefix": "STAT",
-                            "number": "C1000H",
-                            "key": "STAT C1000H",
-                            "title": "Introduction to Statistics - Honors",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Statistics CCN",
+                                    "prefix": "STAT",
+                                    "number": "C1000H",
+                                    "key": "STAT C1000H",
+                                    "title": "Introduction to Statistics - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -247,9 +279,9 @@
                             "number": "310",
                             "key": "ECON 310",
                             "title": "Statistics for Business and Economics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -267,9 +299,9 @@
                             "number": "C1000",
                             "key": "STAT C1000",
                             "title": "Introduction to Statistics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -287,9 +319,9 @@
                             "number": "240",
                             "key": "BUS 240",
                             "title": "Business Statistics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -299,7 +331,9 @@
                 "sending_name": "El Camino College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -311,9 +345,9 @@
                                     "number": "116",
                                     "key": "BUS 116",
                                     "title": "Statistics for Business Decision Making",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -328,9 +362,9 @@
                                     "number": "C1000",
                                     "key": "STAT C1000",
                                     "title": "Introduction to Statistics",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Statistics",
@@ -338,9 +372,9 @@
                                     "number": "C1000H",
                                     "key": "STAT C1000H",
                                     "title": "Introduction to Statistics Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": [
@@ -363,9 +397,9 @@
                             "number": "127",
                             "key": "ECON 127",
                             "title": "Introductory Statistics for Economics and Business",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -383,9 +417,9 @@
                             "number": "215",
                             "key": "ECON 215",
                             "title": "Statistics for Business, Economics, and Social Sciences",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -403,9 +437,9 @@
                             "number": "2",
                             "key": "STAT 2",
                             "title": "Introduction to Statistics for Business",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -414,28 +448,44 @@
             {
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Business Administration",
-                            "prefix": "BUSAD",
-                            "number": "228",
-                            "key": "BUSAD 228",
-                            "title": "Business Statistics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Business Administration",
+                                    "prefix": "BUSAD",
+                                    "number": "228",
+                                    "key": "BUSAD 228",
+                                    "title": "Business Statistics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "128",
-                            "key": "MATH 128",
-                            "title": "Business Statistics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "128",
+                                    "key": "MATH 128",
+                                    "title": "Business Statistics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -453,9 +503,9 @@
                             "number": "10",
                             "key": "BUS 10",
                             "title": "Business Statistics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -473,9 +523,9 @@
                             "number": "115",
                             "key": "BUSE 115",
                             "title": "Statistics for Business",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -493,9 +543,9 @@
                             "number": "115",
                             "key": "BUSE 115",
                             "title": "Statistics for Business",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -513,9 +563,9 @@
                             "number": "115",
                             "key": "BUSE 115",
                             "title": "Statistics for Business",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -545,9 +595,9 @@
                             "number": "B49C",
                             "key": "BSAD B49C",
                             "title": "Supply Chain Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -565,9 +615,9 @@
                             "number": "155",
                             "key": "BA 155",
                             "title": "Introduction to Global Logistics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -585,9 +635,9 @@
                             "number": "103",
                             "key": "LOGTIC 103",
                             "title": "Inventory in Global Logisitics",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Logistics",
@@ -595,9 +645,9 @@
                             "number": "105",
                             "key": "LOGTIC 105",
                             "title": "Green Logistics and GIS Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -615,9 +665,9 @@
                             "number": "52",
                             "key": "IBUS 52",
                             "title": "Introduction to Supply Chain Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -635,9 +685,9 @@
                             "number": "101",
                             "key": "LOG 101",
                             "title": "Supply Chain Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -655,9 +705,9 @@
                             "number": "183",
                             "key": "BUS 183",
                             "title": "Integrated Supply Chain Management and Demand Planning",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -675,9 +725,9 @@
                             "number": "82",
                             "key": "BUS 82",
                             "title": "Supply Chain Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

@@ -21,9 +21,9 @@
                             "number": "110",
                             "key": "FSN 110",
                             "title": "Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "300",
                             "key": "NUTRI 300",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -61,9 +61,9 @@
                             "number": "100",
                             "key": "NF 100",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -81,9 +81,9 @@
                             "number": "B10",
                             "key": "NUTR B10",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -101,9 +101,9 @@
                             "number": "2",
                             "key": "HEAL 2",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -112,28 +112,44 @@
             {
                 "sending_name": "Butte College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Food and Nutrition",
-                            "prefix": "FN",
-                            "number": "2",
-                            "key": "FN 2",
-                            "title": "Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Food and Nutrition",
+                                    "prefix": "FN",
+                                    "number": "2",
+                                    "key": "FN 2",
+                                    "title": "Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Food and Nutrition",
-                            "prefix": "FN",
-                            "number": "50",
-                            "key": "FN 50",
-                            "title": "Nutrition and Diet Therapy",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Food and Nutrition",
+                                    "prefix": "FN",
+                                    "number": "50",
+                                    "key": "FN 50",
+                                    "title": "Nutrition and Diet Therapy",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -151,9 +167,9 @@
                             "number": "20",
                             "key": "NUTR 20",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -171,9 +187,9 @@
                             "number": "310",
                             "key": "BIOL 310",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -182,38 +198,62 @@
             {
                 "sending_name": "Cerritos College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Health Education",
-                            "prefix": "HED",
-                            "number": "200",
-                            "key": "HED 200",
-                            "title": "Nutrition for Health, Fitness, and Wellness",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Health Education",
+                                    "prefix": "HED",
+                                    "number": "200",
+                                    "key": "HED 200",
+                                    "title": "Nutrition for Health, Fitness, and Wellness",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Health Occupations",
-                            "prefix": "HO",
-                            "number": "152",
-                            "key": "HO 152",
-                            "title": "Normal and Therapeutic Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Health Occupations",
+                                    "prefix": "HO",
+                                    "number": "152",
+                                    "key": "HO 152",
+                                    "title": "Normal and Therapeutic Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Kinesiology",
-                            "prefix": "KIN",
-                            "number": "201",
-                            "key": "KIN 201",
-                            "title": "Nutrition for Health, Fitness, and Wellness",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Kinesiology",
+                                    "prefix": "KIN",
+                                    "number": "201",
+                                    "key": "KIN 201",
+                                    "title": "Nutrition for Health, Fitness, and Wellness",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -231,9 +271,9 @@
                             "number": "1",
                             "key": "NUTR 1",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -242,28 +282,44 @@
             {
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition and Food",
-                            "prefix": "NF",
-                            "number": "5",
-                            "key": "NF 5",
-                            "title": "Nutrition for Life",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Food",
+                                    "prefix": "NF",
+                                    "number": "5",
+                                    "key": "NF 5",
+                                    "title": "Nutrition for Life",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition and Food",
-                            "prefix": "NF",
-                            "number": "15",
-                            "key": "NF 15",
-                            "title": "Nutrition I: Introduction to Nutrition Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Food",
+                                    "prefix": "NF",
+                                    "number": "15",
+                                    "key": "NF 15",
+                                    "title": "Nutrition I: Introduction to Nutrition Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -281,9 +337,9 @@
                             "number": "134",
                             "key": "BIO 134",
                             "title": "Introduction to Nutrition for Health Sciences",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -301,9 +357,9 @@
                             "number": "40",
                             "key": "FN 40",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -321,9 +377,9 @@
                             "number": "001",
                             "key": "NUT 001",
                             "title": "Basic Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -341,9 +397,9 @@
                             "number": "C170",
                             "key": "FN C170",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -361,9 +417,9 @@
                             "number": "31",
                             "key": "BIOL 31",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -381,9 +437,9 @@
                             "number": "100",
                             "key": "BIOL 100",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -401,9 +457,9 @@
                             "number": "310",
                             "key": "BIOL 310",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -421,9 +477,9 @@
                             "number": "150",
                             "key": "HLHSCI 150",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -441,9 +497,9 @@
                             "number": "13",
                             "key": "HS 13",
                             "title": "General Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -461,9 +517,9 @@
                             "number": "15",
                             "key": "HO 15",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -481,9 +537,9 @@
                             "number": "018",
                             "key": "NUTR 018",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -501,9 +557,9 @@
                             "number": "1011",
                             "key": "KINE 1011",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -521,9 +577,9 @@
                             "number": "50",
                             "key": "BIOL 50",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -541,9 +597,9 @@
                             "number": "110",
                             "key": "NFOO 110",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -561,9 +617,9 @@
                             "number": "160",
                             "key": "BIOSC 160",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -581,9 +637,9 @@
                             "number": "013",
                             "key": "HS 013",
                             "title": "General Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -601,9 +657,9 @@
                             "number": "300",
                             "key": "NUTRI 300",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -612,28 +668,44 @@
             {
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Health Education",
-                            "prefix": "HEALTH",
-                            "number": "263",
-                            "key": "HEALTH 263",
-                            "title": "Nutrition and Health",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Health Education",
+                                    "prefix": "HEALTH",
+                                    "number": "263",
+                                    "key": "HEALTH 263",
+                                    "title": "Nutrition and Health",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Health Education",
-                            "prefix": "HEALTH",
-                            "number": "263H",
-                            "key": "HEALTH 263H",
-                            "title": "Nutrition and Health - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Health Education",
+                                    "prefix": "HEALTH",
+                                    "number": "263H",
+                                    "key": "HEALTH 263H",
+                                    "title": "Nutrition and Health - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -651,9 +723,9 @@
                             "number": "210",
                             "key": "NUTR 210",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -662,28 +734,44 @@
             {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "155",
-                            "key": "NUTR 155",
-                            "title": "Realities of Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "155",
+                                    "key": "NUTR 155",
+                                    "title": "Realities of Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "255",
-                            "key": "NUTR 255",
-                            "title": "Science of Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "255",
+                                    "key": "NUTR 255",
+                                    "title": "Science of Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -692,38 +780,62 @@
             {
                 "sending_name": "Cypress College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Hotel, Restaurant, Culinary Arts",
-                            "prefix": "HRC",
-                            "number": "100 C",
-                            "key": "HRC 100 C",
-                            "title": "Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Hotel, Restaurant, Culinary Arts",
+                                    "prefix": "HRC",
+                                    "number": "100 C",
+                                    "key": "HRC 100 C",
+                                    "title": "Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Hotel, Restaurant, Culinary Arts",
-                            "prefix": "HRC",
-                            "number": "100HC",
-                            "key": "HRC 100HC",
-                            "title": "Honors Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Hotel, Restaurant, Culinary Arts",
+                                    "prefix": "HRC",
+                                    "number": "100HC",
+                                    "key": "HRC 100HC",
+                                    "title": "Honors Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Public Health Science",
-                            "prefix": "PHS",
-                            "number": "107 C",
-                            "key": "PHS 107 C",
-                            "title": "Nutrition & World Food Issues",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Public Health Science",
+                                    "prefix": "PHS",
+                                    "number": "107 C",
+                                    "key": "PHS 107 C",
+                                    "title": "Nutrition & World Food Issues",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -741,9 +853,9 @@
                             "number": "10",
                             "key": "NUTR 10",
                             "title": "Contemporary Nutrition",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -761,9 +873,9 @@
                             "number": "160",
                             "key": "NUTRI 160",
                             "title": "Nutrition: Science and Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -781,9 +893,9 @@
                             "number": "021",
                             "key": "FAM &CS 021",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -801,9 +913,9 @@
                             "number": "110",
                             "key": "NUTR 110",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -821,9 +933,9 @@
                             "number": "019",
                             "key": "FCS 019",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -832,28 +944,44 @@
             {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Health and Exercise Science",
-                            "prefix": "HES",
-                            "number": "170",
-                            "key": "HES 170",
-                            "title": "Introduction to Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Health and Exercise Science",
+                                    "prefix": "HES",
+                                    "number": "170",
+                                    "key": "HES 170",
+                                    "title": "Introduction to Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition, Foods and Culinary Arts",
-                            "prefix": "NCA",
-                            "number": "170",
-                            "key": "NCA 170",
-                            "title": "Introduction to Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition, Foods and Culinary Arts",
+                                    "prefix": "NCA",
+                                    "number": "170",
+                                    "key": "NCA 170",
+                                    "title": "Introduction to Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -871,9 +999,9 @@
                             "number": "300",
                             "key": "NUTRI 300",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -882,28 +1010,44 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "8",
-                            "key": "BIOL 8",
-                            "title": "Basic Nutrition",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "8",
+                                    "key": "BIOL 8",
+                                    "title": "Basic Nutrition",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "45",
-                            "key": "BIOL 45",
-                            "title": "Introduction to Human Nutrition",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "45",
+                                    "key": "BIOL 45",
+                                    "title": "Introduction to Human Nutrition",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -912,28 +1056,44 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Food and Nutrition",
-                            "prefix": "FN",
-                            "number": "35",
-                            "key": "FN 35",
-                            "title": "Nutrition and Health",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Food and Nutrition",
+                                    "prefix": "FN",
+                                    "number": "35",
+                                    "key": "FN 35",
+                                    "title": "Nutrition and Health",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Food and Nutrition",
-                            "prefix": "FN",
-                            "number": "40",
-                            "key": "FN 40",
-                            "title": "Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Food and Nutrition",
+                                    "prefix": "FN",
+                                    "number": "40",
+                                    "key": "FN 40",
+                                    "title": "Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -942,28 +1102,44 @@
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "210 F",
-                            "key": "NUTR 210 F",
-                            "title": "Human Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "210 F",
+                                    "key": "NUTR 210 F",
+                                    "title": "Human Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "210HF",
-                            "key": "NUTR 210HF",
-                            "title": "Honors Human Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "210HF",
+                                    "key": "NUTR 210HF",
+                                    "title": "Honors Human Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -981,9 +1157,9 @@
                             "number": "11",
                             "key": "AH 11",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1001,9 +1177,9 @@
                             "number": "125",
                             "key": "NUTR 125",
                             "title": "Elements of Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1021,9 +1197,9 @@
                             "number": "G135",
                             "key": "HLED G135",
                             "title": "Nutrition and Health",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1032,28 +1208,44 @@
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "155",
-                            "key": "NUTR 155",
-                            "title": "Introduction to Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "155",
+                                    "key": "NUTR 155",
+                                    "title": "Introduction to Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "255",
-                            "key": "NUTR 255",
-                            "title": "Science of Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "255",
+                                    "key": "NUTR 255",
+                                    "title": "Science of Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1071,9 +1263,9 @@
                             "number": "1",
                             "key": "NUTR 1",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1091,9 +1283,9 @@
                             "number": "106",
                             "key": "HE 106",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1111,9 +1303,9 @@
                             "number": "1",
                             "key": "NUT 1",
                             "title": "Principles of Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1131,9 +1323,9 @@
                             "number": "101",
                             "key": "PEH 101",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1151,9 +1343,9 @@
                             "number": "28",
                             "key": "BIOL 28",
                             "title": "Human Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1171,9 +1363,9 @@
                             "number": "1",
                             "key": "NTRN 1",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1191,9 +1383,9 @@
                             "number": "25",
                             "key": "HLTH 25",
                             "title": "Understanding Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1211,9 +1403,9 @@
                             "number": "001",
                             "key": "NUT 001",
                             "title": "Basic Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1231,9 +1423,9 @@
                             "number": "20",
                             "key": "NUTR 20",
                             "title": "Nutrition and Life",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1251,9 +1443,9 @@
                             "number": "021",
                             "key": "FAM &CS 021",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1271,9 +1463,9 @@
                             "number": "021",
                             "key": "FAM &CS 021",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1291,9 +1483,9 @@
                             "number": "021",
                             "key": "NUTRTN 021",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1311,9 +1503,9 @@
                             "number": "021",
                             "key": "FAM & CS 021",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1331,9 +1523,9 @@
                             "number": "006",
                             "key": "HEALTH 006",
                             "title": "Nutrition for Healthful Living and Fitness Activities",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1351,9 +1543,9 @@
                             "number": "055",
                             "key": "NUTRI 055",
                             "title": "Introduction to Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1371,9 +1563,9 @@
                             "number": "40",
                             "key": "FN 40",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1382,28 +1574,44 @@
             {
                 "sending_name": "Mendocino College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Health",
-                            "prefix": "HLH",
-                            "number": "214",
-                            "key": "HLH 214",
-                            "title": "Foods And Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Health",
+                                    "prefix": "HLH",
+                                    "number": "214",
+                                    "key": "HLH 214",
+                                    "title": "Foods And Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Health",
-                            "prefix": "HLH",
-                            "number": "215",
-                            "key": "HLH 215",
-                            "title": "Therapeutic Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Health",
+                                    "prefix": "HLH",
+                                    "number": "215",
+                                    "key": "HLH 215",
+                                    "title": "Therapeutic Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1421,9 +1629,9 @@
                             "number": "-10",
                             "key": "NUTR -10",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1441,9 +1649,9 @@
                             "number": "10",
                             "key": "NUTR 10",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1452,28 +1660,44 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "100",
-                            "key": "NUTR 100",
-                            "title": "Nutrition Today",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "100",
+                                    "key": "NUTR 100",
+                                    "title": "Nutrition Today",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "100H",
-                            "key": "NUTR 100H",
-                            "title": "Nutrition Today (Honors)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "100H",
+                                    "key": "NUTR 100H",
+                                    "title": "Nutrition Today (Honors)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1482,28 +1706,44 @@
             {
                 "sending_name": "Mission College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutritional Science",
-                            "prefix": "NTR",
-                            "number": "015",
-                            "key": "NTR 015",
-                            "title": "Human Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutritional Science",
+                                    "prefix": "NTR",
+                                    "number": "015",
+                                    "key": "NTR 015",
+                                    "title": "Human Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutritional Science",
-                            "prefix": "NTR",
-                            "number": "015H",
-                            "key": "NTR 015H",
-                            "title": "Human Nutrition - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutritional Science",
+                                    "prefix": "NTR",
+                                    "number": "015H",
+                                    "key": "NTR 015H",
+                                    "title": "Human Nutrition - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1521,9 +1761,9 @@
                             "number": "219",
                             "key": "FDNTR 219",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1541,9 +1781,9 @@
                             "number": "1",
                             "key": "NUTF 1",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1561,9 +1801,9 @@
                             "number": "M01",
                             "key": "NTS M01",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1581,9 +1821,9 @@
                             "number": "4",
                             "key": "KIN 4",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1592,28 +1832,44 @@
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition and Food",
-                            "prefix": "NF",
-                            "number": "25",
-                            "key": "NF 25",
-                            "title": "Introduction to Nutrition Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Food",
+                                    "prefix": "NF",
+                                    "number": "25",
+                                    "key": "NF 25",
+                                    "title": "Introduction to Nutrition Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition and Food",
-                            "prefix": "NF",
-                            "number": "25H",
-                            "key": "NF 25H",
-                            "title": "Introduction to Nutrition Science - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Food",
+                                    "prefix": "NF",
+                                    "number": "25H",
+                                    "key": "NF 25H",
+                                    "title": "Introduction to Nutrition Science - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1622,28 +1878,44 @@
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR-",
-                            "number": "101",
-                            "key": "NUTR- 101",
-                            "title": "Nutrition & Foods",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR-",
+                                    "number": "101",
+                                    "key": "NUTR- 101",
+                                    "title": "Nutrition & Foods",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR-",
-                            "number": "101H",
-                            "key": "NUTR- 101H",
-                            "title": "Honors Nutrition & Foods",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR-",
+                                    "number": "101H",
+                                    "key": "NUTR- 101H",
+                                    "title": "Honors Nutrition & Foods",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1661,9 +1933,9 @@
                             "number": "103",
                             "key": "BIOL 103",
                             "title": "Introduction to Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1681,9 +1953,9 @@
                             "number": "4",
                             "key": "KIN 4",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1701,9 +1973,9 @@
                             "number": "109",
                             "key": "HLTH 109",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1721,9 +1993,9 @@
                             "number": "A170",
                             "key": "FN A170",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1741,9 +2013,9 @@
                             "number": "R114",
                             "key": "HED R114",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1752,28 +2024,44 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "165",
-                            "key": "NUTR 165",
-                            "title": "Introduction to Human Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "165",
+                                    "key": "NUTR 165",
+                                    "title": "Introduction to Human Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "185",
-                            "key": "NUTR 185",
-                            "title": "Science of Human Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "185",
+                                    "key": "NUTR 185",
+                                    "title": "Science of Human Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1791,9 +2079,9 @@
                             "number": "011",
                             "key": "NUTR 011",
                             "title": "Human Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1811,9 +2099,9 @@
                             "number": "P110",
                             "key": "NUTR P110",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1831,9 +2119,9 @@
                             "number": "40",
                             "key": "FN 40",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1851,9 +2139,9 @@
                             "number": "110",
                             "key": "NUTR 110",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1871,9 +2159,9 @@
                             "number": "4",
                             "key": "KIN 4",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1882,28 +2170,44 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition and Foods",
-                            "prefix": "NUTRI",
-                            "number": "300",
-                            "key": "NUTRI 300",
-                            "title": "Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Foods",
+                                    "prefix": "NUTRI",
+                                    "number": "300",
+                                    "key": "NUTRI 300",
+                                    "title": "Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition and Foods",
-                            "prefix": "NUTRI",
-                            "number": "480",
-                            "key": "NUTRI 480",
-                            "title": "Nutrition Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Foods",
+                                    "prefix": "NUTRI",
+                                    "number": "480",
+                                    "key": "NUTRI 480",
+                                    "title": "Nutrition Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1921,9 +2225,9 @@
                             "number": "50",
                             "key": "NUTR 50",
                             "title": "Fundamentals of Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1941,9 +2245,9 @@
                             "number": "162",
                             "key": "FN 162",
                             "title": "Introduction to Food and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1961,9 +2265,9 @@
                             "number": "150",
                             "key": "NUTR 150",
                             "title": "Nutrition Science and Global Food Issues",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1981,9 +2285,9 @@
                             "number": "150",
                             "key": "NUTR 150",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2001,9 +2305,9 @@
                             "number": "150",
                             "key": "NUTR 150",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2021,9 +2325,9 @@
                             "number": "6",
                             "key": "FCS 6",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2041,9 +2345,9 @@
                             "number": "019",
                             "key": "FCS 019",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2052,28 +2356,44 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Nutrition and Food",
-                            "prefix": "NUTR",
-                            "number": "115",
-                            "key": "NUTR 115",
-                            "title": "Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Food",
+                                    "prefix": "NUTR",
+                                    "number": "115",
+                                    "key": "NUTR 115",
+                                    "title": "Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition and Food",
-                            "prefix": "NUTR",
-                            "number": "115H",
-                            "key": "NUTR 115H",
-                            "title": "Honors Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Food",
+                                    "prefix": "NUTR",
+                                    "number": "115H",
+                                    "key": "NUTR 115H",
+                                    "title": "Honors Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2091,9 +2411,9 @@
                             "number": "128",
                             "key": "BMS 128",
                             "title": "Human Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2111,9 +2431,9 @@
                             "number": "1",
                             "key": "NUTR 1",
                             "title": "Introduction to Nutrition Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2131,9 +2451,9 @@
                             "number": "10",
                             "key": "FDNT 10",
                             "title": "Elementary Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2151,9 +2471,9 @@
                             "number": "115",
                             "key": "NUTR 115",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2171,9 +2491,9 @@
                             "number": "25",
                             "key": "NUTR 25",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2191,9 +2511,9 @@
                             "number": "10",
                             "key": "NUTF 10",
                             "title": "Principles of Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2211,9 +2531,9 @@
                             "number": "310",
                             "key": "BIOL 310",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2231,9 +2551,9 @@
                             "number": "010",
                             "key": "NUTR 010",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2251,9 +2571,9 @@
                             "number": "204",
                             "key": "HLTH 204",
                             "title": "Fundamentals of Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2271,9 +2591,9 @@
                             "number": "V87",
                             "key": "HED V87",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2291,9 +2611,9 @@
                             "number": "110",
                             "key": "BIOL 110",
                             "title": "Introduction to Human Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2311,9 +2631,9 @@
                             "number": "021",
                             "key": "FAM &CS 021",
                             "title": "Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2331,9 +2651,9 @@
                             "number": "015",
                             "key": "NUTR 015",
                             "title": "Human Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2351,9 +2671,9 @@
                             "number": "10",
                             "key": "NUTR 10",
                             "title": "Principles of Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2371,9 +2691,9 @@
                             "number": "10",
                             "key": "HLTH 10",
                             "title": "Principles of Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2394,28 +2714,44 @@
             {
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Culinary Arts",
-                            "prefix": "CA",
-                            "number": "120",
-                            "key": "CA 120",
-                            "title": "Principles of Foods 1",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Culinary Arts",
+                                    "prefix": "CA",
+                                    "number": "120",
+                                    "key": "CA 120",
+                                    "title": "Principles of Foods 1",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Family and Consumer Science",
-                            "prefix": "FCS",
-                            "number": "120",
-                            "key": "FCS 120",
-                            "title": "Principles of Foods 1",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Family and Consumer Science",
+                                    "prefix": "FCS",
+                                    "number": "120",
+                                    "key": "FCS 120",
+                                    "title": "Principles of Foods 1",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2433,9 +2769,9 @@
                             "number": "315",
                             "key": "HM 315",
                             "title": "Food Theory and Preparation",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2453,9 +2789,9 @@
                             "number": "103",
                             "key": "NF 103",
                             "title": "Principles of Food Preparation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2473,9 +2809,9 @@
                             "number": "B11",
                             "key": "NUTR B11",
                             "title": "Principles of Foods with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2493,9 +2829,9 @@
                             "number": "12",
                             "key": "FN 12",
                             "title": "Introduction to Food Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2513,9 +2849,9 @@
                             "number": "230",
                             "key": "CA 230",
                             "title": "Professional Healthy Cooking",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Culinary Arts",
@@ -2523,9 +2859,9 @@
                             "number": "230L",
                             "key": "CA 230L",
                             "title": "Applications of Professional Healthy Cooking",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2543,9 +2879,9 @@
                             "number": "C122",
                             "key": "HCRS C122",
                             "title": "Principles Of Food Preparation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2555,7 +2891,7 @@
                 "sending_name": "Coalinga College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -2572,9 +2908,9 @@
                             "number": "14",
                             "key": "HS 14",
                             "title": "Principles of Food",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2592,9 +2928,9 @@
                             "number": "232",
                             "key": "NUTR 232",
                             "title": "Principles of Food with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2612,9 +2948,9 @@
                             "number": "155 C",
                             "key": "HRC 155 C",
                             "title": "Food Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2632,9 +2968,9 @@
                             "number": "330",
                             "key": "NUTRI 330",
                             "title": "Food Theory and Preparation",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2652,9 +2988,9 @@
                             "number": "1",
                             "key": "FN 1",
                             "title": "Principles of Food Preparation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2672,9 +3008,9 @@
                             "number": "102 F",
                             "key": "FOOD 102 F",
                             "title": "Introduction to Foods",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2692,9 +3028,9 @@
                             "number": "111",
                             "key": "CULIN 111",
                             "title": "Fundamentals of Professional Cooking 1",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2712,9 +3048,9 @@
                             "number": "205",
                             "key": "NUTR 205",
                             "title": "The Scientific Principles of Food Preparation",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2732,9 +3068,9 @@
                             "number": "001",
                             "key": "CUL 001",
                             "title": "Principles of Food with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2752,9 +3088,9 @@
                             "number": "21",
                             "key": "NUTR 21",
                             "title": "Food Selection and Meal Preparation",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2772,9 +3108,9 @@
                             "number": "024",
                             "key": "FAM &CS 024",
                             "title": "Food Preparation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2792,9 +3128,9 @@
                             "number": "113",
                             "key": "CLN ART 113",
                             "title": "Culinary Skills 1",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2812,9 +3148,9 @@
                             "number": "024",
                             "key": "NUTRTN 024",
                             "title": "Introduction to Food Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2832,9 +3168,9 @@
                             "number": "-20",
                             "key": "NUTR -20",
                             "title": "Principles of Foods",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2852,9 +3188,9 @@
                             "number": "120",
                             "key": "NUTR 120",
                             "title": "Principles of Food Science with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2872,9 +3208,9 @@
                             "number": "220",
                             "key": "FDNTR 220",
                             "title": "Principles of Foods with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2892,9 +3228,9 @@
                             "number": "10",
                             "key": "NUTF 10",
                             "title": "Food Science",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Nutrition and Food",
@@ -2902,9 +3238,9 @@
                             "number": "10L",
                             "key": "NUTF 10L",
                             "title": "Food Science and Safety Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2922,9 +3258,9 @@
                             "number": "M09",
                             "key": "NTS M09",
                             "title": "Introduction to Food Science with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2942,9 +3278,9 @@
                             "number": "20",
                             "key": "NF 20",
                             "title": "Principles of Food with Laboratory",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2962,9 +3298,9 @@
                             "number": "A180",
                             "key": "FN A180",
                             "title": "Principles of Foods",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2982,9 +3318,9 @@
                             "number": "012",
                             "key": "NUTR 012",
                             "title": "Principles of Food Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3002,9 +3338,9 @@
                             "number": "120",
                             "key": "NUTR 120",
                             "title": "Principles of Foods with Labs",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3022,9 +3358,9 @@
                             "number": "330",
                             "key": "NUTRI 330",
                             "title": "Food Theory and Preparation",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3042,9 +3378,9 @@
                             "number": "110",
                             "key": "CUL 110",
                             "title": "Food Preparation Essentials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3062,9 +3398,9 @@
                             "number": "160",
                             "key": "HOSP 160",
                             "title": "Culinary Production and Kitchen Operations",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3082,9 +3418,9 @@
                             "number": "018",
                             "key": "FCS 018",
                             "title": "Principles of Foods with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3093,28 +3429,44 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Culinary Arts",
-                            "prefix": "CULN",
-                            "number": "116",
-                            "key": "CULN 116",
-                            "title": "Principles of Food Preparation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Culinary Arts",
+                                    "prefix": "CULN",
+                                    "number": "116",
+                                    "key": "CULN 116",
+                                    "title": "Principles of Food Preparation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition and Food",
-                            "prefix": "NUTR",
-                            "number": "116",
-                            "key": "NUTR 116",
-                            "title": "Principles of Food Preparation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Food",
+                                    "prefix": "NUTR",
+                                    "number": "116",
+                                    "key": "NUTR 116",
+                                    "title": "Principles of Food Preparation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3132,9 +3484,9 @@
                             "number": "8",
                             "key": "NUTR 8",
                             "title": "Principles of Food with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3152,9 +3504,9 @@
                             "number": "45",
                             "key": "CULA 45",
                             "title": "Basic Food Production",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3172,9 +3524,9 @@
                             "number": "5",
                             "key": "NUTF 5",
                             "title": "Food Preparation for Nutrition and Life Fitness",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3192,9 +3544,9 @@
                             "number": "V32",
                             "key": "HED V32",
                             "title": "Principles of Food with Lab",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3224,9 +3576,9 @@
                             "number": "124",
                             "key": "CA 124",
                             "title": "Sanitation, Safety and Equipment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3244,9 +3596,9 @@
                             "number": "310",
                             "key": "HM 310",
                             "title": "Sanitation, Safety and Equipment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3264,9 +3616,9 @@
                             "number": "B10",
                             "key": "CULN B10",
                             "title": "Food Safety and Sanitation",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3284,9 +3636,9 @@
                             "number": "10",
                             "key": "FN 10",
                             "title": "Food Safety and Sanitation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3304,11 +3656,11 @@
                             "number": "64",
                             "key": "CAHM 64",
                             "title": "Sanitation and Hygiene",
+                            "min_units": 2.0,
+                            "max_units": 2.0,
                             "notes": [
                                 "Must be taken for a letter  grade"
-                            ],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -3326,9 +3678,9 @@
                             "number": "101",
                             "key": "CA 101",
                             "title": "Introduction to Food Service, Safety and Sanitation",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3346,9 +3698,9 @@
                             "number": "15",
                             "key": "CUL 15",
                             "title": "Sanitation, Safety, and Equipment Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3366,9 +3718,9 @@
                             "number": "121",
                             "key": "BIO 121",
                             "title": "Principles of Food Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3386,9 +3738,9 @@
                             "number": "C160",
                             "key": "FN C160",
                             "title": "Food Safety and Sanitation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3406,9 +3758,9 @@
                             "number": "110",
                             "key": "HOSP 110",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3426,9 +3778,9 @@
                             "number": "60",
                             "key": "CART 60",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3446,9 +3798,9 @@
                             "number": "1",
                             "key": "HPMGT 1",
                             "title": "Safety and Sanitation",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3466,9 +3818,9 @@
                             "number": "306",
                             "key": "CAM 306",
                             "title": "Culinary Sanitation & Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3486,9 +3838,9 @@
                             "number": "215",
                             "key": "CUL 215",
                             "title": "Food Safety and Sanitation",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3506,9 +3858,9 @@
                             "number": "120 C",
                             "key": "HRC 120 C",
                             "title": "Sanitation & Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3526,9 +3878,9 @@
                             "number": "110",
                             "key": "HOSP 110",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3546,9 +3898,9 @@
                             "number": "110 F",
                             "key": "FOOD 110 F",
                             "title": "Food Safety and Sanitation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3566,9 +3918,9 @@
                             "number": "113",
                             "key": "CULIN 113",
                             "title": "Institutional Sanitation Practices for Foodservice and Hospitality",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3586,9 +3938,9 @@
                             "number": "28",
                             "key": "CULIN 28",
                             "title": "Managing Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3606,9 +3958,9 @@
                             "number": "003",
                             "key": "CUL 003",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3626,9 +3978,9 @@
                             "number": "20",
                             "key": "CULAR 20",
                             "title": "Food Srv Sanitry Htl/Rstr Mgmt",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3646,9 +3998,9 @@
                             "number": "050",
                             "key": "FAM &CS 050",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3666,9 +4018,9 @@
                             "number": "117",
                             "key": "CLN ART 117",
                             "title": "Food Sanitation & Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3686,9 +4038,9 @@
                             "number": "112",
                             "key": "CLN ART 112",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3706,9 +4058,9 @@
                             "number": "35",
                             "key": "FSM 35",
                             "title": "Food Services, Sanitation, Safety and Equipment",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3726,9 +4078,9 @@
                             "number": "050",
                             "key": "INF 050",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3737,28 +4089,44 @@
             {
                 "sending_name": "Monterey Peninsula College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Hospitality",
-                            "prefix": "HOSP",
-                            "number": "58",
-                            "key": "HOSP 58",
-                            "title": "Sanitation, Safety, Equipment",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Hospitality",
+                                    "prefix": "HOSP",
+                                    "number": "58",
+                                    "key": "HOSP 58",
+                                    "title": "Sanitation, Safety, Equipment",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition and Food",
-                            "prefix": "NUTF",
-                            "number": "58",
-                            "key": "NUTF 58",
-                            "title": "Sanitation, Safety, Equipment",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Food",
+                                    "prefix": "NUTF",
+                                    "number": "58",
+                                    "key": "NUTF 58",
+                                    "title": "Sanitation, Safety, Equipment",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3776,9 +4144,9 @@
                             "number": "M20",
                             "key": "NTS M20",
                             "title": "Essentials of Food Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3796,9 +4164,9 @@
                             "number": "52",
                             "key": "HRM 52",
                             "title": "Food Safety and Sanitation",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3816,9 +4184,9 @@
                             "number": "100",
                             "key": "HCTM 100",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3836,9 +4204,9 @@
                             "number": "A102",
                             "key": "FBM A102",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3856,9 +4224,9 @@
                             "number": "R104",
                             "key": "CRM R104",
                             "title": "Sanitation and Environmental Control",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3876,9 +4244,9 @@
                             "number": "P110",
                             "key": "HOSP P110",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3896,9 +4264,9 @@
                             "number": "103",
                             "key": "HOSP 103",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3916,9 +4284,9 @@
                             "number": "50",
                             "key": "CUL 50",
                             "title": "ServSafe Food Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3936,9 +4304,9 @@
                             "number": "333",
                             "key": "NUTRI 333",
                             "title": "Food Safety and Sanitation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3956,9 +4324,9 @@
                             "number": "171",
                             "key": "CUL 171",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3976,9 +4344,9 @@
                             "number": "225",
                             "key": "CULART 225",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3987,28 +4355,44 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Culinary Arts",
-                            "prefix": "CULN",
-                            "number": "110",
-                            "key": "CULN 110",
-                            "title": "Food Safety and Sanitation",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Culinary Arts",
+                                    "prefix": "CULN",
+                                    "number": "110",
+                                    "key": "CULN 110",
+                                    "title": "Food Safety and Sanitation",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition and Food",
-                            "prefix": "NUTR",
-                            "number": "110",
-                            "key": "NUTR 110",
-                            "title": "Food Safety and Sanitation",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Food",
+                                    "prefix": "NUTR",
+                                    "number": "110",
+                                    "key": "NUTR 110",
+                                    "title": "Food Safety and Sanitation",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4026,9 +4410,9 @@
                             "number": "113",
                             "key": "CA 113",
                             "title": "Hospitality Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4046,9 +4430,9 @@
                             "number": "50",
                             "key": "CULA 50",
                             "title": "Sanitation and Safety",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4066,9 +4450,9 @@
                             "number": "120",
                             "key": "HTM. 120",
                             "title": "Sanitation Practices in the Hospitality Industry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4086,9 +4470,9 @@
                             "number": "110",
                             "key": "HOSPT 110",
                             "title": "SANITATION AND SAFETY",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4110,7 +4494,7 @@
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -4127,9 +4511,9 @@
                             "number": "15",
                             "key": "FN 15",
                             "title": "Introduction to Nutrition, Dietetics and Food",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4139,7 +4523,7 @@
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -4156,9 +4540,9 @@
                             "number": "2",
                             "key": "NUTF 2",
                             "title": "Introduction to Careers in Nutrition, Dietetics, and Food",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4176,9 +4560,9 @@
                             "number": "100",
                             "key": "NUTR 100",
                             "title": "Introduction to Nutrition and Food Professions",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4188,7 +4572,7 @@
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -4196,28 +4580,44 @@
             {
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Dietetic Technology",
-                            "prefix": "DIET",
-                            "number": "70",
-                            "key": "DIET 70",
-                            "title": "Introduction to Nutrition, Dietetics and Food Service",
-                            "notes": [],
-                            "min_units": 1.0,
-                            "max_units": 1.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Dietetic Technology",
+                                    "prefix": "DIET",
+                                    "number": "70",
+                                    "key": "DIET 70",
+                                    "title": "Introduction to Nutrition, Dietetics and Food Service",
+                                    "min_units": 1.0,
+                                    "max_units": 1.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Foods and Nutrition",
-                            "prefix": "FDNT",
-                            "number": "70",
-                            "key": "FDNT 70",
-                            "title": "Introduction to Nutrition, Dietetics and Food Service",
-                            "notes": [],
-                            "min_units": 1.0,
-                            "max_units": 1.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Foods and Nutrition",
+                                    "prefix": "FDNT",
+                                    "number": "70",
+                                    "key": "FDNT 70",
+                                    "title": "Introduction to Nutrition, Dietetics and Food Service",
+                                    "min_units": 1.0,
+                                    "max_units": 1.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4250,7 +4650,7 @@
                 "sending_name": "American River College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -4259,7 +4659,7 @@
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -4276,9 +4676,9 @@
                             "number": "11",
                             "key": "FSM 11",
                             "title": "Food Service Supervision",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Food Service Management",
@@ -4286,9 +4686,9 @@
                             "number": "35",
                             "key": "FSM 35",
                             "title": "Food Services, Sanitation, Safety and Equipment",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4298,7 +4698,7 @@
                 "sending_name": "Lake Tahoe Community College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -4315,9 +4715,9 @@
                             "number": "052",
                             "key": "FAM &CS 052",
                             "title": "Food Service Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

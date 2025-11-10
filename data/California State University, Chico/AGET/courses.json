@@ -21,9 +21,9 @@
                             "number": "155",
                             "key": "AG 155",
                             "title": "Introduction to Mechanized Agriculture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "22",
                             "key": "AET 22",
                             "title": "Natural Resources & Agri-Construction",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -61,9 +61,9 @@
                             "number": "221",
                             "key": "AGM 221",
                             "title": "Introduction to Agriculture Mechanics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -81,9 +81,9 @@
                             "number": "160",
                             "key": "AGMA 160",
                             "title": "Introduction to Mechanized Agricuture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -101,9 +101,9 @@
                             "number": "70",
                             "key": "MFGT 70",
                             "title": "Introduction to Mechanized Agriculture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -121,9 +121,9 @@
                             "number": "40",
                             "key": "AGR 40",
                             "title": "Basic Agricultural Mechanics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -141,9 +141,9 @@
                             "number": "40",
                             "key": "MAG 40",
                             "title": "Introduction to Agricultural Mechanics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -161,9 +161,9 @@
                             "number": "-05",
                             "key": "AGMA -05",
                             "title": "Agricultural and Industrial Technical Skills",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -181,9 +181,9 @@
                             "number": "200",
                             "key": "AGM 200",
                             "title": "Introduction to Mechanical Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -201,9 +201,9 @@
                             "number": "71",
                             "key": "AGOR 71",
                             "title": "Construction Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -221,9 +221,9 @@
                             "number": "40",
                             "key": "MAG 40",
                             "title": "Introduction to Agricultural Mechanics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -241,9 +241,9 @@
                             "number": "44",
                             "key": "AGMA 44",
                             "title": "Introduction to Construction Skills for Agriculture and Natural Resources",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -261,9 +261,9 @@
                             "number": "213",
                             "key": "AGRI 213",
                             "title": "Agriculture Mechanics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -284,28 +284,44 @@
             {
                 "sending_name": "Butte College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Agricultural Engineering Technology",
-                            "prefix": "AET",
-                            "number": "30",
-                            "key": "AET 30",
-                            "title": "Tractors & Crawlers",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Agricultural Engineering Technology",
+                                    "prefix": "AET",
+                                    "number": "30",
+                                    "key": "AET 30",
+                                    "title": "Tractors & Crawlers",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Agricultural Engineering Technology",
-                            "prefix": "AET",
-                            "number": "34",
-                            "key": "AET 34",
-                            "title": "Farm Machinery",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Agricultural Engineering Technology",
+                                    "prefix": "AET",
+                                    "number": "34",
+                                    "key": "AET 34",
+                                    "title": "Farm Machinery",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -323,9 +339,9 @@
                             "number": "014",
                             "key": "AG 014",
                             "title": "Tractor Operations",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -343,9 +359,9 @@
                             "number": "51",
                             "key": "AG 51",
                             "title": "Tractor Operation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -363,9 +379,9 @@
                             "number": "103",
                             "key": "AGTC 103",
                             "title": "Farm Power",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -383,9 +399,9 @@
                             "number": "220",
                             "key": "AGM 220",
                             "title": "Farm Power, Machinery and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -403,9 +419,9 @@
                             "number": "108",
                             "key": "AGMA 108",
                             "title": "Tractor Operation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -423,9 +439,9 @@
                             "number": "75",
                             "key": "MFGT 75",
                             "title": "Agricultural Machinery Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -443,9 +459,9 @@
                             "number": "41",
                             "key": "AGR 41",
                             "title": "Farm Tractors and Farm Power",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -463,9 +479,9 @@
                             "number": "11",
                             "key": "PLS 11",
                             "title": "Machinery Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -483,9 +499,9 @@
                             "number": "51",
                             "key": "AGOR 51",
                             "title": "Tractor And Landscape Equipment Operations",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -503,9 +519,9 @@
                             "number": "11",
                             "key": "PLS 11",
                             "title": "Machinery Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -514,28 +530,44 @@
             {
                 "sending_name": "Shasta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "AG. Mechanized Agriculture",
-                            "prefix": "AGMA",
-                            "number": "42",
-                            "key": "AGMA 42",
-                            "title": "Farm Power and Machinery",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "AG. Mechanized Agriculture",
+                                    "prefix": "AGMA",
+                                    "number": "42",
+                                    "key": "AGMA 42",
+                                    "title": "Farm Power and Machinery",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Construction Technology",
-                            "prefix": "CONS",
-                            "number": "46",
-                            "key": "CONS 46",
-                            "title": "Equipment Operations and Maintenance",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Construction Technology",
+                                    "prefix": "CONS",
+                                    "number": "46",
+                                    "key": "CONS 46",
+                                    "title": "Equipment Operations and Maintenance",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []

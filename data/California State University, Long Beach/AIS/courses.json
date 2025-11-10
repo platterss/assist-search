@@ -21,9 +21,9 @@
                             "number": "110",
                             "key": "ESL 110",
                             "title": "College Composition for Non-Native Speakers",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -53,9 +53,9 @@
                             "number": "25",
                             "key": "HIS 25",
                             "title": "American Indian History and Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -73,9 +73,9 @@
                             "number": "002",
                             "key": "ETHN 002",
                             "title": "American Indian Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -93,9 +93,9 @@
                             "number": "15",
                             "key": "ETHS 15",
                             "title": "Native People of North America",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -113,9 +113,9 @@
                             "number": "108",
                             "key": "HIST 108",
                             "title": "United States History: The American Indian Experience",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -133,9 +133,9 @@
                             "number": "160 C",
                             "key": "ETHS 160 C",
                             "title": "Native American History I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -153,9 +153,9 @@
                             "number": "12",
                             "key": "NAIS 12",
                             "title": "Ethnic Studies and the Historical Experiences of Native Americans",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -173,9 +173,9 @@
                             "number": "132",
                             "key": "ANTHRO 132",
                             "title": "Native People of North America",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -193,9 +193,9 @@
                             "number": "108",
                             "key": "HIST 108",
                             "title": "United States History: The American Indian Experience",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -213,9 +213,9 @@
                             "number": "32",
                             "key": "AMIND 32",
                             "title": "American Indian History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -233,9 +233,9 @@
                             "number": "160 F",
                             "key": "ETHS 160 F",
                             "title": "American Indian History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -244,28 +244,44 @@
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "130",
-                            "key": "ETHN 130",
-                            "title": "U.S. History and Cultures: Native American Perspectives I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "130",
+                                    "key": "ETHN 130",
+                                    "title": "U.S. History and Cultures: Native American Perspectives I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "130",
-                            "key": "HIST 130",
-                            "title": "U.S. History and Cultures: Native American Perspectives I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "130",
+                                    "key": "HIST 130",
+                                    "title": "U.S. History and Cultures: Native American Perspectives I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -283,9 +299,9 @@
                             "number": "25",
                             "key": "HIST 25",
                             "title": "American Indian History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -303,9 +319,9 @@
                             "number": "171",
                             "key": "NATIVAM 171",
                             "title": "History of American Indian Nations",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -323,9 +339,9 @@
                             "number": "M135",
                             "key": "HIST M135",
                             "title": "Native American History and Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -343,9 +359,9 @@
                             "number": "30",
                             "key": "ANTH 30",
                             "title": "The Native American",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -354,28 +370,44 @@
             {
                 "sending_name": "Riverside City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "History",
-                            "prefix": "HIS",
-                            "number": "28",
-                            "key": "HIS 28",
-                            "title": "Native American History to 1871",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIS",
+                                    "number": "28",
+                                    "key": "HIS 28",
+                                    "title": "Native American History to 1871",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "History",
-                            "prefix": "HIS",
-                            "number": "29",
-                            "key": "HIS 29",
-                            "title": "Native American History II: Contemporary Society",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIS",
+                                    "number": "29",
+                                    "key": "HIS 29",
+                                    "title": "Native American History II: Contemporary Society",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -384,28 +416,44 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Anthropology",
-                            "prefix": "ANTH",
-                            "number": "125",
-                            "key": "ANTH 125",
-                            "title": "Native Americans in the U.S.",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Anthropology",
+                                    "prefix": "ANTH",
+                                    "number": "125",
+                                    "key": "ANTH 125",
+                                    "title": "Native Americans in the U.S.",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "125",
-                            "key": "HIST 125",
-                            "title": "Native Americans in the U.S.",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "125",
+                                    "key": "HIST 125",
+                                    "title": "Native Americans in the U.S.",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -423,9 +471,9 @@
                             "number": "101",
                             "key": "NATA 101",
                             "title": "American Indian: Past and Present",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -443,9 +491,9 @@
                             "number": "V45",
                             "key": "HIST V45",
                             "title": "United States History: Focus on Native Americans to Reconstruction",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -475,9 +523,9 @@
                             "number": "160 C",
                             "key": "ETHS 160 C",
                             "title": "Native American History I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -495,9 +543,9 @@
                             "number": "M135",
                             "key": "HIST M135",
                             "title": "Native American History and Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -515,9 +563,9 @@
                             "number": "V55",
                             "key": "HIST V55",
                             "title": "United States History: Focus on Native Americans since the Civil War",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -547,9 +595,9 @@
                             "number": "101",
                             "key": "ES 101",
                             "title": "Introduction to Racial and Ethnic Groups",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Sociology",
@@ -557,9 +605,9 @@
                             "number": "120",
                             "key": "SOC 120",
                             "title": "Introduction to Racial and Ethnic Groups",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -577,9 +625,9 @@
                             "number": "19",
                             "key": "HIST 19",
                             "title": "History of Ethnic Relations in the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -597,9 +645,9 @@
                             "number": "C123",
                             "key": "ETHS C123",
                             "title": "History of Ethnic Minorities in the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "History",
@@ -607,9 +655,9 @@
                             "number": "C123",
                             "key": "HIST C123",
                             "title": "History of Ethnic Minorities in the United States",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -627,9 +675,9 @@
                             "number": "206",
                             "key": "SOC 206",
                             "title": "Introduction to Race and Ethnicity",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -647,9 +695,9 @@
                             "number": "101",
                             "key": "ETHN 101",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Ethnic Studies",
@@ -657,9 +705,9 @@
                             "number": "108",
                             "key": "ETHN 108",
                             "title": "Introduction to African American Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -677,9 +725,9 @@
                             "number": "10",
                             "key": "ETHNST 10",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -697,9 +745,9 @@
                             "number": "121",
                             "key": "ETH S 121",
                             "title": "Ethnic and Racial Minorities",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -708,28 +756,44 @@
             {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "G150",
-                            "key": "ETHS G150",
-                            "title": "Ethnic Groups of the United States: Their Histories",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "G150",
+                                    "key": "ETHS G150",
+                                    "title": "Ethnic Groups of the United States: Their Histories",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "G155",
-                            "key": "HIST G155",
-                            "title": "Ethnic Groups of the United States: Their Histories",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "G155",
+                                    "key": "HIST G155",
+                                    "title": "Ethnic Groups of the United States: Their Histories",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -738,48 +802,80 @@
             {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "130",
-                            "key": "ETHN 130",
-                            "title": "U.S. History and Cultures: Native American Perspectives I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "130",
+                                    "key": "ETHN 130",
+                                    "title": "U.S. History and Cultures: Native American Perspectives I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "131",
-                            "key": "ETHN 131",
-                            "title": "U.S. History and Cultures: Native American Perspectives II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "131",
+                                    "key": "ETHN 131",
+                                    "title": "U.S. History and Cultures: Native American Perspectives II",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "130",
-                            "key": "HIST 130",
-                            "title": "U.S. History and Cultures: Native American Perspectives I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "130",
+                                    "key": "HIST 130",
+                                    "title": "U.S. History and Cultures: Native American Perspectives I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "131",
-                            "key": "HIST 131",
-                            "title": "U.S. History and Cultures: Native American Perspectives II",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "131",
+                                    "key": "HIST 131",
+                                    "title": "U.S. History and Cultures: Native American Perspectives II",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -797,9 +893,9 @@
                             "number": "1",
                             "key": "ETH 1",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -808,38 +904,62 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "30",
-                            "key": "HIST 30",
-                            "title": "History of Ethnicity and Culture in the United States",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "30",
+                                    "key": "HIST 30",
+                                    "title": "History of Ethnicity and Culture in the United States",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "10",
-                            "key": "ETHN 10",
-                            "title": "Introduction to Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "10",
+                                    "key": "ETHN 10",
+                                    "title": "Introduction to Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "10H",
-                            "key": "ETHN 10H",
-                            "title": "Introduction to Ethnic Studies Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "10H",
+                                    "key": "ETHN 10H",
+                                    "title": "Introduction to Ethnic Studies Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -857,9 +977,9 @@
                             "number": "002",
                             "key": "AFRO AM 002",
                             "title": "The African American In Contemporary Urban Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -877,9 +997,9 @@
                             "number": "10",
                             "key": "ETNC 10",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -897,9 +1017,9 @@
                             "number": "20",
                             "key": "SOC 20",
                             "title": "Introduction to Race and Ethnicity",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -917,9 +1037,9 @@
                             "number": "300",
                             "key": "ETHNS 300",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -937,9 +1057,9 @@
                             "number": "137",
                             "key": "HIST 137",
                             "title": "Experiences of Racial and Ethnic Groups in U.S. History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -948,28 +1068,44 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "150",
-                            "key": "ETHN 150",
-                            "title": "Introduction to Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "150",
+                                    "key": "ETHN 150",
+                                    "title": "Introduction to Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "150H",
-                            "key": "ETHN 150H",
-                            "title": "Honors Introduction to Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "150H",
+                                    "key": "ETHN 150H",
+                                    "title": "Honors Introduction to Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -987,9 +1123,9 @@
                             "number": "10",
                             "key": "HIST 10",
                             "title": "Ethnicity and American Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1007,9 +1143,9 @@
                             "number": "101",
                             "key": "ETHN 101",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Sociology",
@@ -1017,9 +1153,9 @@
                             "number": "101",
                             "key": "SOC 101",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1037,9 +1173,9 @@
                             "number": "V03",
                             "key": "SOC V03",
                             "title": "Racial and Ethnic Group Relations",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

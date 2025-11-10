@@ -21,9 +21,9 @@
                             "number": "10",
                             "key": "ENGR 10",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "10",
                             "key": "ENGR 10",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -53,7 +53,7 @@
                 "sending_name": "Los Medanos College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -70,9 +70,9 @@
                             "number": "1A",
                             "key": "ENGR 1A",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -90,9 +90,9 @@
                             "number": "10",
                             "key": "ENGR 10",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -110,9 +110,9 @@
                             "number": "101",
                             "key": "ENGR 101",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -142,9 +142,9 @@
                             "number": "310",
                             "key": "ENGR 310",
                             "title": "Engineering Survey Measurements",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -162,9 +162,9 @@
                             "number": "B40",
                             "key": "ENGR B40",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -182,9 +182,9 @@
                             "number": "3",
                             "key": "ENGR 3",
                             "title": "Plane Surveying I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -202,9 +202,9 @@
                             "number": "1A",
                             "key": "ENGR 1A",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -214,7 +214,7 @@
                 "sending_name": "Coalinga College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -231,9 +231,9 @@
                             "number": "201",
                             "key": "ENGR 201",
                             "title": "Plane Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -251,9 +251,9 @@
                             "number": "140",
                             "key": "ENGIN 140",
                             "title": "Plane Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -262,28 +262,44 @@
             {
                 "sending_name": "Evergreen Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "060",
-                            "key": "ENGR 060",
-                            "title": "Surveying",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "060",
+                                    "key": "ENGR 060",
+                                    "title": "Surveying",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "061",
-                            "key": "ENGR 061",
-                            "title": "Plane Surveying",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "061",
+                                    "key": "ENGR 061",
+                                    "title": "Plane Surveying",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -301,9 +317,9 @@
                             "number": "1A",
                             "key": "ENGR 1A",
                             "title": "Elementary Plane Surveying 1",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -321,9 +337,9 @@
                             "number": "101AF",
                             "key": "ENGR 101AF",
                             "title": "Surveying I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -341,9 +357,9 @@
                             "number": "11",
                             "key": "EGN 11",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -361,9 +377,9 @@
                             "number": "121",
                             "key": "ENG SUP 121",
                             "title": "Plane Surveying I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering Support",
@@ -371,9 +387,9 @@
                             "number": "221",
                             "key": "ENG SUP 221",
                             "title": "Plane Surveying II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -391,9 +407,9 @@
                             "number": "1A",
                             "key": "SURV 1A",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -411,9 +427,9 @@
                             "number": "001A",
                             "key": "ENGR 001A",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -431,9 +447,9 @@
                             "number": "1",
                             "key": "SURV 1",
                             "title": "Introduction to Land Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -451,9 +467,9 @@
                             "number": "310",
                             "key": "ENGR 310",
                             "title": "Engineering Survey Measurements",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -471,9 +487,9 @@
                             "number": "10",
                             "key": "ENGR 10",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -491,9 +507,9 @@
                             "number": "60",
                             "key": "SURV 60",
                             "title": "Introduction to Plane Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -511,9 +527,9 @@
                             "number": "118",
                             "key": "SURV 118",
                             "title": "Plane Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Survey/Mapping Sciences",
@@ -521,9 +537,9 @@
                             "number": "119",
                             "key": "SURV 119",
                             "title": "Advanced Plane Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -541,9 +557,9 @@
                             "number": "180",
                             "key": "ENGR 180",
                             "title": "Engineering Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -573,9 +589,9 @@
                             "number": "310",
                             "key": "ENGR 310",
                             "title": "Engineering Survey Measurements",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -593,9 +609,9 @@
                             "number": "B40",
                             "key": "ENGR B40",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -613,9 +629,9 @@
                             "number": "3",
                             "key": "ENGR 3",
                             "title": "Plane Surveying I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -633,9 +649,9 @@
                             "number": "1A",
                             "key": "ENGR 1A",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -645,7 +661,7 @@
                 "sending_name": "Coalinga College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -662,9 +678,9 @@
                             "number": "201",
                             "key": "ENGR 201",
                             "title": "Plane Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -682,9 +698,9 @@
                             "number": "140",
                             "key": "ENGIN 140",
                             "title": "Plane Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -693,28 +709,44 @@
             {
                 "sending_name": "Evergreen Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "060",
-                            "key": "ENGR 060",
-                            "title": "Surveying",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "060",
+                                    "key": "ENGR 060",
+                                    "title": "Surveying",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "061",
-                            "key": "ENGR 061",
-                            "title": "Plane Surveying",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "061",
+                                    "key": "ENGR 061",
+                                    "title": "Plane Surveying",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -732,9 +764,9 @@
                             "number": "1A",
                             "key": "ENGR 1A",
                             "title": "Elementary Plane Surveying 1",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -752,9 +784,9 @@
                             "number": "101AF",
                             "key": "ENGR 101AF",
                             "title": "Surveying I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -772,9 +804,9 @@
                             "number": "11",
                             "key": "EGN 11",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -792,9 +824,9 @@
                             "number": "121",
                             "key": "ENG SUP 121",
                             "title": "Plane Surveying I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering Support",
@@ -802,9 +834,9 @@
                             "number": "221",
                             "key": "ENG SUP 221",
                             "title": "Plane Surveying II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -822,9 +854,9 @@
                             "number": "1A",
                             "key": "SURV 1A",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -842,9 +874,9 @@
                             "number": "001A",
                             "key": "ENGR 001A",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -862,9 +894,9 @@
                             "number": "1L",
                             "key": "SURV 1L",
                             "title": "Introduction to Land Surveying Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -882,9 +914,9 @@
                             "number": "310",
                             "key": "ENGR 310",
                             "title": "Engineering Survey Measurements",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -902,9 +934,9 @@
                             "number": "10",
                             "key": "ENGR 10",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -922,9 +954,9 @@
                             "number": "60",
                             "key": "SURV 60",
                             "title": "Introduction to Plane Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -942,9 +974,9 @@
                             "number": "118",
                             "key": "SURV 118",
                             "title": "Plane Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Survey/Mapping Sciences",
@@ -952,9 +984,9 @@
                             "number": "119",
                             "key": "SURV 119",
                             "title": "Advanced Plane Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -972,9 +1004,9 @@
                             "number": "180",
                             "key": "ENGR 180",
                             "title": "Engineering Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -996,7 +1028,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1013,9 +1045,9 @@
                             "number": "2",
                             "key": "SURV 2",
                             "title": "Advanced Land Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1037,7 +1069,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1054,9 +1086,9 @@
                             "number": "2L",
                             "key": "SURV 2L",
                             "title": "Advanced Lang Surveying Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1097,9 +1129,9 @@
                             "number": "7",
                             "key": "SURV 7",
                             "title": "Construction Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Surveying",
@@ -1107,9 +1139,9 @@
                             "number": "7L",
                             "key": "SURV 7L",
                             "title": "Construction Surveying Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1127,9 +1159,9 @@
                             "number": "53",
                             "key": "SURV 53",
                             "title": "Route Surveying & Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1151,7 +1183,7 @@
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1171,28 +1203,44 @@
             {
                 "sending_name": "Clovis Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "40",
-                            "key": "ENGR 40",
-                            "title": "Programming for Scientists and Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "40",
+                                    "key": "ENGR 40",
+                                    "title": "Programming for Scientists and Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "5",
-                            "key": "ENGR 5",
-                            "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "5",
+                                    "key": "ENGR 5",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1210,9 +1258,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1230,9 +1278,9 @@
                             "number": "020",
                             "key": "ENGIN 020",
                             "title": "Programming with C++ for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1250,9 +1298,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1270,9 +1318,9 @@
                             "number": "140",
                             "key": "CS 140",
                             "title": "Object-Oriented Programming Using C++",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1282,7 +1330,7 @@
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1311,9 +1359,9 @@
                             "number": "126",
                             "key": "ENGTC 126",
                             "title": "Computer Aided Design and Drafting - AutoCAD",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1331,9 +1379,9 @@
                             "number": "063",
                             "key": "ENGR 063",
                             "title": "GIS for Civil Engineering and Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1342,38 +1390,62 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Aided Drafting and Design",
-                            "prefix": "CADD",
-                            "number": "14",
-                            "key": "CADD 14",
-                            "title": "2D CAD I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Aided Drafting and Design",
+                                    "prefix": "CADD",
+                                    "number": "14",
+                                    "key": "CADD 14",
+                                    "title": "2D CAD I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Aided Drafting and Design",
-                            "prefix": "CADD",
-                            "number": "24",
-                            "key": "CADD 24",
-                            "title": "Applications of 2D CAD",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Aided Drafting and Design",
+                                    "prefix": "CADD",
+                                    "number": "24",
+                                    "key": "CADD 24",
+                                    "title": "Applications of 2D CAD",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "2",
-                            "key": "ENGR 2",
-                            "title": "Graphics",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "2",
+                                    "key": "ENGR 2",
+                                    "title": "Graphics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1391,9 +1463,9 @@
                             "number": "122",
                             "key": "ENGI 122",
                             "title": "Engineering Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1402,28 +1474,44 @@
             {
                 "sending_name": "Reedley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "2",
-                            "key": "ENGR 2",
-                            "title": "Engineering Graphics",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "2",
+                                    "key": "ENGR 2",
+                                    "title": "Engineering Graphics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Surveying",
-                            "prefix": "SURV",
-                            "number": "10",
-                            "key": "SURV 10",
-                            "title": "Computer Aided Drafting for Surveyors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Surveying",
+                                    "prefix": "SURV",
+                                    "number": "10",
+                                    "key": "SURV 10",
+                                    "title": "Computer Aided Drafting for Surveyors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []

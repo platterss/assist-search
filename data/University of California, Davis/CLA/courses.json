@@ -67,28 +67,44 @@
             {
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "150",
-                            "key": "ENGL 150",
-                            "title": "Classical Mythology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "English",
+                                    "prefix": "ENGL",
+                                    "number": "150",
+                                    "key": "ENGL 150",
+                                    "title": "Classical Mythology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Religious Studies",
-                            "prefix": "RELIG",
-                            "number": "150",
-                            "key": "RELIG 150",
-                            "title": "Classical Mythology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Religious Studies",
+                                    "prefix": "RELIG",
+                                    "number": "150",
+                                    "key": "RELIG 150",
+                                    "title": "Classical Mythology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -106,11 +122,11 @@
                             "number": "36",
                             "key": "LIT 36",
                             "title": "Introduction to Mythology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -140,11 +156,11 @@
                             "number": "36",
                             "key": "LIT 36",
                             "title": "Introduction to Mythology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []

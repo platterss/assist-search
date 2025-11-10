@@ -21,9 +21,9 @@
                             "number": "B10",
                             "key": "MCAG B10",
                             "title": "Farm Power Operation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "30",
                             "key": "AET 30",
                             "title": "Tractors & Crawlers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -61,9 +61,9 @@
                             "number": "014",
                             "key": "AG 014",
                             "title": "Tractor Operations",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -81,9 +81,9 @@
                             "number": "103",
                             "key": "AGTC 103",
                             "title": "Farm Power",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -101,9 +101,9 @@
                             "number": "71",
                             "key": "MFGT 71",
                             "title": "Agricultural and Industrial Equipment Operation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -121,9 +121,9 @@
                             "number": "11",
                             "key": "PLS 11",
                             "title": "Machinery Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -141,9 +141,9 @@
                             "number": "-02",
                             "key": "AGMA -02",
                             "title": "Agriculture Equipment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -161,9 +161,9 @@
                             "number": "51",
                             "key": "AGOR 51",
                             "title": "Tractor and Landscape Equipment Operations",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -181,9 +181,9 @@
                             "number": "11",
                             "key": "PLS 11",
                             "title": "Machinery Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -201,9 +201,9 @@
                             "number": "42",
                             "key": "AGMA 42",
                             "title": "Farm Power and Machinery",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -221,9 +221,9 @@
                             "number": "213",
                             "key": "AGRI 213",
                             "title": "Agriculture Mechanics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -244,28 +244,44 @@
             {
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Agribusiness",
-                            "prefix": "AG",
-                            "number": "125",
-                            "key": "AG 125",
-                            "title": "Soils and Plant Nutrition",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Agribusiness",
+                                    "prefix": "AG",
+                                    "number": "125",
+                                    "key": "AG 125",
+                                    "title": "Soils and Plant Nutrition",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Viticulture and Enology",
-                            "prefix": "VEN",
-                            "number": "125",
-                            "key": "VEN 125",
-                            "title": "Soils and Plant Nutrition",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Viticulture and Enology",
+                                    "prefix": "VEN",
+                                    "number": "125",
+                                    "key": "VEN 125",
+                                    "title": "Soils and Plant Nutrition",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -283,9 +299,9 @@
                             "number": "B1",
                             "key": "SOIL B1",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -303,9 +319,9 @@
                             "number": "50",
                             "key": "AGS 50",
                             "title": "General Soils",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -323,9 +339,9 @@
                             "number": "2",
                             "key": "HORT 2",
                             "title": "Soil Science and Management",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -343,9 +359,9 @@
                             "number": "63",
                             "key": "O H 63",
                             "title": "Soils",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -363,9 +379,9 @@
                             "number": "021",
                             "key": "SLSCI 021",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -383,9 +399,9 @@
                             "number": "1",
                             "key": "AGPS 1",
                             "title": "Soils & Plant Nutrition",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -403,9 +419,9 @@
                             "number": "17",
                             "key": "AG 17",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -423,9 +439,9 @@
                             "number": "004",
                             "key": "AG 004",
                             "title": "Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -443,9 +459,9 @@
                             "number": "6",
                             "key": "FNR 6",
                             "title": "Soil Resources",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -454,28 +470,44 @@
             {
                 "sending_name": "Cosumnes River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Horticulture",
-                            "prefix": "HORT",
-                            "number": "302",
-                            "key": "HORT 302",
-                            "title": "Soils, Soil Management, and Plant Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Horticulture",
+                                    "prefix": "HORT",
+                                    "number": "302",
+                                    "key": "HORT 302",
+                                    "title": "Soils, Soil Management, and Plant Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Plant Science",
-                            "prefix": "PLTS",
-                            "number": "310",
-                            "key": "PLTS 310",
-                            "title": "Soils, Soil Management, and Plant Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Plant Science",
+                                    "prefix": "PLTS",
+                                    "number": "310",
+                                    "key": "PLTS 310",
+                                    "title": "Soils, Soil Management, and Plant Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -493,9 +525,9 @@
                             "number": "241",
                             "key": "AGPS 241",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -513,9 +545,9 @@
                             "number": "120",
                             "key": "HORT 120",
                             "title": "Soil Science and Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Horticulture",
@@ -523,9 +555,9 @@
                             "number": "121",
                             "key": "HORT 121",
                             "title": "Soil Science and Management Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -534,28 +566,44 @@
             {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Environmental Studies",
-                            "prefix": "ENVR",
-                            "number": "210",
-                            "key": "ENVR 210",
-                            "title": "Introduction to Soil Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Studies",
+                                    "prefix": "ENVR",
+                                    "number": "210",
+                                    "key": "ENVR 210",
+                                    "title": "Introduction to Soil Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Agriculture Plant Science",
-                            "prefix": "AGPS",
-                            "number": "210",
-                            "key": "AGPS 210",
-                            "title": "Introduction to Soil Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Agriculture Plant Science",
+                                    "prefix": "AGPS",
+                                    "number": "210",
+                                    "key": "AGPS 210",
+                                    "title": "Introduction to Soil Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -573,9 +621,9 @@
                             "number": "30",
                             "key": "HORT 30",
                             "title": "Horticultural Practices: Soils",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -593,9 +641,9 @@
                             "number": "90",
                             "key": "ABT 90",
                             "title": "Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -613,9 +661,9 @@
                             "number": "120",
                             "key": "AG 120",
                             "title": "Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -633,9 +681,9 @@
                             "number": "19",
                             "key": "AGR 19",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -653,9 +701,9 @@
                             "number": "021",
                             "key": "SLSCI 021",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -673,9 +721,9 @@
                             "number": "103",
                             "key": "PLNT SC 103",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -693,9 +741,9 @@
                             "number": "103",
                             "key": "PLNT SC 103",
                             "title": "INTRODUCTION TO SOIL SCIENCE",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -713,9 +761,9 @@
                             "number": "2",
                             "key": "PLS 2",
                             "title": "Soils",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Plant Science",
@@ -723,9 +771,9 @@
                             "number": "2L",
                             "key": "PLS 2L",
                             "title": "Soils Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -743,9 +791,9 @@
                             "number": "208",
                             "key": "AGR 208",
                             "title": "Soil Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -763,9 +811,9 @@
                             "number": "-05",
                             "key": "AGPS -05",
                             "title": "Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -783,9 +831,9 @@
                             "number": "115",
                             "key": "HORT 115",
                             "title": "Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -803,9 +851,9 @@
                             "number": "200",
                             "key": "NR 200",
                             "title": "Soils",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -823,9 +871,9 @@
                             "number": "53",
                             "key": "HORT 53",
                             "title": "Soil Science and Management",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -843,9 +891,9 @@
                             "number": "50",
                             "key": "AGOR 50",
                             "title": "Soil Science and Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -863,9 +911,9 @@
                             "number": "14",
                             "key": "BIO 14",
                             "title": "Soil Science and Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Biology",
@@ -873,9 +921,9 @@
                             "number": "15",
                             "key": "BIO 15",
                             "title": "Soil Science and Management Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -884,28 +932,44 @@
             {
                 "sending_name": "Palo Verde College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Agriculture",
-                            "prefix": "AGR",
-                            "number": "120",
-                            "key": "AGR 120",
-                            "title": "Soil Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Agriculture",
+                                    "prefix": "AGR",
+                                    "number": "120",
+                                    "key": "AGR 120",
+                                    "title": "Soil Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Agriculture",
-                            "prefix": "AGR",
-                            "number": "120",
-                            "key": "AGR 120",
-                            "title": "Soil Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Agriculture",
+                                    "prefix": "AGR",
+                                    "number": "120",
+                                    "key": "AGR 120",
+                                    "title": "Soil Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -923,9 +987,9 @@
                             "number": "012",
                             "key": "AGPS 012",
                             "title": "Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -943,9 +1007,9 @@
                             "number": "P106",
                             "key": "AGRI P106",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -963,9 +1027,9 @@
                             "number": "2",
                             "key": "PLS 2",
                             "title": "Soils",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Plant Science",
@@ -973,9 +1037,9 @@
                             "number": "2L",
                             "key": "PLS 2L",
                             "title": "Soils Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -993,9 +1057,9 @@
                             "number": "14",
                             "key": "BIO 14",
                             "title": "Soil Science and Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Biology",
@@ -1003,9 +1067,9 @@
                             "number": "15",
                             "key": "BIO 15",
                             "title": "Soil Science and Management Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1023,9 +1087,9 @@
                             "number": "113",
                             "key": "HORT 113",
                             "title": "Soils and Fertilizers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1043,9 +1107,9 @@
                             "number": "125",
                             "key": "AGRI 125",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1063,9 +1127,9 @@
                             "number": "14",
                             "key": "PLANT 14",
                             "title": "Soil Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1083,9 +1147,9 @@
                             "number": "102",
                             "key": "EH 102",
                             "title": "Soils and Plant Nutrients",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1103,9 +1167,9 @@
                             "number": "30",
                             "key": "AGRI 30",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1123,9 +1187,9 @@
                             "number": "24",
                             "key": "AGPS 24",
                             "title": "Soils",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1143,9 +1207,9 @@
                             "number": "221",
                             "key": "AGRI 221",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1163,9 +1227,9 @@
                             "number": "055",
                             "key": "HORT 055",
                             "title": "Soils and Fertilizers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1183,9 +1247,9 @@
                             "number": "134",
                             "key": "LNT 134",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1203,9 +1267,9 @@
                             "number": "V04",
                             "key": "AG V04",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1223,9 +1287,9 @@
                             "number": "131",
                             "key": "AGNR 131",
                             "title": "Introduction to Soil Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1243,9 +1307,9 @@
                             "number": "22L",
                             "key": "PLSCI 22L",
                             "title": "Introduction to Soils",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1263,9 +1327,9 @@
                             "number": "22",
                             "key": "PLSCI 22",
                             "title": "Introduction to Soils",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Plant Science",
@@ -1273,9 +1337,9 @@
                             "number": "22A",
                             "key": "PLSCI 22A",
                             "title": "Introduction to Soils Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1305,9 +1369,9 @@
                             "number": "B6",
                             "key": "ORNH B6",
                             "title": "Ornamental Plant Identification - Ground Covers, Vines and Dwarf Shrubs",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1325,9 +1389,9 @@
                             "number": "24",
                             "key": "EH 24",
                             "title": "Spring Plant Identification",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1345,9 +1409,9 @@
                             "number": "63",
                             "key": "HORT 63",
                             "title": "Spring Plant Materials and Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1365,9 +1429,9 @@
                             "number": "77",
                             "key": "O H 77",
                             "title": "Spring and Summer Plant Identification",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1385,9 +1449,9 @@
                             "number": "5",
                             "key": "AGEH 5",
                             "title": "Ornamental Plant Identification",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1405,9 +1469,9 @@
                             "number": "002",
                             "key": "OH 002",
                             "title": "Plant Identification 1",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1425,9 +1489,9 @@
                             "number": "306",
                             "key": "HORT 306",
                             "title": "Plant Identification-Spring Selections",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1445,9 +1509,9 @@
                             "number": "244",
                             "key": "AGPS 244",
                             "title": "Plant Identification and Usage I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1465,9 +1529,9 @@
                             "number": "113",
                             "key": "HORT 113",
                             "title": "Plant Materials and their Uses: Winter and Spring",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1485,9 +1549,9 @@
                             "number": "21",
                             "key": "HORT 21",
                             "title": "Plant Materials I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1505,9 +1569,9 @@
                             "number": "800",
                             "key": "PLNT SC 800",
                             "title": "Plant Identification and Use I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1525,9 +1589,9 @@
                             "number": "-03",
                             "key": "AGEH -03",
                             "title": "Plant Identification and Usage: Spring",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1536,98 +1600,170 @@
             {
                 "sending_name": "Merritt College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "2",
-                            "key": "LANHT 2",
-                            "title": "Plant Materials: Tree ID and Culture with Lab (Day)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "2",
+                                    "key": "LANHT 2",
+                                    "title": "Plant Materials: Tree ID and Culture with Lab (Day)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "2E",
-                            "key": "LANHT 2E",
-                            "title": "Plant Materials: Tree ID and Culture (Evening)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "2E",
+                                    "key": "LANHT 2E",
+                                    "title": "Plant Materials: Tree ID and Culture (Evening)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "4",
-                            "key": "LANHT 4",
-                            "title": "Plant Materials: Shrubs ID and Culture with Lab (Day)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "4",
+                                    "key": "LANHT 4",
+                                    "title": "Plant Materials: Shrubs ID and Culture with Lab (Day)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "4E",
-                            "key": "LANHT 4E",
-                            "title": "Plant Materials: Shrubs ID and Culture (Evening)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "4E",
+                                    "key": "LANHT 4E",
+                                    "title": "Plant Materials: Shrubs ID and Culture (Evening)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "5B",
-                            "key": "LANHT 5B",
-                            "title": "Plant Materials: Spring Native Plant ID and Culture with Lab (Day)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "5B",
+                                    "key": "LANHT 5B",
+                                    "title": "Plant Materials: Spring Native Plant ID and Culture with Lab (Day)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "6B",
-                            "key": "LANHT 6B",
-                            "title": "Plant Materials: Spring Herbaceuous Plant ID and Culture with Lab (Day)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "6B",
+                                    "key": "LANHT 6B",
+                                    "title": "Plant Materials: Spring Herbaceuous Plant ID and Culture with Lab (Day)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "6EB",
-                            "key": "LANHT 6EB",
-                            "title": "Plant Materials: Spring Herbaceous Plant ID and Culture (Evening)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "6EB",
+                                    "key": "LANHT 6EB",
+                                    "title": "Plant Materials: Spring Herbaceous Plant ID and Culture (Evening)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "7",
-                            "key": "LANHT 7",
-                            "title": "Plant Materials: Conifer ID and Culture with Lab (Day)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "7",
+                                    "key": "LANHT 7",
+                                    "title": "Plant Materials: Conifer ID and Culture with Lab (Day)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "7E",
-                            "key": "LANHT 7E",
-                            "title": "Plant Materials: Conifer ID and Culture (Evening)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "7E",
+                                    "key": "LANHT 7E",
+                                    "title": "Plant Materials: Conifer ID and Culture (Evening)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1636,28 +1772,44 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Horticulture",
-                            "prefix": "HORT",
-                            "number": "162",
-                            "key": "HORT 162",
-                            "title": "Organic Crop Production",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Horticulture",
+                                    "prefix": "HORT",
+                                    "number": "162",
+                                    "key": "HORT 162",
+                                    "title": "Organic Crop Production",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Horticulture",
-                            "prefix": "HORT",
-                            "number": "117",
-                            "key": "HORT 117",
-                            "title": "Plant Identification: Tree, Shrubs and Vines",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Horticulture",
+                                    "prefix": "HORT",
+                                    "number": "117",
+                                    "key": "HORT 117",
+                                    "title": "Plant Identification: Tree, Shrubs and Vines",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1675,9 +1827,9 @@
                             "number": "201",
                             "key": "EHS 201",
                             "title": "Plant Identification & Usage 1",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1695,9 +1847,9 @@
                             "number": "61",
                             "key": "HORT 61",
                             "title": "Plant Identification: Shrubs, Vines, and Ground Covers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1715,9 +1867,9 @@
                             "number": "29",
                             "key": "AGOR 29",
                             "title": "Ornamental Plants - Herbaceous",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1735,9 +1887,9 @@
                             "number": "008",
                             "key": "AGPS 008",
                             "title": "Plant Materials and Usage I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1755,9 +1907,9 @@
                             "number": "3",
                             "key": "HORT 3",
                             "title": "Plant Materials and Usage-Spring",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1775,9 +1927,9 @@
                             "number": "101",
                             "key": "EH 101",
                             "title": "Plant Identification and Culture",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1795,9 +1947,9 @@
                             "number": "12",
                             "key": "HORT 12",
                             "title": "Landscape Plants: Winter/Spring",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1815,9 +1967,9 @@
                             "number": "151",
                             "key": "LNT 151",
                             "title": "Plant Identification I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1835,9 +1987,9 @@
                             "number": "V42",
                             "key": "AG V42",
                             "title": "Plant Identification and Culture: Spring Specimens",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1855,9 +2007,9 @@
                             "number": "140",
                             "key": "AGNR 140",
                             "title": "Plant Materials and Usage I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1887,9 +2039,9 @@
                             "number": "B7",
                             "key": "ORNH B7",
                             "title": "Ornamental Plant Identification - Large Shrubs, Small Trees, Large Trees, and Palms",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1907,9 +2059,9 @@
                             "number": "23",
                             "key": "EH 23",
                             "title": "Fall Plant Identification",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1927,9 +2079,9 @@
                             "number": "62",
                             "key": "HORT 62",
                             "title": "Fall Plant Materials and Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1947,9 +2099,9 @@
                             "number": "76",
                             "key": "O H 76",
                             "title": "Fall and Winter Plant Identification",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1967,9 +2119,9 @@
                             "number": "003",
                             "key": "OH 003",
                             "title": "Plant Identification 2",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1987,9 +2139,9 @@
                             "number": "305",
                             "key": "HORT 305",
                             "title": "Plant Identification-Fall Selections",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2007,9 +2159,9 @@
                             "number": "114",
                             "key": "HORT 114",
                             "title": "Plant Materials and their Uses: Summer and Fall",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2027,9 +2179,9 @@
                             "number": "22",
                             "key": "HORT 22",
                             "title": "Plant Materials II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2047,9 +2199,9 @@
                             "number": "801",
                             "key": "PLNT SC 801",
                             "title": "Plant Identification and Use II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2067,9 +2219,9 @@
                             "number": "-02",
                             "key": "AGEH -02",
                             "title": "Plant Identification and Usage: Fall",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2078,48 +2230,80 @@
             {
                 "sending_name": "Merritt College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "5A",
-                            "key": "LANHT 5A",
-                            "title": "Plant Materials: Fall Native Plant ID and Culture with Lab (Day)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "5A",
+                                    "key": "LANHT 5A",
+                                    "title": "Plant Materials: Fall Native Plant ID and Culture with Lab (Day)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "5EA",
-                            "key": "LANHT 5EA",
-                            "title": "Plant Materials: Fall Native Plant ID and Culture (Evening)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "5EA",
+                                    "key": "LANHT 5EA",
+                                    "title": "Plant Materials: Fall Native Plant ID and Culture (Evening)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "6EA",
-                            "key": "LANHT 6EA",
-                            "title": "Plant Materials: Fall Herbaceous Plant ID and Culture (Evening)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "6EA",
+                                    "key": "LANHT 6EA",
+                                    "title": "Plant Materials: Fall Herbaceous Plant ID and Culture (Evening)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Landscape Horticulture",
-                            "prefix": "LANHT",
-                            "number": "6EA",
-                            "key": "LANHT 6EA",
-                            "title": "Plant Materials: Fall Herbaceous Plant ID and Culture (Evening)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Landscape Horticulture",
+                                    "prefix": "LANHT",
+                                    "number": "6EA",
+                                    "key": "LANHT 6EA",
+                                    "title": "Plant Materials: Fall Herbaceous Plant ID and Culture (Evening)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2137,9 +2321,9 @@
                             "number": "202",
                             "key": "EHS 202",
                             "title": "Plant Identification & Usage 2",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2157,9 +2341,9 @@
                             "number": "62",
                             "key": "HORT 62",
                             "title": "Plant Identification: Trees, Annuals, and Perennials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2177,9 +2361,9 @@
                             "number": "30",
                             "key": "AGOR 30",
                             "title": "Ornamental Plants - Trees and Woody Shrubs",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2197,9 +2381,9 @@
                             "number": "2",
                             "key": "HORT 2",
                             "title": "Plant Materials and Usage-Fall",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2217,9 +2401,9 @@
                             "number": "122",
                             "key": "BOT 122",
                             "title": "Flowering Plant Identification",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2237,9 +2421,9 @@
                             "number": "10",
                             "key": "AGEH 10",
                             "title": "Plant Identification and Usage",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2257,9 +2441,9 @@
                             "number": "152",
                             "key": "LNT 152",
                             "title": "Plant Identification II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2277,9 +2461,9 @@
                             "number": "V43",
                             "key": "AG V43",
                             "title": "Plant Identification and Culture: Fall Specimens",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2297,9 +2481,9 @@
                             "number": "141",
                             "key": "AGNR 141",
                             "title": "Plant Materials and Usage II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2329,9 +2513,9 @@
                             "number": "021",
                             "key": "CRPSCI 021",
                             "title": "Orchard Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2349,9 +2533,9 @@
                             "number": "95",
                             "key": "ABT 95",
                             "title": "Introduction to Small Fruit Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2381,9 +2565,9 @@
                             "number": "023",
                             "key": "CRPSCI 023",
                             "title": "Row Crop Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2401,9 +2585,9 @@
                             "number": "96",
                             "key": "ABT 96",
                             "title": "Vegetable Crop Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2421,9 +2605,9 @@
                             "number": "8",
                             "key": "PLS 8",
                             "title": "Vegetable Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2441,9 +2625,9 @@
                             "number": "8",
                             "key": "PLS 8",
                             "title": "Vegetable Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2506,9 +2690,9 @@
                             "number": "160",
                             "key": "AG 160",
                             "title": "Plant Propagation/Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2526,9 +2710,9 @@
                             "number": "B4",
                             "key": "ORNH B4",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2546,9 +2730,9 @@
                             "number": "70",
                             "key": "EH 70",
                             "title": "Plant Propagation and Nursery Practices",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2566,9 +2750,9 @@
                             "number": "24",
                             "key": "HORT 24",
                             "title": "Plant Propogation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2586,9 +2770,9 @@
                             "number": "65",
                             "key": "O H 65",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2606,9 +2790,9 @@
                             "number": "21",
                             "key": "AG 21",
                             "title": "Plant Propagation/Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2626,9 +2810,9 @@
                             "number": "105",
                             "key": "OH 105",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2646,9 +2830,9 @@
                             "number": "312",
                             "key": "HORT 312",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2666,9 +2850,9 @@
                             "number": "243",
                             "key": "AGPS 243",
                             "title": "Plant Propagation and Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2686,9 +2870,9 @@
                             "number": "121",
                             "key": "OH 121",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2706,9 +2890,9 @@
                             "number": "111",
                             "key": "HORT 111",
                             "title": "Plant Propagation and Production: Winter and Spring",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Horticulture",
@@ -2716,9 +2900,9 @@
                             "number": "112",
                             "key": "HORT 112",
                             "title": "Plant Propagation and Production: Summer and Fall",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2736,9 +2920,9 @@
                             "number": "31",
                             "key": "HORT 31",
                             "title": "Horticultural Practices: Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2756,9 +2940,9 @@
                             "number": "245",
                             "key": "AG 245",
                             "title": "Plant Propagation/Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2776,9 +2960,9 @@
                             "number": "757",
                             "key": "PLNT SC 757",
                             "title": "Plant Propagation and Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2796,9 +2980,9 @@
                             "number": "757",
                             "key": "PLNT SC 757",
                             "title": "PLANT PROPAGATION AND PRODUCTION",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2816,9 +3000,9 @@
                             "number": "43",
                             "key": "EH 43",
                             "title": "Plant Propagation/Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2836,9 +3020,9 @@
                             "number": "102",
                             "key": "AGR 102",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2856,9 +3040,9 @@
                             "number": "-05",
                             "key": "AGEH -05",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2867,28 +3051,44 @@
             {
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Environmental Horticulture Science",
-                            "prefix": "EHS",
-                            "number": "235",
-                            "key": "EHS 235",
-                            "title": "Plant Propagation/Production",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Horticulture Science",
+                                    "prefix": "EHS",
+                                    "number": "235",
+                                    "key": "EHS 235",
+                                    "title": "Plant Propagation/Production",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Plant Science",
-                            "prefix": "PLSC",
-                            "number": "235",
-                            "key": "PLSC 235",
-                            "title": "Plant Propagation/Production",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Plant Science",
+                                    "prefix": "PLSC",
+                                    "number": "235",
+                                    "key": "PLSC 235",
+                                    "title": "Plant Propagation/Production",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2906,9 +3106,9 @@
                             "number": "63",
                             "key": "HORT 63",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2926,9 +3126,9 @@
                             "number": "2",
                             "key": "AGOR 2",
                             "title": "Plant Propagation/Greenhouse Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2946,9 +3146,9 @@
                             "number": "43",
                             "key": "EH 43",
                             "title": "Plant Propagation/Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2966,9 +3166,9 @@
                             "number": "112",
                             "key": "HORT 112",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2986,9 +3186,9 @@
                             "number": "114",
                             "key": "AGRI 114",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3006,9 +3206,9 @@
                             "number": "12",
                             "key": "HORT 12",
                             "title": "Plant Propagation/Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3026,9 +3226,9 @@
                             "number": "106",
                             "key": "EH 106",
                             "title": "Greenhouse/Nursery Operations and Practices, Plant Propagation, and Recognition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3046,9 +3246,9 @@
                             "number": "70",
                             "key": "HORT 70",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3066,9 +3266,9 @@
                             "number": "22",
                             "key": "AGEH 22",
                             "title": "Nursery Practices and Plant Propagation",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "AG.Envrionmental Horticulture",
@@ -3076,9 +3276,9 @@
                             "number": "23",
                             "key": "AGEH 23",
                             "title": "Nursery Practices and Management",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3096,9 +3296,9 @@
                             "number": "101",
                             "key": "HORT 101",
                             "title": "Plant Propagation and Production: Summer-Fall",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3116,9 +3316,9 @@
                             "number": "146",
                             "key": "LNT 146",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3136,9 +3336,9 @@
                             "number": "V30",
                             "key": "AG V30",
                             "title": "Plant Propagation and Production",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3156,9 +3356,9 @@
                             "number": "122",
                             "key": "AGNR 122",
                             "title": "Plant Propagation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3167,28 +3367,44 @@
             {
                 "sending_name": "Woodland Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Plant Science",
-                            "prefix": "PLSCI",
-                            "number": "21",
-                            "key": "PLSCI 21",
-                            "title": "Fertilizers and Plant Nutrition",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Plant Science",
+                                    "prefix": "PLSCI",
+                                    "number": "21",
+                                    "key": "PLSCI 21",
+                                    "title": "Fertilizers and Plant Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Environmental Horticulture",
-                            "prefix": "ENVHR",
-                            "number": "21",
-                            "key": "ENVHR 21",
-                            "title": "Plant Propagation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Environmental Horticulture",
+                                    "prefix": "ENVHR",
+                                    "number": "21",
+                                    "key": "ENVHR 21",
+                                    "title": "Plant Propagation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []

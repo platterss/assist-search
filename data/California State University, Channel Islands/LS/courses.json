@@ -21,9 +21,9 @@
                             "number": "101",
                             "key": "CBIS 101",
                             "title": "Computer Concepts & Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "221",
                             "key": "CA 221",
                             "title": "Computer Concepts and Applications in Business",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -52,30 +52,46 @@
             {
                 "sending_name": "Bakersfield College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Studies",
-                            "prefix": "COMP",
-                            "number": "B2",
-                            "key": "COMP B2",
-                            "title": "Introduction to Computer Information Systems",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Studies",
+                                    "prefix": "COMP",
+                                    "number": "B2",
+                                    "key": "COMP B2",
+                                    "title": "Introduction to Computer Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Education",
-                            "prefix": "EDUC",
-                            "number": "B10",
-                            "key": "EDUC B10",
-                            "title": "Foundations of Educational Technology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Education",
+                                    "prefix": "EDUC",
+                                    "number": "B10",
+                                    "key": "EDUC B10",
+                                    "title": "Foundations of Educational Technology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -93,9 +109,9 @@
                             "number": "1",
                             "key": "CBIS 1",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -113,9 +129,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -133,9 +149,9 @@
                             "number": "5",
                             "key": "BUS 5",
                             "title": "Business Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -153,9 +169,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -173,9 +189,9 @@
                             "number": "8",
                             "key": "CSCI 8",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -184,32 +200,48 @@
             {
                 "sending_name": "City College of San Francisco",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Networking and Information Technology",
-                            "prefix": "CNIT",
-                            "number": "100",
-                            "key": "CNIT 100",
-                            "title": "Introduction to Computers using PCs",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Networking and Information Technology",
+                                    "prefix": "CNIT",
+                                    "number": "100",
+                                    "key": "CNIT 100",
+                                    "title": "Introduction to Computers using PCs",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Networking and Information Technology",
-                            "prefix": "CNIT",
-                            "number": "100M",
-                            "key": "CNIT 100M",
-                            "title": "Introduction to Apple Computers",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Networking and Information Technology",
+                                    "prefix": "CNIT",
+                                    "number": "100M",
+                                    "key": "CNIT 100M",
+                                    "title": "Introduction to Apple Computers",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -227,9 +259,9 @@
                             "number": "12",
                             "key": "IS 12",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -247,9 +279,9 @@
                             "number": "007",
                             "key": "CIS 007",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -267,9 +299,9 @@
                             "number": "C100",
                             "key": "CIS C100",
                             "title": "Introduction to Business Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -287,9 +319,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -307,9 +339,9 @@
                             "number": "110",
                             "key": "CIS 110",
                             "title": "Introduction to Computer and Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -327,9 +359,9 @@
                             "number": "10",
                             "key": "CIS 10",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -347,9 +379,9 @@
                             "number": "120",
                             "key": "EDUC 120",
                             "title": "Tech Skills for Educators",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -367,9 +399,9 @@
                             "number": "1001",
                             "key": "CSCI 1001",
                             "title": "Introduction to Computer Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -387,9 +419,9 @@
                             "number": "1",
                             "key": "COMP 1",
                             "title": "Computer Concepts and Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -407,9 +439,9 @@
                             "number": "135",
                             "key": "CIS 135",
                             "title": "Introduction to Computers",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -427,9 +459,9 @@
                             "number": "070A",
                             "key": "CIS 070A",
                             "title": "Computer Business Applications for Windows",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -447,9 +479,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computer and Information Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -467,9 +499,9 @@
                             "number": "210",
                             "key": "CIS 210",
                             "title": "Introduction to Computer Applications",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -487,9 +519,9 @@
                             "number": "110",
                             "key": "CIS 110",
                             "title": "Principles of Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -507,9 +539,9 @@
                             "number": "100 C",
                             "key": "CIS 100 C",
                             "title": "Intro-Comp & Windows Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -527,9 +559,9 @@
                             "number": "4",
                             "key": "CIS 4",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 4.5,
-                            "max_units": 4.5
+                            "max_units": 4.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -547,9 +579,9 @@
                             "number": "101",
                             "key": "COMSC 101",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -558,32 +590,48 @@
             {
                 "sending_name": "East Los Angeles College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "101",
-                            "key": "CIS 101",
-                            "title": "Introduction to Computers and Their Uses",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "101",
+                                    "key": "CIS 101",
+                                    "title": "Introduction to Computers and Their Uses",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "123",
-                            "key": "CIS 123",
-                            "title": "Business Data Reporting",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "123",
+                                    "key": "CIS 123",
+                                    "title": "Business Data Reporting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -601,9 +649,9 @@
                             "number": "010",
                             "key": "EDIT 010",
                             "title": "Computers and Digital Media in Education",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -612,32 +660,48 @@
             {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Information and Communication Technologies",
-                            "prefix": "ICT",
-                            "number": "101",
-                            "key": "ICT 101",
-                            "title": "Computer Literacy",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Information and Communication Technologies",
+                                    "prefix": "ICT",
+                                    "number": "101",
+                                    "key": "ICT 101",
+                                    "title": "Computer Literacy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Information and Communication Technologies",
-                            "prefix": "ICT",
-                            "number": "101",
-                            "key": "ICT 101",
-                            "title": "Computer Literacy",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Information and Communication Technologies",
+                                    "prefix": "ICT",
+                                    "number": "101",
+                                    "key": "ICT 101",
+                                    "title": "Computer Literacy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -646,32 +710,48 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Technology",
-                            "prefix": "CIT",
-                            "number": "12",
-                            "key": "CIT 12",
-                            "title": "Computer Literacy",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Technology",
+                                    "prefix": "CIT",
+                                    "number": "12",
+                                    "key": "CIT 12",
+                                    "title": "Computer Literacy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Technology",
-                            "prefix": "CIT",
-                            "number": "15",
-                            "key": "CIT 15",
-                            "title": "Computer Concepts",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Technology",
+                                    "prefix": "CIT",
+                                    "number": "15",
+                                    "key": "CIT 15",
+                                    "title": "Computer Concepts",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -680,32 +760,48 @@
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "100 F",
-                            "key": "CIS 100 F",
-                            "title": "Introduction to Personal Computers",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "100 F",
+                                    "key": "CIS 100 F",
+                                    "title": "Introduction to Personal Computers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "100HF",
-                            "key": "CIS 100HF",
-                            "title": "Honors Introduction to Personal Computers",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "100HF",
+                                    "key": "CIS 100HF",
+                                    "title": "Honors Introduction to Personal Computers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -714,28 +810,44 @@
             {
                 "sending_name": "Gavilan College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Child Development",
-                            "prefix": "CD",
-                            "number": "12",
-                            "key": "CD 12",
-                            "title": "Technology Education for Teachers",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Child Development",
+                                    "prefix": "CD",
+                                    "number": "12",
+                                    "key": "CD 12",
+                                    "title": "Technology Education for Teachers",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science and Information Systems",
-                            "prefix": "CSIS",
-                            "number": "9",
-                            "key": "CSIS 9",
-                            "title": "Technology Education for Teachers",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science and Information Systems",
+                                    "prefix": "CSIS",
+                                    "number": "9",
+                                    "key": "CSIS 9",
+                                    "title": "Technology Education for Teachers",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -753,9 +865,9 @@
                             "number": "260",
                             "key": "CABOT 260",
                             "title": "Beginning Microsoft Office Applications",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -773,9 +885,9 @@
                             "number": "110",
                             "key": "CSIS 110",
                             "title": "Principles of Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -793,9 +905,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -813,9 +925,9 @@
                             "number": "1",
                             "key": "CS 1",
                             "title": "Introduction to Computer Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -833,9 +945,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -853,9 +965,9 @@
                             "number": "50",
                             "key": "CIS 50",
                             "title": "Introduction to Computing Information Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -873,9 +985,9 @@
                             "number": "007",
                             "key": "CIS 007",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -893,9 +1005,9 @@
                             "number": "30",
                             "key": "COSA 30",
                             "title": "Introduction to Computers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -904,32 +1016,48 @@
             {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "101",
-                            "key": "CIS 101",
-                            "title": "Introduction to Computers and Their Uses",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "101",
+                                    "key": "CIS 101",
+                                    "title": "Introduction to Computers and Their Uses",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "101",
-                            "key": "CS 101",
-                            "title": "Introduction to Computer Science",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "101",
+                                    "key": "CS 101",
+                                    "title": "Introduction to Computer Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -938,32 +1066,48 @@
             {
                 "sending_name": "Los Angeles Harbor College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Applications and Office Technologies",
-                            "prefix": "CAOT",
-                            "number": "082",
-                            "key": "CAOT 082",
-                            "title": "Microsoft Office Suite",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Applications and Office Technologies",
+                                    "prefix": "CAOT",
+                                    "number": "082",
+                                    "key": "CAOT 082",
+                                    "title": "Microsoft Office Suite",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "100",
-                            "key": "CS 100",
-                            "title": "Computer Literacy for the Liberal Arts Student",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "100",
+                                    "key": "CS 100",
+                                    "title": "Computer Literacy for the Liberal Arts Student",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -972,32 +1116,48 @@
             {
                 "sending_name": "Los Angeles Mission College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Applications Office Technologies",
-                            "prefix": "CAOT",
-                            "number": "082",
-                            "key": "CAOT 082",
-                            "title": "Microsoft Office Suite",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Applications Office Technologies",
+                                    "prefix": "CAOT",
+                                    "number": "082",
+                                    "key": "CAOT 082",
+                                    "title": "Microsoft Office Suite",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "101",
-                            "key": "CIS 101",
-                            "title": "Introduction to Computers and Their Uses",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "101",
+                                    "key": "CIS 101",
+                                    "title": "Introduction to Computers and Their Uses",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1015,9 +1175,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1035,9 +1195,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1055,9 +1215,9 @@
                             "number": "104",
                             "key": "CIS 104",
                             "title": "Microcomputer Application Software",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1075,9 +1235,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1095,9 +1255,9 @@
                             "number": "040",
                             "key": "COMSC 040",
                             "title": "Introduction to Computer and Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1115,9 +1275,9 @@
                             "number": "104",
                             "key": "CSC 104",
                             "title": "Computers and Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1126,44 +1286,68 @@
             {
                 "sending_name": "Merced College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Administrative Office Management",
-                            "prefix": "AOM",
-                            "number": "-30",
-                            "key": "AOM -30",
-                            "title": "Introduction to Computer Applications",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administrative Office Management",
+                                    "prefix": "AOM",
+                                    "number": "-30",
+                                    "key": "AOM -30",
+                                    "title": "Introduction to Computer Applications",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Administrative Office Management",
-                            "prefix": "AOM",
-                            "number": "-30",
-                            "key": "AOM -30",
-                            "title": "Introduction to Computer Applications",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Administrative Office Management",
+                                    "prefix": "AOM",
+                                    "number": "-30",
+                                    "key": "AOM -30",
+                                    "title": "Introduction to Computer Applications",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CPSC",
-                            "number": "-01",
-                            "key": "CPSC -01",
-                            "title": "Introduction to Computer Information Systems",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CPSC",
+                                    "number": "-01",
+                                    "key": "CPSC -01",
+                                    "title": "Introduction to Computer Information Systems",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1181,9 +1365,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1201,9 +1385,9 @@
                             "number": "110",
                             "key": "CSIT 110",
                             "title": "Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1221,9 +1405,9 @@
                             "number": "201",
                             "key": "CSCI 201",
                             "title": "General Computer Literacy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1241,9 +1425,9 @@
                             "number": "1",
                             "key": "CSIS 1",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1261,9 +1445,9 @@
                             "number": "M140",
                             "key": "BUS M140",
                             "title": "Business Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1272,32 +1456,48 @@
             {
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Applications & Office Technology",
-                            "prefix": "CAT",
-                            "number": "93",
-                            "key": "CAT 93",
-                            "title": "Computers for Beginners",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Applications & Office Technology",
+                                    "prefix": "CAT",
+                                    "number": "93",
+                                    "key": "CAT 93",
+                                    "title": "Computers for Beginners",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "93",
-                            "key": "CIS 93",
-                            "title": "Computers for Beginners",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "93",
+                                    "key": "CIS 93",
+                                    "title": "Computers for Beginners",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1315,9 +1515,9 @@
                             "number": "15",
                             "key": "CISB 15",
                             "title": "Microcomputer Applications",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1335,9 +1535,9 @@
                             "number": "101",
                             "key": "CSIS- 101",
                             "title": "Introduction to Computers and Data Processing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1346,32 +1546,48 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Applications & Office Technology",
-                            "prefix": "CAT",
-                            "number": "93",
-                            "key": "CAT 93",
-                            "title": "Computers for Beginners",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Applications & Office Technology",
+                                    "prefix": "CAT",
+                                    "number": "93",
+                                    "key": "CAT 93",
+                                    "title": "Computers for Beginners",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "93",
-                            "key": "CIS 93",
-                            "title": "Computers for Beginners",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "93",
+                                    "key": "CIS 93",
+                                    "title": "Computers for Beginners",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1380,32 +1596,48 @@
             {
                 "sending_name": "Ohlone College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "101",
-                            "key": "CS 101",
-                            "title": "Introduction to Computers and Information Technology",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "101",
+                                    "key": "CS 101",
+                                    "title": "Introduction to Computers and Information Technology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computers, Networks, and Emerging Technology",
-                            "prefix": "CNET",
-                            "number": "101",
-                            "key": "CNET 101",
-                            "title": "Introduction to Computers and Information Technology",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computers, Networks, and Emerging Technology",
+                                    "prefix": "CNET",
+                                    "number": "101",
+                                    "key": "CNET 101",
+                                    "title": "Introduction to Computers and Information Technology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1414,56 +1646,88 @@
             {
                 "sending_name": "Orange Coast College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "A100",
-                            "key": "CIS A100",
-                            "title": "Introduction to Computer Applications",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "A100",
+                                    "key": "CIS A100",
+                                    "title": "Introduction to Computer Applications",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "A100H",
-                            "key": "CIS A100H",
-                            "title": "Introduction to Computer Applications Honors",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "A100H",
+                                    "key": "CIS A100H",
+                                    "title": "Introduction to Computer Applications Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "A111",
-                            "key": "CIS A111",
-                            "title": "Introduction to Computer Information Systems",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "A111",
+                                    "key": "CIS A111",
+                                    "title": "Introduction to Computer Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "A111H",
-                            "key": "CIS A111H",
-                            "title": "Introduction to Computer Information Systems Honors",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "A111H",
+                                    "key": "CIS A111H",
+                                    "title": "Introduction to Computer Information Systems Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1481,9 +1745,9 @@
                             "number": "R122",
                             "key": "BIS R122",
                             "title": "Microsoft Office",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1501,9 +1765,9 @@
                             "number": "102",
                             "key": "CIS 102",
                             "title": "Personal Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1512,32 +1776,48 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science and Information Systems - Information Technology",
-                            "prefix": "CSIT",
-                            "number": "105",
-                            "key": "CSIT 105",
-                            "title": "Computer Concepts and Applications",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science and Information Systems - Information Technology",
+                                    "prefix": "CSIT",
+                                    "number": "105",
+                                    "key": "CSIT 105",
+                                    "title": "Computer Concepts and Applications",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science and Information Systems - Information Technology",
-                            "prefix": "CSIT",
-                            "number": "125",
-                            "key": "CSIT 125",
-                            "title": "Computer Information Systems",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science and Information Systems - Information Technology",
+                                    "prefix": "CSIT",
+                                    "number": "125",
+                                    "key": "CSIT 125",
+                                    "title": "Computer Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1546,32 +1826,48 @@
             {
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "010",
-                            "key": "CIS 010",
-                            "title": "Introduction to Information Systems",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "010",
+                                    "key": "CIS 010",
+                                    "title": "Introduction to Information Systems",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Education",
-                            "prefix": "EDUC",
-                            "number": "050",
-                            "key": "EDUC 050",
-                            "title": "Technology for Educators",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Education",
+                                    "prefix": "EDUC",
+                                    "number": "050",
+                                    "key": "EDUC 050",
+                                    "title": "Technology for Educators",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1589,9 +1885,9 @@
                             "number": "101",
                             "key": "CIT 101",
                             "title": "Introduction to Computer Information Technology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1609,9 +1905,9 @@
                             "number": "1A",
                             "key": "CIS 1A",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1629,9 +1925,9 @@
                             "number": "302",
                             "key": "ECE 302",
                             "title": "Computer Skills for Educators",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1649,9 +1945,9 @@
                             "number": "112",
                             "key": "CIM 112",
                             "title": "Microsoft Office",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1669,9 +1965,9 @@
                             "number": "101",
                             "key": "CIT 101",
                             "title": "Introduction to Computer Literacy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1689,9 +1985,9 @@
                             "number": "20",
                             "key": "CSA 20",
                             "title": "Computer Information Systems Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1709,11 +2005,11 @@
                             "number": "041",
                             "key": "CIS 041",
                             "title": "Introduction to Computer Information Systems",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is an approved substitute for Liberal Studies majors only"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1731,9 +2027,9 @@
                             "number": "204",
                             "key": "EDUC 204",
                             "title": "Proficiency in Educational Technologies for Secondary Teachers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1751,9 +2047,9 @@
                             "number": "101",
                             "key": "COMP 101",
                             "title": "Introduction to Computer Applications",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1771,9 +2067,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Introduction to Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1791,9 +2087,9 @@
                             "number": "5",
                             "key": "CS 5",
                             "title": "Computer Literacy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1811,9 +2107,9 @@
                             "number": "1",
                             "key": "CIS 1",
                             "title": "Computer Literacy Workshop",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1831,9 +2127,9 @@
                             "number": "050",
                             "key": "CIS 050",
                             "title": "Microcomputer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1851,9 +2147,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Business Information Systems",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1871,9 +2167,9 @@
                             "number": "V17",
                             "key": "BUS V17",
                             "title": "Computer Applications",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1882,30 +2178,46 @@
             {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Systems",
-                            "prefix": "CIS",
-                            "number": "101",
-                            "key": "CIS 101",
-                            "title": "Computer Literacy",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Systems",
+                                    "prefix": "CIS",
+                                    "number": "101",
+                                    "key": "CIS 101",
+                                    "title": "Computer Literacy",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         },
                         {
-                            "subject": "Education Technology",
-                            "prefix": "ETEC",
-                            "number": "106",
-                            "key": "ETEC 106",
-                            "title": "Introduction to Computer Technology for Educators",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Education Technology",
+                                    "prefix": "ETEC",
+                                    "number": "106",
+                                    "key": "ETEC 106",
+                                    "title": "Introduction to Computer Technology for Educators",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1923,9 +2235,9 @@
                             "number": "101",
                             "key": "CIS 101",
                             "title": "Introduction to Computers and Their Uses",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1943,9 +2255,9 @@
                             "number": "002",
                             "key": "CIST 002",
                             "title": "Introduction to Computing",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1975,9 +2287,9 @@
                             "number": "B9",
                             "key": "EDUC B9",
                             "title": "Foundations of Literacy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1995,9 +2307,9 @@
                             "number": "M10",
                             "key": "EDU M10",
                             "title": "Developing Literacy in Diverse Classrooms",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2015,9 +2327,9 @@
                             "number": "R124",
                             "key": "EDU R124",
                             "title": "Teaching Literacy in Diverse Classrooms",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2035,9 +2347,9 @@
                             "number": "V10",
                             "key": "EDU V10",
                             "title": "Developing Literacy in Diverse Classrooms",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2067,9 +2379,9 @@
                             "number": "102",
                             "key": "ECS 102",
                             "title": "Child Health, Safety & Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2078,32 +2390,48 @@
             {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Early Childhood Education",
-                            "prefix": "ECE",
-                            "number": "415",
-                            "key": "ECE 415",
-                            "title": "Children's Health, Safety and Nutrition",
-                            "notes": [
-                                "Course is an approved substitute for Early Childhood Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Early Childhood Education",
+                                    "prefix": "ECE",
+                                    "number": "415",
+                                    "key": "ECE 415",
+                                    "title": "Children's Health, Safety and Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Early Childhood Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition and Foods",
-                            "prefix": "NUTRI",
-                            "number": "320",
-                            "key": "NUTRI 320",
-                            "title": "Children's Health, Safety and Nutrition",
-                            "notes": [
-                                "Course is an approved substitute for Early Childhood Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition and Foods",
+                                    "prefix": "NUTRI",
+                                    "number": "320",
+                                    "key": "NUTRI 320",
+                                    "title": "Children's Health, Safety and Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Early Childhood Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2121,9 +2449,9 @@
                             "number": "211",
                             "key": "CFE 211",
                             "title": "Health, Safety and Nutrition for the Young Child",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2141,9 +2469,9 @@
                             "number": "B49",
                             "key": "CHDV B49",
                             "title": "Child Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2161,9 +2489,9 @@
                             "number": "14",
                             "key": "CHLD 14",
                             "title": "Child Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2181,9 +2509,9 @@
                             "number": "80",
                             "key": "CDF 80",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2201,9 +2529,9 @@
                             "number": "59",
                             "key": "ECE 59",
                             "title": "Health, Safety, and Nutrition Issues in the Child Care Setting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2221,9 +2549,9 @@
                             "number": "313",
                             "key": "ECE. 313",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2241,9 +2569,9 @@
                             "number": "161",
                             "key": "CDEC 161",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2261,9 +2589,9 @@
                             "number": "C121",
                             "key": "CHDV C121",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2281,9 +2609,9 @@
                             "number": "54",
                             "key": "ECD 54",
                             "title": "Child Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2301,9 +2629,9 @@
                             "number": "5",
                             "key": "CDE 5",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2321,9 +2649,9 @@
                             "number": "144",
                             "key": "CHLD 144",
                             "title": "Health, Safety and Nutrition for Young Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2341,9 +2669,9 @@
                             "number": "92",
                             "key": "CDEV 92",
                             "title": "Health, Safety, and Nutrition in Early Childhood Programs",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2361,9 +2689,9 @@
                             "number": "6",
                             "key": "ECE 6",
                             "title": "Health, Safety, and Nutrition in Early Childhood Education",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2381,9 +2709,9 @@
                             "number": "018",
                             "key": "CD 018",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2401,9 +2729,9 @@
                             "number": "131",
                             "key": "ECE 131",
                             "title": "Health, Safety, and Nutrition Practices for Young Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2421,9 +2749,9 @@
                             "number": "105",
                             "key": "ECE 105",
                             "title": "Health, Safety, Nutrition in Early Childhood Education",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2441,9 +2769,9 @@
                             "number": "201",
                             "key": "CDE 201",
                             "title": "Health, Safety, & Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2461,9 +2789,9 @@
                             "number": "6",
                             "key": "ECE 6",
                             "title": "Health, Safety, & Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2481,9 +2809,9 @@
                             "number": "148",
                             "key": "CHLD 148",
                             "title": "Health, Safety, Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2501,9 +2829,9 @@
                             "number": "2002",
                             "key": "ECE 2002",
                             "title": "Child Nutrition, Health and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2521,9 +2849,9 @@
                             "number": "26",
                             "key": "CHILD 26",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2541,9 +2869,9 @@
                             "number": "110",
                             "key": "CDEV 110",
                             "title": "Child Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2561,9 +2889,9 @@
                             "number": "133",
                             "key": "ECHD 133",
                             "title": "Health, Nutrition and Safety (DS7)",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2581,9 +2909,9 @@
                             "number": "044",
                             "key": "CD 044",
                             "title": "Child Health, Safety, and Nutrition in Early Childhood Education",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2601,9 +2929,9 @@
                             "number": "415",
                             "key": "ECE 415",
                             "title": "Children's Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2621,9 +2949,9 @@
                             "number": "115",
                             "key": "CD 115",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2641,9 +2969,9 @@
                             "number": "204",
                             "key": "CDFS 204",
                             "title": "Child Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2661,9 +2989,9 @@
                             "number": "134",
                             "key": "CD 134",
                             "title": "Health, Safety and Nutrition of Young Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2681,9 +3009,9 @@
                             "number": "64",
                             "key": "C D 64",
                             "title": "Health, Safety, and Nutrition for the Young Child",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2701,9 +3029,9 @@
                             "number": "126",
                             "key": "ECE 126",
                             "title": "Health, Safety, and Nutrition for the Young Child",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2721,9 +3049,9 @@
                             "number": "010",
                             "key": "CH DEV 010",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2741,9 +3069,9 @@
                             "number": "110",
                             "key": "CDEV 110",
                             "title": "Child Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2761,9 +3089,9 @@
                             "number": "159",
                             "key": "ECE 159",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2781,9 +3109,9 @@
                             "number": "415",
                             "key": "ECE 415",
                             "title": "Children's Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2801,9 +3129,9 @@
                             "number": "95",
                             "key": "CHLD 95",
                             "title": "Health, Safety & Nutrition in Children's Programs",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2821,9 +3149,9 @@
                             "number": "6",
                             "key": "CHDEV 6",
                             "title": "Health, Safety, and Nutrition in Early Childhood Education",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2841,9 +3169,9 @@
                             "number": "215 F",
                             "key": "CDES 215 F",
                             "title": "Health, Safety, Food, and Nutrition for Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2861,9 +3189,9 @@
                             "number": "9",
                             "key": "CD 9",
                             "title": "Child Health/Nutrition and Safety-Foundations and Frameworks",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2881,9 +3209,9 @@
                             "number": "138",
                             "key": "CHLDV 138",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2901,9 +3229,9 @@
                             "number": "134",
                             "key": "CD 134",
                             "title": "Health, Safety and Nutrition of Young Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2921,9 +3249,9 @@
                             "number": "19",
                             "key": "ECE 19",
                             "title": "Health, Safety and Nutrition in Early Childhood Programs",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2941,9 +3269,9 @@
                             "number": "101",
                             "key": "CDEV 101",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2961,9 +3289,9 @@
                             "number": "150",
                             "key": "HD 150",
                             "title": "Health, Safety and Nutrition of Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2981,9 +3309,9 @@
                             "number": "100",
                             "key": "ECE 100",
                             "title": "Health, Safety and Nutrition for Young Children",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3001,9 +3329,9 @@
                             "number": "54",
                             "key": "ECE 54",
                             "title": "Child Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3021,9 +3349,9 @@
                             "number": "19",
                             "key": "CD 19",
                             "title": "Children's Nutrition, Health and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3041,9 +3369,9 @@
                             "number": "018",
                             "key": "CD 018",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3061,9 +3389,9 @@
                             "number": "19",
                             "key": "CDECE 19",
                             "title": "Health, Safety, & Nutrition D7",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3081,9 +3409,9 @@
                             "number": "010",
                             "key": "CH DEV 010",
                             "title": "Health, Safety And Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3101,9 +3429,9 @@
                             "number": "010",
                             "key": "CH DEV 010",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3121,9 +3449,9 @@
                             "number": "010",
                             "key": "CH DEV 010",
                             "title": "Child Health",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3141,9 +3469,9 @@
                             "number": "010",
                             "key": "CH DEV 010",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3161,9 +3489,9 @@
                             "number": "010",
                             "key": "CH DEV 010",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3181,9 +3509,9 @@
                             "number": "010",
                             "key": "CH DEV 010",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3201,9 +3529,9 @@
                             "number": "010",
                             "key": "CH DEV 010",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3221,9 +3549,9 @@
                             "number": "065",
                             "key": "ECE 065",
                             "title": "Health, Safety and Nutrition in Early Childhood Programs",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3241,9 +3569,9 @@
                             "number": "6",
                             "key": "CHDEV 6",
                             "title": "Health, Safety and Nutrition in Early Childhood Education",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3261,9 +3589,9 @@
                             "number": "109",
                             "key": "CDV 109",
                             "title": "Child Health, Nutrition, and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3281,9 +3609,9 @@
                             "number": "-05",
                             "key": "CLDV -05",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3301,9 +3629,9 @@
                             "number": "74",
                             "key": "CHDEV 74",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3321,9 +3649,9 @@
                             "number": "205",
                             "key": "CHLD 205",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3341,9 +3669,9 @@
                             "number": "017",
                             "key": "CHD 017",
                             "title": "Child Health and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3361,9 +3689,9 @@
                             "number": "111",
                             "key": "CLDDV 111",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3381,9 +3709,9 @@
                             "number": "61",
                             "key": "ECED 61",
                             "title": "Health, Safety and Nutrition for the Young Child",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3401,9 +3729,9 @@
                             "number": "M23",
                             "key": "CD M23",
                             "title": "Health, Safety, and Nutrition for Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3421,9 +3749,9 @@
                             "number": "26",
                             "key": "EAR 26",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3441,9 +3769,9 @@
                             "number": "64",
                             "key": "CHLD 64",
                             "title": "Health, Safety and Nutrition of Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3461,9 +3789,9 @@
                             "number": "111",
                             "key": "CDE- 111",
                             "title": "Child Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3481,9 +3809,9 @@
                             "number": "121",
                             "key": "CFS 121",
                             "title": "Health, Safety & Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3501,9 +3829,9 @@
                             "number": "26",
                             "key": "EAR 26",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3521,9 +3849,9 @@
                             "number": "305",
                             "key": "ECS 305",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3541,9 +3869,9 @@
                             "number": "A127",
                             "key": "CDE A127",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3561,9 +3889,9 @@
                             "number": "R129",
                             "key": "ECE R129",
                             "title": "Child Nutrition, Health and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3581,9 +3909,9 @@
                             "number": "106",
                             "key": "CHD 106",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3601,9 +3929,9 @@
                             "number": "120",
                             "key": "CHDV 120",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3621,9 +3949,9 @@
                             "number": "016",
                             "key": "CHDV 016",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3641,9 +3969,9 @@
                             "number": "P119",
                             "key": "CHDV P119",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3661,9 +3989,9 @@
                             "number": "6",
                             "key": "ECE 6",
                             "title": "Health, Safety, and Nutrition in Early Childhood Education",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3681,9 +4009,9 @@
                             "number": "102",
                             "key": "CD 102",
                             "title": "Nutrition, Health and Safety for Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3701,9 +4029,9 @@
                             "number": "26",
                             "key": "EAR 26",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3721,9 +4049,9 @@
                             "number": "415",
                             "key": "ECE 415",
                             "title": "Children's Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3741,9 +4069,9 @@
                             "number": "112",
                             "key": "CDE 112",
                             "title": "Health, Safety & Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3761,9 +4089,9 @@
                             "number": "115",
                             "key": "CD 115",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3781,9 +4109,9 @@
                             "number": "180",
                             "key": "CHIL 180",
                             "title": "Nutrition, Health and Safety for Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3801,9 +4129,9 @@
                             "number": "195",
                             "key": "HEAL 195",
                             "title": "Health Education For Teachers",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3821,9 +4149,9 @@
                             "number": "180",
                             "key": "CHIL 180",
                             "title": "Nutrition, Health and Safety for Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3841,9 +4169,9 @@
                             "number": "28",
                             "key": "ECE 28",
                             "title": "Child Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3861,9 +4189,9 @@
                             "number": "108",
                             "key": "ECE 108",
                             "title": "Health, Safety, and Nutrition in Child Care",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3872,32 +4200,48 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Child Development - Apprenticeship",
-                            "prefix": "APCD",
-                            "number": "112",
-                            "key": "APCD 112",
-                            "title": "Apprenticeship Health, Safety and Nutrition for Young Children",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Child Development - Apprenticeship",
+                                    "prefix": "APCD",
+                                    "number": "112",
+                                    "key": "APCD 112",
+                                    "title": "Apprenticeship Health, Safety and Nutrition for Young Children",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Child Development",
-                            "prefix": "CDEV",
-                            "number": "112",
-                            "key": "CDEV 112",
-                            "title": "Health, Safety and Nutrition for Children",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Child Development",
+                                    "prefix": "CDEV",
+                                    "number": "112",
+                                    "key": "CDEV 112",
+                                    "title": "Health, Safety and Nutrition for Children",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3915,9 +4259,9 @@
                             "number": "121",
                             "key": "ECE 121",
                             "title": "Health, Safety and Nutrition for Young Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3935,9 +4279,9 @@
                             "number": "64",
                             "key": "ECE 64",
                             "title": "Health, Safety and Nutrition for Young Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3955,9 +4299,9 @@
                             "number": "90.3",
                             "key": "CHLD 90.3",
                             "title": "Health, Safety and Nutrition for the Young Child",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3975,9 +4319,9 @@
                             "number": "112",
                             "key": "CDEV 112",
                             "title": "Health, Safety, and Nutrition for Children",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3995,9 +4339,9 @@
                             "number": "15",
                             "key": "ECE 15",
                             "title": "Child Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4015,9 +4359,9 @@
                             "number": "7",
                             "key": "HDEV 7",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4026,32 +4370,48 @@
             {
                 "sending_name": "Skyline College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Early Childhood Education",
-                            "prefix": "ECE.",
-                            "number": "314",
-                            "key": "ECE. 314",
-                            "title": "Health, Safety, and Nutrition for Young Children",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Early Childhood Education",
+                                    "prefix": "ECE.",
+                                    "number": "314",
+                                    "key": "ECE. 314",
+                                    "title": "Health, Safety, and Nutrition for Young Children",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Early Childhood Education",
-                            "prefix": "ECE.",
-                            "number": "914",
-                            "key": "ECE. 914",
-                            "title": "Health, Safety, and Nutrition for Young Children (Apprenticeship)",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Early Childhood Education",
+                                    "prefix": "ECE.",
+                                    "number": "914",
+                                    "key": "ECE. 914",
+                                    "title": "Health, Safety, and Nutrition for Young Children (Apprenticeship)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4060,32 +4420,48 @@
             {
                 "sending_name": "Solano Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Childhood Development and Family Studies",
-                            "prefix": "CDFS",
-                            "number": "054",
-                            "key": "CDFS 054",
-                            "title": "Child Health, Safety, and Nutrition",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Childhood Development and Family Studies",
+                                    "prefix": "CDFS",
+                                    "number": "054",
+                                    "key": "CDFS 054",
+                                    "title": "Child Health, Safety, and Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Nutrition",
-                            "prefix": "NUTR",
-                            "number": "054",
-                            "key": "NUTR 054",
-                            "title": "Child Health, Safety, and Nutrition",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Nutrition",
+                                    "prefix": "NUTR",
+                                    "number": "054",
+                                    "key": "NUTR 054",
+                                    "title": "Child Health, Safety, and Nutrition",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4103,9 +4479,9 @@
                             "number": "1590",
                             "key": "ECEF 1590",
                             "title": "Health, Safety, an Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4123,9 +4499,9 @@
                             "number": "V24",
                             "key": "CD V24",
                             "title": "Child Nutrition, Health and Safety",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4143,9 +4519,9 @@
                             "number": "142",
                             "key": "CHDV 142",
                             "title": "Child Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4163,9 +4539,9 @@
                             "number": "010",
                             "key": "CH DEV 010",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4183,9 +4559,9 @@
                             "number": "066",
                             "key": "CHST 066",
                             "title": "Child Safety, Health and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4203,9 +4579,9 @@
                             "number": "10",
                             "key": "ECE 10",
                             "title": "Health, Safety, and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4223,9 +4599,9 @@
                             "number": "10",
                             "key": "ECE 10",
                             "title": "Health, Safety and Nutrition",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

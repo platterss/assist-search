@@ -7,8 +7,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 1001",
                 "number": "1001",
+                "key": "CE 1001",
                 "title": "Civil Engineering and Design Drafting",
                 "min_units": 2.0,
                 "max_units": 2.0
@@ -16,8 +16,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 1001L",
                 "number": "1001L",
+                "key": "CE 1001L",
                 "title": "Civil Engineering and Design Drafting Laboratory",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -36,9 +36,9 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -47,28 +47,44 @@
             {
                 "sending_name": "Bakersfield College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Industrial Drawing",
-                            "prefix": "INDR",
-                            "number": "B20A",
-                            "key": "INDR B20A",
-                            "title": "Computer Aided Drafting & Design (CAD) - Intermediate",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Industrial Drawing",
+                                    "prefix": "INDR",
+                                    "number": "B20A",
+                                    "key": "INDR B20A",
+                                    "title": "Computer Aided Drafting & Design (CAD) - Intermediate",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "B47",
-                            "key": "ENGR B47",
-                            "title": "Introduction to Engineering and Design",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "B47",
+                                    "key": "ENGR B47",
+                                    "title": "Introduction to Engineering and Design",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -86,9 +102,9 @@
                             "number": "25",
                             "key": "ENGR 25",
                             "title": "Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -106,9 +122,9 @@
                             "number": "138",
                             "key": "ENGT 138",
                             "title": "Introduction to Engineering Design Using Autocad",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -126,9 +142,9 @@
                             "number": "49",
                             "key": "ID 49",
                             "title": "Digital Tools for Design and Visual Communication",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -146,9 +162,9 @@
                             "number": "26",
                             "key": "ENGIN 26",
                             "title": "Engineering Graphics and CAD",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -166,9 +182,9 @@
                             "number": "130",
                             "key": "ENGR 130",
                             "title": "ENGINEERING GRAPHICS",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -177,28 +193,44 @@
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "110",
-                            "key": "ENGR 110",
-                            "title": "Introduction to Engineering Graphics with AutoCAD",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "110",
+                                    "key": "ENGR 110",
+                                    "title": "Introduction to Engineering Graphics with AutoCAD",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Land Surveying",
-                            "prefix": "SURV",
-                            "number": "110",
-                            "key": "SURV 110",
-                            "title": "computer Aided Drafting for Surveyors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Land Surveying",
+                                    "prefix": "SURV",
+                                    "number": "110",
+                                    "key": "SURV 110",
+                                    "title": "computer Aided Drafting for Surveyors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -216,9 +248,9 @@
                             "number": "2",
                             "key": "DRA 2",
                             "title": "AutoCAD",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -236,9 +268,9 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -256,9 +288,9 @@
                             "number": "205 C",
                             "key": "ENGR 205 C",
                             "title": "Advanced 3D Solid Modeling and Simulation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -267,28 +299,44 @@
             {
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Architecture",
-                            "prefix": "ARCHI",
-                            "number": "226",
-                            "key": "ARCHI 226",
-                            "title": "Computer Aided Drafting Design, Advanced Concepts - AutoCAD",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Architecture",
+                                    "prefix": "ARCHI",
+                                    "number": "226",
+                                    "key": "ARCHI 226",
+                                    "title": "Computer Aided Drafting Design, Advanced Concepts - AutoCAD",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering Technology",
-                            "prefix": "ENGTC",
-                            "number": "226",
-                            "key": "ENGTC 226",
-                            "title": "Computer Aided Drafting Design, Advanced Concepts - AutoCAD",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering Technology",
+                                    "prefix": "ENGTC",
+                                    "number": "226",
+                                    "key": "ENGTC 226",
+                                    "title": "Computer Aided Drafting Design, Advanced Concepts - AutoCAD",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -297,28 +345,44 @@
             {
                 "sending_name": "East Los Angeles College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering, General",
-                            "prefix": "ENG GEN",
-                            "number": "212",
-                            "key": "ENG GEN 212",
-                            "title": "Introduction to Engineering Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering, General",
+                                    "prefix": "ENG GEN",
+                                    "number": "212",
+                                    "key": "ENG GEN 212",
+                                    "title": "Introduction to Engineering Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering, General",
-                            "prefix": "ENG GEN",
-                            "number": "101",
-                            "key": "ENG GEN 101",
-                            "title": "Introduction to Science - Engineering and Technology",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering, General",
+                                    "prefix": "ENG GEN",
+                                    "number": "101",
+                                    "key": "ENG GEN 101",
+                                    "title": "Introduction to Science - Engineering and Technology",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -336,9 +400,9 @@
                             "number": "7",
                             "key": "CADD 7",
                             "title": "Solid Modeling, Assemblies and Two Dimensional (2D) Drawings",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -356,9 +420,9 @@
                             "number": "105 F",
                             "key": "ENGR 105 F",
                             "title": "Engineering CAD",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -376,9 +440,9 @@
                             "number": "109",
                             "key": "ENGR 109",
                             "title": "Computer Aided Design AutoCAD I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -387,28 +451,44 @@
             {
                 "sending_name": "Hartnell College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "EGN",
-                            "number": "2",
-                            "key": "EGN 2",
-                            "title": "Engineering Graphics and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "EGN",
+                                    "number": "2",
+                                    "key": "EGN 2",
+                                    "title": "Engineering Graphics and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Construction Management & Architecture",
-                            "prefix": "CMA",
-                            "number": "81",
-                            "key": "CMA 81",
-                            "title": "Computer Aided Drafting and Design I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Construction Management & Architecture",
+                                    "prefix": "CMA",
+                                    "number": "81",
+                                    "key": "CMA 81",
+                                    "title": "Computer Aided Drafting and Design I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -417,28 +497,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "23",
-                            "key": "ENGR 23",
-                            "title": "Engineering Graphics and Descriptive Geometry",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "23",
+                                    "key": "ENGR 23",
+                                    "title": "Engineering Graphics and Descriptive Geometry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "83",
-                            "key": "ENGR 83",
-                            "title": "Computer-Aided Design Techniques",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "83",
+                                    "key": "ENGR 83",
+                                    "title": "Computer-Aided Design Techniques",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -448,7 +544,7 @@
                 "sending_name": "Los Angeles Harbor College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -465,9 +561,9 @@
                             "number": "261",
                             "key": "ARC 261",
                             "title": "Computer-Aided Design for Architecture I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -485,9 +581,9 @@
                             "number": "161",
                             "key": "ARC 161",
                             "title": "Introduction to Computer Aided Architectural Drawing",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -505,9 +601,9 @@
                             "number": "M04",
                             "key": "ENGR M04",
                             "title": "Engineering Design/CAD",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -516,38 +612,62 @@
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Manufacturing Technology",
-                            "prefix": "MFG",
-                            "number": "110",
-                            "key": "MFG 110",
-                            "title": "Introduction to CAD",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Manufacturing Technology",
+                                    "prefix": "MFG",
+                                    "number": "110",
+                                    "key": "MFG 110",
+                                    "title": "Introduction to CAD",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Manufacturing Technology",
-                            "prefix": "MFG",
-                            "number": "120",
-                            "key": "MFG 120",
-                            "title": "CAD for Manufacturing",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Manufacturing Technology",
+                                    "prefix": "MFG",
+                                    "number": "120",
+                                    "key": "MFG 120",
+                                    "title": "CAD for Manufacturing",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "24",
-                            "key": "ENGR 24",
-                            "title": "Engineering Graphics",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "24",
+                                    "key": "ENGR 24",
+                                    "title": "Engineering Graphics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -565,9 +685,9 @@
                             "number": "154",
                             "key": "ENGR- 154",
                             "title": "Computer Aided Drafting I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -585,9 +705,9 @@
                             "number": "30",
                             "key": "ENE 30",
                             "title": "Computer Aided Drafting (CAD)",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -596,48 +716,80 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DT",
-                            "number": "110",
-                            "key": "DT 110",
-                            "title": "Technical Drafting I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DT",
+                                    "number": "110",
+                                    "key": "DT 110",
+                                    "title": "Technical Drafting I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DT",
-                            "number": "110",
-                            "key": "DT 110",
-                            "title": "Technical Drafting I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DT",
+                                    "number": "110",
+                                    "key": "DT 110",
+                                    "title": "Technical Drafting I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DT",
-                            "number": "101",
-                            "key": "DT 101",
-                            "title": "AutoCAD I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DT",
+                                    "number": "101",
+                                    "key": "DT 101",
+                                    "title": "AutoCAD I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DT",
-                            "number": "101",
-                            "key": "DT 101",
-                            "title": "AutoCAD I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DT",
+                                    "number": "101",
+                                    "key": "DT 101",
+                                    "title": "AutoCAD I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -646,28 +798,44 @@
             {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Civil",
-                            "prefix": "CIV",
-                            "number": "140",
-                            "key": "CIV 140",
-                            "title": "Civil Engineering & Construction Fundamentals",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Civil",
+                                    "prefix": "CIV",
+                                    "number": "140",
+                                    "key": "CIV 140",
+                                    "title": "Civil Engineering & Construction Fundamentals",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Civil",
-                            "prefix": "CIV",
-                            "number": "241",
-                            "key": "CIV 241",
-                            "title": "Civil Engineering Drafting and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Civil",
+                                    "prefix": "CIV",
+                                    "number": "241",
+                                    "key": "CIV 241",
+                                    "title": "Civil Engineering Drafting and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -685,9 +853,9 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -696,28 +864,44 @@
             {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting Technology",
-                            "prefix": "DR",
-                            "number": "50",
-                            "key": "DR 50",
-                            "title": "Introduction to Computer-Aided Drafting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting Technology",
+                                    "prefix": "DR",
+                                    "number": "50",
+                                    "key": "DR 50",
+                                    "title": "Introduction to Computer-Aided Drafting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Architecture",
-                            "prefix": "ARCH",
-                            "number": "50",
-                            "key": "ARCH 50",
-                            "title": "Introduction to Computer-Aided Drafting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Architecture",
+                                    "prefix": "ARCH",
+                                    "number": "50",
+                                    "key": "ARCH 50",
+                                    "title": "Introduction to Computer-Aided Drafting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -735,9 +919,9 @@
                             "number": "183",
                             "key": "ENGR 183",
                             "title": "AutoCAD I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -755,9 +939,9 @@
                             "number": "130",
                             "key": "DRFT 130",
                             "title": "Computer-Assisted Drafting and Design I",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -775,9 +959,9 @@
                             "number": "31",
                             "key": "ARC 31",
                             "title": "Design Communication 3",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -795,9 +979,9 @@
                             "number": "85",
                             "key": "CEST 85",
                             "title": "CAD for Civil, Surveying & Land Development",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -815,9 +999,9 @@
                             "number": "205",
                             "key": "SURV 205",
                             "title": "Computer Aided Drafting Fundamentals for Surveyors",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -826,38 +1010,62 @@
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Drafting",
-                            "prefix": "DRFT",
-                            "number": "V05A",
-                            "key": "DRFT V05A",
-                            "title": "Introduction to AutoCAD",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Drafting",
+                                    "prefix": "DRFT",
+                                    "number": "V05A",
+                                    "key": "DRFT V05A",
+                                    "title": "Introduction to AutoCAD",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Architecture",
-                            "prefix": "ARCH",
-                            "number": "V23",
-                            "key": "ARCH V23",
-                            "title": "Introduction to AutoCAD",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Architecture",
+                                    "prefix": "ARCH",
+                                    "number": "V23",
+                                    "key": "ARCH V23",
+                                    "title": "Introduction to AutoCAD",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "V02",
-                            "key": "ENGR V02",
-                            "title": "Engineering Graphics and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "V02",
+                                    "key": "ENGR V02",
+                                    "title": "Engineering Graphics and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -866,28 +1074,44 @@
             {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering/Drafting",
-                            "prefix": "ENGD",
-                            "number": "110",
-                            "key": "ENGD 110",
-                            "title": "Introduction to 2-D Autocad",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering/Drafting",
+                                    "prefix": "ENGD",
+                                    "number": "110",
+                                    "key": "ENGD 110",
+                                    "title": "Introduction to 2-D Autocad",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering/Drafting",
-                            "prefix": "ENGD",
-                            "number": "101",
-                            "key": "ENGD 101",
-                            "title": "Introduction to Drafting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering/Drafting",
+                                    "prefix": "ENGD",
+                                    "number": "101",
+                                    "key": "ENGD 101",
+                                    "title": "Introduction to Drafting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -903,8 +1127,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 1011",
                 "number": "1011",
+                "key": "CE 1011",
                 "title": "Surveying Engineering",
                 "min_units": 3.0,
                 "max_units": 3.0
@@ -912,8 +1136,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 1011L",
                 "number": "1011L",
+                "key": "CE 1011L",
                 "title": "Surveying Engineering Laboratory",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -932,9 +1156,9 @@
                             "number": "350",
                             "key": "DESGN 350",
                             "title": "Surveying and Land Planning",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -952,9 +1176,9 @@
                             "number": "B40",
                             "key": "ENGR B40",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -972,9 +1196,9 @@
                             "number": "4",
                             "key": "ENGR 4",
                             "title": "Plane Surveying II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -992,9 +1216,9 @@
                             "number": "132",
                             "key": "ENGR 132",
                             "title": "Introduction to Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1004,11 +1228,15 @@
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "AND",
+                        "OR",
+                        "AND"
+                    ],
                     "items": [
                         {
                             "type": "SET",
-                            "conjunction": "AND",
+                            "conjunction": null,
                             "items": [
                                 {
                                     "subject": "Land Surveying",
@@ -1016,26 +1244,33 @@
                                     "number": "101A",
                                     "key": "SURV 101A",
                                     "title": "Introduction to Land Surveying",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
-                                },
-                                {
-                                    "subject": "Land Surveying",
-                                    "prefix": "SURV",
-                                    "number": "101L",
-                                    "key": "SURV 101L",
-                                    "title": "Introduction to Land Surveying Laboratory",
-                                    "notes": [],
-                                    "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
                             "type": "SET",
-                            "conjunction": "AND",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Land Surveying",
+                                    "prefix": "SURV",
+                                    "number": "101L",
+                                    "key": "SURV 101L",
+                                    "title": "Introduction to Land Surveying Laboratory",
+                                    "min_units": 1.0,
+                                    "max_units": 1.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
                             "items": [
                                 {
                                     "subject": "Land Surveying",
@@ -1043,19 +1278,26 @@
                                     "number": "102A",
                                     "key": "SURV 102A",
                                     "title": "Advanced Land Surveying",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
-                                },
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "subject": "Land Surveying",
                                     "prefix": "SURV",
                                     "number": "102L",
                                     "key": "SURV 102L",
                                     "title": "Advanced Land Surveying Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1076,9 +1318,9 @@
                             "number": "52",
                             "key": "FNR 52",
                             "title": "Introduction to Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1096,9 +1338,9 @@
                             "number": "121",
                             "key": "ENG SUP 121",
                             "title": "Plane Surveying I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering Support",
@@ -1106,9 +1348,9 @@
                             "number": "221",
                             "key": "ENG SUP 221",
                             "title": "Plane Surveying II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1126,9 +1368,9 @@
                             "number": "060",
                             "key": "ENGR 060",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -1136,9 +1378,9 @@
                             "number": "061",
                             "key": "ENGR 061",
                             "title": "Plane Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1156,9 +1398,9 @@
                             "number": "101AF",
                             "key": "ENGR 101AF",
                             "title": "Surveying I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1176,9 +1418,9 @@
                             "number": "180",
                             "key": "ENGR 180",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1187,28 +1429,44 @@
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Surveying",
-                            "prefix": "SURV",
-                            "number": "1A",
-                            "key": "SURV 1A",
-                            "title": "Surveying",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Surveying",
+                                    "prefix": "SURV",
+                                    "number": "1A",
+                                    "key": "SURV 1A",
+                                    "title": "Surveying",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Surveying",
-                            "prefix": "SURV",
-                            "number": "1B",
-                            "key": "SURV 1B",
-                            "title": "Surveying",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Surveying",
+                                    "prefix": "SURV",
+                                    "number": "1B",
+                                    "key": "SURV 1B",
+                                    "title": "Surveying",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1226,9 +1484,9 @@
                             "number": "164",
                             "key": "ENGR- 164",
                             "title": "Plane Surveying I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1246,9 +1504,9 @@
                             "number": "001A",
                             "key": "ENGR 001A",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1266,9 +1524,9 @@
                             "number": "142",
                             "key": "CIV 142",
                             "title": "Introduction to Surveying and GPS",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1278,7 +1536,9 @@
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1290,9 +1550,9 @@
                                     "number": "300",
                                     "key": "SURVY 300",
                                     "title": "Elementary Surveying",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Surveying (Geomatics)",
@@ -1300,9 +1560,9 @@
                                     "number": "320",
                                     "key": "SURVY 320",
                                     "title": "Advanced Survey",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1317,9 +1577,9 @@
                                     "number": "310",
                                     "key": "ENGR 310",
                                     "title": "Engineering Survey Measurements",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Surveying (Geomatics)",
@@ -1327,9 +1587,9 @@
                                     "number": "320",
                                     "key": "SURVY 320",
                                     "title": "Advanced Survey",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1350,9 +1610,9 @@
                             "number": "118",
                             "key": "ENGR 118",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1362,7 +1622,9 @@
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1374,9 +1636,9 @@
                                     "number": "50",
                                     "key": "SURV 50",
                                     "title": "Introduction to Plane Surveying",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Surveying",
@@ -1384,9 +1646,9 @@
                                     "number": "53",
                                     "key": "SURV 53",
                                     "title": "Route Surveying & Design",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1401,9 +1663,9 @@
                                     "number": "60",
                                     "key": "SURV 60",
                                     "title": "Introduction to Plane Surveying",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Surveying",
@@ -1411,9 +1673,9 @@
                                     "number": "53",
                                     "key": "SURV 53",
                                     "title": "Route Surveying & Design",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1426,7 +1688,9 @@
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1438,9 +1702,9 @@
                                     "number": "118",
                                     "key": "SURV 118",
                                     "title": "Plane Surveying",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Survey/Mapping Sciences",
@@ -1448,9 +1712,9 @@
                                     "number": "119",
                                     "key": "SURV 119",
                                     "title": "Advanced Plane Surveying",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1465,9 +1729,9 @@
                                     "number": "101",
                                     "key": "ASV 101",
                                     "title": "Chainman Apprentice 1",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Apprenticeship Surveying",
@@ -1475,9 +1739,9 @@
                                     "number": "102",
                                     "key": "ASV 102",
                                     "title": "Chainman Apprentice 2",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Apprenticeship Surveying",
@@ -1485,9 +1749,9 @@
                                     "number": "103",
                                     "key": "ASV 103",
                                     "title": "Chainman Apprentice 3",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Apprenticeship Surveying",
@@ -1495,9 +1759,9 @@
                                     "number": "104",
                                     "key": "ASV 104",
                                     "title": "Chainman Apprentice 4",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Apprenticeship Surveying",
@@ -1505,9 +1769,9 @@
                                     "number": "105",
                                     "key": "ASV 105",
                                     "title": "Chainman Apprentice 5",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1520,7 +1784,7 @@
                 "sending_name": "Shasta College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1537,9 +1801,9 @@
                             "number": "180",
                             "key": "ENGR 180",
                             "title": "Engineering Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1557,9 +1821,9 @@
                             "number": "123",
                             "key": "CT 123",
                             "title": "Surveying",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1575,8 +1839,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 1101",
                 "number": "1101",
+                "key": "CE 1101",
                 "title": "Construction Drafting",
                 "min_units": 2.0,
                 "max_units": 2.0
@@ -1584,8 +1848,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 1101L",
                 "number": "1101L",
+                "key": "CE 1101L",
                 "title": "Construction Drafting Laboratory",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -1595,28 +1859,44 @@
             {
                 "sending_name": "East Los Angeles College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering, General",
-                            "prefix": "ENG GEN",
-                            "number": "212",
-                            "key": "ENG GEN 212",
-                            "title": "Introduction to Engineering Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering, General",
+                                    "prefix": "ENG GEN",
+                                    "number": "212",
+                                    "key": "ENG GEN 212",
+                                    "title": "Introduction to Engineering Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering Graphics & Design",
-                            "prefix": "EGD TEK",
-                            "number": "111",
-                            "key": "EGD TEK 111",
-                            "title": "2-D Computer-Aided Drafting",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering Graphics & Design",
+                                    "prefix": "EGD TEK",
+                                    "number": "111",
+                                    "key": "EGD TEK 111",
+                                    "title": "2-D Computer-Aided Drafting",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1634,9 +1914,9 @@
                             "number": "161",
                             "key": "ARC 161",
                             "title": "Introduction to Computer Aided Architectural Drawing",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1645,48 +1925,80 @@
             {
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Architecture",
-                            "prefix": "ARCH",
-                            "number": "012A",
-                            "key": "ARCH 012A",
-                            "title": "Visual Communications I",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Architecture",
+                                    "prefix": "ARCH",
+                                    "number": "012A",
+                                    "key": "ARCH 012A",
+                                    "title": "Visual Communications I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "002",
-                            "key": "ENGR 002",
-                            "title": "Engineering Graphics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "002",
+                                    "key": "ENGR 002",
+                                    "title": "Engineering Graphics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Design Technology",
-                            "prefix": "DT",
-                            "number": "008A",
-                            "key": "DT 008A",
-                            "title": "Introduction to Digital Design and Fabrication",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Design Technology",
+                                    "prefix": "DT",
+                                    "number": "008A",
+                                    "key": "DT 008A",
+                                    "title": "Introduction to Digital Design and Fabrication",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Design Technology",
-                            "prefix": "DT",
-                            "number": "008B",
-                            "key": "DT 008B",
-                            "title": "Intermediate Digital Design and Fabrication",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Design Technology",
+                                    "prefix": "DT",
+                                    "number": "008B",
+                                    "key": "DT 008B",
+                                    "title": "Intermediate Digital Design and Fabrication",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1716,9 +2028,9 @@
                             "number": "272",
                             "key": "ENG GEN 272",
                             "title": "Economic Analysis for Engineers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1748,9 +2060,9 @@
                             "number": "240",
                             "key": "PHYS 240",
                             "title": "Material Science and Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1766,8 +2078,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 2030",
                 "number": "2030",
+                "key": "CE 2030",
                 "title": "Civil Engineering Materials",
                 "min_units": 2.0,
                 "max_units": 2.0
@@ -1775,8 +2087,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 2030L",
                 "number": "2030L",
+                "key": "CE 2030L",
                 "title": "Civil Engineering Materials Laboratory",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -1787,7 +2099,7 @@
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1796,7 +2108,7 @@
                 "sending_name": "American River College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1805,7 +2117,7 @@
                 "sending_name": "Bakersfield College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1814,7 +2126,7 @@
                 "sending_name": "Cerritos College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1831,9 +2143,9 @@
                             "number": "412",
                             "key": "ENGR 412",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1843,7 +2155,7 @@
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1852,7 +2164,7 @@
                 "sending_name": "Los Angeles Trade Technical College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1869,9 +2181,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Properties of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1881,7 +2193,7 @@
                 "sending_name": "Ventura College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1921,9 +2233,9 @@
                             "number": "152",
                             "key": "ENGR 152",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1941,9 +2253,9 @@
                             "number": "420",
                             "key": "ENGR 420",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1961,9 +2273,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1981,9 +2293,9 @@
                             "number": "B36",
                             "key": "ENGR B36",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2001,9 +2313,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2021,9 +2333,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2041,9 +2353,9 @@
                             "number": "230",
                             "key": "ENGR 230",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2061,9 +2373,9 @@
                             "number": "235",
                             "key": "ENGR 235",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2081,9 +2393,9 @@
                             "number": "36",
                             "key": "ENGR 36",
                             "title": "Engineering Mechanics-Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2101,9 +2413,9 @@
                             "number": "50",
                             "key": "ENGIN 50",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2121,9 +2433,9 @@
                             "number": "135",
                             "key": "ENGR 135",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2141,9 +2453,9 @@
                             "number": "36",
                             "key": "ENGN 36",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2161,9 +2473,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2181,9 +2493,9 @@
                             "number": "235",
                             "key": "ENGG 235",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2201,9 +2513,9 @@
                             "number": "230",
                             "key": "ENGR 230",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2221,9 +2533,9 @@
                             "number": "152",
                             "key": "ENGR 152",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2232,28 +2544,44 @@
             {
                 "sending_name": "College of the Desert",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Physics",
-                            "prefix": "PH",
-                            "number": "11",
-                            "key": "PH 11",
-                            "title": "Statics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PH",
+                                    "number": "11",
+                                    "key": "PH 11",
+                                    "title": "Statics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering, General",
-                            "prefix": "ENGR",
-                            "number": "11",
-                            "key": "ENGR 11",
-                            "title": "Statics",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering, General",
+                                    "prefix": "ENGR",
+                                    "number": "11",
+                                    "key": "ENGR 11",
+                                    "title": "Statics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2271,9 +2599,9 @@
                             "number": "002",
                             "key": "ENGR 002",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2291,9 +2619,9 @@
                             "number": "2035",
                             "key": "ENGR 2035",
                             "title": "Mechanics for Engineers - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2311,9 +2639,9 @@
                             "number": "109",
                             "key": "ENGR 109",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2331,9 +2659,9 @@
                             "number": "255",
                             "key": "ENGIN 255",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2351,9 +2679,9 @@
                             "number": "420",
                             "key": "ENGR 420",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2371,9 +2699,9 @@
                             "number": "250",
                             "key": "ENGR 250",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2391,9 +2719,9 @@
                             "number": "201 C",
                             "key": "ENGR 201 C",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2411,9 +2739,9 @@
                             "number": "255",
                             "key": "ENGIN 255",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2431,9 +2759,9 @@
                             "number": "131",
                             "key": "ENG GEN 131",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2451,9 +2779,9 @@
                             "number": "9",
                             "key": "ENGR 9",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2471,9 +2799,9 @@
                             "number": "069",
                             "key": "ENGR 069",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2491,9 +2819,9 @@
                             "number": "420",
                             "key": "ENGR 420",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2511,9 +2839,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2531,9 +2859,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2551,9 +2879,9 @@
                             "number": "201 F",
                             "key": "ENGR 201 F",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2571,9 +2899,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2591,9 +2919,9 @@
                             "number": "152",
                             "key": "ENGR 152",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2611,9 +2939,9 @@
                             "number": "G280",
                             "key": "ENGR G280",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2631,9 +2959,9 @@
                             "number": "8",
                             "key": "EGN 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2651,9 +2979,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2671,9 +2999,9 @@
                             "number": "30",
                             "key": "ENGR 30",
                             "title": "Statics of Rigid Bodies and Structures",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2691,9 +3019,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2711,9 +3039,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2731,9 +3059,9 @@
                             "number": "131",
                             "key": "ENG GEN 131",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2751,9 +3079,9 @@
                             "number": "243",
                             "key": "ENG GEN 243",
                             "title": "Statics and Strength of Materials (Calculus based)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2771,9 +3099,9 @@
                             "number": "131",
                             "key": "ENG GEN 131",
                             "title": "STATICS",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2791,9 +3119,9 @@
                             "number": "131",
                             "key": "ENG GEN 131",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2811,9 +3139,9 @@
                             "number": "131",
                             "key": "ENG GEN 131",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2831,9 +3159,9 @@
                             "number": "131",
                             "key": "ENG GEN 131",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2851,9 +3179,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2871,9 +3199,9 @@
                             "number": "202",
                             "key": "EGR 202",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2891,9 +3219,9 @@
                             "number": "-15",
                             "key": "ENGR -15",
                             "title": "Elementary Mechanics (Statics)",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2911,9 +3239,9 @@
                             "number": "023",
                             "key": "EGR 023",
                             "title": "Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2931,9 +3259,9 @@
                             "number": "135",
                             "key": "ENGR 135",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2951,9 +3279,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2971,9 +3299,9 @@
                             "number": "M16",
                             "key": "ENGR M16",
                             "title": "Engineering Statics and Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2991,9 +3319,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3011,9 +3339,9 @@
                             "number": "181",
                             "key": "ENGR- 181",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3031,9 +3359,9 @@
                             "number": "241",
                             "key": "ENGI 241",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3051,9 +3379,9 @@
                             "number": "35",
                             "key": "ENE 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3071,9 +3399,9 @@
                             "number": "A280",
                             "key": "ENGR A280",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3091,9 +3419,9 @@
                             "number": "R130",
                             "key": "ENGR R130",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3111,9 +3439,9 @@
                             "number": "235",
                             "key": "ENGR 235",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3131,9 +3459,9 @@
                             "number": "011",
                             "key": "ENGR 011",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3151,9 +3479,9 @@
                             "number": "P130",
                             "key": "ENGR P130",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3171,9 +3499,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3191,9 +3519,9 @@
                             "number": "235",
                             "key": "ENGR 235",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3211,9 +3539,9 @@
                             "number": "35",
                             "key": "ENE 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3231,9 +3559,9 @@
                             "number": "422",
                             "key": "ENGR 422",
                             "title": "Engineering Mechanics, Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3251,9 +3579,9 @@
                             "number": "31",
                             "key": "ENGR 31",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3271,9 +3599,9 @@
                             "number": "265",
                             "key": "ENGR 265",
                             "title": "Engineering Mechanics - Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3291,9 +3619,9 @@
                             "number": "200",
                             "key": "ENGE 200",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3311,9 +3639,9 @@
                             "number": "200",
                             "key": "ENGE 200",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3331,9 +3659,9 @@
                             "number": "200",
                             "key": "ENGE 200",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3351,9 +3679,9 @@
                             "number": "8",
                             "key": "ENGR 8",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3371,9 +3699,9 @@
                             "number": "032",
                             "key": "ENGR 032",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3391,9 +3719,9 @@
                             "number": "235",
                             "key": "ENGR 235",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3411,9 +3739,9 @@
                             "number": "115",
                             "key": "ENGR 115",
                             "title": "Statics and Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3431,9 +3759,9 @@
                             "number": "12",
                             "key": "ENGR 12",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3451,9 +3779,9 @@
                             "number": "34",
                             "key": "ENGR 34",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3471,9 +3799,9 @@
                             "number": "220",
                             "key": "ENGR 220",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3491,9 +3819,9 @@
                             "number": "35",
                             "key": "ENGR 35",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3511,9 +3839,9 @@
                             "number": "130",
                             "key": "ENGR 130",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3531,9 +3859,9 @@
                             "number": "230",
                             "key": "ENGR 230",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3551,9 +3879,9 @@
                             "number": "030",
                             "key": "ENGR 030",
                             "title": "Engineering Mechanics: Statics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3571,9 +3899,9 @@
                             "number": "250",
                             "key": "ENGR 250",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3591,9 +3919,9 @@
                             "number": "2200",
                             "key": "ENGR 2200",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3611,9 +3939,9 @@
                             "number": "V12",
                             "key": "ENGR V12",
                             "title": "Engineering Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3631,9 +3959,9 @@
                             "number": "230",
                             "key": "PHYS 230",
                             "title": "Statics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3651,9 +3979,9 @@
                             "number": "131",
                             "key": "ENG GEN 131",
                             "title": "STATICS",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3671,9 +3999,9 @@
                             "number": "099",
                             "key": "ENGR 099",
                             "title": "Statics/Vector Mechanics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3703,9 +4031,9 @@
                             "number": "B38",
                             "key": "ENGR B38",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3723,9 +4051,9 @@
                             "number": "245",
                             "key": "ENGR 245",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3743,9 +4071,9 @@
                             "number": "140",
                             "key": "ENGR 140",
                             "title": "MECHANICS OF MATERIALS",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3755,7 +4083,7 @@
                 "sending_name": "College of the Desert",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -3772,9 +4100,9 @@
                             "number": "252A",
                             "key": "ENGR 252A",
                             "title": "Strength of Materials 1",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -3782,9 +4110,9 @@
                             "number": "252B",
                             "key": "ENGR 252B",
                             "title": "Strength of Materials II",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3802,9 +4130,9 @@
                             "number": "257",
                             "key": "ENGIN 257",
                             "title": "Statics and Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3822,9 +4150,9 @@
                             "number": "241",
                             "key": "ENG GEN 241",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3842,9 +4170,9 @@
                             "number": "241",
                             "key": "ENGR 241",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3862,9 +4190,9 @@
                             "number": "241",
                             "key": "ENG GEN 241",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3882,9 +4210,9 @@
                             "number": "M18",
                             "key": "ENGR M18",
                             "title": "Engineering Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3902,9 +4230,9 @@
                             "number": "42",
                             "key": "ENGR 42",
                             "title": "Mechanics of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3922,9 +4250,9 @@
                             "number": "182",
                             "key": "ENGR- 182",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3942,9 +4270,9 @@
                             "number": "49",
                             "key": "ENE 49",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3962,9 +4290,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3986,7 +4314,7 @@
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -4026,9 +4354,9 @@
                             "number": "125",
                             "key": "ENGR 125",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4037,30 +4365,46 @@
             {
                 "sending_name": "Bakersfield College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "B20",
-                            "key": "ENGR B20",
-                            "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "B20",
+                                    "key": "ENGR B20",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "B19C",
-                            "key": "ENGR B19C",
-                            "title": "Introduction to Programming Concepts and Methodologies for Engineers",
-                            "notes": [
-                                "Acceptable substitute"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "B19C",
+                                    "key": "ENGR B19C",
+                                    "title": "Introduction to Programming Concepts and Methodologies for Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4078,9 +4422,9 @@
                             "number": "138",
                             "key": "ENGR 138",
                             "title": "COMPUTER PROGRAMMING AND NUMERICALMETHODS FOR ENGINEERS",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4098,9 +4442,9 @@
                             "number": "20",
                             "key": "MATH 20",
                             "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4118,9 +4462,9 @@
                             "number": "220 C",
                             "key": "ENGR 220 C",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4129,28 +4473,44 @@
             {
                 "sending_name": "East Los Angeles College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering, General",
-                            "prefix": "ENG GEN",
-                            "number": "121",
-                            "key": "ENG GEN 121",
-                            "title": "Programming for Engineers: C++",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering, General",
+                                    "prefix": "ENG GEN",
+                                    "number": "121",
+                                    "key": "ENG GEN 121",
+                                    "title": "Programming for Engineers: C++",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering, General",
-                            "prefix": "ENG GEN",
-                            "number": "122",
-                            "key": "ENG GEN 122",
-                            "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering, General",
+                                    "prefix": "ENG GEN",
+                                    "number": "122",
+                                    "key": "ENG GEN 122",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4168,9 +4528,9 @@
                             "number": "041",
                             "key": "COMSC 041",
                             "title": "Programming Concepts and Methodology I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4188,9 +4548,9 @@
                             "number": "220 F",
                             "key": "ENGR 220 F",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4208,9 +4568,9 @@
                             "number": "156",
                             "key": "ENGR 156",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4228,9 +4588,9 @@
                             "number": "M10",
                             "key": "ENGR M10",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4239,28 +4599,44 @@
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "7",
-                            "key": "ENGR 7",
-                            "title": "Programming Applications for Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "7",
+                                    "key": "ENGR 7",
+                                    "title": "Programming Applications for Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "6",
-                            "key": "ENGR 6",
-                            "title": "Introduction to Engineering Programming Concepts and Methodologies",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "6",
+                                    "key": "ENGR 6",
+                                    "title": "Introduction to Engineering Programming Concepts and Methodologies",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4269,28 +4645,44 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENE",
-                            "number": "38",
-                            "key": "ENE 38",
-                            "title": "Introduction to Programming Concepts and Methodologies for Engineers",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENE",
+                                    "number": "38",
+                                    "key": "ENE 38",
+                                    "title": "Introduction to Programming Concepts and Methodologies for Engineers",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENE",
-                            "number": "48",
-                            "key": "ENE 48",
-                            "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENE",
+                                    "number": "48",
+                                    "key": "ENE 48",
+                                    "title": "Programming and Problem-Solving in MATLAB",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4308,9 +4700,9 @@
                             "number": "018",
                             "key": "ENGR 018",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4328,9 +4720,9 @@
                             "number": "133",
                             "key": "CS 133",
                             "title": "Introduction to Programming for Engineers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4348,9 +4740,9 @@
                             "number": "210",
                             "key": "PHYS 210",
                             "title": "Computers Methods for Engineers",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4380,9 +4772,9 @@
                             "number": "154",
                             "key": "ENGR 154",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4400,9 +4792,9 @@
                             "number": "36",
                             "key": "ENGR 36",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4420,9 +4812,9 @@
                             "number": "230",
                             "key": "ENGR 230",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4440,9 +4832,9 @@
                             "number": "80",
                             "key": "ENGR 80",
                             "title": "Engineering Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4460,9 +4852,9 @@
                             "number": "R135",
                             "key": "ENGR R135",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4480,9 +4872,9 @@
                             "number": "236",
                             "key": "ENGR 236",
                             "title": "Engineering Mechanics - Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4500,9 +4892,9 @@
                             "number": "240",
                             "key": "ENGR 240",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4520,9 +4912,9 @@
                             "number": "230",
                             "key": "ENGR 230",
                             "title": "Dynamics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

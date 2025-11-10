@@ -21,12 +21,12 @@
                             "number": "101",
                             "key": "EDUSP 101",
                             "title": "Introduction to Disabilities",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is an approved substitute for Liberal Studies majors only",
                                 "No upper division credit"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -44,12 +44,12 @@
                             "number": "G210",
                             "key": "EDUC G210",
                             "title": "Introduction to Special Education",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is an approved substitute for Liberal Studies majors only",
                                 "No upper division credit"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -67,12 +67,12 @@
                             "number": "045",
                             "key": "CH DEV 045",
                             "title": "Programs for Children with Special Needs",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "No upper division credit",
                                 "Acceptable substitute"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -81,34 +81,50 @@
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Education",
-                            "prefix": "EDUC",
-                            "number": "200",
-                            "key": "EDUC 200",
-                            "title": "Introduction to Special Education",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only",
-                                "No upper division credit"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Education",
+                                    "prefix": "EDUC",
+                                    "number": "200",
+                                    "key": "EDUC 200",
+                                    "title": "Introduction to Special Education",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only",
+                                        "No upper division credit"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Child Development",
-                            "prefix": "CH DEV",
-                            "number": "045",
-                            "key": "CH DEV 045",
-                            "title": "Programs for Children with Special Needs",
-                            "notes": [
-                                "Course is an approved substitute for Liberal Studies majors only",
-                                "No upper division credit"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Child Development",
+                                    "prefix": "CH DEV",
+                                    "number": "045",
+                                    "key": "CH DEV 045",
+                                    "title": "Programs for Children with Special Needs",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is an approved substitute for Liberal Studies majors only",
+                                        "No upper division credit"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -126,12 +142,12 @@
                             "number": "044",
                             "key": "CH DEV 044",
                             "title": "Early Intervention for Children with Special Needs",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is an approved substitute for Liberal Studies majors only",
                                 "No upper division credit"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -149,12 +165,12 @@
                             "number": "45",
                             "key": "ECE 45",
                             "title": "Introduction to Children with Special Needs",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is an approved substitute for Liberal Studies majors only",
                                 "No upper division credit"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []

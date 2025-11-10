@@ -21,9 +21,9 @@
                             "number": "25",
                             "key": "SOCI 25",
                             "title": "Introduction to Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "1",
                             "key": "SWHS 1",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -53,7 +53,7 @@
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -70,9 +70,9 @@
                             "number": "100",
                             "key": "HMSV 100",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -90,9 +90,9 @@
                             "number": "9712",
                             "key": "APHC 9712",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Psychology - Counseling",
@@ -100,9 +100,9 @@
                             "number": "5",
                             "key": "PSCN 5",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -120,9 +120,9 @@
                             "number": "11",
                             "key": "SOC 11",
                             "title": "Intro to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -140,9 +140,9 @@
                             "number": "020",
                             "key": "SW 020",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -160,9 +160,9 @@
                             "number": "110",
                             "key": "SWHS 110",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -180,9 +180,9 @@
                             "number": "1",
                             "key": "SWHS 1",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -191,38 +191,62 @@
             {
                 "sending_name": "College of the Sequoias",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Human Services",
-                            "prefix": "HSRV",
-                            "number": "012",
-                            "key": "HSRV 012",
-                            "title": "Intro to Social Work",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Human Services",
+                                    "prefix": "HSRV",
+                                    "number": "012",
+                                    "key": "HSRV 012",
+                                    "title": "Intro to Social Work",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Human Services",
-                            "prefix": "HSRV",
-                            "number": "120",
-                            "key": "HSRV 120",
-                            "title": "Intro to Social Welfare",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Human Services",
+                                    "prefix": "HSRV",
+                                    "number": "120",
+                                    "key": "HSRV 120",
+                                    "title": "Intro to Social Welfare",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Human Services",
-                            "prefix": "HSRV",
-                            "number": "122",
-                            "key": "HSRV 122",
-                            "title": "Practices in Human Services/Social Work",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Human Services",
+                                    "prefix": "HSRV",
+                                    "number": "122",
+                                    "key": "HSRV 122",
+                                    "title": "Practices in Human Services/Social Work",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -240,9 +264,9 @@
                             "number": "1001",
                             "key": "ADHS 1001",
                             "title": "Introduction to Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -260,9 +284,9 @@
                             "number": "1",
                             "key": "SWHS 1",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -280,9 +304,9 @@
                             "number": "015",
                             "key": "SW 015",
                             "title": "Introduction to Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -300,9 +324,9 @@
                             "number": "210",
                             "key": "ASHS 210",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -320,9 +344,9 @@
                             "number": "120",
                             "key": "SW 120",
                             "title": "Introduction to Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -332,7 +356,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -349,9 +373,9 @@
                             "number": "019",
                             "key": "SOC 019",
                             "title": "Introduction to the Social Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -369,9 +393,9 @@
                             "number": "110",
                             "key": "SWHS 110",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -389,9 +413,9 @@
                             "number": "300",
                             "key": "SWHS 300",
                             "title": "Introduction to Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -409,9 +433,9 @@
                             "number": "11",
                             "key": "SOC 11",
                             "title": "Social Work & Human Services",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -429,9 +453,9 @@
                             "number": "20",
                             "key": "HS 20",
                             "title": "Introduction to Social Welfare",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -449,9 +473,9 @@
                             "number": "140",
                             "key": "SOC 140",
                             "title": "Introduction to Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -469,9 +493,9 @@
                             "number": "5",
                             "key": "PCN 5",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -489,9 +513,9 @@
                             "number": "10",
                             "key": "HUS 10",
                             "title": "Introduction to Social Work and Human Serivces",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -509,9 +533,9 @@
                             "number": "1",
                             "key": "SW 1",
                             "title": "Introduction to Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -529,9 +553,9 @@
                             "number": "045",
                             "key": "PSYCH 045",
                             "title": "Introduction to Human Services and Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -549,9 +573,9 @@
                             "number": "20",
                             "key": "HS 20",
                             "title": "Introduction to Social Welfare",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -569,9 +593,9 @@
                             "number": "170",
                             "key": "HUS 170",
                             "title": "Introduction to Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -589,9 +613,9 @@
                             "number": "110",
                             "key": "SWHS 110",
                             "title": "Introducton to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -609,9 +633,9 @@
                             "number": "50",
                             "key": "HUMS 50",
                             "title": "Intro to Human Services and Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -629,9 +653,9 @@
                             "number": "120",
                             "key": "HSRV 120",
                             "title": "Introduction to Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -649,9 +673,9 @@
                             "number": "R119",
                             "key": "SOC R119",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -660,28 +684,44 @@
             {
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Community Studies",
-                            "prefix": "CSP",
-                            "number": "300",
-                            "key": "CSP 300",
-                            "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Community Studies",
+                                    "prefix": "CSP",
+                                    "number": "300",
+                                    "key": "CSP 300",
+                                    "title": "Introduction to Social Work and Human Services",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "380",
-                            "key": "SOC 380",
-                            "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "380",
+                                    "key": "SOC 380",
+                                    "title": "Introduction to Social Work and Human Services",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -699,9 +739,9 @@
                             "number": "170",
                             "key": "HUMSV 170",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -719,9 +759,9 @@
                             "number": "120",
                             "key": "SOC 120",
                             "title": "Introduction to Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -739,9 +779,9 @@
                             "number": "90",
                             "key": "SWHS 90",
                             "title": "Introduction to Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -759,9 +799,9 @@
                             "number": "70",
                             "key": "HUSV 70",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -779,9 +819,9 @@
                             "number": "110",
                             "key": "SWHS 110",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -799,9 +839,9 @@
                             "number": "V01",
                             "key": "SWHS V01",
                             "title": "Introduction to Social Work and Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -819,9 +859,9 @@
                             "number": "079",
                             "key": "PSYCH 079",
                             "title": "Introduction to Social Work",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -839,9 +879,9 @@
                             "number": "10",
                             "key": "HUSEV 10",
                             "title": "Introduction to Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -859,9 +899,9 @@
                             "number": "10",
                             "key": "HUSEV 10",
                             "title": "Introduction to Human Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -882,38 +922,62 @@
             {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Human Services",
-                            "prefix": "HSER",
-                            "number": "330",
-                            "key": "HSER 330",
-                            "title": "Issues of Diverse Populations",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Human Services",
+                                    "prefix": "HSER",
+                                    "number": "330",
+                                    "key": "HSER 330",
+                                    "title": "Issues of Diverse Populations",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Psychology",
-                            "prefix": "PSYC",
-                            "number": "365",
-                            "key": "PSYC 365",
-                            "title": "Issues of Diverse Populations",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Psychology",
+                                    "prefix": "PSYC",
+                                    "number": "365",
+                                    "key": "PSYC 365",
+                                    "title": "Issues of Diverse Populations",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Social Justice Studies",
-                            "prefix": "SJS",
-                            "number": "300",
-                            "key": "SJS 300",
-                            "title": "Introduction to Social Justice Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Justice Studies",
+                                    "prefix": "SJS",
+                                    "number": "300",
+                                    "key": "SJS 300",
+                                    "title": "Introduction to Social Justice Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -931,9 +995,9 @@
                             "number": "20",
                             "key": "SOCI 20",
                             "title": "Introduction to Social Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -951,9 +1015,9 @@
                             "number": "30",
                             "key": "SOC 30",
                             "title": "Sociology of Inequality",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -963,7 +1027,7 @@
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -980,9 +1044,9 @@
                             "number": "101",
                             "key": "CS 101",
                             "title": "Introduction to Social Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -991,28 +1055,44 @@
             {
                 "sending_name": "Chabot College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ES",
-                            "number": "1",
-                            "key": "ES 1",
-                            "title": "Introduction to Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ES",
+                                    "number": "1",
+                                    "key": "ES 1",
+                                    "title": "Introduction to Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Psychology - Counseling",
-                            "prefix": "PSCN",
-                            "number": "13",
-                            "key": "PSCN 13",
-                            "title": "Multicultural Issues in Contemporary America",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Psychology - Counseling",
+                                    "prefix": "PSCN",
+                                    "number": "13",
+                                    "key": "PSCN 13",
+                                    "title": "Multicultural Issues in Contemporary America",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1030,9 +1110,9 @@
                             "number": "33",
                             "key": "SOC 33",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1050,9 +1130,9 @@
                             "number": "3",
                             "key": "SOC 3",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1070,9 +1150,9 @@
                             "number": "001",
                             "key": "ES 001",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1081,28 +1161,44 @@
             {
                 "sending_name": "College of Alameda",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHST",
-                            "number": "1",
-                            "key": "ETHST 1",
-                            "title": "Introduction to Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHST",
+                                    "number": "1",
+                                    "key": "ETHST 1",
+                                    "title": "Introduction to Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Social Science",
-                            "prefix": "SOCSC",
-                            "number": "10",
-                            "key": "SOCSC 10",
-                            "title": "Introduction to Social Justice Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Science",
+                                    "prefix": "SOCSC",
+                                    "number": "10",
+                                    "key": "SOCSC 10",
+                                    "title": "Introduction to Social Justice Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1120,9 +1216,9 @@
                             "number": "108",
                             "key": "ETHN 108",
                             "title": "Rethinking Race, Gender, and Nation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1131,38 +1227,62 @@
             {
                 "sending_name": "College of the Redwoods",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "5",
-                            "key": "SOC 5",
-                            "title": "Introduction to Race and Ethnic Relations",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "5",
+                                    "key": "SOC 5",
+                                    "title": "Introduction to Race and Ethnic Relations",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "17",
-                            "key": "SOC 17",
-                            "title": "Introduction to Queer Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "17",
+                                    "key": "SOC 17",
+                                    "title": "Introduction to Queer Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "18",
-                            "key": "SOC 18",
-                            "title": "Introduction to Gender Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "18",
+                                    "key": "SOC 18",
+                                    "title": "Introduction to Gender Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1180,9 +1300,9 @@
                             "number": "010",
                             "key": "ETHN 010",
                             "title": "Introduction to Ethnic Studies and Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1191,38 +1311,62 @@
             {
                 "sending_name": "College of the Siskiyous",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "1001",
-                            "key": "ETHN 1001",
-                            "title": "Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "1001",
+                                    "key": "ETHN 1001",
+                                    "title": "Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "1004",
-                            "key": "ETHN 1004",
-                            "title": "Psychology of Prejudice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "1004",
+                                    "key": "ETHN 1004",
+                                    "title": "Psychology of Prejudice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Psychology",
-                            "prefix": "PSY",
-                            "number": "1004",
-                            "key": "PSY 1004",
-                            "title": "Psychology of Prejudice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Psychology",
+                                    "prefix": "PSY",
+                                    "number": "1004",
+                                    "key": "PSY 1004",
+                                    "title": "Psychology of Prejudice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1240,9 +1384,9 @@
                             "number": "14",
                             "key": "HLTH 14",
                             "title": "Health and Social Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1252,7 +1396,7 @@
                 "sending_name": "Contra Costa College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1269,9 +1413,9 @@
                             "number": "300",
                             "key": "SJS 300",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1281,7 +1425,7 @@
                 "sending_name": "Cuesta College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1290,7 +1434,7 @@
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1298,28 +1442,44 @@
             {
                 "sending_name": "Cypress College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "101 C",
-                            "key": "ETHS 101 C",
-                            "title": "American Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "101 C",
+                                    "key": "ETHS 101 C",
+                                    "title": "American Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "101HC",
-                            "key": "ETHS 101HC",
-                            "title": "Honors American Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "101HC",
+                                    "key": "ETHS 101HC",
+                                    "title": "Honors American Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1328,38 +1488,62 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Intercultural Studies",
-                            "prefix": "ICS",
-                            "number": "17",
-                            "key": "ICS 17",
-                            "title": "Critical Consciousness and Social Change",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Intercultural Studies",
+                                    "prefix": "ICS",
+                                    "number": "17",
+                                    "key": "ICS 17",
+                                    "title": "Critical Consciousness and Social Change",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Intercultural Studies",
-                            "prefix": "ICS",
-                            "number": "17H",
-                            "key": "ICS 17H",
-                            "title": "Critical Consciousness and Social Change - HONORS",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Intercultural Studies",
+                                    "prefix": "ICS",
+                                    "number": "17H",
+                                    "key": "ICS 17H",
+                                    "title": "Critical Consciousness and Social Change - HONORS",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Intercultural Studies",
-                            "prefix": "ICS",
-                            "number": "19",
-                            "key": "ICS 19",
-                            "title": "Making a Difference: Transforming Relations of Nature, Community, and Power",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Intercultural Studies",
+                                    "prefix": "ICS",
+                                    "number": "19",
+                                    "key": "ICS 19",
+                                    "title": "Making a Difference: Transforming Relations of Nature, Community, and Power",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1368,28 +1552,44 @@
             {
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOCIO",
-                            "number": "135",
-                            "key": "SOCIO 135",
-                            "title": "Introduction to Race and Ethnicity",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOCIO",
+                                    "number": "135",
+                                    "key": "SOCIO 135",
+                                    "title": "Introduction to Race and Ethnicity",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Social Science",
-                            "prefix": "SOCSC",
-                            "number": "101",
-                            "key": "SOCSC 101",
-                            "title": "Introduction to Social Justice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Science",
+                                    "prefix": "SOCSC",
+                                    "number": "101",
+                                    "key": "SOCSC 101",
+                                    "title": "Introduction to Social Justice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1407,9 +1607,9 @@
                             "number": "004",
                             "key": "CHICANO 004",
                             "title": "Introduction to Chicana/o Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1418,28 +1618,44 @@
             {
                 "sending_name": "El Camino College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Social Science",
-                            "prefix": "SSCI",
-                            "number": "103",
-                            "key": "SSCI 103",
-                            "title": "Introduction to Social Justice Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Science",
+                                    "prefix": "SSCI",
+                                    "number": "103",
+                                    "key": "SSCI 103",
+                                    "title": "Introduction to Social Justice Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Social Science",
-                            "prefix": "SSCI",
-                            "number": "103H",
-                            "key": "SSCI 103H",
-                            "title": "Honors Introduction to Social Justice Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Science",
+                                    "prefix": "SSCI",
+                                    "number": "103H",
+                                    "key": "SSCI 103H",
+                                    "title": "Honors Introduction to Social Justice Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1448,58 +1664,98 @@
             {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "140",
-                            "key": "ETHN 140",
-                            "title": "Introduction to Race and Ethnicity",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "140",
+                                    "key": "ETHN 140",
+                                    "title": "Introduction to Race and Ethnicity",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Political Science",
-                            "prefix": "POLS",
-                            "number": "140",
-                            "key": "POLS 140",
-                            "title": "Introduction to Race and Ethnicity",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Political Science",
+                                    "prefix": "POLS",
+                                    "number": "140",
+                                    "key": "POLS 140",
+                                    "title": "Introduction to Race and Ethnicity",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "100",
-                            "key": "SOC 100",
-                            "title": "Sex, Gender and Society",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "100",
+                                    "key": "SOC 100",
+                                    "title": "Sex, Gender and Society",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "140",
-                            "key": "SOC 140",
-                            "title": "Introduction to Race and Ethnicity",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "140",
+                                    "key": "SOC 140",
+                                    "title": "Introduction to Race and Ethnicity",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Social Justices Studies",
-                            "prefix": "SOJU",
-                            "number": "130",
-                            "key": "SOJU 130",
-                            "title": "Introduction to Queer Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Justices Studies",
+                                    "prefix": "SOJU",
+                                    "number": "130",
+                                    "key": "SOJU 130",
+                                    "title": "Introduction to Queer Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1517,9 +1773,9 @@
                             "number": "300",
                             "key": "SJS 300",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1537,9 +1793,9 @@
                             "number": "10",
                             "key": "ETHNST 10",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1548,48 +1804,80 @@
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "101 F",
-                            "key": "ETHS 101 F",
-                            "title": "American Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "101 F",
+                                    "key": "ETHS 101 F",
+                                    "title": "American Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "101HF",
-                            "key": "ETHS 101HF",
-                            "title": "Honors American Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "101HF",
+                                    "key": "ETHS 101HF",
+                                    "title": "Honors American Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "235 F",
-                            "key": "ETHS 235 F",
-                            "title": "Contemporary Social Justice Movements",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "235 F",
+                                    "key": "ETHS 235 F",
+                                    "title": "Contemporary Social Justice Movements",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "235HF",
-                            "key": "ETHS 235HF",
-                            "title": "Honors Contemporary Social Justice Movements",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "235HF",
+                                    "key": "ETHS 235HF",
+                                    "title": "Honors Contemporary Social Justice Movements",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1607,9 +1895,9 @@
                             "number": "121",
                             "key": "ETH S 121",
                             "title": "Ethnic and Racial Minorities",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1627,9 +1915,9 @@
                             "number": "G111",
                             "key": "SOC G111",
                             "title": "Social Justice and U.S. Ethnic Communities",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1647,9 +1935,9 @@
                             "number": "20",
                             "key": "SJS 20",
                             "title": "Introduction to Social Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1667,9 +1955,9 @@
                             "number": "10",
                             "key": "ETHN 10",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1687,9 +1975,9 @@
                             "number": "1",
                             "key": "ETHST 1",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1707,12 +1995,12 @@
                             "number": "13",
                             "key": "PCN 13",
                             "title": "Multicultural Issues in Contemporary America",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1730,9 +2018,9 @@
                             "number": "1",
                             "key": "ES 1",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1750,9 +2038,9 @@
                             "number": "110",
                             "key": "ENGL 110",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Social Justice Studies",
@@ -1760,9 +2048,9 @@
                             "number": "110",
                             "key": "SJS 110",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1780,9 +2068,9 @@
                             "number": "202",
                             "key": "ETH 202",
                             "title": "Racial and Ethnic Relations",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1791,58 +2079,98 @@
             {
                 "sending_name": "Merritt College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "African-American Studies",
-                            "prefix": "AFRAM",
-                            "number": "19",
-                            "key": "AFRAM 19",
-                            "title": "Racism in the United States",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "African-American Studies",
+                                    "prefix": "AFRAM",
+                                    "number": "19",
+                                    "key": "AFRAM 19",
+                                    "title": "Racism in the United States",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Asian and Asian-American Studies",
-                            "prefix": "ASAME",
-                            "number": "19",
-                            "key": "ASAME 19",
-                            "title": "Racism in the United States",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Asian and Asian-American Studies",
+                                    "prefix": "ASAME",
+                                    "number": "19",
+                                    "key": "ASAME 19",
+                                    "title": "Racism in the United States",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Mexican and Latin American Studies",
-                            "prefix": "M/LAT",
-                            "number": "6",
-                            "key": "M/LAT 6",
-                            "title": "Racism in the United States",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mexican and Latin American Studies",
+                                    "prefix": "M/LAT",
+                                    "number": "6",
+                                    "key": "M/LAT 6",
+                                    "title": "Racism in the United States",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Native American Studies",
-                            "prefix": "NATAM",
-                            "number": "19",
-                            "key": "NATAM 19",
-                            "title": "Racism in the United States",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Native American Studies",
+                                    "prefix": "NATAM",
+                                    "number": "19",
+                                    "key": "NATAM 19",
+                                    "title": "Racism in the United States",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "5",
-                            "key": "SOC 5",
-                            "title": "Minority Groups",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "5",
+                                    "key": "SOC 5",
+                                    "title": "Minority Groups",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1860,9 +2188,9 @@
                             "number": "207",
                             "key": "SOC 207",
                             "title": "Race and Ethnic Relations",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1880,9 +2208,9 @@
                             "number": "001",
                             "key": "SJS 001",
                             "title": "Social Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1900,9 +2228,9 @@
                             "number": "10",
                             "key": "ETNC 10",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1920,9 +2248,9 @@
                             "number": "1",
                             "key": "ETS 1",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1940,9 +2268,9 @@
                             "number": "110",
                             "key": "SOC 110",
                             "title": "Introduction to Social Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1951,28 +2279,44 @@
             {
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Social Justice Studies",
-                            "prefix": "SJS-",
-                            "number": "101",
-                            "key": "SJS- 101",
-                            "title": "Introduction to Social Justice Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Justice Studies",
+                                    "prefix": "SJS-",
+                                    "number": "101",
+                                    "key": "SJS- 101",
+                                    "title": "Introduction to Social Justice Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Social Justice Studies",
-                            "prefix": "SJS-",
-                            "number": "101H",
-                            "key": "SJS- 101H",
-                            "title": "Honors Introduction to Social Justice Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Justice Studies",
+                                    "prefix": "SJS-",
+                                    "number": "101H",
+                                    "key": "SJS- 101H",
+                                    "title": "Honors Introduction to Social Justice Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1981,31 +2325,47 @@
             {
                 "sending_name": "Napa Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "101",
-                            "key": "ETHS 101",
-                            "title": "Ethnic Studies 2",
-                            "notes": [
-                                "Maximum credit, one university course",
-                                "Course articulates with more than one university course"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "101",
+                                    "key": "ETHS 101",
+                                    "title": "Ethnic Studies 2",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Maximum credit, one university course",
+                                        "Course articulates with more than one university course"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Human Services",
-                            "prefix": "HSRV",
-                            "number": "124",
-                            "key": "HSRV 124",
-                            "title": "Working with Diverse Populations",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Human Services",
+                                    "prefix": "HSRV",
+                                    "number": "124",
+                                    "key": "HSRV 124",
+                                    "title": "Working with Diverse Populations",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2014,28 +2374,44 @@
             {
                 "sending_name": "Norco College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETS",
-                            "number": "1",
-                            "key": "ETS 1",
-                            "title": "Introduction to Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETS",
+                                    "number": "1",
+                                    "key": "ETS 1",
+                                    "title": "Introduction to Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Social Justice Studies",
-                            "prefix": "SJS",
-                            "number": "110",
-                            "key": "SJS 110",
-                            "title": "Introduction to Social Justice Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Justice Studies",
+                                    "prefix": "SJS",
+                                    "number": "110",
+                                    "key": "SJS 110",
+                                    "title": "Introduction to Social Justice Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2053,9 +2429,9 @@
                             "number": "R110",
                             "key": "SJS R110",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2073,9 +2449,9 @@
                             "number": "170",
                             "key": "SOC 170",
                             "title": "Introduction to Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2093,9 +2469,9 @@
                             "number": "110",
                             "key": "EGSS 110",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2113,9 +2489,9 @@
                             "number": "1",
                             "key": "ETS 1",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2133,9 +2509,9 @@
                             "number": "300",
                             "key": "SJS 300",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2153,9 +2529,9 @@
                             "number": "137",
                             "key": "HIST 137",
                             "title": "Experiences of Racial and Ethnic Groups in U.S. History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2173,9 +2549,9 @@
                             "number": "16",
                             "key": "LAW 16",
                             "title": "Introduction to Social Justice: Law and Social Change",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2193,9 +2569,9 @@
                             "number": "028",
                             "key": "ETH 028",
                             "title": "Introduction to Critical Race & Social Justice",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2204,28 +2580,44 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "150",
-                            "key": "ETHN 150",
-                            "title": "Introduction to Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "150",
+                                    "key": "ETHN 150",
+                                    "title": "Introduction to Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "150H",
-                            "key": "ETHN 150H",
-                            "title": "Honors Introduction to Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "150H",
+                                    "key": "ETHN 150H",
+                                    "title": "Honors Introduction to Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2243,9 +2635,9 @@
                             "number": "7",
                             "key": "COUN 7",
                             "title": "Identity and Cultural Diversity",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2263,9 +2655,9 @@
                             "number": "101",
                             "key": "ETHN 101",
                             "title": "Introduction to Ethnic Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2283,9 +2675,9 @@
                             "number": "25",
                             "key": "SOC 25",
                             "title": "Race, Ethnicity, and Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2294,28 +2686,44 @@
             {
                 "sending_name": "Sierra College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "3",
-                            "key": "SOC 3",
-                            "title": "Race, Ethnicity and Inequality",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "3",
+                                    "key": "SOC 3",
+                                    "title": "Race, Ethnicity and Inequality",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "110",
-                            "key": "SOC 110",
-                            "title": "Introduction to Social Justice",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "110",
+                                    "key": "SOC 110",
+                                    "title": "Introduction to Social Justice",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2333,9 +2741,9 @@
                             "number": "110",
                             "key": "SJS 110",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2353,9 +2761,9 @@
                             "number": "001",
                             "key": "SJS 001",
                             "title": "Introduction to Social Justice Studies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2364,38 +2772,62 @@
             {
                 "sending_name": "West Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "001",
-                            "key": "ETHN 001",
-                            "title": "Introduction to Ethnic and Social Justice Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "001",
+                                    "key": "ETHN 001",
+                                    "title": "Introduction to Ethnic and Social Justice Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "001H",
-                            "key": "ETHN 001H",
-                            "title": "Introduction to Ethnic and Social Justice Studies - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "001H",
+                                    "key": "ETHN 001H",
+                                    "title": "Introduction to Ethnic and Social Justice Studies - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Social Justice Studies",
-                            "prefix": "SJST",
-                            "number": "001",
-                            "key": "SJST 001",
-                            "title": "Introduction to Ethnic and Social Justice Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Social Justice Studies",
+                                    "prefix": "SJST",
+                                    "number": "001",
+                                    "key": "SJST 001",
+                                    "title": "Introduction to Ethnic and Social Justice Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2404,28 +2836,44 @@
             {
                 "sending_name": "Woodland Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "11",
-                            "key": "ETHN 11",
-                            "title": "Introduction to Ethnic Studies",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHN",
+                                    "number": "11",
+                                    "key": "ETHN 11",
+                                    "title": "Introduction to Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Human Services",
-                            "prefix": "HUSEV",
-                            "number": "11",
-                            "key": "HUSEV 11",
-                            "title": "Working with Diverse Communities",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Human Services",
+                                    "prefix": "HUSEV",
+                                    "number": "11",
+                                    "key": "HUSEV 11",
+                                    "title": "Working with Diverse Communities",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2434,28 +2882,44 @@
             {
                 "sending_name": "Yuba College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Human Services",
-                            "prefix": "HUSEV",
-                            "number": "11",
-                            "key": "HUSEV 11",
-                            "title": "Working with Diverse Communities",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Human Services",
+                                    "prefix": "HUSEV",
+                                    "number": "11",
+                                    "key": "HUSEV 11",
+                                    "title": "Working with Diverse Communities",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Sociology",
-                            "prefix": "SOCIL",
-                            "number": "5",
-                            "key": "SOCIL 5",
-                            "title": "Sociology of Race and Ethnicity",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOCIL",
+                                    "number": "5",
+                                    "key": "SOCIL 5",
+                                    "title": "Sociology of Race and Ethnicity",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2485,9 +2949,9 @@
                             "number": "15",
                             "key": "PSY 15",
                             "title": "Lifespan Psychology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2505,9 +2969,9 @@
                             "number": "003",
                             "key": "PSYCH 003",
                             "title": "Developmental Psychology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2525,9 +2989,9 @@
                             "number": "11",
                             "key": "PSYCH 11",
                             "title": "Life Span Development",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2545,9 +3009,9 @@
                             "number": "1999",
                             "key": "ECE 1999",
                             "title": "Human Development",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2565,9 +3029,9 @@
                             "number": "128",
                             "key": "PSYCH 128",
                             "title": "Life Span Development",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2585,9 +3049,9 @@
                             "number": "371",
                             "key": "PSYC 371",
                             "title": "Life Span Developmental Psychology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2605,9 +3069,9 @@
                             "number": "200",
                             "key": "PSYC 200",
                             "title": "Life Span Development",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2625,9 +3089,9 @@
                             "number": "060",
                             "key": "PSYCH 060",
                             "title": "Personal Growth and Adjustment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2645,9 +3109,9 @@
                             "number": "109",
                             "key": "PSY 109",
                             "title": "Lifespan Development",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2665,9 +3129,9 @@
                             "number": "18",
                             "key": "PSY 18",
                             "title": "Life Span Development",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2685,9 +3149,9 @@
                             "number": "041",
                             "key": "PSYCH 041",
                             "title": "Life-Span Psychology: From Infancy to Old Age",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2705,9 +3169,9 @@
                             "number": "210",
                             "key": "PSYC 210",
                             "title": "Psychology of Life Span Development",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2725,9 +3189,9 @@
                             "number": "120",
                             "key": "HS 120",
                             "title": "Human Development in the Social Environment",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2745,12 +3209,12 @@
                             "number": "1",
                             "key": "ECE 1",
                             "title": "Human Development",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -2768,9 +3232,9 @@
                             "number": "1",
                             "key": "HDEV 1",
                             "title": "Human Development through the Lifespan",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2788,9 +3252,9 @@
                             "number": "41",
                             "key": "PSYCH 41",
                             "title": "Lifespan Development",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2808,9 +3272,9 @@
                             "number": "41",
                             "key": "PSYCH 41",
                             "title": "Lifespan Development",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

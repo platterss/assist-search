@@ -21,9 +21,9 @@
                             "number": "101",
                             "key": "REC 101",
                             "title": "Intro to Recreational Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "300",
                             "key": "RECR 300",
                             "title": "Introduction to Recreation and Leisure Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -61,9 +61,9 @@
                             "number": "B2",
                             "key": "NRES B2",
                             "title": "Outdoor Recreation Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -81,9 +81,9 @@
                             "number": "120",
                             "key": "CA 120",
                             "title": "Introduction to the Hospitality Industry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -101,9 +101,9 @@
                             "number": "10",
                             "key": "HOTFS 10",
                             "title": "Introduction to Hospitality Mangement",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -121,9 +121,9 @@
                             "number": "104",
                             "key": "FOR 104",
                             "title": "Introduction to Outdoor Recreation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -141,9 +141,9 @@
                             "number": "100",
                             "key": "CAHS 100",
                             "title": "Introduction to Hospitality",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -161,9 +161,9 @@
                             "number": "001",
                             "key": "HRCM 001",
                             "title": "Introduction to Hospitality Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -181,9 +181,9 @@
                             "number": "100",
                             "key": "HOSP 100",
                             "title": "Introduction to Hospitality Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -192,28 +192,44 @@
             {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Recreation",
-                            "prefix": "REC",
-                            "number": "101",
-                            "key": "REC 101",
-                            "title": "Recreation and Leisure in Contemporary Society",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Recreation",
+                                    "prefix": "REC",
+                                    "number": "101",
+                                    "key": "REC 101",
+                                    "title": "Recreation and Leisure in Contemporary Society",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Hospitality Management",
-                            "prefix": "HOSP",
-                            "number": "101",
-                            "key": "HOSP 101",
-                            "title": "Introduction to the Hospitality Industry",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Hospitality Management",
+                                    "prefix": "HOSP",
+                                    "number": "101",
+                                    "key": "HOSP 101",
+                                    "title": "Introduction to the Hospitality Industry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -222,28 +238,44 @@
             {
                 "sending_name": "College of the Desert",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Recreation",
-                            "prefix": "RE",
-                            "number": "1",
-                            "key": "RE 1",
-                            "title": "Introduction to Recreation & Sport Management",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Recreation",
+                                    "prefix": "RE",
+                                    "number": "1",
+                                    "key": "RE 1",
+                                    "title": "Introduction to Recreation & Sport Management",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Business - Hotel and Restaurant Management",
-                            "prefix": "BUHM",
-                            "number": "50",
-                            "key": "BUHM 50",
-                            "title": "Introduction to the Hospitality Industry",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Business - Hotel and Restaurant Management",
+                                    "prefix": "BUHM",
+                                    "number": "50",
+                                    "key": "BUHM 50",
+                                    "title": "Introduction to the Hospitality Industry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -261,9 +293,9 @@
                             "number": "5",
                             "key": "HHP 5",
                             "title": "Introduction to Recreation and Leisure",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -281,9 +313,9 @@
                             "number": "001",
                             "key": "HOSP 001",
                             "title": "Introduction to Hospitality Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -292,28 +324,44 @@
             {
                 "sending_name": "Cuesta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Recreation",
-                            "prefix": "REC",
-                            "number": "201",
-                            "key": "REC 201",
-                            "title": "Introduction to Recreation and Leisure Services",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Recreation",
+                                    "prefix": "REC",
+                                    "number": "201",
+                                    "key": "REC 201",
+                                    "title": "Introduction to Recreation and Leisure Services",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Hospitality",
-                            "prefix": "HOSP",
-                            "number": "200",
-                            "key": "HOSP 200",
-                            "title": "Introduction to Hospitality",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Hospitality",
+                                    "prefix": "HOSP",
+                                    "number": "200",
+                                    "key": "HOSP 200",
+                                    "title": "Introduction to Hospitality",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -322,28 +370,44 @@
             {
                 "sending_name": "Cypress College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Recreation",
-                            "prefix": "REC",
-                            "number": "100 C",
-                            "key": "REC 100 C",
-                            "title": "Intro to Leisure Services/Recreation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Recreation",
+                                    "prefix": "REC",
+                                    "number": "100 C",
+                                    "key": "REC 100 C",
+                                    "title": "Intro to Leisure Services/Recreation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Recreation",
-                            "prefix": "REC",
-                            "number": "101 C",
-                            "key": "REC 101 C",
-                            "title": "Principles of Community Recreation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Recreation",
+                                    "prefix": "REC",
+                                    "number": "101 C",
+                                    "key": "REC 101 C",
+                                    "title": "Principles of Community Recreation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -361,9 +425,9 @@
                             "number": "110",
                             "key": "CULN 110",
                             "title": "Orientation to Hospitality",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -381,9 +445,9 @@
                             "number": "207",
                             "key": "RECR 207",
                             "title": "Introduction to Recreation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -401,9 +465,9 @@
                             "number": "110",
                             "key": "ORL 110",
                             "title": "Introduction to Recreation & Leisure",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -421,9 +485,9 @@
                             "number": "20",
                             "key": "REC 20",
                             "title": "Introduction to Recreation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -441,9 +505,9 @@
                             "number": "101",
                             "key": "HTM 101",
                             "title": "Introduction to Hospitality and Tourism Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -461,9 +525,9 @@
                             "number": "115",
                             "key": "HRM 115",
                             "title": "Introduction to Hospitality",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -481,9 +545,9 @@
                             "number": "100",
                             "key": "HSP 100",
                             "title": "Introduction to Hospitality Management",
-                            "notes": [],
                             "min_units": 4.5,
-                            "max_units": 4.5
+                            "max_units": 4.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -492,28 +556,44 @@
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Culinary Arts",
-                            "prefix": "CULAR",
-                            "number": "10",
-                            "key": "CULAR 10",
-                            "title": "Intro to Hospitality",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Culinary Arts",
+                                    "prefix": "CULAR",
+                                    "number": "10",
+                                    "key": "CULAR 10",
+                                    "title": "Intro to Hospitality",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Kinesiology, Professional Prep",
-                            "prefix": "KINPP",
-                            "number": "7",
-                            "key": "KINPP 7",
-                            "title": "Intro to Community Recreation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Kinesiology, Professional Prep",
+                                    "prefix": "KINPP",
+                                    "number": "7",
+                                    "key": "KINPP 7",
+                                    "title": "Intro to Community Recreation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -531,9 +611,9 @@
                             "number": "100",
                             "key": "HOSPT 100",
                             "title": "INTRODUCTION TO THE HOSPITALITY INDUSTRY",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -551,9 +631,9 @@
                             "number": "100",
                             "key": "HOSPT 100",
                             "title": "Introduction to the Hospitality Industry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -571,9 +651,9 @@
                             "number": "-30",
                             "key": "RECR -30",
                             "title": "Introduction to Community Recreation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -591,9 +671,9 @@
                             "number": "100",
                             "key": "HOSP 100",
                             "title": "Introduction to Hospitality Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -611,9 +691,9 @@
                             "number": "050",
                             "key": "FDR 050",
                             "title": "Introduction to the Hospitality Industry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -631,9 +711,9 @@
                             "number": "51",
                             "key": "HOSP 51",
                             "title": "Introduction to the Hospitality Industry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -651,9 +731,9 @@
                             "number": "M100",
                             "key": "HOSP M100",
                             "title": "Introduction to Hospitality",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -671,9 +751,9 @@
                             "number": "51",
                             "key": "HRM 51",
                             "title": "Introduction to Hospitality",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -691,9 +771,9 @@
                             "number": "120",
                             "key": "HCTM 120",
                             "title": "Introduction to Hospitality Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -711,9 +791,9 @@
                             "number": "R100",
                             "key": "CRM R100",
                             "title": "Principles of the Hospitality Industry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -731,9 +811,9 @@
                             "number": "101",
                             "key": "HOSP 101",
                             "title": "Introduction to the Hospitality Industry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -751,9 +831,9 @@
                             "number": "60",
                             "key": "MAG 60",
                             "title": "Introduction to Hospitality Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -771,9 +851,9 @@
                             "number": "300",
                             "key": "RECR 300",
                             "title": "Introduction to Recreation and Leisure Services",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -791,9 +871,9 @@
                             "number": "150",
                             "key": "FN 150",
                             "title": "Introduction to Hospitality Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -811,9 +891,9 @@
                             "number": "100",
                             "key": "HOSP 100",
                             "title": "Introduction to Hospitality and Customer Service",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -831,9 +911,9 @@
                             "number": "130",
                             "key": "MGMT 130",
                             "title": "Introduction to Hospitality Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -842,28 +922,44 @@
             {
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Natural Resources",
-                            "prefix": "NRM",
-                            "number": "60",
-                            "key": "NRM 60",
-                            "title": "Introduction to Outdoor Recreation",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Natural Resources",
+                                    "prefix": "NRM",
+                                    "number": "60",
+                                    "key": "NRM 60",
+                                    "title": "Introduction to Outdoor Recreation",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Hospitality",
-                            "prefix": "HOSP",
-                            "number": "80",
-                            "key": "HOSP 80",
-                            "title": "Introduction to Hospitality",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Hospitality",
+                                    "prefix": "HOSP",
+                                    "number": "80",
+                                    "key": "HOSP 80",
+                                    "title": "Introduction to Hospitality",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -881,9 +977,9 @@
                             "number": "10",
                             "key": "RECM 10",
                             "title": "Foundations of Recreation, Parks, and Tourism Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -901,9 +997,9 @@
                             "number": "101",
                             "key": "HTM. 101",
                             "title": "Introduction to Hospitality and Tourism Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -921,9 +1017,9 @@
                             "number": "1510",
                             "key": "RECR 1510",
                             "title": "Introduction to Recreation and Leisure Service",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -941,9 +1037,9 @@
                             "number": "100",
                             "key": "HOSPT 100",
                             "title": "INTRODUCTION TO THE HOSPITALITY INDUSTRY",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -995,9 +1091,9 @@
                             "number": "105",
                             "key": "REC 105",
                             "title": "Program Planning for Recreation",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1015,9 +1111,9 @@
                             "number": "320",
                             "key": "RECR 320",
                             "title": "Recreation Activity Leadership",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1035,9 +1131,9 @@
                             "number": "102",
                             "key": "REC 102",
                             "title": "Planning Programs and Events for Recreation Experiences",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1055,9 +1151,9 @@
                             "number": "204",
                             "key": "REC 204",
                             "title": "Recreation Program Planning",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1075,9 +1171,9 @@
                             "number": "102 C",
                             "key": "REC 102 C",
                             "title": "Recreation - Sport Leadership and Diverse Groups",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1095,9 +1191,9 @@
                             "number": "217",
                             "key": "RECR 217",
                             "title": "Recreational Leadership",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1106,28 +1202,44 @@
             {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Outdoor Recreation Leadership",
-                            "prefix": "ORL",
-                            "number": "120",
-                            "key": "ORL 120",
-                            "title": "Recreation Program Planning",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Outdoor Recreation Leadership",
+                                    "prefix": "ORL",
+                                    "number": "120",
+                                    "key": "ORL 120",
+                                    "title": "Recreation Program Planning",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Outdoor Recreation Leadership",
-                            "prefix": "ORL",
-                            "number": "200",
-                            "key": "ORL 200",
-                            "title": "Outdoor Recreation Leadership",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Outdoor Recreation Leadership",
+                                    "prefix": "ORL",
+                                    "number": "200",
+                                    "key": "ORL 200",
+                                    "title": "Outdoor Recreation Leadership",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1145,9 +1257,9 @@
                             "number": "21",
                             "key": "REC 21",
                             "title": "Recreation Leadership",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1165,9 +1277,9 @@
                             "number": "110",
                             "key": "REC 110",
                             "title": "Social Recreation Leadership",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1185,9 +1297,9 @@
                             "number": "20",
                             "key": "RECM 20",
                             "title": "Program Planning and Event Management",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

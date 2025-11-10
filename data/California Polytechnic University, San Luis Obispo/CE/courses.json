@@ -21,9 +21,9 @@
                             "number": "1",
                             "key": "ENGR 1",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "112",
                             "key": "ENGIN 112",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -61,9 +61,9 @@
                             "number": "248",
                             "key": "ENGR 248",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -81,9 +81,9 @@
                             "number": "110",
                             "key": "ENGIN 110",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -101,9 +101,9 @@
                             "number": "010",
                             "key": "ENGR 010",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -121,9 +121,9 @@
                             "number": "1",
                             "key": "ENGR 1",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -141,9 +141,9 @@
                             "number": "100B",
                             "key": "ENGR 100B",
                             "title": "Introduction to Civil Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -175,28 +175,44 @@
             {
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering Technology",
-                            "prefix": "ET",
-                            "number": "100",
-                            "key": "ET 100",
-                            "title": "Computer Aided Drafting and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering Technology",
+                                    "prefix": "ET",
+                                    "number": "100",
+                                    "key": "ET 100",
+                                    "title": "Computer Aided Drafting and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Architecture",
-                            "prefix": "ARCH",
-                            "number": "100",
-                            "key": "ARCH 100",
-                            "title": "Computer Aided Drafting and Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Architecture",
+                                    "prefix": "ARCH",
+                                    "number": "100",
+                                    "key": "ARCH 100",
+                                    "title": "Computer Aided Drafting and Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -214,9 +230,9 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -234,9 +250,9 @@
                             "number": "2",
                             "key": "DFT 2",
                             "title": "Engineering Graphics I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Drafting and CAD Technology",
@@ -244,9 +260,9 @@
                             "number": "12",
                             "key": "DFT 12",
                             "title": "Beginning AutoCAD Drafting",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -264,9 +280,9 @@
                             "number": "25",
                             "key": "ENGR 25",
                             "title": "Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -284,9 +300,9 @@
                             "number": "25",
                             "key": "DT 25",
                             "title": "Computer Aided Design and Drafting",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -304,9 +320,9 @@
                             "number": "200",
                             "key": "ENGIN 200",
                             "title": "Engineering Design Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -324,9 +340,9 @@
                             "number": "226",
                             "key": "ENGR 226",
                             "title": "Engineering Drawing",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -344,9 +360,9 @@
                             "number": "126",
                             "key": "ENGTC 126",
                             "title": "Computer Aided Design and Drafting - AutoCAD",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -364,9 +380,9 @@
                             "number": "018",
                             "key": "ENGR 018",
                             "title": "Engineering Design and Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -384,9 +400,9 @@
                             "number": "23",
                             "key": "ENGR 23",
                             "title": "Engineering Graphics and Descriptive Geometry",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -404,9 +420,9 @@
                             "number": "025",
                             "key": "EGR 025",
                             "title": "Engineering Graphics and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -424,9 +440,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Design Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -444,9 +460,9 @@
                             "number": "24",
                             "key": "ENGR 24",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -464,9 +480,9 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -484,9 +500,9 @@
                             "number": "30",
                             "key": "DRAFT 30",
                             "title": "Technical Drawing With Cad",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -516,9 +532,9 @@
                             "number": "156",
                             "key": "ENGR 156",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -536,9 +552,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -556,9 +572,9 @@
                             "number": "240",
                             "key": "ENGR 240",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -576,9 +592,9 @@
                             "number": "252A",
                             "key": "ENGR 252A",
                             "title": "Strength of Materials 1",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -596,9 +612,9 @@
                             "number": "257",
                             "key": "ENGIN 257",
                             "title": "Statics and Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -616,9 +632,9 @@
                             "number": "241",
                             "key": "ENG GEN 241",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -636,9 +652,9 @@
                             "number": "241",
                             "key": "ENGR 241",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -656,9 +672,9 @@
                             "number": "36",
                             "key": "ENGIN 36",
                             "title": "Engineering Mechanics of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -676,9 +692,9 @@
                             "number": "243",
                             "key": "ENG GEN 243",
                             "title": "Statics and Strength of Materials (Calculus based)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -696,9 +712,9 @@
                             "number": "241",
                             "key": "ENG GEN 241",
                             "title": "STRENGTH OF MATERIALS",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -716,9 +732,9 @@
                             "number": "241",
                             "key": "ENG GEN 241",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -736,9 +752,9 @@
                             "number": "243",
                             "key": "ENG GEN 243",
                             "title": "Statics and Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -756,9 +772,9 @@
                             "number": "M16",
                             "key": "ENGR M16",
                             "title": "Engineering Statics and Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -776,9 +792,9 @@
                             "number": "42",
                             "key": "ENGR 42",
                             "title": "Mechanics of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -796,9 +812,9 @@
                             "number": "A240",
                             "key": "ENGR A240",
                             "title": "Mechanics of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -816,9 +832,9 @@
                             "number": "013",
                             "key": "ENGR 013",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -836,9 +852,9 @@
                             "number": "115",
                             "key": "ENGR 115",
                             "title": "Statics and Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -856,9 +872,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -874,8 +890,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 204",
                 "number": "204",
+                "key": "CE 204",
                 "title": "Mechanics of Materials I",
                 "min_units": 3.0,
                 "max_units": 3.0
@@ -883,8 +899,8 @@
             {
                 "subject": "Civil Engineering",
                 "prefix": "CE",
-                "key": "CE 207",
                 "number": "207",
+                "key": "CE 207",
                 "title": "Mechanics of Materials II",
                 "min_units": 2.0,
                 "max_units": 2.0
@@ -903,9 +919,9 @@
                             "number": "156",
                             "key": "ENGR 156",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -923,9 +939,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -943,9 +959,9 @@
                             "number": "252A",
                             "key": "ENGR 252A",
                             "title": "Strength of Materials 1",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -953,9 +969,9 @@
                             "number": "252B",
                             "key": "ENGR 252B",
                             "title": "Strength of Materials II",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -973,9 +989,9 @@
                             "number": "A240",
                             "key": "ENGR A240",
                             "title": "Mechanics of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -993,9 +1009,9 @@
                             "number": "013",
                             "key": "ENGR 013",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1013,9 +1029,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1045,9 +1061,9 @@
                             "number": "156",
                             "key": "ENGR 156",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1065,9 +1081,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1085,9 +1101,9 @@
                             "number": "252B",
                             "key": "ENGR 252B",
                             "title": "Strength of Materials II",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1105,9 +1121,9 @@
                             "number": "A240",
                             "key": "ENGR A240",
                             "title": "Mechanics of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1125,9 +1141,9 @@
                             "number": "013",
                             "key": "ENGR 013",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1145,9 +1161,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1177,9 +1193,9 @@
                             "number": "156",
                             "key": "ENGR 156",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1197,9 +1213,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1217,9 +1233,9 @@
                             "number": "252A",
                             "key": "ENGR 252A",
                             "title": "Strength of Materials 1",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -1227,9 +1243,9 @@
                             "number": "252B",
                             "key": "ENGR 252B",
                             "title": "Strength of Materials II",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1247,9 +1263,9 @@
                             "number": "A240",
                             "key": "ENGR A240",
                             "title": "Mechanics of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1267,9 +1283,9 @@
                             "number": "013",
                             "key": "ENGR 013",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1287,9 +1303,9 @@
                             "number": "40",
                             "key": "ENGR 40",
                             "title": "Strength of Materials",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1330,9 +1346,9 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1350,9 +1366,9 @@
                             "number": "30",
                             "key": "ENGR 30",
                             "title": "Computer Applications in Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1370,9 +1386,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Computational Methods for Engineers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1390,9 +1406,9 @@
                             "number": "136",
                             "key": "ENGIN 136",
                             "title": "Computer Programming for Engineers Using MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1410,9 +1426,9 @@
                             "number": "050",
                             "key": "ENGR 050",
                             "title": "Introduction to Computing",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1430,9 +1446,9 @@
                             "number": "5",
                             "key": "EGN 5",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1450,9 +1466,9 @@
                             "number": "20",
                             "key": "ENGR 20",
                             "title": "Introduction to Programming and Problem Solving with MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1470,9 +1486,9 @@
                             "number": "17",
                             "key": "ENGR 17",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1502,9 +1518,9 @@
                             "number": "45",
                             "key": "ENGR 45",
                             "title": "Materials Science",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1522,9 +1538,9 @@
                             "number": "240",
                             "key": "ENGIN 240",
                             "title": "Properties of Engineering Materials",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

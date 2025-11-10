@@ -43,11 +43,11 @@
                             "number": "26",
                             "key": "ENGIN 26",
                             "title": "Engineering Graphics and CAD",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -65,11 +65,11 @@
                             "number": "312",
                             "key": "ENGR 312",
                             "title": "Engineering Graphics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -87,11 +87,11 @@
                             "number": "1",
                             "key": "ENGR 1",
                             "title": "Graphical Communication and Design",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -109,11 +109,11 @@
                             "number": "110",
                             "key": "ENGR 110",
                             "title": "Computer Aided Design AutoCAD II",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -131,11 +131,11 @@
                             "number": "2",
                             "key": "EGN 2",
                             "title": "Engineering Graphics and Design",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -153,11 +153,11 @@
                             "number": "23",
                             "key": "ENGR 23",
                             "title": "Engineering Graphics and Descriptive Geometry",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -175,11 +175,11 @@
                             "number": "22",
                             "key": "ENGIN 22",
                             "title": "Engineering Graphics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -197,9 +197,9 @@
                             "number": "101",
                             "key": "EGD TEK 101",
                             "title": "Engineering Graphics with CAD",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -208,30 +208,46 @@
             {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering Graphics and Design Technology",
-                            "prefix": "EGD TEK",
-                            "number": "101",
-                            "key": "EGD TEK 101",
-                            "title": "Engineering Graphics with CAD",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering Graphics and Design Technology",
+                                    "prefix": "EGD TEK",
+                                    "number": "101",
+                                    "key": "EGD TEK 101",
+                                    "title": "Engineering Graphics with CAD",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering Graphics and Design Technology",
-                            "prefix": "EGD TEK",
-                            "number": "210",
-                            "key": "EGD TEK 210",
-                            "title": "3D Computer-Aided Design",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering Graphics and Design Technology",
+                                    "prefix": "EGD TEK",
+                                    "number": "210",
+                                    "key": "EGD TEK 210",
+                                    "title": "3D Computer-Aided Design",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -249,9 +265,9 @@
                             "number": "111",
                             "key": "DESN 111",
                             "title": "Engineering Design Graphics",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Design",
@@ -259,9 +275,9 @@
                             "number": "203",
                             "key": "DESN 203",
                             "title": "Solid Modeling",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": [
@@ -282,11 +298,11 @@
                             "number": "127",
                             "key": "ENGR 127",
                             "title": "Engineering Graphics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -304,11 +320,11 @@
                             "number": "2",
                             "key": "ENGR 2",
                             "title": "Engineering Design Graphics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -326,11 +342,11 @@
                             "number": "24",
                             "key": "ENGR 24",
                             "title": "Engineering Graphics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -348,11 +364,11 @@
                             "number": "115",
                             "key": "ENGI 115",
                             "title": "Engineering Graphics and Design",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -370,11 +386,11 @@
                             "number": "25",
                             "key": "ENGR 25",
                             "title": "Engineering Graphics and Design",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -392,11 +408,11 @@
                             "number": "V02",
                             "key": "ENGR V02",
                             "title": "Engineering Graphics and Design",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []

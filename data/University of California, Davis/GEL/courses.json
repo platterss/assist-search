@@ -21,11 +21,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -43,11 +43,11 @@
                             "number": "001",
                             "key": "GEOL 001",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -56,32 +56,48 @@
             {
                 "sending_name": "Folsom Lake College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "300",
-                            "key": "GEOL 300",
-                            "title": "Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "300",
+                                    "key": "GEOL 300",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "302",
-                            "key": "GEOL 302",
-                            "title": "Physical Geology with Lab",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "302",
+                                    "key": "GEOL 302",
+                                    "title": "Physical Geology with Lab",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -99,11 +115,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -121,11 +137,11 @@
                             "number": "100 F",
                             "key": "ESC 100 F",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -143,11 +159,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Introduction to Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -165,11 +181,11 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -187,11 +203,11 @@
                             "number": "G110",
                             "key": "GEOL G110",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -209,11 +225,11 @@
                             "number": "110",
                             "key": "GEOL 110",
                             "title": "Planet Earth",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -231,11 +247,11 @@
                             "number": "1",
                             "key": "GEL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -253,11 +269,11 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "General Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -266,30 +282,46 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "1",
-                            "key": "GEOL 1",
-                            "title": "Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "1",
+                                    "key": "GEOL 1",
+                                    "title": "Physical Geology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         },
                         {
-                            "subject": "Earth Science",
-                            "prefix": "ERTH",
-                            "number": "20",
-                            "key": "ERTH 20",
-                            "title": "Introduction to Earth Science",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth Science",
+                                    "prefix": "ERTH",
+                                    "number": "20",
+                                    "key": "ERTH 20",
+                                    "title": "Introduction to Earth Science",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -307,11 +339,11 @@
                             "number": "102",
                             "key": "GEL 102",
                             "title": "Physical Geology",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -329,11 +361,11 @@
                             "number": "10",
                             "key": "GEOL 10",
                             "title": "Introduction to Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -351,11 +383,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -373,11 +405,11 @@
                             "number": "001",
                             "key": "GEOL 001",
                             "title": "Physical Geology with Lab",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -386,44 +418,68 @@
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "1",
-                            "key": "GEOL 1",
-                            "title": "General Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "1",
+                                    "key": "GEOL 1",
+                                    "title": "General Physical Geology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.5,
-                            "max_units": 4.5
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "1H",
-                            "key": "GEOL 1H",
-                            "title": "Honors General Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "1H",
+                                    "key": "GEOL 1H",
+                                    "title": "Honors General Physical Geology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.5,
-                            "max_units": 4.5
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "2",
-                            "key": "GEOL 2",
-                            "title": "General Geology: Physical",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "2",
+                                    "key": "GEOL 2",
+                                    "title": "General Geology: Physical",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -441,11 +497,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -463,11 +519,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -485,11 +541,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -507,11 +563,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -529,11 +585,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -551,11 +607,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -573,11 +629,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -595,11 +651,11 @@
                             "number": "201",
                             "key": "GEL 201",
                             "title": "Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -617,11 +673,11 @@
                             "number": "-01",
                             "key": "GEOL -01",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -639,11 +695,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Introduction to Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -652,30 +708,46 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "101",
-                            "key": "GEOL 101",
-                            "title": "Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "101",
+                                    "key": "GEOL 101",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "101H",
-                            "key": "GEOL 101H",
-                            "title": "Physical Geology (Honors)",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "101H",
+                                    "key": "GEOL 101H",
+                                    "title": "Physical Geology (Honors)",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -693,11 +765,11 @@
                             "number": "161",
                             "key": "GEOL 161",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -715,11 +787,11 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -728,30 +800,46 @@
             {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "M02",
-                            "key": "GEOL M02",
-                            "title": "Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "M02",
+                                    "key": "GEOL M02",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "M02H",
-                            "key": "GEOL M02H",
-                            "title": "Honors: Physical Geology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "M02H",
+                                    "key": "GEOL M02H",
+                                    "title": "Honors: Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -760,44 +848,68 @@
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "1",
-                            "key": "GEOL 1",
-                            "title": "Physical Geology",
-                            "notes": [
-                                "Maximum credit, one course or one course plus lab"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "1",
+                                    "key": "GEOL 1",
+                                    "title": "Physical Geology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Maximum credit, one course or one course plus lab"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "8",
-                            "key": "GEOL 8",
-                            "title": "Earth Science",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "8",
+                                    "key": "GEOL 8",
+                                    "title": "Earth Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "8H",
-                            "key": "GEOL 8H",
-                            "title": "Earth Science - Honors",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "8H",
+                                    "key": "GEOL 8H",
+                                    "title": "Earth Science - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -815,11 +927,11 @@
                             "number": "100",
                             "key": "GEOL- 100",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -837,11 +949,11 @@
                             "number": "110",
                             "key": "GEOL 110",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -859,11 +971,11 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Introduction to Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -872,30 +984,46 @@
             {
                 "sending_name": "Orange Coast College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "A105",
-                            "key": "GEOL A105",
-                            "title": "General Geology",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "A105",
+                                    "key": "GEOL A105",
+                                    "title": "General Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "A110",
-                            "key": "GEOL A110",
-                            "title": "Physical Geology",
-                            "notes": [
-                                "Maximum credit, one course or one course plus lab"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "A110",
+                                    "key": "GEOL A110",
+                                    "title": "Physical Geology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Maximum credit, one course or one course plus lab"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -913,11 +1041,11 @@
                             "number": "R101",
                             "key": "GEOL R101",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -935,11 +1063,11 @@
                             "number": "101",
                             "key": "GEL 101",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -957,11 +1085,11 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -979,11 +1107,11 @@
                             "number": "001",
                             "key": "GEOL 001",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1001,11 +1129,11 @@
                             "number": "P110",
                             "key": "GEOL P110",
                             "title": "Introduction to Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1023,11 +1151,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1045,11 +1173,11 @@
                             "number": "150",
                             "key": "GEOL 150",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1067,11 +1195,11 @@
                             "number": "1",
                             "key": "GEO 1",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1089,11 +1217,11 @@
                             "number": "300",
                             "key": "GEOL 300",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1111,11 +1239,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Introduction to Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1133,11 +1261,11 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Introduction to Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1146,32 +1274,48 @@
             {
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "100",
-                            "key": "GEOL 100",
-                            "title": "Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "100",
+                                    "key": "GEOL 100",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "104",
-                            "key": "GEOL 104",
-                            "title": "Earth Science",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "104",
+                                    "key": "GEOL 104",
+                                    "title": "Earth Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1189,11 +1333,11 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1202,32 +1346,48 @@
             {
                 "sending_name": "San Diego Miramar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "100",
-                            "key": "GEOL 100",
-                            "title": "Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "100",
+                                    "key": "GEOL 100",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "104",
-                            "key": "GEOL 104",
-                            "title": "Earth Science",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "104",
+                                    "key": "GEOL 104",
+                                    "title": "Earth Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1236,32 +1396,48 @@
             {
                 "sending_name": "San Joaquin Delta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "1A",
-                            "key": "GEOL 1A",
-                            "title": "Physical Geology w/Lab",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "1A",
+                                    "key": "GEOL 1A",
+                                    "title": "Physical Geology w/Lab",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "5",
-                            "key": "GEOL 5",
-                            "title": "Earth Science",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "5",
+                                    "key": "GEOL 5",
+                                    "title": "Earth Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1279,11 +1455,11 @@
                             "number": "010",
                             "key": "GEOL 010",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1301,11 +1477,11 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Dynamic Earth: Introduction to Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1323,11 +1499,11 @@
                             "number": "111",
                             "key": "ERTH 111",
                             "title": "Dynamic Earth-Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1336,32 +1512,48 @@
             {
                 "sending_name": "Santa Monica College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "1",
-                            "key": "GEOL 1",
-                            "title": "Physical Geology without Laboratory",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "1",
+                                    "key": "GEOL 1",
+                                    "title": "Physical Geology without Laboratory",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "4",
-                            "key": "GEOL 4",
-                            "title": "Physical Geology with Laboratory",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "4",
+                                    "key": "GEOL 4",
+                                    "title": "Physical Geology with Laboratory",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1379,11 +1571,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "The Earth",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1401,11 +1593,11 @@
                             "number": "100",
                             "key": "ERTH 100",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1423,11 +1615,11 @@
                             "number": "1",
                             "key": "ESCI 1",
                             "title": "The Active Earth",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1445,11 +1637,11 @@
                             "number": "1",
                             "key": "ESCI 1",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1467,11 +1659,11 @@
                             "number": "210",
                             "key": "GEOL 210",
                             "title": "General Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1489,11 +1681,11 @@
                             "number": "001",
                             "key": "GEOL 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1511,11 +1703,11 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "Principles of Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1533,11 +1725,11 @@
                             "number": "V02",
                             "key": "GEOL V02",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1546,30 +1738,46 @@
             {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Earth Science",
-                            "prefix": "EARTH",
-                            "number": "001",
-                            "key": "EARTH 001",
-                            "title": "Earth Science",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth Science",
+                                    "prefix": "EARTH",
+                                    "number": "001",
+                                    "key": "EARTH 001",
+                                    "title": "Earth Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOLOGY",
-                            "number": "001",
-                            "key": "GEOLOGY 001",
-                            "title": "Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOLOGY",
+                                    "number": "001",
+                                    "key": "GEOLOGY 001",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1587,9 +1795,9 @@
                             "number": "001A",
                             "key": "GEOL 001A",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1599,7 +1807,9 @@
                 "sending_name": "Woodland Community College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1611,9 +1821,9 @@
                                     "number": "8",
                                     "key": "GEOL 8",
                                     "title": "Earth Science",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Geology",
@@ -1621,9 +1831,9 @@
                                     "number": "8L",
                                     "key": "GEOL 8L",
                                     "title": "Earth Science Laboratory",
-                                    "notes": [],
                                     "min_units": 1.0,
-                                    "max_units": 1.0
+                                    "max_units": 1.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": [
@@ -1640,11 +1850,11 @@
                                     "number": "10L",
                                     "key": "GEOL 10L",
                                     "title": "Physical Geology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
                                     "notes": [
                                         "Course is articulated in more than one agreement but credit can only apply to one"
-                                    ],
-                                    "min_units": 4.0,
-                                    "max_units": 4.0
+                                    ]
                                 }
                             ],
                             "notes": []
@@ -1665,11 +1875,11 @@
                             "number": "10L",
                             "key": "GEOL 10L",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1699,9 +1909,9 @@
                             "number": "1",
                             "key": "ESC 1",
                             "title": "Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Earth Science",
@@ -1709,9 +1919,9 @@
                             "number": "1L",
                             "key": "ESC 1L",
                             "title": "Earth Science Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": [
@@ -1731,9 +1941,9 @@
                             "number": "305",
                             "key": "GEOL 305",
                             "title": "Earth Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1751,9 +1961,9 @@
                             "number": "110",
                             "key": "GEOL 110",
                             "title": "Earth and Space Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1794,9 +2004,9 @@
                             "number": "310",
                             "key": "GEOL 310",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1814,9 +2024,9 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1834,9 +2044,9 @@
                             "number": "5",
                             "key": "GEOL 5",
                             "title": "Historical Geology & Paleontology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1854,9 +2064,9 @@
                             "number": "002",
                             "key": "GEOLOGY 002",
                             "title": "Earth History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1874,9 +2084,9 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1894,9 +2104,9 @@
                             "number": "203",
                             "key": "GEL 203",
                             "title": "Earth History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1914,9 +2124,9 @@
                             "number": "M03",
                             "key": "GEOL M03",
                             "title": "Earth History",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1934,11 +2144,11 @@
                             "number": "105",
                             "key": "GEOL- 105",
                             "title": "Historical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Maximum credit, one course or one course plus lab"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -1956,9 +2166,9 @@
                             "number": "103",
                             "key": "GEOL 103",
                             "title": "Paleontology and Dinosaurs",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1976,9 +2186,9 @@
                             "number": "V03",
                             "key": "GEOL V03",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1994,8 +2204,8 @@
             {
                 "subject": "Geology",
                 "prefix": "GEL",
-                "key": "GEL 003",
                 "number": "003",
+                "key": "GEL 003",
                 "title": "History of Life",
                 "min_units": 3.0,
                 "max_units": 3.0
@@ -2003,8 +2213,8 @@
             {
                 "subject": "Geology",
                 "prefix": "GEL",
-                "key": "GEL 003L",
                 "number": "003L",
+                "key": "GEL 003L",
                 "title": "History of Life Laboratory",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -2023,9 +2233,9 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2043,9 +2253,9 @@
                             "number": "6",
                             "key": "GEL 6",
                             "title": "History of the Earth",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2063,9 +2273,9 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2083,9 +2293,9 @@
                             "number": "103",
                             "key": "GEL 103",
                             "title": "History of the Earth and its Life",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2094,28 +2304,44 @@
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "3",
-                            "key": "GEOL 3",
-                            "title": "Historical Geology",
-                            "notes": [],
-                            "min_units": 4.5,
-                            "max_units": 4.5
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "3",
+                                    "key": "GEOL 3",
+                                    "title": "Historical Geology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "3H",
-                            "key": "GEOL 3H",
-                            "title": "Honors Historical Geology",
-                            "notes": [],
-                            "min_units": 4.5,
-                            "max_units": 4.5
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "3H",
+                                    "key": "GEOL 3H",
+                                    "title": "Honors Historical Geology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2133,9 +2359,9 @@
                             "number": "166",
                             "key": "GEOL 166",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2153,9 +2379,9 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2196,9 +2422,9 @@
                             "number": "311",
                             "key": "GEOL 311",
                             "title": "Historical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2216,9 +2442,9 @@
                             "number": "103 F",
                             "key": "ESC 103 F",
                             "title": "Historical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2236,9 +2462,9 @@
                             "number": "007",
                             "key": "GEOLOGY 007",
                             "title": "Earth History Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2256,9 +2482,9 @@
                             "number": "203L",
                             "key": "GEL 203L",
                             "title": "Earth History Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2276,11 +2502,11 @@
                             "number": "105",
                             "key": "GEOL- 105",
                             "title": "Historical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Maximum credit, one course or one course plus lab"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -2298,9 +2524,9 @@
                             "number": "104L",
                             "key": "GEOL 104L",
                             "title": "Historical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2352,9 +2578,9 @@
                             "number": "390",
                             "key": "GEOL 390",
                             "title": "Field Studies in Geology",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2372,9 +2598,9 @@
                             "number": "66",
                             "key": "GEOL 66",
                             "title": "Geology Field Studies: Geology of California",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2417,28 +2643,44 @@
             {
                 "sending_name": "American River College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geography",
-                            "prefix": "GEOG",
-                            "number": "308",
-                            "key": "GEOG 308",
-                            "title": "Introduction to Oceanography",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geography",
+                                    "prefix": "GEOG",
+                                    "number": "308",
+                                    "key": "GEOG 308",
+                                    "title": "Introduction to Oceanography",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "330",
-                            "key": "GEOL 330",
-                            "title": "Introduction to Oceanography",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "330",
+                                    "key": "GEOL 330",
+                                    "title": "Introduction to Oceanography",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2456,9 +2698,9 @@
                             "number": "10",
                             "key": "OCEAN 10",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2476,9 +2718,9 @@
                             "number": "1",
                             "key": "OCAN 1",
                             "title": "Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Oceanography",
@@ -2486,9 +2728,9 @@
                             "number": "1L",
                             "key": "OCAN 1L",
                             "title": "Oceanography Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": [
@@ -2508,9 +2750,9 @@
                             "number": "109",
                             "key": "GEOL 109",
                             "title": "General Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2528,9 +2770,9 @@
                             "number": "100",
                             "key": "OCEN 100",
                             "title": "Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2548,9 +2790,9 @@
                             "number": "101",
                             "key": "OCEAN 101",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2568,9 +2810,9 @@
                             "number": "12",
                             "key": "OCEAN 12",
                             "title": "Environmental Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2588,9 +2830,9 @@
                             "number": "330",
                             "key": "GEOL 330",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2599,28 +2841,44 @@
             {
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Oceanography",
-                            "prefix": "OCEAN",
-                            "number": "101",
-                            "key": "OCEAN 101",
-                            "title": "Elements of Oceanography",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Oceanography",
+                                    "prefix": "OCEAN",
+                                    "number": "101",
+                                    "key": "OCEAN 101",
+                                    "title": "Elements of Oceanography",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Oceanography",
-                            "prefix": "OCEAN",
-                            "number": "101H",
-                            "key": "OCEAN 101H",
-                            "title": "Elements of Oceanography - Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Oceanography",
+                                    "prefix": "OCEAN",
+                                    "number": "101H",
+                                    "key": "OCEAN 101H",
+                                    "title": "Elements of Oceanography - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2638,9 +2896,9 @@
                             "number": "20",
                             "key": "GEOL 20",
                             "title": "General Oceanography",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2658,9 +2916,9 @@
                             "number": "101",
                             "key": "OCEAN 101",
                             "title": "Fundamentals of Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2678,9 +2936,9 @@
                             "number": "001",
                             "key": "OCEANO 001",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Oceanography",
@@ -2688,9 +2946,9 @@
                             "number": "010",
                             "key": "OCEANO 010",
                             "title": "Physical Oceanography Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": [
@@ -2710,9 +2968,9 @@
                             "number": "010",
                             "key": "OCEAN 010",
                             "title": "Descriptive Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2730,9 +2988,9 @@
                             "number": "330",
                             "key": "GEOL 330",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2750,9 +3008,9 @@
                             "number": "5",
                             "key": "GEOL 5",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2770,9 +3028,9 @@
                             "number": "115",
                             "key": "OCEAN 115",
                             "title": "Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2790,9 +3048,9 @@
                             "number": "20",
                             "key": "MS 20",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2810,9 +3068,9 @@
                             "number": "117",
                             "key": "PHS 117",
                             "title": "Oceanography",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2830,9 +3088,9 @@
                             "number": "001",
                             "key": "OCEANO 001",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2850,9 +3108,9 @@
                             "number": "M05",
                             "key": "GEOL M05",
                             "title": "The World Ocean",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2870,9 +3128,9 @@
                             "number": "10",
                             "key": "OCEA 10",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2890,9 +3148,9 @@
                             "number": "308",
                             "key": "GEOG 308",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2910,9 +3168,9 @@
                             "number": "101",
                             "key": "OCEAN 101",
                             "title": "Elements of Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Oceanography",
@@ -2920,9 +3178,9 @@
                             "number": "111",
                             "key": "OCEAN 111",
                             "title": "Elements of Oceanography Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": [
@@ -2942,9 +3200,9 @@
                             "number": "16",
                             "key": "GEOL 16",
                             "title": "Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2962,9 +3220,9 @@
                             "number": "100",
                             "key": "OCEN 100",
                             "title": "Survey of Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2982,9 +3240,9 @@
                             "number": "12",
                             "key": "GEOL 12",
                             "title": "Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3025,9 +3283,9 @@
                             "number": "330",
                             "key": "GEOL 330",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3045,9 +3303,9 @@
                             "number": "5",
                             "key": "GEOL 5",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3065,9 +3323,9 @@
                             "number": "115",
                             "key": "OCEAN 115",
                             "title": "Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3085,9 +3343,9 @@
                             "number": "20",
                             "key": "MS 20",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3105,9 +3363,9 @@
                             "number": "001",
                             "key": "OCEANO 001",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3125,9 +3383,9 @@
                             "number": "M05",
                             "key": "GEOL M05",
                             "title": "The World Ocean",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3145,9 +3403,9 @@
                             "number": "10",
                             "key": "OCEA 10",
                             "title": "Introduction to Oceanography",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3177,9 +3435,9 @@
                             "number": "M61",
                             "key": "GEOL M61",
                             "title": "Natural Disasters",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3197,9 +3455,9 @@
                             "number": "10",
                             "key": "GEOL 10",
                             "title": "Natural Disasters",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3217,9 +3475,9 @@
                             "number": "V21",
                             "key": "GEOL V21",
                             "title": "Natural Disasters",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3249,9 +3507,9 @@
                             "number": "M61",
                             "key": "GEOL M61",
                             "title": "Natural Disasters",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3269,9 +3527,9 @@
                             "number": "10",
                             "key": "GEOL 10",
                             "title": "Natural Disasters",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3289,9 +3547,9 @@
                             "number": "V21",
                             "key": "GEOL V21",
                             "title": "Natural Disasters",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3332,9 +3590,9 @@
                             "number": "345",
                             "key": "GEOL 345",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3352,9 +3610,9 @@
                             "number": "4",
                             "key": "GEOL 4",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3372,9 +3630,9 @@
                             "number": "120 F",
                             "key": "ESC 120 F",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3392,9 +3650,9 @@
                             "number": "210",
                             "key": "GEOL 210",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3412,9 +3670,9 @@
                             "number": "3",
                             "key": "GEOL 3",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3432,9 +3690,9 @@
                             "number": "101",
                             "key": "GEL 101",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3452,9 +3710,9 @@
                             "number": "210",
                             "key": "EAS 210",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3472,9 +3730,9 @@
                             "number": "165",
                             "key": "GEOL 165",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3492,9 +3750,9 @@
                             "number": "7",
                             "key": "GEOL 7",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3512,9 +3770,9 @@
                             "number": "A115",
                             "key": "GEOL A115",
                             "title": "California Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3532,9 +3790,9 @@
                             "number": "004",
                             "key": "GEOL 004",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3552,9 +3810,9 @@
                             "number": "3",
                             "key": "GEO 3",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3572,9 +3830,9 @@
                             "number": "345",
                             "key": "GEOL 345",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3592,9 +3850,9 @@
                             "number": "3",
                             "key": "GEOL 3",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3612,9 +3870,9 @@
                             "number": "250",
                             "key": "GEOL 250",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3632,9 +3890,9 @@
                             "number": "11",
                             "key": "GEOL 11",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3652,9 +3910,9 @@
                             "number": "2",
                             "key": "ESCI 2",
                             "title": "California Geology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3672,9 +3930,9 @@
                             "number": "005",
                             "key": "GEOL 005",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3692,9 +3950,9 @@
                             "number": "015",
                             "key": "GEOL 015",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3712,9 +3970,9 @@
                             "number": "20",
                             "key": "GEOL 20",
                             "title": "Geology of California",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3744,9 +4002,9 @@
                             "number": "60",
                             "key": "GEOL 60",
                             "title": "Geology Field Studies: National Parks and Monuments",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3776,9 +4034,9 @@
                             "number": "60",
                             "key": "GEOL 60",
                             "title": "Geology Field Studies: National Parks and Monuments",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3852,9 +4110,9 @@
                             "number": "35",
                             "key": "ASTRON 35",
                             "title": "Planets and the Solar System with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3872,9 +4130,9 @@
                             "number": "200",
                             "key": "AST 200",
                             "title": "Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Astronomy",
@@ -3882,9 +4140,9 @@
                             "number": "200l",
                             "key": "AST 200l",
                             "title": "Astronomy Observation",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": [
@@ -3916,11 +4174,11 @@
                             "number": "300",
                             "key": "GEOL 300",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -3938,11 +4196,11 @@
                             "number": "100 F",
                             "key": "ESC 100 F",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -3960,11 +4218,11 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -3982,11 +4240,11 @@
                             "number": "110",
                             "key": "GEOL 110",
                             "title": "Planet Earth",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4004,11 +4262,11 @@
                             "number": "10",
                             "key": "GEOL 10",
                             "title": "Introduction to Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4026,11 +4284,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4048,11 +4306,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4070,11 +4328,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4092,11 +4350,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4114,11 +4372,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4136,11 +4394,11 @@
                             "number": "001",
                             "key": "GEOLOGY 001",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4158,11 +4416,11 @@
                             "number": "201",
                             "key": "GEL 201",
                             "title": "Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4180,11 +4438,11 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4202,11 +4460,11 @@
                             "number": "2",
                             "key": "GEOL 2",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4224,11 +4482,11 @@
                             "number": "M02",
                             "key": "GEOL M02",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4237,32 +4495,48 @@
             {
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "8",
-                            "key": "GEOL 8",
-                            "title": "Earth Science",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "8",
+                                    "key": "GEOL 8",
+                                    "title": "Earth Science",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "8H",
-                            "key": "GEOL 8H",
-                            "title": "Earth Science - Honors",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "8H",
+                                    "key": "GEOL 8H",
+                                    "title": "Earth Science - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4280,11 +4554,11 @@
                             "number": "100",
                             "key": "GEOL- 100",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4302,11 +4576,11 @@
                             "number": "110",
                             "key": "GEOL 110",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4324,11 +4598,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "The Earth",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4346,11 +4620,11 @@
                             "number": "V02",
                             "key": "GEOL V02",
                             "title": "Physical Geology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4366,8 +4640,8 @@
             {
                 "subject": "Geology",
                 "prefix": "GEL",
-                "key": "GEL 050",
                 "number": "050",
+                "key": "GEL 050",
                 "title": "Physical Geology",
                 "min_units": 3.0,
                 "max_units": 3.0
@@ -4375,8 +4649,8 @@
             {
                 "subject": "Geology",
                 "prefix": "GEL",
-                "key": "GEL 050L",
                 "number": "050L",
+                "key": "GEL 050L",
                 "title": "Physical Geology Laboratory",
                 "min_units": 2.0,
                 "max_units": 2.0
@@ -4395,11 +4669,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4417,11 +4691,11 @@
                             "number": "302",
                             "key": "GEOL 302",
                             "title": "Physical Geology with Lab",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4439,11 +4713,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4461,11 +4735,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Introduction to Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4483,11 +4757,11 @@
                             "number": "G110",
                             "key": "GEOL G110",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4505,11 +4779,11 @@
                             "number": "1",
                             "key": "GEL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4527,11 +4801,11 @@
                             "number": "100",
                             "key": "GEOL 100",
                             "title": "General Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4549,11 +4823,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4571,11 +4845,11 @@
                             "number": "102",
                             "key": "GEL 102",
                             "title": "Physical Geology",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4593,11 +4867,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4606,32 +4880,48 @@
             {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "1",
-                            "key": "GEOL 1",
-                            "title": "General Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "1",
+                                    "key": "GEOL 1",
+                                    "title": "General Physical Geology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.5,
-                            "max_units": 4.5
+                            "notes": []
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "1H",
-                            "key": "GEOL 1H",
-                            "title": "Honors General Physical Geology",
-                            "notes": [
-                                "Course is articulated in more than one agreement but credit can only apply to one"
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "1H",
+                                    "key": "GEOL 1H",
+                                    "title": "Honors General Physical Geology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": [
+                                        "Course is articulated in more than one agreement but credit can only apply to one"
+                                    ]
+                                }
                             ],
-                            "min_units": 4.5,
-                            "max_units": 4.5
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4649,11 +4939,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4671,11 +4961,11 @@
                             "number": "-01",
                             "key": "GEOL -01",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4693,11 +4983,11 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Introduction to Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4715,11 +5005,11 @@
                             "number": "161",
                             "key": "GEOL 161",
                             "title": "Physical Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4737,9 +5027,9 @@
                             "number": "1",
                             "key": "GEOL 1",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4757,11 +5047,11 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Introduction to Geology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Course is articulated in more than one agreement but credit can only apply to one"
-                            ],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -4779,9 +5069,9 @@
                             "number": "101",
                             "key": "GEOL 101",
                             "title": "Physical Geology",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4811,9 +5101,9 @@
                             "number": "C105L",
                             "key": "GEOL C105L",
                             "title": "General Geology Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4831,9 +5121,9 @@
                             "number": "301",
                             "key": "GEOL 301",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4851,9 +5141,9 @@
                             "number": "100LF",
                             "key": "ESC 100LF",
                             "title": "Physical Geology Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4871,9 +5161,9 @@
                             "number": "111H",
                             "key": "GEOL 111H",
                             "title": "Honors Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4891,9 +5181,9 @@
                             "number": "111",
                             "key": "GEOL 111",
                             "title": "Planet Earth Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4911,9 +5201,9 @@
                             "number": "006",
                             "key": "GEOLOGY 006",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4931,9 +5221,9 @@
                             "number": "006",
                             "key": "GEOLOGY 006",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4951,9 +5241,9 @@
                             "number": "006",
                             "key": "GEOLOGY 006",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4971,9 +5261,9 @@
                             "number": "006",
                             "key": "GEOLOGY 006",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4991,9 +5281,9 @@
                             "number": "006",
                             "key": "GEOLOGY 006",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5011,9 +5301,9 @@
                             "number": "006",
                             "key": "GEOLOGY 006",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5031,9 +5321,9 @@
                             "number": "201L",
                             "key": "GEL 201L",
                             "title": "Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5051,9 +5341,9 @@
                             "number": "101L",
                             "key": "GEOL 101L",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5071,9 +5361,9 @@
                             "number": "2L",
                             "key": "GEOL 2L",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5091,9 +5381,9 @@
                             "number": "M02L",
                             "key": "GEOL M02L",
                             "title": "Physical Geology Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5111,9 +5401,9 @@
                             "number": "8L",
                             "key": "GEOL 8L",
                             "title": "Earth Science Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5131,9 +5421,9 @@
                             "number": "111",
                             "key": "GEOL 111",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5151,9 +5441,9 @@
                             "number": "1L",
                             "key": "GEOL 1L",
                             "title": "Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5171,9 +5461,9 @@
                             "number": "V02L",
                             "key": "GEOL V02L",
                             "title": "Physical Geology Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5236,9 +5526,9 @@
                             "number": "M04",
                             "key": "GEOL M04",
                             "title": "Mineralogy",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

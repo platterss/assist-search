@@ -21,9 +21,9 @@
                             "number": "100",
                             "key": "ASTR 100",
                             "title": "Elementary Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -41,9 +41,9 @@
                             "number": "310",
                             "key": "ASTR 310",
                             "title": "The Solar System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -61,9 +61,9 @@
                             "number": "3",
                             "key": "ASTRO 3",
                             "title": "Solar System Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -81,9 +81,9 @@
                             "number": "10",
                             "key": "ASTR 10",
                             "title": "Introduction to Astronomy: The Solar System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -101,9 +101,9 @@
                             "number": "102",
                             "key": "ASTRON 102",
                             "title": "Planetary Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -121,9 +121,9 @@
                             "number": "10",
                             "key": "ASTRO 10",
                             "title": "Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -141,9 +141,9 @@
                             "number": "40",
                             "key": "ASTRO 40",
                             "title": "Descriptive Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -161,9 +161,9 @@
                             "number": "150",
                             "key": "ASTRON 150",
                             "title": "Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -181,9 +181,9 @@
                             "number": "210",
                             "key": "ASTR 210",
                             "title": "Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -201,9 +201,9 @@
                             "number": "014",
                             "key": "ASTRO 014",
                             "title": "Solar System Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -221,9 +221,9 @@
                             "number": "10A",
                             "key": "ASTR 10A",
                             "title": "General Astronomy: Solar System",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         },
                         {
                             "subject": "Astronomy",
@@ -231,9 +231,9 @@
                             "number": "10L",
                             "key": "ASTR 10L",
                             "title": "Astronomy Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -251,9 +251,9 @@
                             "number": "1",
                             "key": "ASTR 1",
                             "title": "Introduction to General Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -262,28 +262,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Astronomy",
-                            "prefix": "ASTR",
-                            "number": "20",
-                            "key": "ASTR 20",
-                            "title": "General Astronomy",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Astronomy",
+                                    "prefix": "ASTR",
+                                    "number": "20",
+                                    "key": "ASTR 20",
+                                    "title": "General Astronomy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Astronomy",
-                            "prefix": "ASTR",
-                            "number": "20H",
-                            "key": "ASTR 20H",
-                            "title": "General Astronomy Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Astronomy",
+                                    "prefix": "ASTR",
+                                    "number": "20H",
+                                    "key": "ASTR 20H",
+                                    "title": "General Astronomy Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -301,9 +317,9 @@
                             "number": "10",
                             "key": "ASTRO 10",
                             "title": "Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -321,9 +337,9 @@
                             "number": "M01",
                             "key": "AST M01",
                             "title": "An Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -341,9 +357,9 @@
                             "number": "7",
                             "key": "ASTR 7",
                             "title": "Geology of the Solar System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -361,9 +377,9 @@
                             "number": "R101",
                             "key": "AST R101",
                             "title": "Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Astronomy",
@@ -371,9 +387,9 @@
                             "number": "R101L",
                             "key": "AST R101L",
                             "title": "Astronomy Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -391,9 +407,9 @@
                             "number": "001",
                             "key": "ASTR 001",
                             "title": "Elementary Astronomy",
-                            "notes": [],
                             "min_units": 3.5,
-                            "max_units": 3.5
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -411,9 +427,9 @@
                             "number": "10",
                             "key": "ASTRO 10",
                             "title": "Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -431,9 +447,9 @@
                             "number": "310",
                             "key": "ASTR 310",
                             "title": "The Solar System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -451,9 +467,9 @@
                             "number": "101",
                             "key": "ASTR 101",
                             "title": "Descriptive Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -471,9 +487,9 @@
                             "number": "101",
                             "key": "ASTR 101",
                             "title": "Descriptive Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -491,9 +507,9 @@
                             "number": "101",
                             "key": "ASTR 101",
                             "title": "Descriptive Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -511,9 +527,9 @@
                             "number": "109",
                             "key": "ASTR 109",
                             "title": "Introduction to the Solar System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -522,28 +538,44 @@
             {
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Earth and Planetary Sciences",
-                            "prefix": "ERTH",
-                            "number": "101",
-                            "key": "ERTH 101",
-                            "title": "Introductory Astronomy",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth and Planetary Sciences",
+                                    "prefix": "ERTH",
+                                    "number": "101",
+                                    "key": "ERTH 101",
+                                    "title": "Introductory Astronomy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Earth and Planetary Sciences",
-                            "prefix": "ERTH",
-                            "number": "101H",
-                            "key": "ERTH 101H",
-                            "title": "Introductory Astronomy, Honors",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Earth and Planetary Sciences",
+                                    "prefix": "ERTH",
+                                    "number": "101H",
+                                    "key": "ERTH 101H",
+                                    "title": "Introductory Astronomy, Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -561,9 +593,9 @@
                             "number": "4",
                             "key": "ASTR 4",
                             "title": "Astronomy of the Solar System",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -581,9 +613,9 @@
                             "number": "100",
                             "key": "ASTR 100",
                             "title": "Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Astronomy",
@@ -591,9 +623,9 @@
                             "number": "101",
                             "key": "ASTR 101",
                             "title": "Astronomy Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -611,9 +643,9 @@
                             "number": "V01",
                             "key": "AST V01",
                             "title": "Elementary Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -643,9 +675,9 @@
                             "number": "100",
                             "key": "ASTR 100",
                             "title": "Elementary Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -663,9 +695,9 @@
                             "number": "320",
                             "key": "ASTR 320",
                             "title": "Stars, Galaxies, and Cosmology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -683,9 +715,9 @@
                             "number": "4",
                             "key": "ASTRO 4",
                             "title": "Stars, Galaxies, and the Origin of the Universe",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -703,9 +735,9 @@
                             "number": "20",
                             "key": "ASTR 20",
                             "title": "Introduction to Astronomy: Stars and the Universe",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -723,9 +755,9 @@
                             "number": "104",
                             "key": "ASTRON 104",
                             "title": "Introduction to Astronomy with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -743,9 +775,9 @@
                             "number": "120",
                             "key": "ASTRO 120",
                             "title": "Elementary Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -763,9 +795,9 @@
                             "number": "016",
                             "key": "ASTRO 016",
                             "title": "Stars, Galaxies, and the Origin of the Universe",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -774,28 +806,44 @@
             {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Astronomy",
-                            "prefix": "ASTR",
-                            "number": "20",
-                            "key": "ASTR 20",
-                            "title": "General Astronomy",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Astronomy",
+                                    "prefix": "ASTR",
+                                    "number": "20",
+                                    "key": "ASTR 20",
+                                    "title": "General Astronomy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Astronomy",
-                            "prefix": "ASTR",
-                            "number": "20H",
-                            "key": "ASTR 20H",
-                            "title": "General Astronomy Honors",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Astronomy",
+                                    "prefix": "ASTR",
+                                    "number": "20H",
+                                    "key": "ASTR 20H",
+                                    "title": "General Astronomy Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -813,9 +861,9 @@
                             "number": "011",
                             "key": "ASTRON 011",
                             "title": "Stars, Galaxies, and the Universe",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -833,9 +881,9 @@
                             "number": "10",
                             "key": "ASTR 10",
                             "title": "Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Astronomy",
@@ -843,9 +891,9 @@
                             "number": "10L",
                             "key": "ASTR 10L",
                             "title": "Introduction to Astronomy Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -863,9 +911,9 @@
                             "number": "M01",
                             "key": "AST M01",
                             "title": "An Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -883,9 +931,9 @@
                             "number": "8",
                             "key": "ASTR 8",
                             "title": "Introduction to Stars, Galaxies, and the Universe",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -903,9 +951,9 @@
                             "number": "012",
                             "key": "ASTR 012",
                             "title": "Descriptive Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -923,9 +971,9 @@
                             "number": "320",
                             "key": "ASTR 320",
                             "title": "Stars, Galaxies, and Cosmology",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -943,9 +991,9 @@
                             "number": "20",
                             "key": "ASTR 20",
                             "title": "General Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -963,9 +1011,9 @@
                             "number": "120",
                             "key": "ASTRON 120",
                             "title": "Introduction to Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -983,9 +1031,9 @@
                             "number": "101",
                             "key": "ASTR 101",
                             "title": "Descriptive Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1003,9 +1051,9 @@
                             "number": "101",
                             "key": "ASTR 101",
                             "title": "Descriptive Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1023,9 +1071,9 @@
                             "number": "101",
                             "key": "ASTR 101",
                             "title": "Descriptive Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1043,9 +1091,9 @@
                             "number": "110",
                             "key": "ASTR 110",
                             "title": "Introduction to Stars and Galaxies",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1063,9 +1111,9 @@
                             "number": "104",
                             "key": "ERTH 104",
                             "title": "Introductory Astrophysics",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1083,9 +1131,9 @@
                             "number": "3",
                             "key": "ASTR 3",
                             "title": "Stellar Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1103,9 +1151,9 @@
                             "number": "V01",
                             "key": "AST V01",
                             "title": "Elementary Astronomy",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

@@ -7,8 +7,8 @@
             {
                 "subject": "Humanities",
                 "prefix": "HUMAN",
-                "key": "HUMAN 1A",
                 "number": "1A",
+                "key": "HUMAN 1A",
                 "title": "Humanities Core Lecture",
                 "min_units": 4.0,
                 "max_units": 4.0
@@ -16,8 +16,8 @@
             {
                 "subject": "Humanities",
                 "prefix": "HUMAN",
-                "key": "HUMAN 1B",
                 "number": "1B",
+                "key": "HUMAN 1B",
                 "title": "Humanities Core Lecture",
                 "min_units": 4.0,
                 "max_units": 4.0
@@ -25,8 +25,8 @@
             {
                 "subject": "Humanities",
                 "prefix": "HUMAN",
-                "key": "HUMAN 1C",
                 "number": "1C",
+                "key": "HUMAN 1C",
                 "title": "Humanities Core Lecture",
                 "min_units": 4.0,
                 "max_units": 4.0
@@ -34,8 +34,8 @@
             {
                 "subject": "Humanities",
                 "prefix": "HUMAN",
-                "key": "HUMAN 1AS",
                 "number": "1AS",
+                "key": "HUMAN 1AS",
                 "title": "Humanities Core Writing",
                 "min_units": 4.0,
                 "max_units": 4.0
@@ -43,8 +43,8 @@
             {
                 "subject": "Humanities",
                 "prefix": "HUMAN",
-                "key": "HUMAN 1BS",
                 "number": "1BS",
+                "key": "HUMAN 1BS",
                 "title": "Humanities Core Writing",
                 "min_units": 4.0,
                 "max_units": 4.0
@@ -52,8 +52,8 @@
             {
                 "subject": "Humanities",
                 "prefix": "HUMAN",
-                "key": "HUMAN 1CS",
                 "number": "1CS",
+                "key": "HUMAN 1CS",
                 "title": "Humanities Core Writing",
                 "min_units": 4.0,
                 "max_units": 4.0
@@ -64,7 +64,10 @@
                 "sending_name": "Citrus College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "AND",
+                        "AND"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -76,9 +79,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -86,9 +89,9 @@
                                     "number": "C1000 H",
                                     "key": "ENGL C1000 H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -96,109 +99,102 @@
                                     "number": "102",
                                     "key": "ENGL 102",
                                     "title": "Introduction to Literature",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "GROUP",
-                            "conjunction": "AND",
+                            "type": "SET",
+                            "conjunction": "OR",
                             "items": [
                                 {
-                                    "type": "SET",
-                                    "conjunction": "OR",
-                                    "items": [
-                                        {
-                                            "subject": "English",
-                                            "prefix": "ENGL",
-                                            "number": "103",
-                                            "key": "ENGL 103",
-                                            "title": "Composition and Critical Thinking - Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "English",
-                                            "prefix": "ENGL",
-                                            "number": "103H",
-                                            "key": "ENGL 103H",
-                                            "title": "Composition and Critical Thinking - Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "English",
-                                            "prefix": "ENGL",
-                                            "number": "C1001",
-                                            "key": "ENGL C1001",
-                                            "title": "Critical Thinking and Writing",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "English",
-                                            "prefix": "ENGL",
-                                            "number": "C1001 H",
-                                            "key": "ENGL C1001 H",
-                                            "title": "Critical Thinking and Writing - Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
+                                    "subject": "English",
+                                    "prefix": "ENGL",
+                                    "number": "103",
+                                    "key": "ENGL 103",
+                                    "title": "Composition and Critical Thinking - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": []
                                 },
                                 {
-                                    "type": "SET",
-                                    "conjunction": "OR",
-                                    "items": [
-                                        {
-                                            "subject": "Humanities",
-                                            "prefix": "HUM",
-                                            "number": "101",
-                                            "key": "HUM 101",
-                                            "title": "Humanities - Prehistory through the Medieval Period",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "Humanities",
-                                            "prefix": "HUM",
-                                            "number": "101H",
-                                            "key": "HUM 101H",
-                                            "title": "Humanities- Prehistory through the Medieval Period - Honor",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "Humanities",
-                                            "prefix": "HUM",
-                                            "number": "102",
-                                            "key": "HUM 102",
-                                            "title": "Humanities from the Renaissance through the 19th Century",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "Humanities",
-                                            "prefix": "HUM",
-                                            "number": "102H",
-                                            "key": "HUM 102H",
-                                            "title": "Humanities from the Renaissance through the 19th Century - Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
+                                    "subject": "English",
+                                    "prefix": "ENGL",
+                                    "number": "103H",
+                                    "key": "ENGL 103H",
+                                    "title": "Composition and Critical Thinking - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "English",
+                                    "prefix": "ENGL",
+                                    "number": "C1001",
+                                    "key": "ENGL C1001",
+                                    "title": "Critical Thinking and Writing",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "English",
+                                    "prefix": "ENGL",
+                                    "number": "C1001 H",
+                                    "key": "ENGL C1001 H",
+                                    "title": "Critical Thinking and Writing - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Humanities",
+                                    "prefix": "HUM",
+                                    "number": "101",
+                                    "key": "HUM 101",
+                                    "title": "Humanities - Prehistory through the Medieval Period",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Humanities",
+                                    "prefix": "HUM",
+                                    "number": "101H",
+                                    "key": "HUM 101H",
+                                    "title": "Humanities- Prehistory through the Medieval Period - Honor",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Humanities",
+                                    "prefix": "HUM",
+                                    "number": "102",
+                                    "key": "HUM 102",
+                                    "title": "Humanities from the Renaissance through the 19th Century",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Humanities",
+                                    "prefix": "HUM",
+                                    "number": "102H",
+                                    "key": "HUM 102H",
+                                    "title": "Humanities from the Renaissance through the 19th Century - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": []
                                 }
                             ],
@@ -212,81 +208,86 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "AND",
+                        "OR",
+                        "OR",
+                        "AND",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "type": "GROUP",
+                            "type": "SET",
                             "conjunction": "AND",
                             "items": [
                                 {
-                                    "type": "SET",
-                                    "conjunction": "AND",
-                                    "items": [
-                                        {
-                                            "subject": "Humanities",
-                                            "prefix": "HUMAN",
-                                            "number": "110",
-                                            "key": "HUMAN 110",
-                                            "title": "Humanities: Ancient Civilizations",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "Humanities",
-                                            "prefix": "HUMAN",
-                                            "number": "111",
-                                            "key": "HUMAN 111",
-                                            "title": "Humanities:  The Middle Ages and Renaissance",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "Humanities",
-                                            "prefix": "HUMAN",
-                                            "number": "112",
-                                            "key": "HUMAN 112",
-                                            "title": "Humanities: The Modern World",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
+                                    "subject": "Humanities",
+                                    "prefix": "HUMAN",
+                                    "number": "110",
+                                    "key": "HUMAN 110",
+                                    "title": "Humanities: Ancient Civilizations",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": []
                                 },
                                 {
-                                    "type": "SET",
-                                    "conjunction": null,
-                                    "items": [
-                                        {
-                                            "subject": "English",
-                                            "prefix": "ENGL",
-                                            "number": "C1000",
-                                            "key": "ENGL C1000",
-                                            "title": "Academic Reading and Writing",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        }
-                                    ],
+                                    "subject": "Humanities",
+                                    "prefix": "HUMAN",
+                                    "number": "111",
+                                    "key": "HUMAN 111",
+                                    "title": "Humanities:  The Middle Ages and Renaissance",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
                                     "notes": []
                                 },
                                 {
-                                    "type": "SET",
-                                    "conjunction": null,
-                                    "items": [
-                                        {
-                                            "subject": "English",
-                                            "prefix": "ENGL",
-                                            "number": "122AL",
-                                            "key": "ENGL 122AL",
-                                            "title": "Academic Reading and Writing for Multilingual Students",
-                                            "notes": [],
-                                            "min_units": 5.0,
-                                            "max_units": 5.0
-                                        }
-                                    ],
+                                    "subject": "Humanities",
+                                    "prefix": "HUMAN",
+                                    "number": "112",
+                                    "key": "HUMAN 112",
+                                    "title": "Humanities: The Modern World",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "English",
+                                    "prefix": "ENGL",
+                                    "number": "C1000",
+                                    "key": "ENGL C1000",
+                                    "title": "Academic Reading and Writing",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "English",
+                                    "prefix": "ENGL",
+                                    "number": "122AL",
+                                    "key": "ENGL 122AL",
+                                    "title": "Academic Reading and Writing for Multilingual Students",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
                                     "notes": []
                                 }
                             ],
@@ -302,16 +303,16 @@
                                     "number": "C1000E",
                                     "key": "ENGL C1000E",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
                             "type": "SET",
-                            "conjunction": "AND",
+                            "conjunction": null,
                             "items": [
                                 {
                                     "subject": "Communication Studies",
@@ -319,29 +320,43 @@
                                     "number": "121",
                                     "key": "COMM 121",
                                     "title": "Persuasion and Critical Thinking",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
-                                },
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "subject": "English",
                                     "prefix": "ENGL",
                                     "number": "123",
                                     "key": "ENGL 123",
                                     "title": "Critical Thinking: Writing about Literature",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
-                                },
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "subject": "English",
                                     "prefix": "ENGL",
                                     "number": "123A",
                                     "key": "ENGL 123A",
                                     "title": "Critical Thinking: Writing about Literature for Multilingual Students",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -356,9 +371,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -373,9 +388,9 @@
                                     "number": "126A",
                                     "key": "ENGL 126A",
                                     "title": "Critical Thinking and Writing for Multilingual Students",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -390,9 +405,9 @@
                                     "number": "122",
                                     "key": "HIST 122",
                                     "title": "Critical Reasoning in History",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -407,9 +422,9 @@
                                     "number": "130",
                                     "key": "PHILO 130",
                                     "title": "Logic and Critical Thinking",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -424,9 +439,9 @@
                                     "number": "122",
                                     "key": "SOCIO 122",
                                     "title": "Critical Thinking About Social and Cultural Issues",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -447,9 +462,9 @@
                             "number": "110",
                             "key": "HUMN 110",
                             "title": "Introduction to Humanities I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Humanities",
@@ -457,9 +472,9 @@
                             "number": "112",
                             "key": "HUMN 112",
                             "title": "Introduction to Humanities II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -467,9 +482,9 @@
                             "number": "C1000",
                             "key": "ENGL C1000",
                             "title": "Academic Reading and Writing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -477,9 +492,9 @@
                             "number": "C1001",
                             "key": "ENGL C1001",
                             "title": "Critical Thinking and Writing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -489,7 +504,10 @@
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "AND",
+                        "AND"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -501,9 +519,9 @@
                                     "number": "1",
                                     "key": "HUM 1",
                                     "title": "Introduction to Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -511,9 +529,9 @@
                                     "number": "1H",
                                     "key": "HUM 1H",
                                     "title": "Introduction to Humanities Honors",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -521,9 +539,9 @@
                                     "number": "2",
                                     "key": "HUM 2",
                                     "title": "The Culture of Ancient Greece and Rome",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -531,9 +549,9 @@
                                     "number": "3",
                                     "key": "HUM 3",
                                     "title": "The Culture of Medieval and Renaissance Europe",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -541,99 +559,92 @@
                                     "number": "4",
                                     "key": "HUM 4",
                                     "title": "The Culture of the Modern World: 1700 to the Present",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
                         },
                         {
-                            "type": "GROUP",
-                            "conjunction": "AND",
+                            "type": "SET",
+                            "conjunction": "OR",
                             "items": [
                                 {
-                                    "type": "SET",
-                                    "conjunction": "OR",
-                                    "items": [
-                                        {
-                                            "subject": "English As a Second Language",
-                                            "prefix": "ESL",
-                                            "number": "1",
-                                            "key": "ESL 1",
-                                            "title": "College Composition for Multilingual Writers",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        },
-                                        {
-                                            "subject": "ENGLISH",
-                                            "prefix": "ENGL",
-                                            "number": "C1000",
-                                            "key": "ENGL C1000",
-                                            "title": "Academic Reading and Writing",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        },
-                                        {
-                                            "subject": "ENGLISH",
-                                            "prefix": "ENGL",
-                                            "number": "C1000H",
-                                            "key": "ENGL C1000H",
-                                            "title": "Academic Reading and Writing - Honors",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        }
-                                    ],
+                                    "subject": "English As a Second Language",
+                                    "prefix": "ESL",
+                                    "number": "1",
+                                    "key": "ESL 1",
+                                    "title": "College Composition for Multilingual Writers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
                                     "notes": []
                                 },
                                 {
-                                    "type": "SET",
-                                    "conjunction": "OR",
-                                    "items": [
-                                        {
-                                            "subject": "Library",
-                                            "prefix": "LIB",
-                                            "number": "20",
-                                            "key": "LIB 20",
-                                            "title": "Critical Thinking and Advanced Information Literacy",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "Library",
-                                            "prefix": "LIB",
-                                            "number": "20H",
-                                            "key": "LIB 20H",
-                                            "title": "Critical Thinking and Advanced Information Literacy Honors",
-                                            "notes": [],
-                                            "min_units": 3.0,
-                                            "max_units": 3.0
-                                        },
-                                        {
-                                            "subject": "ENGLISH",
-                                            "prefix": "ENGL",
-                                            "number": "C1001",
-                                            "key": "ENGL C1001",
-                                            "title": "Critical Thinking and Writing",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        },
-                                        {
-                                            "subject": "ENGLISH",
-                                            "prefix": "ENGL",
-                                            "number": "C1001H",
-                                            "key": "ENGL C1001H",
-                                            "title": "Critical Thinking and Writing - Honors",
-                                            "notes": [],
-                                            "min_units": 4.0,
-                                            "max_units": 4.0
-                                        }
-                                    ],
+                                    "subject": "ENGLISH",
+                                    "prefix": "ENGL",
+                                    "number": "C1000",
+                                    "key": "ENGL C1000",
+                                    "title": "Academic Reading and Writing",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "ENGLISH",
+                                    "prefix": "ENGL",
+                                    "number": "C1000H",
+                                    "key": "ENGL C1000H",
+                                    "title": "Academic Reading and Writing - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Library",
+                                    "prefix": "LIB",
+                                    "number": "20",
+                                    "key": "LIB 20",
+                                    "title": "Critical Thinking and Advanced Information Literacy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Library",
+                                    "prefix": "LIB",
+                                    "number": "20H",
+                                    "key": "LIB 20H",
+                                    "title": "Critical Thinking and Advanced Information Literacy Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "ENGLISH",
+                                    "prefix": "ENGL",
+                                    "number": "C1001",
+                                    "key": "ENGL C1001",
+                                    "title": "Critical Thinking and Writing",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "ENGLISH",
+                                    "prefix": "ENGL",
+                                    "number": "C1001H",
+                                    "key": "ENGL C1001H",
+                                    "title": "Critical Thinking and Writing - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
                                     "notes": []
                                 }
                             ],
@@ -647,7 +658,10 @@
                 "sending_name": "Lake Tahoe Community College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -659,9 +673,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -669,9 +683,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 5.0,
-                                    "max_units": 5.0
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -686,9 +700,9 @@
                                     "number": "211",
                                     "key": "ENG 211",
                                     "title": "Creative Nonfiction",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -703,9 +717,9 @@
                                     "number": "101",
                                     "key": "HUM 101",
                                     "title": "Ancient Western World",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -713,9 +727,9 @@
                                     "number": "102",
                                     "key": "HUM 102",
                                     "title": "The Middle Ages, Renaissance, and Baroque Eras",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -723,9 +737,9 @@
                                     "number": "103",
                                     "key": "HUM 103",
                                     "title": "The Modern World",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -746,9 +760,9 @@
                             "number": "030",
                             "key": "HUMAN 030",
                             "title": "The Beginnings of Western Civilization",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Humanities",
@@ -756,9 +770,9 @@
                             "number": "003",
                             "key": "HUMAN 003",
                             "title": "The Arts of Contemporary Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -766,9 +780,9 @@
                             "number": "C1000",
                             "key": "ENGL C1000",
                             "title": "Academic Reading and Writing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -776,9 +790,9 @@
                             "number": "102",
                             "key": "ENGLISH 102",
                             "title": "College Reading and Composition II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -796,9 +810,9 @@
                             "number": "030",
                             "key": "HUMAN 030",
                             "title": "The Beginnings of Civilization",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Humanities",
@@ -806,9 +820,9 @@
                             "number": "031",
                             "key": "HUMAN 031",
                             "title": "People in Contemporary Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -816,9 +830,9 @@
                             "number": "C1000",
                             "key": "ENGL C1000",
                             "title": "Academic Reading and Writing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -826,9 +840,9 @@
                             "number": "102",
                             "key": "ENGLISH 102",
                             "title": "Reading and Composition II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -846,9 +860,9 @@
                             "number": "031",
                             "key": "HUMAN 031",
                             "title": "People in Contemporary Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -856,9 +870,9 @@
                             "number": "C1000",
                             "key": "ENGL C1000",
                             "title": "Academic Reading and Writing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -866,9 +880,9 @@
                             "number": "102",
                             "key": "ENGLISH 102",
                             "title": "College Reading and Composition II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -876,9 +890,9 @@
                             "number": "C1001",
                             "key": "ENGL C1001",
                             "title": "Critical Thinking and Writing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -888,7 +902,10 @@
                 "sending_name": "Mission College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -900,9 +917,9 @@
                                     "number": "001A",
                                     "key": "HUM 001A",
                                     "title": "Human Values in and from the Arts",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -910,9 +927,9 @@
                                     "number": "001B",
                                     "key": "HUM 001B",
                                     "title": "Human Values in and from the Arts",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -920,9 +937,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -930,9 +947,9 @@
                                     "number": "001B",
                                     "key": "ENG 001B",
                                     "title": "English Composition and Literature",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -947,9 +964,9 @@
                                     "number": "001A",
                                     "key": "HUM 001A",
                                     "title": "Human Values in and from the Arts",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -957,9 +974,9 @@
                                     "number": "001B",
                                     "key": "HUM 001B",
                                     "title": "Human Values in and from the Arts",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -967,9 +984,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -977,9 +994,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -994,9 +1011,9 @@
                                     "number": "001A",
                                     "key": "HUM 001A",
                                     "title": "Human Values in and from the Arts",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1004,9 +1021,9 @@
                                     "number": "001B",
                                     "key": "HUM 001B",
                                     "title": "Human Values in and from the Arts",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1014,9 +1031,9 @@
                                     "number": "001B",
                                     "key": "ENG 001B",
                                     "title": "English Composition and Literature",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1024,9 +1041,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1039,7 +1056,10 @@
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1051,9 +1071,9 @@
                                     "number": "105",
                                     "key": "HUMAN 105",
                                     "title": "Early Humanistic Traditions",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1061,9 +1081,9 @@
                                     "number": "106",
                                     "key": "HUMAN 106",
                                     "title": "Humanities in the Modern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1071,9 +1091,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1081,9 +1101,9 @@
                                     "number": "102",
                                     "key": "ENGL 102",
                                     "title": "Advanced Composition & Introduction to Literature",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1098,9 +1118,9 @@
                                     "number": "105",
                                     "key": "HUMAN 105",
                                     "title": "Early Humanistic Traditions",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1108,9 +1128,9 @@
                                     "number": "106",
                                     "key": "HUMAN 106",
                                     "title": "Humanities in the Modern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1118,9 +1138,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1128,9 +1148,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1145,9 +1165,9 @@
                                     "number": "105",
                                     "key": "HUMAN 105",
                                     "title": "Early Humanistic Traditions",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1155,9 +1175,9 @@
                                     "number": "106",
                                     "key": "HUMAN 106",
                                     "title": "Humanities in the Modern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1165,9 +1185,9 @@
                                     "number": "102",
                                     "key": "ENGL 102",
                                     "title": "Advanced Composition & Introduction to Literature",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1175,9 +1195,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1190,7 +1210,11 @@
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [
+                        "AND",
+                        "AND",
+                        "AND"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1202,9 +1226,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1212,9 +1236,9 @@
                                     "number": "C1000H",
                                     "key": "ENGL C1000H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1229,9 +1253,9 @@
                                     "number": "M01B",
                                     "key": "ENGL M01B",
                                     "title": "Literature: Critical Thinking and Composition",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1239,9 +1263,9 @@
                                     "number": "M01BH",
                                     "key": "ENGL M01BH",
                                     "title": "Honors Literature: Critical Thinking and Composition",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1256,9 +1280,9 @@
                                     "number": "M10A",
                                     "key": "HUM M10A",
                                     "title": "Ethics, Culture and the Arts: The Roots of the Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1273,9 +1297,9 @@
                                     "number": "M10B",
                                     "key": "HUM M10B",
                                     "title": "Ethics, Culture and the Arts: Humanities and the Modern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1288,7 +1312,9 @@
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1300,9 +1326,9 @@
                                     "number": "4",
                                     "key": "HUM 4",
                                     "title": "Arts and Ideas: Ancient World through the Late Medieval Period",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1310,9 +1336,9 @@
                                     "number": "5",
                                     "key": "HUM 5",
                                     "title": "Arts and Ideas: The Renaissance through the Modern Era",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1320,9 +1346,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1330,9 +1356,9 @@
                                     "number": "1B",
                                     "key": "ENGL 1B",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1347,9 +1373,9 @@
                                     "number": "4H",
                                     "key": "HUM 4H",
                                     "title": "Honors Arts and Ideas: Ancient World through the Late Medieval Period",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1357,9 +1383,9 @@
                                     "number": "5H",
                                     "key": "HUM 5H",
                                     "title": "Honors Arts and Ideas: The Renaissance through the Modern Era",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1367,9 +1393,9 @@
                                     "number": "C1000H",
                                     "key": "ENGL C1000H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1377,9 +1403,9 @@
                                     "number": "1BH",
                                     "key": "ENGL 1BH",
                                     "title": "Honors Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1392,7 +1418,9 @@
                 "sending_name": "Norco College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1404,9 +1432,9 @@
                                     "number": "4",
                                     "key": "HUM 4",
                                     "title": "Arts and Ideas: Ancient World through the Late Medieval Period",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1414,9 +1442,9 @@
                                     "number": "5",
                                     "key": "HUM 5",
                                     "title": "Arts and Ideas: The Renaissance through the Modern Era",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1424,9 +1452,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1434,9 +1462,9 @@
                                     "number": "1B",
                                     "key": "ENGL 1B",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1451,9 +1479,9 @@
                                     "number": "4H",
                                     "key": "HUM 4H",
                                     "title": "Honors Arts and Ideas: Ancient World through the Late Medieval Period",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1461,9 +1489,9 @@
                                     "number": "5H",
                                     "key": "HUM 5H",
                                     "title": "Honors Arts and Ideas: The Renaissance through the Modern Era",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1471,9 +1499,9 @@
                                     "number": "C1000H",
                                     "key": "ENGL C1000H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1481,9 +1509,9 @@
                                     "number": "1BH",
                                     "key": "ENGL 1BH",
                                     "title": "Honors Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1496,7 +1524,9 @@
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1508,9 +1538,9 @@
                                     "number": "110",
                                     "key": "HUM 110",
                                     "title": "Survey of Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1518,9 +1548,9 @@
                                     "number": "111",
                                     "key": "HUM 111",
                                     "title": "Survey of Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1528,9 +1558,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 3.5,
-                                    "max_units": 3.5
+                                    "max_units": 3.5,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1538,9 +1568,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.5,
-                                    "max_units": 3.5
+                                    "max_units": 3.5,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1555,9 +1585,9 @@
                                     "number": "110",
                                     "key": "HUM 110",
                                     "title": "Survey of Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1565,9 +1595,9 @@
                                     "number": "111",
                                     "key": "HUM 111",
                                     "title": "Survey of Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1575,9 +1605,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 3.5,
-                                    "max_units": 3.5
+                                    "max_units": 3.5,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1585,9 +1615,9 @@
                                     "number": "C1001H",
                                     "key": "ENGL C1001H",
                                     "title": "Critical Thinking and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 3.5,
-                                    "max_units": 3.5
+                                    "max_units": 3.5,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1600,7 +1630,9 @@
                 "sending_name": "Riverside City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1612,9 +1644,9 @@
                                     "number": "4",
                                     "key": "HUM 4",
                                     "title": "Arts and Ideas: Ancient World through the Late Medieval Period",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1622,9 +1654,9 @@
                                     "number": "5",
                                     "key": "HUM 5",
                                     "title": "Arts and Ideas: The Renaissance through the Modern Era",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1632,9 +1664,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1642,9 +1674,9 @@
                                     "number": "1B",
                                     "key": "ENGL 1B",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1659,9 +1691,9 @@
                                     "number": "4H",
                                     "key": "HUM 4H",
                                     "title": "Honors Arts and Ideas: Ancient World through the Late Medieval Period",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1669,9 +1701,9 @@
                                     "number": "5H",
                                     "key": "HUM 5H",
                                     "title": "Honors Arts and Ideas: The Renaissance through the Modern Era",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1679,9 +1711,9 @@
                                     "number": "C1000H",
                                     "key": "ENGL C1000H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1689,9 +1721,9 @@
                                     "number": "1BH",
                                     "key": "ENGL 1BH",
                                     "title": "Honors Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1704,7 +1736,10 @@
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1716,9 +1751,9 @@
                                     "number": "300",
                                     "key": "HUM 300",
                                     "title": "Classical Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1726,9 +1761,9 @@
                                     "number": "310",
                                     "key": "HUM 310",
                                     "title": "Modern Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1736,9 +1771,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English - Writing",
@@ -1746,9 +1781,9 @@
                                     "number": "301",
                                     "key": "ENGWR 301",
                                     "title": "College Composition and Literature",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1763,9 +1798,9 @@
                                     "number": "300",
                                     "key": "HUM 300",
                                     "title": "Classical Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1773,9 +1808,9 @@
                                     "number": "310",
                                     "key": "HUM 310",
                                     "title": "Modern Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1783,9 +1818,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1793,9 +1828,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1810,9 +1845,9 @@
                                     "number": "300",
                                     "key": "HUM 300",
                                     "title": "Classical Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1820,9 +1855,9 @@
                                     "number": "310",
                                     "key": "HUM 310",
                                     "title": "Modern Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English - Writing",
@@ -1830,9 +1865,9 @@
                                     "number": "301",
                                     "key": "ENGWR 301",
                                     "title": "College Composition and Literature",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1840,9 +1875,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1855,7 +1890,18 @@
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "OR",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
                             "type": "SET",
@@ -1867,9 +1913,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1877,9 +1923,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -1887,9 +1933,9 @@
                                     "number": "11H",
                                     "key": "HON 11H",
                                     "title": "Honors Culture, Science, Society - Renaissance",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -1897,9 +1943,9 @@
                                     "number": "12H",
                                     "key": "HON 12H",
                                     "title": "Honors Culture, Science, Society - The Postmodern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1914,9 +1960,9 @@
                                     "number": "C1000H",
                                     "key": "ENGL C1000H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1924,9 +1970,9 @@
                                     "number": "C1001H",
                                     "key": "ENGL C1001H",
                                     "title": "Critical Thinking and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -1934,9 +1980,9 @@
                                     "number": "11H",
                                     "key": "HON 11H",
                                     "title": "Honors Culture, Science, Society - Renaissance",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -1944,9 +1990,9 @@
                                     "number": "12H",
                                     "key": "HON 12H",
                                     "title": "Honors Culture, Science, Society - The Postmodern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -1961,9 +2007,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -1971,9 +2017,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1981,9 +2027,9 @@
                                     "number": "1",
                                     "key": "HUM 1",
                                     "title": "Introduction to Humanities",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Humanities",
@@ -1991,9 +2037,9 @@
                                     "number": "2",
                                     "key": "HUM 2",
                                     "title": "Origins of Western Culture in Literature",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2008,9 +2054,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -2018,9 +2064,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2028,9 +2074,9 @@
                                     "number": "13H",
                                     "key": "HON 13H",
                                     "title": "Honors Culture, Science, Society - Power, Resistance, Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2038,9 +2084,9 @@
                                     "number": "14H",
                                     "key": "HON 14H",
                                     "title": "Honors Culture, Science, Society - Transformation of Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2055,9 +2101,9 @@
                                     "number": "C1000H",
                                     "key": "ENGL C1000H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -2065,9 +2111,9 @@
                                     "number": "C1001H",
                                     "key": "ENGL C1001H",
                                     "title": "Critical Thinking and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2075,9 +2121,9 @@
                                     "number": "13H",
                                     "key": "HON 13H",
                                     "title": "Honors Culture, Science, Society - Power, Resistance, Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2085,9 +2131,9 @@
                                     "number": "14H",
                                     "key": "HON 14H",
                                     "title": "Honors Culture, Science, Society - Transformation of Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2102,9 +2148,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -2112,9 +2158,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2122,9 +2168,9 @@
                                     "number": "11H",
                                     "key": "HON 11H",
                                     "title": "Honors Culture, Science, Society - Renaissance",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2132,9 +2178,9 @@
                                     "number": "13H",
                                     "key": "HON 13H",
                                     "title": "Honors Culture, Science, Society - Power, Resistance, Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2149,9 +2195,9 @@
                                     "number": "C1000H",
                                     "key": "ENGL C1000H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -2159,9 +2205,9 @@
                                     "number": "C1001H",
                                     "key": "ENGL C1001H",
                                     "title": "Critical Thinking and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2169,9 +2215,9 @@
                                     "number": "11H",
                                     "key": "HON 11H",
                                     "title": "Honors Culture, Science, Society - Renaissance",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2179,9 +2225,9 @@
                                     "number": "13H",
                                     "key": "HON 13H",
                                     "title": "Honors Culture, Science, Society - Power, Resistance, Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2196,9 +2242,9 @@
                                     "number": "C1000H",
                                     "key": "ENGL C1000H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -2206,9 +2252,9 @@
                                     "number": "C1001H",
                                     "key": "ENGL C1001H",
                                     "title": "Critical Thinking and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2216,9 +2262,9 @@
                                     "number": "12H",
                                     "key": "HON 12H",
                                     "title": "Honors Culture, Science, Society - The Postmodern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2226,9 +2272,9 @@
                                     "number": "13H",
                                     "key": "HON 13H",
                                     "title": "Honors Culture, Science, Society - Power, Resistance, Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2243,9 +2289,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -2253,9 +2299,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2263,9 +2309,9 @@
                                     "number": "12H",
                                     "key": "HON 12H",
                                     "title": "Honors Culture, Science, Society - The Postmodern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2273,9 +2319,9 @@
                                     "number": "13H",
                                     "key": "HON 13H",
                                     "title": "Honors Culture, Science, Society - Power, Resistance, Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2290,9 +2336,9 @@
                                     "number": "C1000H",
                                     "key": "ENGL C1000H",
                                     "title": "Academic Reading and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -2300,9 +2346,9 @@
                                     "number": "C1001H",
                                     "key": "ENGL C1001H",
                                     "title": "Critical Thinking and Writing - Honors",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2310,9 +2356,9 @@
                                     "number": "12H",
                                     "key": "HON 12H",
                                     "title": "Honors Culture, Science, Society - The Postmodern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2320,9 +2366,9 @@
                                     "number": "14H",
                                     "key": "HON 14H",
                                     "title": "Honors Culture, Science, Society - Transformation of Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2337,9 +2383,9 @@
                                     "number": "C1000",
                                     "key": "ENGL C1000",
                                     "title": "Academic Reading and Writing",
-                                    "notes": [],
                                     "min_units": 4.0,
-                                    "max_units": 4.0
+                                    "max_units": 4.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "English",
@@ -2347,9 +2393,9 @@
                                     "number": "C1001",
                                     "key": "ENGL C1001",
                                     "title": "Critical Thinking and Writing",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2357,9 +2403,9 @@
                                     "number": "12H",
                                     "key": "HON 12H",
                                     "title": "Honors Culture, Science, Society - The Postmodern World",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 },
                                 {
                                     "subject": "Honors",
@@ -2367,9 +2413,9 @@
                                     "number": "14H",
                                     "key": "HON 14H",
                                     "title": "Honors Culture, Science, Society - Transformation of Empire",
-                                    "notes": [],
                                     "min_units": 3.0,
-                                    "max_units": 3.0
+                                    "max_units": 3.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -2390,9 +2436,9 @@
                             "number": "C1000",
                             "key": "ENGL C1000",
                             "title": "Academic Reading and Writing",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -2400,9 +2446,9 @@
                             "number": "C1001",
                             "key": "ENGL C1001",
                             "title": "Critical Thinking and Writing",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         },
                         {
                             "subject": "Humanities",
@@ -2410,9 +2456,9 @@
                             "number": "101",
                             "key": "HUM 101",
                             "title": "Humanities through the Arts I",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Humanities",
@@ -2420,9 +2466,9 @@
                             "number": "102",
                             "key": "HUM 102",
                             "title": "Humanities through the Arts II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2440,9 +2486,9 @@
                             "number": "030",
                             "key": "HUMAN 030",
                             "title": "The Beginnings of Western Civilization",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Humanities",
@@ -2450,9 +2496,9 @@
                             "number": "031",
                             "key": "HUMAN 031",
                             "title": "People in Contemporary Society",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -2460,9 +2506,9 @@
                             "number": "C1000",
                             "key": "ENGL C1000",
                             "title": "Academic Reading and Writing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -2470,9 +2516,9 @@
                             "number": "102",
                             "key": "ENGLISH 102",
                             "title": "College Reading and Composition II",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "English",
@@ -2480,9 +2526,9 @@
                             "number": "C1001",
                             "key": "ENGL C1001",
                             "title": "Critical Thinking and Writing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []

@@ -7,8 +7,8 @@
             {
                 "subject": "Computer Information Technology",
                 "prefix": "CIT",
-                "key": "CIT 101",
                 "number": "101",
+                "key": "CIT 101",
                 "title": "CIT Fundamentals",
                 "min_units": 2.0,
                 "max_units": 2.0
@@ -16,8 +16,8 @@
             {
                 "subject": "Computer Information Technology",
                 "prefix": "CIT",
-                "key": "CIT 101L",
                 "number": "101L",
+                "key": "CIT 101L",
                 "title": "CIT Fundamentals Lab",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -36,9 +36,9 @@
                             "number": "310",
                             "key": "CISC 310",
                             "title": "Introduction to Computer Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -56,9 +56,9 @@
                             "number": "310",
                             "key": "CISC 310",
                             "title": "Introduction to Computer Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -76,9 +76,9 @@
                             "number": "222",
                             "key": "CIS 222",
                             "title": "PC Maintenance and Troubleshooting",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -96,9 +96,9 @@
                             "number": "310",
                             "key": "CISC 310",
                             "title": "Introduction to Computer Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -116,9 +116,9 @@
                             "number": "15",
                             "key": "CIT 15",
                             "title": "Computer Concepts",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -127,28 +127,44 @@
             {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science/Information Systems",
-                            "prefix": "CS/IS",
-                            "number": "101",
-                            "key": "CS/IS 101",
-                            "title": "Introduction to Computer and Information Systems",
-                            "notes": [],
-                            "min_units": 5.0,
-                            "max_units": 5.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science/Information Systems",
+                                    "prefix": "CS/IS",
+                                    "number": "101",
+                                    "key": "CS/IS 101",
+                                    "title": "Introduction to Computer and Information Systems",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science/Information Systems",
-                            "prefix": "CS/IS",
-                            "number": "194",
-                            "key": "CS/IS 194",
-                            "title": "Information Technology Essentials",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science/Information Systems",
+                                    "prefix": "CS/IS",
+                                    "number": "194",
+                                    "key": "CS/IS 194",
+                                    "title": "Information Technology Essentials",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -166,9 +182,9 @@
                             "number": "1",
                             "key": "CSIS 1",
                             "title": "Computer Information Systems",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -186,9 +202,9 @@
                             "number": "310",
                             "key": "CISC 310",
                             "title": "Introduction to Computer Information Science",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -204,8 +220,8 @@
             {
                 "subject": "Computer Information Technology",
                 "prefix": "CIT",
-                "key": "CIT 160",
                 "number": "160",
+                "key": "CIT 160",
                 "title": "Internet Technologies",
                 "min_units": 2.0,
                 "max_units": 2.0
@@ -213,8 +229,8 @@
             {
                 "subject": "Computer Information Technology",
                 "prefix": "CIT",
-                "key": "CIT 160L",
                 "number": "160L",
+                "key": "CIT 160L",
                 "title": "Internet Technologies Lab",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -233,11 +249,11 @@
                             "number": "210",
                             "key": "CIS 210",
                             "title": "Introduction to Computer Networking",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": [
                                 "Lecture only; Lab is not articulated"
-                            ],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            ]
                         }
                     ],
                     "notes": []
@@ -246,28 +262,44 @@
             {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science/Information Systems",
-                            "prefix": "CS/IS",
-                            "number": "190",
-                            "key": "CS/IS 190",
-                            "title": "Introduction to Computer Networks",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science/Information Systems",
+                                    "prefix": "CS/IS",
+                                    "number": "190",
+                                    "key": "CS/IS 190",
+                                    "title": "Introduction to Computer Networks",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science/Information Systems",
-                            "prefix": "CS/IS",
-                            "number": "260",
-                            "key": "CS/IS 260",
-                            "title": "Introduction to Web Site Development",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science/Information Systems",
+                                    "prefix": "CS/IS",
+                                    "number": "260",
+                                    "key": "CS/IS 260",
+                                    "title": "Introduction to Web Site Development",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -283,8 +315,8 @@
             {
                 "subject": "Computer Information Technology",
                 "prefix": "CIT",
-                "key": "CIT 210",
                 "number": "210",
+                "key": "CIT 210",
                 "title": "Deployment and Management of Operating Systems",
                 "min_units": 3.0,
                 "max_units": 3.0
@@ -292,8 +324,8 @@
             {
                 "subject": "Computer Information Technology",
                 "prefix": "CIT",
-                "key": "CIT 210L",
                 "number": "210L",
+                "key": "CIT 210L",
                 "title": "Deployment and Management of Operating systems Lab",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -312,9 +344,9 @@
                             "number": "111",
                             "key": "CIS 111",
                             "title": "Supporting Windows Desktops",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -335,28 +367,44 @@
             {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CS",
-                            "number": "V17",
-                            "key": "CS V17",
-                            "title": "Discrete Structures",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "V17",
+                                    "key": "CS V17",
+                                    "title": "Discrete Structures",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "V52",
-                            "key": "MATH V52",
-                            "title": "Discrete Structures",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "V52",
+                                    "key": "MATH V52",
+                                    "title": "Discrete Structures",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -372,8 +420,8 @@
             {
                 "subject": "Computer Information Technology",
                 "prefix": "CIT",
-                "key": "CIT 270",
                 "number": "270",
+                "key": "CIT 270",
                 "title": "Integrative Programming",
                 "min_units": 3.0,
                 "max_units": 3.0
@@ -381,8 +429,8 @@
             {
                 "subject": "Computer Information Technology",
                 "prefix": "CIT",
-                "key": "CIT 270L",
                 "number": "270L",
+                "key": "CIT 270L",
                 "title": "Integrative Programming Lab",
                 "min_units": 1.0,
                 "max_units": 1.0
@@ -401,9 +449,9 @@
                             "number": "192",
                             "key": "CIS 192",
                             "title": "Introduction to Cloud Computing",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -421,9 +469,9 @@
                             "number": "21",
                             "key": "CISW 21",
                             "title": "Secure Web Programming with ASP.NET",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Computer Information Systems: Web Applications",
@@ -431,9 +479,9 @@
                             "number": "21L",
                             "key": "CISW 21L",
                             "title": "Secure Web Programming with ASP.NET Laboratory",
-                            "notes": [],
                             "min_units": 0.5,
-                            "max_units": 0.5
+                            "max_units": 0.5,
+                            "notes": []
                         }
                     ],
                     "notes": []

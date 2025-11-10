@@ -13,7 +13,7 @@
                 "sending_name": "Allan Hancock College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -30,9 +30,9 @@
                             "number": "110",
                             "key": "ENGR 110",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -42,7 +42,7 @@
                 "sending_name": "Bakersfield College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -59,9 +59,9 @@
                             "number": "10",
                             "key": "ENGR 10",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -79,9 +79,9 @@
                             "number": "110",
                             "key": "ENGIN 110",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -90,28 +90,44 @@
             {
                 "sending_name": "Evergreen Valley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "010",
-                            "key": "ENGR 010",
-                            "title": "Introduction to Engineering",
-                            "notes": [],
-                            "min_units": 3.0,
-                            "max_units": 3.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "010",
+                                    "key": "ENGR 010",
+                                    "title": "Introduction to Engineering",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "010A",
-                            "key": "ENGR 010A",
-                            "title": "Introduction to Engineering",
-                            "notes": [],
-                            "min_units": 2.0,
-                            "max_units": 2.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "010A",
+                                    "key": "ENGR 010A",
+                                    "title": "Introduction to Engineering",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -129,9 +145,9 @@
                             "number": "10",
                             "key": "ENGR 10",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -141,7 +157,7 @@
                 "sending_name": "Lemoore College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -158,9 +174,9 @@
                             "number": "010",
                             "key": "ENGIN 010",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -178,9 +194,9 @@
                             "number": "10",
                             "key": "ENGR 10",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -198,9 +214,9 @@
                             "number": "1A",
                             "key": "ENGR 1A",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -210,7 +226,7 @@
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -227,9 +243,9 @@
                             "number": "10",
                             "key": "ENGR 10",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -247,9 +263,9 @@
                             "number": "300",
                             "key": "ENGR 300",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -267,9 +283,9 @@
                             "number": "101",
                             "key": "ENGR 101",
                             "title": "Introduction to Engineering",
-                            "notes": [],
                             "min_units": 2.0,
-                            "max_units": 2.0
+                            "max_units": 2.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -299,9 +315,9 @@
                             "number": "B19C",
                             "key": "ENGR B19C",
                             "title": "C++ Programming for Engineers & Scientists",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -319,9 +335,9 @@
                             "number": "11",
                             "key": "CS 11",
                             "title": "Introduction to Programming Concepts and Methodology, C++",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -330,28 +346,44 @@
             {
                 "sending_name": "Clovis Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CSCI",
-                            "number": "40",
-                            "key": "CSCI 40",
-                            "title": "Programming Concepts and Methodology I",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "40",
+                                    "key": "CSCI 40",
+                                    "title": "Programming Concepts and Methodology I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "40",
-                            "key": "ENGR 40",
-                            "title": "Programming for Scientists and Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "40",
+                                    "key": "ENGR 40",
+                                    "title": "Programming for Scientists and Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -361,7 +393,7 @@
                 "sending_name": "Cuesta College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -378,9 +410,9 @@
                             "number": "165",
                             "key": "COMSC 165",
                             "title": "Advanced Programming with C and C++",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -389,28 +421,44 @@
             {
                 "sending_name": "Fresno City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Computer Information Technology",
-                            "prefix": "CIT",
-                            "number": "66",
-                            "key": "CIT 66",
-                            "title": "Beginning C++ Programming",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Information Technology",
+                                    "prefix": "CIT",
+                                    "number": "66",
+                                    "key": "CIT 66",
+                                    "title": "Beginning C++ Programming",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CSCI",
-                            "number": "40",
-                            "key": "CSCI 40",
-                            "title": "Programming Concepts and Methodology I",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "40",
+                                    "key": "CSCI 40",
+                                    "title": "Programming Concepts and Methodology I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -420,7 +468,7 @@
                 "sending_name": "Gavilan College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -429,7 +477,7 @@
                 "sending_name": "Hartnell College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -446,9 +494,9 @@
                             "number": "015",
                             "key": "ENGR 015",
                             "title": "Engineering Computations",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -466,9 +514,9 @@
                             "number": "020",
                             "key": "ENGIN 020",
                             "title": "Programming with C++ for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -477,28 +525,44 @@
             {
                 "sending_name": "Madera Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "40",
-                            "key": "ENGR 40",
-                            "title": "Programming for Scientists and Engineers",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Engineering",
+                                    "prefix": "ENGR",
+                                    "number": "40",
+                                    "key": "ENGR 40",
+                                    "title": "Programming for Scientists and Engineers",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Computer Science",
-                            "prefix": "CSCI",
-                            "number": "40",
-                            "key": "CSCI 40",
-                            "title": "Programming Concepts and Methodology I",
-                            "notes": [],
-                            "min_units": 4.0,
-                            "max_units": 4.0
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CSCI",
+                                    "number": "40",
+                                    "key": "CSCI 40",
+                                    "title": "Programming Concepts and Methodology I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -508,7 +572,7 @@
                 "sending_name": "Merced College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -517,7 +581,7 @@
                 "sending_name": "Monterey Peninsula College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -534,9 +598,9 @@
                             "number": "40",
                             "key": "CSCI 40",
                             "title": "Programming Concepts and Methodology I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -546,7 +610,7 @@
                 "sending_name": "Sacramento City College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -555,7 +619,7 @@
                 "sending_name": "San Joaquin Delta College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -572,9 +636,9 @@
                             "number": "140",
                             "key": "CS 140",
                             "title": "Object-Oriented Programming Using C++",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -584,7 +648,7 @@
                 "sending_name": "Santa Monica College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -613,9 +677,9 @@
                             "number": "125",
                             "key": "ENGR 125",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -633,9 +697,9 @@
                             "number": "30",
                             "key": "ENGR 30",
                             "title": "Computer Applications in Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -653,9 +717,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -673,9 +737,9 @@
                             "number": "020",
                             "key": "CSCI 020",
                             "title": "MATLAB Programming",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -693,9 +757,9 @@
                             "number": "210",
                             "key": "ENGR 210",
                             "title": "Computational Methods for Engineers",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -713,9 +777,9 @@
                             "number": "136",
                             "key": "ENGIN 136",
                             "title": "Computer Programming for Engineers Using MATLAB",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -733,9 +797,9 @@
                             "number": "030",
                             "key": "ENGR 030",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -753,9 +817,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -765,7 +829,7 @@
                 "sending_name": "Hartnell College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -782,9 +846,9 @@
                             "number": "122",
                             "key": "ENG GEN 122",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -802,9 +866,9 @@
                             "number": "022",
                             "key": "ENGIN 022",
                             "title": "Programming with MATLAB for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -822,9 +886,9 @@
                             "number": "005",
                             "key": "MAT 005",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -842,9 +906,9 @@
                             "number": "17",
                             "key": "ENGR 17",
                             "title": "Programming and Problem-Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -862,9 +926,9 @@
                             "number": "183",
                             "key": "ENGR- 183",
                             "title": "Programming with MATLAB for Engineers and Scientists",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -882,9 +946,9 @@
                             "number": "5",
                             "key": "ENGR 5",
                             "title": "Programming and Problem Solving in MATLAB",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -914,9 +978,9 @@
                             "number": "185",
                             "key": "ENGR 185",
                             "title": "Digital Logic and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -934,9 +998,9 @@
                             "number": "B18",
                             "key": "ENGR B18",
                             "title": "Digital Electronics and Logic Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -946,7 +1010,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -963,9 +1027,9 @@
                             "number": "12",
                             "key": "ENGR 12",
                             "title": "Digital Logic Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -975,7 +1039,7 @@
                 "sending_name": "Los Medanos College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -992,9 +1056,9 @@
                             "number": "12",
                             "key": "ENGR 12",
                             "title": "Digital Logic Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1012,9 +1076,9 @@
                             "number": "132",
                             "key": "CS 132",
                             "title": "Digital Logic Design",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1044,9 +1108,9 @@
                             "number": "185",
                             "key": "ENGR 185",
                             "title": "Digital Logic and Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1064,9 +1128,9 @@
                             "number": "B18",
                             "key": "ENGR B18",
                             "title": "Digital Electronics and Logic Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1076,7 +1140,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1093,9 +1157,9 @@
                             "number": "12",
                             "key": "ENGR 12",
                             "title": "Digital Logic Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1105,7 +1169,7 @@
                 "sending_name": "Los Medanos College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -1122,9 +1186,9 @@
                             "number": "12",
                             "key": "ENGR 12",
                             "title": "Digital Logic Design",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1154,9 +1218,9 @@
                             "number": "170",
                             "key": "ENGR 170",
                             "title": "Electric Circuit Analysis",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1174,9 +1238,9 @@
                             "number": "401",
                             "key": "ENGR 401",
                             "title": "Introduction to Electrical Circuits and Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1194,9 +1258,9 @@
                             "number": "230",
                             "key": "ENGR 230",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1214,9 +1278,9 @@
                             "number": "B17",
                             "key": "ENGR B17",
                             "title": "Electric Circuit Analysis",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1234,9 +1298,9 @@
                             "number": "17",
                             "key": "ENGR 17",
                             "title": "Electrical Circuits and Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1254,9 +1318,9 @@
                             "number": "15",
                             "key": "ENGR 15",
                             "title": "Circuits",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1274,9 +1338,9 @@
                             "number": "260",
                             "key": "ENGR 260",
                             "title": "Circuits and Devices",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -1284,9 +1348,9 @@
                             "number": "261",
                             "key": "ENGR 261",
                             "title": "Circuits and Devices Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1304,9 +1368,9 @@
                             "number": "215",
                             "key": "ENGR 215",
                             "title": "Circuits",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1324,9 +1388,9 @@
                             "number": "43",
                             "key": "ENGR 43",
                             "title": "Electrical Circuits and Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1344,9 +1408,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Electric Circuit Analysis with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1364,9 +1428,9 @@
                             "number": "220",
                             "key": "ENGG 220",
                             "title": "Electric Circuit Analysis",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1384,9 +1448,9 @@
                             "number": "260",
                             "key": "ENGR 260",
                             "title": "Circuits and Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1404,9 +1468,9 @@
                             "number": "260",
                             "key": "ENGR 260",
                             "title": "Electrical Circuits",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1424,9 +1488,9 @@
                             "number": "004",
                             "key": "ENGR 004",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1444,9 +1508,9 @@
                             "number": "230",
                             "key": "ENGIN 230",
                             "title": "Introduction to Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1464,9 +1528,9 @@
                             "number": "217",
                             "key": "ENGR 217",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1484,9 +1548,9 @@
                             "number": "37",
                             "key": "ENGR 37",
                             "title": "Introduction to Circuit Analysis",
-                            "notes": [],
                             "min_units": 5.0,
-                            "max_units": 5.0
+                            "max_units": 5.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1504,9 +1568,9 @@
                             "number": "230",
                             "key": "ENGIN 230",
                             "title": "Introduction to Circuits and Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1524,9 +1588,9 @@
                             "number": "220",
                             "key": "ENG GEN 220",
                             "title": "Electrical Circuits I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1544,9 +1608,9 @@
                             "number": "400",
                             "key": "ENGR 400",
                             "title": "Introduction to Electrical Circuits and Devices",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1564,9 +1628,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Circuits with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1584,9 +1648,9 @@
                             "number": "203 F",
                             "key": "ENGR 203 F",
                             "title": "Electric Circuits",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1604,9 +1668,9 @@
                             "number": "3",
                             "key": "ENGR 3",
                             "title": "Electric Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1624,9 +1688,9 @@
                             "number": "6",
                             "key": "EGN 6",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1644,9 +1708,9 @@
                             "number": "025",
                             "key": "ENGR 025",
                             "title": "Electrical Circuits",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1664,9 +1728,9 @@
                             "number": "220",
                             "key": "ENG ELC 220",
                             "title": "Electrical Circuits I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1684,9 +1748,9 @@
                             "number": "220",
                             "key": "ENG GEN 220",
                             "title": "Electrical Circuits I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1704,9 +1768,9 @@
                             "number": "220",
                             "key": "ENG GEN 220",
                             "title": "Electrical Circuits I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1724,9 +1788,9 @@
                             "number": "045",
                             "key": "ENGIN 045",
                             "title": "Engineering Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1744,9 +1808,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Electric Circuit Analysis with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1764,9 +1828,9 @@
                             "number": "-18",
                             "key": "ENGR -18",
                             "title": "Electrical Circuits Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1784,9 +1848,9 @@
                             "number": "141",
                             "key": "ENGR 141",
                             "title": "Introduction to Circuit Analysis (with Lab)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1804,9 +1868,9 @@
                             "number": "12",
                             "key": "ENGR 12",
                             "title": "Engineering Circuits",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1824,9 +1888,9 @@
                             "number": "M20",
                             "key": "ENGR M20",
                             "title": "Electrical Engineering Fundamentals",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1844,9 +1908,9 @@
                             "number": "44",
                             "key": "ENGR 44",
                             "title": "Electrical Engineering",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1864,9 +1928,9 @@
                             "number": "242",
                             "key": "ENGI 242",
                             "title": "Circuits 1",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1884,9 +1948,9 @@
                             "number": "39",
                             "key": "ENE 39",
                             "title": "Engineering Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1904,9 +1968,9 @@
                             "number": "A285",
                             "key": "ENGR A285",
                             "title": "Engineering Circuits",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1924,9 +1988,9 @@
                             "number": "R160",
                             "key": "ENGR R160",
                             "title": "Electronic Circuits and Devices",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1944,9 +2008,9 @@
                             "number": "016",
                             "key": "ENGR 016",
                             "title": "Engineering Circuits",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1964,9 +2028,9 @@
                             "number": "P260",
                             "key": "ENGR P260",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1984,9 +2048,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Electric Circuit Analysis with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2004,9 +2068,9 @@
                             "number": "217",
                             "key": "ENGR 217",
                             "title": "Electric Circuit Analysis",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2024,9 +2088,9 @@
                             "number": "39",
                             "key": "ENE 39",
                             "title": "Engineering Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2044,9 +2108,9 @@
                             "number": "400",
                             "key": "ENGR 400",
                             "title": "Introduction to Electrical Circuits and Devices",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2064,9 +2128,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Engineering Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2084,9 +2148,9 @@
                             "number": "033",
                             "key": "ENGR 033",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2104,9 +2168,9 @@
                             "number": "117",
                             "key": "ENGR 117",
                             "title": "Electronic Circuits",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -2114,9 +2178,9 @@
                             "number": "117L",
                             "key": "ENGR 117L",
                             "title": "Electronic Circuits Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2134,9 +2198,9 @@
                             "number": "21",
                             "key": "ENGR 21",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2154,9 +2218,9 @@
                             "number": "16",
                             "key": "ENGR 16",
                             "title": "Electric Circuits & Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2174,9 +2238,9 @@
                             "number": "2000",
                             "key": "ENGR 2000",
                             "title": "Circuit Analysis with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2194,9 +2258,9 @@
                             "number": "V16",
                             "key": "ENGR V16",
                             "title": "Electronic Circuit Analysis",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2214,9 +2278,9 @@
                             "number": "220",
                             "key": "ENG GEN 220",
                             "title": "ELECTRICAL CIRCUITS I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2234,9 +2298,9 @@
                             "number": "098",
                             "key": "ENGR 098",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2266,9 +2330,9 @@
                             "number": "171",
                             "key": "ENGR 171",
                             "title": "Electric Circuits Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2278,7 +2342,7 @@
                 "sending_name": "American River College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -2295,9 +2359,9 @@
                             "number": "230",
                             "key": "ENGR 230",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2315,9 +2379,9 @@
                             "number": "B17L",
                             "key": "ENGR B17L",
                             "title": "Electric Circuit Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2335,9 +2399,9 @@
                             "number": "17",
                             "key": "ENGR 17",
                             "title": "Electrical Circuits and Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2347,7 +2411,7 @@
                 "sending_name": "Cabrillo College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -2364,9 +2428,9 @@
                             "number": "260",
                             "key": "ENGR 260",
                             "title": "Circuits and Devices",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -2374,9 +2438,9 @@
                             "number": "261",
                             "key": "ENGR 261",
                             "title": "Circuits and Devices Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2394,9 +2458,9 @@
                             "number": "215L",
                             "key": "ENGR 215L",
                             "title": "Circuits Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2414,9 +2478,9 @@
                             "number": "43",
                             "key": "ENGR 43",
                             "title": "Electrical Circuits and Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2434,9 +2498,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Electric Circuit Analysis with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2454,9 +2518,9 @@
                             "number": "220L",
                             "key": "ENGG 220L",
                             "title": "Electric Circuit Analysis Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2474,9 +2538,9 @@
                             "number": "260",
                             "key": "ENGR 260",
                             "title": "Circuits and Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2494,9 +2558,9 @@
                             "number": "260L",
                             "key": "ENGR 260L",
                             "title": "Electrical Circuits Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2514,9 +2578,9 @@
                             "number": "004",
                             "key": "ENGR 004",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2534,9 +2598,9 @@
                             "number": "230",
                             "key": "ENGIN 230",
                             "title": "Introduction to Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2554,9 +2618,9 @@
                             "number": "217",
                             "key": "ENGR 217",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2574,9 +2638,9 @@
                             "number": "230",
                             "key": "ENGIN 230",
                             "title": "Introduction to Circuits and Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2594,9 +2658,9 @@
                             "number": "220",
                             "key": "ENG GEN 220",
                             "title": "Electrical Circuits I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2614,9 +2678,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Circuits with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2634,9 +2698,9 @@
                             "number": "203LF",
                             "key": "ENGR 203LF",
                             "title": "Electric Circuits Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2654,9 +2718,9 @@
                             "number": "3",
                             "key": "ENGR 3",
                             "title": "Electric Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2674,9 +2738,9 @@
                             "number": "6",
                             "key": "EGN 6",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2686,7 +2750,7 @@
                 "sending_name": "Lemoore College",
                 "sending_articulation": {
                     "type": "GROUP",
-                    "conjunction": "AND",
+                    "conjunctions": [],
                     "items": [],
                     "notes": []
                 }
@@ -2703,9 +2767,9 @@
                             "number": "220",
                             "key": "ENG ELC 220",
                             "title": "Electrical Circuits I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2723,9 +2787,9 @@
                             "number": "220",
                             "key": "ENG GEN 220",
                             "title": "Electrical Circuits I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2743,9 +2807,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Electric Circuit Analysis with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2763,9 +2827,9 @@
                             "number": "-18",
                             "key": "ENGR -18",
                             "title": "Electrical Circuits Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2783,9 +2847,9 @@
                             "number": "141",
                             "key": "ENGR 141",
                             "title": "Introduction to Circuit Analysis (with Lab)",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2803,9 +2867,9 @@
                             "number": "12L",
                             "key": "ENGR 12L",
                             "title": "Engineering Circuits Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2823,9 +2887,9 @@
                             "number": "M20L",
                             "key": "ENGR M20L",
                             "title": "Electrical Engineering Fundamentals Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2843,9 +2907,9 @@
                             "number": "242",
                             "key": "ENGI 242",
                             "title": "Circuits 1",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2863,9 +2927,9 @@
                             "number": "39",
                             "key": "ENE 39",
                             "title": "Engineering Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2883,9 +2947,9 @@
                             "number": "A285",
                             "key": "ENGR A285",
                             "title": "Engineering Circuits",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2903,9 +2967,9 @@
                             "number": "R160L",
                             "key": "ENGR R160L",
                             "title": "Electronic Circuits and Devices Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2923,9 +2987,9 @@
                             "number": "016L",
                             "key": "ENGR 016L",
                             "title": "Engineering Circuits Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2943,9 +3007,9 @@
                             "number": "P260L",
                             "key": "ENGR P260L",
                             "title": "Circuit Analysis Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2963,9 +3027,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Electric Circuit Analysis with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2983,9 +3047,9 @@
                             "number": "217L",
                             "key": "ENGR 217L",
                             "title": "Electric Circuit Analysis Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3003,9 +3067,9 @@
                             "number": "39",
                             "key": "ENE 39",
                             "title": "Engineering Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3023,9 +3087,9 @@
                             "number": "6",
                             "key": "ENGR 6",
                             "title": "Engineering Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3043,9 +3107,9 @@
                             "number": "033",
                             "key": "ENGR 033",
                             "title": "Circuit Analysis",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3063,9 +3127,9 @@
                             "number": "117",
                             "key": "ENGR 117",
                             "title": "Electronic Circuits",
-                            "notes": [],
                             "min_units": 3.0,
-                            "max_units": 3.0
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Engineering",
@@ -3073,9 +3137,9 @@
                             "number": "117L",
                             "key": "ENGR 117L",
                             "title": "Electronic Circuits Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3093,9 +3157,9 @@
                             "number": "22",
                             "key": "ENGR 22",
                             "title": "Circuit Analysis Lab",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3113,9 +3177,9 @@
                             "number": "16",
                             "key": "ENGR 16",
                             "title": "Electric Circuits & Devices",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3133,9 +3197,9 @@
                             "number": "2000",
                             "key": "ENGR 2000",
                             "title": "Circuit Analysis with Lab",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3153,9 +3217,9 @@
                             "number": "V16L",
                             "key": "ENGR V16L",
                             "title": "Electronic Circuits Laboratory",
-                            "notes": [],
                             "min_units": 1.0,
-                            "max_units": 1.0
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3173,9 +3237,9 @@
                             "number": "220",
                             "key": "ENG GEN 220",
                             "title": "ELECTRICAL CIRCUITS I",
-                            "notes": [],
                             "min_units": 4.0,
-                            "max_units": 4.0
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
