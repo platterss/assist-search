@@ -183,17 +183,17 @@ def articulation_to_json_dict(articulation: dict) -> dict | None:
 
 
 def extract_articulation_rows(result: dict) -> list[dict]:
-    articulations = as_obj(result["articulations"])
+    articulations = as_obj(result.get("articulations", [])) or []
 
-    # All Majors or All General Education
+    # All Majors / All General Education
     if isinstance(articulations[0], dict) and "articulations" not in articulations[0]:
         return articulations
 
     # All Departments or All Prefixes
     flat = []
     for subject in articulations:
-        for row in subject.get("articulations", []) or []:
-            flat.append(row)
+        for row in (subject.get("articulations") or []):
+            flat.append({"articulation": row})
 
     return flat
 
