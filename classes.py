@@ -137,7 +137,7 @@ class ReceivingCourse(BasicCourse):
                 "articulations": []}
 
     @staticmethod
-    def from_basic(basic: BasicCourse) -> ReceivingCourse:
+    def from_basic(basic: BasicCourse) -> "ReceivingCourse":
         return ReceivingCourse(
             subject=basic.subject,
             prefix=basic.prefix,
@@ -201,7 +201,7 @@ class ReceivingItem:
     def from_receiving(
             receiving: BasicCourse | ReceivingSeries | ReceivingMisc | ReceivingGE,
             sending_articulation: dict | None = None
-    ) -> ReceivingItem:
+    ) -> "ReceivingItem":
         if isinstance(receiving, BasicCourse):
             receiving_type = ReceivingType.COURSE
         elif isinstance(receiving, ReceivingSeries):
