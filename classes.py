@@ -48,8 +48,8 @@ class BasicCourse:
             key=f"{prefix} {number}",
             number=number,
             title=data["courseTitle"].strip(),
-            min_units=data["minUnits"],
-            max_units=data["maxUnits"]
+            min_units=float(data["minUnits"]),
+            max_units=float(data["maxUnits"])
         )
 
 
@@ -87,9 +87,9 @@ class SendingCourse(BasicCourse):
             prefix=prefix,
             number=number,
             key=f"{prefix} {number}".strip(),
-            title=(obj.get("courseTitle") or "").strip(),
-            min_units=float(obj.get("minUnits")),
-            max_units=float(obj.get("maxUnits")),
+            title=obj["courseTitle"].strip(),
+            min_units=float(obj["minUnits"]),
+            max_units=float(obj["maxUnits"]),
             notes=notes,
         )
 
@@ -124,85 +124,56 @@ class GroupArticulation:
         }
 
 
-# BasicCourse is enough for our needs so far. Not much point to this.
-# @dataclass
-# class ReceivingCourse(BasicCourse):
-#     articulations: list
-#
-#     def to_row(self) -> dict:
-#         return {**{"type": "COURSE"},
-#                 **self.to_dict(),
-#                 "articulations": []}
-#
-#     @staticmethod
-#     def from_basic(basic: BasicCourse) -> "ReceivingCourse":
-#         course = ReceivingCourse.__new__(ReceivingCourse)
-#         course.__dict__.update(basic.__dict__)
-#         course.articulations = []
-#
-#         return course
-
-
 @dataclass
 class ReceivingSeries:
     key: str
     conjunction: Conjunction
     courses: list[BasicCourse]
 
-    def to_row(self) -> dict:
+    def to_dict(self) -> dict:
         return {
-            "type": "SERIES",
             "key": self.key,
             "conjunction": self.conjunction.value,
             "courses": [course.to_dict() for course in self.courses],
-            "articulations": []
         }
 
 
 @dataclass
-class ReceivingMisc:
+class ReceivingRequirement:
+    kind: ReceivingType
     key: str
 
-    def to_row(self) -> dict:
-        return {
-            "type": "MISCELLANEOUS",
-            "key": self.key,
-            "articulations": []
-        }
+    def to_dict(self) -> dict:
+        return {"key": self.key}
 
+    @staticmethod
+    def get_kind_and_key(node: dict) -> tuple[ReceivingType, str] | None:
+        if "requirement" in node.keys():
+            return ReceivingType.MISC, "requirement"
+        elif "generalEducationArea" in node.keys():
+            return ReceivingType.GE, "generalEducationArea"
 
-@dataclass
-class ReceivingGE:
-    key: str
-
-    def to_row(self) -> dict:
-        return {
-            "type": "GE",
-            "key": self.key,
-            "articulations": []
-        }
+        return None
 
 
 @dataclass
 class ReceivingItem:
     key: str
     receiving_type: ReceivingType
-    receiving: BasicCourse | ReceivingSeries | ReceivingMisc | ReceivingGE
+    receiving: BasicCourse | ReceivingSeries | ReceivingRequirement
     sending_articulation: dict | None
 
     @staticmethod
     def from_receiving(
-            receiving: BasicCourse | ReceivingSeries | ReceivingMisc | ReceivingGE,
+            receiving: BasicCourse | ReceivingSeries | ReceivingRequirement,
             sending_articulation: dict | None = None
     ) -> "ReceivingItem":
         if isinstance(receiving, BasicCourse):
             receiving_type = ReceivingType.COURSE
         elif isinstance(receiving, ReceivingSeries):
             receiving_type = ReceivingType.SERIES
-        elif isinstance(receiving, ReceivingMisc):
-            receiving_type = ReceivingType.MISC
         else:
-            receiving_type = ReceivingType.GE
+            receiving_type = receiving.kind
 
         return ReceivingItem(
             key=receiving.key,

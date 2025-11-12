@@ -11,8 +11,7 @@ from classes import (
     GroupArticulation,
     ReceivingType,
     ReceivingSeries,
-    ReceivingMisc,
-    ReceivingGE,
+    ReceivingRequirement,
     ReceivingItem
 )
 from pathlib import Path
@@ -21,7 +20,7 @@ from agreements import get_agreements
 from institutions import get_institutions
 
 
-def as_obj(x):
+def json_if_str(x):
     return json.loads(x) if isinstance(x, str) else x
 
 
@@ -201,7 +200,7 @@ def articulation_to_json_dict(articulation: dict) -> dict | None:
 
 
 def extract_articulation_rows(result: dict) -> list[dict]:
-    articulations = as_obj(result.get("articulations", [])) or []
+    articulations = json_if_str(result.get("articulations", [])) or []
 
     # All Majors / All General Education
     if isinstance(articulations[0], dict) and "articulations" not in articulations[0]:
@@ -217,7 +216,7 @@ def extract_articulation_rows(result: dict) -> list[dict]:
 
 
 def walk_template_assets(assets) -> list[tuple[str | None, ReceivingItem]]:
-    assets = as_obj(assets)
+    assets = json_if_str(assets)
     out: list[tuple[str | None, ReceivingItem]] = []
 
     def is_course_dict(d: dict) -> bool:
@@ -240,15 +239,11 @@ def walk_template_assets(assets) -> list[tuple[str | None, ReceivingItem]]:
                     rs = ReceivingSeries(key=make_series_key(courses), conjunction=conjunction, courses=courses)
                     out.append((cid, ReceivingItem.from_receiving(rs)))
 
-            req = node.get("requirement")
-            if req is not None:
-                rm = ReceivingMisc(key=req["name"].strip())
-                out.append((cid, ReceivingItem.from_receiving(rm)))
-
-            ge = node.get("generalEducationArea")
-            if ge is not None:
-                rg = ReceivingGE(key=ge["name"].strip())
-                out.append((cid, ReceivingItem.from_receiving(rg)))
+            req_tuple = ReceivingRequirement.get_kind_and_key(node)
+            if req_tuple is not None:
+                kind, key = req_tuple
+                req = ReceivingRequirement(kind=kind, key=node[key]["name"].strip())
+                out.append((cid, ReceivingItem.from_receiving(req)))
 
             for k, v in node.items():
                 if k != "series":
@@ -308,26 +303,21 @@ def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str],
     out.append(ReceivingItem.from_receiving(rs, node_dict))
 
 
-def get_miscellaneous_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
-    name = articulation["requirement"]["name"].strip()
+def get_req_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
+    req_tuple = ReceivingRequirement.get_kind_and_key(articulation)
+
+    if req_tuple is None:
+        return
+
+    kind, key = ReceivingRequirement.get_kind_and_key(articulation)
+    name = articulation[key]["name"].strip()
 
     if name in seen:
         return
 
     seen.add(name)
-    rm = ReceivingMisc(key=name)
-    out.append(ReceivingItem.from_receiving(rm, node_dict))
-
-
-def get_ge_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
-    name = articulation["generalEducationArea"]["name"].strip()
-
-    if name in seen:
-        return
-
-    seen.add(name)
-    rg = ReceivingGE(key=name)
-    out.append(ReceivingItem.from_receiving(rg, node_dict))
+    req = ReceivingRequirement(kind=kind, key=name)
+    out.append(ReceivingItem.from_receiving(req, node_dict))
 
 
 def get_articulations(all_courses_json: dict) -> list[ReceivingItem]:
@@ -346,10 +336,8 @@ def get_articulations(all_courses_json: dict) -> list[ReceivingItem]:
             get_course_articulation(articulation, node_dict, seen, out)
         elif receiving_type == "Series":
             get_series_articulation(articulation, node_dict, seen, out)
-        elif receiving_type == "Requirement":
-            get_miscellaneous_articulation(articulation, node_dict, seen, out)
-        elif receiving_type == "GeneralEducation":
-            get_ge_articulation(articulation, node_dict, seen, out)
+        else:
+            get_req_articulation(articulation, node_dict, seen, out)
 
     existing_articulation_cell_ids = {row["templateCellId"] for row in rows if row.get("templateCellId")}
     for inv in extract_template_inventory(result["templateAssets"], existing_articulation_cell_ids):
@@ -360,27 +348,6 @@ def get_articulations(all_courses_json: dict) -> list[ReceivingItem]:
         out.append(inv)
 
     return out
-
-
-def build_receiving_row(key: str, item: ReceivingItem) -> dict:
-    if item.receiving_type == ReceivingType.COURSE:
-        return {"type": "COURSE", **item.receiving.to_dict(), "articulations": []}
-
-    if item.receiving_type == ReceivingType.SERIES:
-        return item.receiving.to_row()
-
-    if item.receiving_type == ReceivingType.MISC:
-        return item.receiving.to_row()
-
-    if item.receiving_type == ReceivingType.GE:
-        return item.receiving.to_row()
-
-    # shouldn't ever happen
-    return {
-        "type": "UNKNOWN",
-        "key": key,
-        "articulations": []
-    }
 
 
 def parse_num(num: str) -> tuple[int, str]:
@@ -508,7 +475,7 @@ def save_articulations(
 
         for item in items:
             if item.key not in index:
-                index[item.key] = build_receiving_row(item.key, item)
+                index[item.key] = {"type": item.receiving_type.value, **item.receiving.to_dict(), "articulations": []}
                 art_maps[item.key] = {}
                 changed = True
 
@@ -586,13 +553,17 @@ def run(desired_universities: list[str] = None) -> None:
         for college in colleges:
             agreement_year = all_agreements.get(college.id, -1)
 
+            if agreement_year == -1:
+                print(f"{college.name} and {university.name} have no agreements.")
+                continue
+
             print(f"Getting articulation: {college.name} (ID {college.id}) -> {university.name} (ID {university.id}) "
                   f"for year ID {agreement_year}")
 
             all_courses = get_all_courses_json(agreement_year, college.id, university.id)
 
             if all_courses is None:
-                print(f"{university.name} and {college.name} have no viable agreements.")
+                print(f"{college.name} and {university.name} have no viable agreements.")
                 continue
 
             all_articulations = get_articulations(all_courses)
