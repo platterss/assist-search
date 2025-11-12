@@ -104,7 +104,7 @@ async function populateUniversities() {
 
         let universities = await fetchInstitutions();
         const sorted = universities
-            .filter(u => u.category === "UC" || u.category === "CSU")
+            .filter(u => u.category !== "CCC")
             .sort((a, b) => a.name.localeCompare(b.name, undefined, {sensitivity: "base"}));
 
         for (const university of sorted) {
