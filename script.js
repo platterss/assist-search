@@ -143,7 +143,12 @@ async function populateSubjects(universityName) {
         console.log("Subject dropdown populated with", subjects.length, "options");
     } catch (error) {
         console.error("Error loading subjects:", error);
-        alert("Failed to load subjects. Please try again.");
+
+        if (error.message.includes("404")) {
+            alert("This university has no articulation information. Please choose a different one.")
+        } else {
+            alert("Failed to load subjects. Please try again.");
+        }
     } finally {
         hideLoader(subjectLoader);
     }
