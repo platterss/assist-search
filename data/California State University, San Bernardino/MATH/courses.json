@@ -181,6 +181,26 @@
                 }
             },
             {
+                "sending_name": "Citrus College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "160",
+                            "key": "MATH 160",
+                            "title": "Mathematics for Everyday Living - A Liberal Arts Course",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of Alameda",
                 "sending_articulation": {
                     "type": "SET",
@@ -623,17 +643,43 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "102",
-                            "key": "MATH 102",
-                            "title": "Math Fundamentals: Mathematics for Life",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "102",
+                                    "key": "MATH 102",
+                                    "title": "Math Fundamentals: Mathematics for Life",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "102A",
+                                    "key": "MATH 102A",
+                                    "title": "Mathematics for Life",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -1452,11 +1498,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "165",
-                                    "key": "MATH 165",
-                                    "title": "Introductory Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -1469,11 +1515,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "165H",
-                                    "key": "MATH 165H",
-                                    "title": "Introductory Statistics - Honors",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000 H",
+                                    "key": "STAT C1000 H",
+                                    "title": "Introduction to Statistics - Honors",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -2288,6 +2334,70 @@
                 }
             },
             {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000H",
+                                    "key": "STAT C1000H",
+                                    "title": "Introduction to Statistics - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "21B",
+                                    "key": "MATH 21B",
+                                    "title": "Statistics Pathway B",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "GROUP",
@@ -2680,7 +2790,6 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
-                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -2689,11 +2798,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "103",
-                                    "key": "MATH 103",
-                                    "title": "Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -2706,30 +2815,13 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "103H",
-                                    "key": "MATH 103H",
-                                    "title": "Statistics (Honors)",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000 H",
+                                    "key": "STAT C1000 H",
+                                    "title": "Introduction to Statistics (Honors)",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "103S",
-                                    "key": "MATH 103S",
-                                    "title": "Statistics with Integrated Support",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
                                     "notes": []
                                 }
                             ],
@@ -3952,6 +4044,46 @@
                     ],
                     "notes": []
                 }
+            },
+            {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "MiraCosta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics (Embedded Support)",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
             }
         ]
     },
@@ -4854,6 +4986,26 @@
                 }
             },
             {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "45",
+                            "key": "MATH 45",
+                            "title": "College Algebra",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "SET",
@@ -5008,11 +5160,11 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "112",
-                            "key": "MATH 112",
-                            "title": "Algebraic Concepts for Problem Solving",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "number": "126",
+                            "key": "MATH 126",
+                            "title": "Pre-Calculus I: College Algebra",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -5935,6 +6087,46 @@
                     ],
                     "notes": []
                 }
+            },
+            {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "45S",
+                            "key": "MATH 45S",
+                            "title": "College Algebra with Support",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "MiraCosta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "126S",
+                            "key": "MATH 126S",
+                            "title": "Pre-Calculus I: College Algebra with Integrated Support",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
             }
         ]
     },
@@ -6832,6 +7024,26 @@
                             "title": "Trigonometry",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "50",
+                            "key": "MATH 50",
+                            "title": "Precalculus Math",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -8915,6 +9127,26 @@
                 }
             },
             {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "47",
+                            "key": "MATH 47",
+                            "title": "Calculus for Business",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "SET",
@@ -10648,6 +10880,52 @@
                             "title": "Calculus I",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "60",
+                                    "key": "MATH 60",
+                                    "title": "First Calculus Course",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "60H",
+                                    "key": "MATH 60H",
+                                    "title": "Honors First Calculus Course",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -12656,6 +12934,52 @@
                 }
             },
             {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "70",
+                                    "key": "MATH 70",
+                                    "title": "Second Calculus Course",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "70H",
+                                    "key": "MATH 70H",
+                                    "title": "Honors Second Calculus Course",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "SET",
@@ -12818,43 +13142,17 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunctions": [
-                        "OR"
-                    ],
+                    "type": "SET",
+                    "conjunction": null,
                     "items": [
                         {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "155",
-                                    "key": "MATH 155",
-                                    "title": "Calculus and Analytic Geometry II",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "155H",
-                                    "key": "MATH 155H",
-                                    "title": "Calculus and Analytical Geometry II (Honors)",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "155",
+                            "key": "MATH 155",
+                            "title": "Calculus and Analytic Geometry II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -14488,43 +14786,17 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunctions": [
-                        "OR"
-                    ],
+                    "type": "SET",
+                    "conjunction": null,
                     "items": [
                         {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "265",
-                                    "key": "MATH 265",
-                                    "title": "Differential Equations",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "265H",
-                                    "key": "MATH 265H",
-                                    "title": "Differential Equations (Honors)",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "265",
+                            "key": "MATH 265",
+                            "title": "Differential Equations",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -15357,6 +15629,26 @@
                 }
             },
             {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "84",
+                            "key": "MATH 84",
+                            "title": "Intro to Differential Equations and Linear Algebra",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
                     "type": "SET",
@@ -16157,43 +16449,17 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunctions": [
-                        "OR"
-                    ],
+                    "type": "SET",
+                    "conjunction": null,
                     "items": [
                         {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "270",
-                                    "key": "MATH 270",
-                                    "title": "Linear Algebra",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "270H",
-                                    "key": "MATH 270H",
-                                    "title": "Linear Algebra (Honors)",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "270",
+                            "key": "MATH 270",
+                            "title": "Linear Algebra",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -17585,6 +17851,26 @@
                 }
             },
             {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "80",
+                            "key": "MATH 80",
+                            "title": "Third Calculus Course",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "SET",
@@ -17747,43 +18033,17 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunctions": [
-                        "OR"
-                    ],
+                    "type": "SET",
+                    "conjunction": null,
                     "items": [
                         {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "260",
-                                    "key": "MATH 260",
-                                    "title": "Calculus and Analytic Geometry III",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "260H",
-                                    "key": "MATH 260H",
-                                    "title": "Calculus and Analytic Geometry III (Honors)",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "260",
+                            "key": "MATH 260",
+                            "title": "Calculus and Analytic Geometry III",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -19501,6 +19761,54 @@
                 }
             },
             {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "55",
+                                    "key": "MATH 55",
+                                    "title": "Discrete Mathematics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "61",
+                                    "key": "CS 61",
+                                    "title": "Discrete Structures",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "GROUP",
@@ -19693,7 +20001,6 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
-                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -19707,23 +20014,6 @@
                                     "number": "226",
                                     "key": "MATH 226",
                                     "title": "Discrete Mathematics",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "226H",
-                                    "key": "MATH 226H",
-                                    "title": "Discrete Mathematics (Honors)",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []

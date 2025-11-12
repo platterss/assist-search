@@ -286,17 +286,43 @@
             {
                 "sending_name": "Citrus College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Business",
-                            "prefix": "BUS",
-                            "number": "160",
-                            "key": "BUS 160",
-                            "title": "Business Law and the Legal Environment I",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Business",
+                                    "prefix": "BUS",
+                                    "number": "160",
+                                    "key": "BUS 160",
+                                    "title": "Business Law and the Legal Environment I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Business",
+                                    "prefix": "BUS",
+                                    "number": "160H",
+                                    "key": "BUS 160H",
+                                    "title": "Business Law and the Legal Environment I - Honors",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -984,6 +1010,56 @@
                 }
             },
             {
+                "sending_name": "Long Beach City College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Business, Law",
+                                    "prefix": "LAW",
+                                    "number": "18",
+                                    "key": "LAW 18",
+                                    "title": "Fundamentals of Business Law",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Business, Law",
+                                    "prefix": "LAW",
+                                    "number": "19",
+                                    "key": "LAW 19",
+                                    "title": "Legal Environment of Business",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": [
+                                        "Acceptable substitute"
+                                    ]
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "SET",
@@ -1216,43 +1292,17 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunctions": [
-                        "OR"
-                    ],
+                    "type": "SET",
+                    "conjunction": null,
                     "items": [
                         {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Business Administration",
-                                    "prefix": "BUS",
-                                    "number": "140",
-                                    "key": "BUS 140",
-                                    "title": "Legal Environment of Business",
-                                    "min_units": 3.0,
-                                    "max_units": 3.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Business Administration",
-                                    "prefix": "BUS",
-                                    "number": "140H",
-                                    "key": "BUS 140H",
-                                    "title": "Legal Environment of Business (Honors)",
-                                    "min_units": 3.0,
-                                    "max_units": 3.0,
-                                    "notes": []
-                                }
-                            ],
+                            "subject": "Business Administration",
+                            "prefix": "BUS",
+                            "number": "140",
+                            "key": "BUS 140",
+                            "title": "Legal Environment of Business",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
