@@ -1,4 +1,4 @@
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from enum import Enum
 
 
@@ -26,7 +26,7 @@ class Institution:
 
 @dataclass
 class BasicCourse:
-    subject: str | None
+    subject: str
     prefix: str
     number: str
     key: str
@@ -58,16 +58,13 @@ class SendingCourse(BasicCourse):
     notes: list[str]
 
     @staticmethod
-    def from_assist(obj: dict, extra_notes: list[str] | None = None) -> "SendingCourse":
+    def from_assist(obj: dict) -> "SendingCourse":
         notes: list[str] = []
         for attribute in (obj.get("attributes") or []):
             content = attribute.get("content")
 
             if content:
                 notes.append(content)
-
-        if extra_notes:
-            notes.extend(extra_notes)
 
         if obj.get("prefix") is None and obj.get("courseNumber") is None:
             return SendingCourse(
@@ -127,27 +124,23 @@ class GroupArticulation:
         }
 
 
-@dataclass
-class ReceivingCourse(BasicCourse):
-    articulations: list
-
-    def to_row(self) -> dict:
-        return {**{"type": "COURSE"},
-                **self.to_dict(),
-                "articulations": []}
-
-    @staticmethod
-    def from_basic(basic: BasicCourse) -> "ReceivingCourse":
-        return ReceivingCourse(
-            subject=basic.subject,
-            prefix=basic.prefix,
-            number=basic.number,
-            key=basic.key,
-            title=basic.title,
-            min_units=basic.min_units,
-            max_units=basic.max_units,
-            articulations=[]
-        )
+# BasicCourse is enough for our needs so far. Not much point to this.
+# @dataclass
+# class ReceivingCourse(BasicCourse):
+#     articulations: list
+#
+#     def to_row(self) -> dict:
+#         return {**{"type": "COURSE"},
+#                 **self.to_dict(),
+#                 "articulations": []}
+#
+#     @staticmethod
+#     def from_basic(basic: BasicCourse) -> "ReceivingCourse":
+#         course = ReceivingCourse.__new__(ReceivingCourse)
+#         course.__dict__.update(basic.__dict__)
+#         course.articulations = []
+#
+#         return course
 
 
 @dataclass

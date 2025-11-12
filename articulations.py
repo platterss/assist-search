@@ -10,7 +10,6 @@ from classes import (
     SetArticulation,
     GroupArticulation,
     ReceivingType,
-    ReceivingCourse,
     ReceivingSeries,
     ReceivingMisc,
     ReceivingGE,
@@ -41,14 +40,10 @@ def make_series_key(members: list[BasicCourse]) -> str:
     return " + ".join(tokens)
 
 
-def make_sending_course(obj: dict, extra_notes: list[str] | None = None) -> SendingCourse:
-    return SendingCourse.from_assist(obj, extra_notes)
-
-
 def parse_course_group(group: dict) -> SetArticulation:
     conjunction = group.get("courseConjunction", "").strip().lower()
     items = sorted(group.get("items", []), key=lambda x: x.get("position", 0))
-    courses = [make_sending_course(item) for item in items if item.get("type") == "Course"]
+    courses = [SendingCourse.from_assist(item) for item in items if item.get("type") == "Course"]
     group_level_notes: list[str] = [a.get("content") for a in group.get("attributes", []) if a.get("content")]
 
     if conjunction == "or":
@@ -94,27 +89,46 @@ def combine_groups(groups: list[SetArticulation | GroupArticulation], group_conj
         for k in range(i, j):
             conjunctions[k] = Conjunction.OR if conjunction.lower() == "or" else Conjunction.AND
 
-    final_conjunctions = [conjunction if conjunction is not None else Conjunction.OR for conjunction in conjunctions]
+    for i, c in enumerate(conjunctions):
+        if c is None:
+            conjunctions[i] = Conjunction.OR
 
-    return GroupArticulation(conjunctions=final_conjunctions, items=sets, notes=[])
+    return GroupArticulation(conjunctions=conjunctions, items=sets, notes=[])
 
 
 def normalize_node(node: SetArticulation | GroupArticulation) -> SetArticulation | GroupArticulation:
     if isinstance(node, GroupArticulation):
-        items = [SetArticulation(conjunction=(s.conjunction if len(s.items) > 1 else None),
-                                 items=s.items,
-                                 notes=s.notes)
-                 for s in node.items
-                 ]
+        for i, child in enumerate(node.items):
+            node.items[i] = normalize_node(child)
 
-        if len(items) == 1:
-            return items[0]
+            if isinstance(child, SetArticulation) and (len(node.items[i].items) == 1) and node.items[i].conjunction is not None:
+                node.items[i].conjunction = None
 
-        return GroupArticulation(conjunctions=node.conjunctions, items=items, notes=node.notes)
+        # Flatten groups if they only contain singleton sets with the same conjunction
+        if len(node.items) > 1 and len(set(node.conjunctions)) == 1:
+            all_singletons = all(isinstance(c, SetArticulation) and len(c.items) == 1 for c in node.items)
+
+            if all_singletons:
+                flattened_items = [c.items[0] for c in node.items]
+                merged_notes: list[str] = []
+                merged_notes.extend(node.notes)
+
+                for c in node.items:
+                    if isinstance(c, SetArticulation):
+                        merged_notes.extend(c.notes)
+
+                return SetArticulation(
+                    conjunction=node.conjunctions[0] if len(flattened_items) > 1 else None,
+                    items=flattened_items,
+                    notes=merged_notes
+                )
+
+        if len(node.items) == 1:
+            return node.items[0]
 
     if isinstance(node, SetArticulation):
-        conj = node.conjunction if len(node.items) > 1 else None
-        return SetArticulation(conjunction=conj, items=node.items, notes=node.notes)
+        if len(node.items) == 1 and node.conjunction is not None:
+            node.conjunction = None
 
     return node
 
@@ -135,6 +149,10 @@ def build_articulation_tree(sending_articulation: dict | None) -> dict | None:
     group_positions = [int(g.get("position", 0)) for g in groups_raw]
 
     node = combine_groups(normalized, sending_articulation.get("courseGroupConjunctions", []), group_positions)
+
+    notes: list[str] = [a.get("content") for a in (sending_articulation.get("attributes") or []) if a.get("content")]
+    if notes:
+        node.notes.extend(notes)
 
     return normalize_node(node).to_dict()
 
@@ -346,7 +364,7 @@ def get_articulations(all_courses_json: dict) -> list[ReceivingItem]:
 
 def build_receiving_row(key: str, item: ReceivingItem) -> dict:
     if item.receiving_type == ReceivingType.COURSE:
-        return ReceivingCourse.from_basic(item.receiving).to_row()
+        return {"type": "COURSE", **item.receiving.to_dict(), "articulations": []}
 
     if item.receiving_type == ReceivingType.SERIES:
         return item.receiving.to_row()
