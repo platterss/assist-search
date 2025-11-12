@@ -167,9 +167,6 @@ def request_all_courses(year: int, sending: int, receiving: int, method: str) ->
 
 
 def get_all_courses_json(agreement_year: int, sending_id: int, receiving_id: int) -> dict | None:
-    if agreement_year < 74:  # The modernized agreements view only started in year ID 74
-        return None
-
     try:
         return request_all_courses(agreement_year, sending_id, receiving_id, "AllMajors")
     except FileNotFoundError:
@@ -201,6 +198,9 @@ def articulation_to_json_dict(articulation: dict) -> dict | None:
 
 def extract_articulation_rows(result: dict) -> list[dict]:
     articulations = json_if_str(result.get("articulations", [])) or []
+
+    if len(articulations) == 0:
+        return articulations
 
     # All Majors / All General Education
     if isinstance(articulations[0], dict) and "articulations" not in articulations[0]:
@@ -541,6 +541,11 @@ def run(desired_universities: list[str] = None) -> None:
     colleges = sorted([i for i in institutions if i.category == "CCC"], key=lambda i: i.name)
     universities = [i for i in institutions if i.category in desired_universities]
 
+    successful = 0
+    no_agreements = 0
+    no_modern_agreements = 0
+    no_viable_agreements = 0
+
     for university in universities:
         print(f"Getting articulations for {university.name} (ID {university.id}).")
 
@@ -555,6 +560,13 @@ def run(desired_universities: list[str] = None) -> None:
 
             if agreement_year == -1:
                 print(f"{college.name} and {university.name} have no agreements.")
+                no_agreements += 1
+                continue
+
+            # Modern agreements only started in year ID 74
+            if agreement_year < 74:
+                print(f"{college.name} and {university.name} have no modern agreements.")
+                no_modern_agreements += 1
                 continue
 
             print(f"Getting articulation: {college.name} (ID {college.id}) -> {university.name} (ID {university.id}) "
@@ -564,6 +576,7 @@ def run(desired_universities: list[str] = None) -> None:
 
             if all_courses is None:
                 print(f"{college.name} and {university.name} have no viable agreements.")
+                no_viable_agreements += 1
                 continue
 
             all_articulations = get_articulations(all_courses)
@@ -577,12 +590,18 @@ def run(desired_universities: list[str] = None) -> None:
                 subjects_map
             )
 
+            successful += 1
+
         flush_courses_for_university(university.name, rows_by_subject_dir, changed_subjects)
         flush_subjects_for_university(university.name, subjects_map)
 
         print("\n")
 
-    print("Finished saving articulations.")
+    print("== Results ==")
+    print(f"Agreements saved: {successful}")
+    print(f"Missing agreements: {no_agreements}")
+    print(f"Lacking modern agreements: {no_modern_agreements}")
+    print(f"No viable modern agreements: {no_viable_agreements}")
 
 
 def main():
