@@ -755,7 +755,7 @@
                 "sending_name": "College of San Mateo",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -765,6 +765,16 @@
                             "title": "Precalculus",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "225",
+                            "key": "MATH 225",
+                            "title": "Path to Calculus",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],
@@ -2780,7 +2790,7 @@
                                     "prefix": "MATH",
                                     "number": "260",
                                     "key": "MATH 260",
-                                    "title": "Pre-Calculus",
+                                    "title": "Precalculus",
                                     "min_units": 5.0,
                                     "max_units": 5.0,
                                     "notes": []
@@ -3201,8 +3211,8 @@
                                     "number": "13",
                                     "key": "MATH 13",
                                     "title": "Pre-Calculus",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
                                     "notes": []
                                 }
                             ],
@@ -5104,8 +5114,8 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "1",
-                            "key": "MATH 1",
+                            "number": "14",
+                            "key": "MATH 14",
                             "title": "College Algebra",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -5736,6 +5746,26 @@
                 }
             },
             {
+                "sending_name": "Evergreen Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "020",
+                            "key": "MATH 020",
+                            "title": "College Algebra for Liberal Arts",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
                     "type": "SET",
@@ -5766,7 +5796,7 @@
                             "prefix": "MATH",
                             "number": "333",
                             "key": "MATH 333",
-                            "title": "Introduction to College Algebra",
+                            "title": "College Algebra for Liberal Arts",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -7300,11 +7330,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "123",
-                            "key": "MATH 123",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introductions to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7332,9 +7362,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "300",
-                            "key": "STAT 300",
-                            "title": "Introduction to Probability and Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7342,9 +7372,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "480",
-                            "key": "STAT 480",
-                            "title": "Introduction to Probability and Statistics - Honors",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7370,11 +7400,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "115",
-                            "key": "MATH 115",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7400,21 +7430,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "B22",
-                            "key": "MATH B22",
-                            "title": "Elementary Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "B22L",
-                            "key": "MATH B22L",
-                            "title": "Elementary Probability and Statistics with Lab",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.5,
                             "max_units": 4.5,
                             "notes": []
@@ -7440,10 +7470,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "2",
-                            "key": "MATH 2",
+                            "subject": "Introduction to Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -7460,10 +7490,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "13",
-                            "key": "MATH 13",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -7480,21 +7510,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "18",
-                            "key": "MATH 18",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "18s",
-                            "key": "MATH 18s",
-                            "title": "Introduction to Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7520,11 +7550,11 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "12",
-                            "key": "MATH 12",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -7560,11 +7590,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "200",
-                            "key": "MATH 200",
-                            "title": "Elementary Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7580,11 +7610,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "112",
-                            "key": "MATH 112",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7620,21 +7650,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "C121",
-                            "key": "MATH C121",
-                            "title": "Elementary Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "C121H",
-                            "key": "MATH C121H",
-                            "title": "Elementary Probability and Statistics: Honors",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics Honors",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -7660,11 +7690,11 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MTH",
-                            "number": "43",
-                            "key": "MTH 43",
-                            "title": "Introduction to Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7704,7 +7734,7 @@
                             "prefix": "STAT",
                             "number": "10",
                             "key": "STAT 10",
-                            "title": "Elementary Statistics",
+                            "title": "Introduction to Statistics (CCN: STAT C1000)",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7720,21 +7750,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "165",
-                            "key": "MATH 165",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "165H",
-                            "key": "MATH 165H",
-                            "title": "Introductory Statistics - Honors",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000 H",
+                            "key": "STAT C1000 H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7774,17 +7804,17 @@
                             "prefix": "LALS",
                             "number": "5",
                             "key": "LALS 5",
-                            "title": "Introduction to Statistical Methods in LALS",
+                            "title": "Introduction to Statistical Methods in Latin American and Latino/a Studies",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "80",
-                            "key": "MATH 80",
-                            "title": "Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -7800,30 +7830,30 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "11",
-                            "key": "MATH 11",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSY",
+                            "prefix": "PSYC",
                             "number": "42",
-                            "key": "PSY 42",
+                            "key": "PSYC 42",
                             "title": "Statistics for the Behavioral Sciences",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Statistics",
-                            "prefix": "STAT",
-                            "number": "7",
-                            "key": "STAT 7",
+                            "subject": "Business Administration",
+                            "prefix": "BA",
+                            "number": "23",
+                            "key": "BA 23",
                             "title": "Elementary Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -7840,10 +7870,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "025",
-                            "key": "MATH 025",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -7860,10 +7890,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "C160",
-                            "key": "MATH C160",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -7880,10 +7910,10 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "13",
-                            "key": "MATH 13",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -7910,11 +7940,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "115",
-                            "key": "MATH 115",
-                            "title": "Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7940,11 +7970,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "200",
-                            "key": "MATH 200",
-                            "title": "Elementary Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -7980,31 +8010,31 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "140",
-                            "key": "MATH 140",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "140H",
-                            "key": "MATH 140H",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
                             "title": "Introductory Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "140X",
-                            "key": "MATH 140X",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -8041,10 +8071,10 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "14",
-                            "key": "MATH 14",
-                            "title": "Statistical Methods",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8070,21 +8100,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "15",
-                            "key": "MATH 15",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "16",
-                            "key": "MATH 16",
-                            "title": "Introduction to Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -8110,10 +8140,10 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "021",
-                            "key": "MATH 021",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -8140,11 +8170,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "1050",
-                            "key": "MATH 1050",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8160,11 +8190,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "2",
-                            "key": "MATH 2",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8180,21 +8210,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150H",
-                            "key": "MATH 150H",
-                            "title": "Honors Elementary Statistics with Probability",
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8220,11 +8250,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "164",
-                            "key": "MATH 164",
-                            "title": "Introduction to Probability and Statistics",
+                            "subject": "Introduction to Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8250,11 +8280,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "014",
-                            "key": "MATH 014",
-                            "title": "Statistical Methods",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8322,9 +8352,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "300",
-                            "key": "STAT 300",
-                            "title": "Introduction to Probability and Statistics",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8332,9 +8362,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "480",
-                            "key": "STAT 480",
-                            "title": "Introduction to Probability and Statistics- Honors",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8350,30 +8380,30 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "110",
-                            "key": "MATH 110",
-                            "title": "Introduction to Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "110H",
-                            "key": "MATH 110H",
-                            "title": "Introduction to Probability and Statistics - Honors",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSYCH",
+                            "prefix": "PSYC",
                             "number": "120",
-                            "key": "PSYCH 120",
+                            "key": "PSYC 120",
                             "title": "Statistics for the Social and Behavioral Sciences",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -8390,10 +8420,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "247",
-                            "key": "MATH 247",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -8410,11 +8440,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "160",
-                            "key": "MATH 160",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8440,11 +8470,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "120 C",
-                            "key": "MATH 120 C",
-                            "title": "Introduction to Probability and Statistics",
+                            "subject": "Statis",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8510,21 +8540,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "10",
-                            "key": "MATH 10",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "10H",
-                            "key": "MATH 10H",
-                            "title": "Introductory Statistics - HONORS",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - HONORS",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -8580,30 +8610,30 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "142",
-                            "key": "MATH 142",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "142L",
-                            "key": "MATH 142L",
-                            "title": "Elementary Statistics with Probability and Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSYCH",
+                            "prefix": "PSYC",
                             "number": "214",
-                            "key": "PSYCH 214",
+                            "key": "PSYC 214",
                             "title": "Introduction to Statistics for Psychology",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -8620,11 +8650,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8650,21 +8680,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150H",
-                            "key": "MATH 150H",
-                            "title": "Honors Elementary Statistics and Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8690,11 +8720,11 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "063",
-                            "key": "MATH 063",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -8710,11 +8740,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "202",
-                            "key": "MATH 202",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8732,9 +8762,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "300",
-                            "key": "STAT 300",
-                            "title": "Introduction to Probability and Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8760,11 +8790,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "10",
-                            "key": "MATH 10",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -8810,21 +8840,21 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "11",
-                            "key": "MATH 11",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "11H",
-                            "key": "MATH 11H",
-                            "title": "Honors Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8841,9 +8871,9 @@
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSY",
+                            "prefix": "PSYC",
                             "number": "42",
-                            "key": "PSY 42",
+                            "key": "PSYC 42",
                             "title": "Statistics for the Behavioral Sciences",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -8860,31 +8890,31 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "120 F",
-                            "key": "MATH 120 F",
-                            "title": "Introductory Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "120HF",
-                            "key": "MATH 120HF",
-                            "title": "Honors Introductory Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "121 F",
-                            "key": "MATH 121 F",
-                            "title": "Introductory Probability and Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -8950,10 +8980,10 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "5",
-                            "key": "MATH 5",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -8980,31 +9010,31 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136",
-                            "key": "MATH 136",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136+",
-                            "key": "MATH 136+",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136H",
-                            "key": "MATH 136H",
-                            "title": "Honors Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9030,10 +9060,10 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "G160",
-                            "key": "MATH G160",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -9084,17 +9114,17 @@
                             "prefix": "ECON",
                             "number": "215",
                             "key": "ECON 215",
-                            "title": "Statistics for Business and Economics",
+                            "title": "Statistics for Business, Economics, and Social Sciences",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "160",
-                            "key": "MATH 160",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9130,11 +9160,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "13",
-                            "key": "MAT 13",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9150,11 +9180,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "119",
-                            "key": "MATH 119",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9220,13 +9250,13 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "10",
-                            "key": "MATH 10",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -9280,11 +9310,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "201",
-                            "key": "MAT 201",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -9300,10 +9330,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "13",
-                            "key": "MATH 13",
+                            "subject": "Statistic",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -9320,11 +9350,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "40",
-                            "key": "MATH 40",
-                            "title": "Statistics and Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9340,11 +9370,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "40",
-                            "key": "MATH 40",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -9360,10 +9390,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "025",
-                            "key": "MATH 025",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -9382,9 +9412,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "1",
-                            "key": "STAT 1",
-                            "title": "Elementary Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9392,9 +9422,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "1H",
-                            "key": "STAT 1H",
-                            "title": "Honors Elementary Statistics",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9410,11 +9440,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9430,21 +9460,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9487,11 +9517,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227",
-                                    "key": "MATH 227",
-                                    "title": "Elementary Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -9531,11 +9561,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227S",
-                                    "key": "MATH 227S",
-                                    "title": "Statistics with support",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000E",
+                                    "key": "STAT C1000E",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -9554,11 +9584,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9605,20 +9635,20 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9644,21 +9674,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics With Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9674,21 +9704,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9714,10 +9744,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "110",
-                            "key": "MATH 110",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -9734,11 +9764,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "11",
-                            "key": "MATH 11",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9765,19 +9795,19 @@
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSY",
+                            "prefix": "PSYC",
                             "number": "42",
-                            "key": "PSY 42",
+                            "key": "PSYC 42",
                             "title": "Statistics for the Behavioral Sciences",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Statistics",
-                            "prefix": "STAT",
-                            "number": "7",
-                            "key": "STAT 7",
+                            "subject": "Business Administration",
+                            "prefix": "BA",
+                            "number": "23",
+                            "key": "BA 23",
                             "title": "Elementary Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -9794,11 +9824,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MTH",
-                            "number": "220",
-                            "key": "MTH 220",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9814,11 +9844,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "-10",
-                            "key": "MATH -10",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -9854,10 +9884,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Math",
-                            "prefix": "MATH",
-                            "number": "13",
-                            "key": "MATH 13",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -9914,21 +9944,21 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "103",
-                            "key": "MATH 103",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "103S",
-                            "key": "MATH 103S",
-                            "title": "Statistics with Integrated Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics (Embedded Support)",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -9974,31 +10004,31 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "010",
-                            "key": "MAT 010",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "010H",
-                            "key": "MAT 010H",
-                            "title": "Elementary Statistics - Honors",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "010X",
-                            "key": "MAT 010X",
-                            "title": "Elementary Statistics with Additional Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 6.0,
                             "max_units": 6.0,
                             "notes": []
@@ -10014,11 +10044,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "134",
-                            "key": "MATH 134",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10044,11 +10074,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "16",
-                            "key": "MATH 16",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10084,21 +10114,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15",
-                            "key": "MATH M15",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15H",
-                            "key": "MATH M15H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10124,21 +10154,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "12",
-                            "key": "MAT 12",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "12H",
-                            "key": "MAT 12H",
-                            "title": "Honors Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10155,12 +10185,12 @@
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSY",
+                            "prefix": "PSYC",
                             "number": "48",
-                            "key": "PSY 48",
+                            "key": "PSYC 48",
                             "title": "Statistics for the Behavioral Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -10169,8 +10199,8 @@
                             "number": "48",
                             "key": "SOC 48",
                             "title": "Statistics for the Behavioral Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -10194,21 +10224,21 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "110",
-                            "key": "MATH 110",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "110H",
-                            "key": "MATH 110H",
-                            "title": "Elementary Statistics - Honors",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics -  Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -10224,10 +10254,10 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH-",
-                            "number": "140",
-                            "key": "MATH- 140",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
@@ -10264,11 +10294,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "232",
-                            "key": "MATH 232",
-                            "title": "Statistics",
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -10284,21 +10314,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "12",
-                            "key": "MAT 12",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "12H",
-                            "key": "MAT 12H",
-                            "title": "Honors Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10315,12 +10345,12 @@
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSY",
+                            "prefix": "PSYC",
                             "number": "48",
-                            "key": "PSY 48",
+                            "key": "PSYC 48",
                             "title": "Statistics for the Behavioral Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -10329,8 +10359,8 @@
                             "number": "48",
                             "key": "SOC 48",
                             "title": "Statistics for the Behavioral Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -10344,10 +10374,10 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "159",
-                            "key": "MATH 159",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
@@ -10364,10 +10394,10 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "A160",
-                            "key": "MATH A160",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -10394,21 +10424,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105",
-                            "key": "MATH R105",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105H",
-                            "key": "MATH R105H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10444,11 +10474,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "106",
-                            "key": "MAT 106",
-                            "title": "Statistics",
+                            "subject": "Introduction to Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10484,11 +10514,11 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "120",
-                            "key": "MATH 120",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10536,9 +10566,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "050",
-                            "key": "STAT 050",
-                            "title": "Elementary Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10564,11 +10594,11 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "P122",
-                            "key": "MATH P122",
-                            "title": "Introduction to Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10584,10 +10614,10 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "11",
-                            "key": "MATH 11",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -10634,21 +10664,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "130",
-                            "key": "MATH 130",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "130H",
-                            "key": "MATH 130H",
-                            "title": "Statistics Honors",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10674,21 +10704,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "12",
-                            "key": "MAT 12",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MAT",
-                            "number": "12H",
-                            "key": "MAT 12H",
-                            "title": "Honors Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10705,12 +10735,12 @@
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSY",
+                            "prefix": "PSYC",
                             "number": "48",
-                            "key": "PSY 48",
+                            "key": "PSYC 48",
                             "title": "Statistics for the Behavioral Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -10719,8 +10749,8 @@
                             "number": "48",
                             "key": "SOC 48",
                             "title": "Statistics for the Behavioral Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -10736,9 +10766,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "300",
-                            "key": "STAT 300",
-                            "title": "Introduction to Probability and Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10746,9 +10776,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "480",
-                            "key": "STAT 480",
-                            "title": "Introduction to Probability and Statistics - Honors",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10774,10 +10804,10 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "10",
-                            "key": "MATH 10",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
@@ -10814,20 +10844,20 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "108",
-                            "key": "MATH 108",
-                            "title": "Introduction to Probability and Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSYCH",
+                            "prefix": "PSYC",
                             "number": "105",
-                            "key": "PSYCH 105",
+                            "key": "PSYC 105",
                             "title": "Statistics for the Behavioral Sciences",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -10868,11 +10898,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "119",
-                                    "key": "MATH 119",
-                                    "title": "Elementary Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 3.0,
                                     "max_units": 3.0,
                                     "notes": []
@@ -10942,11 +10972,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "119",
-                                    "key": "MATH 119",
-                                    "title": "Elementary Statistics",
+                                    "subject": "Introduction to Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 3.0,
                                     "max_units": 3.0,
                                     "notes": []
@@ -11016,11 +11046,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "119",
-                                    "key": "MATH 119",
-                                    "title": "Elementary Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 3.0,
                                     "max_units": 3.0,
                                     "notes": []
@@ -11067,20 +11097,20 @@
                     "items": [
                         {
                             "subject": "Statistics",
-                            "prefix": "STATS",
-                            "number": "12",
-                            "key": "STATS 12",
-                            "title": "Introduction to Probability and Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Statistics",
-                            "prefix": "STATS",
-                            "number": "12EX",
-                            "key": "STATS 12EX",
-                            "title": "Introduction to Probability and Statistics with Support",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.5,
                             "max_units": 4.5,
                             "notes": []
@@ -11106,11 +11136,11 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "063",
-                            "key": "MATH 063",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -11126,31 +11156,31 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "219",
-                            "key": "MATH 219",
-                            "title": "Statistics and Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "219H",
-                            "key": "MATH 219H",
-                            "title": "Honors Statistics and Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "219S",
-                            "key": "MATH 219S",
-                            "title": "Statistics and Probability with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.5,
                             "max_units": 4.5,
                             "notes": []
@@ -11183,11 +11213,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "117",
-                                    "key": "MATH 117",
-                                    "title": "Elementary Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -11251,10 +11281,10 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "54",
-                            "key": "MATH 54",
-                            "title": "Elementary Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11270,20 +11300,20 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "15",
-                            "key": "MATH 15",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Psychology",
-                            "prefix": "PSYCH",
+                            "prefix": "PSYC",
                             "number": "9",
-                            "key": "PSYCH 9",
+                            "key": "PSYC 9",
                             "title": "Introduction to Behavioral Sciences Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
@@ -11300,31 +11330,31 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "219",
-                            "key": "MATH 219",
-                            "title": "Statistics and Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "219H",
-                            "key": "MATH 219H",
-                            "title": "Honors Statistics and Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "219S",
-                            "key": "MATH 219S",
-                            "title": "Statistics and Probability with Integrated Review",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.5,
                             "max_units": 4.5,
                             "notes": []
@@ -11360,21 +11390,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "14",
-                            "key": "MATH 14",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "14S",
-                            "key": "MATH 14S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 6.0,
                             "max_units": 6.0,
                             "notes": []
@@ -11400,13 +11430,13 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "13",
-                            "key": "MATH 13",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
-                            "max_units": 6.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -11440,11 +11470,11 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "200",
-                            "key": "MATH 200",
-                            "title": "Elementary Probability & Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11470,11 +11500,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "011",
-                            "key": "MATH 011",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11510,11 +11540,11 @@
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "119",
-                            "key": "MATH 119",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11582,9 +11612,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "1510",
-                            "key": "STAT 1510",
-                            "title": "Elementary Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -11600,11 +11630,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "V44",
-                            "key": "MATH V44",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11630,10 +11660,10 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "120",
-                            "key": "MATH 120",
+                            "subject": "Introduction to Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -11654,7 +11684,7 @@
                             "prefix": "PSYC",
                             "number": "215",
                             "key": "PSYC 215",
-                            "title": "Statistics for the Behavioral Sciences",
+                            "title": "Introduction to Statistics in Social and Behavioral Sciences",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -11670,21 +11700,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11700,21 +11730,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "010",
-                            "key": "MATH 010",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "010H",
-                            "key": "MATH 010H",
-                            "title": "Honors Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11732,9 +11762,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "1",
-                            "key": "STAT 1",
-                            "title": "Introduction to Statistical Methods",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11762,9 +11792,9 @@
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "1",
-                            "key": "STAT 1",
-                            "title": "Introduction to Statistical Methods",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -12256,7 +12286,7 @@
                             "prefix": "MATH",
                             "number": "50A",
                             "key": "MATH 50A",
-                            "title": "Differential Calculus",
+                            "title": "Calculus I: Single Variable Calculus",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -13159,8 +13189,8 @@
                             "number": "265",
                             "key": "MATH 265",
                             "title": "Calculus with Analytic Geometry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -13379,8 +13409,8 @@
                             "number": "171",
                             "key": "MATH 171",
                             "title": "Calculus: First Course",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -13599,8 +13629,8 @@
                             "number": "A180",
                             "key": "MATH A180",
                             "title": "Calculus 1",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -14800,7 +14830,7 @@
                             "prefix": "MATH",
                             "number": "50B",
                             "key": "MATH 50B",
-                            "title": "Integral Calculus",
+                            "title": "Calculus II: Single Variable",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -15693,8 +15723,8 @@
                             "number": "266",
                             "key": "MATH 266",
                             "title": "Calculus with Analytic Geometry II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -16103,8 +16133,8 @@
                             "number": "A185",
                             "key": "MATH A185",
                             "title": "Calculus 2",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -17254,7 +17284,7 @@
                             "prefix": "MATH",
                             "number": "50C",
                             "key": "MATH 50C",
-                            "title": "Multivariable Calculus",
+                            "title": "Calculus III: Multivariable Calculus",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -18091,8 +18121,8 @@
                             "number": "267",
                             "key": "MATH 267",
                             "title": "Calculus with Analytic Geometry III",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -18301,8 +18331,8 @@
                             "number": "173",
                             "key": "MATH 173",
                             "title": "Calculus: Third Course",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -18491,8 +18521,8 @@
                             "number": "A280",
                             "key": "MATH A280",
                             "title": "Calculus 3",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -18770,7 +18800,7 @@
                             "prefix": "MATH",
                             "number": "3",
                             "key": "MATH 3",
-                            "title": "Vector Calculus",
+                            "title": "Multivariable Calculus",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -19482,6 +19512,26 @@
                 }
             },
             {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C285",
+                            "key": "MATH C285",
+                            "title": "Introduction to Linear Algebra and Differential Equations",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of Alameda",
                 "sending_articulation": {
                     "type": "SET",
@@ -19775,6 +19825,26 @@
                             "title": "Differential Equations",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cypress College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "250BC",
+                            "key": "MATH 250BC",
+                            "title": "Linear Algebra and Differential Equations",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],

@@ -762,6 +762,26 @@
                 }
             },
             {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "V40",
+                            "key": "MATH V40",
+                            "title": "Exploration of Mathematical Ideas",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
                     "type": "SET",
@@ -852,7 +872,28 @@
         "title": "Mathematical Problem Solving",
         "min_units": 3.0,
         "max_units": 3.0,
-        "articulations": []
+        "articulations": [
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "V40",
+                            "key": "MATH V40",
+                            "title": "Exploration of Mathematical Ideas",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
     },
     {
         "type": "COURSE",
@@ -2690,6 +2731,26 @@
                 }
             },
             {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "V38",
+                            "key": "MATH V38",
+                            "title": "Mathematics for Elementary School Teachers",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -4274,6 +4335,26 @@
                 }
             },
             {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "V20",
+                            "key": "MATH V20",
+                            "title": "Precalculus Mathematics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -4356,26 +4437,51 @@
         ]
     },
     {
-        "type": "COURSE",
-        "subject": "Mathematics",
-        "prefix": "MATH",
-        "number": "140A",
-        "key": "MATH 140A",
-        "title": "Precalculus I",
-        "min_units": 2.0,
-        "max_units": 2.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Mathematics",
-        "prefix": "MATH",
-        "number": "140B",
-        "key": "MATH 140B",
-        "title": "Precalculus II",
-        "min_units": 2.0,
-        "max_units": 2.0,
-        "articulations": []
+        "type": "SERIES",
+        "key": "MATH 140A + 140B",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "subject": "Mathematics",
+                "prefix": "MATH",
+                "number": "140A",
+                "key": "MATH 140A",
+                "title": "Precalculus I",
+                "min_units": 2.0,
+                "max_units": 2.0
+            },
+            {
+                "subject": "Mathematics",
+                "prefix": "MATH",
+                "number": "140B",
+                "key": "MATH 140B",
+                "title": "Precalculus II",
+                "min_units": 2.0,
+                "max_units": 2.0
+            }
+        ],
+        "articulations": [
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "V20",
+                            "key": "MATH V20",
+                            "title": "Precalculus Mathematics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
     },
     {
         "type": "COURSE",
@@ -5938,6 +6044,46 @@
                 }
             },
             {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "V43",
+                            "key": "MATH V43",
+                            "title": "Elementary Statistics with Applications for Health Care Professionals",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Psychology",
+                            "prefix": "PSY",
+                            "number": "V04",
+                            "key": "PSY V04",
+                            "title": "Introductory Statistics for the Social and Behavioral Sciences",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -7398,6 +7544,36 @@
                             "title": "Elementary Statistics",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Psychology",
+                            "prefix": "PSY",
+                            "number": "V04",
+                            "key": "PSY V04",
+                            "title": "Introductory Statistics for the Social and Behavioral Sciences",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -9569,6 +9745,26 @@
                 }
             },
             {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "V21A",
+                            "key": "MATH V21A",
+                            "title": "Calculus with Analytic Geometry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -10591,6 +10787,26 @@
                 }
             },
             {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "V21B",
+                            "key": "MATH V21B",
+                            "title": "Calculus with Analytic Geometry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -10746,6 +10962,26 @@
                             "title": "Calculus 3",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "V21C",
+                            "key": "MATH V21C",
+                            "title": "Multivariable Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
