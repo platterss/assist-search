@@ -1490,27 +1490,53 @@
             {
                 "sending_name": "Sierra College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biological Sciences",
-                            "prefix": "BIOL",
-                            "number": "2",
-                            "key": "BIOL 2",
-                            "title": "Botany",
-                            "min_units": 4.5,
-                            "max_units": 4.5,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Biological Sciences",
+                                    "prefix": "BIOL",
+                                    "number": "2",
+                                    "key": "BIOL 2",
+                                    "title": "Botany",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Biological Sciences",
+                                    "prefix": "BIOL",
+                                    "number": "3",
+                                    "key": "BIOL 3",
+                                    "title": "General Zoology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Biological Sciences",
-                            "prefix": "BIOL",
-                            "number": "3",
-                            "key": "BIOL 3",
-                            "title": "General Zoology",
-                            "min_units": 4.5,
-                            "max_units": 4.5,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biological Sciences",
+                                    "prefix": "BIOL",
+                                    "number": "140",
+                                    "key": "BIOL 140",
+                                    "title": "Organismal Biology",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],

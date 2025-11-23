@@ -8732,27 +8732,53 @@
             {
                 "sending_name": "San Diego Mesa College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "130",
-                            "key": "CHEM 130",
-                            "title": "Introduction to Organic and Biological Chemistry",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "103",
+                                    "key": "CHEM 103",
+                                    "title": "General, Organic, and Biological Chemistry",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "130L",
-                            "key": "CHEM 130L",
-                            "title": "Introduction to Organic and Biological Chemistry Laboratory",
-                            "min_units": 1.0,
-                            "max_units": 1.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "130",
+                                    "key": "CHEM 130",
+                                    "title": "Introduction to Organic and Biological Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "130L",
+                                    "key": "CHEM 130L",
+                                    "title": "Introduction to Organic and Biological Chemistry Laboratory",
+                                    "min_units": 1.0,
+                                    "max_units": 1.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -12344,9 +12370,9 @@
                             "prefix": "CHEM",
                             "number": "281",
                             "key": "CHEM 281",
-                            "title": "Organic Chemistry",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "title": "Organic Chemistry I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -12354,9 +12380,9 @@
                             "prefix": "CHEM",
                             "number": "282",
                             "key": "CHEM 282",
-                            "title": "Organic Chemistry",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "title": "Organic Chemistry II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -15519,9 +15545,9 @@
                             "prefix": "CHEM",
                             "number": "281",
                             "key": "CHEM 281",
-                            "title": "Organic Chemistry",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "title": "Organic Chemistry I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -15529,9 +15555,9 @@
                             "prefix": "CHEM",
                             "number": "282",
                             "key": "CHEM 282",
-                            "title": "Organic Chemistry",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "title": "Organic Chemistry II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -15834,6 +15860,56 @@
                             "title": "Organic Chemistry B Laboratory",
                             "min_units": 1.0,
                             "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Clovis Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "28A",
+                            "key": "CHEM 28A",
+                            "title": "Organic Chemistry I",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "28B",
+                            "key": "CHEM 28B",
+                            "title": "Organic Chemistry II",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "29A",
+                            "key": "CHEM 29A",
+                            "title": "Organic Chemistry Laboratory I",
+                            "min_units": 2.0,
+                            "max_units": 2.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "29B",
+                            "key": "CHEM 29B",
+                            "title": "Organic Chemistry Laboratory II",
+                            "min_units": 2.0,
+                            "max_units": 2.0,
                             "notes": []
                         }
                     ],
@@ -16411,6 +16487,36 @@
                 }
             },
             {
+                "sending_name": "Laney College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "12A",
+                            "key": "CHEM 12A",
+                            "title": "Organic Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "12B",
+                            "key": "CHEM 12B",
+                            "title": "Organic Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
                     "type": "SET",
@@ -16768,6 +16874,36 @@
                             "number": "12B",
                             "key": "CHE 12B",
                             "title": "Organic Chemistry, II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Ohlone College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "112A",
+                            "key": "CHEM 112A",
+                            "title": "Organic Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "112B",
+                            "key": "CHEM 112B",
+                            "title": "Organic Chemistry",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -17337,6 +17473,36 @@
                 }
             },
             {
+                "sending_name": "Sierra College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "12A",
+                            "key": "CHEM 12A",
+                            "title": "Organic Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "12B",
+                            "key": "CHEM 12B",
+                            "title": "Organic Chemistry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Skyline College",
                 "sending_articulation": {
                     "type": "SET",
@@ -17440,6 +17606,36 @@
                             "title": "General Organic Chemistry II",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Victor Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "281",
+                            "key": "CHEM 281",
+                            "title": "Organic Chemistry I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "282",
+                            "key": "CHEM 282",
+                            "title": "Organic Chemistry II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],

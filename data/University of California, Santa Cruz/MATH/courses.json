@@ -2450,30 +2450,56 @@
             {
                 "sending_name": "Madera Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "3A",
-                            "key": "MATH 3A",
-                            "title": "College Algebra",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "3A",
+                                    "key": "MATH 3A",
+                                    "title": "College Algebra",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "4A",
+                                    "key": "MATH 4A",
+                                    "title": "Trigonometry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Content credit only"
+                                    ]
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "4A",
-                            "key": "MATH 4A",
-                            "title": "Trigonometry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": [
-                                "Content credit only"
-                            ]
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "4B",
+                                    "key": "MATH 4B",
+                                    "title": "Precalculus",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -3128,30 +3154,56 @@
             {
                 "sending_name": "Reedley College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "3A",
-                            "key": "MATH 3A",
-                            "title": "College Algebra for STEM",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "3A",
+                                    "key": "MATH 3A",
+                                    "title": "College Algebra for STEM",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "4A",
+                                    "key": "MATH 4A",
+                                    "title": "Trigonometry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Content credit only"
+                                    ]
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "4A",
-                            "key": "MATH 4A",
-                            "title": "Trigonometry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": [
-                                "Content credit only"
-                            ]
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "4B",
+                                    "key": "MATH 4B",
+                                    "title": "Precalculus",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -13789,6 +13841,16 @@
                             "title": "Honors Second Calculus Course",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "70S",
+                            "key": "MATH 70S",
+                            "title": "Second Calculus Course with Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],

@@ -10,27 +10,47 @@
         "max_units": 4.5,
         "articulations": [
             {
+                "sending_name": "Allan Hancock College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "American River College",
                 "sending_articulation": {
                     "type": "SET",
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "300",
-                            "key": "ENGWR 300",
-                            "title": "College Composition",
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
                         },
                         {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "480",
-                            "key": "ENGWR 480",
-                            "title": "Honors College Composition",
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -58,9 +78,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101",
-                            "key": "ENGL 101",
-                            "title": "College Reading and Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -68,9 +88,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101H",
-                            "key": "ENGL 101H",
-                            "title": "College Composition Honors",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -130,17 +150,67 @@
                 }
             },
             {
-                "sending_name": "Cerritos College",
+                "sending_name": "Barstow Community College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "100",
-                            "key": "ENGL 100",
-                            "title": "Freshman Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English as a Second Language",
+                            "prefix": "ESL",
+                            "number": "1A",
+                            "key": "ESL 1A",
+                            "title": "ESL College Composition and Reading",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Berkeley City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Butte College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -148,11 +218,141 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "100S",
-                            "key": "ENGL 100S",
-                            "title": "Enhanced Freshman Composition",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cabrillo College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "1AMC",
+                            "key": "ENGL 1AMC",
+                            "title": "College Composition: Multicultural Emphasis",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "1AMCH",
+                            "key": "ENGL 1AMCH",
+                            "title": "Honors College Composition: Multicultural Emphasis",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English as a Second Language",
+                            "prefix": "ESL",
+                            "number": "1A",
+                            "key": "ESL 1A",
+                            "title": "College Composition for ESL",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Canada College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cerritos College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.5,
                             "max_units": 4.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English as a Second Language",
+                            "prefix": "ESL",
+                            "number": "180",
+                            "key": "ESL 180",
+                            "title": "College Composition for Multilingual Students",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -170,9 +370,79 @@
                             "prefix": "ENGL",
                             "number": "1A",
                             "key": "ENGL 1A",
-                            "title": "Composition",
+                            "title": "Academic Reading and Writing (CCN: ENGL C1000)",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Citrus College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "102",
+                            "key": "ENGL 102",
+                            "title": "Introduction to Literature",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000 E",
+                            "key": "ENGL C1000 E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000 H",
+                            "key": "ENGL C1000 H",
+                            "title": "Academic Reading and Writing - Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "City College of San Francisco",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -240,6 +510,66 @@
                 }
             },
             {
+                "sending_name": "College of Marin",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "150SL",
+                            "key": "ENGL 150SL",
+                            "title": "College Writing and Reading (1A) for Bilingual/Multilingual Students",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of San Mateo",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
                     "type": "SET",
@@ -248,9 +578,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101",
-                            "key": "ENGL 101",
-                            "title": "English Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -258,9 +588,59 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101H",
-                            "key": "ENGL 101H",
-                            "title": "Honors - English Composition",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Desert",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Redwoods",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -278,11 +658,121 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "001",
-                            "key": "ENGL 001",
-                            "title": "College Reading & Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Siskiyous",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Columbia College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Compton College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Copper Mountain College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -296,31 +786,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "300",
-                            "key": "ENGWR 300",
-                            "title": "College Composition",
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
                         },
                         {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "480",
-                            "key": "ENGWR 480",
-                            "title": "Honors College Composition",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Honors",
-                            "prefix": "HONOR",
-                            "number": "375",
-                            "key": "HONOR 375",
-                            "title": "Honors College Composition",
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -338,9 +818,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101",
-                            "key": "ENGL 101",
-                            "title": "Freshman Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -348,9 +828,29 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101H",
-                            "key": "ENGL 101H",
-                            "title": "Freshman Composition - Honors",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cuesta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -398,9 +898,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "100 C",
-                            "key": "ENGL 100 C",
-                            "title": "College Writing",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -408,9 +908,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "100HC",
-                            "key": "ENGL 100HC",
-                            "title": "Honors College Writing",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -418,9 +918,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101 C",
-                            "key": "ENGL 101 C",
-                            "title": "Enhanced College Writing",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -431,6 +931,46 @@
                             "number": "110 C",
                             "key": "ESL 110 C",
                             "title": "College Composition for Non-Native Speakers",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "De Anza College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - HONORS",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English As a Second Language",
+                            "prefix": "ESL",
+                            "number": "5",
+                            "key": "ESL 5",
+                            "title": "Advanced Composition and Reading",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -508,9 +1048,19 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "1A",
-                            "key": "ENGL 1A",
-                            "title": "Reading and Composition",
+                            "number": "1AE",
+                            "key": "ENGL 1AE",
+                            "title": "Reading and Composition for English Language Learners",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -518,11 +1068,61 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "1AH",
-                            "key": "ENGL 1AH",
-                            "title": "Honors Reading and Composition",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Evergreen Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Feather River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "102",
+                            "key": "ENGL 102",
+                            "title": "Introduction to Literature",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -536,21 +1136,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "300",
-                            "key": "ENGWR 300",
-                            "title": "College Composition",
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
                         },
                         {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "480",
-                            "key": "ENGWR 480",
-                            "title": "Honors College Composition",
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Honors Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -563,6 +1163,46 @@
                             "title": "Advanced Composition",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Foothill College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English for Second Language Learners",
+                            "prefix": "ESLL",
+                            "number": "26",
+                            "key": "ESLL 26",
+                            "title": "Advanced Composition & Reading",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -650,6 +1290,66 @@
                 }
             },
             {
+                "sending_name": "Gavilan College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.5,
+                            "max_units": 4.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "SET",
@@ -710,6 +1410,36 @@
                 }
             },
             {
+                "sending_name": "Hartnell College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Imperial Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -728,9 +1458,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "110",
-                            "key": "ENGL 110",
-                            "title": "Composition and Reading",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -790,6 +1520,76 @@
                 }
             },
             {
+                "sending_name": "Lake Tahoe Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Laney College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing \u200b",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Las Positas College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
                     "type": "SET",
@@ -798,9 +1598,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "1",
-                            "key": "ENGL 1",
-                            "title": "Reading and Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -808,21 +1608,21 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "1H",
-                            "key": "ENGL 1H",
-                            "title": "Honors Reading and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1S",
-                            "key": "ENGL 1S",
-                            "title": "Reading and Composition with Support",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -1150,6 +1950,26 @@
                 }
             },
             {
+                "sending_name": "Mendocino College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Merced College",
                 "sending_articulation": {
                     "type": "SET",
@@ -1170,7 +1990,7 @@
                 }
             },
             {
-                "sending_name": "MiraCosta College",
+                "sending_name": "Merritt College",
                 "sending_articulation": {
                     "type": "SET",
                     "conjunction": "OR",
@@ -1178,9 +1998,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "100",
-                            "key": "ENGL 100",
-                            "title": "Composition and Reading",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1188,11 +2008,91 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "100H",
-                            "key": "ENGL 100H",
-                            "title": "Composition and Reading (Honors)",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "MiraCosta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Modesto Junior College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English Language Instruction for College",
+                            "prefix": "ELIC",
+                            "number": "100",
+                            "key": "ELIC 100",
+                            "title": "Intensive Reading, Writing, and Reasoning for English Language Learners",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Monterey Peninsula College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -1278,9 +2178,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "1A",
-                            "key": "ENGL 1A",
-                            "title": "Freshman Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1288,19 +2188,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "1AH",
-                            "key": "ENGL 1AH",
-                            "title": "Freshman Composition - Honors",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1AM",
-                            "key": "ENGL 1AM",
-                            "title": "College Composition for Non-Native English Speakers",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1317,22 +2207,52 @@
                     "items": [
                         {
                             "subject": "English",
-                            "prefix": "ENGL-",
-                            "number": "101",
-                            "key": "ENGL- 101",
-                            "title": "College Composition",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
                         },
                         {
                             "subject": "English",
-                            "prefix": "ENGL-",
-                            "number": "101H",
-                            "key": "ENGL- 101H",
-                            "title": "Honors College Composition",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing- Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Napa Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "120B",
+                            "key": "ENGL 120B",
+                            "title": "Reading & Composition STRETCH2",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -1361,6 +2281,26 @@
                             "number": "1AH",
                             "key": "ENG 1AH",
                             "title": "Honors English Composition",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Ohlone College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1421,6 +2361,26 @@
                             "number": "R101H",
                             "key": "ENGL R101H",
                             "title": "Honors: College Composition",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Palo Verde College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Academic Reading and Writing",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1576,11 +2536,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "300",
-                            "key": "ENGWR 300",
-                            "title": "College Composition",
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1648,9 +2608,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101",
-                            "key": "ENGL 101",
-                            "title": "College Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1658,9 +2618,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101H",
-                            "key": "ENGL 101H",
-                            "title": "College Composition - Honors",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing- Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1678,9 +2638,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101",
-                            "key": "ENGL 101",
-                            "title": "Reading and Composition",
+                            "number": "105",
+                            "key": "ENGL 105",
+                            "title": "Composition and Literature",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1688,9 +2648,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "105",
-                            "key": "ENGL 105",
-                            "title": "Composition and Literature",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1708,9 +2668,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101",
-                            "key": "ENGL 101",
-                            "title": "Reading and Composition",
+                            "number": "105",
+                            "key": "ENGL 105",
+                            "title": "Composition and Literature",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1718,9 +2678,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "105",
-                            "key": "ENGL 105",
-                            "title": "Composition and Literature",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1738,9 +2698,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101",
-                            "key": "ENGL 101",
-                            "title": "Reading and Composition",
+                            "number": "105",
+                            "key": "ENGL 105",
+                            "title": "Composition and Literature",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1748,9 +2708,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "105",
-                            "key": "ENGL 105",
-                            "title": "Composition and Literature",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1767,22 +2727,42 @@
                     "items": [
                         {
                             "subject": "English",
-                            "prefix": "ENG",
-                            "number": "1A",
-                            "key": "ENG 1A",
-                            "title": "Reading and Composition",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
                         },
                         {
                             "subject": "English",
-                            "prefix": "ENG",
-                            "number": "2A",
-                            "key": "ENG 2A",
-                            "title": "Reading and Composition with Support",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "San Jose City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -1798,9 +2778,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101",
-                            "key": "ENGL 101",
-                            "title": "Freshman Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1808,9 +2788,49 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101H",
-                            "key": "ENGL 101H",
-                            "title": "Honors Freshman Composition",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Barbara City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1828,9 +2848,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "1",
-                            "key": "ENGL 1",
-                            "title": "Reading and Composition I",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1868,9 +2888,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101",
-                            "key": "ENGL 101",
-                            "title": "Freshman Composition",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1878,11 +2898,41 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "101H",
-                            "key": "ENGL 101H",
-                            "title": "Honors Freshman Composition",
+                            "number": "C1000H",
+                            "key": "ENGL C1000H",
+                            "title": "Academic Reading and Writing - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Shasta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -1898,9 +2948,69 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "1A",
-                            "key": "ENGL 1A",
-                            "title": "College Reading, Writing, and Research",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Skyline College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Composition",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Composition",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Solano Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "001E",
+                            "key": "ENGL 001E",
+                            "title": "College Composition for Non-native English Speakers",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1918,9 +3028,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "115",
-                            "key": "ENGL 115",
-                            "title": "College Composition: Reading and Writing Analytically",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1941,6 +3051,46 @@
                             "number": "115A",
                             "key": "ESL 115A",
                             "title": "College Composition for Multilingual Students",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Taft College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "1502",
+                            "key": "ENGL 1502",
+                            "title": "Composition and Reading for Multilingual Students",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -2042,126 +3192,6 @@
         "max_units": 4.5,
         "articulations": [
             {
-                "sending_name": "American River College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "301",
-                            "key": "ENGWR 301",
-                            "title": "College Composition and Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "302",
-                            "key": "ENGWR 302",
-                            "title": "Advanced Composition and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "481",
-                            "key": "ENGWR 481",
-                            "title": "Honors College Composition and Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "482",
-                            "key": "ENGWR 482",
-                            "title": "Honors Advanced Composition and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English as a Second Language",
-                            "prefix": "ESL",
-                            "number": "350",
-                            "key": "ESL 350",
-                            "title": "Critical Reading, Research and Writing Through Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Antelope Valley College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102",
-                            "key": "ENGL 102",
-                            "title": "Critical Thinking and Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102H",
-                            "key": "ENGL 102H",
-                            "title": "Critical Thinking and Literature Honors",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103",
-                            "key": "ENGL 103",
-                            "title": "Critical Thinking and Research",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103H",
-                            "key": "ENGL 103H",
-                            "title": "Critical Thinking and Research Honors",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "201",
-                            "key": "PHIL 201",
-                            "title": "Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Bakersfield College",
                 "sending_articulation": {
                     "type": "SET",
@@ -2213,96 +3243,6 @@
                             "number": "B9",
                             "key": "PHIL B9",
                             "title": "Critical Thinking and Advanced Composition",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Cerritos College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "COMMUNICATION STUDIES",
-                            "prefix": "COMM",
-                            "number": "103",
-                            "key": "COMM 103",
-                            "title": "Argumentation, Persuasion, and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103",
-                            "key": "ENGL 103",
-                            "title": "Critical Thinking and Argumentative Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "110",
-                            "key": "ENGL 110",
-                            "title": "Critical Thinking Through Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "103",
-                            "key": "PHIL 103",
-                            "title": "Philosophical Reasoning: Critical Thinking in Philosophy",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Psychology",
-                            "prefix": "PSYC",
-                            "number": "103",
-                            "key": "PSYC 103",
-                            "title": "Critical Thinking in Psychology",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Reading",
-                            "prefix": "READ",
-                            "number": "103",
-                            "key": "READ 103",
-                            "title": "Critical Thinking and Academic Literacy",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Chaffey College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1B",
-                            "key": "ENGL 1B",
-                            "title": "Advanced Composition and Critical Thinking",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -2392,236 +3332,6 @@
                 }
             },
             {
-                "sending_name": "College of the Canyons",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMS",
-                            "number": "227",
-                            "key": "COMS 227",
-                            "title": "Introduction to Rhetorical Criticism",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103",
-                            "key": "ENGL 103",
-                            "title": "Critical Reading, Writing and Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103H",
-                            "key": "ENGL 103H",
-                            "title": "Critical Reading, Writing, and Thinking - Honors",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "112",
-                            "key": "ENGL 112",
-                            "title": "Intermediate Composition, Literature, and Critical Thinking",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHILOS",
-                            "number": "206",
-                            "key": "PHILOS 206",
-                            "title": "Critical Reasoning and Analytical Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "College of the Sequoias",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "002",
-                            "key": "ENGL 002",
-                            "title": "Logic and Composition",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "025",
-                            "key": "PHIL 025",
-                            "title": "Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Cosumnes River College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "311",
-                            "key": "COMM 311",
-                            "title": "Argumentation and Debate",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "315",
-                            "key": "COMM 315",
-                            "title": "Persuasion",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "482",
-                            "key": "COMM 482",
-                            "title": "Honors Seminar: Persuasion within Social Issues",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "301",
-                            "key": "ENGWR 301",
-                            "title": "College Composition and Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "302",
-                            "key": "ENGWR 302",
-                            "title": "Advanced Composition and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Honors",
-                            "prefix": "HONOR",
-                            "number": "341",
-                            "key": "HONOR 341",
-                            "title": "Honors Seminar: Persuasion within Social Issues",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Honors",
-                            "prefix": "HONOR",
-                            "number": "363",
-                            "key": "HONOR 363",
-                            "title": "Honors Seminar in Critical Thinking and Composition: Philosophy of Happiness",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "486",
-                            "key": "PHIL 486",
-                            "title": "Honors Seminar in Critical Thinking and Composition: Philosophy of Happiness",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Crafton Hills College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102",
-                            "key": "ENGL 102",
-                            "title": "Intermediate Composition and Critical Thinking",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102H",
-                            "key": "ENGL 102H",
-                            "title": "Intermediate Composition and Critical Thinking - Honors",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "103",
-                            "key": "PHIL 103",
-                            "title": "Critical Thinking and Argumentation",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "103H",
-                            "key": "PHIL 103H",
-                            "title": "Critical Thinking and Argumentation - Honors",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
                     "type": "SET",
@@ -2633,66 +3343,6 @@
                             "number": "124",
                             "key": "ENGL 124",
                             "title": "Advanced Composition: Critical Reasoning and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Cypress College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103 C",
-                            "key": "ENGL 103 C",
-                            "title": "Critical Reasoning and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103HC",
-                            "key": "ENGL 103HC",
-                            "title": "Honors Critical Reasoning and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "104 C",
-                            "key": "ENGL 104 C",
-                            "title": "Critical Analysis & Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "104HC",
-                            "key": "ENGL 104HC",
-                            "title": "Honors Critical Analysis & Lit",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy and Religious Studies",
-                            "prefix": "PHIL",
-                            "number": "172 C",
-                            "key": "PHIL 172 C",
-                            "title": "Critical Thinking and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -2725,146 +3375,6 @@
                             "number": "103",
                             "key": "ENGLISH 103",
                             "title": "Composition and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "El Camino College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1C",
-                            "key": "ENGL 1C",
-                            "title": "Critical Thinking and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1CH",
-                            "key": "ENGL 1CH",
-                            "title": "Honors Critical Thinking and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "105",
-                            "key": "PHIL 105",
-                            "title": "Critical Thinking and Discourse",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "105H",
-                            "key": "PHIL 105H",
-                            "title": "Honors Critical Thinking and Discourse",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Psychology",
-                            "prefix": "PSYC",
-                            "number": "103",
-                            "key": "PSYC 103",
-                            "title": "Critical Thinking and Psychology",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Psychology",
-                            "prefix": "PSYC",
-                            "number": "103H",
-                            "key": "PSYC 103H",
-                            "title": "Honors Critical Thinking and Psychology",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Folsom Lake College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "311",
-                            "key": "COMM 311",
-                            "title": "Argumentation and Debate",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "315",
-                            "key": "COMM 315",
-                            "title": "Persuasion",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "301",
-                            "key": "ENGWR 301",
-                            "title": "College Composition and Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "302",
-                            "key": "ENGWR 302",
-                            "title": "Advanced Composition and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "481",
-                            "key": "ENGWR 481",
-                            "title": "Honors College Composition and Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "482",
-                            "key": "ENGWR 482",
-                            "title": "Honors Advanced Composition and Critical Thinking",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -3068,36 +3578,6 @@
                 }
             },
             {
-                "sending_name": "Imperial Valley College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "201",
-                            "key": "ENGL 201",
-                            "title": "Advanced Composition",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "204",
-                            "key": "ENGL 204",
-                            "title": "Advanced Composition and Critical Thinking Through Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -3141,86 +3621,6 @@
                             "title": "College Writing 2: Critical Thinking, Writing Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Long Beach City College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "3",
-                            "key": "ENGL 3",
-                            "title": "Argumentative and Critical Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "3H",
-                            "key": "ENGL 3H",
-                            "title": "Honors Argumentative and Critical Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "4",
-                            "key": "ENGL 4",
-                            "title": "Critical Analysis of Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "4H",
-                            "key": "ENGL 4H",
-                            "title": "Honors Critical Analysis of Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "47",
-                            "key": "HIST 47",
-                            "title": "Facts, Evidence, and Explanation",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "11",
-                            "key": "PHIL 11",
-                            "title": "Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Reading",
-                            "prefix": "READ",
-                            "number": "84",
-                            "key": "READ 84",
-                            "title": "Analytical Reading",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -3648,56 +4048,6 @@
                 }
             },
             {
-                "sending_name": "MiraCosta College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "201",
-                            "key": "ENGL 201",
-                            "title": "Critical Thinking, Composition, and Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "201H",
-                            "key": "ENGL 201H",
-                            "title": "Critical Thinking, Composition, and Literature (Honors)",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "202",
-                            "key": "ENGL 202",
-                            "title": "Critical Thinking and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "202H",
-                            "key": "ENGL 202H",
-                            "title": "Critical and Thinking and Composition (Honors)",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
                     "type": "SET",
@@ -3809,106 +4159,6 @@
                             "number": "11",
                             "key": "PHI 11",
                             "title": "Critical Thinking and Analytic Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Mount San Antonio College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1C",
-                            "key": "ENGL 1C",
-                            "title": "Critical Thinking and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1CH",
-                            "key": "ENGL 1CH",
-                            "title": "Critical Thinking and Writing - Honors",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Engineering",
-                            "prefix": "ENGR",
-                            "number": "1C",
-                            "key": "ENGR 1C",
-                            "title": "Engineering Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "9",
-                            "key": "PHIL 9",
-                            "title": "Critical Thinking and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "9H",
-                            "key": "PHIL 9H",
-                            "title": "Critical Thinking and Writing - Honors",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Mt. San Jacinto College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL-",
-                            "number": "103",
-                            "key": "ENGL- 103",
-                            "title": "Critical Thinking and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL-",
-                            "number": "103H",
-                            "key": "ENGL- 103H",
-                            "title": "Honors Critical Thinking and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL-",
-                            "number": "112",
-                            "key": "PHIL- 112",
-                            "title": "Critical Thinking and Composition",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -4338,86 +4588,6 @@
                 }
             },
             {
-                "sending_name": "Sacramento City College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "Communication",
-                            "prefix": "COMM",
-                            "number": "316",
-                            "key": "COMM 316",
-                            "title": "Advanced Argumentation and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "301",
-                            "key": "ENGWR 301",
-                            "title": "College Composition and Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "302",
-                            "key": "ENGWR 302",
-                            "title": "Advanced Composition and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "303",
-                            "key": "ENGWR 303",
-                            "title": "Argumentative Writing and Critical Thinking Through Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "482",
-                            "key": "ENGWR 482",
-                            "title": "Honors Advanced Composition and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Writing",
-                            "prefix": "ENGWR",
-                            "number": "488",
-                            "key": "ENGWR 488",
-                            "title": "Honors College Composition and Research",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "305",
-                            "key": "SOC 305",
-                            "title": "Critical Thinking in the Social Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
                     "type": "SET",
@@ -4459,426 +4629,6 @@
                             "number": "70",
                             "key": "ENG 70",
                             "title": "Critical Thinking, Reading, and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "San Bernardino Valley College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102",
-                            "key": "ENGL 102",
-                            "title": "Intermediate Composition and Critical Thinking",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102H",
-                            "key": "ENGL 102H",
-                            "title": "Intermediate Composition and Critical Thinking - Honors",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "102",
-                            "key": "PHIL 102",
-                            "title": "Introduction to Critical Thinking and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "San Diego City College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "205",
-                            "key": "ENGL 205",
-                            "title": "Critical Thinking and Intermediate Composition",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "205",
-                            "key": "PHIL 205",
-                            "title": "Critical Thinking and Writing in Philosophy",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "San Diego Mesa College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "205",
-                            "key": "ENGL 205",
-                            "title": "Critical Thinking and Intermediate Composition",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "205",
-                            "key": "HIST 205",
-                            "title": "Methodology and Practice in History",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "205",
-                            "key": "PHIL 205",
-                            "title": "Critical Thinking and Writing in Philosophy",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "San Diego Miramar College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "205",
-                            "key": "ENGL 205",
-                            "title": "Critical Thinking and Intermediate Composition",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "205",
-                            "key": "PHIL 205",
-                            "title": "Critical Thinking and Writing in Philosophy",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "San Joaquin Delta College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENG",
-                            "number": "1B",
-                            "key": "ENG 1B",
-                            "title": "College Composition and Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1B",
-                            "key": "ENGL 1B",
-                            "title": "College Composition and Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENG",
-                            "number": "1D",
-                            "key": "ENG 1D",
-                            "title": "Advanced Composition and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Santa Ana College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102",
-                            "key": "ENGL 102",
-                            "title": "Literature and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102H",
-                            "key": "ENGL 102H",
-                            "title": "Honors Literature and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103",
-                            "key": "ENGL 103",
-                            "title": "Critical Thinking and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103H",
-                            "key": "ENGL 103H",
-                            "title": "Honors Critical Thinking and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "110",
-                            "key": "PHIL 110",
-                            "title": "Critical Thinking",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "110H",
-                            "key": "PHIL 110H",
-                            "title": "Honors Critical Thinking",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Santa Monica College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "2",
-                            "key": "ENGL 2",
-                            "title": "Critical Analysis and Intermediate Composition",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "47",
-                            "key": "HIST 47",
-                            "title": "The Practice of History",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Santiago Canyon College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102",
-                            "key": "ENGL 102",
-                            "title": "Literature and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "102H",
-                            "key": "ENGL 102H",
-                            "title": "Honors Literature and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103",
-                            "key": "ENGL 103",
-                            "title": "Critical Thinking and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "103H",
-                            "key": "ENGL 103H",
-                            "title": "Honors Critical Thinking and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "110",
-                            "key": "PHIL 110",
-                            "title": "Critical Thinking",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Reading",
-                            "prefix": "READ",
-                            "number": "151",
-                            "key": "READ 151",
-                            "title": "Critical Reading and Analysis",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Sierra College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1B",
-                            "key": "ENGL 1B",
-                            "title": "Critical Thinking and Writing about Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1C",
-                            "key": "ENGL 1C",
-                            "title": "Critical Thinking and Writing Across the Curriculum",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "4",
-                            "key": "PHIL 4",
-                            "title": "Introduction to Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Southwestern College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "116",
-                            "key": "ENGL 116",
-                            "title": "Critical Thinking and Argument",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "103",
-                            "key": "PHIL 103",
-                            "title": "Logic and Critical Thinking",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []

@@ -130,26 +130,6 @@
                 }
             },
             {
-                "sending_name": "Chabot College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "3A",
-                            "key": "PHYS 3A",
-                            "title": "College Physics A",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "City College of San Francisco",
                 "sending_articulation": {
                     "type": "SET",
@@ -356,7 +336,9 @@
                             "title": "Physics Fundamentals",
                             "min_units": 3.0,
                             "max_units": 3.0,
-                            "notes": []
+                            "notes": [
+                                "Effective next fall, this course will no longer articulate"
+                            ]
                         }
                     ],
                     "notes": []
@@ -538,6 +520,26 @@
                     ],
                     "notes": []
                 }
+            },
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V01",
+                            "key": "PHYS V01",
+                            "title": "Elementary Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
             }
         ]
     },
@@ -566,6 +568,135 @@
             }
         ],
         "articulations": [
+            {
+                "sending_name": "Chabot College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3A",
+                            "key": "PHYS 3A",
+                            "title": "College Physics A",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3B",
+                            "key": "PHYS 3B",
+                            "title": "College Physics B",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer"
+                    ]
+                }
+            },
+            {
+                "sending_name": "College of Marin",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "108A",
+                            "key": "PHYS 108A",
+                            "title": "General Physics I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "108B",
+                            "key": "PHYS 108B",
+                            "title": "General Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer"
+                    ]
+                }
+            },
+            {
+                "sending_name": "Evergreen Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "002A",
+                            "key": "PHYS 002A",
+                            "title": "Algebra/Trigonometry-Based Physics I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "002B",
+                            "key": "PHYS 002B",
+                            "title": "Algebra/Trigonometry-Based Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer"
+                    ]
+                }
+            },
+            {
+                "sending_name": "Madera Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "2A",
+                            "key": "PHYS 2A",
+                            "title": "General Physics I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "2B",
+                            "key": "PHYS 2B",
+                            "title": "General Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer",
+                        "Course is articulated in more than one agreement but credit can only apply to one"
+                    ]
+                }
+            },
             {
                 "sending_name": "San Bernardino Valley College",
                 "sending_articulation": {
@@ -4611,7 +4742,7 @@
                 }
             },
             {
-                "sending_name": "Victor Valley College",
+                "sending_name": "Southwestern College",
                 "sending_articulation": {
                     "type": "SET",
                     "conjunction": "AND",
@@ -4619,9 +4750,41 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "221",
-                            "key": "PHYS 221",
-                            "title": "General Physics",
+                            "number": "150",
+                            "key": "PHYS 150",
+                            "title": "Fundamentals of Physics I",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "151",
+                            "key": "PHYS 151",
+                            "title": "Fundamentals of Physics Laboratory I",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer"
+                    ]
+                }
+            },
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V03A",
+                            "key": "PHYS V03A",
+                            "title": "General Physics I: Calculus-Based",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -4629,11 +4792,31 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "222",
-                            "key": "PHYS 222",
-                            "title": "General Physics",
+                            "number": "V03AL",
+                            "key": "PHYS V03AL",
+                            "title": "General Physics I Laboratory: Calculus-Based",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V03B",
+                            "key": "PHYS V03B",
+                            "title": "General Physics II: Calculus-Based",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V03BL",
+                            "key": "PHYS V03BL",
+                            "title": "General Physics II Laboratory: Calculus-Based",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
                             "notes": []
                         }
                     ],
@@ -4854,7 +5037,8 @@
                         }
                     ],
                     "notes": [
-                        "Complete entire sequence at same institution prior to transfer"
+                        "Complete entire sequence at same institution prior to transfer",
+                        "Course is articulated in more than one agreement but credit can only apply to one"
                     ]
                 }
             },
@@ -4912,6 +5096,38 @@
                             "number": "002B",
                             "key": "PHYS 002B",
                             "title": "Algebra/Trigonometry-Based Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer"
+                    ]
+                }
+            },
+            {
+                "sending_name": "Santa Rosa Junior College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "20A",
+                            "key": "PHYS 20A",
+                            "title": "General Physics Part I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "20B",
+                            "key": "PHYS 20B",
+                            "title": "General Physics Part II",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -5848,8 +6064,8 @@
                         }
                     ],
                     "notes": [
-                        "Complete entire sequence at same institution prior to transfer",
-                        "Series is articulated in more than one agreement but credit can only apply to one"
+                        "Series is articulated in more than one agreement but credit can only apply to one",
+                        "Complete entire sequence at same institution prior to transfer"
                     ]
                 }
             },
@@ -8534,7 +8750,7 @@
                 }
             },
             {
-                "sending_name": "Victor Valley College",
+                "sending_name": "Ventura College",
                 "sending_articulation": {
                     "type": "SET",
                     "conjunction": "AND",
@@ -8542,9 +8758,9 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "221",
-                            "key": "PHYS 221",
-                            "title": "General Physics",
+                            "number": "V03A",
+                            "key": "PHYS V03A",
+                            "title": "General Physics I: Calculus-Based",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -8552,11 +8768,31 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "222",
-                            "key": "PHYS 222",
-                            "title": "General Physics",
+                            "number": "V03AL",
+                            "key": "PHYS V03AL",
+                            "title": "General Physics I Laboratory: Calculus-Based",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V03B",
+                            "key": "PHYS V03B",
+                            "title": "General Physics II: Calculus-Based",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V03BL",
+                            "key": "PHYS V03BL",
+                            "title": "General Physics II Laboratory: Calculus-Based",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
                             "notes": []
                         }
                     ],
@@ -12211,7 +12447,7 @@
                 }
             },
             {
-                "sending_name": "Victor Valley College",
+                "sending_name": "Ventura College",
                 "sending_articulation": {
                     "type": "SET",
                     "conjunction": "AND",
@@ -12219,9 +12455,9 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "221",
-                            "key": "PHYS 221",
-                            "title": "General Physics",
+                            "number": "V03A",
+                            "key": "PHYS V03A",
+                            "title": "General Physics I: Calculus-Based",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -12229,11 +12465,31 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "222",
-                            "key": "PHYS 222",
-                            "title": "General Physics",
+                            "number": "V03AL",
+                            "key": "PHYS V03AL",
+                            "title": "General Physics I Laboratory: Calculus-Based",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V03B",
+                            "key": "PHYS V03B",
+                            "title": "General Physics II: Calculus-Based",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V03BL",
+                            "key": "PHYS V03BL",
+                            "title": "General Physics II Laboratory: Calculus-Based",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
                             "notes": []
                         }
                     ],
@@ -13096,8 +13352,8 @@
                         }
                     ],
                     "notes": [
-                        "Complete entire sequence at same institution prior to transfer",
-                        "Series is articulated in more than one agreement but credit can only apply to one"
+                        "Series is articulated in more than one agreement but credit can only apply to one",
+                        "Complete entire sequence at same institution prior to transfer"
                     ]
                 }
             },
@@ -14031,7 +14287,7 @@
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "OR",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "Physics",
@@ -14039,16 +14295,6 @@
                             "number": "151",
                             "key": "PHYS 151",
                             "title": "Principles of Physics I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "151H",
-                            "key": "PHYS 151H",
-                            "title": "Principles of Physics I (Honors)",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -14462,6 +14708,26 @@
                 }
             },
             {
+                "sending_name": "Palomar College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "230",
+                            "key": "PHYS 230",
+                            "title": "Principles of Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Porterville College",
                 "sending_articulation": {
                     "type": "SET",
@@ -14738,6 +15004,26 @@
                 }
             },
             {
+                "sending_name": "San Jose City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "004A",
+                            "key": "PHYS 004A",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
                     "type": "SET",
@@ -14789,6 +15075,26 @@
                             "number": "21",
                             "key": "PHYSCS 21",
                             "title": "Mechanics with Lab",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Rosa Junior College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "40",
+                            "key": "PHYS 40",
+                            "title": "Classical Mechanics for Scientists and Engineers",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -14984,23 +15290,35 @@
                 }
             },
             {
-                "sending_name": "Victor Valley College",
+                "sending_name": "Ventura College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "AND",
                     "items": [
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "201",
-                            "key": "PHYS 201",
-                            "title": "Engineering Physics (Mechanics of Solids)",
+                            "number": "V04",
+                            "key": "PHYS V04",
+                            "title": "Mechanics for Scientists and Engineers",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V04L",
+                            "key": "PHYS V04L",
+                            "title": "Mechanics Laboratory for Scientists and Engineers",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
                         }
                     ],
-                    "notes": []
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer"
+                    ]
                 }
             },
             {
@@ -16209,8 +16527,8 @@
                         }
                     ],
                     "notes": [
-                        "Complete entire sequence at same institution prior to transfer",
-                        "Series is articulated in more than one agreement but credit can only apply to one"
+                        "Series is articulated in more than one agreement but credit can only apply to one",
+                        "Complete entire sequence at same institution prior to transfer"
                     ]
                 }
             },
@@ -17191,66 +17509,18 @@
             {
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunctions": [
-                        "OR"
-                    ],
+                    "type": "SET",
+                    "conjunction": null,
                     "items": [
                         {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Physics",
-                                    "prefix": "PHYS",
-                                    "number": "253",
-                                    "key": "PHYS 253",
-                                    "title": "Principles of Physics III",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "253",
+                            "key": "PHYS 253",
+                            "title": "Principles of Physics III",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": "AND",
-                            "items": [
-                                {
-                                    "subject": "Physics",
-                                    "prefix": "PHYS",
-                                    "number": "151H",
-                                    "key": "PHYS 151H",
-                                    "title": "Principles of Physics I (Honors)",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                },
-                                {
-                                    "subject": "Physics",
-                                    "prefix": "PHYS",
-                                    "number": "253H",
-                                    "key": "PHYS 253H",
-                                    "title": "Principles of Physics III (Honors)",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                },
-                                {
-                                    "subject": "Physics",
-                                    "prefix": "PHYS",
-                                    "number": "152H",
-                                    "key": "PHYS 152H",
-                                    "title": "Principles of Physics II (Honors)",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": [
-                                "Complete entire sequence at same institution prior to transfer"
-                            ]
                         }
                     ],
                     "notes": []
@@ -18045,6 +18315,26 @@
                 }
             },
             {
+                "sending_name": "Santa Rosa Junior College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "41",
+                            "key": "PHYS 41",
+                            "title": "Waves, Optics, and Thermodynamics for Scientists and Engineers",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
                     "type": "SET",
@@ -18222,6 +18512,38 @@
                             "title": "General Physics III (Calculus)",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer"
+                    ]
+                }
+            },
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V06",
+                            "key": "PHYS V06",
+                            "title": "Optics, Heat, and Modern Physics for Scientists and Engineers",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V06L",
+                            "key": "PHYS V06L",
+                            "title": "Optics, Heat and Modern Physics Laboratory for Scientists and Engineers",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
                             "notes": []
                         }
                     ],
@@ -19153,8 +19475,8 @@
                         }
                     ],
                     "notes": [
-                        "Complete entire sequence at same institution prior to transfer",
-                        "Series is articulated in more than one agreement but credit can only apply to one"
+                        "Series is articulated in more than one agreement but credit can only apply to one",
+                        "Complete entire sequence at same institution prior to transfer"
                     ]
                 }
             },
@@ -20048,7 +20370,7 @@
                 "sending_name": "MiraCosta College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "OR",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "Physics",
@@ -20056,16 +20378,6 @@
                             "number": "152",
                             "key": "PHYS 152",
                             "title": "Principles of Physics II",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "152H",
-                            "key": "PHYS 152H",
-                            "title": "Principles of Physics II (Honors)",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -20767,6 +21079,26 @@
                 }
             },
             {
+                "sending_name": "Santa Rosa Junior College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "42",
+                            "key": "PHYS 42",
+                            "title": "Electricity and Magnetism for Scientists and Engineers",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
                     "type": "SET",
@@ -20918,6 +21250,38 @@
                         }
                     ],
                     "notes": []
+                }
+            },
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V05",
+                            "key": "PHYS V05",
+                            "title": "Electricity and Magnetism for Scientists and Engineers",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V05L",
+                            "key": "PHYS V05L",
+                            "title": "Electricity and Magnetism Laboratory for Scientists and Engineers",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Complete entire sequence at same institution prior to transfer"
+                    ]
                 }
             },
             {
@@ -21176,8 +21540,8 @@
                         }
                     ],
                     "notes": [
-                        "Complete entire sequence at same institution prior to transfer",
-                        "Series is articulated in more than one agreement but credit can only apply to one"
+                        "Series is articulated in more than one agreement but credit can only apply to one",
+                        "Complete entire sequence at same institution prior to transfer"
                     ]
                 }
             },
@@ -21692,6 +22056,26 @@
                 }
             },
             {
+                "sending_name": "Santa Rosa Junior College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "43",
+                            "key": "PHYS 43",
+                            "title": "Modern Physics for Scientists and Engineers",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "West Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -21779,6 +22163,106 @@
         "max_units": 4.0,
         "articulations": [
             {
+                "sending_name": "American River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "310",
+                            "key": "PHYS 310",
+                            "title": "Conceptual Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Berkeley City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "10",
+                            "key": "PHYS 10",
+                            "title": "Introduction to Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Butte College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "10",
+                            "key": "PHYS 10",
+                            "title": "Concepts of Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cabrillo College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "10",
+                            "key": "PHYS 10",
+                            "title": "Conceptual Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Chabot College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "11",
+                            "key": "PHYS 11",
+                            "title": "Descriptive Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
                     "type": "SET",
@@ -21799,6 +22283,104 @@
                 }
             },
             {
+                "sending_name": "Citrus College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "110",
+                            "key": "PHYS 110",
+                            "title": "Physics in Everyday Life",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "City College of San Francisco",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYC",
+                                    "number": "10",
+                                    "key": "PHYC 10",
+                                    "title": "Conceptual Physics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYC",
+                                    "number": "10",
+                                    "key": "PHYC 10",
+                                    "title": "Conceptual Physics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYC",
+                                    "number": "10L",
+                                    "key": "PHYC 10L",
+                                    "title": "Conceptual Physics Laboratory",
+                                    "min_units": 1.0,
+                                    "max_units": 1.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": [
+                                "Complete entire sequence at same institution prior to transfer"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Clovis Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "10",
+                            "key": "PHYS 10",
+                            "title": "Conceptual Physics",
+                            "min_units": 3.5,
+                            "max_units": 3.5,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Coastline Community College",
                 "sending_articulation": {
                     "type": "SET",
@@ -21812,6 +22394,266 @@
                             "title": "Calculus Based Physics: Mechanics",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Marin",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "110",
+                            "key": "PHYS 110",
+                            "title": "Introductory Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of San Mateo",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "100",
+                            "key": "PHYS 100",
+                            "title": "Conceptual Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Redwoods",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "10",
+                            "key": "PHYS 10",
+                            "title": "Conceptual Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Columbia College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYCS",
+                            "number": "1",
+                            "key": "PHYCS 1",
+                            "title": "Conceptual Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Contra Costa College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "110",
+                            "key": "PHYS 110",
+                            "title": "Descriptive Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cosumnes River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "310",
+                            "key": "PHYS 310",
+                            "title": "Conceptual Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Crafton Hills College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYSIC",
+                            "number": "100",
+                            "key": "PHYSIC 100",
+                            "title": "Introduction to Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cuyamaca College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "110",
+                            "key": "PHYC 110",
+                            "title": "Introductory Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cypress College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "130 C",
+                            "key": "PHYS 130 C",
+                            "title": "Elementary Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "De Anza College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "10",
+                            "key": "PHYS 10",
+                            "title": "Concepts of Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Diablo Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "110",
+                            "key": "PHYS 110",
+                            "title": "Elementary Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "East Los Angeles College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYSICS",
+                            "number": "011",
+                            "key": "PHYSICS 011",
+                            "title": "Introductory Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "El Camino College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "11",
+                            "key": "PHYS 11",
+                            "title": "Descriptive Introduction to Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -22104,7 +22946,9 @@
                             "title": "Introductory Physics",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
+                            "notes": [
+                                "Effective next fall, this course will no longer articulate"
+                            ]
                         }
                     ],
                     "notes": []
