@@ -1242,27 +1242,63 @@
             {
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND"
+                    ],
                     "items": [
                         {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "101",
-                            "key": "SPAN 101",
-                            "title": "College Spanish I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Spanish",
+                                    "prefix": "SPAN",
+                                    "number": "101",
+                                    "key": "SPAN 101",
+                                    "title": "College Spanish I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Spanish",
+                                    "prefix": "SPAN",
+                                    "number": "101H",
+                                    "key": "SPAN 101H",
+                                    "title": "College Spanish I - Honors",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "102",
-                            "key": "SPAN 102",
-                            "title": "College Spanish II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Spanish",
+                                    "prefix": "SPAN",
+                                    "number": "102",
+                                    "key": "SPAN 102",
+                                    "title": "College Spanish II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Spanish",
+                                    "prefix": "SPAN",
+                                    "number": "102H",
+                                    "key": "SPAN 102H",
+                                    "title": "College Spanish II - Honors",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -5297,7 +5333,7 @@
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Spanish",
@@ -5305,6 +5341,16 @@
                             "number": "102",
                             "key": "SPAN 102",
                             "title": "College Spanish II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Spanish",
+                            "prefix": "SPAN",
+                            "number": "102H",
+                            "key": "SPAN 102H",
+                            "title": "College Spanish II - Honors",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -10880,46 +10926,6 @@
                 }
             },
             {
-                "sending_name": "Coastline Community College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "C285",
-                            "key": "SPAN C285",
-                            "title": "Intermediate Spanish 2",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "College of Alameda",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "2B",
-                            "key": "SPAN 2B",
-                            "title": "Intermediate Spanish",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "College of the Redwoods",
                 "sending_articulation": {
                     "type": "SET",
@@ -11000,46 +11006,6 @@
                 }
             },
             {
-                "sending_name": "Crafton Hills College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "104",
-                            "key": "SPAN 104",
-                            "title": "College Spanish IV",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Cuyamaca College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "221",
-                            "key": "SPAN 221",
-                            "title": "Spanish IV",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Feather River College",
                 "sending_articulation": {
                     "type": "SET",
@@ -11053,46 +11019,6 @@
                             "title": "Intermediate Spanish II",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Gavilan College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "2B",
-                            "key": "SPAN 2B",
-                            "title": "Intermediate Spanish",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Imperial Valley College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "210",
-                            "key": "SPAN 210",
-                            "title": "Intermediate Spanish II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -11153,26 +11079,6 @@
                             "title": "Intermediate Spanish: Level II",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Merced College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "-04",
-                            "key": "SPAN -04",
-                            "title": "Intermediate Spanish II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -11261,86 +11167,6 @@
                             "number": "4",
                             "key": "SPAN 4",
                             "title": "High-Intermediate Spanish",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "San Bernardino Valley College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "104",
-                            "key": "SPAN 104",
-                            "title": "College Spanish IV",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "San Jose City College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "002B",
-                            "key": "SPAN 002B",
-                            "title": "Intermediate Spanish 2",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Shasta College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "4",
-                            "key": "SPAN 4",
-                            "title": "Spanish 4",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Solano Community College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "004",
-                            "key": "SPAN 004",
-                            "title": "Fourth Semester Spanish",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []

@@ -583,7 +583,7 @@
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Architecture",
@@ -591,6 +591,18 @@
                             "number": "151",
                             "key": "ARC 151",
                             "title": "Materials of Construction",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": [
+                                "Lecture only; Lab is not articulated"
+                            ]
+                        },
+                        {
+                            "subject": "Engineering, General",
+                            "prefix": "ENG GEN",
+                            "number": "151",
+                            "key": "ENG GEN 151",
+                            "title": "Materials of Engineering",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": [
@@ -632,6 +644,32 @@
                 }
             }
         ]
+    },
+    {
+        "type": "SERIES",
+        "key": "MSE 224 + 224L",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "subject": "Manufacturing Systems Engineering",
+                "prefix": "MSE",
+                "number": "224",
+                "key": "MSE 224",
+                "title": "Building and Infrastructure Materials",
+                "min_units": 3.0,
+                "max_units": 3.0
+            },
+            {
+                "subject": "Manufacturing Systems Engineering",
+                "prefix": "MSE",
+                "number": "224L",
+                "key": "MSE 224L",
+                "title": "Building and Infrastructure Materials Lab",
+                "min_units": 1.0,
+                "max_units": 1.0
+            }
+        ],
+        "articulations": []
     },
     {
         "type": "COURSE",
@@ -3039,7 +3077,7 @@
                             "prefix": "ENGR",
                             "number": "M12L",
                             "key": "ENGR M12L",
-                            "title": "Engineering Materials Lab",
+                            "title": "Engineering Materials Laboratory",
                             "min_units": 1.0,
                             "max_units": 1.0,
                             "notes": []
@@ -3814,7 +3852,7 @@
                             "prefix": "EGD TEK",
                             "number": "101",
                             "key": "EGD TEK 101",
-                            "title": "Engineering Graphics",
+                            "title": "Engineering Graphics with CAD",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -3834,7 +3872,7 @@
                             "prefix": "EGD TEK",
                             "number": "101",
                             "key": "EGD TEK 101",
-                            "title": "Engineering Graphics",
+                            "title": "Engineering Graphics with CAD",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -3854,7 +3892,7 @@
                             "prefix": "EGD TEK",
                             "number": "101",
                             "key": "EGD TEK 101",
-                            "title": "Engineering Graphics",
+                            "title": "Engineering Graphics with CAD",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []

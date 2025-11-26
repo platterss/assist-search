@@ -8873,6 +8873,66 @@
                 }
             },
             {
+                "sending_name": "American River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "305",
+                            "key": "CHEM 305",
+                            "title": "Introduction to Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "309",
+                            "key": "CHEM 309",
+                            "title": "Integrated General, Organic, and Biological Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "400",
+                            "key": "CHEM 400",
+                            "title": "General Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "401",
+                            "key": "CHEM 401",
+                            "title": "General Chemistry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "423",
+                            "key": "CHEM 423",
+                            "title": "Organic Chemistry - Short Survey",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Butte College",
                 "sending_articulation": {
                     "type": "SET",
@@ -8957,6 +9017,36 @@
                         {
                             "subject": "Chemistry",
                             "prefix": "CHEM",
+                            "number": "1A",
+                            "key": "CHEM 1A",
+                            "title": "General College Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "1B",
+                            "key": "CHEM 1B",
+                            "title": "General College Chemistry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "10",
+                            "key": "CHEM 10",
+                            "title": "Introduction to Chemistry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
                             "number": "12A",
                             "key": "CHEM 12A",
                             "title": "Organic Chemistry I",
@@ -8967,9 +9057,39 @@
                         {
                             "subject": "Chemistry",
                             "prefix": "CHEM",
+                            "number": "12B",
+                            "key": "CHEM 12B",
+                            "title": "Organic Chemistry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "30A",
+                            "key": "CHEM 30A",
+                            "title": "Introductory and Applied Chemistry I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
                             "number": "30B",
                             "key": "CHEM 30B",
                             "title": "Introductory and Applied Chemistry II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "31",
+                            "key": "CHEM 31",
+                            "title": "Introduction to College Chemistry",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9092,7 +9212,7 @@
                 "sending_name": "College of the Sequoias",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "OR",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "Chemistry",
@@ -9100,16 +9220,6 @@
                             "number": "020",
                             "key": "CHEM 020",
                             "title": "Intro to General Chemistry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "021",
-                            "key": "CHEM 021",
-                            "title": "Organic/Biological Chemistry",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9121,47 +9231,137 @@
             {
                 "sending_name": "Columbia College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "2A",
-                            "key": "CHEM 2A",
-                            "title": "General Chemistry I",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "2A",
+                                    "key": "CHEM 2A",
+                                    "title": "General Chemistry I",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "2AL",
+                                    "key": "CHEM 2AL",
+                                    "title": "General Chemistry I Laboratory",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "2B",
-                            "key": "CHEM 2B",
-                            "title": "General Chemistry II",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "2B",
+                                    "key": "CHEM 2B",
+                                    "title": "General Chemistry II",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "2BL",
+                                    "key": "CHEM 2BL",
+                                    "title": "General Chemistry II Laboratory",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "4A",
-                            "key": "CHEM 4A",
-                            "title": "Organic Chemistry I",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "5",
+                                    "key": "CHEM 5",
+                                    "title": "Introductory Chemistry: Environmental Emphasis",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "5L",
+                                    "key": "CHEM 5L",
+                                    "title": "Introductory Chemistry Laboratory",
+                                    "min_units": 1.0,
+                                    "max_units": 1.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "14",
-                            "key": "CHEM 14",
-                            "title": "Fundamental Chemistry for Allied Health",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "14",
+                                    "key": "CHEM 14",
+                                    "title": "Fundamental Chemistry for Allied Health",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "14L",
+                                    "key": "CHEM 14L",
+                                    "title": "Fundamental Chemistry for Allied Health Laboratory",
+                                    "min_units": 1.0,
+                                    "max_units": 1.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Physical Science",
+                                    "prefix": "PHSCI",
+                                    "number": "30",
+                                    "key": "PHSCI 30",
+                                    "title": "Survey of Chemistry and Physics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -9257,16 +9457,6 @@
                         {
                             "subject": "Chemistry",
                             "prefix": "CHEM",
-                            "number": "107",
-                            "key": "CHEM 107",
-                            "title": "Integrated Inorganic, Organic, and Biological Chemistry",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
                             "number": "108",
                             "key": "CHEM 108",
                             "title": "Introductory Chemistry",
@@ -9290,6 +9480,36 @@
                             "number": "120",
                             "key": "CHEM 120",
                             "title": "General College Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "121",
+                            "key": "CHEM 121",
+                            "title": "General College Chemistry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "226",
+                            "key": "CHEM 226",
+                            "title": "Organic Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "227",
+                            "key": "CHEM 227",
+                            "title": "Organic Chemistry II",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -9419,6 +9639,76 @@
                 }
             },
             {
+                "sending_name": "Gavilan College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "key": "CHEM 1A",
+                            "title": "General Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "1B",
+                            "key": "CHEM 1B",
+                            "title": "General Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "12A",
+                            "key": "CHEM 12A",
+                            "title": "Organic Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "12B",
+                            "key": "CHEM 12B",
+                            "title": "Organic Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "30A",
+                            "key": "CHEM 30A",
+                            "title": "Elementary Chemistry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "30B",
+                            "key": "CHEM 30B",
+                            "title": "Elementary Organic and Biochemistry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "SET",
@@ -9477,11 +9767,21 @@
                         {
                             "subject": "Chemistry",
                             "prefix": "CHM",
-                            "number": "23",
-                            "key": "CHM 23",
-                            "title": "Organic and Biological Chemistry for Health Sciences",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "number": "1A",
+                            "key": "CHM 1A",
+                            "title": "General Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHM",
+                            "number": "1B",
+                            "key": "CHM 1B",
+                            "title": "General Chemistry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         },
                         {
@@ -9502,6 +9802,26 @@
                             "title": "Organic Chemistry II",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHM",
+                            "number": "22",
+                            "key": "CHM 22",
+                            "title": "The Science of Chemistry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHM",
+                            "number": "23",
+                            "key": "CHM 23",
+                            "title": "Organic and Biological Chemistry for Health Sciences",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -9562,14 +9882,74 @@
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "1A",
+                            "key": "CHEM 1A",
+                            "title": "General College Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "1B",
+                            "key": "CHEM 1B",
+                            "title": "General College Chemistry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "12A",
+                            "key": "CHEM 12A",
+                            "title": "Organic Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "12B",
+                            "key": "CHEM 12B",
+                            "title": "Organic Chemistry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
                         {
                             "subject": "Chemistry",
                             "prefix": "CHEM",
                             "number": "30A",
                             "key": "CHEM 30A",
                             "title": "Introductory and Applied Chemistry I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "30B",
+                            "key": "CHEM 30B",
+                            "title": "Introductory and Applied Chemistry II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "31",
+                            "key": "CHEM 31",
+                            "title": "Introduction to College Chemistry",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -9652,6 +10032,26 @@
                             "title": "General Chemistry II",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physical Science",
+                            "prefix": "PHSC",
+                            "number": "-02",
+                            "key": "PHSC -02",
+                            "title": "Survey of Chemistry and Physics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physical Science",
+                            "prefix": "PHSC",
+                            "number": "-02L",
+                            "key": "PHSC -02L",
+                            "title": "Survey of Chemistry and Physics Laboratory",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
                             "notes": []
                         }
                     ],
@@ -9761,87 +10161,179 @@
             {
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "101",
-                            "key": "CHEM 101",
-                            "title": "General Chemistry 1",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "101",
+                                    "key": "CHEM 101",
+                                    "title": "General Chemistry 1",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "102",
-                            "key": "CHEM 102",
-                            "title": "General Chemistry 2",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "102",
+                                    "key": "CHEM 102",
+                                    "title": "General Chemistry 2",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "112",
-                            "key": "CHEM 112",
-                            "title": "Organic Chemistry 1",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "112",
+                                    "key": "CHEM 112",
+                                    "title": "Organic Chemistry 1",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "113",
-                            "key": "CHEM 113",
-                            "title": "Organic Chemistry 2",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "142",
+                                    "key": "CHEM 142",
+                                    "title": "Pre-General Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "122",
-                            "key": "CHEM 122",
-                            "title": "Structure and Reactivity: Organic Chemistry 1",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "143",
+                                    "key": "CHEM 143",
+                                    "title": "Introductory College Chemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "123",
-                            "key": "CHEM 123",
-                            "title": "Structure and Reactivity: Organic Chemistry 2",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "144",
+                                    "key": "CHEM 144",
+                                    "title": "Fundamentals of Organic & Biochemistry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "143",
-                            "key": "CHEM 143",
-                            "title": "Introductory College Chemistry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "150",
+                                    "key": "CHEM 150",
+                                    "title": "Exploring Our Chemical Environment",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "144",
-                            "key": "CHEM 144",
-                            "title": "Fundamentals of Organic & Biochemistry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "164",
+                                    "key": "CHEM 164",
+                                    "title": "Introductory Chemistry Laboratory",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "142",
+                                    "key": "CHEM 142",
+                                    "title": "Pre-General Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Physical Science",
+                                    "prefix": "PHSCI",
+                                    "number": "180",
+                                    "key": "PHSCI 180",
+                                    "title": "Conceptual Physical Science: A Hands-On Approach",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -9979,6 +10471,26 @@
                 }
             },
             {
+                "sending_name": "Sacramento City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "309",
+                            "key": "CHEM 309",
+                            "title": "Integrated General, Organic, and Biological Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "San Bernardino Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -10047,41 +10559,11 @@
                         {
                             "subject": "Chemistry",
                             "prefix": "CHEM",
-                            "number": "1B",
-                            "key": "CHEM 1B",
-                            "title": "General Chemistry",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
                             "number": "3A",
                             "key": "CHEM 3A",
                             "title": "Introduction to Chemistry",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "12A",
-                            "key": "CHEM 12A",
-                            "title": "Organic Chemistry",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "12B",
-                            "key": "CHEM 12B",
-                            "title": "Organic Chemistry",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -10565,16 +11047,6 @@
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
-                        },
-                        {
-                            "subject": "English as a Second Language",
-                            "prefix": "ESL",
-                            "number": "1A",
-                            "key": "ESL 1A",
-                            "title": "College Composition for ESL",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
                         }
                     ],
                     "notes": []
@@ -10814,7 +11286,7 @@
                 "sending_name": "Coalinga College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "OR",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "English",
@@ -10824,16 +11296,6 @@
                             "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English As A Second Language",
-                            "prefix": "ESL",
-                            "number": "001",
-                            "key": "ESL 001",
-                            "title": "Composition for College",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -11012,6 +11474,26 @@
             },
             {
                 "sending_name": "College of the Redwoods",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Sequoias",
                 "sending_articulation": {
                     "type": "SET",
                     "conjunction": null,
@@ -11211,6 +11693,26 @@
                 }
             },
             {
+                "sending_name": "Cuesta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000",
+                            "key": "ENGL C1000",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
                     "type": "SET",
@@ -11315,16 +11817,6 @@
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1000H",
-                            "key": "ENGL C1000H",
-                            "title": "Academic Reading and Writing - HONORS",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
                         }
                     ],
                     "notes": []
@@ -11334,7 +11826,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "OR",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "English",
@@ -11342,56 +11834,6 @@
                             "number": "C1000",
                             "key": "ENGL C1000",
                             "title": "Academic Reading and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "122AM",
-                            "key": "ENGL 122AM",
-                            "title": "First-Year College English with Support for Multilingual Students",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "122AL",
-                            "key": "ENGL 122AL",
-                            "title": "Academic Reading and Writing for Multilingual Students",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1000E",
-                            "key": "ENGL C1000E",
-                            "title": "Academic Reading and Writing",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "122M",
-                            "key": "ENGL 122M",
-                            "title": "First-Year College Writing and Reading With Support",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "122X",
-                            "key": "ENGL 122X",
-                            "title": "Year-Long First-Year College Writing and Reading, Part II",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -11572,16 +12014,6 @@
                             "number": "1BH",
                             "key": "ENGL 1BH",
                             "title": "Honors Composition, Critical Reading, & Thinking Through Literature",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English for Second Language Learners",
-                            "prefix": "ESLL",
-                            "number": "26",
-                            "key": "ESLL 26",
-                            "title": "Advanced Composition & Reading",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -11808,12 +12240,12 @@
                         },
                         {
                             "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1000E",
-                            "key": "ENGL C1000E",
-                            "title": "Academic Reading and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "prefix": "ENG",
+                            "number": "1B",
+                            "key": "ENG 1B",
+                            "title": "College Literature and Composition",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -11944,7 +12376,7 @@
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "OR",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "English",
@@ -11954,16 +12386,6 @@
                             "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENG",
-                            "number": "1AEX",
-                            "key": "ENG 1AEX",
-                            "title": "Critical Reading and Composition Expanded",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -12284,7 +12706,7 @@
                 "sending_name": "Los Medanos College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "OR",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "English",
@@ -12294,16 +12716,6 @@
                             "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1000E",
-                            "key": "ENGL C1000E",
-                            "title": "Academic Reading and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -12444,8 +12856,18 @@
                 "sending_name": "Modesto Junior College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1000E",
+                            "key": "ENGL C1000E",
+                            "title": "Academic Reading and Writing",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
                         {
                             "subject": "English",
                             "prefix": "ENGL",
@@ -12464,7 +12886,7 @@
                 "sending_name": "Monterey Peninsula College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "English",
@@ -12474,6 +12896,16 @@
                             "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "1AE",
+                            "key": "ENGL 1AE",
+                            "title": "College Composition: Enhanced",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -12804,7 +13236,7 @@
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "OR",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "English",
@@ -12812,26 +13244,6 @@
                             "number": "C1000",
                             "key": "ENGL C1000",
                             "title": "Academic Reading and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1000H",
-                            "key": "ENGL C1000H",
-                            "title": "Academic Reading and Writing - Honors",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "001AS",
-                            "key": "ENGL 001AS",
-                            "title": "Stretch Accelerated Reading and Composition",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -12954,6 +13366,16 @@
                             "title": "Academic Reading and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English - Writing",
+                            "prefix": "ENGWR",
+                            "number": "488",
+                            "key": "ENGWR 488",
+                            "title": "Honors College Composition and Research",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -13209,16 +13631,6 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "C1000E",
-                            "key": "ENGL C1000E",
-                            "title": "Academic Reading and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
                             "number": "C1000H",
                             "key": "ENGL C1000H",
                             "title": "Academic Reading and Writing - Honors",
@@ -13284,16 +13696,6 @@
                             "title": "Literature and Composition",
                             "min_units": 3.0,
                             "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English for Multilingual Students",
-                            "prefix": "EMLS",
-                            "number": "10",
-                            "key": "EMLS 10",
-                            "title": "College Composition for Multilingual Students",
-                            "min_units": 4.5,
-                            "max_units": 4.5,
                             "notes": []
                         }
                     ],
@@ -13763,21 +14165,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Communication",
-                            "prefix": "COMM",
-                            "number": "302",
-                            "key": "COMM 302",
-                            "title": "Persuasive Speech",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication",
-                            "prefix": "COMM",
-                            "number": "311",
-                            "key": "COMM 311",
-                            "title": "Argumentation and Debate",
+                            "subject": "English - Reading",
+                            "prefix": "ENGRD",
+                            "number": "310",
+                            "key": "ENGRD 310",
+                            "title": "Critical Reading as Critical Thinking",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -13833,16 +14225,6 @@
                             "notes": []
                         },
                         {
-                            "subject": "English - Reading",
-                            "prefix": "ENGRD",
-                            "number": "310",
-                            "key": "ENGRD 310",
-                            "title": "Critical Reading as Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "English as a Second Language",
                             "prefix": "ESL",
                             "number": "350",
@@ -13858,6 +14240,26 @@
                             "number": "320",
                             "key": "PHIL 320",
                             "title": "Logic and Critical Reasoning",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication",
+                            "prefix": "COMM",
+                            "number": "302",
+                            "key": "COMM 302",
+                            "title": "Persuasive Speech",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication",
+                            "prefix": "COMM",
+                            "number": "311",
+                            "key": "COMM 311",
+                            "title": "Argumentation and Debate",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -14243,16 +14645,6 @@
                             "notes": []
                         },
                         {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "2MC",
-                            "key": "ENGL 2MC",
-                            "title": "Composition and Critical Thinking: Multicultural Emphasis",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "Philosophy",
                             "prefix": "PHILO",
                             "number": "12",
@@ -14481,36 +14873,6 @@
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "4A",
-                            "key": "ENGL 4A",
-                            "title": "Critical Thinking and Writing about Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1001",
-                            "key": "ENGL C1001",
-                            "title": "Critical Thinking and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "55",
-                            "key": "PHIL 55",
-                            "title": "Symbolic Logic",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
                         }
                     ],
                     "notes": []
@@ -14653,56 +15015,6 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Communication Studies",
-                            "prefix": "CMST",
-                            "number": "2",
-                            "key": "CMST 2",
-                            "title": "Introduction to Rhetorical Criticism",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "CMST",
-                            "number": "3",
-                            "key": "CMST 3",
-                            "title": "Argumentation and Debate",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1001",
-                            "key": "ENGL C1001",
-                            "title": "Critical Thinking and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "1B",
-                            "key": "ENGL 1B",
-                            "title": "Writing about Literature",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Latin American & Latina/o/e/x Studies",
-                            "prefix": "LALS",
-                            "number": "2",
-                            "key": "LALS 2",
-                            "title": "Critical Thinking in Latinx Studies",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "Philosophy",
                             "prefix": "PHIL",
                             "number": "2",
@@ -14728,6 +15040,16 @@
                             "number": "40",
                             "key": "PHIL 40",
                             "title": "Logic: An Introduction to Critical Thinking",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication Studies",
+                            "prefix": "CMST",
+                            "number": "2",
+                            "key": "CMST 2",
+                            "title": "Introduction to Rhetorical Criticism",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -15313,16 +15635,6 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Administration of Justice",
-                            "prefix": "AJ",
-                            "number": "025",
-                            "key": "AJ 025",
-                            "title": "Constitutional Law",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "Communications",
                             "prefix": "COMM",
                             "number": "005",
@@ -15358,6 +15670,16 @@
                             "number": "025",
                             "key": "PHIL 025",
                             "title": "Critical Thinking",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Administration of Justice",
+                            "prefix": "AJ",
+                            "number": "025",
+                            "key": "AJ 025",
+                            "title": "Constitutional Law",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -15653,16 +15975,6 @@
                             "notes": []
                         },
                         {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "482",
-                            "key": "COMM 482",
-                            "title": "Honors Seminar: Persuasion within Social Issues",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "English - Reading",
                             "prefix": "ENGRD",
                             "number": "310",
@@ -15670,16 +15982,6 @@
                             "title": "Critical Reading as Critical Thinking",
                             "min_units": 3.0,
                             "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English - Reading",
-                            "prefix": "ENGRD",
-                            "number": "311",
-                            "key": "ENGRD 311",
-                            "title": "Intensive Critical Thinking for College Success",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -15708,16 +16010,6 @@
                             "number": "300",
                             "key": "PHIL 300",
                             "title": "Introduction to Philosophy",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "304",
-                            "key": "PHIL 304",
-                            "title": "Introduction to Asian Philosophy",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -15820,6 +16112,56 @@
                             "title": "Introduction to Logic",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cuesta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Communication Studies",
+                            "prefix": "COMM",
+                            "number": "215",
+                            "key": "COMM 215",
+                            "title": "Argumentation and Debate",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "201B",
+                            "key": "ENGL 201B",
+                            "title": "English Composition: Introduction to Literature and Critical Thinking",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1001",
+                            "key": "ENGL C1001",
+                            "title": "Critical Thinking and Writing",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Philosophy",
+                            "prefix": "PHIL",
+                            "number": "208",
+                            "key": "PHIL 208",
+                            "title": "Critical Reasoning and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -16023,81 +16365,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "8",
-                            "key": "COMM 8",
-                            "title": "Argumentation and Critical Inquiry in Oral Communication",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "8H",
-                            "key": "COMM 8H",
-                            "title": "Argumentation and Critical Inquiry in Oral Communication - HONORS",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "9",
-                            "key": "COMM 9",
-                            "title": "Argumentation: Analysis of Oral and Written Communication",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "9H",
-                            "key": "COMM 9H",
-                            "title": "Argumentation: Analysis of Oral and Written Communication - HONORS",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "15",
-                            "key": "COMM 15",
-                            "title": "Critical Decision-Making in Groups",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "15H",
-                            "key": "COMM 15H",
-                            "title": "Critical Decision-Making in Groups - HONORS",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "English",
                             "prefix": "ENGL",
                             "number": "C1001",
                             "key": "ENGL C1001",
                             "title": "Critical Thinking and Writing",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1001H",
-                            "key": "ENGL C1001H",
-                            "title": "Critical Thinking and Writing - HONORS",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -16133,21 +16405,31 @@
                             "notes": []
                         },
                         {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "7H",
-                            "key": "PHIL 7H",
-                            "title": "Deductive Logic - HONORS",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "subject": "Communication Studies",
+                            "prefix": "COMM",
+                            "number": "8",
+                            "key": "COMM 8",
+                            "title": "Argumentation and Critical Inquiry in Oral Communication",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         },
                         {
-                            "subject": "Reading",
-                            "prefix": "READ",
-                            "number": "10",
-                            "key": "READ 10",
-                            "title": "Academic Literacy and Ethos",
+                            "subject": "Communication Studies",
+                            "prefix": "COMM",
+                            "number": "9",
+                            "key": "COMM 9",
+                            "title": "Argumentation: Analysis of Oral and Written Communication",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication Studies",
+                            "prefix": "COMM",
+                            "number": "15",
+                            "key": "COMM 15",
+                            "title": "Critical Decision-Making in Groups",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -16162,16 +16444,6 @@
                     "type": "SET",
                     "conjunction": "OR",
                     "items": [
-                        {
-                            "subject": "Art History",
-                            "prefix": "ARTHS",
-                            "number": "191",
-                            "key": "ARTHS 191",
-                            "title": "Critical Thinking in Visual Studies",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
                         {
                             "subject": "Communication Studies",
                             "prefix": "COMM",
@@ -16260,26 +16532,6 @@
                             "title": "Critical Thinking About Social and Cultural Issues",
                             "min_units": 3.0,
                             "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "123A",
-                            "key": "ENGL 123A",
-                            "title": "Critical Thinking: Writing about Literature for Multilingual Students",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "126A",
-                            "key": "ENGL 126A",
-                            "title": "Critical Thinking and Writing for Multilingual Students",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -16775,16 +17027,6 @@
                         {
                             "subject": "Philosophy",
                             "prefix": "PHIL",
-                            "number": "2H",
-                            "key": "PHIL 2H",
-                            "title": "Honors Critical Reasoning and Analytic Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
                             "number": "6",
                             "key": "PHIL 6",
                             "title": "Introduction to Logic",
@@ -16902,16 +17144,6 @@
                     "type": "SET",
                     "conjunction": "OR",
                     "items": [
-                        {
-                            "subject": "Communications",
-                            "prefix": "CMUN",
-                            "number": "3",
-                            "key": "CMUN 3",
-                            "title": "Argumentation and Debate",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
                         {
                             "subject": "English",
                             "prefix": "ENGL",
@@ -17453,16 +17685,6 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Communication Studies",
-                            "prefix": "CMST",
-                            "number": "46",
-                            "key": "CMST 46",
-                            "title": "Argumentation and Debate",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "English",
                             "prefix": "ENG",
                             "number": "4",
@@ -17493,21 +17715,11 @@
                             "notes": []
                         },
                         {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "8",
-                            "key": "PHIL 8",
-                            "title": "Logic and Argumentation",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Theater Arts",
-                            "prefix": "THEA",
-                            "number": "53",
-                            "key": "THEA 53",
-                            "title": "Script Analysis",
+                            "subject": "Communication Studies",
+                            "prefix": "CMST",
+                            "number": "46",
+                            "key": "CMST 46",
+                            "title": "Argumentation and Debate",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -18233,46 +18445,6 @@
                             "notes": []
                         },
                         {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "230",
-                            "key": "ENGL 230",
-                            "title": "Thinking and Writing Critically about Literature",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHN",
-                            "number": "102",
-                            "key": "ETHN 102",
-                            "title": "Critical Thinking in Ethnic Studies",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "110",
-                            "key": "PHIL 110",
-                            "title": "Critical Thinking and Composition",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "210",
-                            "key": "PHIL 210",
-                            "title": "Symbolic Logic",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "Communication",
                             "prefix": "COMM",
                             "number": "120",
@@ -18333,6 +18505,26 @@
                     "conjunction": "OR",
                     "items": [
                         {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1001",
+                            "key": "ENGL C1001",
+                            "title": "Critical Thinking and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1001H",
+                            "key": "ENGL C1001H",
+                            "title": "Critical Thinking and Writing - Honors",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
                             "subject": "Philosophy",
                             "prefix": "PHIL",
                             "number": "-10",
@@ -18348,26 +18540,6 @@
                             "number": "-12",
                             "key": "PHIL -12",
                             "title": "Introduction to Logic",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "-13",
-                            "key": "PHIL -13",
-                            "title": "Critical Reasoning and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "-13H",
-                            "key": "PHIL -13H",
-                            "title": "Honors Critical Reasoning and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -18613,36 +18785,6 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "104",
-                            "key": "COMM 104",
-                            "title": "Argumentation",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "107",
-                            "key": "COMM 107",
-                            "title": "Critical Thinking Through Debate",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Computer Science",
-                            "prefix": "CSCI",
-                            "number": "203",
-                            "key": "CSCI 203",
-                            "title": "Symbolic Logic",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "English",
                             "prefix": "ENGL",
                             "number": "C1001",
@@ -18653,10 +18795,10 @@
                             "notes": []
                         },
                         {
-                            "subject": "Philosophy",
-                            "prefix": "PHILO",
-                            "number": "103",
-                            "key": "PHILO 103",
+                            "subject": "Computer Science",
+                            "prefix": "CSCI",
+                            "number": "203",
+                            "key": "CSCI 203",
                             "title": "Symbolic Logic",
                             "min_units": 3.0,
                             "max_units": 3.0,
@@ -18678,6 +18820,36 @@
                             "number": "107",
                             "key": "PHILO 107",
                             "title": "Philosophy of Science",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication Studies",
+                            "prefix": "COMM",
+                            "number": "104",
+                            "key": "COMM 104",
+                            "title": "Argumentation",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication Studies",
+                            "prefix": "COMM",
+                            "number": "107",
+                            "key": "COMM 107",
+                            "title": "Critical Thinking Through Debate",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Reading",
+                            "prefix": "READ",
+                            "number": "184",
+                            "key": "READ 184",
+                            "title": "Critical Reading",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -19655,39 +19827,9 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "001B",
-                            "key": "ENGL 001B",
-                            "title": "Reading and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "001BH",
-                            "key": "ENGL 001BH",
-                            "title": "Honors Reading and Composition",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
                             "number": "C1001",
                             "key": "ENGL C1001",
                             "title": "Critical Thinking and Writing",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1001H",
-                            "key": "ENGL C1001H",
-                            "title": "Critical Thinking and Writing - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -19698,16 +19840,6 @@
                             "number": "025",
                             "key": "PHIL 025",
                             "title": "Introduction to Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Philosophy",
-                            "prefix": "PHIL",
-                            "number": "025H",
-                            "key": "PHIL 025H",
-                            "title": "Honors Critical Thinking",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -19785,31 +19917,11 @@
                         {
                             "subject": "English",
                             "prefix": "ENGL",
-                            "number": "P100R",
-                            "key": "ENGL P100R",
-                            "title": "College Reading: Logical Analysis and Evaluation",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
                             "number": "P101B",
                             "key": "ENGL P101B",
                             "title": "Argumentative Writing and Critical Thinking Through Literature",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1001",
-                            "key": "ENGL C1001",
-                            "title": "Critical Thinking and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
                             "notes": []
                         },
                         {
@@ -19838,16 +19950,6 @@
                             "number": "25",
                             "key": "COMM 25",
                             "title": "Argumentation",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communications",
-                            "prefix": "COMM",
-                            "number": "25H",
-                            "key": "COMM 25H",
-                            "title": "Honors Argumentation and Debate",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -20170,6 +20272,16 @@
                             "title": "Critical Thinking and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English - Writing",
+                            "prefix": "ENGWR",
+                            "number": "303",
+                            "key": "ENGWR 303",
+                            "title": "Argumentative Writing and Critical Thinking Through Literature",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -20543,16 +20655,6 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "5",
-                            "key": "COMM 5",
-                            "title": "Argumentation and Debate",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "English",
                             "prefix": "ENGL",
                             "number": "1B",
@@ -20568,6 +20670,16 @@
                             "number": "C1001",
                             "key": "ENGL C1001",
                             "title": "Critical Thinking and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication Studies",
+                            "prefix": "COMM",
+                            "number": "5",
+                            "key": "COMM 5",
+                            "title": "Argumentation and Debate",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -20618,16 +20730,6 @@
                             "number": "060",
                             "key": "PHIL 060",
                             "title": "Logic and Critical Thinking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Reading",
-                            "prefix": "READ",
-                            "number": "010",
-                            "key": "READ 010",
-                            "title": "Critical Reading",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -20755,16 +20857,6 @@
                         {
                             "subject": "English",
                             "prefix": "ENG",
-                            "number": "103",
-                            "key": "ENG 103",
-                            "title": "Critical Thinking and Reading",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENG",
                             "number": "111",
                             "key": "ENG 111",
                             "title": "Critical Thinking and Composition Through Literature",
@@ -20778,16 +20870,6 @@
                             "number": "111H",
                             "key": "ENG 111H",
                             "title": "Critical Thinking and Composition through Literature, Honors",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1001",
-                            "key": "ENGL C1001",
-                            "title": "Critical Thinking and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -20903,26 +20985,6 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "3",
-                            "key": "COMM 3",
-                            "title": "Introduction to Argumentation",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "9",
-                            "key": "COMM 9",
-                            "title": "Critical Thinking and Argumentation",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "English",
                             "prefix": "ENGL",
                             "number": "C1001",
@@ -20948,6 +21010,26 @@
                             "number": "5",
                             "key": "PHIL 5",
                             "title": "Critical Thinking/Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication Studies",
+                            "prefix": "COMM",
+                            "number": "3",
+                            "key": "COMM 3",
+                            "title": "Introduction to Argumentation",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication Studies",
+                            "prefix": "COMM",
+                            "number": "9",
+                            "key": "COMM 9",
+                            "title": "Critical Thinking and Argumentation",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -21608,16 +21690,6 @@
                             "number": "C1001",
                             "key": "ENGL C1001",
                             "title": "Critical Thinking and Writing",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "English",
-                            "prefix": "ENGL",
-                            "number": "C1001H",
-                            "key": "ENGL C1001H",
-                            "title": "Honors Critical Thinking and Writing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -31766,16 +31838,6 @@
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
-                        },
-                        {
-                            "subject": "Communication",
-                            "prefix": "COMM",
-                            "number": "362",
-                            "key": "COMM 362",
-                            "title": "Mediated Public Speaking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
                         }
                     ],
                     "notes": []
@@ -32930,16 +32992,6 @@
                         {
                             "subject": "Communications",
                             "prefix": "COMM",
-                            "number": "007",
-                            "key": "COMM 007",
-                            "title": "Persuasion",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communications",
-                            "prefix": "COMM",
                             "number": "008",
                             "key": "COMM 008",
                             "title": "Group Communication",
@@ -33410,29 +33462,9 @@
                         {
                             "subject": "Communication Studies",
                             "prefix": "COMM",
-                            "number": "C1000H",
-                            "key": "COMM C1000H",
-                            "title": "Introduction to Public Speaking - Honors",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
                             "number": "10",
                             "key": "COMM 10",
                             "title": "Fundamentals of Oral Communication",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "10H",
-                            "key": "COMM 10H",
-                            "title": "Fundamentals of Oral Communication - HONORS",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -33453,16 +33485,6 @@
                             "number": "C1000",
                             "key": "COMM C1000",
                             "title": "Introduction to Public Speaking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "123",
-                            "key": "COMM 123",
-                            "title": "Argumentation and Debate",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -33813,16 +33835,6 @@
                             "number": "8",
                             "key": "COMM 8",
                             "title": "Group Communication",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication",
-                            "prefix": "COMM",
-                            "number": "8H",
-                            "key": "COMM 8H",
-                            "title": "Honors Group Communication",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -34263,16 +34275,6 @@
                             "number": "C1000",
                             "key": "COMM C1000",
                             "title": "Introduction to Public Speaking",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "CMST",
-                            "number": "10",
-                            "key": "CMST 10",
-                            "title": "Interpersonal Communication",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -34976,26 +34978,6 @@
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "104",
-                            "key": "COMM 104",
-                            "title": "Argumentation",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "107",
-                            "key": "COMM 107",
-                            "title": "Critical Thinking Through Debate",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
                         }
                     ],
                     "notes": []
@@ -35456,16 +35438,6 @@
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
-                        },
-                        {
-                            "subject": "Communication Studies",
-                            "prefix": "COMM",
-                            "number": "116",
-                            "key": "COMM 116",
-                            "title": "Critical Thinking/Argumentation and Debate",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
                         }
                     ],
                     "notes": []
@@ -35628,16 +35600,6 @@
                             "notes": []
                         },
                         {
-                            "subject": "Communication",
-                            "prefix": "COMM",
-                            "number": "C1000H",
-                            "key": "COMM C1000H",
-                            "title": "Introduction to Public Speaking - Honors",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "Speech Communication",
                             "prefix": "SPCH",
                             "number": "010",
@@ -35676,16 +35638,6 @@
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
-                        },
-                        {
-                            "subject": "Communication",
-                            "prefix": "COMM",
-                            "number": "P103",
-                            "key": "COMM P103",
-                            "title": "Persuasion",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
                         }
                     ],
                     "notes": []
@@ -35720,6 +35672,16 @@
                         {
                             "subject": "Communications",
                             "prefix": "COMM",
+                            "number": "2",
+                            "key": "COMM 2",
+                            "title": "Interpersonal Communication",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communications",
+                            "prefix": "COMM",
                             "number": "4",
                             "key": "COMM 4",
                             "title": "Persuasion",
@@ -35743,16 +35705,6 @@
                             "number": "25",
                             "key": "COMM 25",
                             "title": "Argumentation",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communications",
-                            "prefix": "COMM",
-                            "number": "25H",
-                            "key": "COMM 25H",
-                            "title": "Honors Argumentation and Debate",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -35890,6 +35842,16 @@
                         {
                             "subject": "Communication",
                             "prefix": "COMM",
+                            "number": "303",
+                            "key": "COMM 303",
+                            "title": "Mediated Oral Communication",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication",
+                            "prefix": "COMM",
                             "number": "311",
                             "key": "COMM 311",
                             "title": "Argumentation and Debate",
@@ -35913,6 +35875,16 @@
                             "number": "361",
                             "key": "COMM 361",
                             "title": "The Communication Experience",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Communication",
+                            "prefix": "COMM",
+                            "number": "481",
+                            "key": "COMM 481",
+                            "title": "Introduction to Public Speaking - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -36330,16 +36302,6 @@
                         {
                             "subject": "Communication",
                             "prefix": "COMM",
-                            "number": "122",
-                            "key": "COMM 122",
-                            "title": "Mediated Interpersonal Communication",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication",
-                            "prefix": "COMM",
                             "number": "C1000",
                             "key": "COMM C1000",
                             "title": "Introduction to Public Speaking",
@@ -36373,16 +36335,6 @@
                             "number": "161",
                             "key": "COMM 161",
                             "title": "Communication in Organizations",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Communication",
-                            "prefix": "COMM",
-                            "number": "162",
-                            "key": "COMM 162",
-                            "title": "Mediated Communication in Organizations",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []

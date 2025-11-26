@@ -7167,6 +7167,7 @@
                     "type": "GROUP",
                     "conjunctions": [
                         "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -7177,11 +7178,11 @@
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
-                                    "number": "110",
-                                    "key": "MATH 110",
-                                    "title": "Precalculus",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
+                                    "number": "101E",
+                                    "key": "MATH 101E",
+                                    "title": "Algebra and Trigonometry for Calculus",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
                                     "notes": []
                                 }
                             ],
@@ -7241,6 +7242,23 @@
                                     "notes": [
                                         "Articulates as a sequence only"
                                     ]
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "110",
+                                    "key": "MATH 110",
+                                    "title": "Precalculus",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -7590,7 +7608,7 @@
                             "prefix": "MATH",
                             "number": "260",
                             "key": "MATH 260",
-                            "title": "Pre-Calculus",
+                            "title": "Precalculus",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -8718,7 +8736,30 @@
         "title": "Mathematical Foundations for Non-Calculus Physics",
         "min_units": 5.0,
         "max_units": 5.0,
-        "articulations": []
+        "articulations": [
+            {
+                "sending_name": "Pasadena City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "004Z",
+                            "key": "MATH 004Z",
+                            "title": "Get Ready for Calculus",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
     },
     {
         "type": "COURSE",
@@ -9112,8 +9153,8 @@
                             "number": "134",
                             "key": "MATH 134",
                             "title": "Decision Mathematics",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 3.5,
+                            "max_units": 3.5,
                             "notes": []
                         },
                         {
@@ -9666,14 +9707,24 @@
                 "sending_name": "Antelope Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "115",
-                            "key": "MATH 115",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10226,14 +10277,24 @@
                 "sending_name": "Compton College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10459,21 +10520,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10486,16 +10547,36 @@
                 "sending_name": "El Camino College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Business",
+                            "prefix": "BUS",
+                            "number": "116",
+                            "key": "BUS 116",
+                            "title": "Statistics for Business Decision Making",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -10681,29 +10762,39 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "136",
-                            "key": "MATH 136",
-                            "title": "Statistics",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136+",
-                            "key": "MATH 136+",
-                            "title": "Statistics with Support",
+                            "number": "137",
+                            "key": "MATH 137",
+                            "title": "Statistics for Data Science",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136H",
-                            "key": "MATH 136H",
-                            "title": "Honors Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10993,21 +11084,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11023,21 +11114,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11082,11 +11173,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227",
-                                    "key": "MATH 227",
-                                    "title": "Elementary Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -11116,11 +11207,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227S",
-                                    "key": "MATH 227S",
-                                    "title": "Statistics with support",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000E",
+                                    "key": "STAT C1000E",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -11183,11 +11274,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11244,20 +11335,20 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11273,21 +11364,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics With Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11543,21 +11634,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15",
-                            "key": "MATH M15",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15H",
-                            "key": "MATH M15H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11568,8 +11659,8 @@
                             "number": "M125",
                             "key": "SOC M125",
                             "title": "Statistics for the Behavioral and Social Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -11763,21 +11854,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105",
-                            "key": "MATH R105",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105H",
-                            "key": "MATH R105H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -11830,14 +11921,24 @@
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "050",
-                            "key": "STAT 050",
-                            "title": "Elementary Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -12223,11 +12324,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "117",
-                            "key": "MATH 117",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -12244,10 +12345,10 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "54",
-                            "key": "MATH 54",
-                            "title": "Elementary Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -12443,11 +12544,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "V44",
-                            "key": "MATH V44",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -12493,21 +12594,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -12662,14 +12763,24 @@
                 "sending_name": "Antelope Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "115",
-                            "key": "MATH 115",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -13222,14 +13333,24 @@
                 "sending_name": "Compton College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -13455,21 +13576,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -13482,16 +13603,36 @@
                 "sending_name": "El Camino College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Business",
+                            "prefix": "BUS",
+                            "number": "116",
+                            "key": "BUS 116",
+                            "title": "Statistics for Business Decision Making",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -13677,29 +13818,39 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "136",
-                            "key": "MATH 136",
-                            "title": "Statistics",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136+",
-                            "key": "MATH 136+",
-                            "title": "Statistics with Support",
+                            "number": "137",
+                            "key": "MATH 137",
+                            "title": "Statistics for Data Science",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136H",
-                            "key": "MATH 136H",
-                            "title": "Honors Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -13989,21 +14140,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -14019,21 +14170,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -14078,11 +14229,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227",
-                                    "key": "MATH 227",
-                                    "title": "Elementary Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -14112,11 +14263,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227S",
-                                    "key": "MATH 227S",
-                                    "title": "Statistics with support",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000E",
+                                    "key": "STAT C1000E",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -14179,11 +14330,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -14240,20 +14391,20 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -14269,21 +14420,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics With Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -14539,21 +14690,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15",
-                            "key": "MATH M15",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15H",
-                            "key": "MATH M15H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -14564,8 +14715,8 @@
                             "number": "M125",
                             "key": "SOC M125",
                             "title": "Statistics for the Behavioral and Social Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -14759,21 +14910,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105",
-                            "key": "MATH R105",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105H",
-                            "key": "MATH R105H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -14826,14 +14977,24 @@
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "050",
-                            "key": "STAT 050",
-                            "title": "Elementary Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -15219,11 +15380,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "117",
-                            "key": "MATH 117",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -15240,10 +15401,10 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "54",
-                            "key": "MATH 54",
-                            "title": "Elementary Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -15439,11 +15600,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "V44",
-                            "key": "MATH V44",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -15489,21 +15650,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -15658,14 +15819,24 @@
                 "sending_name": "Antelope Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "115",
-                            "key": "MATH 115",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -16218,14 +16389,24 @@
                 "sending_name": "Compton College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -16451,21 +16632,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -16478,16 +16659,36 @@
                 "sending_name": "El Camino College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Business",
+                            "prefix": "BUS",
+                            "number": "116",
+                            "key": "BUS 116",
+                            "title": "Statistics for Business Decision Making",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -16673,29 +16874,39 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "136",
-                            "key": "MATH 136",
-                            "title": "Statistics",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136+",
-                            "key": "MATH 136+",
-                            "title": "Statistics with Support",
+                            "number": "137",
+                            "key": "MATH 137",
+                            "title": "Statistics for Data Science",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136H",
-                            "key": "MATH 136H",
-                            "title": "Honors Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -16985,21 +17196,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -17015,21 +17226,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -17074,11 +17285,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227",
-                                    "key": "MATH 227",
-                                    "title": "Elementary Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -17108,11 +17319,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227S",
-                                    "key": "MATH 227S",
-                                    "title": "Statistics with support",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000E",
+                                    "key": "STAT C1000E",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -17175,11 +17386,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -17236,20 +17447,20 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -17265,21 +17476,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics With Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -17535,21 +17746,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15",
-                            "key": "MATH M15",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15H",
-                            "key": "MATH M15H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -17560,8 +17771,8 @@
                             "number": "M125",
                             "key": "SOC M125",
                             "title": "Statistics for the Behavioral and Social Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -17755,21 +17966,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105",
-                            "key": "MATH R105",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105H",
-                            "key": "MATH R105H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -17822,14 +18033,24 @@
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "050",
-                            "key": "STAT 050",
-                            "title": "Elementary Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -18215,11 +18436,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "117",
-                            "key": "MATH 117",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -18236,10 +18457,10 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "54",
-                            "key": "MATH 54",
-                            "title": "Elementary Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -18435,11 +18656,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "V44",
-                            "key": "MATH V44",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -18485,21 +18706,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -18654,14 +18875,24 @@
                 "sending_name": "Antelope Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "115",
-                            "key": "MATH 115",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -19214,14 +19445,24 @@
                 "sending_name": "Compton College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics CCN",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -19447,21 +19688,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -19474,16 +19715,36 @@
                 "sending_name": "El Camino College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "150",
-                            "key": "MATH 150",
-                            "title": "Elementary Statistics with Probability",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Business",
+                            "prefix": "BUS",
+                            "number": "116",
+                            "key": "BUS 116",
+                            "title": "Statistics for Business Decision Making",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -19669,29 +19930,39 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "136",
-                            "key": "MATH 136",
-                            "title": "Statistics",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136+",
-                            "key": "MATH 136+",
-                            "title": "Statistics with Support",
+                            "number": "137",
+                            "key": "MATH 137",
+                            "title": "Statistics for Data Science",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "136H",
-                            "key": "MATH 136H",
-                            "title": "Honors Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -19981,21 +20252,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -20011,21 +20282,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -20070,11 +20341,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227",
-                                    "key": "MATH 227",
-                                    "title": "Elementary Statistics",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -20104,11 +20375,11 @@
                             "conjunction": null,
                             "items": [
                                 {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "227S",
-                                    "key": "MATH 227S",
-                                    "title": "Statistics with support",
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000E",
+                                    "key": "STAT C1000E",
+                                    "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -20171,11 +20442,11 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -20232,20 +20503,20 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -20261,21 +20532,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics With Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -20531,21 +20802,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15",
-                            "key": "MATH M15",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "M15H",
-                            "key": "MATH M15H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -20556,8 +20827,8 @@
                             "number": "M125",
                             "key": "SOC M125",
                             "title": "Statistics for the Behavioral and Social Sciences",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -20751,21 +21022,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105",
-                            "key": "MATH R105",
-                            "title": "Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "R105H",
-                            "key": "MATH R105H",
-                            "title": "Honors: Introductory Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -20818,14 +21089,24 @@
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Statistics",
                             "prefix": "STAT",
-                            "number": "050",
-                            "key": "STAT 050",
-                            "title": "Elementary Statistics",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000H",
+                            "key": "STAT C1000H",
+                            "title": "Introduction to Statistics - Honors",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -21211,11 +21492,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "117",
-                            "key": "MATH 117",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -21232,10 +21513,10 @@
                     "items": [
                         {
                             "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "54",
-                            "key": "MATH 54",
-                            "title": "Elementary Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -21431,11 +21712,11 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "V44",
-                            "key": "MATH V44",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -21481,21 +21762,21 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227",
-                            "key": "MATH 227",
-                            "title": "Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "227S",
-                            "key": "MATH 227S",
-                            "title": "Statistics with Support",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -22944,8 +23225,8 @@
                             "number": "265",
                             "key": "MATH 265",
                             "title": "Calculus with Analytic Geometry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -23416,6 +23697,16 @@
                             "title": "Single Variable Calculus I",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "005AE",
+                            "key": "MATH 005AE",
+                            "title": "Single Variable Calculus I with Embedded Support",
+                            "min_units": 5.5,
+                            "max_units": 5.5,
                             "notes": []
                         },
                         {
@@ -25402,8 +25693,8 @@
                             "number": "266",
                             "key": "MATH 266",
                             "title": "Calculus with Analytic Geometry II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -25864,6 +26155,16 @@
                             "title": "Single Variable Calculus II",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "005BE",
+                            "key": "MATH 005BE",
+                            "title": "Single Variable Calculus II with Embedded Support",
+                            "min_units": 5.5,
+                            "max_units": 5.5,
                             "notes": []
                         },
                         {
@@ -29434,8 +29735,8 @@
                             "number": "267",
                             "key": "MATH 267",
                             "title": "Calculus with Analytic Geometry III",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -30545,6 +30846,28 @@
                 }
             },
             {
+                "sending_name": "Barstow Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "4A",
+                            "key": "MATH 4A",
+                            "title": "Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Berkeley City College",
                 "sending_articulation": {
                     "type": "SET",
@@ -30559,6 +30882,50 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Butte College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "30",
+                            "key": "MATH 30",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cabrillo College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "5A",
+                            "key": "MATH 5A",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -30609,6 +30976,28 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cerro Coso Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C151",
+                            "key": "MATH C151",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -30689,6 +31078,72 @@
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Clovis Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "5A",
+                            "key": "MATH 5A",
+                            "title": "Math Analysis I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coalinga College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "001A",
+                            "key": "MATH 001A",
+                            "title": "Introduction to Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C180",
+                            "key": "MATH C180",
+                            "title": "Calculus 1",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -30817,6 +31272,28 @@
                 }
             },
             {
+                "sending_name": "College of the Redwoods",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "50A",
+                            "key": "MATH 50A",
+                            "title": "Differential Calculus",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of the Sequoias",
                 "sending_articulation": {
                     "type": "SET",
@@ -30831,6 +31308,50 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of the Siskiyous",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1400",
+                            "key": "MATH 1400",
+                            "title": "Calculus and Analytic Geometry I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Columbia College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "18A",
+                            "key": "MATH 18A",
+                            "title": "Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -30947,6 +31468,28 @@
                 }
             },
             {
+                "sending_name": "Cuesta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "265A",
+                            "key": "MATH 265A",
+                            "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
                     "type": "SET",
@@ -30981,6 +31524,49 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "De Anza College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1A",
+                            "key": "MATH 1A",
+                            "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1B",
+                            "key": "MATH 1B",
+                            "title": "Calculus II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1C",
+                            "key": "MATH 1C",
+                            "title": "Calculus III",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Articulates as a sequence only",
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -31057,6 +31643,50 @@
                 }
             },
             {
+                "sending_name": "Evergreen Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "071",
+                            "key": "MATH 071",
+                            "title": "Calculus I with Analytic Geometry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Feather River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "218",
+                            "key": "MATH 218",
+                            "title": "Single Variable Calculus I - Late Transcendentals",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Folsom Lake College",
                 "sending_articulation": {
                     "type": "SET",
@@ -31077,6 +31707,61 @@
                 }
             },
             {
+                "sending_name": "Foothill College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1A",
+                            "key": "MATH 1A",
+                            "title": "Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1B",
+                            "key": "MATH 1B",
+                            "title": "Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Articulates as a sequence only",
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Fresno City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "5A",
+                            "key": "MATH 5A",
+                            "title": "Mathematical Analysis I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
                     "type": "SET",
@@ -31091,6 +31776,28 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Gavilan College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1A",
+                            "key": "MATH 1A",
+                            "title": "Single-Variable Calculus and Analytic Geometry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -31137,6 +31844,28 @@
                 }
             },
             {
+                "sending_name": "Golden West College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "G180",
+                            "key": "MATH G180",
+                            "title": "Calculus 1",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Grossmont College",
                 "sending_articulation": {
                     "type": "SET",
@@ -31151,6 +31880,203 @@
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Hartnell College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MAT",
+                            "number": "3A",
+                            "key": "MAT 3A",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Imperial Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "192",
+                            "key": "MATH 192",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Irvine Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "3A",
+                            "key": "MATH 3A",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Lake Tahoe Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MAT",
+                            "number": "105",
+                            "key": "MAT 105",
+                            "title": "Calculus and Analytic Geometry (Part I)",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MAT",
+                            "number": "106",
+                            "key": "MAT 106",
+                            "title": "Calculus and Analytic Geometry (Part II)",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MAT",
+                            "number": "107",
+                            "key": "MAT 107",
+                            "title": "Calculus and Analytic Geometry (Part III)",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Articulates as a sequence only",
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Laney College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "3A",
+                            "key": "MATH 3A",
+                            "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Las Positas College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1",
+                            "key": "MATH 1",
+                            "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Lassen Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1A",
+                            "key": "MATH 1A",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Lemoore College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "001A",
+                            "key": "MATH 001A",
+                            "title": "Introduction to Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -31288,8 +32214,8 @@
                             "number": "265",
                             "key": "MATH 265",
                             "title": "Calculus with Analytic Geometry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -31367,6 +32293,72 @@
                 }
             },
             {
+                "sending_name": "Madera Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "5A",
+                            "key": "MATH 5A",
+                            "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Mendocino College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MTH",
+                            "number": "210",
+                            "key": "MTH 210",
+                            "title": "Calculus and Analytic Geometry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Merced College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "-04A",
+                            "key": "MATH -04A",
+                            "title": "Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Merritt College",
                 "sending_articulation": {
                     "type": "SET",
@@ -31392,6 +32384,72 @@
                             "max_units": 3.0,
                             "notes": [
                                 "Articulates as a sequence only"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "MiraCosta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "150",
+                            "key": "MATH 150",
+                            "title": "Calculus and Analytic Geometry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Mission College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MAT",
+                            "number": "003A",
+                            "key": "MAT 003A",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Modesto Junior College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "171",
+                            "key": "MATH 171",
+                            "title": "Calculus: First Course",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
                             ]
                         }
                     ],
@@ -31479,6 +32537,50 @@
                 }
             },
             {
+                "sending_name": "Mt. San Jacinto College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH-",
+                            "number": "211",
+                            "key": "MATH- 211",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Napa Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "120",
+                            "key": "MATH 120",
+                            "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Norco College",
                 "sending_articulation": {
                     "type": "SET",
@@ -31493,6 +32595,28 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Ohlone College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "101A",
+                            "key": "MATH 101A",
+                            "title": "Calculus with Analytic Geometry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -31562,7 +32686,7 @@
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -31570,6 +32694,26 @@
                             "number": "005A",
                             "key": "MATH 005A",
                             "title": "Single Variable Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "005AE",
+                            "key": "MATH 005AE",
+                            "title": "Single Variable Calculus I with Embedded Support",
+                            "min_units": 5.5,
+                            "max_units": 5.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "005AH",
+                            "key": "MATH 005AH",
+                            "title": "Honors Single Variable Calculus I",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -31593,6 +32737,28 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Reedley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "5A",
+                            "key": "MATH 5A",
+                            "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -31759,6 +32925,50 @@
                 }
             },
             {
+                "sending_name": "San Joaquin Delta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1",
+                            "key": "MATH 1",
+                            "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "San Jose City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "071",
+                            "key": "MATH 071",
+                            "title": "Calculus I with Analytic Geometry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
                     "type": "SET",
@@ -31839,6 +33049,28 @@
                 }
             },
             {
+                "sending_name": "Santa Rosa Junior College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "1A",
+                            "key": "MATH 1A",
+                            "title": "Calculus, First Course",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
                     "type": "SET",
@@ -31853,6 +33085,28 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Shasta College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "3A",
+                            "key": "MATH 3A",
+                            "title": "Calculus 3A",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -31951,6 +33205,28 @@
                 }
             },
             {
+                "sending_name": "Taft College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "2100",
+                            "key": "MATH 2100",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
                     "type": "SET",
@@ -31971,6 +33247,28 @@
                 }
             },
             {
+                "sending_name": "Victor Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "226",
+                            "key": "MATH 226",
+                            "title": "Analytic Geometry and Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
                     "type": "SET",
@@ -31985,6 +33283,28 @@
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "West Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "003A",
+                            "key": "MATH 003A",
+                            "title": "Calculus and Analytic Geometry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -33510,8 +34830,8 @@
                             "number": "266",
                             "key": "MATH 266",
                             "title": "Calculus with Analytic Geometry II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -34024,7 +35344,7 @@
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -34032,6 +35352,26 @@
                             "number": "005B",
                             "key": "MATH 005B",
                             "title": "Single Variable Calculus II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "005BE",
+                            "key": "MATH 005BE",
+                            "title": "Single Variable Calculus II with Embedded Support",
+                            "min_units": 5.5,
+                            "max_units": 5.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "005BH",
+                            "key": "MATH 005BH",
+                            "title": "Honors Single Variable Calculus II",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
