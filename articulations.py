@@ -275,19 +275,44 @@ def extract_template_inventory(template_assets: dict, existing_articulation_cell
     return out
 
 
-def get_course_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
-    receiving = articulation["course"]
-    basic_course = BasicCourse.from_assist(receiving)
+def has_real_sending(articulation: dict) -> bool:
+    if articulation.get("templateOverrides"):
+        return True
 
-    if basic_course.key in seen:
+    sending = articulation.get("sendingArticulation")
+    if not sending:
+        return False
+
+    if sending.get("noArticulationReason"):
+        return False
+
+    items = sending.get("items") or []
+    return any(it.get("type") == "CourseGroup" for it in items)
+
+
+def get_course_articulation(art: dict, node_dict: dict, seen: dict[str, int], out: list[ReceivingItem]) -> None:
+    receiving = art["course"]
+    basic_course = BasicCourse.from_assist(receiving)
+    key = basic_course.key
+
+    new_is_real = has_real_sending(art)
+
+    if key in seen:
+        index = seen[key]
+        old_item = out[index]
+        old_is_real = old_item.sending_articulation is not None
+
+        if not old_is_real and new_is_real:
+            out[index] = ReceivingItem.from_receiving(basic_course, node_dict)
+
         return
 
-    seen.add(basic_course.key)
+    seen[key] = len(out)
     out.append(ReceivingItem.from_receiving(basic_course, node_dict))
 
 
-def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
-    series = articulation["series"]
+def get_series_articulation(art: dict, node_dict: dict, seen: dict[str, int], out: list[ReceivingItem]) -> None:
+    series = art["series"]
     series_courses = [BasicCourse.from_assist(member) for member in series["courses"]]
 
     if not series_courses:
@@ -297,25 +322,25 @@ def get_series_articulation(articulation: dict, node_dict: dict, seen: set[str],
     if series_key in seen:
         return
 
-    seen.add(series_key)
+    seen[series_key] = len(out)
     conjunction = Conjunction(series.get("conjunction", "AND").upper())
     rs = ReceivingSeries(key=series_key, conjunction=conjunction, courses=series_courses)
     out.append(ReceivingItem.from_receiving(rs, node_dict))
 
 
-def get_req_articulation(articulation: dict, node_dict: dict, seen: set[str], out: list[ReceivingItem]) -> None:
-    req_tuple = ReceivingRequirement.get_kind_and_key(articulation)
+def get_req_articulation(art: dict, node_dict: dict, seen: dict[str, int], out: list[ReceivingItem]) -> None:
+    req_tuple = ReceivingRequirement.get_kind_and_key(art)
 
     if req_tuple is None:
         return
 
-    kind, key = ReceivingRequirement.get_kind_and_key(articulation)
-    name = articulation[key]["name"].strip()
+    kind, key = ReceivingRequirement.get_kind_and_key(art)
+    name = art[key]["name"].strip()
 
     if name in seen:
         return
 
-    seen.add(name)
+    seen[key] = len(out)
     req = ReceivingRequirement(kind=kind, key=name)
     out.append(ReceivingItem.from_receiving(req, node_dict))
 
@@ -325,8 +350,9 @@ def get_articulations(all_courses_json: dict) -> list[ReceivingItem]:
     rows = extract_articulation_rows(result)
 
     out: list[ReceivingItem] = []
-    seen: set[str] = set()
+    seen: dict[str, int] = {}
 
+    # Actual articulations
     for row in rows:
         articulation = row["articulation"]
         node_dict = articulation_to_json_dict(articulation)
@@ -339,12 +365,12 @@ def get_articulations(all_courses_json: dict) -> list[ReceivingItem]:
         else:
             get_req_articulation(articulation, node_dict, seen, out)
 
+    # Just for templates. They only hold receiving data
     existing_articulation_cell_ids = {row["templateCellId"] for row in rows if row.get("templateCellId")}
     for inv in extract_template_inventory(result["templateAssets"], existing_articulation_cell_ids):
         if inv.key in seen:
             continue
 
-        seen.add(inv.key)
         out.append(inv)
 
     return out
