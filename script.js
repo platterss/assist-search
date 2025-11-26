@@ -103,15 +103,49 @@ async function populateUniversities() {
         disableDropdown(universitySelect);
 
         let universities = await fetchInstitutions();
-        const sorted = universities
-            .filter(u => u.category !== "CCC")
-            .sort((a, b) => a.name.localeCompare(b.name, undefined, {sensitivity: "base"}));
+        universities = universities.filter(u => u.category !== "CCC");
 
-        for (const university of sorted) {
-            const option = document.createElement("option");
-            option.value = university.id;
-            option.textContent = university.name;
-            universitySelect.appendChild(option);
+        const CATEGORY_ORDER = ["UC", "CSU", "AICCU"];
+        const orderIndex = (category) => {
+            const i = CATEGORY_ORDER.indexOf(category);
+            return i === -1 ? CATEGORY_ORDER.length : i;
+        }
+
+        const sorted = universities.sort((a, b) => {
+            const categoryDiff = orderIndex(a.category) - orderIndex(b.category);
+
+            if (categoryDiff !== 0) {
+                return categoryDiff;
+            }
+
+            return a.name.localeCompare(b.name, undefined, {sensitivity: "base"});
+        })
+
+        clearDropdown(universitySelect);
+        const categories = [
+            { key: "UC", label: "University of California" },
+            { key: "CSU", label: "California State University" },
+            { key: "AICCU", label: "Independent (AICCU)" }
+        ]
+
+        for (const category of categories) {
+            const groupItems = sorted.filter(u => u.category === category.key);
+
+            if (!groupItems.length) {
+                continue;
+            }
+
+            const optgroup = document.createElement("optgroup");
+            optgroup.label = category.label;
+
+            for (const university of groupItems) {
+                const option = document.createElement("option");
+                option.value = university.id;
+                option.textContent = university.name;
+                optgroup.appendChild(option);
+            }
+
+            universitySelect.appendChild(optgroup);
         }
 
         enableDropdown(universitySelect);
