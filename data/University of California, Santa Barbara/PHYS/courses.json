@@ -12783,6 +12783,26 @@
                 }
             },
             {
+                "sending_name": "Oxnard College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "R132",
+                            "key": "PHYS R132",
+                            "title": "Physics for Scientists and Engineers 2",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
@@ -23607,26 +23627,6 @@
                             "number": "3C",
                             "key": "PH 3C",
                             "title": "Engineering Physics",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "College of the Redwoods",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "4C",
-                            "key": "PHYS 4C",
-                            "title": "Calculus-based Physics: Heat, Optics, Waves, and Modern Physics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -42494,6 +42494,72 @@
                 }
             },
             {
+                "sending_name": "Oxnard College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "R101",
+                                    "key": "PHYS R101",
+                                    "title": "College Physics 1",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "R102",
+                                    "key": "PHYS R102",
+                                    "title": "College Physics 2",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "R121",
+                                    "key": "PHYS R121",
+                                    "title": "Physics with Calculus 1",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "R122",
+                                    "key": "PHYS R122",
+                                    "title": "Physics with Calculus 2",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "GROUP",
@@ -46433,6 +46499,72 @@
                                     "notes": [
                                         "Acceptable substitute"
                                     ]
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Oxnard College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "R101",
+                                    "key": "PHYS R101",
+                                    "title": "College Physics 1",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "R102",
+                                    "key": "PHYS R102",
+                                    "title": "College Physics 2",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "R121",
+                                    "key": "PHYS R121",
+                                    "title": "Physics with Calculus 1",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "R122",
+                                    "key": "PHYS R122",
+                                    "title": "Physics with Calculus 2",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
                                 }
                             ],
                             "notes": []
@@ -55695,46 +55827,6 @@
                             "number": "3C",
                             "key": "PH 3C",
                             "title": "Engineering Physics",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "College of the Redwoods",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
-                    "items": [
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "4A",
-                            "key": "PHYS 4A",
-                            "title": "Calculus-Based Physics: Mechanics",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "4B",
-                            "key": "PHYS 4B",
-                            "title": "Calculus-Based Physics: Electricity and Magnetism",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "4C",
-                            "key": "PHYS 4C",
-                            "title": "Calculus-based Physics: Heat, Optics, Waves, and Modern Physics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []

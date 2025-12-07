@@ -1093,7 +1093,7 @@
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Sociology",
@@ -1101,6 +1101,16 @@
                             "number": "1",
                             "key": "SOC 1",
                             "title": "Introduction to Sociology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Sociology",
+                            "prefix": "SOC",
+                            "number": "1H",
+                            "key": "SOC 1H",
+                            "title": "Introduction to Sociology Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -2337,9 +2347,9 @@
                     "items": [
                         {
                             "subject": "Sociology",
-                            "prefix": "SOC",
+                            "prefix": "SOCI",
                             "number": "001",
-                            "key": "SOC 001",
+                            "key": "SOCI 001",
                             "title": "Introduction to Sociology",
                             "min_units": 3.0,
                             "max_units": 3.0,
