@@ -1049,12 +1049,13 @@
                     "type": "GROUP",
                     "conjunctions": [
                         "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
                         {
                             "type": "SET",
-                            "conjunction": null,
+                            "conjunction": "AND",
                             "items": [
                                 {
                                     "subject": "History",
@@ -1062,6 +1063,43 @@
                                     "number": "3A",
                                     "key": "HIST 3A",
                                     "title": "World History from Prehistory to 750 CE",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "3B",
+                                    "key": "HIST 3B",
+                                    "title": "World History from 750 to 1750 CE",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "3AH",
+                                    "key": "HIST 3AH",
+                                    "title": "World History from Prehistory to 750 CE - HONORS",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "3BH",
+                                    "key": "HIST 3BH",
+                                    "title": "World History from 750 to 1750 CE - HONORS",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -4325,6 +4363,7 @@
                     "type": "GROUP",
                     "conjunctions": [
                         "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -4348,6 +4387,33 @@
                                     "number": "3C",
                                     "key": "HIST 3C",
                                     "title": "World History from 1750 CE to the Present",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "3BH",
+                                    "key": "HIST 3BH",
+                                    "title": "World History from 750 to 1750 CE - HONORS",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "3CH",
+                                    "key": "HIST 3CH",
+                                    "title": "World History from 1750 CE to the Present - Honors",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
@@ -7631,7 +7697,7 @@
                 "sending_name": "De Anza College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "History",
@@ -7639,6 +7705,16 @@
                             "number": "17A",
                             "key": "HIST 17A",
                             "title": "History of the United States to Early National Era",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "History",
+                            "prefix": "HIST",
+                            "number": "17AH",
+                            "key": "HIST 17AH",
+                            "title": "History of the United States to Early National Era - HONORS",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10152,27 +10228,63 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "17B",
-                            "key": "HIST 17B",
-                            "title": "History of the United States from 1800 to 1900",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "17B",
+                                    "key": "HIST 17B",
+                                    "title": "History of the United States from 1800 to 1900",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "17C",
+                                    "key": "HIST 17C",
+                                    "title": "History of the United States From 1900 to the Present",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "History",
-                            "prefix": "HIST",
-                            "number": "17C",
-                            "key": "HIST 17C",
-                            "title": "History of the United States From 1900 to the Present",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "17BH",
+                                    "key": "HIST 17BH",
+                                    "title": "History of the United States from 1800 to 1900 - HONORS",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "History",
+                                    "prefix": "HIST",
+                                    "number": "17CH",
+                                    "key": "HIST 17CH",
+                                    "title": "History of the United States From 1900 to the Present - HONORS",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],

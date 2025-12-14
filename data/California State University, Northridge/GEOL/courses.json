@@ -2252,7 +2252,7 @@
                 "sending_name": "Palo Verde College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "AND",
                     "items": [
                         {
                             "subject": "Geology",
@@ -2262,6 +2262,16 @@
                             "title": "Physical Geology",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Geology",
+                            "prefix": "GEL",
+                            "number": "102",
+                            "key": "GEL 102",
+                            "title": "Physical Geology Laboratory",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
                             "notes": []
                         }
                     ],
@@ -6831,7 +6841,38 @@
                 "max_units": 1.0
             }
         ],
-        "articulations": []
+        "articulations": [
+            {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Geology",
+                            "prefix": "GEOL",
+                            "number": "105",
+                            "key": "GEOL 105",
+                            "title": "Earth and Life through Time",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Geology",
+                            "prefix": "GEOL",
+                            "number": "115",
+                            "key": "GEOL 115",
+                            "title": "Earth and Life through Time Lab",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
     },
     {
         "type": "SERIES",

@@ -1548,47 +1548,63 @@
             {
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "101 F",
-                            "key": "ETHS 101 F",
-                            "title": "American Ethnic Studies",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "101 F",
+                                    "key": "ETHS 101 F",
+                                    "title": "American Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "101HF",
+                                    "key": "ETHS 101HF",
+                                    "title": "Honors American Ethnic Studies",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "101HF",
-                            "key": "ETHS 101HF",
-                            "title": "Honors American Ethnic Studies",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "235 F",
-                            "key": "ETHS 235 F",
-                            "title": "Contemporary Social Justice Movements",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Ethnic Studies",
-                            "prefix": "ETHS",
-                            "number": "235HF",
-                            "key": "ETHS 235HF",
-                            "title": "Honors Contemporary Social Justice Movements",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "235 F",
+                                    "key": "ETHS 235 F",
+                                    "title": "U.S. Racial Liberation Movements",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Ethnic Studies",
+                                    "prefix": "ETHS",
+                                    "number": "235HF",
+                                    "key": "ETHS 235HF",
+                                    "title": "Honors U.S. Racial Liberation Movements",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -1659,7 +1675,7 @@
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Ethnic Studies",
@@ -1667,6 +1683,16 @@
                             "number": "10",
                             "key": "ETHN 10",
                             "title": "Introduction to Ethnic Studies",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Ethnic Studies",
+                            "prefix": "ETHN",
+                            "number": "10H",
+                            "key": "ETHN 10H",
+                            "title": "Introduction to Ethnic Studies Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []

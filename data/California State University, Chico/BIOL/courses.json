@@ -279,7 +279,7 @@
                 "sending_name": "Cerro Coso Community College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Biology",
@@ -289,6 +289,16 @@
                             "title": "Concepts of Biology",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "C105H",
+                            "key": "BIOL C105H",
+                            "title": "Concepts of Biology: Honors",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -319,7 +329,7 @@
                             "prefix": "BIOS",
                             "number": "41",
                             "key": "BIOS 41",
-                            "title": "Introduction to College Biology for Health Sciences",
+                            "title": "Fundamentals of Biology for Health Sciences",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1045,6 +1055,19 @@
                             "number": "101 F",
                             "key": "BIOL 101 F",
                             "title": "General Biology",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Maximum credit, one university course",
+                                "Course articulates with more than one university course"
+                            ]
+                        },
+                        {
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "101HF",
+                            "key": "BIOL 101HF",
+                            "title": "Honors General Biology",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": [
@@ -1873,7 +1896,7 @@
                             "prefix": "BIOL",
                             "number": "130",
                             "key": "BIOL 130",
-                            "title": "Essential Biology",
+                            "title": "Biology in the Real World",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": [
@@ -1913,8 +1936,8 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": [
-                                "Course articulates with more than one university course",
-                                "Maximum credit, one university course"
+                                "Maximum credit, one university course",
+                                "Course articulates with more than one university course"
                             ]
                         }
                     ],
@@ -2366,63 +2389,34 @@
             {
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunctions": [
-                        "OR"
-                    ],
+                    "type": "SET",
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "type": "SET",
-                            "conjunction": null,
-                            "items": [
-                                {
-                                    "subject": "Biology",
-                                    "prefix": "BIOL",
-                                    "number": "100",
-                                    "key": "BIOL 100",
-                                    "title": "Concepts of Biology",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": [
-                                        "Maximum credit, one university course",
-                                        "Course articulates with more than one university course"
-                                    ]
-                                }
-                            ],
-                            "notes": []
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "100",
+                            "key": "BIOL 100",
+                            "title": "Concepts of Biology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Maximum credit, one university course",
+                                "Course articulates with more than one university course"
+                            ]
                         },
                         {
-                            "type": "SET",
-                            "conjunction": "AND",
-                            "items": [
-                                {
-                                    "subject": "Biology",
-                                    "prefix": "BIOL",
-                                    "number": "103A",
-                                    "key": "BIOL 103A",
-                                    "title": "Cell and Molecular Biology",
-                                    "min_units": 3.5,
-                                    "max_units": 3.5,
-                                    "notes": [
-                                        "Maximum credit, one university course",
-                                        "Course articulates with more than one university course"
-                                    ]
-                                },
-                                {
-                                    "subject": "Biology",
-                                    "prefix": "BIOL",
-                                    "number": "103L",
-                                    "key": "BIOL 103L",
-                                    "title": "Cell and Molecular Biology Laboratory",
-                                    "min_units": 1.5,
-                                    "max_units": 1.5,
-                                    "notes": [
-                                        "Maximum credit, one university course",
-                                        "Course articulates with more than one university course"
-                                    ]
-                                }
-                            ],
-                            "notes": []
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "103",
+                            "key": "BIOL 103",
+                            "title": "Cell and Molecular Biology",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Maximum credit, one university course",
+                                "Course articulates with more than one university course"
+                            ]
                         }
                     ],
                     "notes": []
@@ -4860,27 +4854,53 @@
             {
                 "sending_name": "Ohlone College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "103A",
-                            "key": "BIOL 103A",
-                            "title": "Human Anatomy and Physiology",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "103A",
+                                    "key": "BIOL 103A",
+                                    "title": "Human Anatomy and Physiology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "103B",
+                                    "key": "BIOL 103B",
+                                    "title": "Human Anatomy and Physiology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "103B",
-                            "key": "BIOL 103B",
-                            "title": "Human Anatomy and Physiology",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "111",
+                                    "key": "BIOL 111",
+                                    "title": "Human Anatomy",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -7647,27 +7667,53 @@
             {
                 "sending_name": "Ohlone College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "103A",
-                            "key": "BIOL 103A",
-                            "title": "Human Anatomy and Physiology",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "103A",
+                                    "key": "BIOL 103A",
+                                    "title": "Human Anatomy and Physiology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "103B",
+                                    "key": "BIOL 103B",
+                                    "title": "Human Anatomy and Physiology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "103B",
-                            "key": "BIOL 103B",
-                            "title": "Human Anatomy and Physiology",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "112",
+                                    "key": "BIOL 112",
+                                    "title": "Human Physiology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -8623,7 +8669,7 @@
                 "sending_name": "Cerro Coso Community College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Biology",
@@ -8633,6 +8679,16 @@
                             "title": "General Biology II",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "C112H",
+                            "key": "BIOL C112H",
+                            "title": "General Biology II: Honors",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],
@@ -8678,25 +8734,25 @@
                         {
                             "subject": "Biology",
                             "prefix": "BIOL",
-                            "number": "62",
-                            "key": "BIOL 62",
-                            "title": "Biology of Organisms",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": [
-                                "Maximum credit, one university course",
-                                "Course articulates with more than one university course"
-                            ]
+                            "number": "42",
+                            "key": "BIOL 42",
+                            "title": "Evolutionary Ecology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
                         },
                         {
                             "subject": "Biology",
                             "prefix": "BIOL",
-                            "number": "63",
-                            "key": "BIOL 63",
-                            "title": "Evolutionary Ecology",
+                            "number": "44",
+                            "key": "BIOL 44",
+                            "title": "Biology of Organisms",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
+                            "notes": [
+                                "Maximum credit, one university course",
+                                "Course articulates with more than one university course"
+                            ]
                         }
                     ],
                     "notes": []
@@ -11377,7 +11433,7 @@
                 "sending_name": "Cerro Coso Community College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Biology",
@@ -11387,6 +11443,16 @@
                             "title": "General Biology I",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "C111H",
+                            "key": "BIOL C111H",
+                            "title": "General Biology I: Honors",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],
@@ -13365,7 +13431,7 @@
                 "sending_name": "Santa Barbara City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "Biology",
@@ -13378,18 +13444,6 @@
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
-                            ]
-                        },
-                        {
-                            "subject": "Broken",
-                            "prefix": "Broken",
-                            "number": "404",
-                            "key": "Broken 404",
-                            "title": "Missing Course",
-                            "min_units": -1.0,
-                            "max_units": -1.0,
-                            "notes": [
-                                "This particular course is broken on ASSIST and displays an empty course."
                             ]
                         }
                     ],
@@ -13845,11 +13899,11 @@
                         {
                             "subject": "Biology",
                             "prefix": "BIOL",
-                            "number": "62",
-                            "key": "BIOL 62",
+                            "number": "44",
+                            "key": "BIOL 44",
                             "title": "Biology of Organisms",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": [
                                 "Maximum credit, one university course",
                                 "Course articulates with more than one university course"
@@ -14227,8 +14281,8 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": [
-                                "Course articulates with more than one university course",
-                                "Maximum credit, one course"
+                                "Maximum credit, one course",
+                                "Course articulates with more than one university course"
                             ]
                         },
                         {

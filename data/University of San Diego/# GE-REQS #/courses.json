@@ -7620,88 +7620,136 @@
             {
                 "sending_name": "Palomar College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "200",
-                            "key": "BIOL 200",
-                            "title": "Foundations of Biology I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "200",
+                                    "key": "BIOL 200",
+                                    "title": "Foundations of Biology I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Psychology",
+                                    "prefix": "PSYC",
+                                    "number": "205",
+                                    "key": "PSYC 205",
+                                    "title": "Statistics for the Behavioral Sciences",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "180",
+                                    "key": "SOC 180",
+                                    "title": "Social Justice Statistics",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Sociology",
+                                    "prefix": "SOC",
+                                    "number": "205",
+                                    "key": "SOC 205",
+                                    "title": "Statistics for the Behavioral Sciences",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000E",
+                                    "key": "STAT C1000E",
+                                    "title": "Introduction to Statistics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "110",
-                            "key": "CHEM 110",
-                            "title": "General Chemistry",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "110",
+                                    "key": "CHEM 110",
+                                    "title": "General Chemistry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "110L",
+                                    "key": "CHEM 110L",
+                                    "title": "General Chemistry Laboratory",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
-                            "subject": "Geology",
-                            "prefix": "GEOL",
-                            "number": "100",
-                            "key": "GEOL 100",
-                            "title": "Physical Geology",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Psychology",
-                            "prefix": "PSYC",
-                            "number": "205",
-                            "key": "PSYC 205",
-                            "title": "Statistics for the Behavioral Sciences",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "180",
-                            "key": "SOC 180",
-                            "title": "Social Justice Statistics",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Sociology",
-                            "prefix": "SOC",
-                            "number": "205",
-                            "key": "SOC 205",
-                            "title": "Statistics for the Behavioral Sciences",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Statistics",
-                            "prefix": "STAT",
-                            "number": "C1000",
-                            "key": "STAT C1000",
-                            "title": "Introduction to Statistics",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Statistics",
-                            "prefix": "STAT",
-                            "number": "C1000E",
-                            "key": "STAT C1000E",
-                            "title": "Introduction to Statistics",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "100",
+                                    "key": "GEOL 100",
+                                    "title": "Physical Geology",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Geology",
+                                    "prefix": "GEOL",
+                                    "number": "100L",
+                                    "key": "GEOL 100L",
+                                    "title": "Geology Laboratory",
+                                    "min_units": 1.0,
+                                    "max_units": 1.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         }
                     ],
                     "notes": []
@@ -9296,7 +9344,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9340,7 +9390,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9384,7 +9436,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9428,7 +9482,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9472,7 +9528,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9516,7 +9574,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9560,7 +9620,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9661,7 +9723,9 @@
                                     "title": "General Chemistry",
                                     "min_units": 3.0,
                                     "max_units": 3.0,
-                                    "notes": []
+                                    "notes": [
+                                        "Concurrent enrollment required"
+                                    ]
                                 },
                                 {
                                     "subject": "Chemistry",
@@ -9674,7 +9738,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9701,7 +9767,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9728,7 +9796,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9755,7 +9825,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9782,7 +9854,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9809,7 +9883,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9836,7 +9912,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",

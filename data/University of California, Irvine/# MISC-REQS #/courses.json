@@ -8543,6 +8543,16 @@
                         },
                         {
                             "subject": "English",
+                            "prefix": "ENGL",
+                            "number": "C1001",
+                            "key": "ENGL C1001",
+                            "title": "Critical Thinking and Writing",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "English",
                             "prefix": "ENG",
                             "number": "2",
                             "key": "ENG 2",
@@ -59328,7 +59338,7 @@
                             "prefix": "PSYC",
                             "number": "C1000H",
                             "key": "PSYC C1000H",
-                            "title": "Honors: Introduction to Psychology",
+                            "title": "Introduction to Psychology - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -71804,7 +71814,7 @@
                             "prefix": "PSYC",
                             "number": "C1000H",
                             "key": "PSYC C1000H",
-                            "title": "Honors: Introduction to Psychology",
+                            "title": "Introduction to Psychology - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -83210,7 +83220,7 @@
                             "prefix": "PSYC",
                             "number": "C1000H",
                             "key": "PSYC C1000H",
-                            "title": "Honors: Introduction to Psychology",
+                            "title": "Introduction to Psychology - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -94626,7 +94636,7 @@
                             "prefix": "PSYC",
                             "number": "C1000H",
                             "key": "PSYC C1000H",
-                            "title": "Honors: Introduction to Psychology",
+                            "title": "Introduction to Psychology - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -149704,6 +149714,16 @@
                         {
                             "subject": "Anthropology",
                             "prefix": "ANTHR",
+                            "number": "114",
+                            "key": "ANTHR 114",
+                            "title": "Gender, Sexuality, and Culture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Anthropology",
+                            "prefix": "ANTHR",
                             "number": "150",
                             "key": "ANTHR 150",
                             "title": "Archaeology",
@@ -149792,6 +149812,16 @@
                             "notes": []
                         },
                         {
+                            "subject": "Ethnic Studies",
+                            "prefix": "ETH S",
+                            "number": "132",
+                            "key": "ETH S 132",
+                            "title": "The African American Experience in the United States",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
                             "subject": "Geography",
                             "prefix": "GEOG",
                             "number": "101",
@@ -149807,6 +149837,16 @@
                             "number": "102",
                             "key": "GEOG 102",
                             "title": "Cultural Geography",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Geography",
+                            "prefix": "GEOG",
+                            "number": "102H",
+                            "key": "GEOG 102H",
+                            "title": "Honors Cultural Geography",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -150097,6 +150137,16 @@
                             "number": "105",
                             "key": "SOC 105",
                             "title": "Introduction to Gerontology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Sociology",
+                            "prefix": "SOC",
+                            "number": "108",
+                            "key": "SOC 108",
+                            "title": "Men and Masculinities",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -157616,7 +157666,7 @@
                             "prefix": "PSYC",
                             "number": "C1000H",
                             "key": "PSYC C1000H",
-                            "title": "Honors: Introduction to Psychology",
+                            "title": "Introduction to Psychology - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -158377,6 +158427,16 @@
                             "number": "14",
                             "key": "PSYC 14",
                             "title": "Developmental Psychology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Psychology",
+                            "prefix": "PSYC",
+                            "number": "14H",
+                            "key": "PSYC 14H",
+                            "title": "Developmental Psychology - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -177094,12 +177154,12 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
-                        "OR"
+                        "AND"
                     ],
                     "items": [
                         {
                             "type": "SET",
-                            "conjunction": "AND",
+                            "conjunction": null,
                             "items": [
                                 {
                                     "subject": "Mathematics",
@@ -177110,7 +177170,14 @@
                                     "min_units": 5.0,
                                     "max_units": 5.0,
                                     "notes": []
-                                },
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
                                 {
                                     "subject": "Psychology",
                                     "prefix": "PSYC",
@@ -177120,23 +177187,6 @@
                                     "min_units": 3.0,
                                     "max_units": 3.0,
                                     "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": "AND",
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "400",
-                                    "key": "MATH 400",
-                                    "title": "Calculus I",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
-                                    "notes": []
                                 },
                                 {
                                     "subject": "Statistics",
@@ -177144,6 +177194,16 @@
                                     "number": "C1000",
                                     "key": "STAT C1000",
                                     "title": "Introduction to Statistics",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000H",
+                                    "key": "STAT C1000H",
+                                    "title": "Introduction to Statistics - Honors",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []

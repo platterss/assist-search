@@ -6116,27 +6116,63 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "1A",
-                            "key": "ACCT 1A",
-                            "title": "Financial Accounting I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1A",
+                                    "key": "ACCT 1A",
+                                    "title": "Financial Accounting I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1B",
+                                    "key": "ACCT 1B",
+                                    "title": "Financial Accounting II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Accounting",
-                            "prefix": "ACCT",
-                            "number": "1B",
-                            "key": "ACCT 1B",
-                            "title": "Financial Accounting II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1AH",
+                                    "key": "ACCT 1AH",
+                                    "title": "Financial Accounting I - HONORS",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Accounting",
+                                    "prefix": "ACCT",
+                                    "number": "1BH",
+                                    "key": "ACCT 1BH",
+                                    "title": "Financial Accounting II - HONORS",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -8509,7 +8545,7 @@
                 "sending_name": "De Anza College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Accounting",
@@ -8517,6 +8553,16 @@
                             "number": "1C",
                             "key": "ACCT 1C",
                             "title": "Managerial Accounting",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Accounting",
+                            "prefix": "ACCT",
+                            "number": "1CH",
+                            "key": "ACCT 1CH",
+                            "title": "Managerial Accounting - HONORS",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []

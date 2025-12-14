@@ -493,14 +493,24 @@
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Psychology",
-                            "prefix": "PSYCH",
-                            "number": "101",
-                            "key": "PSYCH 101",
+                            "prefix": "PSYC",
+                            "number": "C1000",
+                            "key": "PSYC C1000",
                             "title": "Introduction to Psychology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Psychology",
+                            "prefix": "PSYC",
+                            "number": "C1000H",
+                            "key": "PSYC C1000H",
+                            "title": "Introduction to Psychology - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1670,7 +1680,7 @@
                             "prefix": "PSYC",
                             "number": "C1000H",
                             "key": "PSYC C1000H",
-                            "title": "Honors: Introduction to Psychology",
+                            "title": "Introduction to Psychology - Honors",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -1917,10 +1927,10 @@
                     "items": [
                         {
                             "subject": "Psychology",
-                            "prefix": "PSY",
-                            "number": "101",
-                            "key": "PSY 101",
-                            "title": "General Psychology",
+                            "prefix": "PSYC",
+                            "number": "C1000",
+                            "key": "PSYC C1000",
+                            "title": "Introduction to Psychology",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
