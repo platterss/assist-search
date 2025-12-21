@@ -7846,7 +7846,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -7873,7 +7875,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         }
                     ],
                     "notes": []
@@ -7885,6 +7889,8 @@
                     "type": "GROUP",
                     "conjunctions": [
                         "OR",
+                        "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -7892,16 +7898,6 @@
                             "type": "SET",
                             "conjunction": "OR",
                             "items": [
-                                {
-                                    "subject": "Astronomy",
-                                    "prefix": "ASTR",
-                                    "number": "101",
-                                    "key": "ASTR 101",
-                                    "title": "Descriptive Astronomy",
-                                    "min_units": 3.0,
-                                    "max_units": 3.0,
-                                    "notes": []
-                                },
                                 {
                                     "subject": "Biology",
                                     "prefix": "BIOL",
@@ -7928,16 +7924,6 @@
                                     "number": "115",
                                     "key": "BUSE 115",
                                     "title": "Statistics for Business",
-                                    "min_units": 3.0,
-                                    "max_units": 3.0,
-                                    "notes": []
-                                },
-                                {
-                                    "subject": "Chemistry",
-                                    "prefix": "CHEM",
-                                    "number": "200",
-                                    "key": "CHEM 200",
-                                    "title": "General Chemistry I - Lecture",
                                     "min_units": 3.0,
                                     "max_units": 3.0,
                                     "notes": []
@@ -8000,6 +7986,64 @@
                             "conjunction": "AND",
                             "items": [
                                 {
+                                    "subject": "Astronomy",
+                                    "prefix": "ASTR",
+                                    "number": "101",
+                                    "key": "ASTR 101",
+                                    "title": "Descriptive Astronomy",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Astronomy",
+                                    "prefix": "ASTR",
+                                    "number": "109",
+                                    "key": "ASTR 109",
+                                    "title": "Practice in Observing",
+                                    "min_units": 1.0,
+                                    "max_units": 1.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "200",
+                                    "key": "CHEM 200",
+                                    "title": "General Chemistry I - Lecture",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "200L",
+                                    "key": "CHEM 200L",
+                                    "title": "General Chemistry I - Laboratory",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
                                     "subject": "Geography",
                                     "prefix": "GEOG",
                                     "number": "101",
@@ -8020,7 +8064,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8047,7 +8093,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         }
                     ],
                     "notes": []
@@ -8058,6 +8106,7 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
+                        "OR",
                         "OR",
                         "OR"
                     ],
@@ -8082,16 +8131,6 @@
                                     "number": "115",
                                     "key": "BUSE 115",
                                     "title": "Statistics for Business",
-                                    "min_units": 3.0,
-                                    "max_units": 3.0,
-                                    "notes": []
-                                },
-                                {
-                                    "subject": "Chemistry",
-                                    "prefix": "CHEM",
-                                    "number": "200",
-                                    "key": "CHEM 200",
-                                    "title": "General Chemistry I - Lecture",
                                     "min_units": 3.0,
                                     "max_units": 3.0,
                                     "notes": []
@@ -8124,6 +8163,35 @@
                             "conjunction": "AND",
                             "items": [
                                 {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "200",
+                                    "key": "CHEM 200",
+                                    "title": "General Chemistry I - Lecture",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "200L",
+                                    "key": "CHEM 200L",
+                                    "title": "General Chemistry I - Laboratory",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
                                     "subject": "Geography",
                                     "prefix": "GEOG",
                                     "number": "101",
@@ -8144,7 +8212,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8171,7 +8241,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         }
                     ],
                     "notes": []
@@ -8231,7 +8303,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8285,7 +8359,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8312,7 +8388,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8339,7 +8417,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8383,7 +8463,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8531,7 +8613,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8558,7 +8642,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8585,7 +8671,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8612,7 +8700,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8639,7 +8729,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8666,7 +8758,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8784,7 +8878,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8811,7 +8907,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8838,7 +8936,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8865,7 +8965,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8892,7 +8994,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -8966,7 +9070,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9147,7 +9253,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9191,7 +9299,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -9285,7 +9395,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         }
                     ],
                     "notes": []
@@ -10051,7 +10163,7 @@
                     "items": [
                         {
                             "type": "SET",
-                            "conjunction": "OR",
+                            "conjunction": "AND",
                             "items": [
                                 {
                                     "subject": "Agriculture",
@@ -10074,7 +10186,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10101,7 +10215,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10128,7 +10244,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10155,7 +10273,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10182,7 +10302,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10209,7 +10331,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10313,7 +10437,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10340,7 +10466,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10367,7 +10495,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10394,7 +10524,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10421,7 +10553,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10448,7 +10582,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10475,7 +10611,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10502,7 +10640,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10546,7 +10686,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10573,7 +10715,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10600,7 +10744,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10661,7 +10807,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10725,7 +10873,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10752,7 +10902,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10850,7 +11002,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10877,7 +11031,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10904,7 +11060,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10931,7 +11089,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -10958,7 +11118,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11069,7 +11231,7 @@
                         },
                         {
                             "type": "SET",
-                            "conjunction": "OR",
+                            "conjunction": "AND",
                             "items": [
                                 {
                                     "subject": "Chemistry",
@@ -11092,7 +11254,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11119,7 +11283,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11146,7 +11312,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11173,7 +11341,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11200,7 +11370,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11227,7 +11399,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11254,7 +11428,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11281,7 +11457,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11308,7 +11486,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11335,7 +11515,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11362,7 +11544,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11389,11 +11573,13 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
-                            "conjunction": "OR",
+                            "conjunction": "AND",
                             "items": [
                                 {
                                     "subject": "Geology",
@@ -11416,7 +11602,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11443,7 +11631,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11537,7 +11727,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11564,7 +11756,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11591,7 +11785,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         }
                     ],
                     "notes": []
@@ -11642,7 +11838,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11669,7 +11867,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11696,7 +11896,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11723,7 +11925,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11750,7 +11954,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11844,7 +12050,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11871,7 +12079,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11898,7 +12108,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11925,7 +12137,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11952,7 +12166,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -11979,7 +12195,9 @@
                                     "notes": []
                                 }
                             ],
-                            "notes": []
+                            "notes": [
+                                "Concurrent enrollment required"
+                            ]
                         },
                         {
                             "type": "SET",
@@ -12061,7 +12279,8 @@
                                     "min_units": 3.0,
                                     "max_units": 3.0,
                                     "notes": [
-                                        "Course must include lab"
+                                        "Course must include lab",
+                                        "Concurrent enrollment required"
                                     ]
                                 }
                             ],

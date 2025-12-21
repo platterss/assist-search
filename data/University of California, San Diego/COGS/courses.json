@@ -1409,6 +1409,36 @@
                 }
             },
             {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Psychology",
+                            "prefix": "PSYC",
+                            "number": "200",
+                            "key": "PSYC 200",
+                            "title": "Research Methods for Psychology",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Sociology",
+                            "prefix": "SOC",
+                            "number": "200",
+                            "key": "SOC 200",
+                            "title": "Research Methods for Sociology",
+                            "min_units": 3.5,
+                            "max_units": 3.5,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "SET",
@@ -3574,7 +3604,7 @@
                 "sending_name": "Merced College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Statistics",
@@ -3582,6 +3612,16 @@
                             "number": "C1000",
                             "key": "STAT C1000",
                             "title": "Introduction to Statistics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Psychology",
+                            "prefix": "PSYC",
+                            "number": "-05",
+                            "key": "PSYC -05",
+                            "title": "Introduction to Statistics in Psychology",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []

@@ -433,7 +433,7 @@
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "Biology",
@@ -443,16 +443,6 @@
                             "title": "Human Biology",
                             "min_units": 3.0,
                             "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "105L",
-                            "key": "BIOL 105L",
-                            "title": "Human Biology Laboratory",
-                            "min_units": 1.0,
-                            "max_units": 1.0,
                             "notes": []
                         }
                     ],
@@ -482,63 +472,27 @@
             {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
-                    "type": "GROUP",
-                    "conjunctions": [
-                        "OR"
-                    ],
+                    "type": "SET",
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "type": "SET",
-                            "conjunction": "AND",
-                            "items": [
-                                {
-                                    "subject": "Biology",
-                                    "prefix": "BIOL",
-                                    "number": "109",
-                                    "key": "BIOL 109",
-                                    "title": "Fundamentals of Biology",
-                                    "min_units": 3.0,
-                                    "max_units": 3.0,
-                                    "notes": []
-                                },
-                                {
-                                    "subject": "Biology",
-                                    "prefix": "BIOL",
-                                    "number": "109L",
-                                    "key": "BIOL 109L",
-                                    "title": "Fundamentals of Biology Laboratory",
-                                    "min_units": 1.0,
-                                    "max_units": 1.0,
-                                    "notes": []
-                                }
-                            ],
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "109",
+                            "key": "BIOL 109",
+                            "title": "Fundamentals of Biology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         },
                         {
-                            "type": "SET",
-                            "conjunction": "AND",
-                            "items": [
-                                {
-                                    "subject": "Biology",
-                                    "prefix": "BIOL",
-                                    "number": "109H",
-                                    "key": "BIOL 109H",
-                                    "title": "Honors Fundamentals of Biology",
-                                    "min_units": 3.0,
-                                    "max_units": 3.0,
-                                    "notes": []
-                                },
-                                {
-                                    "subject": "Biology",
-                                    "prefix": "BIOL",
-                                    "number": "109L",
-                                    "key": "BIOL 109L",
-                                    "title": "Fundamentals of Biology Laboratory",
-                                    "min_units": 1.0,
-                                    "max_units": 1.0,
-                                    "notes": []
-                                }
-                            ],
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "109H",
+                            "key": "BIOL 109H",
+                            "title": "Honors Fundamentals of Biology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -1257,7 +1211,7 @@
                 "sending_name": "Rio Hondo College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Biology",
@@ -1267,6 +1221,16 @@
                             "title": "General Biology",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "200",
+                            "key": "BIOL 200",
+                            "title": "Principles of Biology 1 (Molecular and Cellular Biology)",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -1315,73 +1279,6 @@
                             "number": "006",
                             "key": "BIOLOGY 006",
                             "title": "General Biology I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            }
-        ]
-    },
-    {
-        "type": "SERIES",
-        "key": "BMS 130L + 131L",
-        "conjunction": "AND",
-        "courses": [
-            {
-                "subject": "Biomedical Sciences",
-                "prefix": "BMS",
-                "number": "130L",
-                "key": "BMS 130L",
-                "title": "General Biology w/Lab",
-                "min_units": 4.0,
-                "max_units": 4.0
-            },
-            {
-                "subject": "Biomedical Sciences",
-                "prefix": "BMS",
-                "number": "131L",
-                "key": "BMS 131L",
-                "title": "General Biology II w/Lab",
-                "min_units": 4.0,
-                "max_units": 4.0
-            }
-        ],
-        "articulations": [
-            {
-                "sending_name": "Santa Monica College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
-                    "items": [
-                        {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "21",
-                            "key": "BIOL 21",
-                            "title": "Cell Biology and Evolution",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "22",
-                            "key": "BIOL 22",
-                            "title": "Genetics and Molecular Biology",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "23",
-                            "key": "BIOL 23",
-                            "title": "Organismal and Environmental Biology",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -1766,6 +1663,26 @@
                             "title": "Principles of Biology II Laboratory",
                             "min_units": 1.0,
                             "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Rio Hondo College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Biology",
+                            "prefix": "BIOL",
+                            "number": "201",
+                            "key": "BIOL 201",
+                            "title": "Principles of Biology 2 (Diversity and Ecology)",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -2595,26 +2512,6 @@
                 }
             },
             {
-                "sending_name": "Santa Monica College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "11",
-                            "key": "CHEM 11",
-                            "title": "General Chemistry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
                     "type": "SET",
@@ -3328,26 +3225,6 @@
                             "number": "229",
                             "key": "CHEM 229",
                             "title": "General Chemistry and Qualitative Analysis",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Santa Monica College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "12",
-                            "key": "CHEM 12",
-                            "title": "General Chemistry II",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -4222,26 +4099,6 @@
                 }
             },
             {
-                "sending_name": "Santa Monica College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "21",
-                            "key": "CHEM 21",
-                            "title": "Organic Chemistry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
                     "type": "SET",
@@ -4934,26 +4791,6 @@
                 }
             },
             {
-                "sending_name": "Santa Monica College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "22",
-                            "key": "CHEM 22",
-                            "title": "Organic Chemistry II",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
                     "type": "SET",
@@ -5218,26 +5055,6 @@
                             "number": "221",
                             "key": "CHEM 221",
                             "title": "Biochemistry for Science Majors",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Santa Monica College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "31",
-                            "key": "CHEM 31",
-                            "title": "Biochemistry I",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -7816,26 +7633,6 @@
                 }
             },
             {
-                "sending_name": "Rio Hondo College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "200",
-                            "key": "BIOL 200",
-                            "title": "Principles of Biology 1 (Molecular and Cellular Biology)",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
                     "type": "SET",
@@ -8902,26 +8699,6 @@
                 }
             },
             {
-                "sending_name": "Santa Monica College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "30",
-                            "key": "BIOL 30",
-                            "title": "Fundamentals of Biotechnology 1",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "West Los Angeles College",
                 "sending_articulation": {
                     "type": "SET",
@@ -9166,26 +8943,6 @@
                             "number": "133",
                             "key": "HUMSV 133",
                             "title": "Pharmacology",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
-                "sending_name": "Santa Monica College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Nursing",
-                            "prefix": "NURSNG",
-                            "number": "17",
-                            "key": "NURSNG 17",
-                            "title": "Pharmacological Aspects of Nursing",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -9677,27 +9434,6 @@
         "title": "Global Oral Health",
         "min_units": 3.0,
         "max_units": 3.0,
-        "articulations": [
-            {
-                "sending_name": "West Los Angeles College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Dental Hygiene",
-                            "prefix": "DEN HY",
-                            "number": "462",
-                            "key": "DEN HY 462",
-                            "title": "Survey of Oral Health Care Systems",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            }
-        ]
+        "articulations": []
     }
 ]

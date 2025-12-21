@@ -458,7 +458,7 @@
                 "sending_name": "College of the Redwoods",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -468,6 +468,16 @@
                             "title": "College Algebra",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "31",
+                            "key": "MATH 31",
+                            "title": "College Algebra with Support",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -2903,6 +2913,16 @@
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "108",
+                            "key": "MATH 108",
+                            "title": "Algebra and Trigonometry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -2992,7 +3012,7 @@
                 "sending_name": "College of the Redwoods",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -3002,6 +3022,16 @@
                             "title": "College Algebra",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "31",
+                            "key": "MATH 31",
+                            "title": "College Algebra with Support",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -3584,6 +3614,8 @@
                     "type": "GROUP",
                     "conjunctions": [
                         "OR",
+                        "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -3623,6 +3655,23 @@
                         },
                         {
                             "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "100+",
+                                    "key": "MATH 100+",
+                                    "title": "College Algebra for STEM with Support",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
                             "conjunction": "AND",
                             "items": [
                                 {
@@ -3643,6 +3692,23 @@
                                     "title": "Precalculus II",
                                     "min_units": 3.5,
                                     "max_units": 3.5,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "102+",
+                                    "key": "MATH 102+",
+                                    "title": "Trigonmetry with Support",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
                                     "notes": []
                                 }
                             ],
@@ -6142,27 +6208,53 @@
             {
                 "sending_name": "College of the Redwoods",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "30",
-                            "key": "MATH 30",
-                            "title": "College Algebra",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "30",
+                                    "key": "MATH 30",
+                                    "title": "College Algebra",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "31",
+                                    "key": "MATH 31",
+                                    "title": "College Algebra with Support",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "25",
-                            "key": "MATH 25",
-                            "title": "College Trigonometry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "25",
+                                    "key": "MATH 25",
+                                    "title": "College Trigonometry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -10836,6 +10928,16 @@
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "102+",
+                            "key": "MATH 102+",
+                            "title": "Trigonmetry with Support",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -13364,6 +13466,46 @@
                 }
             },
             {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "103E",
+                            "key": "MATH 103E",
+                            "title": "Calculus and Analytic Geometry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "103E+",
+                            "key": "MATH 103E+",
+                            "title": "Calculus and Analytic Geometry I with Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "103EH",
+                            "key": "MATH 103EH",
+                            "title": "Honors Calculus and Analytic Geometry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "SET",
@@ -13597,7 +13739,7 @@
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -13605,6 +13747,16 @@
                             "number": "261",
                             "key": "MATH 261",
                             "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "261S",
+                            "key": "MATH 261S",
+                            "title": "Calculus I With Support",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -14517,6 +14669,16 @@
                             "title": "Single Variable Calculus I",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "180S",
+                            "key": "MATH 180S",
+                            "title": "Single Variable Calculus I with Integrated Support",
+                            "min_units": 4.5,
+                            "max_units": 4.5,
                             "notes": []
                         },
                         {
@@ -16266,6 +16428,82 @@
                 }
             },
             {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "103E",
+                                    "key": "MATH 103E",
+                                    "title": "Calculus and Analytic Geometry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "103E+",
+                                    "key": "MATH 103E+",
+                                    "title": "Calculus and Analytic Geometry I with Support",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "103EH",
+                                    "key": "MATH 103EH",
+                                    "title": "Honors Calculus and Analytic Geometry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "104E",
+                                    "key": "MATH 104E",
+                                    "title": "Calculus and Analytic Geometry II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "104EH",
+                                    "key": "MATH 104EH",
+                                    "title": "Honors Calculus and Analytic Geometry II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "SET",
@@ -16624,27 +16862,53 @@
             {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "261",
-                            "key": "MATH 261",
-                            "title": "Calculus I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "261",
+                                    "key": "MATH 261",
+                                    "title": "Calculus I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "261S",
+                                    "key": "MATH 261S",
+                                    "title": "Calculus I With Support",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "262",
-                            "key": "MATH 262",
-                            "title": "Calculus II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "262",
+                                    "key": "MATH 262",
+                                    "title": "Calculus II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -18096,27 +18360,63 @@
             {
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "180",
-                            "key": "MATH 180",
-                            "title": "Single Variable Calculus I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "180",
+                                    "key": "MATH 180",
+                                    "title": "Single Variable Calculus I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "180S",
+                                    "key": "MATH 180S",
+                                    "title": "Single Variable Calculus I with Integrated Support",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "180H",
+                                    "key": "MATH 180H",
+                                    "title": "Honors Single Variable Calculus I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "185",
-                            "key": "MATH 185",
-                            "title": "Single Variable Calculus II",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "185",
+                                    "key": "MATH 185",
+                                    "title": "Single Variable Calculus II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -20400,37 +20700,71 @@
             {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND",
+                        "AND"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "261",
-                            "key": "MATH 261",
-                            "title": "Calculus I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "261",
+                                    "key": "MATH 261",
+                                    "title": "Calculus I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "261S",
+                                    "key": "MATH 261S",
+                                    "title": "Calculus I With Support",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "262",
-                            "key": "MATH 262",
-                            "title": "Calculus II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "262",
+                                    "key": "MATH 262",
+                                    "title": "Calculus II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "263",
-                            "key": "MATH 263",
-                            "title": "Calculus III",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "263",
+                                    "key": "MATH 263",
+                                    "title": "Calculus III",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -21886,12 +22220,12 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
-                        "OR"
+                        "AND"
                     ],
                     "items": [
                         {
                             "type": "SET",
-                            "conjunction": "AND",
+                            "conjunction": "OR",
                             "items": [
                                 {
                                     "subject": "Mathematics",
@@ -21906,20 +22240,13 @@
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
-                                    "number": "185",
-                                    "key": "MATH 185",
-                                    "title": "Single Variable Calculus II",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
+                                    "number": "180S",
+                                    "key": "MATH 180S",
+                                    "title": "Single Variable Calculus I with Integrated Support",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
                                     "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": "AND",
-                            "items": [
+                                },
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
@@ -21929,7 +22256,14 @@
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
-                                },
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
@@ -24336,6 +24670,110 @@
                 }
             },
             {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND",
+                        "AND"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "103E",
+                                    "key": "MATH 103E",
+                                    "title": "Calculus and Analytic Geometry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "103E+",
+                                    "key": "MATH 103E+",
+                                    "title": "Calculus and Analytic Geometry I with Support",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "103EH",
+                                    "key": "MATH 103EH",
+                                    "title": "Honors Calculus and Analytic Geometry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "104E",
+                                    "key": "MATH 104E",
+                                    "title": "Calculus and Analytic Geometry II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "104EH",
+                                    "key": "MATH 104EH",
+                                    "title": "Honors Calculus and Analytic Geometry II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "105",
+                                    "key": "MATH 105",
+                                    "title": "Multivariable and Vector Calculus",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "105H",
+                                    "key": "MATH 105H",
+                                    "title": "Honors Multivariable and Vector Calculus",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "SET",
@@ -24794,37 +25232,71 @@
             {
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND",
+                        "AND"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "261",
-                            "key": "MATH 261",
-                            "title": "Calculus I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "261",
+                                    "key": "MATH 261",
+                                    "title": "Calculus I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "261S",
+                                    "key": "MATH 261S",
+                                    "title": "Calculus I With Support",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "262",
-                            "key": "MATH 262",
-                            "title": "Calculus II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "262",
+                                    "key": "MATH 262",
+                                    "title": "Calculus II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "263",
-                            "key": "MATH 263",
-                            "title": "Calculus III",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "263",
+                                    "key": "MATH 263",
+                                    "title": "Calculus III",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -26738,12 +27210,13 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
-                        "OR"
+                        "AND",
+                        "AND"
                     ],
                     "items": [
                         {
                             "type": "SET",
-                            "conjunction": "AND",
+                            "conjunction": "OR",
                             "items": [
                                 {
                                     "subject": "Mathematics",
@@ -26758,30 +27231,13 @@
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
-                                    "number": "185",
-                                    "key": "MATH 185",
-                                    "title": "Single Variable Calculus II",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
+                                    "number": "180S",
+                                    "key": "MATH 180S",
+                                    "title": "Single Variable Calculus I with Integrated Support",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
                                     "notes": []
                                 },
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "280",
-                                    "key": "MATH 280",
-                                    "title": "Intermediate Calculus",
-                                    "min_units": 4.0,
-                                    "max_units": 4.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": "AND",
-                            "items": [
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
@@ -26791,7 +27247,14 @@
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
-                                },
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
@@ -26801,7 +27264,14 @@
                                     "min_units": 4.0,
                                     "max_units": 4.0,
                                     "notes": []
-                                },
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
@@ -28291,6 +28761,36 @@
                             "title": "Single-Variable Calculus and Analytic Geometry",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "104E",
+                            "key": "MATH 104E",
+                            "title": "Calculus and Analytic Geometry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "104EH",
+                            "key": "MATH 104EH",
+                            "title": "Honors Calculus and Analytic Geometry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -33176,11 +33676,11 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "112",
-                            "key": "MATH 112",
-                            "title": "Calculus for Business",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "number": "113",
+                            "key": "MATH 113",
+                            "title": "Calculus for Life Sciences I",
+                            "min_units": 3.5,
+                            "max_units": 3.5,
                             "notes": []
                         }
                     ],
@@ -33529,6 +34029,16 @@
                             "number": "261",
                             "key": "MATH 261",
                             "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "261S",
+                            "key": "MATH 261S",
+                            "title": "Calculus I With Support",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -34779,6 +35289,26 @@
                             "number": "180",
                             "key": "MATH 180",
                             "title": "Single Variable Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "180S",
+                            "key": "MATH 180S",
+                            "title": "Single Variable Calculus I with Integrated Support",
+                            "min_units": 4.5,
+                            "max_units": 4.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "180H",
+                            "key": "MATH 180H",
+                            "title": "Honors Single Variable Calculus I",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -37006,6 +37536,36 @@
                 }
             },
             {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "113",
+                            "key": "MATH 113",
+                            "title": "Calculus for Life Sciences I",
+                            "min_units": 3.5,
+                            "max_units": 3.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "114",
+                            "key": "MATH 114",
+                            "title": "Calculus for Life Sciences II",
+                            "min_units": 3.5,
+                            "max_units": 3.5,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "SET",
@@ -37448,13 +38008,23 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
-                        "OR"
+                        "AND"
                     ],
                     "items": [
                         {
                             "type": "SET",
-                            "conjunction": "AND",
+                            "conjunction": "OR",
                             "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "236",
+                                    "key": "MATH 236",
+                                    "title": "Calculus for Business and Social Sciences",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
@@ -37468,9 +38038,9 @@
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
-                                    "number": "262",
-                                    "key": "MATH 262",
-                                    "title": "Calculus II",
+                                    "number": "261S",
+                                    "key": "MATH 261S",
+                                    "title": "Calculus I With Support",
                                     "min_units": 5.0,
                                     "max_units": 5.0,
                                     "notes": []
@@ -37480,18 +38050,8 @@
                         },
                         {
                             "type": "SET",
-                            "conjunction": "AND",
+                            "conjunction": null,
                             "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "236",
-                                    "key": "MATH 236",
-                                    "title": "Calculus for Business and Social Sciences",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
-                                    "notes": []
-                                },
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
@@ -39418,27 +39978,63 @@
             {
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "180",
-                            "key": "MATH 180",
-                            "title": "Single Variable Calculus I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "180",
+                                    "key": "MATH 180",
+                                    "title": "Single Variable Calculus I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "180S",
+                                    "key": "MATH 180S",
+                                    "title": "Single Variable Calculus I with Integrated Support",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "180H",
+                                    "key": "MATH 180H",
+                                    "title": "Honors Single Variable Calculus I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "185",
-                            "key": "MATH 185",
-                            "title": "Single Variable Calculus II",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "185",
+                                    "key": "MATH 185",
+                                    "title": "Single Variable Calculus II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -41099,6 +41695,26 @@
                             "title": "Single-Variable Calculus and Analytic Geometry",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "114",
+                            "key": "MATH 114",
+                            "title": "Calculus for Life Sciences II",
+                            "min_units": 3.5,
+                            "max_units": 3.5,
                             "notes": []
                         }
                     ],
@@ -45830,6 +46446,26 @@
                 }
             },
             {
+                "sending_name": "Fullerton College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "255 F",
+                            "key": "MATH 255 F",
+                            "title": "Linear Algebra",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Gavilan College",
                 "sending_articulation": {
                     "type": "SET",
@@ -46013,6 +46649,26 @@
                             "title": "Elementary Linear Algebra",
                             "min_units": 3.5,
                             "max_units": 3.5,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Lemoore College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "003A",
+                            "key": "MATH 003A",
+                            "title": "Linear Algebra I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -51002,7 +51658,7 @@
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -51012,6 +51668,16 @@
                             "title": "Calculus for Business",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "112+",
+                            "key": "MATH 112+",
+                            "title": "Calculus for Business with Support",
+                            "min_units": 5.5,
+                            "max_units": 5.5,
                             "notes": []
                         }
                     ],
@@ -52092,7 +52758,7 @@
                 "sending_name": "Santiago Canyon College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -52102,6 +52768,16 @@
                             "title": "Calculus for Biological, Management and Social Sciences",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "150S",
+                            "key": "MATH 150S",
+                            "title": "Calculus for Biological, Management, and Social Science with Support",
+                            "min_units": 5.5,
+                            "max_units": 5.5,
                             "notes": []
                         }
                     ],
@@ -52152,7 +52828,7 @@
                 "sending_name": "Skyline College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -52160,6 +52836,16 @@
                             "number": "241",
                             "key": "MATH 241",
                             "title": "Applied Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "251",
+                            "key": "MATH 251",
+                            "title": "Calculus with Analytic Geometry I",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -52601,6 +53287,15 @@
                 }
             },
             {
+                "sending_name": "Monterey Peninsula College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [],
+                    "items": [],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Moorpark College",
                 "sending_articulation": {
                     "type": "SET",
@@ -52637,6 +53332,15 @@
                             "notes": []
                         }
                     ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Pasadena City College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [],
+                    "items": [],
                     "notes": []
                 }
             },
@@ -55858,7 +56562,7 @@
                 "sending_name": "Fullerton College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -55868,6 +56572,16 @@
                             "title": "Linear Algebra and Differential Equations",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "260 F",
+                            "key": "MATH 260 F",
+                            "title": "Ordinary Differential Equations",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -57685,27 +58399,53 @@
             {
                 "sending_name": "College of Marin",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "224",
-                            "key": "MATH 224",
-                            "title": "Elementary Differential Equations",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "224",
+                                    "key": "MATH 224",
+                                    "title": "Elementary Differential Equations",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "116",
+                                    "key": "MATH 116",
+                                    "title": "Linear Algebra",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "116",
-                            "key": "MATH 116",
-                            "title": "Linear Algebra",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "216",
+                                    "key": "MATH 216",
+                                    "title": "Differential Equations and Linear Algebra",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -58439,12 +59179,39 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
-                        "OR"
+                        "AND"
                     ],
                     "items": [
                         {
                             "type": "SET",
-                            "conjunction": "AND",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "107",
+                                    "key": "MATH 107",
+                                    "title": "Linear Algebra",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "107H",
+                                    "key": "MATH 107H",
+                                    "title": "Honors Linear Algebra",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
                             "items": [
                                 {
                                     "subject": "Mathematics",
@@ -58459,36 +59226,9 @@
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
-                                    "number": "107",
-                                    "key": "MATH 107",
-                                    "title": "Linear Algebra",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": "AND",
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
                                     "number": "108H",
                                     "key": "MATH 108H",
                                     "title": "Honors Ordinary Differential Equations",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
-                                    "notes": []
-                                },
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "107H",
-                                    "key": "MATH 107H",
-                                    "title": "Honors Linear Algebra",
                                     "min_units": 5.0,
                                     "max_units": 5.0,
                                     "notes": []
@@ -60202,6 +60942,15 @@
         "min_units": 4.0,
         "max_units": 4.0,
         "articulations": [
+            {
+                "sending_name": "Santa Barbara City College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [],
+                    "items": [],
+                    "notes": []
+                }
+            },
             {
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
