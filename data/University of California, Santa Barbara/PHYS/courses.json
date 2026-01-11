@@ -25787,7 +25787,7 @@
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Physics",
@@ -25795,6 +25795,16 @@
                             "number": "20A",
                             "key": "PHYS 20A",
                             "title": "Algebra/Trigonometry College Physics I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "35",
+                            "key": "PHYS 35",
+                            "title": "Calculus Based Physics I",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -28302,7 +28312,7 @@
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Physics",
@@ -28310,6 +28320,16 @@
                             "number": "20A",
                             "key": "PHYS 20A",
                             "title": "Algebra/Trigonometry College Physics I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "35",
+                            "key": "PHYS 35",
+                            "title": "Calculus Based Physics I",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -31170,27 +31190,63 @@
             {
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "20A",
-                            "key": "PHYS 20A",
-                            "title": "Algebra/Trigonometry College Physics I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "20A",
+                                    "key": "PHYS 20A",
+                                    "title": "Algebra/Trigonometry College Physics I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "20B",
+                                    "key": "PHYS 20B",
+                                    "title": "Algebra/Trigonometry College Physics II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "20B",
-                            "key": "PHYS 20B",
-                            "title": "Algebra/Trigonometry College Physics II",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "35",
+                                    "key": "PHYS 35",
+                                    "title": "Calculus Based Physics I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "36",
+                                    "key": "PHYS 36",
+                                    "title": "Calculus Based Physics II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -35722,27 +35778,63 @@
             {
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "20A",
-                            "key": "PHYS 20A",
-                            "title": "Algebra/Trigonometry College Physics I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "20A",
+                                    "key": "PHYS 20A",
+                                    "title": "Algebra/Trigonometry College Physics I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "20B",
+                                    "key": "PHYS 20B",
+                                    "title": "Algebra/Trigonometry College Physics II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "20B",
-                            "key": "PHYS 20B",
-                            "title": "Algebra/Trigonometry College Physics II",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "35",
+                                    "key": "PHYS 35",
+                                    "title": "Calculus Based Physics I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "36",
+                                    "key": "PHYS 36",
+                                    "title": "Calculus Based Physics II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -39996,27 +40088,63 @@
             {
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "20A",
-                            "key": "PHYS 20A",
-                            "title": "Algebra/Trigonometry College Physics I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "20A",
+                                    "key": "PHYS 20A",
+                                    "title": "Algebra/Trigonometry College Physics I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "20B",
+                                    "key": "PHYS 20B",
+                                    "title": "Algebra/Trigonometry College Physics II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "20B",
-                            "key": "PHYS 20B",
-                            "title": "Algebra/Trigonometry College Physics II",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "35",
+                                    "key": "PHYS 35",
+                                    "title": "Calculus Based Physics I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "36",
+                                    "key": "PHYS 36",
+                                    "title": "Calculus Based Physics II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -44108,27 +44236,53 @@
             {
                 "sending_name": "Chaffey College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "20A",
-                            "key": "PHYS 20A",
-                            "title": "Algebra/Trigonometry College Physics I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "20A",
+                                    "key": "PHYS 20A",
+                                    "title": "Algebra/Trigonometry College Physics I",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "20B",
+                                    "key": "PHYS 20B",
+                                    "title": "Algebra/Trigonometry College Physics II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "20B",
-                            "key": "PHYS 20B",
-                            "title": "Algebra/Trigonometry College Physics II",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Physics",
+                                    "prefix": "PHYS",
+                                    "number": "36",
+                                    "key": "PHYS 36",
+                                    "title": "Calculus Based Physics II",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],

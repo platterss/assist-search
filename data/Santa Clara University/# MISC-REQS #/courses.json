@@ -164304,77 +164304,103 @@
             {
                 "sending_name": "Foothill College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "OR",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "1A",
-                            "key": "MATH 1A",
-                            "title": "Calculus",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "1A",
+                                    "key": "MATH 1A",
+                                    "title": "Calculus",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "1AH",
+                                    "key": "MATH 1AH",
+                                    "title": "Honors Calculus I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "1B",
+                                    "key": "MATH 1B",
+                                    "title": "Calculus",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "1BH",
+                                    "key": "MATH 1BH",
+                                    "title": "Honors Calculus II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000",
+                                    "key": "STAT C1000",
+                                    "title": "Introduction to Statistics",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "12",
+                                    "key": "MATH 12",
+                                    "title": "Calculus for Business & Economics",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "1AH",
-                            "key": "MATH 1AH",
-                            "title": "Honors Calculus I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "1B",
-                            "key": "MATH 1B",
-                            "title": "Calculus",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "1BH",
-                            "key": "MATH 1BH",
-                            "title": "Honors Calculus II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Statistics",
-                            "prefix": "STAT",
-                            "number": "C1000",
-                            "key": "STAT C1000",
-                            "title": "Introduction to Statistics",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "17",
-                            "key": "MATH 17",
-                            "title": "Integrated Statistics II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "12",
-                            "key": "MATH 12",
-                            "title": "Calculus for Business & Economics",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "217",
+                                    "key": "MATH 217",
+                                    "title": "Integrated Statistics I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "17",
+                                    "key": "MATH 17",
+                                    "title": "Integrated Statistics II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],

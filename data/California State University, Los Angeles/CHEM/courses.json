@@ -692,6 +692,26 @@
                 }
             },
             {
+                "sending_name": "De Anza College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "25",
+                            "key": "CHEM 25",
+                            "title": "Preparation Course for General Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -915,7 +935,7 @@
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Chemistry",
@@ -923,6 +943,16 @@
                             "number": "120",
                             "key": "CHEM 120",
                             "title": "Fundamentals of College Chemistry (Inorganic)",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "110",
+                            "key": "CHEM 110",
+                            "title": "Elements of General Chemistry",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -1277,7 +1307,7 @@
                 "sending_name": "Mission College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Chemistry",
@@ -1285,6 +1315,16 @@
                             "number": "060",
                             "key": "CHM 060",
                             "title": "Survey of General, Organic, and Biological Chemistry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHM",
+                            "number": "030A",
+                            "key": "CHM 030A",
+                            "title": "Fundamentals of Chemistry",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -1375,6 +1415,36 @@
                             "number": "40",
                             "key": "CHEM 40",
                             "title": "Introduction to General Chemistry",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Mt. San Jacinto College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM-",
+                            "number": "100",
+                            "key": "CHEM- 100",
+                            "title": "Introduction to Chemistry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM-",
+                            "number": "107",
+                            "key": "CHEM- 107",
+                            "title": "Chemistry of Life",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -1485,6 +1555,26 @@
                             "number": "022",
                             "key": "CHEM 022",
                             "title": "Introductory Chemistry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Porterville College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "P106",
+                            "key": "CHEM P106",
+                            "title": "Introduction to Chemical Principles",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -3714,27 +3804,63 @@
             {
                 "sending_name": "De Anza College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "1A",
-                            "key": "CHEM 1A",
-                            "title": "General Chemistry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "1A",
+                                    "key": "CHEM 1A",
+                                    "title": "General Chemistry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "1B",
+                                    "key": "CHEM 1B",
+                                    "title": "General Chemistry II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "1B",
-                            "key": "CHEM 1B",
-                            "title": "General Chemistry II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "1AH",
+                                    "key": "CHEM 1AH",
+                                    "title": "General Chemistry I - HONORS",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "1BH",
+                                    "key": "CHEM 1BH",
+                                    "title": "General Chemistry II - HONORS",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -4433,6 +4559,26 @@
                             "number": "001A",
                             "key": "CHEM 001A",
                             "title": "General Chemistry and Chemical Analysis I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Porterville College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "P101A",
+                            "key": "CHEM P101A",
+                            "title": "General Chemistry I",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -6168,26 +6314,6 @@
                 }
             },
             {
-                "sending_name": "Irvine Valley College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
-                    "items": [
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "12A",
-                            "key": "CHEM 12A",
-                            "title": "Organic Chemistry",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": []
-                }
-            },
-            {
                 "sending_name": "Los Angeles Pierce College",
                 "sending_articulation": {
                     "type": "SET",
@@ -6546,6 +6672,26 @@
                             "number": "105",
                             "key": "CHEM 105",
                             "title": "Organic Chemistry A",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Irvine Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "12A",
+                            "key": "CHEM 12A",
+                            "title": "Organic Chemistry",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []

@@ -429,8 +429,18 @@
                 "sending_name": "College of Marin",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "108",
+                            "key": "MATH 108",
+                            "title": "Algebra and Trigonometry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
@@ -518,27 +528,53 @@
             {
                 "sending_name": "College of the Redwoods",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "25",
-                            "key": "MATH 25",
-                            "title": "College Trigonometry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "25",
+                                    "key": "MATH 25",
+                                    "title": "College Trigonometry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "30",
+                                    "key": "MATH 30",
+                                    "title": "College Algebra",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "30",
-                            "key": "MATH 30",
-                            "title": "College Algebra",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "32",
+                                    "key": "MATH 32",
+                                    "title": "Precalculus and Trigonometry",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -699,7 +735,7 @@
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -710,6 +746,16 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "161",
+                            "key": "MATH 161",
+                            "title": "Precalculus & Trigonometry",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -719,7 +765,7 @@
                 "sending_name": "Cuesta College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -729,6 +775,16 @@
                             "title": "Precalculus Algebra",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "263",
+                            "key": "MATH 263",
+                            "title": "Precalculus With Trigonometry",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],
@@ -819,7 +875,7 @@
                 "sending_name": "Diablo Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -829,6 +885,16 @@
                             "title": "Pre-Calculus",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "191L",
+                            "key": "MATH 191L",
+                            "title": "Pre-Calculus with Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],
@@ -930,6 +996,7 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
+                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -972,6 +1039,23 @@
                                     "title": "Trigonometry for Calculus",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "375",
+                                    "key": "MATH 375",
+                                    "title": "Pre-Calculus",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
                                     "notes": []
                                 }
                             ],
@@ -1209,6 +1293,7 @@
                     "type": "GROUP",
                     "conjunctions": [
                         "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -1241,6 +1326,33 @@
                                     "title": "College Algebra for STEM",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "102",
+                                    "key": "MATH 102",
+                                    "title": "Trigonometry",
+                                    "min_units": 3.0,
+                                    "max_units": 3.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "100+",
+                                    "key": "MATH 100+",
+                                    "title": "College Algebra for STEM with Support",
+                                    "min_units": 4.5,
+                                    "max_units": 4.5,
                                     "notes": []
                                 },
                                 {
@@ -1702,6 +1814,7 @@
                 "sending_articulation": {
                     "type": "GROUP",
                     "conjunctions": [
+                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -1758,6 +1871,23 @@
                                 }
                             ],
                             "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "135",
+                                    "key": "MATH 135",
+                                    "title": "Pre-Calculus Mathematics",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1767,7 +1897,7 @@
                 "sending_name": "Mission College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -1777,6 +1907,16 @@
                             "title": "Precalculus and Trigonometry",
                             "min_units": 6.0,
                             "max_units": 6.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MAT",
+                            "number": "003",
+                            "key": "MAT 003",
+                            "title": "Fundamentals for Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -1863,7 +2003,7 @@
                 "sending_name": "Moreno Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -1874,6 +2014,16 @@
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MAT",
+                            "number": "39",
+                            "key": "MAT 39",
+                            "title": "Foundations of Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -1883,8 +2033,18 @@
                 "sending_name": "Mount San Antonio College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "135",
+                            "key": "MATH 135",
+                            "title": "Precalculus Algebra",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
@@ -2021,6 +2181,16 @@
                             "number": "127",
                             "key": "MATH 127",
                             "title": "STEM Precalculus II - Trigonometry and Analytic Geometry",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "132E",
+                            "key": "MATH 132E",
+                            "title": "Essentials for Calculus I Enhanced",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -2319,7 +2489,7 @@
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -2329,6 +2499,16 @@
                             "title": "Pre-Calculus Mathematics",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "172",
+                            "key": "MATH 172",
+                            "title": "Algebra and Trigonometry for Calculus",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -3287,7 +3467,7 @@
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -3297,6 +3477,16 @@
                             "title": "Calculus for Business and Social Science",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "240X",
+                            "key": "MATH 240X",
+                            "title": "Calculus for Business and Social Science With Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],
@@ -3992,6 +4182,36 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
+                            "number": "103E",
+                            "key": "MATH 103E",
+                            "title": "Calculus and Analytic Geometry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "103E+",
+                            "key": "MATH 103E+",
+                            "title": "Calculus and Analytic Geometry I with Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "103EH",
+                            "key": "MATH 103EH",
+                            "title": "Honors Calculus and Analytic Geometry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
                             "number": "112",
                             "key": "MATH 112",
                             "title": "Calculus for Business",
@@ -4008,26 +4228,6 @@
                             "min_units": 5.5,
                             "max_units": 5.5,
                             "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "103E",
-                            "key": "MATH 103E",
-                            "title": "Calculus and Analytic Geometry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "103EH",
-                            "key": "MATH 103EH",
-                            "title": "Honors Calculus and Analytic Geometry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4037,7 +4237,7 @@
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -4047,6 +4247,16 @@
                             "title": "Business Calculus",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "G140S",
+                            "key": "MATH G140S",
+                            "title": "Business Calculus with Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],
@@ -4247,7 +4457,7 @@
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -4257,6 +4467,16 @@
                             "title": "Calculus for Business",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "47S",
+                            "key": "MATH 47S",
+                            "title": "Calculus for Business with Support",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -4638,6 +4858,16 @@
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "150S",
+                            "key": "MATH 150S",
+                            "title": "Calculus and  Analytic Geometry I with Integrated Support",
+                            "min_units": 7.0,
+                            "max_units": 7.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -4927,7 +5157,7 @@
                 "sending_name": "Palomar College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -4935,6 +5165,16 @@
                             "number": "130",
                             "key": "MATH 130",
                             "title": "Calculus for Business and the Social Sciences",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "130E",
+                            "key": "MATH 130E",
+                            "title": "Calculus for Business and the Social Sciences Enhanced",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -5819,7 +6059,7 @@
                 "sending_name": "Butte College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -5827,6 +6067,16 @@
                             "number": "30",
                             "key": "MATH 30",
                             "title": "Analytic Geometry and Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "30s",
+                            "key": "MATH 30s",
+                            "title": "Analytic Geometry and Calculus I with Support",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -6119,7 +6369,7 @@
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -6129,6 +6379,16 @@
                             "title": "Calculus I",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "211X",
+                            "key": "MATH 211X",
+                            "title": "Calculus I With Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],
@@ -6319,7 +6579,7 @@
                 "sending_name": "Crafton Hills College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -6327,6 +6587,16 @@
                             "number": "250",
                             "key": "MATH 250",
                             "title": "Single Variable Calculus I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "250E",
+                            "key": "MATH 250E",
+                            "title": "Single Variable Calculus I Enhanced",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -6736,6 +7006,16 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
+                            "number": "103E+",
+                            "key": "MATH 103E+",
+                            "title": "Calculus and Analytic Geometry I with Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
                             "number": "103EH",
                             "key": "MATH 103EH",
                             "title": "Honors Calculus and Analytic Geometry I",
@@ -6962,6 +7242,16 @@
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "60S",
+                            "key": "MATH 60S",
+                            "title": "First Calculus Course with Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -6971,7 +7261,7 @@
                 "sending_name": "Los Angeles City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -6979,6 +7269,16 @@
                             "number": "261",
                             "key": "MATH 261",
                             "title": "Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "261S",
+                            "key": "MATH 261S",
+                            "title": "Calculus I With Support",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -7295,6 +7595,16 @@
                             "title": "Calculus and Analytic Geometry I (Honors)",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "150S",
+                            "key": "MATH 150S",
+                            "title": "Calculus and  Analytic Geometry I with Integrated Support",
+                            "min_units": 7.0,
+                            "max_units": 7.0,
                             "notes": []
                         }
                     ],
@@ -9620,6 +9930,16 @@
                             "title": "Honors Second Calculus Course",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "70S",
+                            "key": "MATH 70S",
+                            "title": "Second Calculus Course with Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         }
                     ],
@@ -12978,6 +13298,7 @@
                     "type": "GROUP",
                     "conjunctions": [
                         "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -13020,6 +13341,23 @@
                                     "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000E",
+                                    "key": "STAT C1000E",
+                                    "title": "Introduction to Statistics",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
                                     "notes": []
                                 }
                             ],
@@ -13103,6 +13441,16 @@
                     "conjunction": "OR",
                     "items": [
                         {
+                            "subject": "Business",
+                            "prefix": "BUS",
+                            "number": "015",
+                            "key": "BUS 015",
+                            "title": "Business Statistics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
                             "subject": "Statistics",
                             "prefix": "STAT",
                             "number": "001",
@@ -13110,6 +13458,26 @@
                             "title": "Elementary Statistics I for the Social Sciences",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "001S",
+                            "key": "STAT 001S",
+                            "title": "Elementary Statistics I for the Social Sciences with Support",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "101",
+                            "key": "STAT 101",
+                            "title": "Statistics for the Social Sciences",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -13842,6 +14210,16 @@
                             "title": "Statistics for the Behavioral Sciences",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "13",
+                            "key": "STAT 13",
+                            "title": "Introduction to Statistics With Embedded Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         },
                         {
@@ -14887,9 +15265,28 @@
                     "conjunctions": [
                         "OR",
                         "OR",
+                        "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "118",
+                                    "key": "CS 118",
+                                    "title": "Data Science for All",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
                         {
                             "type": "SET",
                             "conjunction": "AND",
@@ -14912,6 +15309,23 @@
                                     "title": "Elementary Statistics B",
                                     "min_units": 2.0,
                                     "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "118",
+                                    "key": "MATH 118",
+                                    "title": "Data Science for All",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
                                     "notes": []
                                 }
                             ],
@@ -17722,6 +18136,7 @@
                     "type": "GROUP",
                     "conjunctions": [
                         "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -17764,6 +18179,23 @@
                                     "title": "Introduction to Statistics",
                                     "min_units": 4.0,
                                     "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Statistics",
+                                    "prefix": "STAT",
+                                    "number": "C1000E",
+                                    "key": "STAT C1000E",
+                                    "title": "Introduction to Statistics",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
                                     "notes": []
                                 }
                             ],
@@ -17847,6 +18279,16 @@
                     "conjunction": "OR",
                     "items": [
                         {
+                            "subject": "Business",
+                            "prefix": "BUS",
+                            "number": "015",
+                            "key": "BUS 015",
+                            "title": "Business Statistics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
                             "subject": "Statistics",
                             "prefix": "STAT",
                             "number": "001",
@@ -17854,6 +18296,26 @@
                             "title": "Elementary Statistics I for the Social Sciences",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "001S",
+                            "key": "STAT 001S",
+                            "title": "Elementary Statistics I for the Social Sciences with Support",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "101",
+                            "key": "STAT 101",
+                            "title": "Statistics for the Social Sciences",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -18586,6 +19048,16 @@
                             "title": "Statistics for the Behavioral Sciences",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "13",
+                            "key": "STAT 13",
+                            "title": "Introduction to Statistics With Embedded Support",
+                            "min_units": 6.0,
+                            "max_units": 6.0,
                             "notes": []
                         },
                         {
@@ -19631,9 +20103,28 @@
                     "conjunctions": [
                         "OR",
                         "OR",
+                        "OR",
+                        "OR",
                         "OR"
                     ],
                     "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Computer Science",
+                                    "prefix": "CS",
+                                    "number": "118",
+                                    "key": "CS 118",
+                                    "title": "Data Science for All",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
                         {
                             "type": "SET",
                             "conjunction": "AND",
@@ -19656,6 +20147,23 @@
                                     "title": "Elementary Statistics B",
                                     "min_units": 2.0,
                                     "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "118",
+                                    "key": "MATH 118",
+                                    "title": "Data Science for All",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
                                     "notes": []
                                 }
                             ],
@@ -21200,7 +21708,7 @@
                 "sending_name": "Long Beach City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -21210,6 +21718,16 @@
                             "title": "Mathematics for Elementary Teaching I",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "28S",
+                            "key": "MATH 28S",
+                            "title": "Math for Elem Teaching I with Support",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -21288,6 +21806,26 @@
             },
             {
                 "sending_name": "Los Angeles Pierce College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "215",
+                            "key": "MATH 215",
+                            "title": "Mathematical Concepts for Teachers I",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles Southwest College",
                 "sending_articulation": {
                     "type": "SET",
                     "conjunction": null,
@@ -21517,6 +22055,26 @@
                 }
             },
             {
+                "sending_name": "Mount San Antonio College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "105",
+                            "key": "MATH 105",
+                            "title": "Mathematical Concepts for Elementary School Teachers",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Napa Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -21717,6 +22275,26 @@
                 }
             },
             {
+                "sending_name": "San Bernardino Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "106",
+                            "key": "MATH 106",
+                            "title": "Mathematical Concepts for Elementary School Teachers",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "San Diego City College",
                 "sending_articulation": {
                     "type": "SET",
@@ -21896,6 +22474,26 @@
                             "title": "Mathamatics for Elementary School Teachers",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Rosa Junior College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "74",
+                            "key": "MATH 74",
+                            "title": "Mathematics for Elementary School Teachers",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -23490,7 +24088,7 @@
                 "sending_name": "College of Marin",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -23500,6 +24098,16 @@
                             "title": "Linear Algebra",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "216",
+                            "key": "MATH 216",
+                            "title": "Differential Equations and Linear Algebra",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -31487,6 +32095,28 @@
                         }
                     ],
                     "notes": []
+                }
+            },
+            {
+                "sending_name": "Mission College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MAT",
+                            "number": "020",
+                            "key": "MAT 020",
+                            "title": "Discrete Structures",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Course is an approved substitute for Information Technology majors only"
+                    ]
                 }
             },
             {
