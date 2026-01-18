@@ -7870,27 +7870,63 @@
             {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "G180",
-                            "key": "BIOL G180",
-                            "title": "Cell and Molecular Biology",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "G180",
+                                    "key": "BIOL G180",
+                                    "title": "Cell and Molecular Biology",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "G182",
+                                    "key": "BIOL G182",
+                                    "title": "Zoology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Biology",
-                            "prefix": "BIOL",
-                            "number": "G182",
-                            "key": "BIOL G182",
-                            "title": "Zoology",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "G180",
+                                    "key": "BIOL G180",
+                                    "title": "Cell and Molecular Biology",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Biology",
+                                    "prefix": "BIOL",
+                                    "number": "G221",
+                                    "key": "BIOL G221",
+                                    "title": "Introduction to Anatomy and Physiology",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],

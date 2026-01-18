@@ -1169,8 +1169,8 @@
                             "number": "1",
                             "key": "SPAN 1",
                             "title": "Elementary Spanish I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -1189,8 +1189,8 @@
                             "number": "3A",
                             "key": "SPAN 3A",
                             "title": "Spanish for Spanish Speakers I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -2479,8 +2479,8 @@
                             "number": "2",
                             "key": "SPAN 2",
                             "title": "Elementary Spanish II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
@@ -2489,8 +2489,8 @@
                             "number": "4A",
                             "key": "SPAN 4A",
                             "title": "Spanish for Spanish Speakers II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -2690,19 +2690,55 @@
         "max_units": 4.0,
         "articulations": [
             {
-                "sending_name": "Clovis Community College",
+                "sending_name": "Coastline Community College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": null,
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Spanish",
-                            "prefix": "SPAN",
-                            "number": "3",
-                            "key": "SPAN 3",
-                            "title": "Intermediate Spanish",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Spanish",
+                                    "prefix": "SPAN",
+                                    "number": "C280",
+                                    "key": "SPAN C280",
+                                    "title": "Intermediate Spanish 1",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Spanish",
+                                    "prefix": "SPAN",
+                                    "number": "C280A",
+                                    "key": "SPAN C280A",
+                                    "title": "Intermediate Spanish 1A",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Spanish",
+                                    "prefix": "SPAN",
+                                    "number": "C280B",
+                                    "key": "SPAN C280B",
+                                    "title": "Intermediate Spanish 1B",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -2710,126 +2746,5 @@
                 }
             }
         ]
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "300",
-        "key": "SPAN 300",
-        "title": "Advanced Spanish I",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "304",
-        "key": "SPAN 304",
-        "title": "Advanced Spanish II",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "311",
-        "key": "SPAN 311",
-        "title": "Introduction to Literature and Theory",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "327",
-        "key": "SPAN 327",
-        "title": "Spain: Civilization and Culture",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "328",
-        "key": "SPAN 328",
-        "title": "Latin America: Civilization and Culture",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "330",
-        "key": "SPAN 330",
-        "title": "Latin American Thought: Readings in Spanish",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "338",
-        "key": "SPAN 338",
-        "title": "People and Cultures of Costa Rica",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "440",
-        "key": "SPAN 440",
-        "title": "Peninsular Literature",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "445",
-        "key": "SPAN 445",
-        "title": "Latin American Literature",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "450",
-        "key": "SPAN 450",
-        "title": "Senior Seminar",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
-    },
-    {
-        "type": "COURSE",
-        "subject": "Spanish Language Studies",
-        "prefix": "SPAN",
-        "number": "481",
-        "key": "SPAN 481",
-        "title": "International Internship",
-        "min_units": 3.0,
-        "max_units": 3.0,
-        "articulations": []
     }
 ]

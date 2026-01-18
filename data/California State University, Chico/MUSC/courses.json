@@ -13458,6 +13458,15 @@
         "max_units": 1.0,
         "articulations": [
             {
+                "sending_name": "American River College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [],
+                    "items": [],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Columbia College",
                 "sending_articulation": {
                     "type": "SET",
@@ -15273,7 +15282,17 @@
         "title": "Music Industry Forum",
         "min_units": 1.0,
         "max_units": 1.0,
-        "articulations": []
+        "articulations": [
+            {
+                "sending_name": "American River College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [],
+                    "items": [],
+                    "notes": []
+                }
+            }
+        ]
     },
     {
         "type": "COURSE",
@@ -15389,8 +15408,18 @@
                 "sending_name": "College of the Redwoods",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
+                        {
+                            "subject": "Music",
+                            "prefix": "MUS",
+                            "number": "26A",
+                            "key": "MUS 26A",
+                            "title": "Beginning Class Voice I",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        },
                         {
                             "subject": "Music",
                             "prefix": "MUS",
