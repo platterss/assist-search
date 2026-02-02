@@ -794,29 +794,57 @@
             {
                 "sending_name": "College of the Redwoods",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "25",
-                            "key": "MATH 25",
-                            "title": "College Trigonometry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": [
-                                "Content credit only"
-                            ]
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "25",
+                                    "key": "MATH 25",
+                                    "title": "College Trigonometry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Content credit only"
+                                    ]
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "30",
+                                    "key": "MATH 30",
+                                    "title": "College Algebra",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "30",
-                            "key": "MATH 30",
-                            "title": "College Algebra",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "32",
+                                    "key": "MATH 32",
+                                    "title": "Precalculus and Trigonometry",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
+                                    "notes": [
+                                        "UC credit limitation applies; refer to UC-transferability list"
+                                    ]
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -2076,30 +2104,76 @@
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR",
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "30",
-                            "key": "MATH 30",
-                            "title": "College Algebra for STEM",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "21",
+                                    "key": "MATH 21",
+                                    "title": "Precalculus",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "39",
-                            "key": "MATH 39",
-                            "title": "Trigonometry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": [
-                                "Content credit only"
-                            ]
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "22",
+                                    "key": "MATH 22",
+                                    "title": "Precalculus & Trigonometry",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
+                                    "notes": [
+                                        "UC credit limitation applies; refer to UC-transferability list"
+                                    ]
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "30",
+                                    "key": "MATH 30",
+                                    "title": "College Algebra for STEM",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "39",
+                                    "key": "MATH 39",
+                                    "title": "Trigonometry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": [
+                                        "Content credit only"
+                                    ]
+                                }
+                            ],
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5450,6 +5524,16 @@
                             "min_units": 6.0,
                             "max_units": 6.0,
                             "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "113",
+                            "key": "MATH 113",
+                            "title": "Calculus for Life Sciences I",
+                            "min_units": 3.5,
+                            "max_units": 3.5,
+                            "notes": []
                         }
                     ],
                     "notes": []
@@ -5539,7 +5623,7 @@
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -5547,6 +5631,16 @@
                             "number": "3A",
                             "key": "MATH 3A",
                             "title": "Analytic Geometry and Calculus I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "3AH",
+                            "key": "MATH 3AH",
+                            "title": "Analytic Geometry and Calculus I Honors",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -6529,7 +6623,7 @@
                 "sending_name": "Saddleback College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -6537,6 +6631,16 @@
                             "number": "3A",
                             "key": "MATH 3A",
                             "title": "Analytic Geometry and Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "3AH",
+                            "key": "MATH 3AH",
+                            "title": "Honors Analytic Geometry and Calculus",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -8232,6 +8336,26 @@
                 }
             },
             {
+                "sending_name": "Glendale Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "114",
+                            "key": "MATH 114",
+                            "title": "Calculus for Life Sciences II",
+                            "min_units": 3.5,
+                            "max_units": 3.5,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Golden West College",
                 "sending_articulation": {
                     "type": "SET",
@@ -8315,7 +8439,7 @@
                 "sending_name": "Irvine Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -8323,6 +8447,16 @@
                             "number": "3B",
                             "key": "MATH 3B",
                             "title": "Analytic Geometry and Calculus II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "3BH",
+                            "key": "MATH 3BH",
+                            "title": "Analytic Geometry and Calculus II Honors",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -8457,7 +8591,6 @@
                     "type": "GROUP",
                     "conjunctions": [
                         "OR",
-                        "OR",
                         "OR"
                     ],
                     "items": [
@@ -8505,33 +8638,6 @@
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
-                                    "number": "70",
-                                    "key": "MATH 70",
-                                    "title": "Second Calculus Course",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
-                                    "notes": []
-                                }
-                            ],
-                            "notes": []
-                        },
-                        {
-                            "type": "SET",
-                            "conjunction": "AND",
-                            "items": [
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
-                                    "number": "60",
-                                    "key": "MATH 60",
-                                    "title": "First Calculus Course",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
-                                    "notes": []
-                                },
-                                {
-                                    "subject": "Mathematics",
-                                    "prefix": "MATH",
                                     "number": "70H",
                                     "key": "MATH 70H",
                                     "title": "Honors Second Calculus Course",
@@ -8549,21 +8655,21 @@
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
-                                    "number": "60H",
-                                    "key": "MATH 60H",
-                                    "title": "Honors First Calculus Course",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
+                                    "number": "60S",
+                                    "key": "MATH 60S",
+                                    "title": "First Calculus Course with Support",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
                                     "notes": []
                                 },
                                 {
                                     "subject": "Mathematics",
                                     "prefix": "MATH",
-                                    "number": "70H",
-                                    "key": "MATH 70H",
-                                    "title": "Honors Second Calculus Course",
-                                    "min_units": 5.0,
-                                    "max_units": 5.0,
+                                    "number": "70S",
+                                    "key": "MATH 70S",
+                                    "title": "Second Calculus Course with Support",
+                                    "min_units": 6.0,
+                                    "max_units": 6.0,
                                     "notes": []
                                 }
                             ],

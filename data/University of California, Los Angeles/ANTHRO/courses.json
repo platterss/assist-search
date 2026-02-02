@@ -763,7 +763,7 @@
                 "sending_name": "El Camino College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Anthropology",
@@ -771,6 +771,16 @@
                             "number": "1",
                             "key": "ANTH 1",
                             "title": "Introduction to Biological Anthropology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Anthropology",
+                            "prefix": "ANTH",
+                            "number": "1H",
+                            "key": "ANTH 1H",
+                            "title": "Honors Introduction to Biological Anthropology",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -5385,7 +5395,7 @@
                 "sending_name": "El Camino College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Anthropology",
@@ -5393,6 +5403,16 @@
                             "number": "2",
                             "key": "ANTH 2",
                             "title": "Introduction to Cultural Anthropology",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Anthropology",
+                            "prefix": "ANTH",
+                            "number": "2H",
+                            "key": "ANTH 2H",
+                            "title": "Honors Introduction to Cultural Anthropology",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -7149,7 +7169,7 @@
                 "sending_name": "El Camino College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Anthropology",
@@ -7157,6 +7177,16 @@
                             "number": "4",
                             "key": "ANTH 4",
                             "title": "Language and Culture",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Anthropology",
+                            "prefix": "ANTH",
+                            "number": "4H",
+                            "key": "ANTH 4H",
+                            "title": "Honors Language and Culture",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []
@@ -7254,16 +7284,6 @@
                     "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Linguistics",
-                            "prefix": "LING",
-                            "number": "001",
-                            "key": "LING 001",
-                            "title": "Introduction to Language and Linguistics",
-                            "min_units": 3.0,
-                            "max_units": 3.0,
-                            "notes": []
-                        },
-                        {
                             "subject": "Anthropology",
                             "prefix": "ANTHRO",
                             "number": "104",
@@ -7271,7 +7291,21 @@
                             "title": "Human Language and Communication",
                             "min_units": 3.0,
                             "max_units": 3.0,
-                            "notes": []
+                            "notes": [
+                                "Preferred course"
+                            ]
+                        },
+                        {
+                            "subject": "Linguistics",
+                            "prefix": "LING",
+                            "number": "001",
+                            "key": "LING 001",
+                            "title": "Introduction to Language and Linguistics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": [
+                                "Acceptable for admission, but will not satisfy major requirement"
+                            ]
                         }
                     ],
                     "notes": []
