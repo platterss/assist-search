@@ -26378,6 +26378,81 @@
     },
     {
         "type": "SERIES",
+        "key": "CHEM 30A + 30B + 30BL + 30C",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "subject": "Chemistry and Biochemistry",
+                "prefix": "CHEM",
+                "number": "30A",
+                "key": "CHEM 30A",
+                "title": "Organic Chemistry I: Structure and Reactivity",
+                "min_units": 4.0,
+                "max_units": 4.0
+            },
+            {
+                "subject": "Chemistry and Biochemistry",
+                "prefix": "CHEM",
+                "number": "30B",
+                "key": "CHEM 30B",
+                "title": "Organic Chemistry II: Reactivity, Synthesis, and Spectroscopy",
+                "min_units": 4.0,
+                "max_units": 4.0
+            },
+            {
+                "subject": "Chemistry and Biochemistry",
+                "prefix": "CHEM",
+                "number": "30BL",
+                "key": "CHEM 30BL",
+                "title": "Organic Chemistry Laboratory I",
+                "min_units": 3.0,
+                "max_units": 3.0
+            },
+            {
+                "subject": "Chemistry and Biochemistry",
+                "prefix": "CHEM",
+                "number": "30C",
+                "key": "CHEM 30C",
+                "title": "Organic Chemistry III: Reactivity, Synthesis, and Biomolecules",
+                "min_units": 4.0,
+                "max_units": 4.0
+            }
+        ],
+        "articulations": [
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "V160A",
+                            "key": "CHEM V160A",
+                            "title": "General Organic Chemistry I",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Chemistry",
+                            "prefix": "CHEM",
+                            "number": "V160B",
+                            "key": "CHEM V160B",
+                            "title": "General Organic Chemistry II",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
+    },
+    {
+        "type": "SERIES",
         "key": "CHEM 30A + 30B + 30BL + 30C + 30CL",
         "conjunction": "AND",
         "courses": [
@@ -29739,38 +29814,6 @@
                 }
             },
             {
-                "sending_name": "Ventura College",
-                "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
-                    "items": [
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "V160A",
-                            "key": "CHEM V160A",
-                            "title": "General Organic Chemistry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "V160B",
-                            "key": "CHEM V160B",
-                            "title": "General Organic Chemistry II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        }
-                    ],
-                    "notes": [
-                        "Must complete an additional university course after transfer to satisfy this requirement"
-                    ]
-                }
-            },
-            {
                 "sending_name": "Victor Valley College",
                 "sending_articulation": {
                     "type": "SET",
@@ -29921,6 +29964,17 @@
                 }
             }
         ]
+    },
+    {
+        "type": "COURSE",
+        "subject": "Chemistry and Biochemistry",
+        "prefix": "CHEM",
+        "number": "30CL",
+        "key": "CHEM 30CL",
+        "title": "Organic Chemistry Laboratory II",
+        "min_units": 4.0,
+        "max_units": 4.0,
+        "articulations": []
     },
     {
         "type": "COURSE",

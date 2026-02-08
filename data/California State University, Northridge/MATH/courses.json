@@ -280,6 +280,26 @@
                 }
             },
             {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C115",
+                            "key": "MATH C115",
+                            "title": "College Algebra",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of Alameda",
                 "sending_articulation": {
                     "type": "SET",
@@ -464,6 +484,38 @@
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cosumnes River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "372",
+                            "key": "MATH 372",
+                            "title": "College Algebra for Calculus",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "373",
+                            "key": "MATH 373",
+                            "title": "Trigonometry for Calculus",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Articulates as a sequence only"
+                            ]
                         }
                     ],
                     "notes": []
@@ -2432,6 +2484,26 @@
                 }
             },
             {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C140",
+                            "key": "MATH C140",
+                            "title": "Business Calculus",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of Alameda",
                 "sending_articulation": {
                     "type": "SET",
@@ -4327,6 +4399,26 @@
                             "title": "Trigonometry",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C120",
+                            "key": "MATH C120",
+                            "title": "Trigonometry",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -6404,6 +6496,26 @@
                 }
             },
             {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C170",
+                            "key": "MATH C170",
+                            "title": "Precalculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of Alameda",
                 "sending_articulation": {
                     "type": "SET",
@@ -6647,27 +6759,29 @@
                 "sending_name": "Cosumnes River College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "OR",
+                    "conjunction": "AND",
                     "items": [
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "335",
-                            "key": "MATH 335",
-                            "title": "Trigonometry with College Algebra",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "number": "372",
+                            "key": "MATH 372",
+                            "title": "College Algebra for Calculus",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         },
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "370",
-                            "key": "MATH 370",
-                            "title": "Pre-Calculus Mathematics",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
+                            "number": "373",
+                            "key": "MATH 373",
+                            "title": "Trigonometry for Calculus",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": [
+                                "Articulates as a sequence only"
+                            ]
                         }
                     ],
                     "notes": []
@@ -7370,27 +7484,53 @@
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "30",
-                            "key": "MATH 30",
-                            "title": "College Algebra for STEM",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "30",
+                                    "key": "MATH 30",
+                                    "title": "College Algebra for STEM",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "39",
+                                    "key": "MATH 39",
+                                    "title": "Trigonometry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "39",
-                            "key": "MATH 39",
-                            "title": "Trigonometry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "21",
+                                    "key": "MATH 21",
+                                    "title": "Precalculus",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -8922,6 +9062,26 @@
                 }
             },
             {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C100",
+                            "key": "MATH C100",
+                            "title": "Liberal Arts Mathematics",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of San Mateo",
                 "sending_articulation": {
                     "type": "SET",
@@ -9988,7 +10148,7 @@
                             "prefix": "STAT",
                             "number": "10",
                             "key": "STAT 10",
-                            "title": "Elementary Statistics",
+                            "title": "Introduction to Statistics (CCN: STAT C1000)",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -10084,10 +10244,30 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "025",
-                            "key": "MATH 025",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -11615,16 +11795,26 @@
                 "sending_name": "Merced College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "-10",
-                            "key": "MATH -10",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -13276,7 +13466,7 @@
                             "prefix": "STAT",
                             "number": "10",
                             "key": "STAT 10",
-                            "title": "Elementary Statistics",
+                            "title": "Introduction to Statistics (CCN: STAT C1000)",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -13372,10 +13562,30 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "025",
-                            "key": "MATH 025",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -14903,16 +15113,26 @@
                 "sending_name": "Merced College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "-10",
-                            "key": "MATH -10",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -16552,7 +16772,7 @@
                             "prefix": "STAT",
                             "number": "10",
                             "key": "STAT 10",
-                            "title": "Elementary Statistics",
+                            "title": "Introduction to Statistics (CCN: STAT C1000)",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -16648,10 +16868,30 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "025",
-                            "key": "MATH 025",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -18179,16 +18419,26 @@
                 "sending_name": "Merced College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "-10",
-                            "key": "MATH -10",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -19828,7 +20078,7 @@
                             "prefix": "STAT",
                             "number": "10",
                             "key": "STAT 10",
-                            "title": "Elementary Statistics",
+                            "title": "Introduction to Statistics (CCN: STAT C1000)",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -19924,10 +20174,30 @@
                     "conjunction": null,
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "025",
-                            "key": "MATH 025",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
                             "title": "Introduction to Statistics",
                             "min_units": 4.0,
                             "max_units": 4.0,
@@ -21455,16 +21725,26 @@
                 "sending_name": "Merced College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "-10",
-                            "key": "MATH -10",
-                            "title": "Elementary Statistics",
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000",
+                            "key": "STAT C1000",
+                            "title": "Introduction to Statistics",
                             "min_units": 3.0,
                             "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Statistics",
+                            "prefix": "STAT",
+                            "number": "C1000E",
+                            "key": "STAT C1000E",
+                            "title": "Introduction to Statistics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -23085,6 +23365,26 @@
                             "number": "001A",
                             "key": "MATH 001A",
                             "title": "Introduction to Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C180",
+                            "key": "MATH C180",
+                            "title": "Calculus 1",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
@@ -25552,6 +25852,36 @@
                 }
             },
             {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C185",
+                            "key": "MATH C185",
+                            "title": "Calculus 2",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C280",
+                            "key": "MATH C280",
+                            "title": "Calculus 3",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of Alameda",
                 "sending_articulation": {
                     "type": "SET",
@@ -27890,6 +28220,26 @@
                 }
             },
             {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C104",
+                            "key": "MATH C104",
+                            "title": "Mathematics for for Elementary Teachers",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of the Canyons",
                 "sending_articulation": {
                     "type": "SET",
@@ -29202,6 +29552,26 @@
         "max_units": 3.0,
         "articulations": [
             {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C103",
+                            "key": "MATH C103",
+                            "title": "Statistics for Elementary Teachers",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Glendale Community College",
                 "sending_articulation": {
                     "type": "SET",
@@ -29587,6 +29957,36 @@
                             "title": "Multivariate Calculus",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C185",
+                            "key": "MATH C185",
+                            "title": "Calculus 2",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C280",
+                            "key": "MATH C280",
+                            "title": "Calculus 3",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -31913,6 +32313,28 @@
                             "number": "001A",
                             "key": "MATH 001A",
                             "title": "Introduction to Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C180",
+                            "key": "MATH C180",
+                            "title": "Calculus 1",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": [
@@ -34534,6 +34956,39 @@
                             "max_units": 4.0,
                             "notes": [
                                 "Acceptable substitute"
+                            ]
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C185",
+                            "key": "MATH C185",
+                            "title": "Calculus 2",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C280",
+                            "key": "MATH C280",
+                            "title": "Calculus 3",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": [
+                                "Acceptable substitute",
+                                "Articulates as a sequence only"
                             ]
                         }
                     ],
@@ -39226,6 +39681,26 @@
                             "title": "Differential Equations",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Coastline Community College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "C285",
+                            "key": "MATH C285",
+                            "title": "Introduction to Linear Algebra and Differential Equations",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],

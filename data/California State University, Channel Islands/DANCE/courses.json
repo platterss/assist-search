@@ -7899,27 +7899,63 @@
             {
                 "sending_name": "Santa Monica College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Dance",
-                            "prefix": "DANCE",
-                            "number": "41A",
-                            "key": "DANCE 41A",
-                            "title": "Contemporary Modern Dance 1A",
-                            "min_units": 2.0,
-                            "max_units": 2.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Dance",
+                                    "prefix": "DANCE",
+                                    "number": "41A",
+                                    "key": "DANCE 41A",
+                                    "title": "Contemporary Modern Dance 1A",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Dance",
+                                    "prefix": "DANCE",
+                                    "number": "41B",
+                                    "key": "DANCE 41B",
+                                    "title": "Contemporary Modern Dance 1B",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Dance",
-                            "prefix": "DANCE",
-                            "number": "42A",
-                            "key": "DANCE 42A",
-                            "title": "Contemporary Modern Dance 2A",
-                            "min_units": 2.0,
-                            "max_units": 2.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Dance",
+                                    "prefix": "DANCE",
+                                    "number": "42A",
+                                    "key": "DANCE 42A",
+                                    "title": "Contemporary Modern Dance 2A",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Dance",
+                                    "prefix": "DANCE",
+                                    "number": "42B",
+                                    "key": "DANCE 42B",
+                                    "title": "Contemporary Modern Dance 2B",
+                                    "min_units": 2.0,
+                                    "max_units": 2.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -7930,7 +7966,7 @@
                 "sending_name": "Santa Rosa Junior College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Dance",
@@ -7951,9 +7987,31 @@
                             "min_units": 1.5,
                             "max_units": 1.5,
                             "notes": []
+                        },
+                        {
+                            "subject": "Dance",
+                            "prefix": "DANC",
+                            "number": "17.1",
+                            "key": "DANC 17.1",
+                            "title": "Contemporary Modern Dance I",
+                            "min_units": 1.0,
+                            "max_units": 1.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Dance",
+                            "prefix": "DANC",
+                            "number": "17.2",
+                            "key": "DANC 17.2",
+                            "title": "Contemporary Modern Dance II",
+                            "min_units": 1.0,
+                            "max_units": 1.5,
+                            "notes": []
                         }
                     ],
-                    "notes": []
+                    "notes": [
+                        "Must be taken (in combination) for a minimum of 3 units to articulate"
+                    ]
                 }
             },
             {
@@ -11412,6 +11470,26 @@
                             "number": "100",
                             "key": "DANCE 100",
                             "title": "Survey of Dance History",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Golden West College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Dance",
+                            "prefix": "DANC",
+                            "number": "G232",
+                            "key": "DANC G232",
+                            "title": "World Dance and Culture",
                             "min_units": 3.0,
                             "max_units": 3.0,
                             "notes": []

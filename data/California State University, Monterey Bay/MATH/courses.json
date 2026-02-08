@@ -8518,27 +8518,53 @@
             {
                 "sending_name": "Las Positas College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "39",
-                            "key": "MATH 39",
-                            "title": "Trigonometry",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "39",
+                                    "key": "MATH 39",
+                                    "title": "Trigonometry",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "30",
+                                    "key": "MATH 30",
+                                    "title": "College Algebra for STEM",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "30",
-                            "key": "MATH 30",
-                            "title": "College Algebra for STEM",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "21",
+                                    "key": "MATH 21",
+                                    "title": "Precalculus",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
@@ -21516,6 +21542,26 @@
                 }
             },
             {
+                "sending_name": "Taft College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "2125",
+                            "key": "MATH 2125",
+                            "title": "Linear Algebra",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Ventura College",
                 "sending_articulation": {
                     "type": "SET",
@@ -23011,7 +23057,7 @@
                 "sending_name": "Mt. San Jacinto College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -23019,6 +23065,16 @@
                             "number": "215",
                             "key": "MATH- 215",
                             "title": "Differential Equations",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH-",
+                            "number": "215H",
+                            "key": "MATH- 215H",
+                            "title": "Honors Differential Equations",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []

@@ -13138,27 +13138,53 @@
             {
                 "sending_name": "College of Marin",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "116",
-                            "key": "MATH 116",
-                            "title": "Linear Algebra",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "116",
+                                    "key": "MATH 116",
+                                    "title": "Linear Algebra",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "224",
+                                    "key": "MATH 224",
+                                    "title": "Elementary Differential Equations",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Mathematics",
-                            "prefix": "MATH",
-                            "number": "224",
-                            "key": "MATH 224",
-                            "title": "Elementary Differential Equations",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Mathematics",
+                                    "prefix": "MATH",
+                                    "number": "216",
+                                    "key": "MATH 216",
+                                    "title": "Differential Equations and Linear Algebra",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],

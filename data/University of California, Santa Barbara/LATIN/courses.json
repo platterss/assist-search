@@ -32,7 +32,74 @@
                 "max_units": 4.0
             }
         ],
-        "articulations": []
+        "articulations": [
+            {
+                "sending_name": "Mount San Antonio College",
+                "sending_articulation": {
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "AND"
+                    ],
+                    "items": [
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Latin",
+                                    "prefix": "LATN",
+                                    "number": "1",
+                                    "key": "LATN 1",
+                                    "title": "Elementary Latin",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Latin",
+                                    "prefix": "LATN",
+                                    "number": "1H",
+                                    "key": "LATN 1H",
+                                    "title": "Elementary Latin - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        },
+                        {
+                            "type": "SET",
+                            "conjunction": "OR",
+                            "items": [
+                                {
+                                    "subject": "Latin",
+                                    "prefix": "LATN",
+                                    "number": "2",
+                                    "key": "LATN 2",
+                                    "title": "Continuing Elementary Latin",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Latin",
+                                    "prefix": "LATN",
+                                    "number": "2H",
+                                    "key": "LATN 2H",
+                                    "title": "Continuing Elementary Latin - Honors",
+                                    "min_units": 4.0,
+                                    "max_units": 4.0,
+                                    "notes": []
+                                }
+                            ],
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
     },
     {
         "type": "COURSE",
@@ -43,7 +110,38 @@
         "title": "Intermediate Latin",
         "min_units": 4.0,
         "max_units": 4.0,
-        "articulations": []
+        "articulations": [
+            {
+                "sending_name": "Mount San Antonio College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "OR",
+                    "items": [
+                        {
+                            "subject": "Latin",
+                            "prefix": "LATN",
+                            "number": "2",
+                            "key": "LATN 2",
+                            "title": "Continuing Elementary Latin",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Latin",
+                            "prefix": "LATN",
+                            "number": "2H",
+                            "key": "LATN 2H",
+                            "title": "Continuing Elementary Latin - Honors",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
     },
     {
         "type": "COURSE",
