@@ -24804,6 +24804,72 @@
     },
     {
         "type": "SERIES",
+        "key": "PHYSICS 1A + 1B + 4AL",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "subject": "Physics",
+                "prefix": "PHYSICS",
+                "number": "1A",
+                "key": "PHYSICS 1A",
+                "title": "Physics for Scientists and Engineers: Mechanics",
+                "min_units": 5.0,
+                "max_units": 5.0
+            },
+            {
+                "subject": "Physics",
+                "prefix": "PHYSICS",
+                "number": "1B",
+                "key": "PHYSICS 1B",
+                "title": "Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields",
+                "min_units": 5.0,
+                "max_units": 5.0
+            },
+            {
+                "subject": "Physics",
+                "prefix": "PHYSICS",
+                "number": "4AL",
+                "key": "PHYSICS 4AL",
+                "title": "Physics Laboratory for Scientists and Engineers: Mechanics",
+                "min_units": 2.0,
+                "max_units": 2.0
+            }
+        ],
+        "articulations": [
+            {
+                "sending_name": "Porterville College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "P104A",
+                            "key": "PHYS P104A",
+                            "title": "Physics for Scientists and Engineers",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "P104B",
+                            "key": "PHYS P104B",
+                            "title": "Physics for Scientists and Engineers",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
+    },
+    {
+        "type": "SERIES",
         "key": "PHYSICS 1A + 1B + 4AL + 4BL",
         "conjunction": "AND",
         "courses": [
@@ -28755,6 +28821,72 @@
                             "number": "4B",
                             "key": "PHYS 4B",
                             "title": "Electromagnetism",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            }
+        ]
+    },
+    {
+        "type": "SERIES",
+        "key": "PHYSICS 1A + 1B + 4BL",
+        "conjunction": "AND",
+        "courses": [
+            {
+                "subject": "Physics",
+                "prefix": "PHYSICS",
+                "number": "1A",
+                "key": "PHYSICS 1A",
+                "title": "Physics for Scientists and Engineers: Mechanics",
+                "min_units": 5.0,
+                "max_units": 5.0
+            },
+            {
+                "subject": "Physics",
+                "prefix": "PHYSICS",
+                "number": "1B",
+                "key": "PHYSICS 1B",
+                "title": "Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields",
+                "min_units": 5.0,
+                "max_units": 5.0
+            },
+            {
+                "subject": "Physics",
+                "prefix": "PHYSICS",
+                "number": "4BL",
+                "key": "PHYSICS 4BL",
+                "title": "Physics Laboratory for Scientists and Engineers: Electricity and Magnetism",
+                "min_units": 2.0,
+                "max_units": 2.0
+            }
+        ],
+        "articulations": [
+            {
+                "sending_name": "Porterville College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "P104A",
+                            "key": "PHYS P104A",
+                            "title": "Physics for Scientists and Engineers",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "P104B",
+                            "key": "PHYS P104B",
+                            "title": "Physics for Scientists and Engineers",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -33963,23 +34095,13 @@
                 "sending_name": "Berkeley City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
                             "number": "3A",
                             "key": "PHYS 3A",
-                            "title": "General Physics",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "3B",
-                            "key": "PHYS 3B",
                             "title": "General Physics",
                             "min_units": 5.0,
                             "max_units": 5.0,
@@ -34063,6 +34185,26 @@
                             "title": "Introductory Physics Laboratory I",
                             "min_units": 1.0,
                             "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Alameda",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3A",
+                            "key": "PHYS 3A",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -34445,7 +34587,9 @@
                             "title": "General Physics",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -34550,29 +34694,9 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "036",
-                            "key": "PHYS 036",
-                            "title": "College Physics II",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
                             "number": "037",
                             "key": "PHYS 037",
                             "title": "General College Physics Calculus Supplement I",
-                            "min_units": 0.5,
-                            "max_units": 0.5,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "038",
-                            "key": "PHYS 038",
-                            "title": "General College Physics Calculus Supplement II",
                             "min_units": 0.5,
                             "max_units": 0.5,
                             "notes": []
@@ -35261,6 +35385,36 @@
                 }
             },
             {
+                "sending_name": "College of Alameda",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3A",
+                            "key": "PHYS 3A",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3B",
+                            "key": "PHYS 3B",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of Marin",
                 "sending_articulation": {
                     "type": "SET",
@@ -35483,6 +35637,36 @@
                 }
             },
             {
+                "sending_name": "Cosumnes River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "370",
+                            "key": "PHYS 370",
+                            "title": "Introductory Physics - Mechanics and Thermodynamics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "380",
+                            "key": "PHYS 380",
+                            "title": "Introductory Physics - Electricity and Magnetism, Light and Modern Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
                     "type": "SET",
@@ -35504,6 +35688,36 @@
                             "number": "131",
                             "key": "PHYC 131",
                             "title": "Fundamentals of Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cypress College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "210 C",
+                            "key": "PHYS 210 C",
+                            "title": "Physics for Life Sciences I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "211 C",
+                            "key": "PHYS 211 C",
+                            "title": "Physics for Life Sciences II",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -35543,6 +35757,56 @@
                 }
             },
             {
+                "sending_name": "Diablo Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "120",
+                            "key": "PHYS 120",
+                            "title": "General College Physics I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "121",
+                            "key": "PHYS 121",
+                            "title": "General College Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "124",
+                            "key": "PHYS 124",
+                            "title": "Calculus Supplement for Physics 120",
+                            "min_units": 0.5,
+                            "max_units": 0.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "125",
+                            "key": "PHYS 125",
+                            "title": "Calculus Supplement for Physics 121",
+                            "min_units": 0.5,
+                            "max_units": 0.5,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "East Los Angeles College",
                 "sending_articulation": {
                     "type": "SET",
@@ -35566,6 +35830,36 @@
                             "title": "General Physics II with Calculus",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "El Camino College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3A",
+                            "key": "PHYS 3A",
+                            "title": "General Physics with Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3B",
+                            "key": "PHYS 3B",
+                            "title": "General Physics with Calculus",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -35601,8 +35895,8 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "2B",
-                            "key": "PHYS 2B",
+                            "number": "2C",
+                            "key": "PHYS 2C",
                             "title": "General Physics",
                             "min_units": 5.0,
                             "max_units": 5.0,
@@ -35611,8 +35905,8 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "2BM",
-                            "key": "PHYS 2BM",
+                            "number": "2CM",
+                            "key": "PHYS 2CM",
                             "title": "General Physics: Calculus Supplement",
                             "min_units": 1.0,
                             "max_units": 1.0,
@@ -35683,6 +35977,38 @@
                 }
             },
             {
+                "sending_name": "Irvine Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "4A",
+                            "key": "PHYS 4A",
+                            "title": "General Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "4C",
+                            "key": "PHYS 4C",
+                            "title": "General Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Acceptable substitute"
+                    ]
+                }
+            },
+            {
                 "sending_name": "Laney College",
                 "sending_articulation": {
                     "type": "SET",
@@ -35706,6 +36032,36 @@
                             "title": "General Physics",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYSICS",
+                            "number": "021",
+                            "key": "PHYSICS 021",
+                            "title": "General Physics I with Calculus",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYSICS",
+                            "number": "022",
+                            "key": "PHYSICS 022",
+                            "title": "General Physics II with Calculus",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -36794,6 +37150,36 @@
                             "title": "Introductory Physics Laboratory II",
                             "min_units": 1.0,
                             "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Alameda",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3A",
+                            "key": "PHYS 3A",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3B",
+                            "key": "PHYS 3B",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -38532,6 +38918,106 @@
                 }
             },
             {
+                "sending_name": "City College of San Francisco",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "2A",
+                            "key": "PHYC 2A",
+                            "title": "Introductory Physics I",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "2AC",
+                            "key": "PHYC 2AC",
+                            "title": "Introductory Physics I-Calculus Supplement",
+                            "min_units": 0.5,
+                            "max_units": 0.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "2AL",
+                            "key": "PHYC 2AL",
+                            "title": "Introductory Physics Laboratory I",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "2B",
+                            "key": "PHYC 2B",
+                            "title": "Introductory Physics II",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "2BC",
+                            "key": "PHYC 2BC",
+                            "title": "Introductory Physics II-Calculus Supplement",
+                            "min_units": 0.5,
+                            "max_units": 0.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "2BL",
+                            "key": "PHYC 2BL",
+                            "title": "Introductory Physics Laboratory II",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Alameda",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3A",
+                            "key": "PHYS 3A",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3B",
+                            "key": "PHYS 3B",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of Marin",
                 "sending_articulation": {
                     "type": "SET",
@@ -38573,6 +39059,56 @@
                             "number": "108BC",
                             "key": "PHYS 108BC",
                             "title": "General Physics II (Calculus Supplement)",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of San Mateo",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "210",
+                            "key": "PHYS 210",
+                            "title": "General Physics I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "211",
+                            "key": "PHYS 211",
+                            "title": "General Physics I-Calculus Supplement",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "220",
+                            "key": "PHYS 220",
+                            "title": "General Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "221",
+                            "key": "PHYS 221",
+                            "title": "General Physics II - Calculus Supplement",
                             "min_units": 1.0,
                             "max_units": 1.0,
                             "notes": []
@@ -38704,6 +39240,36 @@
                 }
             },
             {
+                "sending_name": "Cosumnes River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "370",
+                            "key": "PHYS 370",
+                            "title": "Introductory Physics - Mechanics and Thermodynamics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "380",
+                            "key": "PHYS 380",
+                            "title": "Introductory Physics - Electricity and Magnetism, Light and Modern Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
                     "type": "SET",
@@ -38725,6 +39291,36 @@
                             "number": "131",
                             "key": "PHYC 131",
                             "title": "Fundamentals of Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cypress College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "210 C",
+                            "key": "PHYS 210 C",
+                            "title": "Physics for Life Sciences I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "211 C",
+                            "key": "PHYS 211 C",
+                            "title": "Physics for Life Sciences II",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -38757,6 +39353,56 @@
                             "title": "General Physics II",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Diablo Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "120",
+                            "key": "PHYS 120",
+                            "title": "General College Physics I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "121",
+                            "key": "PHYS 121",
+                            "title": "General College Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "124",
+                            "key": "PHYS 124",
+                            "title": "Calculus Supplement for Physics 120",
+                            "min_units": 0.5,
+                            "max_units": 0.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "125",
+                            "key": "PHYS 125",
+                            "title": "Calculus Supplement for Physics 121",
+                            "min_units": 0.5,
+                            "max_units": 0.5,
                             "notes": []
                         }
                     ],
@@ -38852,8 +39498,8 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "2C",
-                            "key": "PHYS 2C",
+                            "number": "2B",
+                            "key": "PHYS 2B",
                             "title": "General Physics",
                             "min_units": 5.0,
                             "max_units": 5.0,
@@ -38862,8 +39508,8 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "2CM",
-                            "key": "PHYS 2CM",
+                            "number": "2BM",
+                            "key": "PHYS 2BM",
                             "title": "General Physics: Calculus Supplement",
                             "min_units": 1.0,
                             "max_units": 1.0,
@@ -38931,6 +39577,38 @@
                         }
                     ],
                     "notes": []
+                }
+            },
+            {
+                "sending_name": "Irvine Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "4A",
+                            "key": "PHYS 4A",
+                            "title": "General Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "4B",
+                            "key": "PHYS 4B",
+                            "title": "General Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Acceptable substitute"
+                    ]
                 }
             },
             {
@@ -39899,18 +40577,8 @@
                 "sending_name": "Berkeley City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "3A",
-                            "key": "PHYS 3A",
-                            "title": "General Physics",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
@@ -39999,6 +40667,26 @@
                             "title": "Introductory Physics Laboratory II",
                             "min_units": 1.0,
                             "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Alameda",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3B",
+                            "key": "PHYS 3B",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -40316,8 +41004,8 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "2B",
-                            "key": "PHYS 2B",
+                            "number": "2C",
+                            "key": "PHYS 2C",
                             "title": "General Physics",
                             "min_units": 5.0,
                             "max_units": 5.0,
@@ -40326,8 +41014,8 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "2BM",
-                            "key": "PHYS 2BM",
+                            "number": "2CM",
+                            "key": "PHYS 2CM",
                             "title": "General Physics: Calculus Supplement",
                             "min_units": 1.0,
                             "max_units": 1.0,
@@ -40386,12 +41074,14 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "4B",
-                            "key": "PHYS 4B",
+                            "number": "4C",
+                            "key": "PHYS 4C",
                             "title": "General Physics",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -40681,6 +41371,26 @@
                             "number": "2B",
                             "key": "PHY 2B",
                             "title": "General Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "San Bernardino Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYSIC",
+                            "number": "152",
+                            "key": "PHYSIC 152",
+                            "title": "General Physics for the Life Sciences II",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -41010,18 +41720,8 @@
                 "sending_name": "Berkeley City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "3A",
-                            "key": "PHYS 3A",
-                            "title": "General Physics",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
@@ -41077,6 +41777,66 @@
                 }
             },
             {
+                "sending_name": "City College of San Francisco",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "2B",
+                            "key": "PHYC 2B",
+                            "title": "Introductory Physics II",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "2BC",
+                            "key": "PHYC 2BC",
+                            "title": "Introductory Physics II-Calculus Supplement",
+                            "min_units": 0.5,
+                            "max_units": 0.5,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYC",
+                            "number": "2BL",
+                            "key": "PHYC 2BL",
+                            "title": "Introductory Physics Laboratory II",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Alameda",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3B",
+                            "key": "PHYS 3B",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "College of Marin",
                 "sending_articulation": {
                     "type": "SET",
@@ -41098,6 +41858,36 @@
                             "number": "108BC",
                             "key": "PHYS 108BC",
                             "title": "General Physics II (Calculus Supplement)",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of San Mateo",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "220",
+                            "key": "PHYS 220",
+                            "title": "General Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "221",
+                            "key": "PHYS 221",
+                            "title": "General Physics II - Calculus Supplement",
                             "min_units": 1.0,
                             "max_units": 1.0,
                             "notes": []
@@ -41199,6 +41989,26 @@
                 }
             },
             {
+                "sending_name": "Cosumnes River College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "380",
+                            "key": "PHYS 380",
+                            "title": "Introductory Physics - Electricity and Magnetism, Light and Modern Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
                 "sending_name": "Cuyamaca College",
                 "sending_articulation": {
                     "type": "SET",
@@ -41210,6 +42020,36 @@
                             "number": "131",
                             "key": "PHYC 131",
                             "title": "Fundamentals of Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Cypress College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "210 C",
+                            "key": "PHYS 210 C",
+                            "title": "Physics for Life Sciences I",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "211 C",
+                            "key": "PHYS 211 C",
+                            "title": "Physics for Life Sciences II",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -41242,6 +42082,36 @@
                             "title": "General Physics III",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Diablo Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "121",
+                            "key": "PHYS 121",
+                            "title": "General College Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "125",
+                            "key": "PHYS 125",
+                            "title": "Calculus Supplement for Physics 121",
+                            "min_units": 0.5,
+                            "max_units": 0.5,
                             "notes": []
                         }
                     ],
@@ -41389,6 +42259,38 @@
                 }
             },
             {
+                "sending_name": "Irvine Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "4B",
+                            "key": "PHYS 4B",
+                            "title": "General Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "4C",
+                            "key": "PHYS 4C",
+                            "title": "General Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": [
+                        "Acceptable substitute"
+                    ]
+                }
+            },
+            {
                 "sending_name": "Laney College",
                 "sending_articulation": {
                     "type": "SET",
@@ -41412,6 +42314,26 @@
                             "title": "General Physics",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Los Angeles City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYSICS",
+                            "number": "022",
+                            "key": "PHYSICS 022",
+                            "title": "General Physics II with Calculus",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
                             "notes": []
                         }
                     ],
@@ -41487,31 +42409,11 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "035",
-                            "key": "PHYS 035",
-                            "title": "College Physics I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
                             "number": "036",
                             "key": "PHYS 036",
                             "title": "College Physics II",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "037",
-                            "key": "PHYS 037",
-                            "title": "General College Physics Calculus Supplement I",
-                            "min_units": 0.5,
-                            "max_units": 0.5,
                             "notes": []
                         },
                         {
@@ -41609,26 +42511,6 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "120",
-                            "key": "PHYS 120",
-                            "title": "Introduction to Physics I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "120A",
-                            "key": "PHYS 120A",
-                            "title": "Introduction to Physics I - Calculus Supplement",
-                            "min_units": 1.0,
-                            "max_units": 1.0,
-                            "notes": []
-                        },
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
                             "number": "121",
                             "key": "PHYS 121",
                             "title": "Introduction to Physics II",
@@ -41681,21 +42563,31 @@
                 }
             },
             {
-                "sending_name": "Palomar College",
+                "sending_name": "Oxnard College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "200",
-                            "key": "PHYS 200",
-                            "title": "Fundamentals of Physics",
+                            "number": "R122",
+                            "key": "PHYS R122",
+                            "title": "Physics with Calculus 2",
                             "min_units": 5.0,
                             "max_units": 5.0,
                             "notes": []
-                        },
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Palomar College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
@@ -41714,18 +42606,8 @@
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "031A",
-                            "key": "PHYS 031A",
-                            "title": "Calculus-Based College Physics I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
@@ -41764,18 +42646,8 @@
                 "sending_name": "San Bernardino Valley College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYSIC",
-                            "number": "151",
-                            "key": "PHYSIC 151",
-                            "title": "General Physics for the Life Sciences I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
                         {
                             "subject": "Physics",
                             "prefix": "PHYSIC",
@@ -41884,24 +42756,34 @@
                 "sending_name": "Santa Ana College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "210",
-                            "key": "PHYS 210",
-                            "title": "Principles of Physics I",
-                            "min_units": 4.0,
-                            "max_units": 4.0,
-                            "notes": []
-                        },
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
                             "number": "211",
                             "key": "PHYS 211",
                             "title": "Principles of Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santa Barbara City College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "111",
+                            "key": "PHYS 111",
+                            "title": "Introductory Physics",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
@@ -41924,6 +42806,36 @@
                             "title": "Calculus-Based Physics 2 with Lab",
                             "min_units": 4.0,
                             "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Santiago Canyon College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "150B",
+                            "key": "PHYS 150B",
+                            "title": "Introductory Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "150BC",
+                            "key": "PHYS 150BC",
+                            "title": "Introductory Physics II-Calculus",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
                             "notes": []
                         }
                     ],
@@ -41989,6 +42901,56 @@
                     ],
                     "notes": []
                 }
+            },
+            {
+                "sending_name": "Ventura College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": "AND",
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V03B",
+                            "key": "PHYS V03B",
+                            "title": "General Physics II: Calculus-Based",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "V03BL",
+                            "key": "PHYS V03BL",
+                            "title": "General Physics II Laboratory: Calculus-Based",
+                            "min_units": 1.0,
+                            "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "Victor Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "222",
+                            "key": "PHYS 222",
+                            "title": "General Physics",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
             }
         ]
     },
@@ -42006,18 +42968,8 @@
                 "sending_name": "Berkeley City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": "AND",
+                    "conjunction": null,
                     "items": [
-                        {
-                            "subject": "Physics",
-                            "prefix": "PHYS",
-                            "number": "3A",
-                            "key": "PHYS 3A",
-                            "title": "General Physics",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
-                            "notes": []
-                        },
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
@@ -42106,6 +43058,26 @@
                             "title": "Introductory Physics Laboratory II",
                             "min_units": 1.0,
                             "max_units": 1.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "College of Alameda",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYS",
+                            "number": "3B",
+                            "key": "PHYS 3B",
+                            "title": "General Physics",
+                            "min_units": 5.0,
+                            "max_units": 5.0,
                             "notes": []
                         }
                     ],
@@ -42423,8 +43395,8 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "2C",
-                            "key": "PHYS 2C",
+                            "number": "2B",
+                            "key": "PHYS 2B",
                             "title": "General Physics",
                             "min_units": 5.0,
                             "max_units": 5.0,
@@ -42433,8 +43405,8 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "2CM",
-                            "key": "PHYS 2CM",
+                            "number": "2BM",
+                            "key": "PHYS 2BM",
                             "title": "General Physics: Calculus Supplement",
                             "min_units": 1.0,
                             "max_units": 1.0,
@@ -42493,12 +43465,14 @@
                         {
                             "subject": "Physics",
                             "prefix": "PHYS",
-                            "number": "4C",
-                            "key": "PHYS 4C",
+                            "number": "4B",
+                            "key": "PHYS 4B",
                             "title": "General Physics",
                             "min_units": 4.0,
                             "max_units": 4.0,
-                            "notes": []
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []
@@ -42788,6 +43762,26 @@
                             "number": "2B",
                             "key": "PHY 2B",
                             "title": "General Physics II",
+                            "min_units": 4.0,
+                            "max_units": 4.0,
+                            "notes": []
+                        }
+                    ],
+                    "notes": []
+                }
+            },
+            {
+                "sending_name": "San Bernardino Valley College",
+                "sending_articulation": {
+                    "type": "SET",
+                    "conjunction": null,
+                    "items": [
+                        {
+                            "subject": "Physics",
+                            "prefix": "PHYSIC",
+                            "number": "152",
+                            "key": "PHYSIC 152",
+                            "title": "General Physics for the Life Sciences II",
                             "min_units": 4.0,
                             "max_units": 4.0,
                             "notes": []
