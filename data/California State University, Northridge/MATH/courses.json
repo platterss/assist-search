@@ -1635,7 +1635,7 @@
                 "sending_name": "Pasadena City College",
                 "sending_articulation": {
                     "type": "SET",
-                    "conjunction": null,
+                    "conjunction": "OR",
                     "items": [
                         {
                             "subject": "Mathematics",
@@ -1645,6 +1645,16 @@
                             "title": "College Algebra for STEM",
                             "min_units": 5.0,
                             "max_units": 5.0,
+                            "notes": []
+                        },
+                        {
+                            "subject": "Mathematics",
+                            "prefix": "MATH",
+                            "number": "004Z",
+                            "key": "MATH 004Z",
+                            "title": "Get Ready for Calculus",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
                             "notes": []
                         }
                     ],
@@ -8274,12 +8284,14 @@
                         {
                             "subject": "Mathematics",
                             "prefix": "MATH",
-                            "number": "009",
-                            "key": "MATH 009",
-                            "title": "Precalculus Mathematics",
-                            "min_units": 6.0,
-                            "max_units": 6.0,
-                            "notes": []
+                            "number": "004Z",
+                            "key": "MATH 004Z",
+                            "title": "Get Ready for Calculus",
+                            "min_units": 3.0,
+                            "max_units": 3.0,
+                            "notes": [
+                                "Acceptable substitute"
+                            ]
                         }
                     ],
                     "notes": []

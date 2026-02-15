@@ -6356,27 +6356,53 @@
             {
                 "sending_name": "Lemoore College",
                 "sending_articulation": {
-                    "type": "SET",
-                    "conjunction": "AND",
+                    "type": "GROUP",
+                    "conjunctions": [
+                        "OR"
+                    ],
                     "items": [
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "001A",
-                            "key": "CHEM 001A",
-                            "title": "General Chemistry I",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": "AND",
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "001A",
+                                    "key": "CHEM 001A",
+                                    "title": "General Chemistry I",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                },
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "001B",
+                                    "key": "CHEM 001B",
+                                    "title": "General Chemistry II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         },
                         {
-                            "subject": "Chemistry",
-                            "prefix": "CHEM",
-                            "number": "001B",
-                            "key": "CHEM 001B",
-                            "title": "General Chemistry II",
-                            "min_units": 5.0,
-                            "max_units": 5.0,
+                            "type": "SET",
+                            "conjunction": null,
+                            "items": [
+                                {
+                                    "subject": "Chemistry",
+                                    "prefix": "CHEM",
+                                    "number": "001B",
+                                    "key": "CHEM 001B",
+                                    "title": "General Chemistry II",
+                                    "min_units": 5.0,
+                                    "max_units": 5.0,
+                                    "notes": []
+                                }
+                            ],
                             "notes": []
                         }
                     ],
