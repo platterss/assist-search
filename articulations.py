@@ -212,7 +212,12 @@ def process_sending_articulation(sending_articulation: dict):
         pos = group["position"]
         max_position = max(max_position, pos)
 
-        group_items = group["items"]
+        group_items = group.get("items")
+
+        # For "advisements" like "Select 1 course from the following" that appear in the box but is not a course
+        if group_items is None:
+            continue
+
         group_items.sort(key=lambda x: x["position"])
 
         courses: list[SeriesCourse] = []
