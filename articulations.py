@@ -1,633 +1,607 @@
 import json
+from collections import defaultdict
+
 import request
+import os
+import re
 import sys
 
 from classes import (
-    Conjunction,
-    Institution,
-    BasicCourse,
-    SendingCourse,
-    SetArticulation,
-    GroupArticulation,
-    ReceivingType,
+    CategoryCode,
+    AgreementType,
+    Course,
+    Series,
+    SeriesCourse,
+    Requirement,
+    GeneralEducation,
+    ArticulationItem,
+    ReceivingCourse,
     ReceivingSeries,
     ReceivingRequirement,
-    ReceivingItem
+    ReceivingGE,
+    SendingArticulation,
+    Major,
+    Department,
+    Institution
 )
-from pathlib import Path
 
 from agreements import get_agreements
 from institutions import get_institutions
 
 
-def json_if_str(x):
-    return json.loads(x) if isinstance(x, str) else x
+def clean_and_convert_json(obj):
+    if hasattr(obj, "to_dict"):
+        obj = obj.to_dict()
+
+    if isinstance(obj, dict):
+        for k, v in list(obj.items()):
+            obj[k] = clean_and_convert_json(v)
+
+        if "courses" in obj and isinstance(obj.get("courses"), list) and "conjunction" in obj:
+            if len(obj["courses"]) == 1:
+                obj["conjunction"] = None
+
+                if isinstance(obj["courses"][0], dict):
+                    obj["courses"][0].pop("position", None)
+    elif isinstance(obj, list):
+        return [clean_and_convert_json(item) for item in obj]
+
+    return obj
 
 
-def make_series_key(members: list[BasicCourse]) -> str:
-    tokens = []
-    prev_prefix = None
+def write_json(json_dict, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    cleaned_data = clean_and_convert_json(json_dict)
 
-    for member in members or []:
-        if not tokens or member.prefix != prev_prefix:
-            tokens.append(member.key)
-        else:
-            tokens.append(member.number)
-
-        prev_prefix = member.prefix
-
-    return " + ".join(tokens)
+    with open(path, "w") as file:
+        json.dump(cleaned_data, file, indent=4)
 
 
-def parse_course_group(group: dict) -> SetArticulation:
-    conjunction = group.get("courseConjunction", "").strip().lower()
-    items = sorted(group.get("items", []), key=lambda x: x.get("position", 0))
-    courses = [SendingCourse.from_assist(item) for item in items if item.get("type") == "Course"]
-    group_level_notes: list[str] = [a.get("content") for a in group.get("attributes", []) if a.get("content")]
+def get_categories(receiving_id, sending_id, year_id) -> list[dict]:
+    url = (f"https://www.assist.org/api/agreements/categories"
+           f"?receivingInstitutionId={receiving_id}&sendingInstitutionId={sending_id}&academicYearId={year_id}")
 
-    if conjunction == "or":
-        conj = Conjunction.OR if len(courses) > 1 else None
-        return SetArticulation(conjunction=conj, items=courses, notes=group_level_notes)
+    # [{
+    #     "label": "Major",
+    #     "code": "major",
+    #     "reportType": 3,
+    #     "reportCategoryType": 0,
+    #     "courseTransferItemType": 0,
+    #     "hasReports": true
+    # }, {
+    #     "label": "Department",
+    #     "code": "dept",
+    #     "reportType": 2,
+    #     "reportCategoryType": 0,
+    #     "courseTransferItemType": 0,
+    #     "hasReports": true
+    # }, {
+    #     "label": "Prefix",
+    #     "code": "prefix",
+    #     "reportType": 10,
+    #     "reportCategoryType": 0,
+    #     "courseTransferItemType": 0,
+    #     "hasReports": true
+    # }, {
+    #     "label": "General Education / Breadth",
+    #     "code": "breadth",
+    #     "reportType": 1,
+    #     "reportCategoryType": 0,
+    #     "courseTransferItemType": 0,
+    #     "hasReports": true
+    # }]
 
-    if conjunction == "and":
-        conj = Conjunction.AND if len(courses) > 1 else None
-        return SetArticulation(conjunction=conj, items=courses, notes=group_level_notes)
-
-    return SetArticulation(conjunction=None, items=courses, notes=group_level_notes)
-
-
-def combine_groups(groups: list[SetArticulation | GroupArticulation], group_conjunctions: list[dict], group_positions: list[int]) -> SetArticulation | GroupArticulation:
-    sets: list[SetArticulation] = []
-
-    for group in groups:
-        if isinstance(group, GroupArticulation):
-            for child in group.items:
-                sets.append(child)
-        else:
-            sets.append(group)
-
-    n = len(sets)
-
-    if n == 0:
-        return GroupArticulation(conjunctions=[], items=[], notes=[])
-
-    if n == 1 and not group_conjunctions:
-        return groups[0]
-
-    conjunctions: list[Conjunction | None] = [None] * max(0, n - 1)
-    for group in group_conjunctions or []:
-        conjunction = group.get("groupConjunction", "And").strip().title()
-        begin = int(group.get("sendingCourseGroupBeginPosition", 0))
-        end = int(group.get("sendingCourseGroupEndPosition", max(0, n - 1)))
-
-        i = next((idx for idx, pos in enumerate(group_positions) if pos >= begin), None)
-        j = next((idx for idx in range(len(group_positions) - 1, -1, -1) if group_positions[idx] <= end), None)
-        if i is None or j is None or i >= j:
-            continue
-
-        for k in range(i, j):
-            conjunctions[k] = Conjunction.OR if conjunction.lower() == "or" else Conjunction.AND
-
-    for i, c in enumerate(conjunctions):
-        if c is None:
-            conjunctions[i] = Conjunction.OR
-
-    return GroupArticulation(conjunctions=conjunctions, items=sets, notes=[])
+    return request.get(url=url).json()
 
 
-def normalize_node(node: SetArticulation | GroupArticulation) -> SetArticulation | GroupArticulation:
-    if isinstance(node, GroupArticulation):
-        for i, child in enumerate(node.items):
-            node.items[i] = normalize_node(child)
+def get_available_categories(receiving_id, sending_id, year_id) -> tuple[bool, bool, bool, bool]:
+    categories = get_categories(receiving_id, sending_id, year_id)
+    has_major = has_dept = has_prefix = has_ge = False
 
-            if isinstance(child, SetArticulation) and (len(node.items[i].items) == 1) and node.items[i].conjunction is not None:
-                node.items[i].conjunction = None
+    for category in categories:
+        if category["code"] == CategoryCode.MAJOR.value:
+            has_major = category["hasReports"]
+        elif category["code"] == CategoryCode.DEPT.value:
+            has_dept = category["hasReports"]
+        elif category["code"] == CategoryCode.PREFIX.value:
+            has_prefix = category["hasReports"]
+        elif category["code"] == CategoryCode.GE.value:
+            has_ge = category["hasReports"]
 
-        # Flatten groups if they only contain singleton sets with the same conjunction
-        if len(node.items) > 1 and len(set(node.conjunctions)) == 1:
-            all_singletons = all(isinstance(c, SetArticulation) and len(c.items) == 1 for c in node.items)
-
-            if all_singletons:
-                flattened_items = [c.items[0] for c in node.items]
-                merged_notes: list[str] = []
-                merged_notes.extend(node.notes)
-
-                for c in node.items:
-                    if isinstance(c, SetArticulation):
-                        merged_notes.extend(c.notes)
-
-                return SetArticulation(
-                    conjunction=node.conjunctions[0] if len(flattened_items) > 1 else None,
-                    items=flattened_items,
-                    notes=merged_notes
-                )
-
-        if len(node.items) == 1:
-            return node.items[0]
-
-    if isinstance(node, SetArticulation):
-        if len(node.items) == 1 and node.conjunction is not None:
-            node.conjunction = None
-
-    return node
+    return has_major, has_dept, has_prefix, has_ge
 
 
-def build_articulation_tree(sending_articulation: dict | None) -> dict | None:
-    if not sending_articulation:
+def get_all_agreement(receiving_id, sending_id, year_id, agreement_type: AgreementType) -> dict:
+    url = (f"https://www.assist.org/api/articulation/Agreements"
+           f"?Key={year_id}/{sending_id}/to/{receiving_id}/{agreement_type.value}")
+
+    # {
+    #     "result": {
+    #         "name": "All Majors",
+    #         "type": "AllMajors",
+    #         "publishDate": "2026-02-17T21:58:23.7438318",
+    #         "receivingInstitution":
+    #         "sendingInstitution":
+    #         "academicYear":
+    #         "templateAssets":
+    #         "articulations":
+    #         "catalogYear":
+    #     },
+    #     "validationFailure": null,
+    #     "isSuccessful": true
+    # }
+
+    return request.get(url=url).json()
+
+
+def load_template_assets(agreement: dict) -> list[dict] | None:
+    if agreement["result"]["templateAssets"] is None:
         return None
 
-    reason = sending_articulation.get("noArticulationReason")
-    if isinstance(reason, str) and reason.strip():
-        return None
-
-    groups_raw = sending_articulation.get("items", [])
-    groups_raw = [group for group in groups_raw if group["type"] == "CourseGroup"]
-    groups_raw.sort(key=lambda x: x.get("position", 0))
-
-    normalized = [parse_course_group(g) for g in groups_raw]
-    group_positions = [int(g.get("position", 0)) for g in groups_raw]
-
-    node = combine_groups(normalized, sending_articulation.get("courseGroupConjunctions", []), group_positions)
-
-    notes: list[str] = [a.get("content") for a in (sending_articulation.get("attributes") or []) if a.get("content")]
-    if notes:
-        node.notes.extend(notes)
-
-    return normalize_node(node).to_dict()
-
-
-def request_all_courses(year: int, sending: int, receiving: int, method: str) -> dict:
-    url = f"https://www.assist.org/api/articulation/Agreements?Key={year}/{sending}/to/{receiving}/{method}"
-
-    all_courses_json: dict = request.get(url=url).json()
-    if not all_courses_json["isSuccessful"]:
-        raise FileNotFoundError("Agreement was not found for this combination.")
-
-    return all_courses_json
-
-
-def get_all_courses_json(agreement_year: int, sending_id: int, receiving_id: int) -> dict | None:
-    try:
-        return request_all_courses(agreement_year, sending_id, receiving_id, "AllMajors")
-    except FileNotFoundError:
-        print("All majors agreement was not found. Attempting all departments.")
-
-    try:
-        return request_all_courses(agreement_year, sending_id, receiving_id, "AllDepartments")
-    except FileNotFoundError:
-        print("All departments agreement was not found. Attempting all general education requirements.")
-
-    # Usually, if the departmental agreements are available, the prefix agreements ("AllPrefixes") will be too.
-    # So if there is no departmental agreement, we can save a request and skip to the GE requirements.
-    try:
-        return request_all_courses(agreement_year, sending_id, receiving_id, "AllGeneralEducation")
-    except FileNotFoundError:
-        print("All general education requirements agreement was not found.")
-
-    return None
-
-
-def articulation_to_json_dict(articulation: dict) -> dict | None:
-    sending = articulation.get("sendingArticulation")
-
-    if sending is None:
-        return None
-
-    return build_articulation_tree(sending)
-
-
-def extract_articulation_rows(result: dict) -> list[dict]:
-    articulations = json_if_str(result.get("articulations", [])) or []
-
-    if len(articulations) == 0:
-        return articulations
-
-    # All Majors / All General Education
-    if isinstance(articulations[0], dict) and "articulations" not in articulations[0]:
-        return articulations
-
-    # All Departments or All Prefixes
-    flat = []
-    for subject in articulations:
-        for row in (subject.get("articulations") or []):
-            flat.append({"articulation": row})
-
-    return flat
-
-
-def walk_template_assets(assets) -> list[tuple[str | None, ReceivingItem]]:
-    assets = json_if_str(assets)
-    out: list[tuple[str | None, ReceivingItem]] = []
-
-    def is_course_dict(d: dict) -> bool:
-        return isinstance(d, dict) and all(k in d for k in ("prefix", "courseNumber", "courseTitle"))
-
-    def dfs(node, cell_id=None):
-        if isinstance(node, dict):
-            cid = node.get("id", cell_id)
-
-            if is_course_dict(node):
-                basic_course = BasicCourse.from_assist(node)
-                out.append((cid, ReceivingItem.from_receiving(basic_course)))
-
-            series = node.get("series")
-            if series is not None:
-                courses = [BasicCourse.from_assist(c) for c in series["courses"] if is_course_dict(c)]
-
-                if courses:
-                    conjunction = Conjunction(series.get("conjunction").upper())
-                    rs = ReceivingSeries(key=make_series_key(courses), conjunction=conjunction, courses=courses)
-                    out.append((cid, ReceivingItem.from_receiving(rs)))
-
-            req_tuple = ReceivingRequirement.get_kind_and_key(node)
-            if req_tuple is not None:
-                kind, key = req_tuple
-                req = ReceivingRequirement(kind=kind, key=node[key]["name"].strip())
-                out.append((cid, ReceivingItem.from_receiving(req)))
-
-            for k, v in node.items():
-                if k != "series":
-                    dfs(v, cid)
-        elif isinstance(node, list):
-            for v in node:
-                dfs(v, cell_id)
-
-    dfs(assets, None)
-
-    return out
-
-
-def extract_template_inventory(template_assets: dict, existing_articulation_cell_ids: set[str]) -> list[ReceivingItem]:
-    items = walk_template_assets(template_assets)
-    out: list[ReceivingItem] = []
-    seen_keys: set[str] = set()
-
-    for cell_id, item in items:
-        if cell_id and cell_id in existing_articulation_cell_ids:
-            continue  # already has an articulation row
-
-        if item.key in seen_keys:
-            continue
-
-        seen_keys.add(item.key)
-        out.append(item)
-
-    return out
-
-
-def has_real_sending(articulation: dict) -> bool:
-    if articulation.get("templateOverrides"):
-        return True
-
-    sending = articulation.get("sendingArticulation")
-    if not sending:
-        return False
-
-    if sending.get("noArticulationReason"):
-        return False
-
-    items = sending.get("items") or []
-    return any(it.get("type") == "CourseGroup" for it in items)
-
-
-def get_course_articulation(art: dict, node_dict: dict, seen: dict[str, int], out: list[ReceivingItem]) -> None:
-    receiving = art["course"]
-    basic_course = BasicCourse.from_assist(receiving)
-    key = basic_course.key
-
-    new_is_real = has_real_sending(art)
-
-    if key in seen:
-        index = seen[key]
-        old_item = out[index]
-        old_is_real = old_item.sending_articulation is not None
-
-        if not old_is_real and new_is_real:
-            out[index] = ReceivingItem.from_receiving(basic_course, node_dict)
-
-        return
-
-    seen[key] = len(out)
-    out.append(ReceivingItem.from_receiving(basic_course, node_dict))
-
-
-def get_series_articulation(art: dict, node_dict: dict, seen: dict[str, int], out: list[ReceivingItem]) -> None:
-    series = art["series"]
-    series_courses = [BasicCourse.from_assist(member) for member in series["courses"]]
-
-    if not series_courses:
-        return
-
-    series_key = make_series_key(series_courses)
-    if series_key in seen:
-        return
-
-    seen[series_key] = len(out)
-    conjunction = Conjunction(series.get("conjunction", "AND").upper())
-    rs = ReceivingSeries(key=series_key, conjunction=conjunction, courses=series_courses)
-    out.append(ReceivingItem.from_receiving(rs, node_dict))
-
-
-def get_req_articulation(art: dict, node_dict: dict, seen: dict[str, int], out: list[ReceivingItem]) -> None:
-    req_tuple = ReceivingRequirement.get_kind_and_key(art)
-
-    if req_tuple is None:
-        return
-
-    kind, key = ReceivingRequirement.get_kind_and_key(art)
-    name = art[key]["name"].strip()
-
-    if name in seen:
-        return
-
-    seen[key] = len(out)
-    req = ReceivingRequirement(kind=kind, key=name)
-    out.append(ReceivingItem.from_receiving(req, node_dict))
-
-
-def get_articulations(all_courses_json: dict) -> list[ReceivingItem]:
-    result = all_courses_json["result"]
-    rows = extract_articulation_rows(result)
-
-    out: list[ReceivingItem] = []
-    seen: dict[str, int] = {}
-
-    # Actual articulations
-    for row in rows:
-        articulation = row["articulation"]
-        node_dict = articulation_to_json_dict(articulation)
-
-        receiving_type = articulation["type"]
-        if receiving_type == "Course":
-            get_course_articulation(articulation, node_dict, seen, out)
-        elif receiving_type == "Series":
-            get_series_articulation(articulation, node_dict, seen, out)
-        else:
-            get_req_articulation(articulation, node_dict, seen, out)
-
-    # Just for templates. They only hold receiving data
-    existing_articulation_cell_ids = {row["templateCellId"] for row in rows if row.get("templateCellId")}
-    for inv in extract_template_inventory(result["templateAssets"], existing_articulation_cell_ids):
-        if inv.key in seen:
-            continue
-
-        out.append(inv)
-
-    return out
-
-
-def parse_num(num: str) -> tuple[int, str]:
-    suffix = num.strip().upper()
-    i = 0
-    while i < len(suffix) and suffix[i].isdigit():
-        i += 1
-
-    int_part = int(suffix[:i]) if i > 0 else 10 ** 9
-    suffix = suffix[i:]
-
-    return int_part, suffix
-
-
-def row_sort_key(row: dict) -> tuple:
-    if row.get("type") == "COURSE":
-        k = parse_num(row.get("number", ""))
-        series_flag = 0
-        return k[0], k[1], series_flag, row.get("number", "")
-    elif row.get("type") == "SERIES":
-        nums = [member["number"] for member in row.get("courses", [])]
-        k = min((parse_num(n) for n in nums), default=(10 ** 9, ""))
-        series_flag = 1
-        return k[0], k[1], series_flag, " ".join(nums)
-    else:
-        k = parse_num(row.get("key", ""))
-        series_flag = 0
-        return k[0], k[1], series_flag, row.get("key", "")
-
-
-def upsert_sending_articulation(art_map: dict, college_name: str, sending: dict | None) -> bool:
-    if sending is None:
-        return False
-
-    existing = art_map.get(college_name)
-
-    if existing is None:
-        art_map[college_name] = {
-            "sending_name": college_name,
-            "sending_articulation": sending
-        }
-        return True
-
-    if existing.get("sending_articulation") != sending:
-        existing["sending_articulation"] = sending
-        return True
-
-    return False
-
-
-def subject_bucket(item: ReceivingItem) -> list[tuple[str, str, str]]:
-    if item.receiving_type == ReceivingType.COURSE:
-        subject = item.receiving.prefix
-        name = item.receiving.subject or item.receiving.prefix
-        return [(subject, subject, name)]
-
-    if item.receiving_type == ReceivingType.SERIES:
-        seen = {}
-
-        for member in item.receiving.courses:
-            if member.prefix not in seen:
-                seen[member.prefix] = (member.prefix, member.prefix, member.subject)
-
-        return list(seen.values())
-
-    if item.receiving_type == ReceivingType.MISC:
-        return [("# MISC-REQS #", "# MISC-REQS #", "Miscellaneous Requirements")]
-
-    if item.receiving_type == ReceivingType.GE:
-        return [("# GE-REQS #", "# GE-REQS #", "General Education Requirements")]
-
-    # shouldn't ever happen
-    return [("UNKNOWN", "UNKNOWN", "UNKNOWN")]
-
-
-def save_articulations(
-    university_name: str,
-    college_name: str,
-    all_articulations: list[ReceivingItem],
-    rows_by_subject_dir: dict[str, list[dict]],
-    changed_subjects: dict[str, bool],
-    subjects_map: dict[str, str],
-) -> None:
-    buckets: dict[str, dict[str, str | list[ReceivingItem]]] = {}
-    for item in all_articulations:
-        for directory, prefix, name in subject_bucket(item):
-            if directory == "UNKNOWN":
+    # dict_keys(['name', 'templateAssets'])
+    return json.loads(agreement["result"]["templateAssets"])
+
+
+# Processes all the courses in a major's template assets
+# Returns a dictionary where the key is the unique course ID and the value is the Course object
+def process_major_ge_template_assets(
+        template_assets: list[dict],
+        courses: dict[str, ReceivingCourse],
+        series: dict[str, ReceivingSeries],
+        requirements: dict[str, ReceivingRequirement],
+        ges: dict[str, ReceivingGE],
+):
+    majors: list[Major] = []
+
+    for major in template_assets:
+        name = major["name"]
+        all_requirements: list[Course | Series | Requirement | GeneralEducation] = []
+
+        assets = major["templateAssets"]
+        for template in assets:
+            if template["type"] != "RequirementGroup":
                 continue
 
-            b = buckets.setdefault(directory, {"prefix": prefix, "name": name, "items": []})
-            b["items"].append(item)
+            sections: list[dict] = template["sections"]
+            for section in sections:
+                rows = section.get("rows")
 
-    for subject_dir, meta in buckets.items():
-        prefix: str = meta["prefix"]
-        subject: str = meta["name"]
-        items: list[ReceivingItem] = meta["items"]
+                # Section header or something. Has no requirements
+                if rows is None:
+                    continue
 
-        if subject:
-            subjects_map[prefix] = subject
-        else:
-            subjects_map.setdefault(prefix, prefix)
+                for row in rows:
+                    cells = row["cells"]
+                    for cell in cells:
+                        if cell["type"] == "Course":
+                            obj = ReceivingCourse.from_dict(cell["course"])
+                            target_dict = courses
+                        elif cell["type"] == "Series":
+                            obj = ReceivingSeries.from_dict(cell["series"])
+                            target_dict = series
+                        elif cell["type"] == "Requirement":
+                            obj = ReceivingRequirement.from_dict(cell["requirement"])
+                            target_dict = requirements
+                        elif cell["type"] == "GeneralEducation":
+                            obj = ReceivingGE.from_dict(cell["generalEducationArea"])
+                            target_dict = ges
+                        else:
+                            continue
 
-        rows = rows_by_subject_dir.get(subject_dir)
-        if rows is None:
-            courses_path = Path(f"data/{university_name}/{subject_dir}/courses.json")
+                        key = obj.get_unique_key()
+                        if key not in target_dict:
+                            target_dict[key] = obj
 
-            if courses_path.exists():
-                with open(courses_path, "r") as f:
-                    rows = json.load(f)
+                        all_requirements.append(target_dict[key])
+
+        majors.append(Major(name=name, courses=all_requirements))
+
+    return majors
+
+
+def process_sending_articulation(sending_articulation: dict):
+    raw_groups = sending_articulation["items"]
+
+    if len(raw_groups) == 0:
+        return None
+
+    groups_by_position: dict[int, Series] = {}
+    max_position = -1
+
+    for group in raw_groups:
+        pos = group["position"]
+        max_position = max(max_position, pos)
+
+        group_items = group["items"]
+        group_items.sort(key=lambda x: x["position"])
+
+        courses: list[SeriesCourse] = []
+        for item in group_items:
+            if item["type"] == "Course":
+                courses.append(SeriesCourse.from_dict(item))
+
+        raw_attributes = group.get("attributes", [])
+        raw_attributes.sort(key=lambda x: x["position"])
+        group_notes = [attribute["content"] for attribute in raw_attributes if "content" in attribute]
+
+        internal_conjunction = group.get("courseConjunction", "And").upper()
+        series_option = Series(
+            conjunction=internal_conjunction,
+            name=", ".join(f"{course.prefix} {course.number}" for course in courses),
+            courses=courses,
+            notes=group_notes
+        )
+        groups_by_position[pos] = series_option
+
+    ordered_items = [groups_by_position[pos] for pos in sorted(groups_by_position.keys())]
+    raw_conjunctions = sending_articulation.get("courseGroupConjunctions", [])
+    ordered_conjunctions = ["OR"] * (len(ordered_items) - 1)
+
+    for conjunction in raw_conjunctions:
+        start_pos = conjunction["sendingCourseGroupBeginPosition"]
+        end_pos = conjunction["sendingCourseGroupEndPosition"]
+        val = conjunction["groupConjunction"]
+
+        if end_pos == start_pos + 1 and start_pos < len(ordered_conjunctions):
+            ordered_conjunctions[start_pos] = val.upper()
+
+    global_attributes = sending_articulation.get("attributes", [])
+    global_attributes.sort(key=lambda x: x["position"])
+    global_notes = [attribute["content"] for attribute in global_attributes if "content" in attribute]
+
+    return SendingArticulation(
+        items=ordered_items,
+        conjunctions=ordered_conjunctions,
+        notes=global_notes
+    )
+
+
+def process_articulation(
+        articulation,
+        courses: dict[str, ReceivingCourse],
+        series: dict[str, ReceivingSeries],
+        requirements: dict[str, ReceivingRequirement],
+        ges: dict[str, ReceivingGE],
+        college_info: Institution
+):
+    target_dict = None
+    key = None
+    art_type = articulation["type"]
+
+    if art_type == "Course":
+        course = Course.from_dict(articulation["course"])
+        key = course.get_unique_key()
+        target_dict = courses
+    elif art_type == "Series":
+        s = Series.from_dict(articulation["series"])
+        key = s.get_unique_key()
+        target_dict = series
+    elif art_type == "Requirement":
+        req = Requirement.from_dict(articulation["requirement"])
+        key = req.get_unique_key()
+        target_dict = requirements
+    elif art_type == "GeneralEducation":
+        ge = GeneralEducation.from_dict(articulation["generalEducationArea"])
+        key = ge.get_unique_key()
+        target_dict = ges
+
+    sending_payload = articulation["sendingArticulation"]
+
+    if target_dict is not None and key in target_dict and sending_payload:
+        processed_sending = process_sending_articulation(sending_payload)
+
+        if processed_sending:
+            articulation_key = processed_sending.get_unique_key()
+            receiving_item = target_dict[key]
+
+            if articulation_key not in receiving_item.articulations:
+                receiving_item.articulations[articulation_key] = ArticulationItem(
+                    articulation=processed_sending,
+                    sending_id=college_info.id,
+                    sending_name=college_info.name
+                )
+
+    return art_type, key
+
+
+def process_major_ge_articulations(
+        articulations: list[dict],
+        courses: dict[str, ReceivingCourse],
+        series: dict[str, ReceivingSeries],
+        requirements: dict[str, ReceivingRequirement],
+        ges: dict[str, ReceivingGE],
+        college_info: Institution
+):
+    for cell in articulations:
+        process_articulation(cell["articulation"], courses, series, requirements, ges, college_info)
+
+
+def process_dept_prefix_articulations(
+        depts_prefixes: list[dict],
+        courses: dict[str, ReceivingCourse],
+        series: dict[str, ReceivingSeries],
+        requirements: dict[str, ReceivingRequirement],
+        ges: dict[str, ReceivingGE],
+        college_info: Institution
+):
+    all_departments: list[Department] = []
+
+    for cell in depts_prefixes:
+        name = cell["name"]
+        all_requirements: list[Course | Series | Requirement | GeneralEducation] = []
+        articulation = cell["articulations"]
+        for art in articulation:
+            art_type, key = process_articulation(art, courses, series, requirements, ges, college_info)
+
+            if art_type == "Course" and key in courses:
+                all_requirements.append(courses[key])
+            elif art_type == "Series" and key in series:
+                all_requirements.append(series[key])
+            elif art_type == "Requirement" and key in requirements:
+                all_requirements.append(requirements[key])
+            elif art_type == "GeneralEducation" and key in ges:
+                all_requirements.append(ges[key])
+
+        all_departments.append(Department(name=name, courses=all_requirements))
+
+    return all_departments
+
+
+# Majors and GEs have the same general layout
+# I could probably rename this better later
+def process_all_majors_ges(
+        agreement: dict,
+        courses: dict[str, ReceivingCourse],
+        series: dict[str, ReceivingSeries],
+        requirements: dict[str, ReceivingRequirement],
+        ges: dict[str, ReceivingGE],
+        college_info: Institution
+):
+    if agreement["result"]["type"] not in [AgreementType.ALL_MAJORS, AgreementType.ALL_GE]:
+        print("Incorrect processing type for agreement")
+        return []
+
+    template_assets: list[dict] = load_template_assets(agreement)
+    categories = process_major_ge_template_assets(template_assets, courses, series, requirements, ges)
+
+    articulations: list[dict] = json.loads(agreement["result"]["articulations"])
+    process_major_ge_articulations(articulations, courses, series, requirements, ges, college_info)
+
+    return categories
+
+
+# Departments and Prefixes have the same general layout
+# I could also probably rename this better later
+def process_all_depts_prefixes(
+        agreement: dict,
+        courses: dict[str, ReceivingCourse],
+        series: dict[str, ReceivingSeries],
+        requirements: dict[str, ReceivingRequirement],
+        ges: dict[str, ReceivingGE],
+        college_info: Institution
+):
+    if agreement["result"]["type"] not in [AgreementType.ALL_DEPTS, AgreementType.ALL_PREFIXES]:
+        print("Incorrect processing type for agreement")
+        return []
+
+    articulations: list[dict] = json.loads(agreement["result"]["articulations"])
+    sections = process_dept_prefix_articulations(articulations, courses, series, requirements, ges, college_info)
+
+    return sections
+
+
+def process_agreements(
+        receiving_id,
+        sending_id,
+        year_id,
+        courses: dict[str, ReceivingCourse],
+        series: dict[str, ReceivingSeries],
+        requirements: dict[str, ReceivingRequirement],
+        ges: dict[str, ReceivingGE],
+        uni_majors: dict[str, Major],
+        uni_depts: dict[str, Department],
+        # uni_prefixes: dict[str, Department],
+        uni_ge_categories: dict[str, Major],
+        college_info
+):
+    def merge_requirements(existing_container, new_container):
+        existing_keys = {item.get_unique_key() for item in existing_container.courses}
+        for item in new_container.courses:
+            key = item.get_unique_key()
+            if key not in existing_keys:
+                existing_container.courses.append(item)
+                existing_keys.add(key)
+
+    def process(agreement_type, processing_function, uni_dict):
+        all_agreement = get_all_agreement(receiving_id, sending_id, year_id, agreement_type)
+        current = processing_function(all_agreement, courses, series, requirements, ges, college_info)
+
+        for item in current:
+            if item.name not in uni_dict:
+                uni_dict[item.name] = item
             else:
-                rows = []
+                merge_requirements(uni_dict[item.name], item)
 
-            rows_by_subject_dir[subject_dir] = rows
-            changed_subjects.setdefault(subject_dir, False)
+    has_major, has_dept, has_prefix, has_ge = get_available_categories(receiving_id, sending_id, year_id)
 
-        index: dict[str, dict] = {}
-        art_maps: dict[str, dict] = {}
-        for row in rows:
-            row.setdefault("articulations", [])
-            key = row["key"]
-            index[key] = row
-            art_maps[key] = {art["sending_name"]: art for art in row["articulations"]}
+    if has_major:
+        process(AgreementType.ALL_MAJORS, process_all_majors_ges, uni_majors)
 
-        changed = False
+    if has_dept:
+        process(AgreementType.ALL_DEPTS, process_all_depts_prefixes, uni_depts)
 
-        for item in items:
-            if item.key not in index:
-                index[item.key] = {"type": item.receiving_type.value, **item.receiving.to_dict(), "articulations": []}
-                art_maps[item.key] = {}
-                changed = True
+    # if has_prefix:
+    #     process(AgreementType.ALL_PREFIXES, process_all_depts_prefixes, uni_prefixes)
 
-            if upsert_sending_articulation(art_maps[item.key], college_name, item.sending_articulation):
-                changed = True
-
-        if not changed:
-            continue
-
-        for k, amap in art_maps.items():
-            index[k]["articulations"] = list(amap.values())
-        new_rows = list(index.values())
-        new_rows.sort(key=row_sort_key)
-
-        rows_by_subject_dir[subject_dir] = new_rows
-        changed_subjects[subject_dir] = True
+    if has_ge:
+        process(AgreementType.ALL_GE, process_all_majors_ges, uni_ge_categories)
 
 
-def flush_courses_for_university(name: str, rows: dict[str, list[dict]], subjects: dict[str, bool], ) -> None:
-    for subject_dir, rows in rows.items():
-        if not subjects.get(subject_dir):
-            continue
-        courses_path = Path(f"data/{name}/{subject_dir}/courses.json")
-        courses_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(courses_path, "w") as f:
-            json.dump(rows, f, indent=4)
+def save_university_data(
+        university_name,
+        courses,
+        series,
+        requirements,
+        ges,
+        majors,
+        # depts: dict[str, Department],
+        # prefixes: dict[str, Department],
+        ge_categories
+):
+    base_path = f"data/{university_name}"
+    print(f"Transforming data structures...")
+
+    all_objects = list(courses.values()) + list(series.values()) + list(requirements.values()) + list(ges.values())
+
+    for obj in all_objects:
+        if hasattr(obj, "articulations") and isinstance(obj.articulations, dict):
+            obj.articulations = list(obj.articulations.values())
+
+    def get_natural_sort_key(text):
+        return [int(c) if c.isdigit() else c.lower() for c in re.split(r'(\d+)', text)]
+
+    def get_sort_key(thing):
+        if isinstance(thing, ReceivingCourse):
+            return 0, thing.prefix, get_natural_sort_key(thing.number)
+        elif isinstance(thing, ReceivingSeries):
+            return 0, thing.name, []
+        elif isinstance(thing, ReceivingRequirement):
+            return 1, thing.name, []
+        elif isinstance(thing, ReceivingGE):
+            return 2, thing.name, []
+        return 3, "", []
+
+    print("Writing Subject files...")
+    subjects_metadata = {}
+    items_by_prefix = defaultdict(list)
+
+    for course in courses.values():
+        items_by_prefix[course.prefix].append(course)
+
+        if course.prefix not in subjects_metadata:
+            subjects_metadata[course.prefix] = {
+                "name": course.prefix_desc,
+                "prefix": course.prefix
+            }
+
+    for s in series.values():
+        involved_prefixes = {c.prefix for c in s.courses}
+
+        for course in s.courses:
+            if course.prefix not in subjects_metadata:
+                subjects_metadata[course.prefix] = {
+                    "name": course.prefix_desc,
+                    "prefix": course.prefix
+                }
+
+        for prefix in involved_prefixes:
+            items_by_prefix[prefix].append(s)
+
+    sorted_metadata = sorted(list(subjects_metadata.values()), key=lambda x: x["prefix"])
+    write_json(sorted_metadata, f"{base_path}/Subjects/subjects.json")
+
+    for prefix, item_list in items_by_prefix.items():
+        item_list.sort(key=get_sort_key)
+        write_json(item_list, f"{base_path}/Subjects/{prefix}.json")
+
+    print(f"Writing Major files...")
+    major_names = sorted(list(majors.keys()))
+    write_json(major_names, f"{base_path}/Majors/majors.json")
+
+    for major_name, major_obj in majors.items():
+        major_obj.courses.sort(key=get_sort_key)
+        safe_major = major_name.replace("/", "-").replace(":", "").strip()
+        write_json(major_obj, f"{base_path}/Majors/{safe_major}.json")
+
+    print(f"Writing GE files...")
+    existing_ge_keys = set()
+    for category in ge_categories.values():
+        for item in category.courses:
+            existing_ge_keys.add(item.get_unique_key())
+
+    missing_ges = [ge for ge in ges.values() if ge.get_unique_key() not in existing_ge_keys]
+
+    if missing_ges:
+        missing_ges.sort(key=get_sort_key)
+        category_name = "General Education" if len(ge_categories) == 0 else "General Education (From Majors)"
+
+        if category_name not in ge_categories:
+            ge_categories[category_name] = Major(category_name, courses=[])
+
+        ge_categories[category_name].courses.extend(missing_ges)
+
+    write_json(list(ge_categories.values()), f"{base_path}/GEs/ge_categories.json")
 
 
-def flush_subjects_for_university(name: str, subjects_map: dict[str, str]) -> None:
-    if not subjects_map:
-        return
-
-    subjects_path = Path(f"data/{name}/subjects.json")
-    existing: list[dict] = []
-    if subjects_path.exists():
-        try:
-            with open(subjects_path, "r") as f:
-                existing = json.load(f)
-        except json.decoder.JSONDecodeError:
-            existing = []
-
-    merged: dict[str, str] = {}
-    for it in existing or []:
-        pref = it.get("prefix")
-        name = it.get("name", pref)
-        if isinstance(pref, str) and isinstance(name, str):
-            merged[pref] = name
-    merged.update(subjects_map)
-
-    new_payload = [{"prefix": p, "name": merged[p]} for p in sorted(merged.keys())]
-    if new_payload != (existing or []):
-        subjects_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(subjects_path, "w") as out:
-            json.dump(new_payload, out, indent=4)
-
-
-def run(desired_universities: list[str] = None) -> None:
+def run(desired_universities: list):
     if desired_universities is None or len(desired_universities) == 0:
         desired_universities = ["CSU", "UC", "AICCU"]
 
-    institutions: list[Institution] = get_institutions(create_new_if_existing=True)
-
+    institutions = get_institutions(create_new_if_existing=False)
     colleges = sorted([i for i in institutions if i.category == "CCC"], key=lambda i: i.name)
     universities = [i for i in institutions if i.category in desired_universities]
 
-    successful = 0
-    no_agreements = 0
-    no_modern_agreements = 0
-    no_viable_agreements = 0
-
     for university in universities:
-        print(f"Getting articulations for {university.name} (ID {university.id}).")
+        if university.name not in ["Santa Clara University"]:
+            continue
 
+        print(f"Getting articulations for {university.name} (ID {university.id}).")
         all_agreements = get_agreements(university.id)
 
-        rows_by_subject_dir: dict[str, list[dict]] = {}
-        changed_subjects: dict[str, bool] = {}
-        subjects_map: dict[str, str] = {}
+        uni_courses: dict[str, ReceivingCourse] = {}
+        uni_series: dict[str, ReceivingSeries] = {}
+        uni_requirements: dict[str, ReceivingRequirement] = {}
+        uni_ges: dict[str, ReceivingGE] = {}
+
+        uni_majors: dict[str, Major] = {}
+        uni_depts: dict[str, Department] = {}
+        # uni_prefixes: dict[str, Department] = {}
+        uni_ge_categories: dict[str, Major] = {}
 
         for college in colleges:
+            if college.name not in ["Foothill College"]:
+                continue
+
             agreement_year = all_agreements.get(college.id, -1)
 
             if agreement_year == -1:
-                print(f"{college.name} and {university.name} have no agreements.")
-                no_agreements += 1
+                print(f"    {college.name} and {university.name} have no agreements.")
                 continue
 
-            # Modern agreements only started in year ID 74
             if agreement_year < 74:
-                print(f"{college.name} and {university.name} have no modern agreements.")
-                no_modern_agreements += 1
+                print(f"    {college.name} and {university.name} have no modernized agreements.")
                 continue
 
-            print(f"Getting articulation: {college.name} (ID {college.id}) -> {university.name} (ID {university.id}) "
-                  f"for year ID {agreement_year}")
+            print(f"    Fetching articulations for {college.name} -> {university.name}...")
 
-            all_courses = get_all_courses_json(agreement_year, college.id, university.id)
-
-            if all_courses is None:
-                print(f"{college.name} and {university.name} have no viable agreements.")
-                no_viable_agreements += 1
-                continue
-
-            all_articulations = get_articulations(all_courses)
-
-            save_articulations(
-                university.name,
-                college.name,
-                all_articulations,
-                rows_by_subject_dir,
-                changed_subjects,
-                subjects_map
+            process_agreements(
+                university.id,
+                college.id,
+                agreement_year,
+                uni_courses,
+                uni_series,
+                uni_requirements,
+                uni_ges,
+                uni_majors,
+                uni_depts,
+                # uni_prefixes,
+                uni_ge_categories,
+                college
             )
 
-            successful += 1
+        save_university_data(
+            university.name,
+            uni_courses,
+            uni_series,
+            uni_requirements,
+            uni_ges,
+            uni_majors,
+            # uni_depts,
+            # uni_prefixes,
+            uni_ge_categories
+        )
 
-        flush_courses_for_university(university.name, rows_by_subject_dir, changed_subjects)
-        flush_subjects_for_university(university.name, subjects_map)
-
-        print("\n")
-
-    print("== Results ==")
-    print(f"Agreements saved: {successful}")
-    print(f"Missing agreements: {no_agreements}")
-    print(f"Lacking modern agreements: {no_modern_agreements}")
-    print(f"No viable modern agreements: {no_viable_agreements}")
+        print()
 
 
 def main():
