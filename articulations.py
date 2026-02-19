@@ -542,9 +542,6 @@ def run(desired_universities: list):
     universities = [i for i in institutions if i.category in desired_universities]
 
     for university in universities:
-        if university.name not in ["Santa Clara University"]:
-            continue
-
         print(f"Getting articulations for {university.name} (ID {university.id}).")
         all_agreements = get_agreements(university.id)
 
@@ -559,9 +556,6 @@ def run(desired_universities: list):
         uni_ge_categories: dict[str, Major] = {}
 
         for college in colleges:
-            if college.name not in ["Foothill College"]:
-                continue
-
             agreement_year = all_agreements.get(college.id, -1)
 
             if agreement_year == -1:
