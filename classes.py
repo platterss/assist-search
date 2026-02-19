@@ -39,24 +39,6 @@ class Institution:
 
 
 @dataclass
-class Major:
-    name: str
-    courses: list[Course | Series | Requirement | GeneralEducation]
-
-    def to_dict(self):
-        return asdict(self)
-
-
-@dataclass
-class Department:
-    name: str
-    courses: list[Course | Series | Requirement | GeneralEducation]
-
-    def to_dict(self):
-        return asdict(self)
-
-
-@dataclass
 class Course:
     prefix_desc: str
     prefix: str
@@ -291,3 +273,21 @@ class SendingArticulation:
             data["conjunctions"] = None
 
         return data
+
+
+@dataclass
+class Major:
+    name: str
+    courses: list[Course | Series | Requirement | GeneralEducation]
+
+    def to_dict(self):
+        return asdict(self)
+
+
+@dataclass
+class Department:
+    name: str
+    courses: list[Course | Series | Requirement | GeneralEducation]
+
+    def to_dict(self):
+        return asdict(self)
