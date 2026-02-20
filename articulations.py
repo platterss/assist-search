@@ -457,7 +457,7 @@ def process_sending_articulation(sending_articulation: dict):
 
 
 def save_university_data(session: UniversitySession):
-    base_path = f"data/{session.university.name}"
+    base_path = f"data/universities/{session.university.name}"
     print(f"Transforming data structures...")
 
     all_objects = (list(session.courses.values()) + list(session.series.values()) +
