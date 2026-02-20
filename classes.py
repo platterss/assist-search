@@ -105,7 +105,7 @@ class SeriesCourse(Course):
         course = Course.from_dict(class_data)
         position = class_data["position"]
 
-        raw_attributes = class_data.get("attributes", [])
+        raw_attributes = class_data.get("attributes") or []
         raw_attributes.sort(key=lambda x: x["position"])
         notes = [attribute["content"] for attribute in raw_attributes]
 
@@ -164,6 +164,7 @@ class Requirement:
 
 @dataclass
 class GeneralEducation:
+    area_type: str  # CSUGE, IGETC, CALGETC
     code: str
     name: str
 
@@ -176,6 +177,7 @@ class GeneralEducation:
     @staticmethod
     def from_dict(ge_data: dict):
         return GeneralEducation(
+            area_type=ge_data.get("areaType", "University").strip(),
             code=ge_data["code"].strip(),
             name=ge_data["name"].strip()
         )

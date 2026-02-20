@@ -86,6 +86,7 @@ class AgreementProcessor:
     def __init__(self, session: UniversitySession, college: Institution):
         self.session = session
         self.college = college
+        self.template_id_map = {}  # Maps the templateCellId -> (target_dict, unique_key) for GE articulations
 
     def process_all_types(self, year_id):
         receiving_id = self.session.university.id
@@ -119,7 +120,17 @@ class AgreementProcessor:
         for item in results:
             storage_callback(item)
 
-    def process_articulation(self, articulation):
+    def process_articulation(self, articulation_wrapper):
+        # Supports wrapped (for majors/GEs) and unwrapped (departments/prefixes) formats
+        # We originally did the wrapped agreements for everything but major/GE agreements
+        # have some GEs that require the template cell IDs from the unwrapped agreements
+        if "articulation" in articulation_wrapper:
+            articulation = articulation_wrapper["articulation"]
+            template_cell_id = articulation_wrapper.get("templateCellId")
+        else:
+            articulation = articulation_wrapper
+            template_cell_id = None
+
         target_dict = None
         key = None
         art_type = articulation["type"]
@@ -140,6 +151,9 @@ class AgreementProcessor:
             ge = GeneralEducation.from_dict(articulation["generalEducationArea"])
             key = ge.get_unique_key()
             target_dict = self.session.ges
+        elif art_type == "Transferability":
+            if template_cell_id and template_cell_id in self.template_id_map:
+                target_dict, key = self.template_id_map[template_cell_id]
 
         sending_payload = articulation["sendingArticulation"]
 
@@ -184,6 +198,8 @@ class AgreementProcessor:
                     for row in rows:
                         cells = row["cells"]
                         for cell in cells:
+                            cell_id = cell.get("id")
+
                             if cell["type"] == "Course":
                                 obj = ReceivingCourse.from_dict(cell["course"])
                                 target_dict = self.session.courses
@@ -196,12 +212,20 @@ class AgreementProcessor:
                             elif cell["type"] == "GeneralEducation":
                                 obj = ReceivingGE.from_dict(cell["generalEducationArea"])
                                 target_dict = self.session.ges
+                            elif cell["type"] in ["CSUGE", "IGETC", "CALGETC"]:
+                                ge_payload = cell[cell["type"].lower()]
+                                ge_payload["id"] = cell_id
+                                obj = ReceivingGE.from_dict(ge_payload)
+                                target_dict = self.session.ges
                             else:
                                 continue
 
                             key = obj.get_unique_key()
                             if key not in target_dict:
                                 target_dict[key] = obj
+
+                            if cell_id:
+                                self.template_id_map[cell_id] = (target_dict, key)
 
                             all_requirements.append(target_dict[key])
 
@@ -211,7 +235,7 @@ class AgreementProcessor:
 
     def process_major_ge_articulations(self, articulations: list[dict],):
         for cell in articulations:
-            self.process_articulation(cell["articulation"])
+            self.process_articulation(cell)
 
     def process_majors_ges_layout(self, agreement: dict):
         result = agreement["result"]
@@ -435,7 +459,7 @@ def process_sending_articulation(sending_articulation: dict):
         groups_by_position[pos] = series_option
 
     ordered_items = [groups_by_position[pos] for pos in sorted(groups_by_position.keys())]
-    raw_conjunctions = sending_articulation.get("courseGroupConjunctions", [])
+    raw_conjunctions = sending_articulation.get("courseGroupConjunctions") or []
     ordered_conjunctions = ["OR"] * (len(ordered_items) - 1)
 
     for conjunction in raw_conjunctions:
@@ -446,7 +470,7 @@ def process_sending_articulation(sending_articulation: dict):
         if end_pos == start_pos + 1 and start_pos < len(ordered_conjunctions):
             ordered_conjunctions[start_pos] = val.upper()
 
-    global_attributes = sending_articulation.get("attributes", [])
+    global_attributes = sending_articulation.get("attributes") or []
     global_attributes.sort(key=lambda x: x["position"])
     global_notes = [attribute["content"] for attribute in global_attributes if "content" in attribute]
 
