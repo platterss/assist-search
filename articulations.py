@@ -25,8 +25,13 @@ from classes import (
     Institution
 )
 
-from agreements import get_agreements
+from agreements import get_agreements, get_local_agreement
 from institutions import get_institutions
+
+
+# Saves and uses raw ASSIST.org JSON files on disk
+# Just here so we don't have to keep making requests for every little change
+use_local_agreement_data = False
 
 
 def clean_and_convert_json(obj):
@@ -59,7 +64,13 @@ def write_json(json_dict, path):
 
 def get_categories(receiving_id, sending_id, year_id) -> list[dict]:
     url = (f"https://www.assist.org/api/agreements/categories"
-           f"?receivingInstitutionId={receiving_id}&sendingInstitutionId={sending_id}&academicYearId={year_id}")
+           f"?receivingInstitutionId={receiving_id}"
+           f"&sendingInstitutionId={sending_id}"
+           f"&academicYearId={year_id}")
+
+    if use_local_agreement_data:
+        path = f"raw_agreements/{receiving_id}/{sending_id}_{year_id}_Categories.json"
+        return get_local_agreement(path, url)
 
     # [{
     #     "label": "Major",
@@ -114,6 +125,10 @@ def get_available_categories(receiving_id, sending_id, year_id) -> tuple[bool, b
 def get_all_agreement(receiving_id, sending_id, year_id, agreement_type: AgreementType) -> dict:
     url = (f"https://www.assist.org/api/articulation/Agreements"
            f"?Key={year_id}/{sending_id}/to/{receiving_id}/{agreement_type.value}")
+
+    if use_local_agreement_data:
+        path = f"raw_agreements/{receiving_id}/{sending_id}_{year_id}_{agreement_type.value}.json"
+        return get_local_agreement(path, url)
 
     # {
     #     "result": {
@@ -362,14 +377,20 @@ def process_all_majors_ges(
         ges: dict[str, ReceivingGE],
         college_info: Institution
 ):
+    result = agreement["result"]
+
+    if result is None:
+        print("    Agreement does not have an 'All' section.")
+        return []
+
     if agreement["result"]["type"] not in [AgreementType.ALL_MAJORS, AgreementType.ALL_GE]:
-        print("Incorrect processing type for agreement")
+        print("    Incorrect processing type for agreement")
         return []
 
     template_assets: list[dict] = load_template_assets(agreement)
     categories = process_major_ge_template_assets(template_assets, courses, series, requirements, ges)
 
-    articulations: list[dict] = json.loads(agreement["result"]["articulations"])
+    articulations: list[dict] = json.loads(result["articulations"])
     process_major_ge_articulations(articulations, courses, series, requirements, ges, college_info)
 
     return categories
@@ -385,11 +406,17 @@ def process_all_depts_prefixes(
         ges: dict[str, ReceivingGE],
         college_info: Institution
 ):
-    if agreement["result"]["type"] not in [AgreementType.ALL_DEPTS, AgreementType.ALL_PREFIXES]:
+    result = agreement["result"]
+
+    if result is None:
+        print(f"Agreement does not have an 'All' section.")
+        return []
+
+    if result["type"] not in [AgreementType.ALL_DEPTS, AgreementType.ALL_PREFIXES]:
         print("Incorrect processing type for agreement")
         return []
 
-    articulations: list[dict] = json.loads(agreement["result"]["articulations"])
+    articulations: list[dict] = json.loads(result["articulations"])
     sections = process_dept_prefix_articulations(articulations, courses, series, requirements, ges, college_info)
 
     return sections
@@ -542,13 +569,13 @@ def run(desired_universities: list):
     if desired_universities is None or len(desired_universities) == 0:
         desired_universities = ["CSU", "UC", "AICCU"]
 
-    institutions = get_institutions(create_new_if_existing=False)
+    institutions = get_institutions(create_new_if_existing=not use_local_agreement_data)
     colleges = sorted([i for i in institutions if i.category == "CCC"], key=lambda i: i.name)
     universities = [i for i in institutions if i.category in desired_universities]
 
     for university in universities:
         print(f"Getting articulations for {university.name} (ID {university.id}).")
-        all_agreements = get_agreements(university.id)
+        all_agreements = get_agreements(university.id, use_local_agreement_data)
 
         uni_courses: dict[str, ReceivingCourse] = {}
         uni_series: dict[str, ReceivingSeries] = {}
