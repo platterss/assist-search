@@ -5,6 +5,7 @@ from collections import defaultdict
 import request
 import os
 import re
+import timeit
 
 from classes import (
     CategoryCode,
@@ -611,6 +612,8 @@ def get_desired_institutions():
 
 
 def main():
+    start_time = timeit.default_timer()
+
     colleges, universities = get_desired_institutions()
 
     if not colleges or not universities:
@@ -634,6 +637,9 @@ def main():
 
         save_university_data(session)
         print()
+
+    end_time = timeit.default_timer()
+    print(f"Execution time: {end_time - start_time:.2f}s")
 
 
 if __name__ == "__main__":
