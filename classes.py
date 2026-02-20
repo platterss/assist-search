@@ -238,7 +238,8 @@ class ReceivingRequirement(Requirement):
 
 @dataclass
 class ReceivingGE(GeneralEducation):
-    articulations: dict[str, ArticulationItem | list[ArticulationItem]]
+    articulations: (dict[str, ArticulationItem | list[ArticulationItem]] |
+                    list[ArticulationItem | list[ArticulationItem]])
 
     def get_unique_key(self) -> str:
         return super().get_unique_key()
