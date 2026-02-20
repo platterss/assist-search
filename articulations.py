@@ -136,21 +136,29 @@ class AgreementProcessor:
         art_type = articulation["type"]
 
         if art_type == "Course":
-            course = Course.from_dict(articulation["course"])
+            course = ReceivingCourse.from_dict(articulation["course"])
             key = course.get_unique_key()
             target_dict = self.session.courses
+            if key not in target_dict:
+                target_dict[key] = course
         elif art_type == "Series":
-            s = Series.from_dict(articulation["series"])
+            s = ReceivingSeries.from_dict(articulation["series"])
             key = s.get_unique_key()
             target_dict = self.session.series
+            if key not in target_dict:
+                target_dict[key] = s
         elif art_type == "Requirement":
-            req = Requirement.from_dict(articulation["requirement"])
+            req = ReceivingRequirement.from_dict(articulation["requirement"])
             key = req.get_unique_key()
             target_dict = self.session.requirements
+            if key not in target_dict:
+                target_dict[key] = req
         elif art_type == "GeneralEducation":
-            ge = GeneralEducation.from_dict(articulation["generalEducationArea"])
+            ge = ReceivingGE.from_dict(articulation["generalEducationArea"])
             key = ge.get_unique_key()
             target_dict = self.session.ges
+            if key not in target_dict:
+                target_dict[key] = ge
         elif art_type == "Transferability":
             if template_cell_id and template_cell_id in self.template_id_map:
                 target_dict, key = self.template_id_map[template_cell_id]
