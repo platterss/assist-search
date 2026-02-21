@@ -501,36 +501,59 @@ def process_sending_articulation(sending_articulation: dict):
 
     # Normalize multi-group articulations where each group only has one course
     # We can just compress it all into a single group if they all share the same conjunction
-    can_normalize = False
+    new_items = []
+    new_conjunctions = []
 
-    if len(ordered_items) > 1:
-        if all(len(item.courses) == 1 for item in ordered_items):
-            unique_conjunctions = set(ordered_conjunctions)
-            if len(unique_conjunctions) == 1:
-                can_normalize = True
+    i = 0
+    while i < len(ordered_items):
+        current_item = ordered_items[i]
 
-    if can_normalize:
-        uniform_conjunction = ordered_conjunctions[0]
+        # Current group must have one course and have a conjunction after it
+        if len(current_item.courses) == 1 and i < len(ordered_conjunctions):
+            target_conjunction = ordered_conjunctions[i]
 
-        flattened_courses = []
-        for item in ordered_items:
-            course = item.courses[0]
+            merge_block = [current_item]
+            j = i + 1
 
-            # Group-level notes for a group with just one course is basically just a course note
-            course_notes = course.notes if course.notes else []
-            group_notes = item.notes if item.notes else []
-            course.notes = course_notes + group_notes
+            # Keep looking ahead for more of those things connected by the same conjunction
+            while (j < len(ordered_items) and len(ordered_items[j].courses) == 1
+                   and ordered_conjunctions[j - 1] == target_conjunction):
+                merge_block.append(ordered_items[j])
+                j += 1
 
-            flattened_courses.append(course)
+            if len(merge_block) > 1:
+                flattened_courses = []
 
-        flattened_series = SendingSeries(
-            conjunction=uniform_conjunction,
-            courses=flattened_courses,
-            notes=[]
-        )
+                for item in merge_block:
+                    course = item.courses[0]
+                    course_notes = course.notes if course.notes else []
+                    group_notes = item.notes if item.notes else []
 
-        ordered_items = [flattened_series]
-        ordered_conjunctions = []
+                    # Group-level notes for single-course groups are basically just course notes
+                    course.notes = course_notes + group_notes
+                    flattened_courses.append(course)
+
+                merged_series = SendingSeries(
+                    conjunction=target_conjunction,
+                    courses=flattened_courses,
+                    notes=[]
+                )
+
+                new_items.append(merged_series)
+
+                i = j
+                if i < len(ordered_items):
+                    new_conjunctions.append(ordered_conjunctions[i - 1])
+                continue
+
+        # If no merge happened for this item then just keep it the same
+        new_items.append(current_item)
+        if i < len(ordered_conjunctions):
+            new_conjunctions.append(ordered_conjunctions[i])
+        i += 1
+
+    ordered_items = new_items
+    ordered_conjunctions = new_conjunctions
 
     return SendingArticulation(
         items=ordered_items,
