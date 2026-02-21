@@ -575,7 +575,8 @@ def save_university_data(session: UniversitySession):
 
     for prefix, item_list in items_by_prefix.items():
         item_list.sort(key=get_sort_key)
-        write_json(item_list, f"{base_path}/Subjects/{prefix}.json")
+        # We have to add "subj_" because Windows does not like some subject names
+        write_json(item_list, f"{base_path}/Subjects/subj_{prefix}.json")
 
     print(f"Writing Major files...")
     major_names = sorted(list(session.majors.keys()))
