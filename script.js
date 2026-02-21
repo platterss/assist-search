@@ -31,6 +31,23 @@ const DATA_PATHS = {
 
 const CACHE = new Map();
 
+const themeToggle = document.getElementById("theme-toggle");
+const html = document.documentElement;
+const body = document.body;
+
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+    html.classList.add("dark-mode");
+} else if (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    html.classList.add("dark-mode");
+}
+
+themeToggle.addEventListener("click", () => {
+    html.classList.toggle("dark-mode");
+
+    const isDark = html.classList.contains("dark-mode");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+});
 
 function getSafeFileName(name) {
     return name.replace(/\//g, "-").replace(/:/g, "").replace(/\*/g, "=").replace(/>/g, "").trim();
@@ -709,6 +726,10 @@ itemSelect.addEventListener("change", async (e) => {
 });
 
 window.addEventListener("DOMContentLoaded", async () => {
+    setTimeout(() => {
+        body.classList.remove("no-transition");
+    }, 100);
+
     await loadRegistry();
     populateUniversities();
 });

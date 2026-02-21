@@ -12,9 +12,9 @@
 
     --color-brown-600-rgb: 94, 82, 64;
     --color-slate-900-rgb: 19, 52, 59;
-    --color-primary-rgb: 97, 21, 117;
+    --color-primary-rgb: 182, 95, 207;
 
-    --color-primary: rgba(97, 21, 117, 1);
+    --color-primary: rgba(var(--color-primary-rgb), 1);
     --color-background: var(--color-cream-50);
     --color-surface: var(--color-cream-100);
     --color-text: var(--color-slate-900);
@@ -27,8 +27,9 @@
     --color-focus-ring: rgba(var(--color-primary-rgb), 0.25);
 
     --focus-ring: 0 0 0 3px var(--color-focus-ring);
-    --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23134252' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
-    --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23f5f5f5' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    --select-caret-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    --select-caret-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    --select-caret: var(--select-caret-light);
 
     --font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-size-xs: 11px;
@@ -63,40 +64,90 @@
     --duration-fast: 150ms;
     --duration-normal: 250ms;
     --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+    --theme-transition: background-color var(--duration-normal) var(--ease-standard),
+                        border-color var(--duration-normal) var(--ease-standard),
+                        color var(--duration-normal) var(--ease-standard),
+                        box-shadow var(--duration-normal) var(--ease-standard),
+                        transform var(--duration-normal) var(--ease-standard);
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-gray-400-rgb: 119, 124, 124;
-        --color-gray-300-rgb: 167, 169, 169;
-        --color-gray-200-rgb: 245, 245, 245;
-
-        --color-background: var(--color-charcoal-700);
-        --color-surface: var(--color-charcoal-800);
-        --color-text: var(--color-gray-200);
-        --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
-
-        --color-primary: rgba(160, 115, 172, 1);
-        --color-focus-ring: rgba(var(--color-primary-rgb), 0.25);
-
-        --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
-        --color-border: rgba(var(--color-gray-400-rgb), 0.3);
-
-        --color-error: var(--color-red-400);
-
-        --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
-        --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
-    }
-
-    select.form-control {
-        background-image: var(--select-caret-dark);
-    }
+body,
+.articulation-card,
+.form-control,
+.group-box-single,
+.group-box-and,
+.group-box-or,
+.card-header,
+.theme-toggle,
+.github-btn,
+.course-chip {
+    transition: var(--theme-transition);
 }
+
+.dark-mode {
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(167, 169, 169, 0.7);
+    --color-primary: rgba(160, 115, 172, 1);
+    --color-secondary: rgba(119, 124, 124, 0.15);
+    --color-border: rgba(119, 124, 124, 0.3);
+    --color-card-border: rgba(119, 124, 124, 0.2);
+    --color-card-border-inner: rgba(119, 124, 124, 0.15);
+    --select-caret: var(--select-caret-dark)
+}
+
+
+.dark-mode .sun-icon { display: block; }
+.dark-mode .moon-icon { display: none; }
+:not(.dark-mode) .sun-icon { display: none; }
+:not(.dark-mode) .moon-icon { display: block; }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-16);
+    margin-bottom: var(--space-16);
+}
+
+.theme-toggle, .github-btn {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: all var(--duration-fast) var(--ease-standard);
+    text-decoration: none;
+}
+
+.theme-toggle:hover, .github-btn:hover {
+    background-color: var(--color-border);
+    line-height: 0;
+    transform: scale(1.15);
+}
+
+.sun-icon, .moon-icon {
+    line-height: 1;
+}
+
+.github-btn svg {
+    display: block;
+    fill: var(--color-text);
+    width: 20px;
+    height: 20px;
 }
 
 body {
@@ -106,6 +157,7 @@ body {
     line-height: var(--line-height-normal);
     min-height: 100vh;
     overflow-x: hidden;
+    transition: background-color var(--duration-normal) ease, color var(--duration-normal) ease;
 }
 
 .container {
@@ -169,11 +221,11 @@ h1 {
     background-color: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-base);
-    transition: border-color var(--duration-fast) var(--ease-standard), box-shadow var(--duration-fast) var(--ease-standard);
+    transition: border-color var(--duration-normal) var(--ease-standard), box-shadow var(--duration-normal) var(--ease-standard);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: var(--select-caret-light);
+    background-image: var(--select-caret);
     background-repeat: no-repeat;
     background-position: right var(--space-12) center;
     background-size: 16px;
@@ -304,8 +356,8 @@ h1 {
 }
 
 .group-box-single {
-    background: rgba(60, 60, 60, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(182, 95, 207, 0.15);
+    border: 1px solid rgba(182, 95, 207, 0.5);
     border-radius: var(--radius-base);
     padding: var(--space-12) var(--space-16);
     display: flex;
@@ -371,10 +423,10 @@ h1 {
 .group-separator-and {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-bold);
-    color: var(--color-text);
+    color: rgb(45, 180, 120);
     padding: var(--space-12) var(--space-24);
     margin: var(--space-8) 0;
-    background-color: var(--color-secondary);
+    background-color: rgba(45, 180, 120, 0.18);
     border: 2px solid rgba(45, 180, 120, 0.5);
     border-radius: var(--radius-full);
     letter-spacing: 0.1em;
@@ -388,7 +440,7 @@ h1 {
     color: var(--color-text);
     padding: var(--space-12) var(--space-24);
     margin: var(--space-8) 0;
-    background-color: var(--color-secondary);
+    background-color: rgba(45, 120, 200, 0.18);
     border: 2px solid rgba(45, 120, 200, 0.5);
     border-radius: var(--radius-full);
     letter-spacing: 0.1em;
@@ -439,6 +491,10 @@ h1 {
 
 .github-btn {
     fill: var(--color-text);
+}
+
+.no-transition * {
+    transition: none !important;
 }
 
 @media (max-width: 768px) {
