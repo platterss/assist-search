@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from enum import Enum
 
 
@@ -37,7 +37,7 @@ class Institution:
     category: str
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        return vars(self)
 
 
 @dataclass
@@ -55,7 +55,7 @@ class Course:
         return f"COURSE:{self.course_id}"
 
     def to_dict(self):
-        return asdict(self)
+        return vars(self)
 
     @staticmethod
     def from_dict(class_dict: dict):
@@ -99,7 +99,7 @@ class SendingSeriesCourse:
     notes: list[str]
 
     def to_dict(self):
-        return asdict(self)
+        return vars(self)
 
 
 @dataclass
@@ -113,7 +113,15 @@ class SendingSeries:
         return f"SERIES:{self.conjunction}:{'|'.join(course_ids)}"
 
     def to_dict(self):
-        return asdict(self)
+        d = vars(self).copy()
+
+        if len(self.courses) == 1:
+            d["conjunction"] = None
+            single_course = vars(self.courses[0]).copy()
+            single_course.pop("position", None)
+            d["courses"] = [single_course]
+
+        return d
 
 
 @dataclass
@@ -122,7 +130,7 @@ class SeriesCourse(Course):
     notes: list[str]
 
     def to_dict(self):
-        return asdict(self)
+        return vars(self)
 
     @staticmethod
     def from_dict(class_data: dict):
@@ -152,7 +160,15 @@ class Series:
         return f"SERIES:{self.conjunction}:{"|".join(course_ids)}"
 
     def to_dict(self):
-        return asdict(self)
+        d = vars(self).copy()
+
+        if len(self.courses) == 1:
+            d["conjunction"] = None
+            single_course = vars(self.courses[0]).copy()
+            single_course.pop("position", None)
+            d["courses"] = [single_course]
+
+        return d
 
     @staticmethod
     def from_dict(series_data: dict):
@@ -177,7 +193,7 @@ class Requirement:
         return f"REQ:{self.name.upper()}"
 
     def to_dict(self):
-        return asdict(self)
+        return vars(self)
 
     @staticmethod
     def from_dict(req_data: dict):
@@ -196,7 +212,7 @@ class GeneralEducation:
         return f"GE:{self.code.upper()}"
 
     def to_dict(self):
-        return asdict(self)
+        return vars(self)
 
     @staticmethod
     def from_dict(ge_data: dict):
@@ -213,7 +229,7 @@ class ArticulationItem:
     articulation: SendingArticulation
 
     def to_dict(self):
-        return asdict(self)
+        return vars(self)
 
 
 @dataclass
@@ -295,7 +311,7 @@ class SendingArticulation:
         return f"SENDING_ART:{full_string}"
 
     def to_dict(self):
-        data = asdict(self)
+        data = vars(self).copy()
 
         if not self.conjunctions:
             data["conjunctions"] = None
@@ -309,7 +325,7 @@ class Major:
     courses: list[Course | Series | Requirement | GeneralEducation]
 
     def to_dict(self):
-        return asdict(self)
+        return vars(self)
 
 
 @dataclass
@@ -318,4 +334,4 @@ class Department:
     courses: list[Course | Series | Requirement | GeneralEducation]
 
     def to_dict(self):
-        return asdict(self)
+        return vars(self)

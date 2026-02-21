@@ -1,5 +1,5 @@
 import argparse
-import json
+import orjson as json
 from collections import defaultdict
 
 import request
@@ -312,35 +312,22 @@ class AgreementProcessor:
         return sections
 
 
-def clean_and_convert_json(obj):
+def orjson_default(obj):
     if hasattr(obj, "to_dict"):
-        obj = obj.to_dict()
+        return obj.to_dict()
 
-    if isinstance(obj, dict):
-        for k, v in list(obj.items()):
-            obj[k] = clean_and_convert_json(v)
-
-        if "courses" in obj and isinstance(obj.get("courses"), list) and "conjunction" in obj:
-            if len(obj["courses"]) == 1:
-                obj["conjunction"] = None
-
-                if isinstance(obj["courses"][0], dict):
-                    obj["courses"][0].pop("position", None)
-    elif isinstance(obj, list):
-        return [clean_and_convert_json(item) for item in obj]
-
-    return obj
+    raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
 
 
 def write_json(json_dict, path):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    cleaned_data = clean_and_convert_json(json_dict)
+    options = json.OPT_NON_STR_KEYS | json.OPT_PASSTHROUGH_DATACLASS
 
-    with open(path, "w") as file:
-        if pretty_print_json:
-            json.dump(cleaned_data, file, indent=4)
-        else:
-            json.dump(cleaned_data, file, separators=(",", ":"))
+    if pretty_print_json:
+        options |= json.OPT_INDENT_2
+
+    with open(path, "wb") as file:
+        file.write(json.dumps(json_dict, default=orjson_default, option=options))
 
 
 def get_categories(receiving_id, sending_id, year_id) -> list[dict]:
@@ -535,14 +522,17 @@ def save_university_data(session: UniversitySession):
 
     def get_sort_key(thing):
         if isinstance(thing, ReceivingCourse):
-            return 0, thing.prefix, get_natural_sort_key(thing.number)
+            return 0, thing.prefix, get_natural_sort_key(thing.number), ""
         elif isinstance(thing, ReceivingSeries):
-            return 0, thing.name, []
+            if thing.courses:
+                first_course = thing.courses[0]
+                return 0, first_course.prefix, get_natural_sort_key(first_course.number), thing.name
+            return 0, thing.name, [], ""
         elif isinstance(thing, ReceivingRequirement):
-            return 1, thing.name, []
+            return 1, thing.name, [], ""
         elif isinstance(thing, ReceivingGE):
-            return 2, thing.name, []
-        return 3, "", []
+            return 2, thing.name, [], ""
+        return 3, "", [], ""
 
     print("Writing Subject files...")
     subjects_metadata = {}
