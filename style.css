@@ -249,12 +249,16 @@ h1 {
 }
 
 .articulation-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--space-24);
 }
 
 .articulation-card {
+    width: calc((100% - (var(--space-24) * 2)) / 3);
+    min-width: 320px;
+
     background-color: var(--color-surface);
     border: 1px solid var(--color-card-border);
     border-radius: var(--radius-lg);
@@ -449,8 +453,8 @@ h1 {
         max-width: 100%;
     }
 
-    .articulation-cards {
-        grid-template-columns: 1fr;
+    .articulation-card {
+        width: 100%;
     }
 
     h1 {

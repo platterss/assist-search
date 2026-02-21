@@ -582,7 +582,7 @@ function renderCourseGroup(group) {
         const sepText = type.toUpperCase();
         const sepClass = type === "and" ? "separator-and" : "separator-or";
         const boxClass = type === "and" ? "group-box-and" : "group-box-or";
-        const notesHtml = renderNotes(notes, "above");
+        const notesHtml = renderNotes(notes, "below");
 
         const inner = courses.map((c, i) => {
             let html = renderCourseItem(c);
@@ -592,7 +592,7 @@ function renderCourseGroup(group) {
             return html;
         }).join("");
 
-        return `<li class="course-item">${notesHtml}<div class="${boxClass}">${inner}</div></li>`;
+        return `<li class="course-item"><div class="${boxClass}">${inner}</div>${notesHtml}</li>`;
     }
 
     if (type === "nested") {
