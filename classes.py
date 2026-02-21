@@ -99,7 +99,9 @@ class SendingSeriesCourse:
     notes: list[str]
 
     def to_dict(self):
-        return vars(self)
+        d = vars(self).copy()
+        d.pop("position", None)
+        return d
 
 
 @dataclass
@@ -117,9 +119,6 @@ class SendingSeries:
 
         if len(self.courses) == 1:
             d["conjunction"] = None
-            single_course = vars(self.courses[0]).copy()
-            single_course.pop("position", None)
-            d["courses"] = [single_course]
 
         return d
 
@@ -130,7 +129,9 @@ class SeriesCourse(Course):
     notes: list[str]
 
     def to_dict(self):
-        return vars(self)
+        d = vars(self).copy()
+        d.pop("position", None)
+        return d
 
     @staticmethod
     def from_dict(class_data: dict):
@@ -164,9 +165,6 @@ class Series:
 
         if len(self.courses) == 1:
             d["conjunction"] = None
-            single_course = vars(self.courses[0]).copy()
-            single_course.pop("position", None)
-            d["courses"] = [single_course]
 
         return d
 
