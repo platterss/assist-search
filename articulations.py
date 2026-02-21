@@ -583,7 +583,7 @@ def save_university_data(session: UniversitySession):
 
     for major_name, major_obj in session.majors.items():
         major_obj.courses.sort(key=get_sort_key)
-        safe_major = major_name.replace("/", "-").replace(":", "").replace("*", "=").strip()
+        safe_major = major_name.replace("/", "-").replace(":", "").replace("*", "=").replace(">", "").strip()
         write_json(major_obj, f"{base_path}/Majors/{safe_major}.json")
 
     print(f"Writing GE files...")
