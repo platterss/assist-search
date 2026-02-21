@@ -93,6 +93,30 @@ class Course:
 
 
 @dataclass
+class SendingSeriesCourse:
+    course_id: int
+    position: int
+    notes: list[str]
+
+    def to_dict(self):
+        return asdict(self)
+
+
+@dataclass
+class SendingSeries:
+    notes: list[str]
+    conjunction: str
+    courses: list[SendingSeriesCourse]
+
+    def get_unique_key(self) -> str:
+        course_ids = [str(course.course_id) for course in self.courses]
+        return f"SERIES:{self.conjunction}:{'|'.join(course_ids)}"
+
+    def to_dict(self):
+        return asdict(self)
+
+
+@dataclass
 class SeriesCourse(Course):
     position: int
     notes: list[str]
@@ -121,7 +145,7 @@ class Series:
     name: str
     notes: list[str]
     conjunction: str
-    courses: list[SeriesCourse]
+    courses: list[SeriesCourse | SendingSeriesCourse]
 
     def get_unique_key(self) -> str:
         course_ids = [str(course.course_id) for course in self.courses]
@@ -186,7 +210,6 @@ class GeneralEducation:
 @dataclass
 class ArticulationItem:
     sending_id: int
-    sending_name: str
     articulation: SendingArticulation
 
     def to_dict(self):
@@ -258,7 +281,7 @@ class ReceivingGE(GeneralEducation):
 class SendingArticulation:
     notes: list[str]
     conjunctions: list[str]
-    items: list[Series]
+    items: list[SendingSeries]
 
     def get_unique_key(self) -> str:
         item_keys = [item.get_unique_key() for item in self.items]

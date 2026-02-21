@@ -13,6 +13,8 @@ from classes import (
     Course,
     Series,
     SeriesCourse,
+    SendingSeries,
+    SendingSeriesCourse,
     Requirement,
     GeneralEducation,
     ArticulationItem,
@@ -33,6 +35,13 @@ from institutions import get_institutions
 # Saves and uses raw ASSIST.org JSON files on disk
 # Just here so we don't have to keep making requests for every little change
 use_local_agreement_data = False
+
+pretty_print_json = False
+
+CC_REGISTRY = {
+    "colleges": {},
+    "courses": {}
+}
 
 
 class UniversitySession:
@@ -175,8 +184,7 @@ class AgreementProcessor:
                 if articulation_key not in receiving_item.articulations:
                     receiving_item.articulations[articulation_key] = ArticulationItem(
                         articulation=processed_sending,
-                        sending_id=self.college.id,
-                        sending_name=self.college.name
+                        sending_id=self.college.id
                     )
 
         return art_type, key
@@ -241,7 +249,7 @@ class AgreementProcessor:
 
         return majors
 
-    def process_major_ge_articulations(self, articulations: list[dict],):
+    def process_major_ge_articulations(self, articulations: list[dict]):
         for cell in articulations:
             self.process_articulation(cell)
 
@@ -329,7 +337,10 @@ def write_json(json_dict, path):
     cleaned_data = clean_and_convert_json(json_dict)
 
     with open(path, "w") as file:
-        json.dump(cleaned_data, file, indent=4)
+        if pretty_print_json:
+            json.dump(cleaned_data, file, indent=4)
+        else:
+            json.dump(cleaned_data, file, separators=(",", ":"))
 
 
 def get_categories(receiving_id, sending_id, year_id) -> list[dict]:
@@ -433,7 +444,7 @@ def process_sending_articulation(sending_articulation: dict):
     if len(raw_groups) == 0:
         return None
 
-    groups_by_position: dict[int, Series] = {}
+    groups_by_position: dict[int, SendingSeries] = {}
     max_position = -1
 
     for group in raw_groups:
@@ -449,19 +460,38 @@ def process_sending_articulation(sending_articulation: dict):
         group_items.sort(key=lambda x: x["position"])
 
         courses: list[SeriesCourse] = []
+        sending_courses: list[SendingSeriesCourse] = []
+
         for item in group_items:
             if item["type"] == "Course":
-                courses.append(SeriesCourse.from_dict(item))
+                sc = SeriesCourse.from_dict(item)
+                courses.append(sc)
+
+                CC_REGISTRY["courses"][sc.course_id] = {
+                    "prefix_desc": sc.prefix_desc,
+                    "prefix": sc.prefix,
+                    "number": sc.number,
+                    "title": sc.title,
+                    "min_units": sc.min_units,
+                    "max_units": sc.max_units,
+                    "course_id": sc.course_id,
+                    "prefix_id": sc.prefix_id
+                }
+
+                sending_courses.append(SendingSeriesCourse(
+                    course_id=sc.course_id,
+                    position=sc.position,
+                    notes=sc.notes
+                ))
 
         raw_attributes = group.get("attributes", [])
         raw_attributes.sort(key=lambda x: x["position"])
         group_notes = [attribute["content"] for attribute in raw_attributes if "content" in attribute]
 
         internal_conjunction = group.get("courseConjunction", "And").upper()
-        series_option = Series(
+        series_option = SendingSeries(
             conjunction=internal_conjunction,
-            name=", ".join(f"{course.prefix} {course.number}" for course in courses),
-            courses=courses,
+            courses=sending_courses,
             notes=group_notes
         )
         groups_by_position[pos] = series_option
@@ -652,6 +682,9 @@ def main():
         print("No institutions found matching those filters.")
         return
 
+    for college in colleges:
+        CC_REGISTRY["colleges"][college.id] = college.name
+
     for university in universities:
         print(f"Getting articulations for {university.name} (ID {university.id}).")
 
@@ -669,6 +702,9 @@ def main():
 
         save_university_data(session)
         print()
+
+    print("Writing global CC registry...")
+    write_json(CC_REGISTRY, "data/colleges/cc_registry.json")
 
     end_time = timeit.default_timer()
     print(f"Execution time: {end_time - start_time:.2f}s")
