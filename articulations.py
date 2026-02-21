@@ -564,7 +564,8 @@ def save_university_data(session: UniversitySession):
         elif isinstance(thing, ReceivingRequirement):
             return 1, thing.name, [], ""
         elif isinstance(thing, ReceivingGE):
-            return 2, thing.name, [], ""
+            code_str = thing.code if thing.code else thing.name
+            return 2, get_natural_sort_key(code_str), [], thing.name
         return 3, "", [], ""
 
     print("Writing Subject files...")
@@ -619,13 +620,15 @@ def save_university_data(session: UniversitySession):
     missing_ges = [ge for ge in session.ges.values() if ge.get_unique_key() not in existing_ge_keys]
 
     if missing_ges:
-        missing_ges.sort(key=get_sort_key)
         category_name = "General Education" if len(session.ge_categories) == 0 else "General Education (From Majors)"
 
         if category_name not in session.ge_categories:
             session.ge_categories[category_name] = Major(category_name, courses=[])
 
         session.ge_categories[category_name].courses.extend(missing_ges)
+
+    for category in session.ge_categories.values():
+        category.courses.sort(key=get_sort_key)
 
     write_json(list(session.ge_categories.values()), f"{base_path}/GEs/ge_categories.json")
 
