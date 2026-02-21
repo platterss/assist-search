@@ -499,6 +499,39 @@ def process_sending_articulation(sending_articulation: dict):
     global_attributes.sort(key=lambda x: x["position"])
     global_notes = [attribute["content"] for attribute in global_attributes if "content" in attribute]
 
+    # Normalize multi-group articulations where each group only has one course
+    # We can just compress it all into a single group if they all share the same conjunction
+    can_normalize = False
+
+    if len(ordered_items) > 1:
+        if all(len(item.courses) == 1 for item in ordered_items):
+            unique_conjunctions = set(ordered_conjunctions)
+            if len(unique_conjunctions) == 1:
+                can_normalize = True
+
+    if can_normalize:
+        uniform_conjunction = ordered_conjunctions[0]
+
+        flattened_courses = []
+        for item in ordered_items:
+            course = item.courses[0]
+
+            # Group-level notes for a group with just one course is basically just a course note
+            course_notes = course.notes if course.notes else []
+            group_notes = item.notes if item.notes else []
+            course.notes = course_notes + group_notes
+
+            flattened_courses.append(course)
+
+        flattened_series = SendingSeries(
+            conjunction=uniform_conjunction,
+            courses=flattened_courses,
+            notes=[]
+        )
+
+        ordered_items = [flattened_series]
+        ordered_conjunctions = []
+
     return SendingArticulation(
         items=ordered_items,
         conjunctions=ordered_conjunctions,
