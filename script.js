@@ -133,26 +133,40 @@ function getItemKey(item) {
     return JSON.stringify(item);
 }
 
-function buildCourseFullLabel(item) {
+function buildCourseFullLabel(item, multiline = false) {
     if (!item) {
         return "";
     }
 
     if (item.course_id !== undefined) {
+        if (multiline) {
+            return `<strong>${item.prefix} ${item.number}</strong> - ${item.title}`;
+        }
         return `${item.prefix} ${item.number} - ${item.title}`;
     }
 
     if (item.courses) {
-        const names = item.courses.map(c => c.title || `${c.prefix} ${c.number}`).join(", ");
-        return `${item.name || "Series"} - ${names}`;
+        const conj = (item.conjunction || "AND").toUpperCase();
+
+        if (multiline) {
+            const separatorHtml = `<br><i><strong>${conj}</strong></i><br>`;
+
+            return item.courses.map(c => {
+                const title = c.title ? ` - ${c.title}` : "";
+                return `<strong>${c.prefix} ${c.number}</strong>${title}`;
+            }).join(separatorHtml);
+        } else {
+            const names = item.courses.map(c => c.title || `${c.prefix} ${c.number}`).join(` ${conj} `);
+            return `${item.name || "Series"} - ${names}`;
+        }
     }
 
     if (item.area_type) {
-        return `GE: ${item.code} - ${item.name}`;
+        return `${item.code} - ${item.name}`;
     }
 
     if (item.name) {
-        return `Requirement: ${item.name}`;
+        return `${item.name}`;
     }
 
     return "Unknown Item";
@@ -450,7 +464,7 @@ function displayArticulations(articulationData, selectedCourse) {
 
     loadingDiv.style.display = "none";
     resultsSection.style.display = "block";
-    selectedCourseDisplay.textContent = `Showing articulations for: ${selectedCourse}`;
+    selectedCourseDisplay.innerHTML = `Showing articulations for:<br>${selectedCourse}`;
 
     const {articulations} = articulationData;
 
@@ -607,7 +621,7 @@ itemSelect.addEventListener("change", async (e) => {
             const targetItem = itemsList.find(c => c._key === itemKey || getItemKey(c) === itemKey);
 
             const articulationData = {
-                courseFull: buildCourseFullLabel(targetItem),
+                courseFull: buildCourseFullLabel(targetItem, true),
                 articulations: targetItem ? normalizeArticulations(targetItem) : []
             };
 
