@@ -450,7 +450,6 @@ def process_sending_articulation(sending_articulation: dict):
 
                 sending_courses.append(SendingSeriesCourse(
                     course_id=sc.course_id,
-                    position=sc.position,
                     notes=sc.notes
                 ))
 
@@ -459,6 +458,10 @@ def process_sending_articulation(sending_articulation: dict):
         group_notes = [attribute["content"] for attribute in raw_attributes if "content" in attribute]
 
         internal_conjunction = group.get("courseConjunction", "And").upper()
+
+        if len(sending_courses) == 1:
+            internal_conjunction = None
+
         series_option = SendingSeries(
             conjunction=internal_conjunction,
             courses=sending_courses,
@@ -550,7 +553,7 @@ def process_sending_articulation(sending_articulation: dict):
 
     return SendingArticulation(
         items=ordered_items,
-        conjunctions=ordered_conjunctions,
+        conjunctions=ordered_conjunctions if ordered_conjunctions else None,
         notes=global_notes
     )
 

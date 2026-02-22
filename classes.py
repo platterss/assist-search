@@ -36,9 +36,6 @@ class Institution:
     name: str
     category: str
 
-    def to_dict(self) -> dict:
-        return vars(self)
-
 
 @dataclass
 class Course:
@@ -53,9 +50,6 @@ class Course:
 
     def get_unique_key(self):
         return f"COURSE:{self.course_id}"
-
-    def to_dict(self):
-        return vars(self)
 
     @staticmethod
     def from_dict(class_dict: dict):
@@ -95,13 +89,7 @@ class Course:
 @dataclass
 class SendingSeriesCourse:
     course_id: int
-    position: int
     notes: list[str]
-
-    def to_dict(self):
-        d = vars(self).copy()
-        d.pop("position", None)
-        return d
 
 
 @dataclass
@@ -114,29 +102,14 @@ class SendingSeries:
         course_ids = [str(course.course_id) for course in self.courses]
         return f"SERIES:{self.conjunction}:{'|'.join(course_ids)}"
 
-    def to_dict(self):
-        d = vars(self).copy()
-
-        if len(self.courses) == 1:
-            d["conjunction"] = None
-
-        return d
-
 
 @dataclass
 class SeriesCourse(Course):
-    position: int
     notes: list[str]
-
-    def to_dict(self):
-        d = vars(self).copy()
-        d.pop("position", None)
-        return d
 
     @staticmethod
     def from_dict(class_data: dict):
         course = Course.from_dict(class_data)
-        position = class_data["position"]
 
         raw_attributes = class_data.get("attributes") or []
         raw_attributes.sort(key=lambda x: x["position"])
@@ -144,7 +117,6 @@ class SeriesCourse(Course):
 
         return SeriesCourse(
             **vars(course),
-            position=position,
             notes=notes
         )
 
@@ -153,31 +125,27 @@ class SeriesCourse(Course):
 class Series:
     name: str
     notes: list[str]
-    conjunction: str
+    conjunction: str | None
     courses: list[SeriesCourse | SendingSeriesCourse]
 
     def get_unique_key(self) -> str:
         course_ids = [str(course.course_id) for course in self.courses]
-        return f"SERIES:{self.conjunction}:{"|".join(course_ids)}"
-
-    def to_dict(self):
-        d = vars(self).copy()
-
-        if len(self.courses) == 1:
-            d["conjunction"] = None
-
-        return d
+        conj = self.conjunction if self.conjunction else "NONE"
+        return f"SERIES:{conj}:{"|".join(course_ids)}"
 
     @staticmethod
     def from_dict(series_data: dict):
+        raw_courses = series_data["courses"]
+        raw_courses.sort(key=lambda c: c["position"])
+        courses = [SeriesCourse.from_dict(course) for course in raw_courses]
         conjunction = series_data["conjunction"].strip().upper()
-        name = series_data["name"].strip()
-        courses = [SeriesCourse.from_dict(course) for course in series_data["courses"]]
-        courses.sort(key=lambda course: course.position)
+
+        if len(courses) == 1:
+            conjunction = None
 
         return Series(
             conjunction=conjunction,
-            name=name,
+            name=series_data["name"].strip(),
             courses=courses,
             notes=[]
         )
@@ -189,9 +157,6 @@ class Requirement:
 
     def get_unique_key(self) -> str:
         return f"REQ:{self.name.upper()}"
-
-    def to_dict(self):
-        return vars(self)
 
     @staticmethod
     def from_dict(req_data: dict):
@@ -209,9 +174,6 @@ class GeneralEducation:
     def get_unique_key(self) -> str:
         return f"GE:{self.code.upper()}"
 
-    def to_dict(self):
-        return vars(self)
-
     @staticmethod
     def from_dict(ge_data: dict):
         return GeneralEducation(
@@ -225,9 +187,6 @@ class GeneralEducation:
 class ArticulationItem:
     sending_id: int
     articulation: SendingArticulation
-
-    def to_dict(self):
-        return vars(self)
 
 
 @dataclass
@@ -303,18 +262,10 @@ class SendingArticulation:
         full_string = ""
         for i, key in enumerate(item_keys):
             full_string += key
-            if i < len(self.conjunctions):
+            if self.conjunctions and i < len(self.conjunctions):
                 full_string += f"_{self.conjunctions[i]}_"
 
         return f"SENDING_ART:{full_string}"
-
-    def to_dict(self):
-        data = vars(self).copy()
-
-        if not self.conjunctions:
-            data["conjunctions"] = None
-
-        return data
 
 
 @dataclass
@@ -322,14 +273,8 @@ class Major:
     name: str
     courses: list[Course | Series | Requirement | GeneralEducation]
 
-    def to_dict(self):
-        return vars(self)
-
 
 @dataclass
 class Department:
     name: str
     courses: list[Course | Series | Requirement | GeneralEducation]
-
-    def to_dict(self):
-        return vars(self)
