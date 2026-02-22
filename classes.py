@@ -53,41 +53,22 @@ class Course:
 
     @staticmethod
     def from_dict(class_dict: dict):
-        if class_dict.get("courseTitle") is None:
-            return Course(
-                course_id=-1,
-                title="Broken Course",
-                number="Course",
-                prefix="Unknown",
-                prefix_id=-1,
-                prefix_desc="Broken Course",
-                min_units=-1,
-                max_units=-1
-            )
-
-        course_id = class_dict["courseIdentifierParentId"]
-        title = class_dict["courseTitle"].strip()
-        number = class_dict["courseNumber"].strip()
-        prefix = class_dict["prefix"].strip()
-        prefix_id = class_dict["prefixParentId"]
-        prefix_desc = class_dict["prefixDescription"].strip()
-        min_units = class_dict["minUnits"]
-        max_units = class_dict["maxUnits"]
+        valid = bool(class_dict.get("courseTitle"))
 
         return Course(
-            course_id=course_id,
-            title=title,
-            number=number,
-            prefix=prefix,
-            prefix_id=prefix_id,
-            prefix_desc=prefix_desc,
-            min_units=min_units,
-            max_units=max_units
+            prefix_desc=class_dict.get("prefixDescription").strip() if valid else "Broken Course",
+            prefix=class_dict.get("prefix").strip() if valid else "Unknown",
+            number=class_dict.get("courseNumber").strip() if valid else "Course",
+            title=class_dict.get("courseTitle").strip() if valid else "Broken Course",
+            min_units=class_dict.get("minUnits") if valid else -1.0,
+            max_units=class_dict.get("maxUnits") if valid else-1.0,
+            course_id=class_dict.get("courseIdentifierParentId") if valid else -1,
+            prefix_id=class_dict.get("prefixParentId") if valid else -1
         )
 
 
 @dataclass
-class SendingSeriesCourse:
+class SendingCourse:
     course_id: int
     notes: list[str]
 
@@ -96,7 +77,7 @@ class SendingSeriesCourse:
 class SendingSeries:
     notes: list[str]
     conjunction: str
-    courses: list[SendingSeriesCourse]
+    courses: list[SendingCourse]
 
     def get_unique_key(self) -> str:
         course_ids = [str(course.course_id) for course in self.courses]
@@ -104,29 +85,10 @@ class SendingSeries:
 
 
 @dataclass
-class SeriesCourse(Course):
-    notes: list[str]
-
-    @staticmethod
-    def from_dict(class_data: dict):
-        course = Course.from_dict(class_data)
-
-        raw_attributes = class_data.get("attributes") or []
-        raw_attributes.sort(key=lambda x: x["position"])
-        notes = [attribute["content"] for attribute in raw_attributes]
-
-        return SeriesCourse(
-            **vars(course),
-            notes=notes
-        )
-
-
-@dataclass
 class Series:
     name: str
-    notes: list[str]
     conjunction: str | None
-    courses: list[SeriesCourse | SendingSeriesCourse]
+    courses: list[Course | SendingCourse]
 
     def get_unique_key(self) -> str:
         course_ids = [str(course.course_id) for course in self.courses]
@@ -137,7 +99,7 @@ class Series:
     def from_dict(series_data: dict):
         raw_courses = series_data["courses"]
         raw_courses.sort(key=lambda c: c["position"])
-        courses = [SeriesCourse.from_dict(course) for course in raw_courses]
+        courses = [Course.from_dict(course) for course in raw_courses]
         conjunction = series_data["conjunction"].strip().upper()
 
         if len(courses) == 1:
@@ -147,7 +109,6 @@ class Series:
             conjunction=conjunction,
             name=series_data["name"].strip(),
             courses=courses,
-            notes=[]
         )
 
 
@@ -193,9 +154,6 @@ class ArticulationItem:
 class ReceivingCourse(Course):
     articulations: dict[str, ArticulationItem | list[ArticulationItem]]
 
-    def get_unique_key(self):
-        return super().get_unique_key()
-
     @staticmethod
     def from_dict(course_data: dict):
         return ReceivingCourse(
@@ -207,9 +165,6 @@ class ReceivingCourse(Course):
 @dataclass
 class ReceivingSeries(Series):
     articulations: dict[str, ArticulationItem | list[ArticulationItem]]
-
-    def get_unique_key(self) -> str:
-        return super().get_unique_key()
 
     @staticmethod
     def from_dict(series_data: dict):
@@ -223,9 +178,6 @@ class ReceivingSeries(Series):
 class ReceivingRequirement(Requirement):
     articulations: dict[str, ArticulationItem | list[ArticulationItem]]
 
-    def get_unique_key(self) -> str:
-        return super().get_unique_key()
-
     @staticmethod
     def from_dict(req_data: dict):
         return ReceivingRequirement(
@@ -238,9 +190,6 @@ class ReceivingRequirement(Requirement):
 class ReceivingGE(GeneralEducation):
     articulations: (dict[str, ArticulationItem | list[ArticulationItem]] |
                     list[ArticulationItem | list[ArticulationItem]])
-
-    def get_unique_key(self) -> str:
-        return super().get_unique_key()
 
     @staticmethod
     def from_dict(ge_data: dict):

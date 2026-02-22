@@ -11,9 +11,8 @@ from classes import (
     AgreementType,
     Course,
     Series,
-    SeriesCourse,
     SendingSeries,
-    SendingSeriesCourse,
+    SendingCourse,
     Requirement,
     GeneralEducation,
     ArticulationItem,
@@ -320,36 +319,6 @@ def get_categories(receiving_id, sending_id, year_id) -> list[dict]:
         path = f"raw_agreements/{receiving_id}/{sending_id}_{year_id}_Categories.json"
         return get_local_agreement(path, url)
 
-    # [{
-    #     "label": "Major",
-    #     "code": "major",
-    #     "reportType": 3,
-    #     "reportCategoryType": 0,
-    #     "courseTransferItemType": 0,
-    #     "hasReports": true
-    # }, {
-    #     "label": "Department",
-    #     "code": "dept",
-    #     "reportType": 2,
-    #     "reportCategoryType": 0,
-    #     "courseTransferItemType": 0,
-    #     "hasReports": true
-    # }, {
-    #     "label": "Prefix",
-    #     "code": "prefix",
-    #     "reportType": 10,
-    #     "reportCategoryType": 0,
-    #     "courseTransferItemType": 0,
-    #     "hasReports": true
-    # }, {
-    #     "label": "General Education / Breadth",
-    #     "code": "breadth",
-    #     "reportType": 1,
-    #     "reportCategoryType": 0,
-    #     "courseTransferItemType": 0,
-    #     "hasReports": true
-    # }]
-
     return request.get(url=url).json()
 
 
@@ -378,46 +347,28 @@ def get_all_agreement(receiving_id, sending_id, year_id, agreement_type: Agreeme
         path = f"raw_agreements/{receiving_id}/{sending_id}_{year_id}_{agreement_type.value}.json"
         return get_local_agreement(path, url)
 
-    # {
-    #     "result": {
-    #         "name": "All Majors",
-    #         "type": "AllMajors",
-    #         "publishDate": "2026-02-17T21:58:23.7438318",
-    #         "receivingInstitution":
-    #         "sendingInstitution":
-    #         "academicYear":
-    #         "templateAssets":
-    #         "articulations":
-    #         "catalogYear":
-    #     },
-    #     "validationFailure": null,
-    #     "isSuccessful": true
-    # }
-
     return request.get(url=url).json()
+
+
+def get_notes(item: dict):
+    raw_attributes = item.get("attributes") or []
+    raw_attributes.sort(key=lambda x: x["position"])
+    return [attribute["content"] for attribute in raw_attributes if "content" in attribute]
 
 
 def load_template_assets(agreement: dict) -> list[dict] | None:
     if agreement["result"]["templateAssets"] is None:
         return None
 
-    # dict_keys(['name', 'templateAssets'])
     return json.loads(agreement["result"]["templateAssets"])
 
 
-def process_sending_articulation(sending_articulation: dict):
-    raw_groups = sending_articulation["items"]
-
-    if len(raw_groups) == 0:
-        return None
-
+# Helper for process_sending_articulation
+def parse_raw_sending_groups(raw_groups: list[dict]):
     groups_by_position: dict[int, SendingSeries] = {}
-    max_position = -1
 
     for group in raw_groups:
         pos = group["position"]
-        max_position = max(max_position, pos)
-
         group_items = group.get("items")
 
         # For "advisements" like "Select 1 course from the following" that appear in the box but is not a course.
@@ -428,54 +379,37 @@ def process_sending_articulation(sending_articulation: dict):
             continue
 
         group_items.sort(key=lambda x: x["position"])
-
-        courses: list[SeriesCourse] = []
-        sending_courses: list[SendingSeriesCourse] = []
+        sending_courses: list[SendingCourse] = []
 
         for item in group_items:
             if item["type"] == "Course":
-                sc = SeriesCourse.from_dict(item)
-                courses.append(sc)
+                sending_course = Course.from_dict(item)
+                CC_REGISTRY["courses"][sending_course.course_id] = vars(sending_course)
 
-                CC_REGISTRY["courses"][sc.course_id] = {
-                    "prefix_desc": sc.prefix_desc,
-                    "prefix": sc.prefix,
-                    "number": sc.number,
-                    "title": sc.title,
-                    "min_units": sc.min_units,
-                    "max_units": sc.max_units,
-                    "course_id": sc.course_id,
-                    "prefix_id": sc.prefix_id
-                }
-
-                sending_courses.append(SendingSeriesCourse(
-                    course_id=sc.course_id,
-                    notes=sc.notes
+                sending_courses.append(SendingCourse(
+                    course_id=sending_course.course_id,
+                    notes=get_notes(item)
                 ))
 
-        raw_attributes = group.get("attributes", [])
-        raw_attributes.sort(key=lambda x: x["position"])
-        group_notes = [attribute["content"] for attribute in raw_attributes if "content" in attribute]
-
         internal_conjunction = group.get("courseConjunction", "And").upper()
-
         if len(sending_courses) == 1:
             internal_conjunction = None
 
-        series_option = SendingSeries(
+        groups_by_position[pos] = SendingSeries(
             conjunction=internal_conjunction,
             courses=sending_courses,
-            notes=group_notes
+            notes=get_notes(group)
         )
-        groups_by_position[pos] = series_option
 
-    # Map to the original ASSIST positions due to the advisements issue
-    # It's better doing it this way in case there are multiple advisements in a cell
+    return groups_by_position
+
+
+# Helper for process_sending_articulation
+def align_sending_conjunctions(groups_by_position: dict[int, SendingSeries], raw_conjunctions: list[dict]):
     sorted_positions = sorted(groups_by_position.keys())
     ordered_items = [groups_by_position[pos] for pos in sorted_positions]
     pos_to_index = {original_pos: new_index for new_index, original_pos in enumerate(sorted_positions)}
 
-    raw_conjunctions = sending_articulation.get("courseGroupConjunctions") or []
     ordered_conjunctions = ["OR"] * (len(ordered_items) - 1)
 
     for conjunction in raw_conjunctions:
@@ -491,16 +425,17 @@ def process_sending_articulation(sending_articulation: dict):
             if mapped_end == mapped_start + 1 and mapped_start < len(ordered_conjunctions):
                 ordered_conjunctions[mapped_start] = val.upper()
 
-    global_attributes = sending_articulation.get("attributes") or []
-    global_attributes.sort(key=lambda x: x["position"])
-    global_notes = [attribute["content"] for attribute in global_attributes if "content" in attribute]
+    return ordered_items, ordered_conjunctions
 
+
+# Helper for process_sending_articulation
+def compress_single_course_groups(ordered_items: list, ordered_conjunctions: list):
     # Normalize multi-group articulations where each group only has one course
     # We can just compress it all into a single group if they all share the same conjunction
     new_items = []
     new_conjunctions = []
-
     i = 0
+
     while i < len(ordered_items):
         current_item = ordered_items[i]
 
@@ -521,25 +456,21 @@ def process_sending_articulation(sending_articulation: dict):
                 flattened_courses = []
 
                 for item in merge_block:
-                    course = item.courses[0]
-                    course_notes = course.notes if course.notes else []
-                    group_notes = item.notes if item.notes else []
-
                     # Group-level notes for single-course groups are basically just course notes
-                    course.notes = course_notes + group_notes
+                    course = item.courses[0]
+                    course.notes = (course.notes or []) + (item.notes or [])
                     flattened_courses.append(course)
 
-                merged_series = SendingSeries(
+                new_items.append(SendingSeries(
                     conjunction=target_conjunction,
                     courses=flattened_courses,
                     notes=[]
-                )
-
-                new_items.append(merged_series)
+                ))
 
                 i = j
                 if i < len(ordered_items):
                     new_conjunctions.append(ordered_conjunctions[i - 1])
+
                 continue
 
         # If no merge happened for this item then just keep it the same
@@ -548,13 +479,25 @@ def process_sending_articulation(sending_articulation: dict):
             new_conjunctions.append(ordered_conjunctions[i])
         i += 1
 
-    ordered_items = new_items
-    ordered_conjunctions = new_conjunctions
+    return new_items, new_conjunctions
+
+
+def process_sending_articulation(sending_articulation: dict):
+    raw_groups = sending_articulation["items"]
+
+    if not raw_groups:
+        return None
+
+    groups_by_position = parse_raw_sending_groups(raw_groups)
+    raw_conjunctions = sending_articulation.get("courseGroupConjunctions") or []
+    ordered_items, ordered_conjunctions = align_sending_conjunctions(groups_by_position, raw_conjunctions)
+
+    final_items, final_conjunctions = compress_single_course_groups(ordered_items, ordered_conjunctions)
 
     return SendingArticulation(
-        items=ordered_items,
-        conjunctions=ordered_conjunctions if ordered_conjunctions else None,
-        notes=global_notes
+        items=final_items,
+        conjunctions=final_conjunctions if final_conjunctions else None,
+        notes=get_notes(sending_articulation)
     )
 
 
@@ -672,8 +615,11 @@ def get_desired_institutions():
     parser.add_argument("--universities", nargs="+", help="Specific university names or IDs")
     parser.add_argument("--after-college", type=str, help="College name or ID to start from")
     parser.add_argument("--after-university", type=str, help="University name or ID to start from")
+    parser.add_argument("--local", action="store_true", help="Use and save local agreement data instead of fetching")
 
     args = parser.parse_args()
+    global use_local_agreement_data
+    use_local_agreement_data = args.local or use_local_agreement_data  # if already manually set to True
 
     all_institutions = get_institutions(create_new_if_existing=not use_local_agreement_data)
     all_colleges = sorted([i for i in all_institutions if i.category == "CCC"], key=lambda i: i.name)
