@@ -98,11 +98,11 @@ body,
     --select-caret: var(--select-caret-dark)
 }
 
+.sun-icon { display: none; }
+.moon-icon { display: block; }
 
 .dark-mode .sun-icon { display: block; }
 .dark-mode .moon-icon { display: none; }
-:not(.dark-mode) .sun-icon { display: none; }
-:not(.dark-mode) .moon-icon { display: block; }
 
 * {
     box-sizing: border-box;
