@@ -1,7 +1,7 @@
-import json
 import request
 
 from pathlib import Path
+from util import read_json, write_json
 
 
 # Fetches a local agreement from the given path if present
@@ -10,14 +10,10 @@ def get_local_agreement(path, url):
     file_path = Path(path)
 
     if file_path.is_file():
-        with open(file_path, "r+") as file:
-            return json.load(file)
+        return read_json(file_path)
 
     resp = request.get(url=url).json()
-
-    file_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w") as file:
-        json.dump(resp, file, indent=4)
+    write_json(resp, path)
 
     return resp
 

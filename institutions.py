@@ -1,8 +1,8 @@
-import json
 import request
 
 from classes import Institution
 from pathlib import Path
+from util import write_json, read_json
 
 
 def get_institution_type(category_num: int) -> str:
@@ -51,11 +51,7 @@ def create_institutions_file() -> list[Institution]:
 
     raw_institutions = get_institutions_json()
     formatted_institutions = reformat_institutions(raw_institutions)
-
-    output_file = Path("data/institutions.json")
-    output_file.parent.mkdir(exist_ok=True, parents=True)
-    with open(output_file, "w") as out:
-        json.dump([i.to_dict() for i in formatted_institutions], out, indent=4)
+    write_json(formatted_institutions, "data/institutions.json")
 
     return formatted_institutions
 
@@ -79,8 +75,7 @@ def get_institutions(create_new_if_existing: bool = False) -> list[Institution]:
     if create_new_if_existing or not institutions_path.exists():
         return create_institutions_file()
 
-    with open(institutions_path, "r") as file:
-        return load_institutions_from_file(json.load(file))
+    return load_institutions_from_file(read_json(institutions_path))
 
 
 if __name__ == "__main__":

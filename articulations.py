@@ -2,9 +2,8 @@ import argparse
 import orjson as json
 from collections import defaultdict
 
-import request
-import os
 import re
+import request
 import timeit
 
 from classes import (
@@ -30,12 +29,12 @@ from classes import (
 
 from agreements import get_agreements, get_local_agreement
 from institutions import get_institutions
+from util import write_json
 
 
 # Saves and uses raw ASSIST.org JSON files on disk
 # Just here so we don't have to keep making requests for every little change
 use_local_agreement_data = False
-pretty_print_json = False
 
 CC_REGISTRY = {
     "colleges": {},
@@ -309,24 +308,6 @@ class AgreementProcessor:
         sections = self.process_dept_prefix_articulations(articulations)
 
         return sections
-
-
-def orjson_default(obj):
-    if hasattr(obj, "to_dict"):
-        return obj.to_dict()
-
-    raise TypeError(f"Object of type {type(obj)} is not JSON serializable")
-
-
-def write_json(json_dict, path):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    options = json.OPT_NON_STR_KEYS | json.OPT_PASSTHROUGH_DATACLASS
-
-    if pretty_print_json:
-        options |= json.OPT_INDENT_2
-
-    with open(path, "wb") as file:
-        file.write(json.dumps(json_dict, default=orjson_default, option=options))
 
 
 def get_categories(receiving_id, sending_id, year_id) -> list[dict]:
