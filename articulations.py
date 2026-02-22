@@ -420,7 +420,10 @@ def process_sending_articulation(sending_articulation: dict):
 
         group_items = group.get("items")
 
-        # For "advisements" like "Select 1 course from the following" that appear in the box but is not a course
+        # For "advisements" like "Select 1 course from the following" that appear in the box but is not a course.
+        # The issue is that the advisements use the "position" key, so removing it throws off the rest of the positions,
+        # which messes up the conjunctions (since we check end_pos == start_pos + 1).
+        # So we just map the original positions to our array indices later.
         if group_items is None:
             continue
 
@@ -463,7 +466,12 @@ def process_sending_articulation(sending_articulation: dict):
         )
         groups_by_position[pos] = series_option
 
-    ordered_items = [groups_by_position[pos] for pos in sorted(groups_by_position.keys())]
+    # Map to the original ASSIST positions due to the advisements issue
+    # It's better doing it this way in case there are multiple advisements in a cell
+    sorted_positions = sorted(groups_by_position.keys())
+    ordered_items = [groups_by_position[pos] for pos in sorted_positions]
+    pos_to_index = {original_pos: new_index for new_index, original_pos in enumerate(sorted_positions)}
+
     raw_conjunctions = sending_articulation.get("courseGroupConjunctions") or []
     ordered_conjunctions = ["OR"] * (len(ordered_items) - 1)
 
@@ -472,8 +480,13 @@ def process_sending_articulation(sending_articulation: dict):
         end_pos = conjunction["sendingCourseGroupEndPosition"]
         val = conjunction["groupConjunction"]
 
-        if end_pos == start_pos + 1 and start_pos < len(ordered_conjunctions):
-            ordered_conjunctions[start_pos] = val.upper()
+        # Find out where original positions ended up in the filtered list
+        if start_pos in pos_to_index and end_pos in pos_to_index:
+            mapped_start = pos_to_index[start_pos]
+            mapped_end = pos_to_index[end_pos]
+
+            if mapped_end == mapped_start + 1 and mapped_start < len(ordered_conjunctions):
+                ordered_conjunctions[mapped_start] = val.upper()
 
     global_attributes = sending_articulation.get("attributes") or []
     global_attributes.sort(key=lambda x: x["position"])
