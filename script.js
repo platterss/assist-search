@@ -73,6 +73,10 @@ async function fetchWithCache(key, fetcher) {
 }
 
 async function loadRegistry() {
+    if (Object.keys(REGISTRY.colleges).length > 0) {
+        return;
+    }
+
     try {
         REGISTRY = await fetchWithCache("registry", () => getJson(DATA_PATHS.ccRegistry));
         console.log("Loaded CC registry:", Object.keys(REGISTRY.colleges || {}).length, "colleges")
@@ -617,6 +621,8 @@ itemSelect.addEventListener("change", async (e) => {
         loadingDiv.style.display = "flex";
 
         try {
+            await loadRegistry();
+
             const itemsList = await getItemsData(currentState.selectedUniversity, currentState.selectedCategory);
             const targetItem = itemsList.find(c => c._key === itemKey || getItemKey(c) === itemKey);
 
@@ -639,6 +645,5 @@ window.addEventListener("DOMContentLoaded", async () => {
         body.classList.remove("no-transition");
     }, 100);
 
-    await loadRegistry();
     await populateUniversities();
 });
