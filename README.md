@@ -5,7 +5,7 @@ data in a format that allows it to be easily "reverse searched."
 
 This is also a [website](https://platterss.github.io/assist-search/).
 
-All the data collected is stored in the `data` folder (>400 MB) and is free to use. See the 
+All the data collected is stored in the `data` folder (>700 MB) and is free to use. See the 
 [wiki](https://github.com/platterss/assist-search/wiki) for information on how the data is formatted.
 
 ## Prerequisites
@@ -15,44 +15,39 @@ All the data collected is stored in the `data` folder (>400 MB) and is free to u
 
 ## Usage
 
-With a populated `data` folder, you can run `main.py` to search for articulations through the terminal:
+With a populated `data` folder, you can load up `index.html` in your web browser to search for articulations.
 
-```
-python main.py
-```
+Articulation data can be scraped by running the `articulations.py` script.
+It supports several flags to filter exactly what you want to scrape.
 
-It'd probably be a better experience just loading up `index.html` in your web browser since it'll also use local data.
-
-Articulation data can be fetched by running the articulations.py script.
-
-```
-python articulations.py <university types>
+```bash
+python articulations.py  --types CSU UC AICCU
 ```
 
-where university types are any combination of:
-- CSU
-- UC
-- AICCU
+If no `--types` are provided, it defaults to all three. You can also target specific colleges
+or universities by name or ID, or resume a stopped scrape using offsets:
 
-For example, if you wanted to only get data for CSUs and UCs,
-you would run:
+```bash
+# Only get data for a specific university
+python articulations.py --universities "San Jose State University"
 
+# Start scraping from a specific university onward
+python articulations.py --universities "University of California, Berkeley"
 ```
-python articulations.py CSU UC
-```
 
-If no university types are provided, it'll default to all three.
-
-The data will be populated in the `data` folder.
+### Time Warning
 
 Keep in mind that **fetching articulation data will take a long time**. There are 115 CCCs and 23 CSUs, 9 UCs, and 31 
-AICCUs (so 63 universities total). If there were agreements between all the CCCs and universities, it would take a 
-**minimum** of 115 CCCs * 63 universities * 4 seconds per request = 28,980 seconds = **8.05 hours** to fetch all the 
-data.
+AICCUs (so 63 universities total). This scraper makes around 3 requests for each CCC → university with a cooldown of
+3 seconds per request. It would take around 115 CCCs * 3 requests * 3 seconds/request * 63 universities = 
+65,205 seconds = **18.11 hours** to fetch all the data. That's a pretty long time.
 
-**It is unlikely you will need to fetch the articulation data yourself**. I have a script running to automatically
+**You probably won't need to fetch the articulation data yourself**. I have a script running to automatically
 fetch and update the articulation data at least once a week. You can check the commit history to see when the data
-was last updated (as well as all the articulation changes which is pretty cool).
+was last updated.
+
+The space-saving format the JSON files are stored in makes them pretty inconvenient to look at the diff for,
+but you can probably just use a text difference tool somewhere.
 
 ## Contributions
 

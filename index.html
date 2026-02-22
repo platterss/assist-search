@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASSIST Search</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add("dark-mode");
+            }
+        })();
+    </script>
 </head>
-<body>
+<body class="no-transition">
 <div class="container">
     <header>
         <h1>ASSIST Search</h1>
         <p class="subtitle">Search for all CCC articulations for a university course.</p>
         <br>
+
         <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
             <a class="github-btn" href="https://github.com/platterss/assist-search" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub repository">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
@@ -34,29 +49,40 @@
                 <label for="university-select" class="form-label">University</label>
                 <div class="select-wrapper">
                     <select id="university-select" class="form-control">
-                        <option value="">Select a university...</option>
+                        <option value="" disabled selected hidden>Select a university...</option>
                     </select>
                     <span class="loading-spinner" id="university-loader" style="display: none;"></span>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="subject-select" class="form-label">Subject</label>
+                <label for="view-by-select" class="form-label">View By</label>
                 <div class="select-wrapper">
-                    <select id="subject-select" class="form-control" disabled>
-                        <option value="">Select a subject...</option>
+                    <select id="view-by-select" class="form-control">
+                        <option value="subject" selected>Subject</option>
+                        <option value="major">Major</option>
+                        <option value="ge">General Education</option>
                     </select>
-                    <span class="loading-spinner" id="subject-loader" style="display: none;"></span>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="course-select" class="form-label">Course</label>
+                <label id="category-label" for="category-select" class="form-label">Subject</label>
                 <div class="select-wrapper">
-                    <select id="course-select" class="form-control" disabled>
-                        <option value="">Select a course...</option>
+                    <select id="category-select" class="form-control" disabled>
+                        <option value="" disabled selected hidden>Select a subject...</option>
                     </select>
-                    <span class="loading-spinner" id="course-loader" style="display: none;"></span>
+                    <span class="loading-spinner" id="category-loader" style="display: none;"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label id="item-label" for="item-select" class="form-label">Course</label>
+                <div class="select-wrapper">
+                    <select id="item-select" class="form-control" disabled>
+                        <option value="" disabled selected hidden>Select a course...</option>
+                    </select>
+                    <span class="loading-spinner" id="item-loader" style="display: none;"></span>
                 </div>
             </div>
         </div>

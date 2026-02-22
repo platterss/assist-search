@@ -1,24 +1,57 @@
 let currentState = {
+    viewBy: "subject",
     selectedUniversity: null,
-    selectedSubject: null,
-    selectedCourse: null
+    selectedCategory: null,
+    selectedItem: null
 };
 
+let REGISTRY = { colleges: {}, courses: {} }
+
 const universitySelect = document.getElementById("university-select");
-const subjectSelect = document.getElementById("subject-select");
-const courseSelect = document.getElementById("course-select");
+const viewBySelect = document.getElementById("view-by-select")
+const categorySelect = document.getElementById("category-select")
+const itemSelect = document.getElementById("item-select")
+
+const categoryLabel = document.getElementById("category-label")
+const itemLabel = document.getElementById("item-label")
+
 const universityLoader = document.getElementById("university-loader");
-const subjectLoader = document.getElementById("subject-loader");
-const courseLoader = document.getElementById("course-loader");
+const categoryLoader = document.getElementById("category-loader");
+const itemLoader = document.getElementById("item-loader");
 
 const DATA_PATHS = {
     institutions: "./data/institutions.json",
-    subjects: (universityName) => `./data/${encodeURIComponent(universityName)}/subjects.json`,
-    courses: (universityName, subjectCode) => `./data/${encodeURIComponent(universityName)}/${encodeURIComponent(subjectCode)}/courses.json`
+    ccRegistry: "./data/colleges/cc_registry.json",
+    subjectCategories: (uni) => `./data/universities/${encodeURIComponent(uni)}/Subjects/subjects.json`,
+    subjectItems: (uni, prefix) => `./data/universities/${encodeURIComponent(uni)}/Subjects/subj_${encodeURIComponent(prefix)}.json`,
+    majorCategories: (uni) => `./data/universities/${encodeURIComponent(uni)}/Majors/majors.json`,
+    majorItems: (uni, major) => `./data/universities/${encodeURIComponent(uni)}/Majors/${encodeURIComponent(getSafeFileName(major))}.json`,
+    geCategories: (uni) => `./data/universities/${encodeURIComponent(uni)}/GEs/ge_categories.json`
+};
+
+const CACHE = new Map();
+
+const themeToggle = document.getElementById("theme-toggle");
+const html = document.documentElement;
+const body = document.body;
+
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+    html.classList.add("dark-mode");
+} else if (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    html.classList.add("dark-mode");
 }
 
-const SUBJECT_CACHE = new Map();
-const COURSE_CACHE = new Map();
+themeToggle.addEventListener("click", () => {
+    html.classList.toggle("dark-mode");
+
+    const isDark = html.classList.contains("dark-mode");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+});
+
+function getSafeFileName(name) {
+    return name.replace(/\//g, "-").replace(/:/g, "").replace(/\*/g, "=").replace(/>/g, "").trim();
+}
 
 async function getJson(url) {
     const res = await fetch(url)
@@ -31,6 +64,23 @@ async function getJson(url) {
     return res.json()
 }
 
+async function fetchWithCache(key, fetcher) {
+    if (!CACHE.has(key)) {
+        CACHE.set(key, await fetcher());
+    }
+
+    return CACHE.get(key);
+}
+
+async function loadRegistry() {
+    try {
+        REGISTRY = await fetchWithCache("registry", () => getJson(DATA_PATHS.ccRegistry));
+        console.log("Loaded CC registry:", Object.keys(REGISTRY.colleges || {}).length, "colleges")
+    } catch (e) {
+        console.error("Failed to load CC registry:", e);
+    }
+}
+
 function enableDropdown(dropdownElement) {
     dropdownElement.disabled = false;
 }
@@ -39,12 +89,19 @@ function disableDropdown(dropdownElement) {
     dropdownElement.disabled = true;
 }
 
-function clearDropdown(dropdownElement) {
-    while (dropdownElement.options.length > 1) {
-        dropdownElement.remove(1);
+function clearDropdown(element, defaultText) {
+    while (element.options.length > 0) {
+        element.remove(0);
     }
 
-    dropdownElement.selectedIndex = 0;
+    const defaultOption = document.createElement("option");
+    defaultOption.value = "";
+    defaultOption.textContent = defaultText;
+    defaultOption.disabled = true;
+    defaultOption.selected = true;
+    defaultOption.hidden = true;
+
+    element.appendChild(defaultOption);
 }
 
 function showLoader(loaderElement) {
@@ -55,46 +112,64 @@ function hideLoader(loaderElement) {
     loaderElement.style.display = "none";
 }
 
-async function fetchInstitutions() {
-    console.log("Fetching universities...");
-    return getJson(DATA_PATHS.institutions)
-}
-
-async function fetchSubjects(universityName) {
-    console.log("Fetching subjects for university:", universityName);
-
-    let list = SUBJECT_CACHE.get(universityName);
-    if (!list) {
-        list = await getJson(DATA_PATHS.subjects(universityName))
-        SUBJECT_CACHE.set(universityName, list);
+function getItemKey(item) {
+    if (item.course_id !== undefined) {
+        return `COURSE:${item.course_id}`;
     }
 
-    return list;
-}
-
-function coursesCacheKey(universityName, subjectCode) {
-    return `${universityName}|${subjectCode}`;
-}
-
-async function fetchCourses(universityName, subjectCode) {
-    console.log("Fetching courses for university:", universityName, "subject:", subjectCode);
-    const key = coursesCacheKey(universityName, subjectCode);
-
-    let list = COURSE_CACHE.get(key);
-    if (!list) {
-        list = await getJson(DATA_PATHS.courses(universityName, subjectCode));
-        COURSE_CACHE.set(key, list)
+    if (item.courses) {
+        const ids = item.courses.map(c => c.course_id).join("|");
+        return `SERIES:${item.conjunction}:${ids}`;
     }
 
-    return list
+    if (item.area_type) {
+        return `GE:${item.code}`;
+    }
+
+    if (item.name) {
+        return `REQ:${item.name}`;
+    }
+
+    return JSON.stringify(item);
 }
 
-async function fetchArticulations(universityName, subjectCode, courseKey) {
-    const list = await fetchCourses(universityName, subjectCode);
-    const course = (list || []).find(c => c.key === courseKey);
-    const courseFull = buildCourseFullLabel(course);
-    const articulations = course ? normalizeArticulations(course) : [];
-    return {courseFull, articulations};
+function buildCourseFullLabel(item, multiline = false) {
+    if (!item) {
+        return "";
+    }
+
+    if (item.course_id !== undefined) {
+        if (multiline) {
+            return `<strong>${item.prefix} ${item.number}</strong> - ${item.title}`;
+        }
+        return `${item.prefix} ${item.number} - ${item.title}`;
+    }
+
+    if (item.courses) {
+        const conj = (item.conjunction || "AND").toUpperCase();
+
+        if (multiline) {
+            const separatorHtml = `<br><i><strong>${conj}</strong></i><br>`;
+
+            return item.courses.map(c => {
+                const title = c.title ? ` - ${c.title}` : "";
+                return `<strong>${c.prefix} ${c.number}</strong>${title}`;
+            }).join(separatorHtml);
+        } else {
+            const names = item.courses.map(c => c.title || `${c.prefix} ${c.number}`).join(` ${conj} `);
+            return `${item.name || "Series"} - ${names}`;
+        }
+    }
+
+    if (item.area_type) {
+        return `${item.code} - ${item.name}`;
+    }
+
+    if (item.name) {
+        return `${item.name}`;
+    }
+
+    return "Unknown Item";
 }
 
 async function populateUniversities() {
@@ -102,7 +177,7 @@ async function populateUniversities() {
         showLoader(universityLoader);
         disableDropdown(universitySelect);
 
-        let universities = await fetchInstitutions();
+        let universities = await fetchWithCache("institutions", () => getJson(DATA_PATHS.institutions));
         universities = universities.filter(u => u.category !== "CCC");
 
         const CATEGORY_ORDER = ["UC", "CSU", "AICCU"];
@@ -121,7 +196,7 @@ async function populateUniversities() {
             return a.name.localeCompare(b.name, undefined, {sensitivity: "base"});
         })
 
-        clearDropdown(universitySelect);
+        clearDropdown(universitySelect, "Select a university...");
         const categories = [
             { key: "UC", label: "University of California" },
             { key: "CSU", label: "California State University" },
@@ -158,168 +233,155 @@ async function populateUniversities() {
     }
 }
 
-async function populateSubjects(universityName) {
+async function populateCategories(universityName) {
     try {
-        showLoader(subjectLoader);
-        disableDropdown(subjectSelect);
-        clearDropdown(subjectSelect);
+        showLoader(categoryLoader);
+        disableDropdown(categorySelect);
 
-        const subjects = await fetchSubjects(universityName);
+        const view = currentState.viewBy;
+        const defaultText = `Select a ${view === "ge" ? "category" : view}...`;
+        clearDropdown(categorySelect, defaultText);
 
-        subjects.forEach(subject => {
+        let optionsData = [];
+
+        if (view === "subject") {
+            const subjects = await fetchWithCache(`subjectCategories:${universityName}`, () => getJson(DATA_PATHS.subjectCategories(universityName)));
+            optionsData = subjects.map(s => ({ value: s.prefix, label: `${s.prefix} - ${s.name}` }));
+        } else if (view === "major") {
+            const majors = await fetchWithCache(`majorCategories:${universityName}`, () => getJson(DATA_PATHS.majorCategories(universityName)));
+            optionsData = majors.map(m => ({ value: m, label: m }));
+        } else if (view === "ge") {
+            const ges = await fetchWithCache(`geCategories:${universityName}`, () => getJson(DATA_PATHS.geCategories(universityName)));
+            optionsData = ges.map(g => ({ value: g.name, label: g.name }));
+        }
+
+        optionsData.forEach(opt => {
             const option = document.createElement("option");
-            option.value = subject.prefix;
-            option.textContent = `${subject.prefix} - ${subject.name}`;
-            subjectSelect.appendChild(option);
+            option.value = opt.value;
+            option.textContent = opt.label;
+            categorySelect.appendChild(option);
         });
 
-        enableDropdown(subjectSelect);
-        console.log("Subject dropdown populated with", subjects.length, "options");
+        enableDropdown(categorySelect);
     } catch (error) {
         console.error("Error loading subjects:", error);
 
         if (error.message.includes("404")) {
-            alert("This university has no articulation information. Please choose a different one.")
+            alert(`This university does not have ${currentState.viewBy} data available.`)
         } else {
-            alert("Failed to load subjects. Please try again.");
+            alert("Failed to load categories. Please try again.");
         }
     } finally {
-        hideLoader(subjectLoader);
+        hideLoader(categoryLoader);
     }
 }
 
-async function populateCourses(universityId, subjectCode) {
+async function getItemsData(universityName, categoryVal) {
+    const view = currentState.viewBy;
+
+    if (view === "subject") {
+        return await fetchWithCache(`subItems:${universityName}|${categoryVal}`, () => getJson(DATA_PATHS.subjectItems(universityName, categoryVal)));
+    } else if (view === "major") {
+        const majorObj = await fetchWithCache(`majItems:${universityName}|${categoryVal}`, () => getJson(DATA_PATHS.majorItems(universityName, categoryVal)));
+        return majorObj.courses || [];
+    } else if (view === "ge") {
+        const ges = await fetchWithCache(`geCats:${universityName}`, () => getJson(DATA_PATHS.geCategories(universityName)));
+        const targetGe = ges.find(g => g.name === categoryVal);
+        return targetGe ? targetGe.courses : [];
+    }
+
+    return [];
+}
+
+async function populateItems(universityName, categoryVal) {
     try {
-        showLoader(courseLoader);
-        disableDropdown(courseSelect);
-        clearDropdown(courseSelect);
+        showLoader(itemLoader);
+        disableDropdown(itemSelect);
 
-        const courses = await fetchCourses(universityId, subjectCode);
+        const defaultText = `Select a ${currentState.viewBy === "subject" ? "course" : "requirement"}...`;
+        clearDropdown(itemSelect, defaultText);
 
-        courses.forEach(course => {
+        const items = await getItemsData(universityName, categoryVal);
+
+        items.forEach(course => {
+            const key = getItemKey(course);
+            course._key = key;
+
             const option = document.createElement("option");
-            option.value = course.key;
-
-            option.textContent = `${course.key}`;
-
-            if (course.type === "COURSE") {
-                option.textContent += ` - ${course.title}`
-            } else if (course.type === "SERIES") {
-                option.textContent += ` - `
-                for (let i = 0; i < course.courses.length; i++) {
-                    option.textContent += course.courses[i].title;
-
-                    if (i !== course.courses.length - 1) {
-                        option.textContent += ", "
-                    }
-                }
-            }
-
-            courseSelect.appendChild(option);
+            option.value = key;
+            option.textContent = buildCourseFullLabel(course);
+            itemSelect.appendChild(option);
         });
 
-        enableDropdown(courseSelect);
-        console.log("Populated course dropdown with", courses.length, "options");
+        enableDropdown(itemSelect);
+        console.log("Populated course dropdown with", items.length, "options");
     } catch (error) {
-        console.error("Error loading courses:", error);
-        alert("Failed to load courses. Please try again.");
+        console.error("Error loading items:", error);
+        alert("Failed to load items. Please try again.");
     } finally {
-        hideLoader(courseLoader);
+        hideLoader(itemLoader);
     }
 }
-
-function buildCourseFullLabel(course) {
-    if (!course) {
-        return "";
-    }
-
-    if (course.type === "COURSE") {
-        return `${course.key} - ${course.title || ""}`.trim();
-    }
-
-    if (course.type === "SERIES") {
-        const names = (course.courses || []).map(c => c.title).join(", ");
-        return `${course.key} - ${names}`;
-    }
-
-    return course.key || "";
-}
-
-function toCourseChip(item) {
-    const label = `${item.prefix} ${item.number} - ${item.title}`.replace(/\s+/g, " ").trim();
-    const notes = Array.isArray(item.notes) ? item.notes : [];
-    return {label, notes};
-}
-
-const conjToType = (c) => (String(c || "").toUpperCase() === "AND" ? "and" : (c ? "or" : null));
-
-function normalizeSendingNode(node) {
-    const type = String(node?.type || "").toUpperCase();
-    const items = Array.isArray(node?.items) ? node.items : [];
-    const notes = Array.isArray(node?.notes) ? node.notes : [];
-    const joinType = conjToType(node?.conjunction);
-    const joinsArr = Array.isArray(node?.conjunctions)
-        ? node.conjunctions.map(conjToType) // normalized to "and"/"or"
-        : null;
-
-    if (type === "SET") {
-        const chips = items.map(toCourseChip);
-        if (chips.length <= 1) {
-            return { type: "single", courses: chips.length ? [chips[0]] : [], notes };
-        }
-        if (joinType) {
-            return { type: joinType, courses: chips, notes };
-        }
-        return { type: "single", courses: chips, notes }; // default to single when unspecified
-    }
-
-    if (type === "GROUP") {
-        const childGroups = items.map(normalizeSendingNode);
-
-        // If a per-edge joins array exists, prefer it and avoid collapsing
-        if (joinsArr && childGroups.length > 0) {
-            // joinsArr should have length childGroups.length - 1; tolerate mismatch gracefully
-            return {
-                type: "nested",
-                join: null,            // no uniform join
-                joins: joinsArr,       // per-edge joins: ["and" | "or", ...]
-                groups: childGroups,
-                notes
-            };
-        }
-
-        // Legacy uniform behavior: collapse GROUP of singles with a uniform join
-        const allSingles = childGroups.length > 0 && childGroups.every(g => g.type === "single");
-        if (allSingles && joinType) {
-            const flat = childGroups.flatMap(g => g.courses || []);
-            return { type: joinType, courses: flat, notes };
-        }
-
-        return {
-            type: "nested",
-            join: joinType || "or",   // default to "or" if unspecified
-            groups: childGroups,
-            notes
-        };
-    }
-
-    return { type: "single", courses: [], notes: [] };
-}
-
 
 function normalizeArticulations(course) {
     const raw = Array.isArray(course?.articulations) ? course.articulations : [];
     const byCollege = new Map();
 
-    raw.forEach((row) => {
-        const college = row.sending_name;
-        const group = normalizeSendingNode(row.sending_articulation || {});
+    raw.flat().forEach(artItem => {
+        const collegeId = artItem.sending_id;
+        const collegeName = REGISTRY.colleges[collegeId] || `Unknown College (${collegeId})`;
+        const articulation = artItem.articulation;
 
-        if (!byCollege.has(college)) {
-            byCollege.set(college, []);
+        if (!articulation) {
+            return;
         }
 
-        byCollege.get(college).push(group);
+        const globalNotes = articulation.notes || [];
+        const conjunctions = articulation.conjunctions || [];
+        const items = articulation.items || [];
+
+        const groups = items.map(series => {
+            const seriesNotes = series.notes || [];
+            const joinType = (series.conjunction || "OR").toLowerCase();
+
+            const courses = (series.courses || []).map(sc => {
+                const ccCourse = REGISTRY.courses[sc.course_id];
+                let label = `Unknown Course (${sc.course_id})`;
+                if (ccCourse) {
+                    label = `${ccCourse.prefix} ${ccCourse.number} - ${ccCourse.title}`;
+                }
+                return { label, notes: sc.notes || [] };
+            });
+
+            if (courses.length <= 1) {
+                return { type: "single", courses: courses, notes: seriesNotes };
+            }
+            return { type: joinType, courses: courses, notes: seriesNotes };
+        });
+
+        let topLevelNode = null;
+
+        if (groups.length === 0) {
+            return;
+        } else if (groups.length === 1) {
+            topLevelNode = groups[0];
+            if (globalNotes.length) {
+                topLevelNode.notes = [...globalNotes, ...(topLevelNode.notes || [])];
+            }
+        } else {
+            const mappedJoins = conjunctions.map(c => (c || "OR").toLowerCase());
+            topLevelNode = {
+                type: "nested",
+                joins: mappedJoins,
+                groups: groups,
+                notes: globalNotes
+            };
+        }
+
+        if (!byCollege.has(collegeName)) {
+            byCollege.set(collegeName, []);
+        }
+        byCollege.get(collegeName).push(topLevelNode);
     });
 
     return Array.from(byCollege.entries()).map(([college, groups]) => ({
@@ -337,7 +399,6 @@ function clearArticulations() {
     resultsSection.style.display = "none";
     articulationCards.innerHTML = "";
     noArticulations.style.display = "none";
-    console.log("Cleared articulation results");
 }
 
 function renderNotes(notes, position = "below") {
@@ -403,18 +464,16 @@ function displayArticulations(articulationData, selectedCourse) {
 
     loadingDiv.style.display = "none";
     resultsSection.style.display = "block";
-    selectedCourseDisplay.textContent = `Showing articulations for: ${selectedCourse}`;
+    selectedCourseDisplay.innerHTML = `Showing articulations for:<br>${selectedCourse}`;
 
     const {articulations} = articulationData;
 
     if (articulations.length === 0) {
         articulationCards.innerHTML = "";
         noArticulations.style.display = "block";
-        console.log("No articulations available for this course");
     } else {
         noArticulations.style.display = "none";
         articulationCards.innerHTML = articulations.map(collegeData => createArticulationCard(collegeData)).join("");
-        console.log("Displayed", articulations.length, "articulation cards");
     }
 }
 
@@ -450,7 +509,7 @@ function renderCourseGroup(group) {
         const sepText = type.toUpperCase();
         const sepClass = type === "and" ? "separator-and" : "separator-or";
         const boxClass = type === "and" ? "group-box-and" : "group-box-or";
-        const notesHtml = renderNotes(notes, "above");
+        const notesHtml = renderNotes(notes, "below");
 
         const inner = courses.map((c, i) => {
             let html = renderCourseItem(c);
@@ -460,11 +519,10 @@ function renderCourseGroup(group) {
             return html;
         }).join("");
 
-        return `<li class="course-item">${notesHtml}<div class="${boxClass}">${inner}</div></li>`;
+        return `<li class="course-item"><div class="${boxClass}">${inner}</div>${notesHtml}</li>`;
     }
 
     if (type === "nested") {
-        // Support per-edge joins array; fallback to uniform join
         const joins = Array.isArray(group.joins) ? group.joins : null;
         return group.groups.map((g, i) => {
             let html = renderCourseGroup(g);
@@ -484,63 +542,89 @@ function renderCourseGroup(group) {
     return "";
 }
 
+viewBySelect.addEventListener("change", async (e) => {
+    currentState.viewBy = e.target.value;
+    currentState.selectedCategory = null;
+    currentState.selectedItem = null;
+
+    if (currentState.viewBy === "subject") {
+        categoryLabel.textContent = "Subject";
+        itemLabel.textContent = "Course";
+    } else if (currentState.viewBy === "major") {
+        categoryLabel.textContent = "Major";
+        itemLabel.textContent = "Requirement";
+    } else if (currentState.viewBy === "ge") {
+        categoryLabel.textContent = "GE Category";
+        itemLabel.textContent = "Area";
+    }
+
+    clearArticulations();
+    clearDropdown(categorySelect, `Select a ${currentState.viewBy === 'ge' ? 'category' : currentState.viewBy}...`);
+    disableDropdown(categorySelect);
+    clearDropdown(itemSelect, `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`);
+    disableDropdown(itemSelect);
+
+    if (currentState.selectedUniversity) {
+        await populateCategories(currentState.selectedUniversity);
+    }
+});
 
 universitySelect.addEventListener("change", async (e) => {
-    const universityName = e.target.item(e.target.selectedIndex).label
+    const universityName = e.target.options[e.target.selectedIndex].text
 
     console.log("University selected:", universityName);
     currentState.selectedUniversity = universityName;
-    currentState.selectedSubject = null;
-    currentState.selectedCourse = null;
+    currentState.selectedCategory = null;
+    currentState.selectedItem = null;
 
     clearArticulations();
 
-    clearDropdown(subjectSelect);
-    disableDropdown(subjectSelect);
-    clearDropdown(courseSelect);
-    disableDropdown(courseSelect);
+    clearDropdown(categorySelect, `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`);
+    disableDropdown(categorySelect);
+    clearDropdown(itemSelect, `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`);
+    disableDropdown(itemSelect);
 
     if (universityName) {
-        await populateSubjects(universityName);
+        await populateCategories(universityName);
     }
 });
 
-subjectSelect.addEventListener("change", async (e) => {
-    const subjectCode = e.target.value;
+categorySelect.addEventListener("change", async (e) => {
+    const categoryVal = e.target.value;
 
-    console.log("Subject selected:", subjectCode);
-    currentState.selectedSubject = subjectCode;
-    currentState.selectedCourse = null;
+    console.log("Subject selected:", categoryVal);
+    currentState.selectedCategory = categoryVal;
+    currentState.selectedItem = null;
 
     clearArticulations();
+    clearDropdown(itemSelect, `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`);
+    disableDropdown(itemSelect);
 
-    clearDropdown(courseSelect);
-    disableDropdown(courseSelect);
-    if (subjectCode && currentState.selectedUniversity) {
-        await populateCourses(currentState.selectedUniversity, subjectCode);
+    if (categoryVal && currentState.selectedUniversity) {
+        await populateItems(currentState.selectedUniversity, categoryVal);
     }
 });
 
-courseSelect.addEventListener("change", async (e) => {
-    const courseCode = e.target.value;
-
-    console.log("Course selected:", courseCode);
-    currentState.selectedCourse = courseCode;
-
+itemSelect.addEventListener("change", async (e) => {
+    const itemKey = e.target.value;
+    currentState.selectedItem = itemKey;
     clearArticulations();
 
-    if (courseCode && currentState.selectedUniversity && currentState.selectedSubject) {
+    if (itemKey && currentState.selectedUniversity && currentState.selectedCategory) {
         const resultsSection = document.getElementById("articulation-results");
         const loadingDiv = document.getElementById("articulation-loading");
         resultsSection.style.display = "block";
         loadingDiv.style.display = "flex";
 
         try {
-            const articulationData = await fetchArticulations(
-                currentState.selectedUniversity,
-                currentState.selectedSubject,
-                courseCode
-            );
+            const itemsList = await getItemsData(currentState.selectedUniversity, currentState.selectedCategory);
+            const targetItem = itemsList.find(c => c._key === itemKey || getItemKey(c) === itemKey);
+
+            const articulationData = {
+                courseFull: buildCourseFullLabel(targetItem, true),
+                articulations: targetItem ? normalizeArticulations(targetItem) : []
+            };
+
             displayArticulations(articulationData, articulationData.courseFull);
         } catch (error) {
             console.error("Error fetching articulations:", error);
@@ -550,7 +634,11 @@ courseSelect.addEventListener("change", async (e) => {
     }
 });
 
-window.addEventListener("DOMContentLoaded", () => {
-    console.log("Loading universities...");
-    populateUniversities();
+window.addEventListener("DOMContentLoaded", async () => {
+    setTimeout(() => {
+        body.classList.remove("no-transition");
+    }, 100);
+
+    await loadRegistry();
+    await populateUniversities();
 });

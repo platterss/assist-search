@@ -1,4 +1,6 @@
-from dataclasses import asdict, dataclass
+from __future__ import annotations
+
+from dataclasses import dataclass
 from enum import Enum
 
 
@@ -14,6 +16,20 @@ class ReceivingType(str, Enum):
     GE = "GE"
 
 
+class CategoryCode(str, Enum):
+    MAJOR = "major"
+    DEPT = "dept"
+    PREFIX = "prefix"
+    GE = "breadth"
+
+
+class AgreementType(str, Enum):
+    ALL_MAJORS = "AllMajors"
+    ALL_DEPTS = "AllDepartments"
+    ALL_PREFIXES = "AllPrefixes"
+    ALL_GE = "AllGeneralEducation"
+
+
 @dataclass
 class Institution:
     id: int
@@ -21,163 +37,299 @@ class Institution:
     category: str
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        return vars(self)
 
 
 @dataclass
-class BasicCourse:
-    subject: str
+class Course:
+    prefix_desc: str
     prefix: str
     number: str
-    key: str
     title: str
     min_units: float
     max_units: float
+    course_id: int
+    prefix_id: int
 
-    def to_dict(self) -> dict:
-        return asdict(self)
+    def get_unique_key(self):
+        return f"COURSE:{self.course_id}"
 
-    @staticmethod
-    def from_assist(data: dict) -> "BasicCourse":
-        prefix = data["prefix"].strip()
-        number = data["courseNumber"].strip()
-
-        return BasicCourse(
-            subject=data["prefixDescription"].strip(),
-            prefix=prefix,
-            key=f"{prefix} {number}",
-            number=number,
-            title=data["courseTitle"].strip(),
-            min_units=float(data["minUnits"]),
-            max_units=float(data["maxUnits"])
-        )
-
-
-@dataclass
-class SendingCourse(BasicCourse):
-    notes: list[str]
+    def to_dict(self):
+        return vars(self)
 
     @staticmethod
-    def from_assist(obj: dict) -> "SendingCourse":
-        notes: list[str] = []
-        for attribute in (obj.get("attributes") or []):
-            content = attribute.get("content")
-
-            if content:
-                notes.append(content)
-
-        if obj.get("prefix") is None and obj.get("courseNumber") is None:
-            return SendingCourse(
-                subject="Broken",
-                prefix="Broken",
-                number="404",
-                key="Broken 404",
-                title="Missing Course",
-                min_units=-1.0,
-                max_units=-1.0,
-                notes=["This particular course is broken on ASSIST and displays an empty course."],
+    def from_dict(class_dict: dict):
+        if class_dict.get("courseTitle") is None:
+            return Course(
+                course_id=-1,
+                title="Broken Course",
+                number="Course",
+                prefix="Unknown",
+                prefix_id=-1,
+                prefix_desc="Broken Course",
+                min_units=-1,
+                max_units=-1
             )
 
-        subject = obj["prefixDescription"].strip()
-        prefix = obj["prefix"].strip()
-        number = obj["courseNumber"].strip()
+        course_id = class_dict["courseIdentifierParentId"]
+        title = class_dict["courseTitle"].strip()
+        number = class_dict["courseNumber"].strip()
+        prefix = class_dict["prefix"].strip()
+        prefix_id = class_dict["prefixParentId"]
+        prefix_desc = class_dict["prefixDescription"].strip()
+        min_units = class_dict["minUnits"]
+        max_units = class_dict["maxUnits"]
 
-        return SendingCourse(
-            subject=subject,
-            prefix=prefix,
+        return Course(
+            course_id=course_id,
+            title=title,
             number=number,
-            key=f"{prefix} {number}".strip(),
-            title=obj["courseTitle"].strip(),
-            min_units=float(obj["minUnits"]),
-            max_units=float(obj["maxUnits"]),
-            notes=notes,
+            prefix=prefix,
+            prefix_id=prefix_id,
+            prefix_desc=prefix_desc,
+            min_units=min_units,
+            max_units=max_units
         )
 
 
 @dataclass
-class SetArticulation:
-    conjunction: Conjunction | None
-    items: list[SendingCourse]
+class SendingSeriesCourse:
+    course_id: int
+    position: int
     notes: list[str]
 
-    def to_dict(self) -> dict:
-        return {
-            "type": "SET",
-            "conjunction": None if self.conjunction is None else self.conjunction.value,
-            "items": [course.to_dict() for course in self.items],
-            "notes": self.notes
-        }
+    def to_dict(self):
+        d = vars(self).copy()
+        d.pop("position", None)
+        return d
 
 
 @dataclass
-class GroupArticulation:
-    conjunctions: list[Conjunction]
-    items: list[SetArticulation]
+class SendingSeries:
+    notes: list[str]
+    conjunction: str
+    courses: list[SendingSeriesCourse]
+
+    def get_unique_key(self) -> str:
+        course_ids = [str(course.course_id) for course in self.courses]
+        return f"SERIES:{self.conjunction}:{'|'.join(course_ids)}"
+
+    def to_dict(self):
+        d = vars(self).copy()
+
+        if len(self.courses) == 1:
+            d["conjunction"] = None
+
+        return d
+
+
+@dataclass
+class SeriesCourse(Course):
+    position: int
     notes: list[str]
 
-    def to_dict(self) -> dict:
-        return {
-            "type": "GROUP",
-            "conjunctions": [conjunction.value for conjunction in self.conjunctions],
-            "items": [item.to_dict() for item in self.items],
-            "notes": self.notes
-        }
-
-
-@dataclass
-class ReceivingSeries:
-    key: str
-    conjunction: Conjunction
-    courses: list[BasicCourse]
-
-    def to_dict(self) -> dict:
-        return {
-            "key": self.key,
-            "conjunction": self.conjunction.value,
-            "courses": [course.to_dict() for course in self.courses],
-        }
-
-
-@dataclass
-class ReceivingRequirement:
-    kind: ReceivingType
-    key: str
-
-    def to_dict(self) -> dict:
-        return {"key": self.key}
+    def to_dict(self):
+        d = vars(self).copy()
+        d.pop("position", None)
+        return d
 
     @staticmethod
-    def get_kind_and_key(node: dict) -> tuple[ReceivingType, str] | None:
-        if "requirement" in node.keys():
-            return ReceivingType.MISC, "requirement"
-        elif "generalEducationArea" in node.keys():
-            return ReceivingType.GE, "generalEducationArea"
+    def from_dict(class_data: dict):
+        course = Course.from_dict(class_data)
+        position = class_data["position"]
 
-        return None
+        raw_attributes = class_data.get("attributes") or []
+        raw_attributes.sort(key=lambda x: x["position"])
+        notes = [attribute["content"] for attribute in raw_attributes]
 
-
-@dataclass
-class ReceivingItem:
-    key: str
-    receiving_type: ReceivingType
-    receiving: BasicCourse | ReceivingSeries | ReceivingRequirement
-    sending_articulation: dict | None
-
-    @staticmethod
-    def from_receiving(
-            receiving: BasicCourse | ReceivingSeries | ReceivingRequirement,
-            sending_articulation: dict | None = None
-    ) -> "ReceivingItem":
-        if isinstance(receiving, BasicCourse):
-            receiving_type = ReceivingType.COURSE
-        elif isinstance(receiving, ReceivingSeries):
-            receiving_type = ReceivingType.SERIES
-        else:
-            receiving_type = receiving.kind
-
-        return ReceivingItem(
-            key=receiving.key,
-            receiving_type=receiving_type,
-            receiving=receiving,
-            sending_articulation=sending_articulation
+        return SeriesCourse(
+            **vars(course),
+            position=position,
+            notes=notes
         )
+
+
+@dataclass
+class Series:
+    name: str
+    notes: list[str]
+    conjunction: str
+    courses: list[SeriesCourse | SendingSeriesCourse]
+
+    def get_unique_key(self) -> str:
+        course_ids = [str(course.course_id) for course in self.courses]
+        return f"SERIES:{self.conjunction}:{"|".join(course_ids)}"
+
+    def to_dict(self):
+        d = vars(self).copy()
+
+        if len(self.courses) == 1:
+            d["conjunction"] = None
+
+        return d
+
+    @staticmethod
+    def from_dict(series_data: dict):
+        conjunction = series_data["conjunction"].strip().upper()
+        name = series_data["name"].strip()
+        courses = [SeriesCourse.from_dict(course) for course in series_data["courses"]]
+        courses.sort(key=lambda course: course.position)
+
+        return Series(
+            conjunction=conjunction,
+            name=name,
+            courses=courses,
+            notes=[]
+        )
+
+
+@dataclass
+class Requirement:
+    name: str
+
+    def get_unique_key(self) -> str:
+        return f"REQ:{self.name.upper()}"
+
+    def to_dict(self):
+        return vars(self)
+
+    @staticmethod
+    def from_dict(req_data: dict):
+        return Requirement(
+            name=req_data["name"].strip()
+        )
+
+
+@dataclass
+class GeneralEducation:
+    area_type: str  # CSUGE, IGETC, CALGETC
+    code: str
+    name: str
+
+    def get_unique_key(self) -> str:
+        return f"GE:{self.code.upper()}"
+
+    def to_dict(self):
+        return vars(self)
+
+    @staticmethod
+    def from_dict(ge_data: dict):
+        return GeneralEducation(
+            area_type=ge_data.get("areaType", "University").strip(),
+            code=ge_data["code"].strip(),
+            name=ge_data["name"].strip()
+        )
+
+
+@dataclass
+class ArticulationItem:
+    sending_id: int
+    articulation: SendingArticulation
+
+    def to_dict(self):
+        return vars(self)
+
+
+@dataclass
+class ReceivingCourse(Course):
+    articulations: dict[str, ArticulationItem | list[ArticulationItem]]
+
+    def get_unique_key(self):
+        return super().get_unique_key()
+
+    @staticmethod
+    def from_dict(course_data: dict):
+        return ReceivingCourse(
+            **vars(Course.from_dict(course_data)),
+            articulations={}
+        )
+
+
+@dataclass
+class ReceivingSeries(Series):
+    articulations: dict[str, ArticulationItem | list[ArticulationItem]]
+
+    def get_unique_key(self) -> str:
+        return super().get_unique_key()
+
+    @staticmethod
+    def from_dict(series_data: dict):
+        return ReceivingSeries(
+            **vars(Series.from_dict(series_data)),
+            articulations={}
+        )
+
+
+@dataclass
+class ReceivingRequirement(Requirement):
+    articulations: dict[str, ArticulationItem | list[ArticulationItem]]
+
+    def get_unique_key(self) -> str:
+        return super().get_unique_key()
+
+    @staticmethod
+    def from_dict(req_data: dict):
+        return ReceivingRequirement(
+            **vars(Requirement.from_dict(req_data)),
+            articulations={}
+        )
+
+
+@dataclass
+class ReceivingGE(GeneralEducation):
+    articulations: (dict[str, ArticulationItem | list[ArticulationItem]] |
+                    list[ArticulationItem | list[ArticulationItem]])
+
+    def get_unique_key(self) -> str:
+        return super().get_unique_key()
+
+    @staticmethod
+    def from_dict(ge_data: dict):
+        return ReceivingGE(
+            **vars(GeneralEducation.from_dict(ge_data)),
+            articulations={}
+        )
+
+
+@dataclass
+class SendingArticulation:
+    notes: list[str]
+    conjunctions: list[str]
+    items: list[SendingSeries]
+
+    def get_unique_key(self) -> str:
+        item_keys = [item.get_unique_key() for item in self.items]
+
+        full_string = ""
+        for i, key in enumerate(item_keys):
+            full_string += key
+            if i < len(self.conjunctions):
+                full_string += f"_{self.conjunctions[i]}_"
+
+        return f"SENDING_ART:{full_string}"
+
+    def to_dict(self):
+        data = vars(self).copy()
+
+        if not self.conjunctions:
+            data["conjunctions"] = None
+
+        return data
+
+
+@dataclass
+class Major:
+    name: str
+    courses: list[Course | Series | Requirement | GeneralEducation]
+
+    def to_dict(self):
+        return vars(self)
+
+
+@dataclass
+class Department:
+    name: str
+    courses: list[Course | Series | Requirement | GeneralEducation]
+
+    def to_dict(self):
+        return vars(self)
