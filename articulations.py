@@ -35,7 +35,6 @@ from institutions import get_institutions
 # Saves and uses raw ASSIST.org JSON files on disk
 # Just here so we don't have to keep making requests for every little change
 use_local_agreement_data = False
-
 pretty_print_json = False
 
 CC_REGISTRY = {
@@ -753,7 +752,7 @@ def main():
         save_university_data(session)
         print()
 
-    print("Writing global CC registry...")
+    print("Writing CC registry...")
     write_json(CC_REGISTRY, "data/colleges/cc_registry.json")
 
     end_time = timeit.default_timer()

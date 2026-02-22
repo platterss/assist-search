@@ -112,40 +112,6 @@ function hideLoader(loaderElement) {
     loaderElement.style.display = "none";
 }
 
-async function fetchInstitutions() {
-    console.log("Fetching universities...");
-    return getJson(DATA_PATHS.institutions)
-}
-
-async function fetchSubjects(universityName) {
-    console.log("Fetching subjects for university:", universityName);
-
-    let list = SUBJECT_CACHE.get(universityName);
-    if (!list) {
-        list = await getJson(DATA_PATHS.subjects(universityName))
-        SUBJECT_CACHE.set(universityName, list);
-    }
-
-    return list;
-}
-
-function coursesCacheKey(universityName, subjectCode) {
-    return `${universityName}|${subjectCode}`;
-}
-
-async function fetchCourses(universityName, subjectCode) {
-    console.log("Fetching courses for university:", universityName, "subject:", subjectCode);
-    const key = coursesCacheKey(universityName, subjectCode);
-
-    let list = COURSE_CACHE.get(key);
-    if (!list) {
-        list = await getJson(DATA_PATHS.courses(universityName, subjectCode));
-        COURSE_CACHE.set(key, list)
-    }
-
-    return list
-}
-
 function getItemKey(item) {
     if (item.course_id !== undefined) {
         return `COURSE:${item.course_id}`;
@@ -190,14 +156,6 @@ function buildCourseFullLabel(item) {
     }
 
     return "Unknown Item";
-}
-
-async function fetchArticulations(universityName, subjectCode, courseKey) {
-    const list = await fetchCourses(universityName, subjectCode);
-    const course = (list || []).find(c => c.key === courseKey || getItemKey(c) === courseKey);
-    const courseFull = buildCourseFullLabel(course);
-    const articulations = course ? normalizeArticulations(course) : [];
-    return {courseFull, articulations};
 }
 
 async function populateUniversities() {
@@ -350,68 +308,6 @@ async function populateItems(universityName, categoryVal) {
         hideLoader(itemLoader);
     }
 }
-
-function toCourseChip(item) {
-    const label = `${item.prefix} ${item.number} - ${item.title}`.replace(/\s+/g, " ").trim();
-    const notes = Array.isArray(item.notes) ? item.notes : [];
-    return {label, notes};
-}
-
-const conjToType = (c) => (String(c || "").toUpperCase() === "AND" ? "and" : (c ? "or" : null));
-
-function normalizeSendingNode(node) {
-    const type = String(node?.type || "").toUpperCase();
-    const items = Array.isArray(node?.items) ? node.items : [];
-    const notes = Array.isArray(node?.notes) ? node.notes : [];
-    const joinType = conjToType(node?.conjunction);
-    const joinsArr = Array.isArray(node?.conjunctions)
-        ? node.conjunctions.map(conjToType) // normalized to "and"/"or"
-        : null;
-
-    if (type === "SET") {
-        const chips = items.map(toCourseChip);
-        if (chips.length <= 1) {
-            return { type: "single", courses: chips.length ? [chips[0]] : [], notes };
-        }
-        if (joinType) {
-            return { type: joinType, courses: chips, notes };
-        }
-        return { type: "single", courses: chips, notes }; // default to single when unspecified
-    }
-
-    if (type === "GROUP") {
-        const childGroups = items.map(normalizeSendingNode);
-
-        // If a per-edge joins array exists, prefer it and avoid collapsing
-        if (joinsArr && childGroups.length > 0) {
-            // joinsArr should have length childGroups.length - 1; tolerate mismatch gracefully
-            return {
-                type: "nested",
-                join: null,            // no uniform join
-                joins: joinsArr,       // per-edge joins: ["and" | "or", ...]
-                groups: childGroups,
-                notes
-            };
-        }
-
-        // Legacy uniform behavior: collapse GROUP of singles with a uniform join
-        const allSingles = childGroups.length > 0 && childGroups.every(g => g.type === "single");
-        if (allSingles && joinType) {
-            const flat = childGroups.flatMap(g => g.courses || []);
-            return { type: joinType, courses: flat, notes };
-        }
-
-        return {
-            type: "nested",
-            join: joinType || "or",   // default to "or" if unspecified
-            groups: childGroups,
-            notes
-        };
-    }
-
-    return { type: "single", courses: [], notes: [] };
-}
-
 
 function normalizeArticulations(course) {
     const raw = Array.isArray(course?.articulations) ? course.articulations : [];
@@ -637,7 +533,6 @@ viewBySelect.addEventListener("change", async (e) => {
     currentState.selectedCategory = null;
     currentState.selectedItem = null;
 
-    // Update Labels
     if (currentState.viewBy === "subject") {
         categoryLabel.textContent = "Subject";
         itemLabel.textContent = "Course";
@@ -731,5 +626,5 @@ window.addEventListener("DOMContentLoaded", async () => {
     }, 100);
 
     await loadRegistry();
-    populateUniversities();
+    await populateUniversities();
 });
