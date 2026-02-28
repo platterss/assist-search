@@ -12,7 +12,7 @@ All the data collected is stored in the `data` folder (>600 MB) and is free to u
 
 - Python 3.12
 - [requests](https://pypi.org/project/requests/) (`pip install requests`)
-- [orjson](https://pypi.org/project/orjson/) (`pip install oirjson`)
+- [orjson](https://pypi.org/project/orjson/) (`pip install orjson`)
 
 ## Usage
 
