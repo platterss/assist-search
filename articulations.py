@@ -506,6 +506,37 @@ def process_sending_articulation(sending_articulation: dict):
     )
 
 
+# Some CCs have empty articulations with individual courses in an "AND" series.
+# For example, UC Berkeley's BIOLOGY 1A is ALWAYS articulated with BIOLOGY 1AL.
+# However, Moorpark College has an individual (and blank) BIOLOGY 1A listing in their departments.
+# This may catch some strays, but I think making the tradeoff is worth it.
+def clean_orphaned_series_courses(session: UniversitySession):
+    courses_in_series = set()
+    for series_obj in session.series.values():
+        # We only care about "AND" series. Courses in "OR" series are fine to be left alone.
+        if series_obj.conjunction == "AND":
+            for course in series_obj.courses:
+                if hasattr(course, 'get_unique_key'):
+                    courses_in_series.add(course.get_unique_key())
+
+    keys_to_remove = []
+    for key, course in session.courses.items():
+        has_no_articulations = len(course.articulations) == 0
+
+        if has_no_articulations and key in courses_in_series:
+            keys_to_remove.append(key)
+
+    for key in keys_to_remove:
+        # Manually convert the dict to a list before deleting so references in Majors/Series get the correct format
+        if isinstance(session.courses[key].articulations, dict):
+            session.courses[key].articulations = list(session.courses[key].articulations.values())
+
+        del session.courses[key]
+
+    if keys_to_remove:
+        print(f"    Cleaned up {len(keys_to_remove)} orphaned courses that only articulate within a series.")
+
+
 def save_university_data(session: UniversitySession):
     base_path = f"data/universities/{session.university.name}"
     print(f"Transforming data structures...")
@@ -697,6 +728,7 @@ def main():
             processor = AgreementProcessor(session, college)
             processor.process_all_types(agreement_year)
 
+        clean_orphaned_series_courses(session)
         save_university_data(session)
         print()
 
