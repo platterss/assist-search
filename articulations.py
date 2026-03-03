@@ -56,24 +56,26 @@ class UniversitySession:
         self.ge_categories: dict[str, Major] = {}
 
     @staticmethod
-    def _merge_requirement_container(existing_container, new_container):
+    def merge_requirement_container(existing_container, new_container):
         existing_keys = {item.get_unique_key() for item in existing_container.courses}
 
         for item in new_container.courses:
-            if item.get_unique_key() not in existing_keys:
+            key = item.get_unique_key()
+            if key not in existing_keys:
                 existing_container.courses.append(item)
+                existing_keys.add(key)
 
     def add_major(self, major: Major):
         if major.name not in self.majors:
             self.majors[major.name] = major
         else:
-            self._merge_requirement_container(self.majors[major.name], major)
+            self.merge_requirement_container(self.majors[major.name], major)
 
     def add_department(self, dept: Department):
         if dept.name not in self.departments:
             self.departments[dept.name] = dept
         else:
-            self._merge_requirement_container(self.departments[dept.name], dept)
+            self.merge_requirement_container(self.departments[dept.name], dept)
 
     # def add_prefix(self, dept: Department):
     #     if dept.name not in self.prefixes:
@@ -85,7 +87,7 @@ class UniversitySession:
         if ge.name not in self.ge_categories:
             self.ge_categories[ge.name] = ge
         else:
-            self._merge_requirement_container(self.ge_categories[ge.name], ge)
+            self.merge_requirement_container(self.ge_categories[ge.name], ge)
 
 
 class AgreementProcessor:
@@ -194,6 +196,7 @@ class AgreementProcessor:
         for major in template_assets:
             name = major["name"]
             all_requirements: list[Course | Series | Requirement | GeneralEducation] = []
+            added_keys = set()
 
             assets = major["templateAssets"]
             for template in assets:
@@ -240,7 +243,9 @@ class AgreementProcessor:
                             if cell_id:
                                 self.template_id_map[cell_id] = (target_dict, key)
 
-                            all_requirements.append(target_dict[key])
+                            if key not in added_keys:
+                                all_requirements.append(target_dict[key])
+                                added_keys.add(key)
 
             majors.append(Major(name=name, courses=all_requirements))
 
