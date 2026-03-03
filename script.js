@@ -506,7 +506,7 @@ function renderCourseGroup(group) {
     if (type === "single") {
         const chipHtml = renderCourseItem(courses[0]);
         const notesHtml = renderNotes(notes, "below");
-        return `<li class="course-item"><div class="group-box-single">${chipHtml}${notesHtml}</div></li>`;
+        return `<li class="course-item"><div class="group-box-single">${chipHtml}</div>${notesHtml}</li>`;
     }
 
     if (type === "and" || type === "or") {
