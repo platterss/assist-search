@@ -160,8 +160,9 @@ function buildCourseFullLabel(item, multiline = false) {
                 return `<strong>${c.prefix} ${c.number}</strong>${title}`;
             }).join(separatorHtml);
         } else {
+            const codes = item.courses.map(c => `${c.prefix} ${c.number}`).join(` ${conj} `)
             const names = item.courses.map(c => c.title || `${c.prefix} ${c.number}`).join(` ${conj} `);
-            return `${item.name || "Series"} - ${names}`;
+            return `${codes} - ${names}`
         }
     }
 
