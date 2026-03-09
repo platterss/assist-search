@@ -81,15 +81,12 @@ async function fetchWithCache(key, fetcher) {
 }
 
 async function loadRegistry() {
-    if (CACHE.has("registry")) {
-        return;
-    }
-
     try {
         REGISTRY = await fetchWithCache("registry", () => getJson(DATA_PATHS.ccRegistry));
         console.log("Loaded CC registry:", Object.keys(REGISTRY.colleges || {}).length, "colleges")
     } catch (e) {
         console.error("Failed to load CC registry:", e);
+        throw e;
     }
 }
 
