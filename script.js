@@ -467,11 +467,11 @@ function displayArticulations(articulationData, selectedCourse) {
     const noArticulations = document.getElementById("no-articulations");
     const loadingDiv = document.getElementById("articulation-loading");
 
+    const {articulations} = articulationData;
+
     loadingDiv.style.display = "none";
     resultsSection.style.display = "block";
-    selectedCourseDisplay.innerHTML = `Showing articulations for:<br>${selectedCourse}`;
-
-    const {articulations} = articulationData;
+    selectedCourseDisplay.innerHTML = `Showing <strong>${articulations.length}</strong> articulation${articulations.length === 1 ? '' : 's'} for:<br>${selectedCourse}`;
 
     if (articulations.length === 0) {
         articulationCards.innerHTML = "";
