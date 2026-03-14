@@ -342,8 +342,37 @@ async function populateItems(universityName, categoryVal) {
     }
 }
 
+// Helper for normalizeArticulations
+function processSeriesCourses(rawCourses) {
+    const courses = [];
+
+    for (const seriesCourse of rawCourses) {
+        const ccCourse = REGISTRY.courses[seriesCourse.course_id];
+
+        let label;
+        if (ccCourse) {
+            if (!ccCourse._cachedLabel) {
+                ccCourse._cachedLabel = `${ccCourse.prefix} ${ccCourse.number} - ${ccCourse.title}`;
+            }
+
+            label = ccCourse._cachedLabel;
+        } else {
+            label = `Unknown Course (${seriesCourse.course_id})`;
+        }
+
+        courses.push({ label, notes: seriesCourse.notes || [] });
+    }
+
+    return courses;
+}
+
 function normalizeArticulations(course) {
-    const raw = Array.isArray(course?.articulations) ? course.articulations : [];
+    const raw = course?.articulations;
+
+    if (!Array.isArray(raw)) {
+        return [];
+    }
+
     const byCollege = new Map();
 
     for (const subArray of raw) {
@@ -356,90 +385,56 @@ function normalizeArticulations(course) {
                 continue;
             }
 
-            const collegeId = artItem.sending_id;
-
             const globalNotes = articulation.notes || [];
             const conjunctions = articulation.conjunctions || [];
             const artItems = articulation.items || [];
 
             const groups = [];
             for (const series of artItems) {
-                const seriesNotes = series.notes || [];
-                const joinType = (series.conjunction || "OR").toLowerCase();
-                const rawCourses = series.courses || [];
+                const courses = processSeriesCourses(series.courses || []);
 
-                const courses = [];
-                for (const seriesCourse of rawCourses) {
-                    const ccCourse = REGISTRY.courses[seriesCourse.course_id];
-
-                    let label;
-                    if (ccCourse) {
-                        if (!ccCourse._cachedLabel) {
-                            ccCourse._cachedLabel = `${ccCourse.prefix} ${ccCourse.number} - ${ccCourse.title}`;
-                        }
-
-                        label = ccCourse._cachedLabel;
-                    } else {
-                        label = `Unknown Course (${seriesCourse.course_id})`;
-                    }
-
-                    courses.push({ label, notes: seriesCourse.notes || [] });
-                }
-
-                if (courses.length <= 1) {
-                    groups.push({ type: "single", courses: courses, notes: seriesNotes });
-                } else {
-                    groups.push({ type: joinType, courses: courses, notes: seriesNotes });
-                }
+                groups.push({
+                    type: courses.length <= 1 ? "single" : (series.conjunction || "OR").toLowerCase(),
+                    courses: courses,
+                    notes: series.notes || []
+                });
             }
 
             if (groups.length === 0) {
                 continue;
             }
 
-            let topLevelNode = null;
+            let topLevelNode;
             if (groups.length === 1) {
                 topLevelNode = groups[0];
 
                 if (globalNotes.length > 0) {
-                    topLevelNode.notes = globalNotes.concat(topLevelNode.notes || []);
+                    topLevelNode.notes.push(...globalNotes);
                 }
             } else {
-                const mappedJoins = [];
-
-                for (let c = 0; c < conjunctions.length; c++) {
-                    mappedJoins.push((conjunctions[c] || "OR").toLowerCase());
-                }
-
                 topLevelNode = {
                     type: "nested",
-                    joins: mappedJoins,
+                    joins: conjunctions.map(conjunction => (conjunction || "or").toLowerCase()),
                     groups: groups,
                     notes: globalNotes
                 };
             }
 
-            const collegeName = REGISTRY.colleges[collegeId];
-            let collegeGroups = byCollege.get(collegeName);
-            if (!collegeGroups) {
-                collegeGroups = [];
-                byCollege.set(collegeName, collegeGroups);
+            const collegeName = REGISTRY.colleges[artItem.sending_id];
+
+            if (!byCollege.has(collegeName)) {
+                byCollege.set(collegeName, []);
             }
 
-            collegeGroups.push(topLevelNode);
+            byCollege.get(collegeName).push(topLevelNode);
         }
     }
 
-    const result = [];
-    for (const [college, groups] of byCollege) {
-        result.push({
-            college,
-            groupJoin: "or",
-            groups
-        });
-    }
-
-    return result;
+    return Array.from(byCollege, ([college, groups]) => ({
+        college,
+        groupJoin: "or",
+        groups
+    }));
 }
 
 function clearArticulations() {
@@ -470,7 +465,7 @@ function renderNotes(notes, position = "below") {
 function groupSepMeta(join) {
     const t = String(join || "or").trim().toLowerCase() === "and" ? "and" : "or";
     return {
-        className: t === "and" ? "group-separator-and" : "group-separator-or",
+        className: t === "and" ? "group-separator group-separator-and" : "group-separator group-separator-or",
         text: t.toUpperCase(),
     };
 }
@@ -549,13 +544,13 @@ function renderCourseGroup(group) {
     if (type === "single") {
         const chipHtml = renderCourseItem(courses[0]);
         const notesHtml = renderNotes(notes, "below");
-        return `<li class="course-item"><div class="group-box-single">${chipHtml}</div>${notesHtml}</li>`;
+        return `<li class="course-item"><div class="group-box group-box-single">${chipHtml}</div>${notesHtml}</li>`;
     }
 
     if (type === "and" || type === "or") {
         const sepText = type.toUpperCase();
         const sepClass = type === "and" ? "separator-and" : "separator-or";
-        const boxClass = type === "and" ? "group-box-and" : "group-box-or";
+        const boxClass = type === "and" ? "group-box group-box-and" : "group-box group-box-or";
         const notesHtml = renderNotes(notes, "below");
 
         let inner = "";
