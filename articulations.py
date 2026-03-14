@@ -194,7 +194,7 @@ class AgreementProcessor:
         majors: list[Major] = []
 
         for major in template_assets:
-            name = major["name"]
+            name = major["name"].strip()
             all_requirements: list[Course | Series | Requirement | GeneralEducation] = []
             added_keys = set()
 
