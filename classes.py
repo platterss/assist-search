@@ -148,6 +148,7 @@ class GeneralEducation:
 class ArticulationItem:
     sending_id: int
     articulation: SendingArticulation
+    contexts: list[str]
 
 
 @dataclass

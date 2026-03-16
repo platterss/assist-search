@@ -128,7 +128,7 @@ class AgreementProcessor:
         for item in results:
             storage_callback(item)
 
-    def process_articulation(self, articulation_wrapper):
+    def process_articulation(self, articulation_wrapper, context):
         # Supports wrapped (for majors/GEs) and unwrapped (departments/prefixes) formats
         # We originally did the wrapped agreements for everything but major/GE agreements
         # have some GEs that require the template cell IDs from the unwrapped agreements
@@ -170,6 +170,7 @@ class AgreementProcessor:
         elif art_type == "Transferability":
             if template_cell_id and template_cell_id in self.template_id_map:
                 target_dict, key = self.template_id_map[template_cell_id]
+                context = "Major Agreement"
 
         sending_payload = articulation["sendingArticulation"]
 
@@ -177,13 +178,19 @@ class AgreementProcessor:
             processed_sending = process_sending_articulation(sending_payload)
 
             if processed_sending:
-                articulation_key = processed_sending.get_unique_key()
                 receiving_item = target_dict[key]
+                college_id = self.college.id
 
-                if articulation_key not in receiving_item.articulations:
-                    receiving_item.articulations[articulation_key] = ArticulationItem(
+                dict_key = f"{college_id}_{processed_sending.get_unique_key()}"
+
+                if dict_key in receiving_item.articulations:
+                    if context not in receiving_item.articulations[dict_key].contexts:
+                        receiving_item.articulations[dict_key].contexts.append(context)
+                else:
+                    receiving_item.articulations[dict_key] = ArticulationItem(
                         articulation=processed_sending,
-                        sending_id=self.college.id
+                        sending_id=college_id,
+                        contexts=[context]
                     )
 
         return art_type, key
@@ -251,9 +258,9 @@ class AgreementProcessor:
 
         return majors
 
-    def process_major_ge_articulations(self, articulations: list[dict]):
+    def process_major_ge_articulations(self, articulations: list[dict], context):
         for cell in articulations:
-            self.process_articulation(cell)
+            self.process_articulation(cell, context)
 
     def process_majors_ges_layout(self, agreement: dict):
         result = agreement["result"]
@@ -262,6 +269,7 @@ class AgreementProcessor:
             print("    Agreement does not have an 'All' section.")
             return []
 
+        art_type = agreement["result"]["type"]
         if agreement["result"]["type"] not in [AgreementType.ALL_MAJORS, AgreementType.ALL_GE]:
             print("    Incorrect processing type for agreement")
             return []
@@ -270,7 +278,8 @@ class AgreementProcessor:
         categories = self.process_major_ge_template_assets(template_assets)
 
         articulations: list[dict] = json.loads(result["articulations"])
-        self.process_major_ge_articulations(articulations)
+        context = "Major Agreement" if art_type == AgreementType.ALL_MAJORS else "GE Agreement"
+        self.process_major_ge_articulations(articulations, context)
 
         return categories
 
@@ -282,7 +291,7 @@ class AgreementProcessor:
             all_requirements: list[Course | Series | Requirement | GeneralEducation] = []
             articulation = cell["articulations"]
             for art in articulation:
-                art_type, key = self.process_articulation(art)
+                art_type, key = self.process_articulation(art, f"Department: {name}")
 
                 if art_type == "Course" and key in self.session.courses:
                     all_requirements.append(self.session.courses[key])
@@ -435,6 +444,12 @@ def align_sending_conjunctions(groups_by_position: dict[int, SendingSeries], raw
 
 # Helper for process_sending_articulation
 def compress_single_course_groups(ordered_items: list, ordered_conjunctions: list):
+    # If the articulation mixes ANDs and ORs, do not compress.
+    # The articulations are ambiguous so it's best to keep it like the original agreement.
+    unique_conjunctions = set(c.upper() for c in ordered_conjunctions)
+    if len(unique_conjunctions) > 1:
+        return ordered_items, ordered_conjunctions
+
     # Normalize multi-group articulations where each group only has one course
     # We can just compress it all into a single group if they all share the same conjunction
     new_items = []
@@ -534,7 +549,7 @@ def clean_orphaned_series_courses(session: UniversitySession):
         del session.courses[key]
 
     if keys_to_remove:
-        print(f"    Cleaned up {len(keys_to_remove)} orphaned courses that only articulate within a series.")
+        print(f"Cleaned up {len(keys_to_remove)} orphaned courses that only articulate within a series.")
 
 
 def save_university_data(session: UniversitySession):

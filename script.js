@@ -375,11 +375,11 @@ function normalizeArticulations(course) {
 
     const byCollege = new Map();
 
-    for (const subArray of raw) {
-        const items = Array.isArray(subArray) ? subArray : [subArray];
+    for (const artItem of raw) {
+        const items = Array.isArray(artItem) ? artItem : [artItem];
 
-        for (const artItem of items) {
-            const articulation = artItem.articulation;
+        for (const item of items) {
+            const articulation = item.articulation;
 
             if (!articulation) {
                 continue;
@@ -420,7 +420,8 @@ function normalizeArticulations(course) {
                 };
             }
 
-            const collegeName = REGISTRY.colleges[artItem.sending_id];
+            topLevelNode.contexts = item.contexts || [];
+            const collegeName = REGISTRY.colleges[item.sending_id];
 
             if (!byCollege.has(collegeName)) {
                 byCollege.set(collegeName, []);
@@ -430,10 +431,9 @@ function normalizeArticulations(course) {
         }
     }
 
-    return Array.from(byCollege, ([college, groups]) => ({
+    return Array.from(byCollege, ([college, paths]) => ({
         college,
-        groupJoin: "or",
-        groups
+        paths
     }));
 }
 
@@ -471,15 +471,59 @@ function groupSepMeta(join) {
 }
 
 function createArticulationCard(collegeData) {
-    const { college, groups, groupJoin } = collegeData;
+    const { college, paths } = collegeData;
+    let pathsHtml = "";
 
-    let groupItemsHtml = "";
-    for (let i = 0; i < groups.length; i++) {
-        groupItemsHtml += renderCourseGroup(groups[i]);
+    for (let i = 0; i < paths.length; i++) {
+        const path = paths[i];
 
-        if (i < groups.length - 1) {
-            const { className, text } = groupSepMeta(groupJoin);
-            groupItemsHtml += `<li class="${className}">${text}</li>`;
+        let contextHtml = "";
+        if (path.contexts && path.contexts.length > 0) {
+            const uniqueContexts = [...new Set(path.contexts)];
+            const tags = uniqueContexts.map(c => `<div class="context-tag">${c}</div>`).join("");
+
+            contextHtml = `
+                <div class="context-tooltip">
+                    <div class="context-tooltip-content">
+                        <span class="context-tooltip-header">Articulated In</span>
+                        ${tags}
+                    </div>
+                </div>
+            `;
+        }
+
+        let groupItemsHtml = "";
+        if (path.type === "nested") {
+            for (let j = 0; j < path.groups.length; j++) {
+                groupItemsHtml += renderCourseGroup(path.groups[j]);
+                if (j < path.groups.length - 1) {
+                    const join = path.joins[j] || "or";
+                    const { className, text } = groupSepMeta(join);
+                    groupItemsHtml += `<li class="${className}">${text}</li>`;
+                }
+            }
+        } else {
+            groupItemsHtml += renderCourseGroup(path);
+        }
+
+        pathsHtml += `
+            <div class="articulation-path has-tooltip">
+                ${contextHtml}
+                <ul class="course-list">
+                    ${groupItemsHtml}
+                </ul>
+            </div>
+        `;
+
+        if (i < paths.length - 1) {
+            pathsHtml += `
+                <div class="path-separator">
+                    <span class="path-or-badge">
+                        OR
+                        <div class="or-tooltip">These alternatives come from major-specific articulations or conflicting major and departmental agreements.</div>
+                    </span>
+                </div>
+            `;
         }
     }
 
@@ -489,9 +533,7 @@ function createArticulationCard(collegeData) {
             <h3 class="college-name">${college}</h3>
         </div>
         <div class="card-body">
-            <ul class="course-list">
-                ${groupItemsHtml}
-            </ul>
+            ${pathsHtml}
         </div>
     </div>
   `;
