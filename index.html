@@ -46,42 +46,40 @@
     <main>
         <div class="search-section">
             <div class="form-group">
-                <label for="university-select" class="form-label">University</label>
-                <div class="select-wrapper">
-                    <select id="university-select" class="form-control">
-                        <option value="" disabled selected hidden>Select a university...</option>
-                    </select>
+                <label for="university-search" class="form-label">University</label>
+                <div class="select-wrapper custom-select-wrapper">
+                    <input type="text" id="university-search" class="form-control" placeholder="Select a university..."
+                    autocomplete="off" spellcheck="false" autocapitalize="off">
+                    <div id="university-dropdown" class="custom-options-list"></div>
                     <span class="loading-spinner" id="university-loader" style="display: none;"></span>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="view-by-select" class="form-label">View By</label>
-                <div class="select-wrapper">
-                    <select id="view-by-select" class="form-control">
-                        <option value="subject" selected>Subject</option>
-                        <option value="major">Major</option>
-                        <option value="ge">General Education</option>
-                    </select>
+                <label for="view-by-search" class="form-label">View By</label>
+                <div class="select-wrapper custom-select-wrapper">
+                    <input type="text" id="view-by-search" class="form-control" value="Subject" readonly
+                    autocomplete="off" spellcheck="false" autocapitalize="off">
+                    <div id="view-by-dropdown" class="custom-options-list"></div>
                 </div>
             </div>
 
             <div class="form-group">
-                <label id="category-label" for="category-select" class="form-label">Subject</label>
-                <div class="select-wrapper">
-                    <select id="category-select" class="form-control" disabled>
-                        <option value="" disabled selected hidden>Select a subject...</option>
-                    </select>
+                <label id="category-label" for="category-search" class="form-label">Subject</label>
+                <div class="select-wrapper custom-select-wrapper">
+                    <input type="text" id="category-search" class="form-control" placeholder="Select a subject..." disabled
+                    autocomplete="off" spellcheck="false" autocapitalize="off">
+                    <div id="category-dropdown" class="custom-options-list"></div>
                     <span class="loading-spinner" id="category-loader" style="display: none;"></span>
                 </div>
             </div>
 
             <div class="form-group">
-                <label id="item-label" for="item-select" class="form-label">Course</label>
-                <div class="select-wrapper">
-                    <select id="item-select" class="form-control" disabled>
-                        <option value="" disabled selected hidden>Select a course...</option>
-                    </select>
+                <label id="item-label" for="item-search" class="form-label">Course</label>
+                <div class="select-wrapper custom-select-wrapper">
+                    <input type="text" id="item-search" class="form-control" placeholder="Select a course..." disabled
+                    autocomplete="off" spellcheck="false" autocapitalize="off">
+                    <div id="item-dropdown" class="custom-options-list"></div>
                     <span class="loading-spinner" id="item-loader" style="display: none;"></span>
                 </div>
             </div>

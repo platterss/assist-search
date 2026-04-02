@@ -1,31 +1,6 @@
-let currentState = {
-    viewBy: "subject",
-    selectedUniversity: null,
-    selectedCategory: null,
-    selectedItem: null
-};
-
-let REGISTRY = { colleges: {}, courses: {} }
-
-const universitySelect = document.getElementById("university-select");
-const viewBySelect = document.getElementById("view-by-select");
-const categorySelect = document.getElementById("category-select");
-const itemSelect = document.getElementById("item-select");
-
-const categoryLabel = document.getElementById("category-label");
-const itemLabel = document.getElementById("item-label");
-
-const universityLoader = document.getElementById("university-loader");
-const categoryLoader = document.getElementById("category-loader");
-const itemLoader = document.getElementById("item-loader");
-
-const resultsSection = document.getElementById("articulation-results");
-const articulationCards = document.getElementById("articulation-cards");
-const noArticulations = document.getElementById("no-articulations");
-
-const selectedCourseDisplay = document.getElementById("selected-course-display");
-const loadingDiv = document.getElementById("articulation-loading");
-
+// ==========================================
+// CONFIGURATION & STATE
+// ==========================================
 const DATA_PATHS = {
     institutions: "./data/institutions.json",
     ccRegistry: "./data/colleges/cc_registry.json",
@@ -36,39 +11,64 @@ const DATA_PATHS = {
     geCategories: (uni) => `./data/universities/${encodeURIComponent(uni)}/GEs/ge_categories.json`
 };
 
+let currentState = {
+    viewBy: "subject",
+    selectedUniversity: null,
+    selectedCategory: null,
+    selectedItem: null
+};
+
+let REGISTRY = { colleges: {}, courses: {} };
 const CACHE = new Map();
 const currentItemsMap = new Map();
 
-const themeToggle = document.getElementById("theme-toggle");
+
+// ==========================================
+// DOM ELEMENTS
+// ==========================================
 const html = document.documentElement;
 const body = document.body;
+const themeToggle = document.getElementById("theme-toggle");
 
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "dark") {
-    html.classList.add("dark-mode");
-} else if (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    html.classList.add("dark-mode");
-}
+// Custom Dropdowns
+const uniSearch = document.getElementById("university-search");
+const uniDropdown = document.getElementById("university-dropdown");
+const viewBySearch = document.getElementById("view-by-search");
+const viewByDropdown = document.getElementById("view-by-dropdown");
+const catSearch = document.getElementById("category-search");
+const catDropdown = document.getElementById("category-dropdown");
+const itemSearch = document.getElementById("item-search");
+const itemDropdown = document.getElementById("item-dropdown");
+const allCustomDropdowns = document.querySelectorAll(".custom-options-list");
 
-themeToggle.addEventListener("click", () => {
-    html.classList.toggle("dark-mode");
+// Labels & Loaders
+const categoryLabel = document.getElementById("category-label");
+const itemLabel = document.getElementById("item-label");
+const universityLoader = document.getElementById("university-loader");
+const categoryLoader = document.getElementById("category-loader");
+const itemLoader = document.getElementById("item-loader");
 
-    const isDark = html.classList.contains("dark-mode");
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-});
+// Results UI
+const resultsSection = document.getElementById("articulation-results");
+const articulationCards = document.getElementById("articulation-cards");
+const noArticulations = document.getElementById("no-articulations");
+const selectedCourseDisplay = document.getElementById("selected-course-display");
+const loadingDiv = document.getElementById("articulation-loading");
 
+
+// ==========================================
+// UTILITY FUNCTIONS
+// ==========================================
 function getSafeFileName(name) {
     return name.replace(/\//g, "-").replace(/:/g, "").replace(/\*/g, "=").replace(/>/g, "").trim();
 }
 
 async function getJson(url) {
     const res = await fetch(url)
-
     if (!res.ok) {
         const detail = await res.text().catch(() => "");
         throw new Error(`Fetch failed ${res.status}: ${detail || res.statusText}`)
     }
-
     return res.json()
 }
 
@@ -76,30 +76,150 @@ async function fetchWithCache(key, fetcher) {
     if (!CACHE.has(key)) {
         CACHE.set(key, fetcher());
     }
-
     return CACHE.get(key);
 }
 
-async function loadRegistry() {
-    try {
-        REGISTRY = await fetchWithCache("registry", () => getJson(DATA_PATHS.ccRegistry));
-        console.log("Loaded CC registry:", Object.keys(REGISTRY.colleges || {}).length, "colleges")
-    } catch (e) {
-        console.error("Failed to load CC registry:", e);
-        throw e;
+function generateAliases(uni) {
+    const aliases = new Set();
+    const addAlias = (...items) => items.forEach(item => aliases.add(item.toLowerCase()));
+
+    if (uni.category === "UC") {
+        const campus = uni.name.split(",")[1]?.trim();
+        const initials = campus.split(" ").map(w => w[0]).join("").toUpperCase();
+        addAlias(`UC${initials}`, `UC ${campus}`);
     }
+
+    if (uni.category === "CSU") {
+        const campus = uni.name.split(",")[1]?.trim();
+
+        if (campus) {  // Avoids undefined from CSUs without comma (SJSU, SDSU, etc.)
+            if (uni.name.includes("Polytechnic")) {
+                if (uni.name.includes("San Luis Obispo")) {
+                    addAlias("CPSLO", "Cal Poly SLO");
+                } else if (uni.name.includes("Pomona")) {
+                    addAlias("CPP", "Cal Poly Pomona");
+                } else if (uni.name.includes("Humboldt")) {
+                    addAlias("CPH", "Cal Poly Humboldt");
+                }
+            } else {
+                const initials = campus.split(" ").map(w => w[0]).join("").toUpperCase();
+                addAlias(`CSU${initials}`, `CSU ${campus}`)
+            }
+        }
+    }
+
+    // Generic
+    const cleanName = uni.name.replace(/[^a-zA-Z\s]/g, "");
+    const words = cleanName.split(" ").filter(w => w.length > 0 && w[0] === w[0].toUpperCase() && !["Of", "The", "And"].includes(w));
+    if (words.length > 1) {
+        addAlias(words.map(w => w[0]).join("").toUpperCase());
+    }
+
+    return Array.from(aliases).join(" ");
 }
 
+
+// ==========================================
+// CUSTOM DROPDOWNS
+// ==========================================
+function createCustomOption(title, subtitle, onClickCallback, searchAliases = "") {
+    const div = document.createElement("div");
+    div.className = "custom-option";
+    div.dataset.aliases = searchAliases.toLowerCase();
+
+    const titleSpan = document.createElement("span");
+    titleSpan.className = "custom-option-title";
+    titleSpan.textContent = title;
+    div.appendChild(titleSpan);
+
+    if (subtitle) {
+        const subSpan = document.createElement("span");
+        subSpan.className = "custom-option-subtitle";
+        subSpan.innerHTML = subtitle;
+        div.appendChild(subSpan);
+    }
+
+    // Cache the strings so we don't have to keep reading from the DOM
+    div._searchString = div.textContent.toLowerCase();
+    div._searchAliases = searchAliases.toLowerCase();
+
+    div.addEventListener("click", onClickCallback);
+    return div;
+}
+
+function createCustomGroup(label) {
+    const div = document.createElement("div");
+    div.className = "custom-optgroup";
+    div.textContent = label;
+    return div;
+}
+
+function setupSearchableDropdown(inputEl, dropdownEl) {
+    // Highlight automatically to allow immediate typing
+    inputEl.addEventListener("focus", (e) => {
+        allCustomDropdowns.forEach(dropdown => {
+            if (dropdown !== dropdownEl) {
+                dropdown.classList.remove("show");
+            }
+        });
+
+        dropdownEl.classList.add("show");
+        setTimeout(() => e.target.select(), 10);
+    });
+
+    inputEl.addEventListener("input", (e) => {
+        const query = e.target.value.toLowerCase();
+        dropdownEl.classList.add("show");
+
+        let currentGroup = null;
+        let groupHasVisibleChild = false;
+        let lastVisibleElement = null;
+
+        for (const el of dropdownEl.children) {
+            el.classList.remove("last-visible");
+
+            if (el.classList.contains("custom-optgroup")) {
+                if (currentGroup && !groupHasVisibleChild) {
+                    currentGroup.style.display = "none";
+                }
+
+                currentGroup = el;
+                groupHasVisibleChild = false;
+                el.style.display = "block";
+            } else {
+                const text = el._searchString;
+                const aliases = el._searchAliases;
+
+                if (text.includes(query) || aliases.includes(query)) {
+                    el.style.display = "flex";
+                    groupHasVisibleChild = true;
+                    lastVisibleElement = el;
+                } else {
+                    el.style.display = "none";
+                }
+            }
+        }
+
+        if (currentGroup && !groupHasVisibleChild) {
+            currentGroup.style.display = "none";
+        }
+
+        if (lastVisibleElement) {
+            lastVisibleElement.classList.add("last-visible");
+        }
+    });
+}
+
+
+// ==========================================
+// DOM & UI HELPERS
+// ==========================================
 function enableDropdown(dropdownElement) {
     dropdownElement.disabled = false;
-}
 
+}
 function disableDropdown(dropdownElement) {
     dropdownElement.disabled = true;
-}
-
-function clearDropdown(element, defaultText) {
-    element.innerHTML = `<option value="" disabled selected hidden>${defaultText}</option>`;
 }
 
 function showLoader(loaderElement) {
@@ -110,14 +230,252 @@ function hideLoader(loaderElement) {
     loaderElement.style.display = "none";
 }
 
+function clearArticulations() {
+    resultsSection.style.display = "none";
+    articulationCards.innerHTML = "";
+    noArticulations.style.display = "none";
+}
+
+function resetDropdowns(level) {
+    clearArticulations();
+    if (level <= 1) {
+        catSearch.value = "";
+        catSearch.placeholder = `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
+        disableDropdown(catSearch);
+        currentState.selectedCategory = null;
+    }
+    if (level <= 2) {
+        itemSearch.value = "";
+        itemSearch.placeholder = `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`;
+        disableDropdown(itemSearch);
+        currentState.selectedItem = null;
+    }
+}
+
+
+// ==========================================
+// DATA FETCHING & POPULATORS
+// ==========================================
+async function loadRegistry() {
+    try {
+        REGISTRY = await fetchWithCache("registry", () => getJson(DATA_PATHS.ccRegistry));
+        console.log("Loaded CC registry:", Object.keys(REGISTRY.colleges || {}).length, "colleges")
+    } catch (e) {
+        console.error("Failed to load CC registry:", e);
+        throw e;
+    }
+}
+
+async function populateUniversities() {
+    try {
+        showLoader(universityLoader);
+        disableDropdown(uniSearch);
+        uniSearch.value = "";
+        uniDropdown.innerHTML = "";
+
+        let universities = await fetchWithCache("institutions", () => getJson(DATA_PATHS.institutions));
+        universities = universities.filter(u => u.category !== "CCC");
+
+        const CATEGORY_WEIGHTS = { "UC": 0, "CSU": 1, "AICCU": 2 };
+        universities.sort((a, b) => (CATEGORY_WEIGHTS[a.category] ?? 3) - (CATEGORY_WEIGHTS[b.category] ?? 3) || a.name.localeCompare(b.name));
+
+        const fragment = document.createDocumentFragment();
+        let currentCategory = null;
+
+        for (const uni of universities) {
+            if (uni.category !== currentCategory) {
+                currentCategory = uni.category;
+                const labels = { "UC": "University of California", "CSU": "California State University", "AICCU": "Independent (AICCU)" };
+                fragment.appendChild(createCustomGroup(labels[currentCategory]));
+            }
+
+            const aliases = generateAliases(uni);
+            const option = createCustomOption(uni.name, null, async () => {
+                uniSearch.value = uni.name;
+                uniDropdown.classList.remove("show");
+                currentState.selectedUniversity = uni.name;
+                resetDropdowns(1);
+                await populateCategories(uni.name);
+            }, aliases);
+
+            fragment.appendChild(option);
+        }
+
+        uniDropdown.appendChild(fragment);
+        enableDropdown(uniSearch);
+    } catch (error) {
+        console.error("Error:", error);
+    } finally {
+        hideLoader(universityLoader);
+    }
+}
+
+function initializeViewBy() {
+    viewByDropdown.innerHTML = "";
+    const options = [
+        { value: "subject", title: "Subject", sub: "Search by academic department" },
+        { value: "major", title: "Major", sub: "Search by degree program" },
+        { value: "ge", title: "General Education", sub: "Search by GE pattern" }
+    ];
+
+    options.forEach(opt => {
+        const el = createCustomOption(opt.title, opt.sub, async () => {
+            viewBySearch.value = opt.title;
+            viewByDropdown.classList.remove("show");
+
+            currentState.viewBy = opt.value;
+            currentState.selectedCategory = null;
+            currentState.selectedItem = null;
+
+            categoryLabel.textContent = opt.value === "subject" ? "Subject" : opt.value === "major" ? "Major" : "GE Category";
+            itemLabel.textContent = opt.value === "subject" ? "Course" : opt.value === "major" ? "Requirement" : "Area";
+
+            resetDropdowns(1);
+            if (currentState.selectedUniversity) {
+                await populateCategories(currentState.selectedUniversity);
+            }
+        });
+        viewByDropdown.appendChild(el);
+    });
+}
+
+async function populateCategories(universityName) {
+    try {
+        showLoader(categoryLoader);
+        disableDropdown(catSearch);
+        catSearch.value = "";
+        catSearch.placeholder = `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
+        catDropdown.innerHTML = "";
+
+        let cacheKey, dataPath, getValue, getTitle, getSubtitle;
+
+        if (currentState.viewBy === "subject") {
+            cacheKey = `subjectCategories:${universityName}`;
+            dataPath = DATA_PATHS.subjectCategories(universityName);
+            getValue = (item) => item.prefix;
+            getTitle = (item) => item.prefix;
+            getSubtitle = (item) => item.name;
+        } else if (currentState.viewBy === "major") {
+            cacheKey = `majorCategories:${universityName}`;
+            dataPath = DATA_PATHS.majorCategories(universityName);
+            getValue = (item) => item;
+            getTitle = (item) => item;
+            getSubtitle = () => null;
+        } else if (currentState.viewBy === "ge") {
+            cacheKey = `geCategories:${universityName}`;
+            dataPath = DATA_PATHS.geCategories(universityName);
+            getValue = (item) => item.name;
+            getTitle = (item) => item.name;
+            getSubtitle = () => null;
+        }
+
+        const items = await fetchWithCache(cacheKey, () => getJson(dataPath));
+        const fragment = document.createDocumentFragment();
+
+        for (const item of items) {
+            const val = getValue(item);
+            const option = createCustomOption(getTitle(item), getSubtitle(item), async () => {
+                catSearch.value = getTitle(item);
+                catDropdown.classList.remove("show");
+
+                currentState.selectedCategory = val;
+                resetDropdowns(2);
+                await populateItems(universityName, val);
+                loadRegistry().catch(console.error);
+            });
+            fragment.appendChild(option);
+        }
+
+        catDropdown.appendChild(fragment);
+        enableDropdown(catSearch);
+    } catch (error) {
+        console.error("Error:", error);
+    } finally {
+        hideLoader(categoryLoader);
+    }
+}
+
+async function getItemsData(universityName, categoryVal) {
+    const view = currentState.viewBy;
+    if (view === "subject") {
+        return await fetchWithCache(`subItems:${universityName}|${categoryVal}`, () => getJson(DATA_PATHS.subjectItems(universityName, categoryVal)));
+    } else if (view === "major") {
+        const majorObj = await fetchWithCache(`majItems:${universityName}|${categoryVal}`, () => getJson(DATA_PATHS.majorItems(universityName, categoryVal)));
+        return majorObj.courses || [];
+    } else if (view === "ge") {
+        const ges = await fetchWithCache(`geCats:${universityName}`, () => getJson(DATA_PATHS.geCategories(universityName)));
+        const targetGe = ges.find(g => g.name === categoryVal);
+        return targetGe ? targetGe.courses : [];
+    }
+    return [];
+}
+
+async function populateItems(universityName, categoryVal) {
+    try {
+        showLoader(itemLoader);
+        disableDropdown(itemSearch);
+        itemSearch.value = "";
+        itemSearch.placeholder = `Select a ${currentState.viewBy === "subject" ? "course" : "requirement"}...`;
+        itemDropdown.innerHTML = "";
+
+        const items = await getItemsData(universityName, categoryVal);
+        const fragment = document.createDocumentFragment();
+        currentItemsMap.clear();
+
+        items.forEach(course => {
+            const key = getItemKey(course);
+            course._key = key;
+            currentItemsMap.set(key, course);
+
+            const labels = buildCourseFullLabel(course);
+
+            const option = createCustomOption(labels.title, labels.subtitle, async () => {
+                itemSearch.value = labels.title;
+                itemDropdown.classList.remove("show");
+
+                currentState.selectedItem = key;
+                clearArticulations();
+
+                resultsSection.style.display = "block";
+                loadingDiv.style.display = "flex";
+
+                try {
+                    await loadRegistry();
+                    const targetItem = currentItemsMap.get(key);
+                    const articulationData = {
+                        courseFull: buildCourseFullLabel(targetItem, true),
+                        articulations: targetItem ? normalizeArticulations(targetItem) : []
+                    };
+                    displayArticulations(articulationData, articulationData.courseFull);
+                } catch (error) {
+                    console.error("Error fetching articulations:", error);
+                    loadingDiv.style.display = "none";
+                }
+            });
+
+            fragment.appendChild(option);
+        });
+
+        itemDropdown.appendChild(fragment);
+        enableDropdown(itemSearch);
+    } catch (error) {
+        console.error("Error:", error);
+    } finally {
+        hideLoader(itemLoader);
+    }
+}
+
+
+// ==========================================
+// DATA PARSING & RENDERING
+// ==========================================
 function getItemKey(item) {
     if (item.course_id !== undefined) {
         return `COURSE:${item.course_id}`;
     }
 
     if (item.courses) {
-        const ids = item.courses.map(c => c.course_id).join("|");
-        return `SERIES:${item.conjunction}:${ids}`;
+        return `SERIES:${item.conjunction}:${item.courses.map(c => c.course_id).join("|")}`;
     }
 
     if (item.area_type) {
@@ -132,235 +490,51 @@ function getItemKey(item) {
 }
 
 function buildCourseFullLabel(item, multiline = false) {
-    if (!item) {
-        return "";
-    }
+    let title, subtitle, html;
 
     if (item.course_id !== undefined) {
-        if (multiline) {
-            return `<strong>${item.prefix} ${item.number}</strong> - ${item.title}`;
-        }
-        return `${item.prefix} ${item.number} - ${item.title}`;
-    }
-
-    if (item.courses) {
+        title = `${item.prefix} ${item.number}`;
+        subtitle = item.title || "";
+        html = subtitle ? `<strong>${title}</strong> - ${subtitle}` : `<strong>${title}</strong>`;
+    } else if (item.courses) {
         const conj = (item.conjunction || "AND").toUpperCase();
+        const codes = [], names = [], htmlParts = [];
 
-        if (multiline) {
-            const separatorHtml = `<br><i><strong>${conj}</strong></i><br>`;
-
-            return item.courses.map(c => {
-                const title = c.title ? ` - ${c.title}` : "";
-                return `<strong>${c.prefix} ${c.number}</strong>${title}`;
-            }).join(separatorHtml);
-        } else {
-            const codes = [];
-            const names = [];
-
-            for (const c of item.courses) {
-                const codeString = `${c.prefix} ${c.number}`;
-                codes.push(codeString);
-                names.push(c.title || codeString);
-            }
-
-            return `${codes.join(` ${conj} `)} - ${names.join(` ${conj} `)}`;
-        }
-    }
-
-    if (item.area_type) {
-        return `${item.code} - ${item.name}`;
-    }
-
-    if (item.name) {
-        return `${item.name}`;
-    }
-
-    return "Unknown Item";
-}
-
-async function populateUniversities() {
-    try {
-        showLoader(universityLoader);
-        disableDropdown(universitySelect);
-
-        let universities = await fetchWithCache("institutions", () => getJson(DATA_PATHS.institutions));
-        universities = universities.filter(u => u.category !== "CCC");
-
-        const CATEGORY_WEIGHTS = { "UC": 0, "CSU": 1, "AICCU": 2 };
-        const sorted = universities.sort((a, b) => {
-            const categoryDiff = (CATEGORY_WEIGHTS[a.category] ?? 3) - (CATEGORY_WEIGHTS[b.category] ?? 3);
-
-            if (categoryDiff !== 0) {
-                return categoryDiff;
-            }
-
-            return a.name.localeCompare(b.name, undefined, {sensitivity: "base"});
-        })
-
-        clearDropdown(universitySelect, "Select a university...");
-
-        const fragment = document.createDocumentFragment();
-        let currentCategory = null;
-        let currentOptGroup = null;
-
-        for (const university of sorted) {
-            if (university.category !== currentCategory) {
-                currentCategory = university.category;
-                currentOptGroup = document.createElement("optgroup");
-
-                if (currentCategory === "UC") {
-                    currentOptGroup.label = "University of California";
-                } else if (currentCategory === "CSU") {
-                    currentOptGroup.label = "California State University";
-                } else if (currentCategory === "AICCU") {
-                    currentOptGroup.label = "Independent (AICCU)";
-                }
-
-                fragment.appendChild(currentOptGroup);
-            }
-
-            const option = document.createElement("option");
-            option.value = university.id;
-            option.textContent = university.name;
-            currentOptGroup.appendChild(option);
+        for (const c of item.courses) {
+            const codeString = `${c.prefix} ${c.number}`;
+            codes.push(codeString);
+            names.push(c.title || codeString);
+            htmlParts.push(`<strong>${codeString}</strong>${c.title ? ` - ${c.title}` : ""}`);
         }
 
-        universitySelect.appendChild(fragment);
-        enableDropdown(universitySelect);
-        console.log("University dropdown populated with", universities.length, "options");
-    } catch (error) {
-        console.error("Error loading universities:", error);
-        alert("Failed to load universities. Please refresh the page.");
-    } finally {
-        hideLoader(universityLoader);
-    }
-}
-
-async function populateCategories(universityName) {
-    try {
-        showLoader(categoryLoader);
-        disableDropdown(categorySelect);
-
-        const view = currentState.viewBy;
-        const defaultText = `Select a ${view === "ge" ? "category" : view}...`;
-        clearDropdown(categorySelect, defaultText);
-
-        let cacheKey, dataPath, getValue, getLabel;
-
-        if (view === "subject") {
-            cacheKey = `subjectCategories:${universityName}`;
-            dataPath = DATA_PATHS.subjectCategories(universityName);
-            getValue = (item) => item.prefix;
-            getLabel = (item) => `${item.prefix} - ${item.name}`;
-        } else if (view === "major") {
-            cacheKey = `majorCategories:${universityName}`;
-            dataPath = DATA_PATHS.majorCategories(universityName);
-            getValue = (item) => item;
-            getLabel = (item) => item;
-        } else if (view === "ge") {
-            cacheKey = `geCategories:${universityName}`;
-            dataPath = DATA_PATHS.geCategories(universityName);
-            getValue = (item) => item.name;
-            getLabel = (item) => item.name;
-        }
-
-        const items = await fetchWithCache(cacheKey, () => getJson(dataPath));
-        const fragment = document.createDocumentFragment();
-
-        for (const item of items) {
-            const option = document.createElement("option");
-            option.value = getValue(item);
-            option.textContent = getLabel(item);
-            fragment.appendChild(option);
-        }
-
-        categorySelect.appendChild(fragment);
-        enableDropdown(categorySelect);
-    } catch (error) {
-        console.error("Error loading subjects:", error);
-
-        if (error.message.includes("404")) {
-            alert(`This university does not have ${currentState.viewBy} data available.`)
-        } else {
-            alert("Failed to load categories. Please try again.");
-        }
-    } finally {
-        hideLoader(categoryLoader);
-    }
-}
-
-async function getItemsData(universityName, categoryVal) {
-    const view = currentState.viewBy;
-
-    if (view === "subject") {
-        return await fetchWithCache(`subItems:${universityName}|${categoryVal}`, () => getJson(DATA_PATHS.subjectItems(universityName, categoryVal)));
-    } else if (view === "major") {
-        const majorObj = await fetchWithCache(`majItems:${universityName}|${categoryVal}`, () => getJson(DATA_PATHS.majorItems(universityName, categoryVal)));
-        return majorObj.courses || [];
-    } else if (view === "ge") {
-        const ges = await fetchWithCache(`geCats:${universityName}`, () => getJson(DATA_PATHS.geCategories(universityName)));
-        const targetGe = ges.find(g => g.name === categoryVal);
-        return targetGe ? targetGe.courses : [];
+        title = codes.join(` ${conj.toLowerCase()} `);
+        subtitle = names.join(`,<br>`);
+        html = htmlParts.join(`<br><i><strong>${conj}</strong></i><br>`);
+    } else if (item.area_type) {
+        title = item.code;
+        subtitle = item.name || "";
+        html = `<strong>${title}</strong> - ${subtitle}`;
+    } else if (item.name) {
+        title = item.name;
+        subtitle = "";
+        html = `<strong>${title}</strong>`;
+    } else {
+        title = "Unknown Item";
+        subtitle = "";
+        html = "<strong>Unknown Item</strong>";
     }
 
-    return [];
+    return multiline ? html : { title, subtitle };
 }
 
-async function populateItems(universityName, categoryVal) {
-    try {
-        showLoader(itemLoader);
-        disableDropdown(itemSelect);
-
-        const defaultText = `Select a ${currentState.viewBy === "subject" ? "course" : "requirement"}...`;
-        clearDropdown(itemSelect, defaultText);
-
-        const items = await getItemsData(universityName, categoryVal);
-        const fragment = document.createDocumentFragment();
-
-        currentItemsMap.clear();
-
-        items.forEach(course => {
-            const key = getItemKey(course);
-            course._key = key;
-
-            currentItemsMap.set(key, course);
-
-            const option = document.createElement("option");
-            option.value = key;
-            option.textContent = buildCourseFullLabel(course);
-            fragment.appendChild(option);
-        });
-
-        itemSelect.appendChild(fragment);
-        enableDropdown(itemSelect);
-        console.log("Populated course dropdown with", items.length, "options");
-    } catch (error) {
-        console.error("Error loading items:", error);
-        alert("Failed to load items. Please try again.");
-    } finally {
-        hideLoader(itemLoader);
-    }
-}
-
-// Helper for normalizeArticulations
 function processSeriesCourses(rawCourses) {
     const courses = [];
 
     for (const seriesCourse of rawCourses) {
         const ccCourse = REGISTRY.courses[seriesCourse.course_id];
-
-        let label;
-        if (ccCourse) {
-            if (!ccCourse._cachedLabel) {
-                ccCourse._cachedLabel = `${ccCourse.prefix} ${ccCourse.number} - ${ccCourse.title}`;
-            }
-
-            label = ccCourse._cachedLabel;
-        } else {
-            label = `Unknown Course (${seriesCourse.course_id})`;
-        }
-
-        courses.push({ label, notes: seriesCourse.notes || [] });
+        let title = `${ccCourse.prefix} ${ccCourse.number}`;
+        let subtitle = ccCourse.title;
+        courses.push({ title, subtitle, notes: seriesCourse.notes || [] });
     }
 
     return courses;
@@ -368,7 +542,6 @@ function processSeriesCourses(rawCourses) {
 
 function normalizeArticulations(course) {
     const raw = course?.articulations;
-
     if (!Array.isArray(raw)) {
         return [];
     }
@@ -388,11 +561,10 @@ function normalizeArticulations(course) {
             const globalNotes = articulation.notes || [];
             const conjunctions = articulation.conjunctions || [];
             const artItems = articulation.items || [];
-
             const groups = [];
+
             for (const series of artItems) {
                 const courses = processSeriesCourses(series.courses || []);
-
                 groups.push({
                     type: courses.length <= 1 ? "single" : (series.conjunction || "OR").toLowerCase(),
                     courses: courses,
@@ -407,14 +579,11 @@ function normalizeArticulations(course) {
             let topLevelNode;
             if (groups.length === 1) {
                 topLevelNode = groups[0];
-
-                if (globalNotes.length > 0) {
-                    topLevelNode.notes.push(...globalNotes);
-                }
+                if (globalNotes.length > 0) topLevelNode.notes.push(...globalNotes);
             } else {
                 topLevelNode = {
                     type: "nested",
-                    joins: conjunctions.map(conjunction => (conjunction || "or").toLowerCase()),
+                    joins: conjunctions.map(c => (c || "or").toLowerCase()),
                     groups: groups,
                     notes: globalNotes
                 };
@@ -426,21 +595,11 @@ function normalizeArticulations(course) {
             if (!byCollege.has(collegeName)) {
                 byCollege.set(collegeName, []);
             }
-
             byCollege.get(collegeName).push(topLevelNode);
         }
     }
 
-    return Array.from(byCollege, ([college, paths]) => ({
-        college,
-        paths
-    }));
-}
-
-function clearArticulations() {
-    resultsSection.style.display = "none";
-    articulationCards.innerHTML = "";
-    noArticulations.style.display = "none";
+    return Array.from(byCollege, ([college, paths]) => ({ college, paths }));
 }
 
 function renderNotes(notes, position = "below") {
@@ -449,14 +608,9 @@ function renderNotes(notes, position = "below") {
     }
 
     const className = position === "above" ? "course-notes-above" : "course-notes";
-
     let notesHtml = "";
     for (const note of notes) {
-        notesHtml += `
-        <div class="note-item">
-            <span class="note-text">${note}</span>
-        </div>
-        `;
+        notesHtml += `<div class="note-item"><span class="note-text">${note}</span></div>`;
     }
 
     return `<div class="${className}">${notesHtml}</div>`;
@@ -470,108 +624,13 @@ function groupSepMeta(join) {
     };
 }
 
-function createArticulationCard(collegeData) {
-    const { college, paths } = collegeData;
-    let pathsHtml = "";
-
-    for (let i = 0; i < paths.length; i++) {
-        const path = paths[i];
-
-        let contextHtml = "";
-        if (path.contexts && path.contexts.length > 0) {
-            const uniqueContexts = [...new Set(path.contexts)];
-            const tags = uniqueContexts.map(c => `<div class="context-tag">${c}</div>`).join("");
-
-            contextHtml = `
-                <div class="context-tooltip">
-                    <div class="context-tooltip-content">
-                        <span class="context-tooltip-header">Articulated In</span>
-                        ${tags}
-                    </div>
-                </div>
-            `;
-        }
-
-        let groupItemsHtml = "";
-        if (path.type === "nested") {
-            for (let j = 0; j < path.groups.length; j++) {
-                groupItemsHtml += renderCourseGroup(path.groups[j]);
-                if (j < path.groups.length - 1) {
-                    const join = path.joins[j] || "or";
-                    const { className, text } = groupSepMeta(join);
-                    groupItemsHtml += `<li class="${className}">${text}</li>`;
-                }
-            }
-        } else {
-            groupItemsHtml += renderCourseGroup(path);
-        }
-
-        pathsHtml += `
-            <div class="articulation-path has-tooltip">
-                ${contextHtml}
-                <ul class="course-list">
-                    ${groupItemsHtml}
-                </ul>
-            </div>
-        `;
-
-        if (i < paths.length - 1) {
-            pathsHtml += `
-                <div class="path-separator">
-                    <span class="path-or-badge">
-                        OR
-                        <div class="or-tooltip">These alternatives come from major-specific articulations or conflicting major and departmental agreements.</div>
-                    </span>
-                </div>
-            `;
-        }
-    }
-
-    return `
-    <div class="articulation-card">
-        <div class="card-header">
-            <h3 class="college-name">${college}</h3>
-        </div>
-        <div class="card-body">
-            ${pathsHtml}
-        </div>
-    </div>
-  `;
-}
-
-function displayArticulations(articulationData, selectedCourse) {
-    const {articulations} = articulationData;
-
-    loadingDiv.style.display = "none";
-    resultsSection.style.display = "block";
-    selectedCourseDisplay.innerHTML = `Showing <strong>${articulations.length}</strong> articulation${articulations.length === 1 ? '' : 's'} for:<br>${selectedCourse}`;
-
-    if (articulations.length === 0) {
-        articulationCards.innerHTML = "";
-        noArticulations.style.display = "block";
-    } else {
-        noArticulations.style.display = "none";
-
-        let cardsHtml = "";
-        for (const articulation of articulations) {
-            cardsHtml += createArticulationCard(articulation);
-        }
-
-        articulationCards.innerHTML = cardsHtml;
-    }
-}
-
 function renderCourseItem(course) {
     if (typeof course === "string") {
         return `<div class="course-chip">${course}</div>`;
     }
 
-    const label =
-        course.label ??
-        [course.prefix, course.number].filter(Boolean).join(" ") +
-        (course.title ? ` - ${course.title}` : "");
-
-    let html = `<div class="course-chip">${label}</div>`;
+    let innerHtml = `<span class="chip-title">${course.title}</span><span class="chip-subtitle">${course.subtitle}</span>`;
+    let html = `<span class="course-chip">${innerHtml}</span>`;
 
     if (Array.isArray(course.notes) && course.notes.length) {
         html += renderNotes(course.notes, "below");
@@ -598,11 +657,8 @@ function renderCourseGroup(group) {
         let inner = "";
         for (let i = 0; i < courses.length; i++) {
             inner += renderCourseItem(courses[i]);
-            if (i < courses.length - 1) {
-                inner += `<div class="course-separator ${sepClass}">${sepText}</div>`;
-            }
+            if (i < courses.length - 1) inner += `<div class="course-separator ${sepClass}">${sepText}</div>`;
         }
-
         return `<li class="course-item"><div class="${boxClass}">${inner}</div>${notesHtml}</li>`;
     }
 
@@ -611,119 +667,117 @@ function renderCourseGroup(group) {
         let nestedHtml = "";
         for (let i = 0; i < group.groups.length; i++) {
             nestedHtml += renderCourseGroup(group.groups[i]);
-
             if (i < group.groups.length - 1) {
-                const join = (joins && (joins[i] === "and" || joins[i] === "or"))
-                    ? joins[i]
-                    : (String(group.join || "or").toLowerCase());
+                const join = (joins && (joins[i] === "and" || joins[i] === "or")) ? joins[i] : (String(group.join || "or").toLowerCase());
                 if (join === "and" || join === "or") {
                     const { className, text } = groupSepMeta(join);
                     nestedHtml += `<li class="${className}">${text}</li>`;
                 }
             }
         }
-
         return nestedHtml;
     }
-
     return "";
 }
 
-function resetDropdowns(level) {
-    clearArticulations();
+function createArticulationCard(collegeData) {
+    const { college, paths } = collegeData;
+    let pathsHtml = "";
 
-    if (level <= 1) { // Reset Category
-        clearDropdown(categorySelect, `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`);
-        disableDropdown(categorySelect);
-        currentState.selectedCategory = null;
+    for (let i = 0; i < paths.length; i++) {
+        const path = paths[i];
+        let contextHtml = "";
+
+        if (path.contexts && path.contexts.length > 0) {
+            const uniqueContexts = [...new Set(path.contexts)];
+            const tags = uniqueContexts.map(c => `<div class="context-tag">${c}</div>`).join("");
+            contextHtml = `<div class="context-tooltip"><div class="context-tooltip-content"><span class="context-tooltip-header">Articulated In</span>${tags}</div></div>`;
+        }
+
+        let groupItemsHtml = "";
+        if (path.type === "nested") {
+            for (let j = 0; j < path.groups.length; j++) {
+                groupItemsHtml += renderCourseGroup(path.groups[j]);
+                if (j < path.groups.length - 1) {
+                    const join = path.joins[j] || "or";
+                    const { className, text } = groupSepMeta(join);
+                    groupItemsHtml += `<li class="${className}">${text}</li>`;
+                }
+            }
+        } else {
+            groupItemsHtml += renderCourseGroup(path);
+        }
+
+        pathsHtml += `<div class="articulation-path has-tooltip">${contextHtml}<ul class="course-list">${groupItemsHtml}</ul></div>`;
+
+        if (i < paths.length - 1) {
+            pathsHtml += `<div class="path-separator"><span class="path-or-badge">OR<div class="or-tooltip">These alternatives come from major-specific articulations or conflicting major and departmental agreements.</div></span></div>`;
+        }
     }
 
-    if (level <= 2) { // Reset Items
-        clearDropdown(itemSelect, `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`);
-        disableDropdown(itemSelect);
-        currentState.selectedItem = null;
+    return `<div class="articulation-card"><div class="card-header"><h3 class="college-name">${college}</h3></div><div class="card-body">${pathsHtml}</div></div>`;
+}
+
+function displayArticulations(articulationData, selectedCourse) {
+    const {articulations} = articulationData;
+
+    loadingDiv.style.display = "none";
+    resultsSection.style.display = "block";
+    selectedCourseDisplay.innerHTML = `Showing <strong>${articulations.length}</strong> articulation${articulations.length === 1 ? '' : 's'} for:<br>${selectedCourse}`;
+
+    if (articulations.length === 0) {
+        articulationCards.innerHTML = "";
+        noArticulations.style.display = "block";
+    } else {
+        noArticulations.style.display = "none";
+        let cardsHtml = "";
+        for (const articulation of articulations) {
+            cardsHtml += createArticulationCard(articulation);
+        }
+        articulationCards.innerHTML = cardsHtml;
     }
 }
 
-universitySelect.addEventListener("change", async (e) => {
-    const universityName = e.target.options[e.target.selectedIndex].text
 
-    console.log("University selected:", universityName);
-    currentState.selectedUniversity = universityName;
-    resetDropdowns(1);
+// ==========================================
+// INITIALIZATION & EVENT LISTENERS
+// ==========================================
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark" || (!savedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    html.classList.add("dark-mode");
+}
 
-    if (universityName) {
-        await populateCategories(universityName);
-    }
+themeToggle.addEventListener("click", () => {
+    html.classList.toggle("dark-mode");
+    localStorage.setItem("theme", html.classList.contains("dark-mode") ? "dark" : "light");
 });
 
-viewBySelect.addEventListener("change", async (e) => {
-    currentState.viewBy = e.target.value;
-    currentState.selectedCategory = null;
-    currentState.selectedItem = null;
+setupSearchableDropdown(uniSearch, uniDropdown);
+setupSearchableDropdown(catSearch, catDropdown);
+setupSearchableDropdown(itemSearch, itemDropdown);
 
-    if (currentState.viewBy === "subject") {
-        categoryLabel.textContent = "Subject";
-        itemLabel.textContent = "Course";
-    } else if (currentState.viewBy === "major") {
-        categoryLabel.textContent = "Major";
-        itemLabel.textContent = "Requirement";
-    } else if (currentState.viewBy === "ge") {
-        categoryLabel.textContent = "GE Category";
-        itemLabel.textContent = "Area";
-    }
-
-    resetDropdowns(1);
-
-    if (currentState.selectedUniversity) {
-        await populateCategories(currentState.selectedUniversity);
-    }
-});
-
-categorySelect.addEventListener("change", async (e) => {
-    const categoryVal = e.target.value;
-
-    console.log("Subject selected:", categoryVal);
-    currentState.selectedCategory = categoryVal;
-    resetDropdowns(2);
-
-    if (categoryVal && currentState.selectedUniversity) {
-        await populateItems(currentState.selectedUniversity, categoryVal);
-        loadRegistry().catch(console.error);
-    }
-});
-
-itemSelect.addEventListener("change", async (e) => {
-    const itemKey = e.target.value;
-    currentState.selectedItem = itemKey;
-    clearArticulations();
-
-    if (itemKey && currentState.selectedUniversity && currentState.selectedCategory) {
-        resultsSection.style.display = "block";
-        loadingDiv.style.display = "flex";
-
-        try {
-            await loadRegistry();
-            const targetItem = currentItemsMap.get(itemKey);
-
-            const articulationData = {
-                courseFull: buildCourseFullLabel(targetItem, true),
-                articulations: targetItem ? normalizeArticulations(targetItem) : []
-            };
-
-            displayArticulations(articulationData, articulationData.courseFull);
-        } catch (error) {
-            console.error("Error fetching articulations:", error);
-            alert("Failed to load articulations. Please try again.");
-            loadingDiv.style.display = "none";
+document.addEventListener("mousedown", (e) => {
+    allCustomDropdowns.forEach(dropdown => {
+        if (!e.target.closest(".custom-select-wrapper") || e.target.closest(".custom-select-wrapper").querySelector(".custom-options-list") !== dropdown) {
+            dropdown.classList.remove("show");
         }
-    }
+    });
+});
+
+viewBySearch.addEventListener("mousedown", (e) => {
+    e.stopPropagation();
+
+    allCustomDropdowns.forEach(dropdown => {
+        if (dropdown !== viewByDropdown) {
+            dropdown.classList.remove("show");
+        }
+    });
+
+    viewByDropdown.classList.toggle("show");
 });
 
 window.addEventListener("DOMContentLoaded", async () => {
-    setTimeout(() => {
-        body.classList.remove("no-transition");
-    }, 100);
-
+    setTimeout(() => body.classList.remove("no-transition"), 100);
+    initializeViewBy();
     await populateUniversities();
 });
