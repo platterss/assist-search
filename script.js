@@ -18,6 +18,12 @@ let currentState = {
     selectedItem: null
 };
 
+const EMPTY_LABELS = {
+    subject: { category: "subjects", item: "subjects" },
+    major: { category: "majors", item: "majors" },
+    ge: { category: "ge", item: "GE requirements" }
+};
+
 let REGISTRY = { colleges: {}, courses: {} };
 const CACHE = new Map();
 const currentItemsMap = new Map();
@@ -40,6 +46,10 @@ const catDropdown = document.getElementById("category-dropdown");
 const itemSearch = document.getElementById("item-search");
 const itemDropdown = document.getElementById("item-dropdown");
 const allCustomDropdowns = document.querySelectorAll(".custom-options-list");
+
+uniSearch._lastValidText = "";
+catSearch._lastValidText = "";
+itemSearch._lastValidText = "";
 
 // Labels & Loaders
 const categoryLabel = document.getElementById("category-label");
@@ -160,22 +170,46 @@ function setupSearchableDropdown(inputEl, dropdownEl) {
         allCustomDropdowns.forEach(dropdown => {
             if (dropdown !== dropdownEl) {
                 dropdown.classList.remove("show");
+                const wrapper = dropdown.closest(".custom-select-wrapper");
+                if (wrapper) {
+                    wrapper.classList.remove("is-open");
+                }
             }
         });
 
         dropdownEl.classList.add("show");
+        const thisWrapper = dropdownEl.closest(".custom-select-wrapper");
+        if (thisWrapper) {
+            thisWrapper.classList.add("is-open");
+        }
+
+        if (inputEl.value && !inputEl.readOnly) {
+            inputEl.placeholder = inputEl.value;
+            inputEl.value = "";
+            inputEl.dispatchEvent(new Event("input"));
+        }
+
         setTimeout(() => e.target.select(), 10);
     });
 
     inputEl.addEventListener("input", (e) => {
         const query = e.target.value.toLowerCase();
-        dropdownEl.classList.add("show");
+        if (document.activeElement === inputEl) {
+            dropdownEl.classList.add("show");
+        }
 
         let currentGroup = null;
         let groupHasVisibleChild = false;
         let lastVisibleElement = null;
+        let visibleCount = 0;
 
-        for (const el of dropdownEl.children) {
+        const options = dropdownEl._cachedOptions || [];
+
+        for (const el of options) {
+            if (el.classList.contains("no-results-message")) {
+                continue;
+            }
+
             el.classList.remove("last-visible");
 
             if (el.classList.contains("custom-optgroup")) {
@@ -194,6 +228,7 @@ function setupSearchableDropdown(inputEl, dropdownEl) {
                     el.style.display = "flex";
                     groupHasVisibleChild = true;
                     lastVisibleElement = el;
+                    visibleCount++;
                 } else {
                     el.style.display = "none";
                 }
@@ -206,6 +241,22 @@ function setupSearchableDropdown(inputEl, dropdownEl) {
 
         if (lastVisibleElement) {
             lastVisibleElement.classList.add("last-visible");
+        }
+
+        if (visibleCount === 0) {
+            if (!dropdownEl._noResultsEl) {
+                dropdownEl._noResultsEl = document.createElement("div");
+                dropdownEl._noResultsEl.className = "no-results-message";
+                dropdownEl.appendChild(dropdownEl._noResultsEl);
+            }
+
+            dropdownEl._noResultsEl.textContent = e.target.value
+                ? `No results found for "${e.target.value}"`
+                : "No items available.";
+
+            dropdownEl._noResultsEl.style.display = "block";
+        } else if (dropdownEl._noResultsEl) {
+            dropdownEl._noResultsEl.style.display = "none";
         }
     });
 }
@@ -241,15 +292,34 @@ function resetDropdowns(level) {
     if (level <= 1) {
         catSearch.value = "";
         catSearch.placeholder = `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
+        catSearch._lastValidText = "";
         disableDropdown(catSearch);
         currentState.selectedCategory = null;
     }
     if (level <= 2) {
         itemSearch.value = "";
         itemSearch.placeholder = `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`;
+        itemSearch._lastValidText = "";
         disableDropdown(itemSearch);
         currentState.selectedItem = null;
     }
+}
+
+function handleEmptyData(inputEl, dropdownEl, itemName) {
+    dropdownEl.innerHTML = "";
+    inputEl.value = "";
+    inputEl._lastValidText = "";
+    inputEl.placeholder = `No ${itemName} available.`;
+
+    const emptyMsg = document.createElement("div");
+    emptyMsg.className = "no-results-message";
+    emptyMsg.textContent = `No ${itemName} available.`;
+    dropdownEl.appendChild(emptyMsg);
+
+    dropdownEl._cachedOptions = Array.from(dropdownEl.children);
+    dropdownEl._noResultsEl = emptyMsg;
+
+    enableDropdown(inputEl);
 }
 
 
@@ -292,7 +362,9 @@ async function populateUniversities() {
             const aliases = generateAliases(uni);
             const option = createCustomOption(uni.name, null, async () => {
                 uniSearch.value = uni.name;
+                uniSearch._lastValidText = uni.name;
                 uniDropdown.classList.remove("show");
+                uniSearch.closest(".custom-select-wrapper").classList.remove("is-open");
                 currentState.selectedUniversity = uni.name;
                 resetDropdowns(1);
                 await populateCategories(uni.name);
@@ -302,6 +374,9 @@ async function populateUniversities() {
         }
 
         uniDropdown.appendChild(fragment);
+        uniDropdown._cachedOptions = Array.from(uniDropdown.children);
+        uniDropdown._noResultsEl = null;
+
         enableDropdown(uniSearch);
     } catch (error) {
         console.error("Error:", error);
@@ -322,6 +397,7 @@ function initializeViewBy() {
         const el = createCustomOption(opt.title, opt.sub, async () => {
             viewBySearch.value = opt.title;
             viewByDropdown.classList.remove("show");
+            viewBySearch.closest(".custom-select-wrapper").classList.remove("is-open");
 
             currentState.viewBy = opt.value;
             currentState.selectedCategory = null;
@@ -370,13 +446,23 @@ async function populateCategories(universityName) {
         }
 
         const items = await fetchWithCache(cacheKey, () => getJson(dataPath));
+
+        if (items.length === 0) {
+            const typeName = EMPTY_LABELS[currentState.viewBy].item;
+            handleEmptyData(catSearch, catDropdown, typeName);
+            hideLoader(categoryLoader);
+            return;
+        }
+
         const fragment = document.createDocumentFragment();
 
         for (const item of items) {
             const val = getValue(item);
             const option = createCustomOption(getTitle(item), getSubtitle(item), async () => {
                 catSearch.value = getTitle(item);
+                catSearch._lastValidText = getTitle(item);
                 catDropdown.classList.remove("show");
+                catSearch.closest(".custom-select-wrapper").classList.remove("is-open");
 
                 currentState.selectedCategory = val;
                 resetDropdowns(2);
@@ -387,6 +473,9 @@ async function populateCategories(universityName) {
         }
 
         catDropdown.appendChild(fragment);
+        catDropdown._cachedOptions = Array.from(catDropdown.children);
+        catDropdown._noResultsEl = null;
+
         enableDropdown(catSearch);
     } catch (error) {
         console.error("Error:", error);
@@ -419,6 +508,14 @@ async function populateItems(universityName, categoryVal) {
         itemDropdown.innerHTML = "";
 
         const items = await getItemsData(universityName, categoryVal);
+
+        if (items.length === 0) {
+            const typeName = currentState.viewBy === "subject" ? "courses" : "requirements";
+            handleEmptyData(itemSearch, itemDropdown, typeName);
+            hideLoader(itemLoader);
+            return;
+        }
+
         const fragment = document.createDocumentFragment();
         currentItemsMap.clear();
 
@@ -431,7 +528,9 @@ async function populateItems(universityName, categoryVal) {
 
             const option = createCustomOption(labels.title, labels.subtitle, async () => {
                 itemSearch.value = labels.title;
+                itemSearch._lastValidText = labels.title;
                 itemDropdown.classList.remove("show");
+                itemSearch.closest(".custom-select-wrapper").classList.remove("is-open");
 
                 currentState.selectedItem = key;
                 clearArticulations();
@@ -457,6 +556,9 @@ async function populateItems(universityName, categoryVal) {
         });
 
         itemDropdown.appendChild(fragment);
+        itemDropdown._cachedOptions = Array.from(itemDropdown.children);
+        itemDropdown._noResultsEl = null;
+
         enableDropdown(itemSearch);
     } catch (error) {
         console.error("Error:", error);
@@ -757,11 +859,47 @@ setupSearchableDropdown(catSearch, catDropdown);
 setupSearchableDropdown(itemSearch, itemDropdown);
 
 document.addEventListener("mousedown", (e) => {
+    const clickedWrapper = e.target.closest(".custom-select-wrapper");
+    const openDropdown = document.querySelector(".custom-options-list.show");
+
+    if (!openDropdown && !clickedWrapper) {
+        return;
+    }
+
     allCustomDropdowns.forEach(dropdown => {
-        if (!e.target.closest(".custom-select-wrapper") || e.target.closest(".custom-select-wrapper").querySelector(".custom-options-list") !== dropdown) {
+        if (!clickedWrapper || !clickedWrapper.contains(dropdown)) {
+            const wrapper = dropdown.closest(".custom-select-wrapper");
+
+            if (wrapper) {
+                wrapper.classList.remove("is-open");
+                const input = wrapper.querySelector("input.form-control");
+
+                if (input && !input.readOnly && input._lastValidText !== undefined) {
+                    if (input.value !== input._lastValidText) {
+                        input.value = input._lastValidText;
+
+                        if (input.id === "university-search") {
+                            input.placeholder = "Select a university...";
+                        } else if (input.id === "category-search") {
+                            input.placeholder = `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
+                        } else if (input.id === "item-search") {
+                            input.placeholder = `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`;
+                        }
+
+                        setTimeout(() => {
+                            input.dispatchEvent(new Event("input"));
+                        }, 250);
+                    }
+                }
+            }
+
             dropdown.classList.remove("show");
         }
     });
+
+    if (clickedWrapper) {
+        clickedWrapper.classList.add("is-open");
+    }
 });
 
 viewBySearch.addEventListener("mousedown", (e) => {
@@ -774,10 +912,47 @@ viewBySearch.addEventListener("mousedown", (e) => {
     });
 
     viewByDropdown.classList.toggle("show");
+    const thisWrapper = viewBySearch.closest(".custom-select-wrapper");
+    if (thisWrapper) {
+        thisWrapper.classList.toggle("is-open");
+    }
 });
 
 window.addEventListener("DOMContentLoaded", async () => {
     setTimeout(() => body.classList.remove("no-transition"), 100);
     initializeViewBy();
     await populateUniversities();
+});
+
+document.getElementById("uni-clear").addEventListener("click", (e) => {
+    e.stopPropagation();
+    uniSearch.value = "";
+    uniSearch._lastValidText = "";
+    uniSearch.placeholder = "Select a university...";
+    currentState.selectedUniversity = null;
+    resetDropdowns(1);
+    uniSearch.dispatchEvent(new Event("input"));
+    uniSearch.focus();
+});
+
+document.getElementById("cat-clear").addEventListener("click", (e) => {
+    e.stopPropagation();
+    catSearch.value = "";
+    catSearch._lastValidText = "";
+    catSearch.placeholder = `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
+    currentState.selectedCategory = null;
+    resetDropdowns(2);
+    catSearch.dispatchEvent(new Event("input"));
+    catSearch.focus();
+});
+
+document.getElementById("item-clear").addEventListener("click", (e) => {
+    e.stopPropagation();
+    itemSearch.value = "";
+    itemSearch._lastValidText = "";
+    itemSearch.placeholder = `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`;
+    currentState.selectedItem = null;
+    clearArticulations();
+    itemSearch.dispatchEvent(new Event("input"));
+    itemSearch.focus();
 });

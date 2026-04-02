@@ -240,11 +240,10 @@ h1 {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: var(--select-caret);
     background-repeat: no-repeat;
     background-position: right var(--space-12) center;
     background-size: 16px;
-    padding-right: var(--space-32);
+    padding-right: 40px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -275,6 +274,59 @@ h1 {
 
 @keyframes spin {
     to { transform: rotate(360deg); }
+}
+
+.clear-btn, .caret-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all var(--duration-normal) var(--ease-standard);
+}
+
+.clear-btn {
+    right: 12px;
+    background: transparent;
+    border: none;
+    color: var(--color-text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.clear-btn:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.caret-icon {
+    right: 16px;
+    color: var(--color-text-secondary);
+    pointer-events: none;
+    z-index: 1;
+}
+
+input.form-control:not([readonly]):not(:placeholder-shown) ~ .clear-btn {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+input.form-control:not([readonly]):not(:placeholder-shown) ~ .caret-icon {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50%) scale(0.5);
+}
+
+.custom-select-wrapper.is-open .caret-icon {
+    transform: translateY(-50%) rotate(180deg);
 }
 
 
@@ -352,6 +404,16 @@ h1 {
     letter-spacing: 0.05em;
     cursor: default;
     border-bottom: 1px solid var(--color-border);
+}
+
+.no-results-message {
+    padding: var(--space-16) var(--space-12);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    text-align: center;
+    font-style: italic;
+    background-color: transparent;
+    cursor: default;
 }
 
 
