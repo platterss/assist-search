@@ -410,8 +410,7 @@ async function loadRegistry() {
 
     registryLoadPromise = (async () => {
         try {
-            REGISTRY = await fetchWithCache("registry", () => getJson(DATA_PATHS.ccRegistry));
-            console.log("Loaded CC registry:", Object.keys(REGISTRY.colleges || {}).length, "colleges");
+            REGISTRY = await getJson(DATA_PATHS.ccRegistry);
         } catch (e) {
             registryLoadPromise = null;
             console.error("Failed to load CC registry:", e);
