@@ -276,15 +276,11 @@ h1 {
     to { transform: rotate(360deg); }
 }
 
-.clear-btn, .caret-icon {
+.dropdown-action-btn {
     position: absolute;
+    right: 12px;
     top: 50%;
     transform: translateY(-50%);
-    transition: all var(--duration-normal) var(--ease-standard);
-}
-
-.clear-btn {
-    right: 12px;
     background: transparent;
     border: none;
     color: var(--color-text-secondary);
@@ -295,38 +291,45 @@ h1 {
     height: 24px;
     border-radius: 50%;
     cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
     z-index: 2;
+    transition: all var(--duration-normal) var(--ease-standard);
 }
 
-.clear-btn:hover {
+.dropdown-action-btn:hover {
     background-color: var(--color-secondary);
     color: var(--color-text);
 }
 
-.caret-icon {
-    right: 16px;
-    color: var(--color-text-secondary);
+.form-control:disabled ~ .dropdown-action-btn {
+    opacity: 0.5;
     pointer-events: none;
-    z-index: 1;
 }
 
-input.form-control:not([readonly]):not(:placeholder-shown) ~ .clear-btn {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+.icon-clear, .icon-caret {
+    position: absolute;
+    transition: all var(--duration-normal) var(--ease-standard);
 }
 
-input.form-control:not([readonly]):not(:placeholder-shown) ~ .caret-icon {
+.icon-clear {
     opacity: 0;
-    visibility: hidden;
-    transform: translateY(-50%) scale(0.5);
+    transform: scale(0.5);
+}
+.icon-caret {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
 }
 
-.custom-select-wrapper.is-open .caret-icon {
-    transform: translateY(-50%) rotate(180deg);
+.custom-select-wrapper.is-open .icon-caret {
+    transform: scale(1) rotate(180deg);
+}
+
+input.form-control:not([readonly]):not(:placeholder-shown) ~ .dropdown-action-btn .icon-clear {
+    opacity: 1;
+    transform: scale(1);
+}
+input.form-control:not([readonly]):not(:placeholder-shown) ~ .dropdown-action-btn .icon-caret {
+    opacity: 0;
+    transform: scale(0.5) rotate(0deg);
 }
 
 

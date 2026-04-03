@@ -25,6 +25,7 @@ const EMPTY_LABELS = {
 };
 
 let REGISTRY = { colleges: {}, courses: {} };
+let registryLoadPromise = null;
 const CACHE = new Map();
 const currentItemsMap = new Map();
 
@@ -128,6 +129,22 @@ function generateAliases(uni) {
     return Array.from(aliases).join(" ");
 }
 
+function getPlaceholder(inputId) {
+    if (inputId === "university-search") {
+        return "Select a university...";
+    }
+
+    if (inputId === "category-search") {
+        return `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
+    }
+
+    if (inputId === "item-search") {
+        return `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`;
+    }
+
+    return "Select...";
+}
+
 
 // ==========================================
 // CUSTOM DROPDOWNS
@@ -165,27 +182,28 @@ function createCustomGroup(label) {
 }
 
 function setupSearchableDropdown(inputEl, dropdownEl) {
-    // Highlight automatically to allow immediate typing
     inputEl.addEventListener("focus", (e) => {
-        allCustomDropdowns.forEach(dropdown => {
-            if (dropdown !== dropdownEl) {
-                dropdown.classList.remove("show");
-                const wrapper = dropdown.closest(".custom-select-wrapper");
-                if (wrapper) {
-                    wrapper.classList.remove("is-open");
-                }
-            }
-        });
+        const thisWrapper = dropdownEl.closest(".custom-select-wrapper");
+        closeAllDropdowns(thisWrapper);
 
         dropdownEl.classList.add("show");
-        const thisWrapper = dropdownEl.closest(".custom-select-wrapper");
         if (thisWrapper) {
             thisWrapper.classList.add("is-open");
         }
 
-        if (inputEl.value && !inputEl.readOnly) {
-            inputEl.placeholder = inputEl.value;
-            inputEl.value = "";
+        if (!inputEl.readOnly) {
+            if (inputEl.value !== inputEl._lastValidText && inputEl._lastValidText !== undefined) {
+                inputEl.value = inputEl._lastValidText;
+            }
+
+            if (inputEl.value) {
+                inputEl.placeholder = inputEl.value;
+                inputEl.value = "";
+                inputEl.dispatchEvent(new Event("input"));
+            } else {
+                inputEl.placeholder = getPlaceholder(inputEl.id);
+            }
+
             inputEl.dispatchEvent(new Event("input"));
         }
 
@@ -261,6 +279,61 @@ function setupSearchableDropdown(inputEl, dropdownEl) {
     });
 }
 
+function setupActionButton(btnId, inputEl, dropdownEl, clearFn) {
+    const btn = document.getElementById(btnId);
+    if (!btn) return;
+
+    btn.addEventListener("mousedown", (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+
+        if (inputEl.disabled) return;
+
+        if (inputEl.value !== "" && !inputEl.readOnly) {
+            if (clearFn) clearFn();
+        } else {
+            const wrapper = inputEl.closest(".custom-select-wrapper");
+            const isOpen = wrapper.classList.contains("is-open");
+
+            allCustomDropdowns.forEach(dropdown => {
+                if (dropdown !== dropdownEl) {
+                    dropdown.classList.remove("show");
+                    const w = dropdown.closest(".custom-select-wrapper");
+                    if (w) w.classList.remove("is-open");
+                }
+            });
+
+            if (isOpen) {
+                dropdownEl.classList.remove("show");
+                wrapper.classList.remove("is-open");
+            } else {
+                dropdownEl.classList.add("show");
+                wrapper.classList.add("is-open");
+                inputEl.focus();
+            }
+        }
+    });
+}
+
+function closeAllDropdowns(exceptWrapper = null) {
+    allCustomDropdowns.forEach(dropdown => {
+        const wrapper = dropdown.closest(".custom-select-wrapper");
+        if (wrapper && wrapper !== exceptWrapper) {
+            wrapper.classList.remove("is-open");
+            dropdown.classList.remove("show");
+
+            const input = wrapper.querySelector("input.form-control");
+            if (input && !input.readOnly && input._lastValidText !== undefined) {
+                if (input.value !== input._lastValidText) {
+                    input.value = input._lastValidText;
+                    input.placeholder = getPlaceholder(input.id);
+                    setTimeout(() => input.dispatchEvent(new Event("input")), 250);
+                }
+            }
+        }
+    });
+}
+
 
 // ==========================================
 // DOM & UI HELPERS
@@ -291,14 +364,14 @@ function resetDropdowns(level) {
     clearArticulations();
     if (level <= 1) {
         catSearch.value = "";
-        catSearch.placeholder = `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
+        catSearch.placeholder = getPlaceholder("category-search");
         catSearch._lastValidText = "";
         disableDropdown(catSearch);
         currentState.selectedCategory = null;
     }
     if (level <= 2) {
         itemSearch.value = "";
-        itemSearch.placeholder = `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`;
+        itemSearch.placeholder = getPlaceholder("item-search");
         itemSearch._lastValidText = "";
         disableDropdown(itemSearch);
         currentState.selectedItem = null;
@@ -327,13 +400,26 @@ function handleEmptyData(inputEl, dropdownEl, itemName) {
 // DATA FETCHING & POPULATORS
 // ==========================================
 async function loadRegistry() {
-    try {
-        REGISTRY = await fetchWithCache("registry", () => getJson(DATA_PATHS.ccRegistry));
-        console.log("Loaded CC registry:", Object.keys(REGISTRY.colleges || {}).length, "colleges")
-    } catch (e) {
-        console.error("Failed to load CC registry:", e);
-        throw e;
+    if (Object.keys(REGISTRY.colleges).length > 0) {
+        return;
     }
+
+    if (registryLoadPromise) {
+        return registryLoadPromise;
+    }
+
+    registryLoadPromise = (async () => {
+        try {
+            REGISTRY = await fetchWithCache("registry", () => getJson(DATA_PATHS.ccRegistry));
+            console.log("Loaded CC registry:", Object.keys(REGISTRY.colleges || {}).length, "colleges");
+        } catch (e) {
+            registryLoadPromise = null;
+            console.error("Failed to load CC registry:", e);
+            throw e;
+        }
+    })();
+
+    return registryLoadPromise;
 }
 
 async function populateUniversities() {
@@ -420,7 +506,7 @@ async function populateCategories(universityName) {
         showLoader(categoryLoader);
         disableDropdown(catSearch);
         catSearch.value = "";
-        catSearch.placeholder = `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
+        catSearch.placeholder = getPlaceholder("category-search");
         catDropdown.innerHTML = "";
 
         let cacheKey, dataPath, getValue, getTitle, getSubtitle;
@@ -504,7 +590,7 @@ async function populateItems(universityName, categoryVal) {
         showLoader(itemLoader);
         disableDropdown(itemSearch);
         itemSearch.value = "";
-        itemSearch.placeholder = `Select a ${currentState.viewBy === "subject" ? "course" : "requirement"}...`;
+        itemSearch.placeholder = getPlaceholder("item-search");
         itemDropdown.innerHTML = "";
 
         const items = await getItemsData(universityName, categoryVal);
@@ -858,6 +944,12 @@ setupSearchableDropdown(uniSearch, uniDropdown);
 setupSearchableDropdown(catSearch, catDropdown);
 setupSearchableDropdown(itemSearch, itemDropdown);
 
+window.addEventListener("DOMContentLoaded", async () => {
+    setTimeout(() => body.classList.remove("no-transition"), 100);
+    initializeViewBy();
+    await populateUniversities();
+});
+
 document.addEventListener("mousedown", (e) => {
     const clickedWrapper = e.target.closest(".custom-select-wrapper");
     const openDropdown = document.querySelector(".custom-options-list.show");
@@ -866,36 +958,7 @@ document.addEventListener("mousedown", (e) => {
         return;
     }
 
-    allCustomDropdowns.forEach(dropdown => {
-        if (!clickedWrapper || !clickedWrapper.contains(dropdown)) {
-            const wrapper = dropdown.closest(".custom-select-wrapper");
-
-            if (wrapper) {
-                wrapper.classList.remove("is-open");
-                const input = wrapper.querySelector("input.form-control");
-
-                if (input && !input.readOnly && input._lastValidText !== undefined) {
-                    if (input.value !== input._lastValidText) {
-                        input.value = input._lastValidText;
-
-                        if (input.id === "university-search") {
-                            input.placeholder = "Select a university...";
-                        } else if (input.id === "category-search") {
-                            input.placeholder = `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
-                        } else if (input.id === "item-search") {
-                            input.placeholder = `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`;
-                        }
-
-                        setTimeout(() => {
-                            input.dispatchEvent(new Event("input"));
-                        }, 250);
-                    }
-                }
-            }
-
-            dropdown.classList.remove("show");
-        }
-    });
+    closeAllDropdowns(clickedWrapper);
 
     if (clickedWrapper) {
         clickedWrapper.classList.add("is-open");
@@ -904,55 +967,66 @@ document.addEventListener("mousedown", (e) => {
 
 viewBySearch.addEventListener("mousedown", (e) => {
     e.stopPropagation();
-
-    allCustomDropdowns.forEach(dropdown => {
-        if (dropdown !== viewByDropdown) {
-            dropdown.classList.remove("show");
-        }
-    });
-
-    viewByDropdown.classList.toggle("show");
     const thisWrapper = viewBySearch.closest(".custom-select-wrapper");
-    if (thisWrapper) {
-        thisWrapper.classList.toggle("is-open");
+    const isOpen = thisWrapper.classList.contains("is-open");
+
+    if (isOpen) {
+        thisWrapper.classList.remove("is-open");
+        viewByDropdown.classList.remove("show");
+    } else {
+        closeAllDropdowns();
+        thisWrapper.classList.add("is-open");
+        viewByDropdown.classList.add("show");
     }
 });
 
-window.addEventListener("DOMContentLoaded", async () => {
-    setTimeout(() => body.classList.remove("no-transition"), 100);
-    initializeViewBy();
-    await populateUniversities();
-});
+document.querySelectorAll('.dropdown-action-btn').forEach(btn => {
+    btn.addEventListener('mousedown', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
 
-document.getElementById("uni-clear").addEventListener("click", (e) => {
-    e.stopPropagation();
-    uniSearch.value = "";
-    uniSearch._lastValidText = "";
-    uniSearch.placeholder = "Select a university...";
-    currentState.selectedUniversity = null;
-    resetDropdowns(1);
-    uniSearch.dispatchEvent(new Event("input"));
-    uniSearch.focus();
-});
+        const wrapper = btn.closest('.custom-select-wrapper');
+        const input = wrapper.querySelector('input.form-control');
+        const dropdown = wrapper.querySelector('.custom-options-list');
 
-document.getElementById("cat-clear").addEventListener("click", (e) => {
-    e.stopPropagation();
-    catSearch.value = "";
-    catSearch._lastValidText = "";
-    catSearch.placeholder = `Select a ${currentState.viewBy === "ge" ? "category" : currentState.viewBy}...`;
-    currentState.selectedCategory = null;
-    resetDropdowns(2);
-    catSearch.dispatchEvent(new Event("input"));
-    catSearch.focus();
-});
+        if (input.disabled) {
+            return;
+        }
 
-document.getElementById("item-clear").addEventListener("click", (e) => {
-    e.stopPropagation();
-    itemSearch.value = "";
-    itemSearch._lastValidText = "";
-    itemSearch.placeholder = `Select a ${currentState.viewBy === 'subject' ? 'course' : 'requirement'}...`;
-    currentState.selectedItem = null;
-    clearArticulations();
-    itemSearch.dispatchEvent(new Event("input"));
-    itemSearch.focus();
+        const hasValueToClear = input.value && !input.readOnly;
+
+        if (hasValueToClear) {
+            input.value = "";
+            input._lastValidText = "";
+            input.placeholder = getPlaceholder(input.id);
+
+            if (input.id === "university-search") {
+                currentState.selectedUniversity = null;
+                resetDropdowns(1);
+            } else if (input.id === "category-search") {
+                currentState.selectedCategory = null;
+                resetDropdowns(2);
+            } else if (input.id === "item-search") {
+                currentState.selectedItem = null;
+                clearArticulations();
+            }
+
+            input.dispatchEvent(new Event("input"));
+            input.focus();
+        } else {
+            const isOpen = wrapper.classList.contains('is-open');
+
+            if (isOpen) {
+                wrapper.classList.remove('is-open');
+                dropdown.classList.remove('show');
+            } else {
+                closeAllDropdowns();
+                wrapper.classList.add('is-open');
+                dropdown.classList.add('show');
+                if (!input.readOnly) {
+                    input.focus();
+                }
+            }
+        }
+    });
 });
