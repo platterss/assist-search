@@ -755,7 +755,7 @@ function normalizeArticulations(course) {
                 groups.push({
                     type: courses.length <= 1 ? "single" : (series.conjunction || "OR").toLowerCase(),
                     courses: courses,
-                    notes: series.notes || []
+                    notes: series.notes ? [...series.notes] : []
                 });
             }
 
@@ -864,6 +864,7 @@ function renderCourseGroup(group) {
         }
         return nestedHtml;
     }
+
     return "";
 }
 
