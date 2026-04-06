@@ -35,14 +35,23 @@ def refresh_session():
 refresh_session()
 
 
+def requires_refresh(response: requests.Response):
+    if response.status_code == 400:
+        resp_json = response.json()
+        return "title" in resp_json.keys() and resp_json["title"] == "Bad Request"
+
+    return False
+
+
 def get(url: str, params=None, **kwargs) -> requests.Response:
     while True:
         response = session.get(url=url, params=params, **kwargs)
 
-        if response.status_code == 400:
+        if requires_refresh(response):
             print(f"Received {response.status_code} error on {url}. Token likely expired.")
             print(f"Server response payload: {response.text}")
             refresh_session()
+            time.sleep(10)
             continue
 
         if response.status_code == 429:
