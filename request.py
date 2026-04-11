@@ -55,8 +55,8 @@ def get(url: str, params=None, **kwargs) -> requests.Response:
             continue
 
         if response.status_code == 429:
-            print("Exceeded rate limit. Retrying request in 30 seconds.")
-            time.sleep(30)
+            print("Exceeded rate limit. Retrying request in 60 seconds.")
+            time.sleep(60)
             continue
 
         break
