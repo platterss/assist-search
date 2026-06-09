@@ -40,8 +40,8 @@ python articulations.py --after-university "University of California, Berkeley"
 
 Keep in mind that **fetching articulation data will take a long time**. There are 115 CCCs and 23 CSUs, 9 UCs, and 31 
 AICCUs (so 63 universities total). This scraper makes, on average, 2.5 requests for each CCC → university with a 
-cooldown of 3 seconds per request. It would take around 115 CCCs * 2.5 requests * 3 seconds/request * 63 universities = 
-54,337.5 seconds = **15.09 hours** to fetch all the data. That's a pretty long time.
+cooldown of 3 seconds per request. It would take around 115 CCCs * 2.5 requests * 5 seconds/request * 63 universities = 
+90,562.5 seconds = **25.16 hours** to fetch all the data. That's a pretty long time.
 
 **You probably won't need to fetch the articulation data yourself**. I have a script running to automatically
 fetch and update the articulation data at least once a week. You can check the commit history to see when the data
@@ -72,7 +72,7 @@ To use the raw agreements with this program:
 2. Add `--local` to the command line arguments.
 3. Run `articulations.py`.
 
-It'll take a few minutes to process all the data. Way better than 15 hours.
+It'll take a few minutes to process all the data. Way better than 25 hours.
 
 ## Contributions
 
