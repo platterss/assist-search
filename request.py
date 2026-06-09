@@ -5,6 +5,7 @@ import requests
 
 session = requests.Session()
 
+
 def refresh_session():
     print("Refreshing ASSIST.org session.")
 
@@ -55,11 +56,12 @@ def get(url: str, params=None, **kwargs) -> requests.Response:
             continue
 
         if response.status_code == 429:
-            print("Exceeded rate limit. Retrying request in 60 seconds.")
-            time.sleep(60)
+            print(response.text)
+            print("Exceeded rate limit. Retrying request in 120 seconds.")
+            time.sleep(120)
             continue
 
         break
 
-    time.sleep(3)
+    time.sleep(5)
     return response
