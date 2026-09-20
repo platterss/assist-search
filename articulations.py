@@ -33,12 +33,9 @@ from util import write_json
 
 # Saves and uses raw ASSIST.org JSON files on disk
 # Just here so we don't have to keep making requests for every little change
-use_local_agreement_data = False
+use_local_agreement_data = True
 
-CC_REGISTRY = {
-    "colleges": {},
-    "courses": {}
-}
+CC_REGISTRY = {}
 
 
 class UniversitySession:
@@ -398,7 +395,7 @@ def parse_raw_sending_groups(raw_groups: list[dict]):
         for item in group_items:
             if item["type"] == "Course":
                 sending_course = Course.from_dict(item)
-                CC_REGISTRY["courses"][sending_course.course_id] = vars(sending_course)
+                CC_REGISTRY[sending_course.course_id] = vars(sending_course)
 
                 sending_courses.append(SendingCourse(
                     course_id=sending_course.course_id,
@@ -581,6 +578,15 @@ def save_university_data(session: UniversitySession):
             return 2, get_natural_sort_key(code_str), [], thing.name
         return 3, "", [], ""
 
+    def get_shallow_list(course_list):
+        shallow_list = []
+        for obj in course_list:
+            # Strip articulations from all objects
+            d = vars(obj).copy()
+            d.pop("articulations", None)
+            shallow_list.append(d)
+        return shallow_list
+
     print("Writing Subject files...")
     subjects_metadata = {}
     items_by_prefix = defaultdict(list)
@@ -615,6 +621,16 @@ def save_university_data(session: UniversitySession):
         # We have to add "subj_" because Windows does not like some subject names
         write_json(item_list, f"{base_path}/Subjects/subj_{prefix}.json")
 
+    if session.requirements:
+        req_list = list(session.requirements.values())
+        req_list.sort(key=get_sort_key)
+        write_json(req_list, f"{base_path}/Subjects/subj_@REQUIREMENTS.json")
+
+    if session.ges:
+        ge_list = list(session.ges.values())
+        ge_list.sort(key=get_sort_key)
+        write_json(ge_list, f"{base_path}/Subjects/subj_@GE.json")
+
     print(f"Writing Major files...")
     major_names = sorted(list(session.majors.keys()))
     write_json(major_names, f"{base_path}/Majors/majors.json")
@@ -622,7 +638,12 @@ def save_university_data(session: UniversitySession):
     for major_name, major_obj in session.majors.items():
         major_obj.courses.sort(key=get_sort_key)
         safe_major = major_name.replace("/", "-").replace(":", "").replace("*", "=").replace(">", "").strip()
-        write_json(major_obj, f"{base_path}/Majors/{safe_major}.json")
+
+        shallow_major = {
+            "name": major_obj.name,
+            "courses": get_shallow_list(major_obj.courses)
+        }
+        write_json(shallow_major, f"{base_path}/Majors/{safe_major}.json")
 
     print(f"Writing GE files...")
     existing_ge_keys = set()
@@ -643,7 +664,14 @@ def save_university_data(session: UniversitySession):
     for category in session.ge_categories.values():
         category.courses.sort(key=get_sort_key)
 
-    write_json(list(session.ge_categories.values()), f"{base_path}/GEs/ge_categories.json")
+    shallow_ge_categories = []
+    for category in session.ge_categories.values():
+        shallow_ge_categories.append({
+            "name": category.name,
+            "courses": get_shallow_list(category.courses)
+        })
+
+    write_json(shallow_ge_categories, f"{base_path}/GEs/ge_categories.json")
 
 
 def has_no_agreements(agreement_year: int, university: Institution, college: Institution):
@@ -724,9 +752,6 @@ def main():
     if not colleges or not universities:
         print("No institutions found matching those filters.")
         return
-
-    for college in colleges:
-        CC_REGISTRY["colleges"][college.id] = college.name
 
     for university in universities:
         print(f"Getting articulations for {university.name} (ID {university.id}).")

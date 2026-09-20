@@ -24,7 +24,7 @@ const EMPTY_LABELS = {
     ge: { category: "ge", item: "GE requirements" }
 };
 
-let REGISTRY = { colleges: {}, courses: {} };
+let REGISTRY = {colleges: {}, courses: {}};
 let registryLoadPromise = null;
 const CACHE = new Map();
 const currentItemsMap = new Map();
@@ -400,7 +400,7 @@ function handleEmptyData(inputEl, dropdownEl, itemName) {
 // DATA FETCHING & POPULATORS
 // ==========================================
 async function loadRegistry() {
-    if (Object.keys(REGISTRY.colleges).length > 0) {
+    if (Object.keys(REGISTRY.courses).length > 0) {
         return;
     }
 
@@ -410,7 +410,7 @@ async function loadRegistry() {
 
     registryLoadPromise = (async () => {
         try {
-            REGISTRY = await getJson(DATA_PATHS.ccRegistry);
+            REGISTRY.courses = await getJson(DATA_PATHS.ccRegistry);
         } catch (e) {
             registryLoadPromise = null;
             console.error("Failed to load CC registry:", e);
@@ -428,7 +428,15 @@ async function populateUniversities() {
         uniSearch.value = "";
         uniDropdown.innerHTML = "";
 
-        let universities = await fetchWithCache("institutions", () => getJson(DATA_PATHS.institutions));
+        let allInstitutions = await fetchWithCache("institutions", () => getJson(DATA_PATHS.institutions));
+
+        allInstitutions.forEach(inst => {
+            if (inst.category === "CCC") {
+                REGISTRY.colleges[inst.id] = inst.name;
+            }
+        });
+
+        let universities = await allInstitutions.filter(u => u.category !== "CCC");
         universities = universities.filter(u => u.category !== "CCC");
 
         const CATEGORY_WEIGHTS = { "UC": 0, "CSU": 1, "AICCU": 2 };
@@ -626,9 +634,42 @@ async function populateItems(universityName, categoryVal) {
                 try {
                     await loadRegistry();
                     const targetItem = currentItemsMap.get(key);
+
+                    let articulationsRaw = targetItem.articulations;
+
+                    // --- UPDATED LOGIC: LAZY LOAD DEEP SUBJECT, REQ, OR GE FILES ---
+                    if (articulationsRaw === undefined) {
+                        let fileToFetch;
+
+                        // Figure out which deep file contains this item's articulations
+                        if (targetItem.course_id !== undefined) {
+                            fileToFetch = targetItem.prefix; // Standard Course
+                        } else if (targetItem.courses && targetItem.courses.length > 0) {
+                            fileToFetch = targetItem.courses[0].prefix; // Course Series
+                        } else if (targetItem.area_type) {
+                            fileToFetch = "@GE"; // General Education
+                        } else if (targetItem.name) {
+                            fileToFetch = "@REQUIREMENTS"; // Standard Requirement (e.g., "COMPOSITION")
+                        }
+
+                        if (fileToFetch) {
+                            const uniName = currentState.selectedUniversity;
+                            const subjectData = await fetchWithCache(`subItems:${uniName}|${fileToFetch}`, () => getJson(DATA_PATHS.subjectItems(uniName, fileToFetch)));
+
+                            // Find the deep version of the item using the identical _key
+                            const deepItem = subjectData.find(item => getItemKey(item) === targetItem._key);
+                            if (deepItem) {
+                                articulationsRaw = deepItem.articulations;
+                            }
+                        }
+                    }
+
+                    // Create a full item clone bridging the shallow metadata with the deep articulations
+                    const fullItem = { ...targetItem, articulations: articulationsRaw || [] };
+
                     const articulationData = {
-                        courseFull: buildCourseFullLabel(targetItem, true),
-                        articulations: targetItem ? normalizeArticulations(targetItem) : []
+                        courseFull: buildCourseFullLabel(fullItem, true),
+                        articulations: fullItem ? normalizeArticulations(fullItem) : []
                     };
                     displayArticulations(articulationData, articulationData.courseFull);
                 } catch (error) {
