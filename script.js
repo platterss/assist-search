@@ -637,34 +637,30 @@ async function populateItems(universityName, categoryVal) {
 
                     let articulationsRaw = targetItem.articulations;
 
-                    // --- UPDATED LOGIC: LAZY LOAD DEEP SUBJECT, REQ, OR GE FILES ---
                     if (articulationsRaw === undefined) {
                         let fileToFetch;
 
-                        // Figure out which deep file contains this item's articulations
-                        if (targetItem.course_id !== undefined) {
-                            fileToFetch = targetItem.prefix; // Standard Course
+                        if (targetItem.id !== undefined) {
+                            fileToFetch = targetItem.prefix;
                         } else if (targetItem.courses && targetItem.courses.length > 0) {
                             fileToFetch = targetItem.courses[0].prefix; // Course Series
                         } else if (targetItem.area_type) {
-                            fileToFetch = "@GE"; // General Education
+                            fileToFetch = "@GE";
                         } else if (targetItem.name) {
-                            fileToFetch = "@REQUIREMENTS"; // Standard Requirement (e.g., "COMPOSITION")
+                            fileToFetch = "@REQUIREMENTS";
                         }
 
                         if (fileToFetch) {
                             const uniName = currentState.selectedUniversity;
                             const subjectData = await fetchWithCache(`subItems:${uniName}|${fileToFetch}`, () => getJson(DATA_PATHS.subjectItems(uniName, fileToFetch)));
 
-                            // Find the deep version of the item using the identical _key
                             const deepItem = subjectData.find(item => getItemKey(item) === targetItem._key);
                             if (deepItem) {
-                                articulationsRaw = deepItem.articulations;
+                                articulationsRaw = deepItem.articulations || [];
                             }
                         }
                     }
 
-                    // Create a full item clone bridging the shallow metadata with the deep articulations
                     const fullItem = { ...targetItem, articulations: articulationsRaw || [] };
 
                     const articulationData = {
@@ -698,12 +694,12 @@ async function populateItems(universityName, categoryVal) {
 // DATA PARSING & RENDERING
 // ==========================================
 function getItemKey(item) {
-    if (item.course_id !== undefined) {
-        return `COURSE:${item.course_id}`;
+    if (item.id !== undefined) {
+        return `COURSE:${item.id}`;
     }
 
     if (item.courses) {
-        return `SERIES:${item.conjunction}:${item.courses.map(c => c.course_id).join("|")}`;
+        return `SERIES:${item.conjunction || "NONE"}:${item.courses.map(c => c.id).join("|")}`;
     }
 
     if (item.area_type) {
@@ -720,7 +716,7 @@ function getItemKey(item) {
 function buildCourseFullLabel(item, multiline = false) {
     let title, subtitle, html;
 
-    if (item.course_id !== undefined) {
+    if (item.id !== undefined) {
         title = `${item.prefix} ${item.number}`;
         subtitle = item.title || "";
         html = subtitle ? `<strong>${title}</strong> - ${subtitle}` : `<strong>${title}</strong>`;
@@ -759,7 +755,7 @@ function processSeriesCourses(rawCourses) {
     const courses = [];
 
     for (const seriesCourse of rawCourses) {
-        const ccCourse = REGISTRY.courses[seriesCourse.course_id];
+        const ccCourse = REGISTRY.courses[seriesCourse.id];
         let title = `${ccCourse.prefix} ${ccCourse.number}`;
         let subtitle = ccCourse.title;
         courses.push({ title, subtitle, notes: seriesCourse.notes || [] });
@@ -817,7 +813,6 @@ function normalizeArticulations(course) {
                 };
             }
 
-            topLevelNode.contexts = item.contexts || [];
             const collegeName = REGISTRY.colleges[item.sending_id];
 
             if (!byCollege.has(collegeName)) {
@@ -915,13 +910,6 @@ function createArticulationCard(collegeData) {
 
     for (let i = 0; i < paths.length; i++) {
         const path = paths[i];
-        let contextHtml = "";
-
-        if (path.contexts && path.contexts.length > 0) {
-            const uniqueContexts = [...new Set(path.contexts)];
-            const tags = uniqueContexts.map(c => `<div class="context-tag">${c}</div>`).join("");
-            contextHtml = `<div class="context-tooltip"><div class="context-tooltip-content"><span class="context-tooltip-header">Articulated In</span>${tags}</div></div>`;
-        }
 
         let groupItemsHtml = "";
         if (path.type === "nested") {
@@ -937,7 +925,7 @@ function createArticulationCard(collegeData) {
             groupItemsHtml += renderCourseGroup(path);
         }
 
-        pathsHtml += `<div class="articulation-path has-tooltip">${contextHtml}<ul class="course-list">${groupItemsHtml}</ul></div>`;
+        pathsHtml += `<div class="articulation-path"><ul class="course-list">${groupItemsHtml}</ul></div>`;
 
         if (i < paths.length - 1) {
             pathsHtml += `<div class="path-separator"><span class="path-or-badge">OR<div class="or-tooltip">These alternatives come from major-specific articulations or conflicting major and departmental agreements.</div></span></div>`;

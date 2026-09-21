@@ -28,7 +28,7 @@ from classes import (
 
 from agreements import get_agreements, get_local_agreement
 from institutions import get_institutions
-from util import write_json
+from util import write_json, omit_empty
 
 
 # Saves and uses raw ASSIST.org JSON files on disk
@@ -125,7 +125,7 @@ class AgreementProcessor:
         for item in results:
             storage_callback(item)
 
-    def process_articulation(self, articulation_wrapper, context):
+    def process_articulation(self, articulation_wrapper):
         # Supports wrapped (for majors/GEs) and unwrapped (departments/prefixes) formats
         # We originally did the wrapped agreements for everything but major/GE agreements
         # have some GEs that require the template cell IDs from the unwrapped agreements
@@ -167,7 +167,6 @@ class AgreementProcessor:
         elif art_type == "Transferability":
             if template_cell_id and template_cell_id in self.template_id_map:
                 target_dict, key = self.template_id_map[template_cell_id]
-                context = "Major Agreement"
 
         sending_payload = articulation["sendingArticulation"]
 
@@ -180,14 +179,10 @@ class AgreementProcessor:
 
                 dict_key = f"{college_id}_{processed_sending.get_unique_key()}"
 
-                if dict_key in receiving_item.articulations:
-                    if context not in receiving_item.articulations[dict_key].contexts:
-                        receiving_item.articulations[dict_key].contexts.append(context)
-                else:
+                if dict_key not in receiving_item.articulations:
                     receiving_item.articulations[dict_key] = ArticulationItem(
                         articulation=processed_sending,
                         sending_id=college_id,
-                        contexts=[context]
                     )
 
         return art_type, key
@@ -255,9 +250,9 @@ class AgreementProcessor:
 
         return majors
 
-    def process_major_ge_articulations(self, articulations: list[dict], context):
+    def process_major_ge_articulations(self, articulations: list[dict]):
         for cell in articulations:
-            self.process_articulation(cell, context)
+            self.process_articulation(cell)
 
     def process_majors_ges_layout(self, agreement: dict):
         result = agreement["result"]
@@ -275,8 +270,7 @@ class AgreementProcessor:
         categories = self.process_major_ge_template_assets(template_assets)
 
         articulations: list[dict] = json.loads(result["articulations"])
-        context = "Major Agreement" if art_type == AgreementType.ALL_MAJORS else "GE Agreement"
-        self.process_major_ge_articulations(articulations, context)
+        self.process_major_ge_articulations(articulations)
 
         return categories
 
@@ -288,7 +282,7 @@ class AgreementProcessor:
             all_requirements: list[Course | Series | Requirement | GeneralEducation] = []
             articulation = cell["articulations"]
             for art in articulation:
-                art_type, key = self.process_articulation(art, f"Department: {name}")
+                art_type, key = self.process_articulation(art)
 
                 if art_type == "Course" and key in self.session.courses:
                     all_requirements.append(self.session.courses[key])
@@ -395,10 +389,10 @@ def parse_raw_sending_groups(raw_groups: list[dict]):
         for item in group_items:
             if item["type"] == "Course":
                 sending_course = Course.from_dict(item)
-                CC_REGISTRY[sending_course.course_id] = vars(sending_course)
+                CC_REGISTRY[sending_course.id] = vars(sending_course)
 
                 sending_courses.append(SendingCourse(
-                    course_id=sending_course.course_id,
+                    id=sending_course.id,
                     notes=get_notes(item)
                 ))
 
@@ -580,11 +574,12 @@ def save_university_data(session: UniversitySession):
 
     def get_shallow_list(course_list):
         shallow_list = []
+
         for obj in course_list:
-            # Strip articulations from all objects
             d = vars(obj).copy()
             d.pop("articulations", None)
-            shallow_list.append(d)
+            shallow_list.append(omit_empty(d))
+
         return shallow_list
 
     print("Writing Subject files...")
@@ -614,22 +609,22 @@ def save_university_data(session: UniversitySession):
             items_by_prefix[prefix].append(s)
 
     sorted_metadata = sorted(list(subjects_metadata.values()), key=lambda x: x["prefix"])
-    write_json(sorted_metadata, f"{base_path}/Subjects/subjects.json")
+    write_json(omit_empty(sorted_metadata), f"{base_path}/Subjects/subjects.json")
 
     for prefix, item_list in items_by_prefix.items():
         item_list.sort(key=get_sort_key)
         # We have to add "subj_" because Windows does not like some subject names
-        write_json(item_list, f"{base_path}/Subjects/subj_{prefix}.json")
+        write_json(omit_empty(item_list), f"{base_path}/Subjects/subj_{prefix}.json")
 
     if session.requirements:
         req_list = list(session.requirements.values())
         req_list.sort(key=get_sort_key)
-        write_json(req_list, f"{base_path}/Subjects/subj_@REQUIREMENTS.json")
+        write_json(omit_empty(req_list), f"{base_path}/Subjects/subj_@REQUIREMENTS.json")
 
     if session.ges:
         ge_list = list(session.ges.values())
         ge_list.sort(key=get_sort_key)
-        write_json(ge_list, f"{base_path}/Subjects/subj_@GE.json")
+        write_json(omit_empty(ge_list), f"{base_path}/Subjects/subj_@GE.json")
 
     print(f"Writing Major files...")
     major_names = sorted(list(session.majors.keys()))
@@ -671,7 +666,7 @@ def save_university_data(session: UniversitySession):
             "courses": get_shallow_list(category.courses)
         })
 
-    write_json(shallow_ge_categories, f"{base_path}/GEs/ge_categories.json")
+    write_json(omit_empty(shallow_ge_categories), f"{base_path}/GEs/ge_categories.json")
 
 
 def has_no_agreements(agreement_year: int, university: Institution, college: Institution):
@@ -773,7 +768,7 @@ def main():
         print()
 
     print("Writing CC registry...")
-    write_json(CC_REGISTRY, "data/colleges/cc_registry.json")
+    write_json(omit_empty(CC_REGISTRY), "data/colleges/cc_registry.json")
 
     end_time = timeit.default_timer()
     print(f"Execution time: {end_time - start_time:.2f}s")

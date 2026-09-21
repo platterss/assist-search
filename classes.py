@@ -45,11 +45,11 @@ class Course:
     title: str
     min_units: float
     max_units: float
-    course_id: int
+    id: int
     prefix_id: int
 
     def get_unique_key(self):
-        return f"COURSE:{self.course_id}"
+        return f"COURSE:{self.id}"
 
     @staticmethod
     def from_dict(class_dict: dict):
@@ -62,14 +62,14 @@ class Course:
             title=class_dict.get("courseTitle").strip() if valid else "Broken Course",
             min_units=class_dict.get("minUnits") if valid else -1.0,
             max_units=class_dict.get("maxUnits") if valid else-1.0,
-            course_id=class_dict.get("courseIdentifierParentId") if valid else -1,
+            id=class_dict.get("courseIdentifierParentId") if valid else -1,
             prefix_id=class_dict.get("prefixParentId") if valid else -1
         )
 
 
 @dataclass
 class SendingCourse:
-    course_id: int
+    id: int
     notes: list[str]
 
 
@@ -80,7 +80,7 @@ class SendingSeries:
     courses: list[SendingCourse]
 
     def get_unique_key(self) -> str:
-        course_ids = [str(course.course_id) for course in self.courses]
+        course_ids = [str(course.id) for course in self.courses]
         return f"SERIES:{self.conjunction}:{'|'.join(course_ids)}"
 
 
@@ -91,7 +91,7 @@ class Series:
     courses: list[Course | SendingCourse]
 
     def get_unique_key(self) -> str:
-        course_ids = [str(course.course_id) for course in self.courses]
+        course_ids = [str(course.id) for course in self.courses]
         conj = self.conjunction if self.conjunction else "NONE"
         return f"SERIES:{conj}:{"|".join(course_ids)}"
 
@@ -148,7 +148,7 @@ class GeneralEducation:
 class ArticulationItem:
     sending_id: int
     articulation: SendingArticulation
-    contexts: list[str]
+    # contexts: list[str]
 
 
 @dataclass
