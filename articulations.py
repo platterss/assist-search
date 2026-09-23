@@ -33,7 +33,7 @@ from util import write_json, omit_empty
 
 # Saves and uses raw ASSIST.org JSON files on disk
 # Just here so we don't have to keep making requests for every little change
-use_local_agreement_data = True
+use_local_agreement_data = False
 
 CC_REGISTRY = {}
 
