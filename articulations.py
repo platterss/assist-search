@@ -1,5 +1,5 @@
 import argparse
-import orjson as json
+import orjson
 from collections import defaultdict
 
 import re
@@ -269,7 +269,7 @@ class AgreementProcessor:
         template_assets: list[dict] = load_template_assets(agreement)
         categories = self.process_major_ge_template_assets(template_assets)
 
-        articulations: list[dict] = json.loads(result["articulations"])
+        articulations: list[dict] = orjson.loads(result["articulations"])
         self.process_major_ge_articulations(articulations)
 
         return categories
@@ -308,7 +308,7 @@ class AgreementProcessor:
             print("Incorrect processing type for agreement")
             return []
 
-        articulations: list[dict] = json.loads(result["articulations"])
+        articulations: list[dict] = orjson.loads(result["articulations"])
         sections = self.process_dept_prefix_articulations(articulations)
 
         return sections
@@ -365,7 +365,7 @@ def load_template_assets(agreement: dict) -> list[dict] | None:
     if agreement["result"]["templateAssets"] is None:
         return None
 
-    return json.loads(agreement["result"]["templateAssets"])
+    return orjson.loads(agreement["result"]["templateAssets"])
 
 
 # Helper for process_sending_articulation

@@ -1,3 +1,4 @@
+import orjson
 import request
 
 from pathlib import Path
@@ -12,7 +13,7 @@ def get_local_agreement(path, url):
     if file_path.is_file():
         return read_json(file_path)
 
-    resp = request.get(url=url).json()
+    resp = orjson.loads(request.get(url=url).content)
     write_json(resp, path)
 
     return resp
